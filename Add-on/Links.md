@@ -11,4 +11,15 @@
 [On googling problems](https://codinginflow.com/google-programming-questions)
 
 
+## HTML, CSS, JavaScript
+[API Documentations](https://devdocs.io/)
+
+[Responsive web design course at freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/)
+[Front end development libraries course](https://www.freecodecamp.org/learn/front-end-development-libraries/)
+[HTML crash course](https://www.freecodecamp.org/news/html-crash-course/)
+[Another HTML Course](https://www.youtube.com/watch?v=LGQuIIv2RVA)
+
+[List of defined HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+[HTML Structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_element)
+
 

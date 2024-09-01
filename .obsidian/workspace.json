@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cd6fe67ffc5de0b5",
+            "id": "510d9fb78fbd5e68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Add-on/Links.md",
+                "file": "HTML/1 Boilerplate.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "510d9fb78fbd5e68",
+            "id": "e1ec06e9f3375ff3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Add-on/Chrome.md",
+                "file": "HTML/2 Text.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Add-on/Chrome.md",
+                "file": "HTML/2 Text.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Add-on/Chrome.md",
+                "file": "HTML/2 Text.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Add-on/Chrome.md"
+                "file": "HTML/2 Text.md"
               }
             }
           }
@@ -159,13 +159,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7be855190f0aed71",
+  "active": "e1ec06e9f3375ff3",
   "lastOpenFiles": [
+    "HTML/1 Boilerplate.md",
+    "HTML/2 Text.md",
+    "HTML/HTML Tags/Catalog of Tags.md",
+    "HTML/HTML Tags/HTML tags 5.md",
+    "HTML/HTML Tags/HTML tags 4.md",
+    "HTML/HTML Tags/HTML tags 3.md",
+    "HTML/HTML Tags/HTML tags 2.md",
+    "HTML/HTML Tags/HTML tags 1.md",
+    "HTML/HTML Tags/HTML Tags 3.md",
     "Add-on/Links.md",
+    "HTML/HTML Tags",
+    "Linux Terminal/Terminal Doc/All Commands.md",
     "Add-on/Chrome.md",
     "Add-on/Git.md",
     "Add-on/VScode.md",
     "Add-on/Coding Intro.md",
+    "HTML",
     "VScode_crash.md",
     "Linux Terminal/Terminal Basics/0 Sequence.md",
     "Linux Terminal/Terminal Basics/1 Navigating Files & Dir.md",
@@ -174,21 +186,11 @@
     "Linux Terminal/Terminal Basics/5 Shell Scripts.md",
     "Add-on",
     "Linux Terminal",
-    "Linux Terminal/Terminal Doc/All Commands.md",
     "Linux Terminal/Terminal Doc/cd - change directory.md",
     "Linux Terminal/Terminal Doc/cat - concatenation.md",
     "Linux Terminal/Terminal Doc/echo.md",
     "Linux Terminal/Terminal Basics/4 Loops.md",
     "Linux Terminal/Terminal Basics/3 Pipes and Filters.md",
-    "Linux Terminal/Terminal Basics/2 Working with Files & Dir.md",
-    "Linux Terminal/Terminal Doc/cut (with delimiter).md",
-    "Linux Terminal/Terminal Doc/uniq.md",
-    "Linux Terminal/Terminal Doc/head tail.md",
-    "Linux Terminal/Terminal Doc/sort.md",
-    "Linux Terminal/Terminal Doc/wc - word count.md",
-    "Linux Terminal/Terminal Doc/pwd  - print working dir.md",
-    "Linux Terminal/Terminal Doc/touch.md",
-    "Linux Terminal/Terminal Doc/rm - remove.md",
     "Linux Terminal/Terminal Basics",
     "Linux Terminal/Terminal Doc"
   ]
