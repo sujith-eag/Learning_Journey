@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Links.md",
+                "file": "Git/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Links.md",
+                "file": "Git/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Links.md",
+                "file": "Git/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Links.md"
+                "file": "Git/Basics.md"
               }
             }
           }
@@ -161,9 +161,9 @@
   },
   "active": "cd6fe67ffc5de0b5",
   "lastOpenFiles": [
+    "Links.md",
     "Git/Basics.md",
     "Linux Terminal/Terminal Basics/0 Sequence.md",
-    "Links.md",
     "Linux Terminal/Terminal Doc/grep.md",
     "Linux Terminal/Terminal Basics/6 Finding things.md",
     "Linux Terminal/Terminal Basics/5 Shell Scripts.md",

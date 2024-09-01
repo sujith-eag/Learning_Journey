@@ -1,8 +1,4 @@
-Creating a repository on Github
-Getting files to and from Github
-Taking snapshot of code
-
-### Beginning
+#### Basic setup
 `git --version`
 `git config --global init.defaultBranch main`   to change default branch to main
 `git config --global user.name "Name"`                    `git config --get user.name`
@@ -11,6 +7,7 @@ Taking snapshot of code
 
 `git config --global pull.rebase false`
 
+# Connecting git to github with SSH
 ### SSH key
 `ls ~/.ssh/id_ed25519.pub`     To check if key already exists
 
@@ -24,22 +21,9 @@ enter for default place and no passkey
 `new SSH key`
 `add SSH key`
 
-### Repository in GitHub
-`new repository`
-`Code`  copy `SSH option`  not the `http`
-
-### Repo in Git
-`mkdir repos` Make a new folder
-`cd repos`
-
-`git clone [paste the ssh link]`
-`cd [the new folder]`
-
-`git remote -v`    will show the details of git link
 
 
-
-## Basic git commands
+# Basic git commands
 `git status`    shows tracked, untracked, staged files
 
 `git add [file name]`   to add to staging area
@@ -52,9 +36,8 @@ enter for default place and no passkey
 
 `git push`    or  `git push origin main`
 
-
 ### Through VSCode
-open a required directory and type `code .`   to open current directory in git
+`code .` open a required directory and type to open current directory in git
 other things remain the same
 
 The commit message can be made as next entry by setting VScode as default
@@ -62,4 +45,31 @@ The commit message can be made as next entry by setting VScode as default
 
 
 
+
+
+# GitHub to Git 
+`New repository` in github
+`Code`  copy `SSH option`  not the `http`
+### Repo in Git
+`mkdir repos` Make a new folder
+`cd repos`  move to that repo
+
+`git clone [paste the ssh link]`     link the repo to github
+`cd [the new folder]`
+`git remote -v`    will show the details of git link
+
+## Git to Github
+Go to the directory, initialize it, commit it
+`git init`  
+`git add .` 
+`git commit -m "message"`    to create repo in a folder
+
+create an empty repository in github
+dont add any readme files or licenses
+once created copy the SSH key
+
+In git 
+`git remote add origin [ssh key]`
+`git branch -M main`     make branch main if by chance it is in master
+`git push -u origin main`
 
