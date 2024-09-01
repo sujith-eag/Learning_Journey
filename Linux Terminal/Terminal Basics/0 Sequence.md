@@ -1,4 +1,10 @@
+## Linux and Bash
 [The Unix Shell](https://swcarpentry.github.io/shell-novice/index.html)
+[Bash](https://swcarpentry.github.io/shell-novice/)
+[Book link](https://www.learnenough.com/command-line-tutorial)
+[CL flash cards](https://flashcards.github.io/command_line/introduction.html)
+[Command line](https://www.softcover.io/read/fc6c09de/unix_commands/ack_ag)
+[GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html)
 
 ### [[1 Navigating Files & Dir]]
 `clear`

@@ -1,3 +1,6 @@
+## Git related
+[Pro Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+
 #### Basic setup
 `git --version`
 `git config --global init.defaultBranch main`   to change default branch to main
