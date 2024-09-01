@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Add-on/VScode.md",
+                "file": "Add-on/Links.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "510d9fb78fbd5e68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Add-on/Chrome.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Add-on/VScode.md",
+                "file": "Add-on/Chrome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Add-on/VScode.md",
+                "file": "Add-on/Chrome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Add-on/VScode.md"
+                "file": "Add-on/Chrome.md"
               }
             }
           }
@@ -147,16 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd6fe67ffc5de0b5",
+  "active": "7be855190f0aed71",
   "lastOpenFiles": [
     "Add-on/Links.md",
-    "Add-on/Coding Intro.md",
+    "Add-on/Chrome.md",
+    "Add-on/Git.md",
     "Add-on/VScode.md",
+    "Add-on/Coding Intro.md",
     "VScode_crash.md",
-    "Untitled.md",
     "Linux Terminal/Terminal Basics/0 Sequence.md",
     "Linux Terminal/Terminal Basics/1 Navigating Files & Dir.md",
-    "Add-on/Git.md",
     "Linux Terminal/Terminal Doc/grep.md",
     "Linux Terminal/Terminal Basics/6 Finding things.md",
     "Linux Terminal/Terminal Basics/5 Shell Scripts.md",

@@ -39,7 +39,7 @@ enter for default place and no passkey
 
 `git push`    or  `git push origin main`
 
-### Through VSCode
+### Through VScode
 `code .` open a required directory and type to open current directory in git
 other things remain the same
 
