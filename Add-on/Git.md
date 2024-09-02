@@ -1,4 +1,4 @@
-## Git related   #01Sep24 
+## Git related   #01sep24 
 [Pro Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
 #### Basic setup
@@ -78,3 +78,16 @@ In git
 
 
 # Commit messages
+Have a Subject and Body
+
+Github has 72-characters limit
+
+## The seven rules of a great Git commit message
+
+1. Separate subject from body with a blank line
+2. Limit the subject line to 50 characters
+3. Capitalize the subject line
+4. Do not end the subject line with a period
+5. Use the imperative mood in the subject line
+6. Wrap the body at 72 characters
+7. Use the body to explain _what_ and _why_ vs. how

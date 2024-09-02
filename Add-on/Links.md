@@ -22,4 +22,9 @@
 [List of defined HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 [HTML Structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_element)
 
+[Brutal web design](https://brutalistwebsites.com/)
 
+
+[CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+[CSS Legal Color Values](https://www.w3schools.com/cssref/css_colors_legal.asp)
+[CSS Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders)

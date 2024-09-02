@@ -1,7 +1,7 @@
 [VS-code docs](https://code.visualstudio.com/docs)
 [Shortcuts](https://go.microsoft.com/fwlink/?linkid=832144)
 
-# Shortcuts in editor    #01Sep24
+# Shortcuts in editor    #01sep24
 ### Side bar Toggles
 `Ctrl + B`   to toggle side bar open and close
 

@@ -1,3 +1,4 @@
+#01sep24
 HTML (HyperText Markup Language) defines the structure and content of webpages. 
 We use HTML elements to create all of the paragraphs, headings, lists, images, and links that make up a typical webpage.
 
@@ -45,7 +46,7 @@ without `<title>` browser defaults to file name `index.html`
 
 There are more things that go into head
 
-```
+```HTML
 <!DOCTYPE html>
 
 <html lang="eng">
@@ -63,7 +64,7 @@ is where all the contents that will be displayed to users will go - text, images
 
 `<body>` will also go after `<head>` but with `<html>`
 
-```
+```HTML
 <!DOCTYPE html>
 
 <html lang="eng">
