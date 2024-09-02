@@ -76,3 +76,5 @@ In git
 `git branch -M main`     make branch main if by chance it is in master
 `git push -u origin main`
 
+
+# Commit messages
