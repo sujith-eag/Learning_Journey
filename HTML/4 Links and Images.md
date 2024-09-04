@@ -1,3 +1,4 @@
+[[3 Lists]]
 ## Anchor elements   #02sep24
 An anchor element is defined by wrapping the text or another HTML element we want to be a link with an `<a>` tag.
 ``
@@ -7,15 +8,15 @@ An anchor element is defined by wrapping the text or another HTML element we wan
 <a href="https://www.theodinprojct.com/about">About</a>
 ```
 ### Opening links in a new tab
+`target="_blank"` opens link in new blank tab.
 Default will be opening the link in the same tab `_self.
-This can be changed by using the attribute `target="_blank"`
-
 ```HTML
 <a href="https://www.theodinprojct.com/about" target="_blank" >About</a>
 ```
 
-## `rel="noreferrer"`
-To avoid the webpages knowing which pages have links pointing to them this tag is used, and also prevents the opened webpage from gaining access to the webpage it was opened from.
+## `rel="noreferrer"` for security
+The `rel` is set to `noreferrer` to avoid the webpages knowing which pages have links pointing to them.
+It also prevents the opened webpage from gaining access to the webpage it was opened from.
 
 ```HTML
 <a href="https://www.theodinprojct.com/about" target="_blank" rel="noreferrer">About</a>
@@ -76,3 +77,15 @@ Root folder which has everything
 No spaces, No numbers, No capitals in names.
 Keep names short and basic.
 All other webpages can be in the root folder or separate.
+
+
+
+
+Prev  [[3 Lists]]
+
+Next  [[5 Boxes and Buttons]]
+
+
+
+
+CSS [[1 Selectors]]

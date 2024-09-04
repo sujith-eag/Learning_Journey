@@ -1,3 +1,5 @@
+[[2 Text]]
+
 ### Unordered Lists  `<ul>  <li> </li>  </ul>`       #02sep24 
 Used when the order doesn't matter. each item in the list is represented by `<li>` which will be represented by a bullet point of circle, square or dot. The styles will be defined by CSS `line-style-type`
 
@@ -8,8 +10,6 @@ By default `<ol>` will assign numbers to each of the list items added.
 
 Both can be listed inside the other as much as needed.
 if a second list has to be nested inside the second item, then it should be inside it's `<li>  </li>`
-
-
 
 ```HTML
 <ul>
@@ -147,3 +147,10 @@ list-style-type: revert;
 list-style-type: revert-layer;
 list-style-type: unset;
 ```
+
+
+
+Next    [[4 Links and Images]]
+
+
+Prev   [[2 Text]]

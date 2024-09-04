@@ -1,9 +1,21 @@
-## Socials of Odin project
+[[Chrome]] basics
+[[Git]] basics
+[[VScode]] basics
+
+[[Coding Intro]] 
+[[0 Linux]] terminal basics
+[[0 HTML]] basics
+[[0 CSS]] basics
+
+
+
+# External Links
+### Socials of Odin project
 [TOP Discord](https://discord.gg/theodinproject) 
 [Discord](https://discord.gg/fbFCkYabZB)
 [Insta](https://www.instagram.com/theodinproject/)
 
-## Tutorial and Practice
+### Tutorial and Practice
 [Typing](https://www.typing.com/)
 [Typingclub](https://www.typingclub.com/)
 [Monkeytype](https://monkeytype.com/)
@@ -11,7 +23,7 @@
 [On googling problems](https://codinginflow.com/google-programming-questions)
 
 
-## HTML, CSS, JavaScript
+### HTML, CSS, JavaScript
 [API Documentations](https://devdocs.io/)
 
 [Responsive web design course at freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/)
@@ -28,3 +40,8 @@
 [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 [CSS Legal Color Values](https://www.w3schools.com/cssref/css_colors_legal.asp)
 [CSS Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders)
+
+
+[netlify for launching my site](https://www.netlify.com/)
+
+Scrimba is great interactive learning

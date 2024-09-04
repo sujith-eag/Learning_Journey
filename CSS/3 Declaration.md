@@ -1,4 +1,28 @@
-## Properties to get started with    #02sep24 
+[[2 Multiple Selectors]]
+
+## Declaration      #02sep24 
+ 
+- **Declaration** is  property : value
+- **Property** which is an identifier, that is a human-readable _name_, that defines the feature.
+- **Value** which describe how the feature must be handled by the engine. 
+
+Declarations are grouped in ***declaration blocks*** or CSS blocks which is delimited by `{  }`. 
+Separate declarations must be separated by a `;` inside the block.
+```CSS
+div.bold-text {
+				font-weight: 700;
+				text-align: center;
+				}
+    selector    property     value
+
+{
+	A CSS block
+}
+```
+Blocks can be nested sometimes but braces must be matched.
+
+# Properties
+Each property has a set of valid values, defined by a formal grammar, as well as a semantic meaning, implemented by the browser engine.
 
 #### Color and background-color
 The `color` property sets an element’s text color, 
@@ -10,26 +34,25 @@ A common one is a keyword, such as an actual color name like `red` or the `tr
 
 ```css
 p {
-  /* hex example: */
-  color: #1100ff;
-}
+	  /* hex example: */
+	  color: #1100ff;
+	}
 
 p {
-  /* rgb example: */
-  color: rgb(100, 0, 127);
-}
+	  /* rgb example: */
+	  color: rgb(100, 0, 127);
+	}
 
 p {
-  /* hsl example: */
-  color: hsl(15, 82%, 56%);
-}
+	  /* hsl example: */
+	  color: hsl(15, 82%, 56%);
+	}
 ```
 
 
 ## Typography basics and text-align
 
 #### Font Family
-
 `font-family` can be a single value or a comma-separated list of values that determine what font an element uses. 
 Each font will fall into one of two categories, either a “font family name” like `"Times New Roman"` (we use quotes due to the whitespace between words) 
 or a “generic family name” like `serif` (generic family names never use quotes).
@@ -53,7 +76,6 @@ Common keywords can be value for this property. `text-align: center`.
 
 
 ## Image height and width
-
 By default, an `<img>` element’s `height` and `width` values will be the same as the actual image file’s height and width. 
 
 Images aren’t the only elements that we can adjust the height and width on.
@@ -61,9 +83,9 @@ To adjust the size of the image without causing it to lose its proportions, you 
 
 ```css
 img {
-  height: auto;
-  width: 500px;
-}
+	  height: auto;
+	  width: 500px;
+	}
 ```
 
 These properties work in conjunction with the height and width attributes in the HTML. It’s best to include both of these properties and the HTML attributes for image elements, even if you don’t plan on adjusting the values from the image file’s original ones. 
@@ -72,4 +94,24 @@ When these values aren’t included, if an image takes longer to load than the r
 Explicitly stating a `height` and `width` prevents this from happening, as space will be “reserved” on the page and appear blank until the image loads.
 
 
+## Inline and Block display
 
+`display: inline` Makes the elements form a line, one after the other.
+`displa: block`  makes each item block out the whole line so next item goes to the next line(stacked on each other)
+```CSS
+img {
+		display: Block;
+}
+button {
+		display: inline;
+}
+```
+
+
+
+
+
+Next    [[4 Adding CSS to HTML]]
+
+
+Prev   [[2 Multiple Selectors]]                

@@ -1,3 +1,5 @@
+[[1 Boilerplate]]
+
 ### Paragraphs  `<p> </p>`   #02sep24 
 All text can be put inside the `<body>` but the spaces will not be considered so paragraph tag can be used.
 
@@ -45,3 +47,7 @@ Used to denote the text which is half the size and at lower part of text, simila
 The text appears half a character above the normal line and in small font. Superscript text can be used to show footnotes links.
 
 
+
+Next      [[3 Lists]]
+
+Prev     [[1 Boilerplate]]    

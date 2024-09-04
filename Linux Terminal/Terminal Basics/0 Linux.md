@@ -68,3 +68,6 @@
 `find . -type d  []`
 `find . -name []`
 `$([command])`
+
+
+[[All Commands]]

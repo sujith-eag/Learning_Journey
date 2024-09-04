@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/1 Selectors.md",
+                "file": "CSS/5 Box Model & Flexbox.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/1 Selectors.md",
+                "file": "CSS/5 Box Model & Flexbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/1 Selectors.md",
+                "file": "CSS/5 Box Model & Flexbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/1 Selectors.md"
+                "file": "CSS/5 Box Model & Flexbox.md"
               }
             }
           }
@@ -148,35 +148,35 @@
   },
   "active": "510d9fb78fbd5e68",
   "lastOpenFiles": [
-    "CSS/2 Multiple Selectors.md",
-    "Add-on/Links.md",
-    "CSS/1 Selectors.md",
+    "Linux Terminal/Terminal Basics/0 Linux.md",
+    "Add-on/0 Root.md",
+    "Linux Terminal/Terminal Doc/All Commands.md",
+    "CSS/0 CSS.md",
+    "HTML/0 HTML.md",
+    "HTML/Related Doc/Catalog of Tags.md",
+    "Add-on/Coding Intro.md",
+    "CSS/5 Box Model & Flexbox.md",
+    "CSS/3 Declaration.md",
     "CSS/4 Adding CSS to HTML.md",
-    "CSS/3 Properties.md",
+    "CSS/2 Multiple Selectors.md",
+    "CSS/1 Selectors.md",
+    "HTML/5 Boxes and Buttons.md",
+    "netlify.com.md",
+    "HTML/4 Links and Images.md",
+    "HTML/3 Lists.md",
+    "HTML/2 Text.md",
+    "HTML/1 Boilerplate.md",
     "CSS/CSS Color values.md",
     "HTML/Related Doc/List Styles.md",
-    "HTML/3 Lists.md",
-    "HTML/4 Links and Images.md",
     "Add-on/VScode.md",
     "Add-on/Git.md",
-    "HTML/1 Boilerplate.md",
     "CSS",
-    "HTML/2 Text.md",
     "Linux Terminal/Terminal Basics/6 Finding things.md",
     "HTML/Related Doc/HTML tags 4.md",
-    "HTML/Related Doc/Catalog of Tags.md",
     "HTML/Related Doc/HTML tags 3.md",
     "HTML/Related Doc/HTML tags 2.md",
-    "HTML/Related Doc/HTML tags 1.md",
-    "HTML/Related Doc/HTML tags 5.md",
-    "HTML/HTML Tags/HTML Tags 3.md",
     "HTML/Related Doc",
-    "Linux Terminal/Terminal Doc/All Commands.md",
-    "Add-on/Chrome.md",
-    "Add-on/Coding Intro.md",
     "HTML",
-    "VScode_crash.md",
-    "Linux Terminal/Terminal Basics/0 Sequence.md",
     "Add-on",
     "Linux Terminal",
     "Linux Terminal/Terminal Basics",
