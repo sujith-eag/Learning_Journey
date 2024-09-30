@@ -51,5 +51,3 @@ These elements let you provide indications that specific parts of the text have 
 |---|---|
 |[`<del>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del)|Represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The `<ins>` element can be used for the opposite purpose: to indicate text that has been added to the document.|
 |[`<ins>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins)|Represents a range of text that has been added to a document. You can use the `<del>` element to similarly represent a range of text that has been deleted from the document.|
-
-[[HTML tags 4]]

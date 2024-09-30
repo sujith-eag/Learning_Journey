@@ -17,10 +17,8 @@ Void elements are void of any content so they have a single tag.
 
 Previously they were called self-closing tags `<br /> or  <img />`   not necessary to do this now with latest version of HTML. So now these are called invalid.
 #### HTML file
-`html-boilerplate` folder
 `index.html` file
 A HTML file containing the homepage of the website should be `index.html` because servers will first look for that by default.
-
 
 
 
@@ -110,7 +108,3 @@ or
 in the directory having the file `google-chrome index.html`
 or 
 using Live Server extension of VScode.
-
-
-
-Next   [[2 Text]]

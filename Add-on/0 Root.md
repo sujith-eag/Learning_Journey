@@ -1,13 +1,10 @@
 [[Chrome]] basics
 [[Git]] basics
 [[VScode]] basics
+[[Obsidian]]
+
 
 [[Coding Intro]] 
-[[0 Linux]] terminal basics
-[[0 HTML]] basics
-[[0 CSS]] basics
-
-
 
 # External Links
 ### Socials of Odin project
@@ -43,5 +40,6 @@
 
 
 [netlify for launching my site](https://www.netlify.com/)
+can connect it to github by importing existing project, install netlify on github
 
 Scrimba is great interactive learning

@@ -3,3 +3,7 @@
 [[3 Declaration]]
 [[4 Adding CSS to HTML]]
 [[5 Box Model & Flexbox]]
+[[6 Flexbox]]
+[[7 Flexibility]]
+[[8 Axes & Alignment]]
+[[9 Utility Class & Inheritance]]

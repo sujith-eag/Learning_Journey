@@ -1,4 +1,3 @@
-Prev [[1 Selectors]]
 
 ## 1 Grouping selectors   #02sep24 
 
@@ -85,7 +84,9 @@ Chaining two type selectors like `div` and `p` would give us the selector `
 ## 3 Combinator
 Combinators allow us to combine multiple selectors differently than either grouping or chaining them, as they show a relationship between the selectors. 
 
-#### 3.1 Descendant combinator
+#### 3.1 Descendant combinator `A  B`
+Specifies that the element selected by `B` is a descendant of the element selected by `A`, but is not necessarily a direct child.
+
 **Descendant combinator**, is represented in CSS by a single space between selectors.
 
 `child` class will only be selected if it is nested inside `ancestor`, regardless of how deep that nesting is. 
@@ -115,8 +116,62 @@ so `.one .two .three .four` would be totally valid.
 Element with class of `four` will be selected only if it is nested within `three two one`
 
 
+### Next-sibling combinator `A + B`
+Specifies that the elements selected by both `A` and `B` have the same parent and that the element selected by `B` immediately follows the element selected by `A` horizontally.
 
-Next    [[3 Declaration]]
+### Subsequent-sibling combinator `A ~ B`
+Specifies that the elements selected by both `A` and `B` share the same parent and that the element selected by `A` comes before—but not necessarily immediately before—the element selected by `B`.
+
+### Child combinator `A > B`
+Specifies that the element selected by `B` is the direct child of the element selected by `A`.
 
 
-Prev   [[1 Selectors]]                 
+### Column combinator `A || B`
+Specifies that the element selected by `B` is located within the table column specified by `A`. Elements which span multiple columns are considered to be a member of all of those columns.
+
+
+
+# Cascade of CSS
+#### Specificity
+A CSS declaration that is more specific will take precedence over less specific ones. 
+Inline styles, have the highest specificity compared to selectors.
+
+1. ID selectors (most specific selector)
+2. Class selectors
+3. Type selectors
+
+An ID selector will always beat any number of class selectors, 
+a class selector will always beat any number of type selectors, 
+and a type selector will always beat any number of less specific selectors.
+
+```html
+<!-- index.html -->
+<div class="main">
+  <div class="list" id="subsection">Blue text</div>
+</div>
+```
+```css
+#subsection {
+  color: blue; }
+
+.main .list {
+  color: red; }
+```
+The color will be set as blue because the selector is an ID.
+
+
+
+### Additional resources
+
+- [An interactive Scrim](https://scrimba.com/scrim/co12d4cf99cf2776f19e84a9d) 
+  Video covers how selectors can be chained and used along with rules to select specific items.
+
+- [The CSS Cascade](https://2019.wattenberger.com/blog/css-cascade) 
+  interactive read that in detail about other factors that affect what CSS rules actually end up being applied.
+- [CSS Specificity Explained](https://www.youtube.com/watch?v=c0kfcP_nD9E) 
+  video from Kevin Powell about specificity of selectors and priorities.
+- [Interactive Scrim on the CSS Cascade.](https://v1.scrimba.com/scrim/c9gwmnAR)
+- [CSS Specificity Calculator](https://specificity.keegan.st/) allows you to fill in your own selectors and have their specificity calculated and visualized.
+
+
+

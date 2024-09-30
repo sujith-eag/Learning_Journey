@@ -1,5 +1,5 @@
-[[3 Lists]]
-## Anchor elements   #02sep24
+#02sep24
+## Anchor elements   
 An anchor element is defined by wrapping the text or another HTML element we want to be a link with an `<a>` tag.
 ``
 ```HTML
@@ -7,7 +7,9 @@ An anchor element is defined by wrapping the text or another HTML element we wan
 <!-- Needs href to point to where to go-->
 <a href="https://www.theodinprojct.com/about">About</a>
 ```
+
 ### Opening links in a new tab
+
 `target="_blank"` opens link in new blank tab.
 Default will be opening the link in the same tab `_self.
 ```HTML
@@ -24,6 +26,7 @@ It also prevents the opened webpage from gaining access to the webpage it was op
 
 
 ### Absolute and Relative Links
+
 ***Absolute links*** are Links to pages on other websites on the internet. A typical absolute link will be made up of: `protocol://domain/path`. An absolute link will always contain the protocol and domain of the destination.
 `https://www.theodinproject.com/about`
 
@@ -42,11 +45,12 @@ Links to other pages within our own website are called relative links. Relative 
 ```
 
 
-
-
 # Images
 `<img>`  is a void element so takes the link within the tag but doesn't need a closing tag.
-`<img src="https://www.google.com/somepic.png">`
+
+```html
+<img src="https://www.google.com/somepic.png">
+```
 
 ##### Path of file
 Using `../` to go up a directory and finding the folder with image while using relative path. Or absolute path can be used.
@@ -55,7 +59,7 @@ Using `../` to go up a directory and finding the folder with image while using r
 `<img src="image">` is used to assign the location of file to the tag.
 
 #### `alt` attribute
-It is the alternative text for the image which is shown when image is not found.
+It is the alternate text for the image which is shown when image is not found.
 `<img src="image" alt="Logo of site">`
 
 #### Image size 
@@ -78,14 +82,3 @@ No spaces, No numbers, No capitals in names.
 Keep names short and basic.
 All other webpages can be in the root folder or separate.
 
-
-
-
-Prev  [[3 Lists]]
-
-Next  [[5 Boxes and Buttons]]
-
-
-
-
-CSS [[1 Selectors]]

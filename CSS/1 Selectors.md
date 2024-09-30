@@ -1,4 +1,5 @@
-## Basic Syntax   #02sep24
+#02sep24
+## Basic Syntax   
 CSS is made up of various rules, these rules are made up of a 
 ***selector*** which points to part of HTML and 
 ***declaration*** which is a ***property : value pair***, a semicolon separated list.
@@ -30,7 +31,6 @@ A type selector (or element selector) will select all elements of the given elem
 
 ```html
 <!-- index.html -->
-
 <div>Hello, World!</div>
 <div>Hello again!</div>
 <p>Hi...</p>
@@ -85,8 +85,3 @@ an element can have only **one** ID and It cannot be repeated on a single page
 
 A common pitfall is people overusing the ID attribute when they don’t necessarily need to, and when classes will suffice.
 
-
-
-
-
-Next   [[2 Multiple Selectors]]

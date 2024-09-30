@@ -27,6 +27,8 @@
 ## Selection
 `Ctrl + C`  selects the entire line the pointer is in
 `Ctrl + D`  `Ctrl + F`  selects the exact word so it can be searched
+Select any line and `Ctrl + D` which selects all instance of it, then can be edited at once.
+
 `Home / End`  going to beginning or end of line
 `Ctrl + Space`   Trigger Suggestions
 `Ctrl + L` select current line

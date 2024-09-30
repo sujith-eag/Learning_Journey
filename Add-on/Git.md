@@ -74,7 +74,7 @@ once created copy the SSH key
 In git 
 `git remote add origin [ssh key]`
 `git branch -M main`     make branch main if by chance it is in master
-`git push -u origin main`
+`git push -u origin main`     `git push origin main` also worked
 
 
 # Commit messages
@@ -91,3 +91,7 @@ Github has 72-characters limit
 5. Use the imperative mood in the subject line
 6. Wrap the body at 72 characters
 7. Use the body to explain _what_ and _why_ vs. how
+
+
+-   
+    Explore this amazing tutorial video on Conventional Commits ➔ [Full Video Link](https://www.youtube.com/watch?v=OJqUWvmf4gg). The video showcases the Conventional Commits template from the resource above. It also mentions creating releases and shows using something called “Yarn”. These two parts are out of scope for this part of the course, so don’t worry about them and instead focus on the commit template.

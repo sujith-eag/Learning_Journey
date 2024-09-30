@@ -1,4 +1,3 @@
-[[2 Text]]
 
 ### Unordered Lists  `<ul>  <li> </li>  </ul>`       #02sep24 
 Used when the order doesn't matter. each item in the list is represented by `<li>` which will be represented by a bullet point of circle, square or dot. The styles will be defined by CSS `line-style-type`
@@ -148,9 +147,3 @@ list-style-type: revert-layer;
 list-style-type: unset;
 ```
 
-
-
-Next    [[4 Links and Images]]
-
-
-Prev   [[2 Text]]

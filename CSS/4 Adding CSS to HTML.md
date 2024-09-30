@@ -1,4 +1,3 @@
-[[3 Declaration]]
 There are three methods to do so.
 ## External CSS    #02sep24 
 It involves creating a separate file for the CSS and linking it inside of an HTML’s opening and closing `<head>` tags with a void `<link>` element:
@@ -72,7 +71,3 @@ Inline CSS makes it possible to add styles directly to HTML elements, though thi
 
 No selectors are used here, since the styles are being added directly to the opening `<div>` tag itself. 
 Next, we have the `style=` attribute, with its value within the pair of quotation marks being the declarations.
-
-
-
-[[3 Declaration]]        Next

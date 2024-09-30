@@ -1,4 +1,3 @@
-[[2 Multiple Selectors]]
 
 ## Declaration      #02sep24 
  
@@ -94,10 +93,18 @@ When these values aren’t included, if an image takes longer to load than the r
 Explicitly stating a `height` and `width` prevents this from happening, as space will be “reserved” on the page and appear blank until the image loads.
 
 
-## Inline and Block display
+
+
+### Inline elements
+Inline elements, do not start on a new line. They appear in line with whatever elements they are placed beside. 
+A link, or `<a>` tag.
+Padding and margin behave differently on inline elements. 
+Do not want to try to put extra padding or margin on inline elements.
+
+## display Inline and block
 
 `display: inline` Makes the elements form a line, one after the other.
-`displa: block`  makes each item block out the whole line so next item goes to the next line(stacked on each other)
+`display: block`  makes each item block out the whole line so next item goes to the next line(stacked on each other)
 ```CSS
 img {
 		display: Block;
@@ -107,11 +114,27 @@ button {
 }
 ```
 
+#### The middle ground `inline-block`
+`Inline-block` elements behave like inline elements, but with block-style padding and margin. `display: inline-block` is a useful tool to know about, but in practice, you’ll probably end up reaching for flexbox more often 
 
 
 
 
-Next    [[4 Adding CSS to HTML]]
+
+### Divs and spans
+
+All the other HTML elements have meaning to their content. For example, paragraph elements tell the browser to display the text it contains as a paragraph.
+divs and spans give no particular meaning to their content. They are just generic boxes that can contain anything.
+
+Div is a block-level element by default. It is commonly used as a container element to group other elements. Divs allow us to _divide_ the page into different blocks and apply styling to those blocks.
+
+Span is an inline-level element by default. It can be used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.
 
 
-Prev   [[2 Multiple Selectors]]                
+#### Main reference
+- [Mozilla CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) can be used to learn the various types of values possible in absolute or relative terms.	
+
+- [Mozilla CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) 
+  can be used to learn if a particular CSS property is inherited or not; 
+  look for the **Inherited** field inside the **Formal Definition** section. Here’s an example for [the CSS `color` property](https://developer.mozilla.org/en-US/docs/Web/CSS/color#formal_definition).
+

@@ -35,6 +35,3 @@ HTML provides several elements that can be used together to create forms that th
 |[`<progress>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)|Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.|
 |[`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)|Represents a control that provides a menu of options.|
 |[`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)|Represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example, a comment on a review or feedback form.|
-
-
-[[HTML tags 5]]
