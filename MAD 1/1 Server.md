@@ -7,7 +7,7 @@ On the incoming requests, run some code and return a result
 
 
 #### Setting up the server
-```
+```c
 while true; do
 	echo -e "HTTP/1.1 200 OK\n\n $(date)" |
 		nc -l localhost 1500;
@@ -23,7 +23,7 @@ This is the line that is maintaining the server, opening port 1500, listening an
 
 
 #### Requesting data from server
-```
+```http
 curl http://localhost:1500
 
 curl -v http://localhost:1500    (using -v verbose to get more information)
@@ -31,7 +31,7 @@ curl -v http://localhost:1500    (using -v verbose to get more information)
 Here curl is taking care of the background work of sending the request
 
 Typical request will be
-```
+```http
 Get / HTTP/1.1
 Host: localhost: 1500
 User-Agent: curl/7.64.1
@@ -39,7 +39,7 @@ Accept: */*
 ```
 
 ### Data sent and Received
-```
+```http
 *  Trying ::1 ...
 * TCP_NODELAY set
 * Connected to localhost (::1) port 1500 (#0)

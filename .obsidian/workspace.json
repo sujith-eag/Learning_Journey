@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7e9805decf646b12",
+            "id": "f26d1b1609b65573",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/4.2 Array Methods.md",
+                "file": "JavaScript/Language/4 Objects/2.1 Array Methods.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "c1fb2a4c93bcc2f3",
+            "id": "ab4bbb2f3433708e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/8 Axes & Alignment.md",
+                "file": "JavaScript/Language/3 Functions/6 Decorators.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "closure",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 220.50043487548828,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/8 Axes & Alignment.md",
+                "file": "JavaScript/Language/3 Functions/6 Decorators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/8 Axes & Alignment.md",
+                "file": "JavaScript/Language/3 Functions/6 Decorators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/8 Axes & Alignment.md"
+                "file": "JavaScript/Language/3 Functions/6 Decorators.md"
               }
             }
           }
@@ -161,43 +162,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1fb2a4c93bcc2f3",
+  "active": "ab4bbb2f3433708e",
   "lastOpenFiles": [
-    "CSS/7 Flexibility.md",
-    "CSS/6 Flexbox.md",
-    "CSS/5 Box Model & Flexbox.md",
-    "CSS/4 Adding CSS to HTML.md",
-    "CSS/3 Declaration.md",
-    "CSS/2 Multiple Selectors.md",
-    "CSS/1 Selectors.md",
-    "JavaScript/5.1 DOM Events.md",
-    "JavaScript/shopping list Excersice.md",
-    "JavaScript/5 DOM.md",
-    "JavaScript/4.3 Higher-Ordered Methods.md",
-    "JavaScript/4.2 Array Methods.md",
-    "JavaScript/4.1 Array.md",
-    "JavaScript/4 Objects.md",
-    "JavaScript/3.2 Parameters & Arguments.md",
-    "JavaScript/3.1 Scope of Variable.md",
-    "JavaScript/3 Functions.md",
-    "JavaScript/2.1 Loops.md",
-    "JavaScript/2 Program Structure.md",
-    "JavaScript/1.3 Logical Operators.md",
-    "JavaScript/1.2 String Methods.md",
-    "JavaScript/1.1 Bindings.md",
-    "JavaScript/1 Values, Types and Operators.md",
-    "JavaScript/7 OOP.md",
-    "JavaScript/5 Strings and their Properties.md",
-    "HTML/5 Boxes and Buttons.md",
-    "JavaScript",
-    "MAD 1",
-    "CSS/Related Doc",
-    "CSS",
-    "HTML/Related Doc",
-    "HTML",
-    "Add-on",
-    "Linux Terminal",
-    "Linux Terminal/Terminal Basics",
-    "Linux Terminal/Terminal Doc"
+    "JavaScript/Language/3 Functions/5 Scheduling.md",
+    "JavaScript/Language/3 Functions/4 return, call stack, recursion.md",
+    "JavaScript/Language/3 Functions/6 Decorators.md",
+    "JavaScript/Language/3 Functions/function object.md",
+    "JavaScript/Language/3 Functions/3 Function.md",
+    "JavaScript/Language/3 Functions/3.2 scope of variable.md",
+    "JavaScript/Language/Variable or Bindings.md",
+    "JavaScript/Language/4 Objects/rest and spread.md",
+    "JavaScript/Language/4 Objects/Map and Set.md",
+    "JavaScript/Language/2 Structure/Loops/Iterables.md",
+    "JavaScript/Language/2 Structure/Loops/3 for...of loop.md",
+    "JavaScript/Language/2 Structure/Loops/Breaking out of loop.md",
+    "JavaScript/Language/4 Objects/2.5 sort() method.md",
+    "JavaScript/Language/4 Objects/2.3 map() method.md",
+    "JavaScript/Language/4 Objects/2.4 reduce() method.md",
+    "JavaScript/Language/4 Objects/2.2 filter() method.md",
+    "JavaScript/Language/4 Objects/2.1 Array Methods.md",
+    "JavaScript/Language/4 Objects/Practice for strings.md",
+    "JavaScript/Language/2 Structure/Loops/4 for...in loop.md",
+    "JavaScript/Language/4 Objects/2 Array.md",
+    "JavaScript/Language/1 Data Types/3.2 string modifying methods.md",
+    "JavaScript/Language/1 Data Types/3.1 string methods.md",
+    "JavaScript/Language/1 Data Types/3 string type.md",
+    "JavaScript/Language/1 Data Types/2.1 number methods.md",
+    "JavaScript/Language/1 Data Types/2 number type.md",
+    "JavaScript/Language/1 Data Types/0 types & methods.md",
+    "JavaScript/Language/2 Structure/Conditionals",
+    "JavaScript/Language/2 Structure/Loops",
+    "JavaScript/src",
+    "JavaScript/Managing DOM",
+    "JavaScript/Language",
+    "Z",
+    "JavaScript/Managing DOM/DOM",
+    "JavaScript/Language/1 Data Types",
+    "JavaScript/Language/2 Structure",
+    "JavaScript/Language/3 Functions",
+    "Z/Pasted image 20241005220312.jpg"
   ]
 }
