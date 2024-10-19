@@ -1,8 +1,11 @@
 body {
-    color: red;
+    color: burlywood;
     text-align: center;
 }
 
+h2 {
+    color: darkorange;
+}
 #jsLanguage {
     display: flex;
     gap: 30px;
