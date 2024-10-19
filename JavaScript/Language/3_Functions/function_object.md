@@ -86,7 +86,7 @@ func();
 
 
 # Closure
-[[4 return, call stack, recursion#Closure ???]]
+[[4_return_call_stack_recursion#Closure ???]]
 
  [Closure](https://javascript.info/new-function#closure)
 

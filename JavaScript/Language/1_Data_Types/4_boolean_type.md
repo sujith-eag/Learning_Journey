@@ -30,7 +30,7 @@ The first difference it returns a value.
 Longer ones are greater than short ones.
 
 _____
-[[Type Conversions]]
+[[Type_Conversions]]
 ____
 
 ### Strict Comparison  `===`   `!==`

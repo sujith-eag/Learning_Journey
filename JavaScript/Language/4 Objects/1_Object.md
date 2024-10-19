@@ -180,7 +180,7 @@ alert( user[key] );  // John ???
 
 _________
 # for..in loop
-[[4 for...in loop|Details here]]
+[[4_for...in_loop|Details here]]
 ______________
 
 # Property Value Shorthand

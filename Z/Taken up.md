@@ -51,14 +51,15 @@ __________________
 * 
 
 ______
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ___________________________
 
 # Next In Queue
 Project Ideas
-* {API integration with web scraping to get summary, select details about a company, background, requirements, current activity etc. }
+* That Calculator with a interface.
 * Information management System with dashboard for lookup and edit with database.
-* That Calculator with a interface
+* ***AI API integration with web scraping to get summary***, select details about a company, background, requirements, current activity etc. (AI)
+* ***News summary and blog making (AI)***
 * 
 
 Python
@@ -92,7 +93,7 @@ JAVA
 Linux Terminal
 
 _________________
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 _____________
 
 # Crumbs to pick up
