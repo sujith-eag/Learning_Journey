@@ -1,0 +1,12 @@
+body {
+    color: red;
+    text-align: center;
+}
+
+#jsLanguage {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
