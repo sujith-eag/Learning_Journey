@@ -32,6 +32,9 @@ code block with language insertions
 
 >[!info] 
 >Information Block  >[!info]
+>On formatting text and links
+>https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax
+
 
 >[!note] : Name
 Name, Something more here
