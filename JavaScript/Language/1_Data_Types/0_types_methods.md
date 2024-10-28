@@ -95,6 +95,3 @@ let num = Number("123");
 ```
 
 `null` and `undefined` have no corresponding wrapper objects so they have no methods. So they are the most primitive. 
-```
-```
-

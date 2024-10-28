@@ -4,25 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "cacdd635c427d89f",
+        "id": "e6ae10476ddb3156",
         "type": "tabs",
         "children": [
           {
-            "id": "f26d1b1609b65573",
+            "id": "3002fe2ed991a0a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Language/Variable_or_Bindings.md",
+                "file": "Backend.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Variable_or_Bindings"
+              "title": "Backend"
+            }
+          },
+          {
+            "id": "5fef8688844fe646",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 Pipeline.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1 Pipeline"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nami",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,44 +179,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f26d1b1609b65573",
+  "active": "5fef8688844fe646",
   "lastOpenFiles": [
-    "JavaScript/Language/7_OOP.md",
-    "JavaScript/Language/4 Objects/rest_and_spread.md",
-    "JavaScript/Language/4 Objects/Map_and_Set.md",
-    "JavaScript/Language/4 Objects/2.5_sort_method.md",
-    "JavaScript/Language/4 Objects/2.4_reduce_method.md",
-    "JavaScript/Language/4 Objects/2.3_map_method.md",
-    "JavaScript/Language/4 Objects/2.2_filter_method.md",
-    "JavaScript/Language/4 Objects/2.1_Array_Methods.md",
-    "JavaScript/Language/4 Objects/2_Array.md",
-    "JavaScript/Language/4 Objects/1.4_constructor_new.md",
-    "JavaScript/Language/4 Objects/1.3_this.md",
-    "JavaScript/Language/4 Objects/1.2.1_Object.keys(obj).md",
-    "JavaScript/Language/4 Objects/1.2_object_reference_copying.md",
-    "JavaScript/Language/4 Objects/1.1_assigning_properties.md",
-    "JavaScript/Language/4 Objects/1_Object.md",
-    "JavaScript/Language/3_Functions/function_object.md",
-    "JavaScript/Language/3_Functions/6_Decorators.md",
-    "JavaScript/Language/3_Functions/5_Scheduling.md",
-    "JavaScript/Language/3_Functions/4_return_call_stack_recursion.md",
-    "JavaScript/Language/3_Functions/3.3_parameters_arguments.md",
-    "JavaScript/Language/3_Functions/3.2_scope_of_variable.md",
-    "JavaScript/Language/3_Functions/3.1.1_arrow_function.md",
-    "JavaScript/Language/3_Functions/3.1_defining_function.md",
-    "JavaScript/Language/3_Functions/3_Function.md",
-    "JavaScript/Language/2_Structure/Loops/Iterables.md",
-    "JavaScript/Language/2_Structure/Loops/Breaking_out_of_loop.md",
+    "Backend.md",
+    "1 Pipeline.md",
+    "Frontend.md",
+    "DSA.md",
+    "Projects.md",
+    "Z/In Line.md",
+    "Z/Pasted image 20241005220312.jpg",
+    "Bash Terminal/Bash Doc/cat-concatenation.md",
+    "JavaScript/Language/1_Data_Types/Type_Conversions.md",
+    "JavaScript/Language/1_Data_Types/Basic_operators_maths.md",
+    "JavaScript/Language/1_Data_Types/4_boolean_type.md",
+    "JavaScript/Language/1_Data_Types/3.2_string_modifying_methods.md",
+    "JavaScript/Language/1_Data_Types/3.1_string_methods.md",
+    "JavaScript/Language/1_Data_Types/3_string_type.md",
+    "JavaScript/Language/1_Data_Types/2.1_number_methods.md",
+    "JavaScript/Language/1_Data_Types/2_number_type.md",
+    "JavaScript/Language/1_Data_Types/1_empty_type.md",
+    "JavaScript/Language/1_Data_Types/0_types_methods.md",
+    "HTML/6 DOM Events.md",
+    "JavaScript/Managing DOM/3 DOM Events/3.1 Events.md",
+    "HTML/5.md",
+    "HTML/4 Input and types.md",
+    "HTML/3 Links and Images.md",
+    "HTML/2 Texts & Lists.md",
+    "HTML/3 Lists.md",
+    "HTML/0 HTML.md",
+    "HTML/1 Boilerplate.md",
+    "Bash Terminal/Bash Doc",
+    "pkg.go.dev/text",
+    "pkg.go.dev",
+    "Add-on/Hugo",
     "JavaScript/Managing DOM/4 UI Events",
     "JavaScript/Managing DOM/3 DOM Events",
     "JavaScript/Managing DOM/2 DOM modification",
     "JavaScript/Language/2_Structure/Conditionals",
     "JavaScript/Language/2_Structure/Loops",
-    "JavaScript/src",
-    "JavaScript/Managing DOM",
-    "JavaScript/Language",
-    "Z",
-    "JavaScript/Managing DOM/1 DOM Basics",
-    "Z/Pasted image 20241005220312.jpg"
+    "JavaScript/src"
   ]
 }

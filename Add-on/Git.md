@@ -18,7 +18,7 @@ git config --global color.ui auto
 git config --global pull.rebase false
 ```
 
-# Connecting git to github with SSH
+## Connecting git to github with SSH
 
 ### SSH key
 ```c
@@ -35,7 +35,7 @@ cat ~/.ssh/id_ed25519.pub   // copy the SSH key
 `add SSH key`
 
 
-# Basic git commands
+## Basic git commands
 
 ```c
 git status    // shows tracked, untracked, staged files
@@ -62,7 +62,7 @@ The commit message can be made as next entry by setting VScode as default
 
 
 
-# GitHub to Git 
+## GitHub to Git 
 ```c
 `New repository` in github
 `Code`  copy `SSH option`  not the `http`
@@ -171,5 +171,19 @@ git push origin rps  // not the main branch
 
 git push -u origin <branch>
 // It automatically links local branch you push with remote one.
+
+```
+
+## Changing to old commit
+```c
+git log --oneline
+
+get the id of commit 
+
+git reset --hard 9digitId   // deleted current progress
+
+git checkout -b old-state id  // 
+
+git revert  // to make revert commits
 
 ```

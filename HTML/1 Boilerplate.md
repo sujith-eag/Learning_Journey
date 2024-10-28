@@ -3,26 +3,34 @@ HTML (HyperText Markup Language) defines the structure and content of webpages.
 We use HTML elements to create all of the paragraphs, headings, lists, images, and links that make up a typical webpage.
 
 ## Elements and tags
+
 All elements of HTML are wrapped in opening and closing HTML tags.
 `<p>`   Opening tag (angle brackets with keyword) mark the beginning  
 `</p>` Closing tag shows elements end, has forward slash before key word
-`<p>paragrah text</p>`
+```html
+<p>paragrah text</p>
+```
 [[Catalog of Tags]]
 
 Elements are containers for content, with the tags telling what content the element contains.
 Using the correct element for content is called semantic HTML.
+
+
 #### Void Elements
+
 `<meta>`   `<link>`   `<br>`  `<img>` 
 Void elements are void of any content so they have a single tag.
 
 Previously they were called self-closing tags `<br /> or  <img />`   not necessary to do this now with latest version of HTML. So now these are called invalid.
+
+
 #### HTML file
-`index.html` file
+
 A HTML file containing the homepage of the website should be `index.html` because servers will first look for that by default.
 
 
-
 ## HTML Boilerplate
+
 All HTML documents need the same basic structure or boilerplate that needs to be in place before anything useful can be done.
 
 ### 1 Doctype
@@ -97,12 +105,15 @@ is where all the contents that will be displayed to users will go - text, images
 
 
 
+_______
 
-### VScode boilerplate shortcut
+## VScode boilerplate shortcut
+
 If a file is `.html` type then, in the empty `index.html` file enter `!` select the first option
 to get the full boilerplate code.
 
 ### To open the file
+
 Drag and drop in address bar of browser or double click
 or
 in the directory having the file `google-chrome index.html`

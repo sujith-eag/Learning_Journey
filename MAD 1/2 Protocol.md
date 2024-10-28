@@ -1,12 +1,10 @@
 ```
-TCP   BGP  UDP  IP  SMTP   HTTP
-
-Transfer Control protocol
-Border gateway protocol
-udp
-Internet protocol
-smtp
-Hypertext transfer protocol
+TCP  Transfer Control protocol
+BGP  Border gateway protocol
+UDP  
+IP   Internet protocol
+SMTP 
+HTTP Hypertext transfer protocol
 ```
 
 
