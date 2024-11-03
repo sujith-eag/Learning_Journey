@@ -6,6 +6,7 @@
 - [ ] Projects in Git need "Read me" and also about page linking to "site" (Projects site done, Blog site pending) 
 ##### Stuck in
 - [ ] (not working) Making the Public folder be main so Dependency can be cut off. Forking is a way which will lead to degradation of parts and i have to maintain it.
+- [ ] to make the node modules and dependency cache using `action/cache` to prevent re download
 ##### Done
 - [x] A display site for projects using ~~jekyll~~  Hugo and github pages
 - [x] Getting Sujith's Library Online with Bash Intro

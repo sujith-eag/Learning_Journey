@@ -18,11 +18,11 @@ ____________
 
 ## Application Development Environment
 
-- [ ] Course: Modern Application Development II, IIT Madras
+- [ ] Course: Modern Application Development I, IIT Madras
 - [ ] Book: The Pragmatic Programmer
 
 #### Unassigned
-* Course: Modern Application Development I, IIT Madras
+* Course: Modern Application Development II, IIT Madras
 * Course: Design and analysis of algorithms IIT Bombay/Madras
 * Book: Understanding Distributed Systems - Roberto Vitillo
 

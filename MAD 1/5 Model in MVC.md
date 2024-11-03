@@ -18,7 +18,7 @@ Easy lookup of data
 ***Lists or Dictionaries*** can be used also with key value pair to store data
 
 ***Defining Objects***  to store data
-```
+```python
 class Student:
 	id_next = 0      # class variable
 

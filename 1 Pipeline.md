@@ -1,11 +1,14 @@
 
-
+Find Questions for all
 
 _____________
 Projects
 - [ ] That Calculator with a interface for Odin Last project.
+- [ ] A clock
+Website
 - [ ] DSA and Algorithms to Sujith's Library
 - [ ] A blog site for Book resources to be more of a Gallery and Blog using Hugo and netlify. Can i make is just HTML/CSS/JS??
+- [ ] DSA and Leetcode site, Bit more visual and images, blog kind (stack??) 
 
 Python
 - [ ] ***Book:*** Python Crash Course,  (In Project)
@@ -27,12 +30,13 @@ HTML/CSS
 - [ ] Figma for designing
 
 HUGO
-- [ ] ***Book:*** Hugo in action, Build websites with Hugo
+- [ ] ==***Book:***== Hugo in action, Build websites with Hugo
 - [ ] ***Book:*** Build websites with hugo - Brian P Hogan
 
 DBMS/DSA
-- [ ] Course: Modern Application Development II, IIT Madras
+- [ ] ==Course:== Modern Application Development I, IIT Madras ( Theory parts going on now)
 - [ ] Course: Programming, Data Structures and Algorithms using python by IIT Bombay
 - [ ] ***Book:*** Classic computer science problems in python
+- [ ] ==***Book:***== grokking algorithms - Aditya Bhargava
 - [ ] ***Book:*** The Pragmatic Programmer
 - [ ] ***LEETCODE***

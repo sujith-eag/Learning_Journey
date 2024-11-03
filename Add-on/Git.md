@@ -1,189 +1,174 @@
-#01sep24 
-## Git related   
-[Pro Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
-#### Basic setup
-```c
-git --version
+## Introduction to Git
+- **[Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)**: A comprehensive guide to Git.
 
-// to change default branch to main
+## Basic Setup
+```bash
+git --version  # Check Git version
+
+# Change default branch to main
 git config --global init.defaultBranch main
 
-git config --global user.name  // "Name"                    
-git config --get user.name
-git config --global user.email // "mail@mail"       
-git config --get user.email
-git config --global color.ui auto
+git config --global user.name "Your Name"  # Set username
+git config --get user.name                   # Retrieve username
+git config --global user.email "mail@mail.com"  # Set email
+git config --get user.email                   # Retrieve email
+git config --global color.ui auto             # Enable colored output
 
-git config --global pull.rebase false
+git config --global pull.rebase false         # Disable rebase on pull
+```
+git pull: This command is used to fetch changes from a remote repository and merge them into your current branch. By default, it performs a merge.
+Rebasing: This is an alternative to merging where Git re-applies your local changes on top of the changes fetched from the remote.
+
+## Connecting Git to GitHub with SSH
+
+### Setting Up SSH Key
+```bash
+ls ~/.ssh/id_ed25519.pub  # Check if SSH key exists
+
+ssh-keygen -t ed25519     # Create a new SSH key
+# Press Enter for default location and no passphrase
+
+cat ~/.ssh/id_ed25519.pub  # Copy the SSH key
 ```
 
-## Connecting git to github with SSH
+### Adding SSH Key to GitHub
+1. Go to **Settings** → **SSH and GPG keys**.
+2. Click **New SSH key** and paste the SSH key.
 
-### SSH key
-```c
-ls ~/.ssh/id_ed25519.pub      // To check if key already exists
+## Basic Git Commands
+```bash
+git status                          # Show tracked, untracked, staged files
 
-ssh-keygen -t ed25519    // To create a new SSH key
-// enter for default place and no passkey
+git add [file name]                 # Add specific file to staging area
+git add .                           # Add all files to staging area
 
-cat ~/.ssh/id_ed25519.pub   // copy the SSH key
-```
-### SSH link to GitHub
-`settings   SSH and GPG keys`
-`new SSH key`
-`add SSH key`
+git commit -m "message"             # Commit staged files with a message
 
+git log                             # Show commit history
+q                                   # Exit log view if it's too long
 
-## Basic git commands
-
-```c
-git status    // shows tracked, untracked, staged files
-
-git add [file name]   // to add to staging area
-git add .   // adds all available file to staging area
-
-git commit -m "message"  // commits all files in staging area
-
-git log   // the details of commits and difference b/w git and github
-q  // to escape if it is too long
-
-git push
-git push origin main
+git push                            # Push changes to the remote repository
+git push origin main                # Push to the main branch
 ```
 
-### Through VScode
-`code .` open a required directory and type to open current directory in git
-other things remain the same
-
-The commit message can be made as next entry by setting VScode as default
-`git config --global core.editor "code --wait"`
-
-
-
-
-## GitHub to Git 
-```c
-`New repository` in github
-`Code`  copy `SSH option`  not the `http`
-```
-#### Repo in Git
-```c
-mkdir repos  //Make a new folder
-cd repos   // move to that repo
-
-git clone [paste the ssh link]     // link the repo to github
-cd [the new folder]
-git remote -v      // will show the details of git link
+### Using Git in VS Code
+- Open the terminal in VS Code: `code .`
+- To set VS Code as the default editor for commit messages:
+```bash
+git config --global core.editor "code --wait"
 ```
 
-# Git to GitHub
-```c
-// Go to the directory, initialize it, commit it
-git init  
-git add .
-git commit -m "message"   // to create repo in a folder
-```
-create an empty repository in github
-dont add any readme files or licenses
-once created copy the SSH key
+## GitHub to Git
+1. **Creating a New Repository**:
+   - In GitHub, click **New repository**.
+   - Select **Code**, then copy the SSH link (not the HTTP link).
 
-#### In git 
-```c
-git remote add origin [ssh key]
-git branch -M main     // make branch main if by chance it is in master
-git push -u origin main     // git push origin main` also worked
+### Cloning a Repository
+```bash
+mkdir repos                      # Create a new directory
+cd repos                         # Navigate to that directory
+
+git clone [paste the ssh link]  # Clone the repo from GitHub
+cd [the new folder]             # Navigate into the cloned folder
+git remote -v                    # Show the linked GitHub repository
 ```
 
+## Pushing Local Repository to GitHub
+```bash
+git init                          # Initialize a new Git repository
+git add .                         # Stage all files
+git commit -m "message"          # Commit the changes
 
-# Commit messages
-Have a Subject and Body, GitHub has 72-characters limit
-
-## The seven rules of a great Git commit message
-
-1. Separate subject from body with a blank line
-2. Limit the subject line to 50 characters
-3. Capitalize the subject line
-4. Do not end the subject line with a period
-5. Use the imperative mood in the subject line
-6. Wrap the body at 72 characters
-7. Use the body to explain _what_ and _why_ vs. how
-
-
--   
-    Tutorial video on Conventional Commits ➔ [Video Link](https://www.youtube.com/watch?v=OJqUWvmf4gg).
-    The video showcases the Conventional Commits template from the resource above. It also mentions creating releases and shows using something called “Yarn”. 
-___
-
-
-# Branches
-
-`git branch` can be used to see all the current branches
-
-The branch that was created when the first commit was made is called the main branch.
-Other branches can be made to work on a certain feature as a feature branch.
-
-```c
-git branch
-
-git branch <branch_name>
-// New branch can be made using the command
-
-git checkout <branch_name>
-// Changing into a new branch is done using
-
-// using -b flag to create a new branch and changing into it
-git checkout -b <branch_name>
-
-// Changing back to main branch from any branch
-git checkout main
-```
-``
-
-# Merge
-
-When wanting to merge the feature branch into the main branch
-```c
-// Move to the branch to merge with
-
-git merge <branch_name>
-// takes the changes commited in <branch_name> and adds them to the branch that we are currently on.
+# Create an empty repository on GitHub (without README or license)
+git remote add origin [ssh key]  # Link to the GitHub repository
+git branch -M main               # Rename current branch to main (if necessary)
+git push -u origin main          # Push changes to GitHub
 ```
 
-### Merge Conflict
+## Commit Messages
+- Follow the seven rules of a great Git commit message:
+  1. Separate subject from body with a blank line.
+  2. Limit subject line to 50 characters.
+  3. Capitalize the subject line.
+  4. Do not end the subject line with a period.
+  5. Use the imperative mood in the subject line.
+  6. Wrap the body at 72 characters.
+  7. Explain _what_ and _why_ in the body, not _how_.
 
-When same lines in a file have been changed by two different branches, there will be merge conflict.
+- **Tutorial Video**: [Conventional Commits](https://www.youtube.com/watch?v=OJqUWvmf4gg)
 
-### Deleting a branch
-```c
-git branch -d <branch_name>
-// when branch is already merged with main
-
-git branch -D <branch_name>
-// when it hasn't been merged
+## Branches
+- Use `git branch` to see all branches.
+- To create a new branch:
+```bash
+git branch <branch_name>              # Create a new branch
+git checkout <branch_name>             # Switch to the branch
+git checkout -b <branch_name>          # Create and switch to a new branch
+git checkout main                      # Switch back to the main branch
 ```
 
-
-Pushing a new branch to git hub
-```c
-git checkout -b rps
-git push origin rps  // not the main branch
-
-git push -u origin <branch>
-// It automatically links local branch you push with remote one.
-
+## Merging Branches
+```bash
+# Move to the branch you want to merge into
+git merge <branch_name>  # Merge changes from <branch_name>
 ```
 
-## Changing to old commit
-```c
-git log --oneline
+### Merge Conflicts
+- Occur when changes to the same line in a file are made in different branches.
 
-get the id of commit 
-
-git reset --hard 9digitId   // deleted current progress
-
-git checkout -b old-state id  // 
-
-git revert  // to make revert commits
-
+### Deleting a Branch
+```bash
+git branch -d <branch_name>  # Delete a merged branch
+git branch -D <branch_name>  # Force delete an unmerged branch
 ```
+
+### Pushing a New Branch to GitHub
+```bash
+git checkout -b <branch_name>    # Create and switch to the new branch
+git push origin <branch_name>     # Push the branch to GitHub
+git push -u origin <branch_name>  # Link the local branch with the remote one
+```
+
+## Changing to an Old Commit
+```bash
+git log --oneline                  # View commit history
+# Get the commit ID from the log
+git reset --hard [9digitId]       # Reset to that commit (deletes progress)
+git checkout -b old-state [id]    # Create a new branch at the old commit
+git revert [commit_id]             # Revert a specific commit
+```
+
+---
+
+### Additional Topics to Explore
+
+1. **Git Workflow Models**:
+   - Overview of workflows like Git Flow, GitHub Flow, etc.
+
+2. **Remote Management**:
+   - How to manage multiple remotes and their configurations.
+
+3. **Stashing Changes**:
+   - Using `git stash` to temporarily save changes.
+
+4. **Rebasing**:
+   - Introduction to rebasing vs. merging and its implications.
+
+5. **Using Tags**:
+   - How to create and manage tags for releases.
+
+6. **Working with Submodules**:
+   - Overview of using submodules for managing dependencies.
+
+7. **Collaborative Work**:
+   - Best practices for collaborating on GitHub (pull requests, code reviews).
+
+8. **Git Hooks**:
+   - Introduction to hooks for automating tasks at different points in the Git workflow.
+
+9. **Git GUI Clients**:
+   - Overview of popular GUI clients for Git and their features.
+
+10. **Troubleshooting Common Issues**:
+    - Tips for resolving common Git issues (merge conflicts, detached HEAD, etc.).
