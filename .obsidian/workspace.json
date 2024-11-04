@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAD 1/18 Pytest.md",
+                "file": "HTML/6 DOM Events.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "18 Pytest"
+              "title": "6 DOM Events"
             }
           }
         ],
@@ -181,8 +181,15 @@
   },
   "active": "8ea4a8748bc820d8",
   "lastOpenFiles": [
-    "MAD 1/17 Test Generation.md",
+    "HTML/5.md",
+    "HTML/4 Input and types.md",
+    "HTML/3 Links and Images.md",
+    "HTML/2 Texts & Lists.md",
+    "HTML/1 Boilerplate.md",
+    "HTML/6 DOM Events.md",
+    "JavaScript/Managing DOM/3 DOM Events/3.1 Events.md",
     "MAD 1/18 Pytest.md",
+    "MAD 1/17 Test Generation.md",
     "MAD 1/Untitled",
     "MAD 1/16 Levels of Testing.md",
     "MAD 1/15 Testing.md",
@@ -201,13 +208,6 @@
     "Frontend.md",
     "DSA.md",
     "Projects.md",
-    "MAD 1/6 Controller in MVC.md",
-    "MAD 1/4 Usability and Accessibility.md",
-    "MAD 1/7 API Design & REST.md",
-    "MAD 1/8 OpenAPI.md",
-    "MAD 1/5 Model in MVC.md",
-    "MAD 1/3 App.md",
-    "MAD 1/2 Protocol.md",
     "Z/Pasted image 20241005220312.jpg",
     "Bash Terminal/Bash Doc",
     "pkg.go.dev/text",

@@ -1,101 +1,98 @@
-#02sep24
 
-### Paragraphs  `<p> </p>`    
+# HTML Notes (02 Sep 2024)
 
-All text can be put inside the `<body>` but the spaces will not be considered so paragraph tag can be used.
+### Paragraphs `<p> </p>`
 
+All text can be placed inside the `<body>`, but spaces will not be considered without using paragraph tags. The `<p>` tag can be used to create distinct paragraphs.
 
-### Headings `<h1>  </h1>`
+### Headings `<h1> </h1>`
 
-The larger and bolder texts form the headings, there are 6 versions from `<h1>` to `<h6>`
+Headings are larger and bolder texts, with six levels of headings available from `<h1>` (most important) to `<h6>` (least important).
 
+### Strong `<strong> </strong>`
 
-### Strong `<strong>  </strong>`
+The `<strong>` tag indicates the importance, seriousness, or urgency of a word or section of content, without altering its original meaning.
 
-The `<strong>` tag is used when we want to indicate the importance, seriousness, or urgency of a word or section of content without changing the meaning of the content itself.
+### Emphasis `<em> </em>`
 
+The `<em>` tag places stress on a piece of content in a way that changes its meaning, often indicating verbal stress.
 
-### Emphasis `<em>  </em>`
+### Italic `<i> </i>`
 
-The `<em>` tag places stress emphasis on a particular piece of content in a way that changes the actual meaning of the content with verbal stress.
+The `<i>` tag is used to convey a different mood or voice from the surrounding content. It’s often applied to foreign words, idiomatic phrases, technical terms, ship names, or thoughts.
 
+### Bold `<b> </b>`
 
-### Italic `<i>  </i>`
+The `<b>` tag draws attention to a word or section of content for utilitarian purposes, without conveying additional importance or emphasis. It is the least semantic of the tags discussed.
 
-The `<i>` tag is used to convey a different mood or voice from the surrounding content. It’s often used with foreign words or idiomatic phrases, technical terms, ship names, thoughts, etc
+### Small `<small> </small>`
 
+The `<small>` tag defines smaller text, typically for side comments or fine print.
 
-### Bold `<b>  </b>`
+### Highlight/Mark `<mark> </mark>`
 
-The `<b>` tag draws attentions to word or section of content for utilitarian purposes without conveying extra importance, emphasis, alternate voice or mood, etc. It is the _least_ semantic of the HTML tags we’ve discussed in this post, and should only be used when no other tag is more appropriate.
+The `<mark>` tag highlights text for reference or importance.
 
-______
+### Strike Out/Delete `<del> </del>`
 
-### Small `<small>  </small>`
-Defines smaller text
+The `<del>` tag represents content that has been deleted, often rendered with a strikethrough.
 
-### Highlight / mark `<mark>  </mark>`
+### Insert `<ins> </ins>`
 
-### Strike out / delete  `<del>  </del>`
+The `<ins>` tag shows newly inserted content, typically underlined.
+After deletion other word can be shown as inserted, which is represented by underline.
 
-### Insert `<ins>  </ins>`
-after deletion other word can be shown as inserted, which is represented by underline.
+### Subscript `<sub> </sub>`
 
-### Subscript `<sub>  </sub>`
-Used to denote the text which is half the size and at lower part of text, similar to formulas in maths chemistry.
+The `<sub>` tag denotes text that appears half the size and at a lower position, similar to mathematical or chemical formulas.
 
-### Superscript `<sup>  </sup>`
-The text appears half a character above the normal line and in small font. Superscript text can be used to show footnotes links.
+### Superscript `<sup> </sup>`
 
+The `<sup>` tag displays text that appears half a character above the normal line and in a smaller font, useful for footnotes or exponentiation.
 
-## Nesting and Indentation
+---
 
-Nesting is used to show the parent, child and sibling tag relation.  
-Indentation is used to make this relationships easier to see.
+### Nesting and Indentation
 
+Nesting is used to show parent, child, and sibling tag relationships. Indentation makes these relationships easier to see.
 
-## HTML Comments `<!-- text-->`
-VScode shortcut for comment,  `Ctrl + /` to convert any line into comment or revert it.
+### HTML Comments `<!-- text -->`
 
-____________
+To comment out lines in VSCode, use the shortcut `Ctrl + /` to convert any line into a comment or revert it.
+
+---
 
 ## Lists
 
-### Unordered Lists  `<ul>  <li> </li>  </ul>`       #02sep24 
-Used when the order doesn't matter. each item in the list is represented by `<li>` which will be represented by a bullet point of circle, square or dot. The styles will be defined by CSS `line-style-type`
+### Unordered Lists `<ul> <li> </li> </ul>`
 
+Used when the order of items doesn’t matter. Each item in the list is represented by `<li>`, which will typically be displayed as a bullet point (circle, square, or dot). The style is defined by CSS with the `list-style-type` property.
 
-### Ordered Lists `<Ol>  <li> </li>  </ul>`
-For creating a list of items where order and numbering does matter.
-By default `<ol>` will assign numbers to each of the list items added.
+### Ordered Lists `<ol> <li> </li> </ol>`
 
-Both can be listed inside the other as much as needed.
-if a second list has to be nested inside the second item, then it should be inside it's `<li>  </li>`
+For creating lists where the order and numbering are important. By default, `<ol>` assigns numbers to each list item.
 
-```HTML
+Both unordered and ordered lists can be nested inside one another as needed. If a second list needs to be nested inside a list item, it should be placed within its `<li> </li>`.
+
+```html
 <ul>
-  <li>first item</li>
+  <li>First item</li>
   <li>
-    second item
-    <!-- Look, the closing </li> tag is not placed here! -->
+    Second item
     <ul>
-      <li>second item first subitem</li>
+      <li>Second item first subitem</li>
       <li>
-        second item second subitem
-        <!-- Same for the second nested unordered list! -->
+        Second item second subitem
         <ul>
-          <li>second item second subitem first sub-subitem</li>
-          <li>second item second subitem second sub-subitem</li>
-          <li>second item second subitem third sub-subitem</li>
+          <li>Second item second subitem first sub-subitem</li>
+          <li>Second item second subitem second sub-subitem</li>
+          <li>Second item second subitem third sub-subitem</li>
         </ul>
       </li>
-      <!-- Closing </li> tag for the li that
-                  contains the third unordered list -->
-      <li>second item third subitem</li>
+      <li>Second item third subitem</li>
     </ul>
-    <!-- Here is the closing </li> tag -->
   </li>
-  <li>third item</li>
+  <li>Third item</li>
 </ul>
 
 
@@ -110,24 +107,29 @@ if a second list has to be nested inside the second item, then it should be insi
 - third item
 ```
 
-## Global Attributes
+### Global Attributes for Ordered Lists
 
-`reversed`  numbered from high to low.    
-`start="4"` starts numbers from 4.  
-`type`  `a` for lowercase `A` for uppercase.  
-`i` for lower roman `I` for upper roman.  
+- `reversed`: Numbering from high to low.
+- `start="4"`: Starts numbering from 4.
+- `type`: Defines the numbering style (e.g., `a` for lowercase letters, `A` for uppercase letters, `i` for lowercase Roman numerals, `I` for uppercase Roman numerals).
 
-```HTML
-<ol start="4">        starts from 4
+Example of starting an ordered list from 4:
+
+```html
+<ol start="4">
+  <li>Fourth item</li>
 </ol>
 
-<ol reversed>  </ol>
+<ol reversed>
+  <li>First item</li>
+</ol>
 ```
 
-#### Value attribute
+#### Value Attribute
 
-Used on individual `<li>` within an ordered list to change the value of the list.
-```HTML
+Used on individual `<li>` elements within an ordered list to change the value of that list item:
+
+```html
 <ol>
   <li>Head north on N Halsted St</li>
   <li value="9">Turn right on W Diversey Pkwy</li>
@@ -135,13 +137,10 @@ Used on individual `<li>` within an ordered list to change the value of the list
 </ol>
 ```
 
-
 ### Description Lists
 
-Another type of list is the description list. 
-Description lists are used to outline multiple terms and their descriptions, as in a glossary, for example.
+Description lists outline multiple terms and their descriptions, useful for glossaries. They are created using the `<dl>` element, along with `<dt>` for the term and `<dd>` for the description.
 
-Creating a description list in HTML is accomplished using the description list block-level element, `<dl>`. 
 Instead of using a `<li>` element to mark up list items, the description list requires two block-level elements: 
 the description term element, `<dt>`, 
 and the description element, `<dd>`.
@@ -149,7 +148,7 @@ and the description element, `<dd>`.
 `<dd>` element includes a left `margin` by default.
 The definition term and the description that directly follows it correspond to one another; thus, the order of these elements is important.
 
-```HTML
+```html
 <dl>
   <dt>study</dt>
   <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd>
@@ -177,17 +176,14 @@ business
 work
 
 A person's regular occupation, profession, or trade
-
 ```
 
+### List-Style-Type Property
 
-### `list-style-type` property
-
-List items styling done through CSS.
-The style maybe placed on either the `<ul>  <ol>  or  <li>` elements within CSS.  [[List Styles]]
-
-```CSS
-/* Partial list of types */
+List items can be styled through CSS using the `list-style-type` property. The style can be applied to either `<ul>`, `<ol>`, or `<li>` elements.
+[[List Styles]]
+```css
+/* Partial list of styles */
 list-style-type: disc;
 list-style-type: circle;
 list-style-type: square;
@@ -196,20 +192,16 @@ list-style-type: georgian;
 list-style-type: trad-chinese-informal;
 list-style-type: kannada;
 
-/* <string> value */
-list-style-type: "-";
+/* Custom styling */
+list-style-type: "-"; /* Custom string value */
 
 /* Identifier matching an @counter-style rule */
 list-style-type: custom-counter-style;
-
-/* Keyword value */
-list-style-type: none;
+list-style-type: none; /* No list styling */
 
 /* Global values */
 list-style-type: inherit;
 list-style-type: initial;
 list-style-type: revert;
-list-style-type: revert-layer;
 list-style-type: unset;
 ```
-
