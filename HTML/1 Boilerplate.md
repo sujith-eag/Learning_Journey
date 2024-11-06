@@ -15,7 +15,7 @@ All elements of HTML are wrapped in opening and closing HTML tags.
 ```
 
 ### Catalog of Tags
-[[Catalog of Tags]]
+[[Catalog_of_Tags]]
 
 Elements are containers for content, with the tags indicating what content the element contains. Using the correct element for content is referred to as **semantic HTML**.
 

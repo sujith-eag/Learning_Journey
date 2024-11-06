@@ -1,4 +1,6 @@
+
 [Link to these](https://learn.shayhowe.com/html-css/creating-lists/)
+
 ```CSS
 /* Partial list of types */
 list-style-type: disc;
@@ -24,11 +26,10 @@ list-style-type: initial;
 list-style-type: revert;
 list-style-type: revert-layer;
 list-style-type: unset;
+```
 
+## A Trial Code for each
 
-
-
-# A Trial Code for each
 ```HTML
 <ol>
   <li>Apollo</li>

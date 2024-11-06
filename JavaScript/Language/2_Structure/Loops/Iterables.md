@@ -1,4 +1,5 @@
 https://javascript.info/iterable
+
 ## Symbol.iterator
 .
 .

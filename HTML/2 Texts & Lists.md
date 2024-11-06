@@ -181,7 +181,7 @@ A person's regular occupation, profession, or trade
 ### List-Style-Type Property
 
 List items can be styled through CSS using the `list-style-type` property. The style can be applied to either `<ul>`, `<ol>`, or `<li>` elements.
-[[List Styles]]
+[[List_Styles]]
 ```css
 /* Partial list of styles */
 list-style-type: disc;
