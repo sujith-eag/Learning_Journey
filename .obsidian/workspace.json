@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Language/2_Control_Flow/Loops/Iterables.md",
+                "file": "JavaScript/Language/2_Control_Flow/Loops/6_Iterables.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Iterables"
+              "title": "6_Iterables"
             }
           }
         ]
@@ -165,8 +165,7 @@
   },
   "active": "fb3768f034b60ad8",
   "lastOpenFiles": [
-    "JavaScript/Language/2_Control_Flow/Loops/Breaking_out_of_loop.md",
-    "JavaScript/Language/2_Control_Flow/Loops/Iterables.md",
+    "JavaScript/Language/2_Control_Flow/Loops/5_break-continue-labels.md",
     "JavaScript/Language/2_Control_Flow/Loops/4_for...in_loop.md",
     "JavaScript/Language/2_Control_Flow/Loops/3_for...of_loop.md",
     "JavaScript/Language/2_Control_Flow/Loops/2_for_loop.md",
@@ -176,6 +175,7 @@
     "JavaScript/Language/2_Control_Flow/Conditionals/2.3_ternary_operator.md",
     "JavaScript/Language/2_Control_Flow/Conditionals/2.2_switch_case.md",
     "JavaScript/Language/2_Control_Flow/Conditionals/2.1_if_else.md",
+    "JavaScript/Language/2_Control_Flow/Loops/6_Iterables.md",
     "JavaScript/Language/2_Structure/Conditionals/2.4_Nullish_coalescing.md",
     "JavaScript/src/JS_File_Structure.md",
     "JavaScript/Language/1_Data_Types/7_type_conversions.md",

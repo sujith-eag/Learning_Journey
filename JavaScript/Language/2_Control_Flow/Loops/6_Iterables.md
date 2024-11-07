@@ -1,9 +1,6 @@
 
 https://javascript.info/iterable
 
-### `Symbol.iterator` and Iterables in JavaScript
-
-
 ## **Iterable**
 
 Objects that can be used in `for..of` are called _iterable_.

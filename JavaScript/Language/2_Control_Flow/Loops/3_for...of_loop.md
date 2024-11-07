@@ -1,7 +1,7 @@
 
 
 [for…of](https://javascript.info/array#loops) and [iterables](https://javascript.info/iterable) for looping over arrays and iterable objects.
-[[Iterables|Iterable]]
+[[6_Iterables|Iterable]]
 
 ## **`for...of` Loop**
 
