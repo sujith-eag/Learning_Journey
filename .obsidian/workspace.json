@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Language/1_Data_Types/7_type_conversions.md",
+                "file": "JavaScript/Language/2_Control_Flow/Loops/1_while_do..while.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7_type_conversions"
+              "title": "1_while_do..while"
             }
           }
         ]
@@ -165,6 +165,20 @@
   },
   "active": "fb3768f034b60ad8",
   "lastOpenFiles": [
+    "JavaScript/Language/2_Control_Flow/Loops/2_for_loop.md",
+    "JavaScript/Language/2_Control_Flow/Loops/3_for...of_loop.md",
+    "JavaScript/Language/2_Control_Flow/Loops/4_for...in_loop.md",
+    "JavaScript/Language/2_Control_Flow/Loops/1_while_do..while.md",
+    "JavaScript/Language/2_Control_Flow/Loops/Iterables.md",
+    "JavaScript/Language/2_Control_Flow/Loops/Breaking_out_of_loop.md",
+    "JavaScript/Language/2_Control_Flow/Conditionals/2.5_short_circuiting_operators.md",
+    "JavaScript/Language/2_Control_Flow/Conditionals/2.4_logical_operators.md",
+    "JavaScript/Language/2_Control_Flow/Conditionals/2.3_ternary_operator.md",
+    "JavaScript/Language/2_Control_Flow/Conditionals/2.2_switch_case.md",
+    "JavaScript/Language/2_Control_Flow/Conditionals/2.1_if_else.md",
+    "JavaScript/Language/2_Structure/Conditionals/2.4_Nullish_coalescing.md",
+    "JavaScript/src/JS_File_Structure.md",
+    "JavaScript/Language/1_Data_Types/7_type_conversions.md",
     "JavaScript/Language/1_Data_Types/6_operators.md",
     "JavaScript/Language/1_Data_Types/5_boolean_type.md",
     "JavaScript/Language/1_Data_Types/4.2_modifying_string.md",
@@ -174,23 +188,9 @@
     "JavaScript/Language/1_Data_Types/3_number_type.md",
     "JavaScript/Language/1_Data_Types/2_values_types.md",
     "JavaScript/Language/1_Data_Types/1-Variables.md",
-    "JavaScript/src/JS_File_Structure.md",
-    "JavaScript/Language/1_Data_Types/7_type_conversions.md",
     "JavaScript/Language/1_Data_Types/1.1_empty_type.md",
     "JavaScript/src/structure.md",
     "HTML/Related Doc/HTML_tags_2.md",
-    "HTML/Related Doc/HTML_tags_1.md",
-    "HTML/Related Doc/Catalog_of_Tags.md",
-    "CSS/Related Doc/CSS_Sizing_Units.md",
-    "CSS/Related Doc/CSS_Color_values.md",
-    "CSS/9_Utility_Class_&_Inheritance.md",
-    "CSS/8_Axes_in_flexbox.md",
-    "CSS/7_Flexibility.md",
-    "CSS/6_Flexbox.md",
-    "CSS/5_Box_Model.md",
-    "CSS/4_Adding_CSS_to_HTML.md",
-    "CSS/3_Declaration.md",
-    "CSS/2_Multiple_Selectors.md",
     "MAD 1/Untitled",
     "Z/Pasted image 20241005220312.jpg",
     "Bash Terminal/Bash Doc",
@@ -200,7 +200,7 @@
     "JavaScript/Managing DOM/4 UI Events",
     "JavaScript/Managing DOM/3 DOM Events",
     "JavaScript/Managing DOM/2 DOM modification",
-    "JavaScript/Language/2_Structure/Conditionals",
-    "JavaScript/Language/2_Structure/Loops"
+    "JavaScript/Language/2_Control_Flow/Conditionals",
+    "JavaScript/Language/2_Control_Flow/Loops"
   ]
 }

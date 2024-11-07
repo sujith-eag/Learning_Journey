@@ -46,6 +46,15 @@ while(i) {
 }
 ```
 
+#### **Making 7 hash marks**  
+```js
+let hash = ""; // Start with an empty string
+
+while (hash.length < 7) {
+    hash += "#"; // Append one "#" to the string
+    console.log(hash); // Output the current string
+}
+```
 
 ## `do...while`
 

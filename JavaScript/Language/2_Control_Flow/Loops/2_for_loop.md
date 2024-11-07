@@ -101,3 +101,22 @@ for (; i< 3;) {
 
 
 ______
+
+#### **Chess Board**
+```js
+let size = 8; // Chessboard size (8x8)
+let board = "";
+
+for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+        if ((x + y) % 2 === 0) {
+            board += " "; // White square
+        } else {
+            board += "#"; // Black square
+        }
+    }
+    board += "\n"; // Newline after each row
+}
+
+console.log(board);
+```
