@@ -1,28 +1,28 @@
-# `while` and `do...while` loops
 
-## `while`
+## **`while` and `do...while` Loops**
 
-Similar to `for` loop, the same three parts exist in same order but spread out from keyword.
+### **1. `while` Loop**
 
-While `condition` is truthy, the code in `body` executes.
+The `while` loop executes the code inside its body **as long as** the condition evaluates to **truthy**. The condition is checked **before** each iteration.
+
 ```js
-initializer / counter variable
+initializer / counter variable;
 while (condition) {
-	// code to run in code body
-	final-expression
+    // code to run in the loop body
+    final-expression;  // increment or other operation
 }
-// final expression for incrementing
 ```
-A single execution of the loop body is called an iteration.
+
+A single execution of the loop body is called an **iteration**.
+
 ```js
 let number = 0;
 
 while (number <= 12) {
-	console.log(number);
-	number = number + 2;
+    console.log(number);
+    number = number + 2;  // Increment by 2
 }
-
-// 0  2 ... 10
+// Output: 0, 2, 4, 6, 8, 10, 12
 ```
 
 ```js
@@ -30,75 +30,106 @@ let result = 1;
 let counter = 0;
 
 while (counter < 10) {
-	result = 2 * result;
-	counter = counter + 1;
+    result = 2 * result;  // Multiply result by 2 each time
+    counter = counter + 1;  // Increment counter
 }
-console.log(result);
-
-// 1024  (finding 2 to the power of 10)
+console.log(result);  // Output: 1024 (2^10)
 ```
+
+#### **Shortened `while` condition:**
+
 shorter way to write `while (i != 0)`   is  `while(i)`
+If the condition is just a variable (e.g., `i`), it can be simplified:
+
 ```js
 let i = 3;
-while(i) {
-	alert( i);
-	i--;
+while (i) {
+    alert(i);  // Alert the current value of i
+    i--;  // Decrement i
 }
+// Output: Alerts 3, 2, 1, then stops as i becomes 0
 ```
 
-#### **Making 7 hash marks**  
 ```js
-let hash = ""; // Start with an empty string
+let hash = "";  // Start with an empty string
 
 while (hash.length < 7) {
-    hash += "#"; // Append one "#" to the string
-    console.log(hash); // Output the current string
+    hash += "#";  // Append one "#" to the string
+    console.log(hash);  // Output the current string
 }
+// Output:
+// "#"
+// "##"
+// "###"
+// "####"
+// "#####"
+// "######"
+// "#######"
 ```
 
-## `do...while`
+---
 
-a `do` loop always executes its body at least once. 
+### **2. `do...while` Loop**
 
-The loop will first execute the body, then check the condition, whether it should stop only after that first execution as the code comes before the condition.
+The `do...while` loop guarantees **at least one execution** of its body. It first executes the code block, then checks the condition. If the condition is truthy, it continues; otherwise, it stops.
+
 ```js
-initializer / counter variable
+initializer / counter variable;
 do {
-	// code to run
-	final-expression
-	} 
-while (condition)
+    // code to run in the loop body
+    final-expression;  // increment or other operation
+} while (condition);
 ```
 
 ```js
 let i = 0;
 do {
-	alert(i);
-	i++;
-} while (i<3);
+    alert(i);  // Alert the current value of i
+    i++;  // Increment i
+} while (i < 3);
+// Output: Alerts 0, 1, 2
 ```
 
+**Ensuring user input:**
 ```js
 let yourName;
 
 do {
-	yourName = prompt("who are you?");
-	} while (!yourName);
-console.log("Hello" + yourName);
+    yourName = prompt("Who are you?");  // Prompt the user for their name
+} while (!yourName);  // Continue if the input is falsy (e.g., empty string)
+console.log("Hello " + yourName);  // Output: "Hello <user's name>"
 ```
 
-This program will force you to enter a name unless it is not an empty string " ".
-Applying `!` operator converts a value to Boolean type and all strings except " " convert to true.
+In this example, the program will **force** the user to enter a name that isn’t an empty string or `null`. The `!` operator converts the value to a Boolean, and **any non-empty string** is considered **truthy**.
 
+---
 
-***Indenting Code***
-is optional in `js`,  the computer will accept the code without them and can even be written in a single line. The indentation makes the code more readable to humans.
+### **Indenting Code**
 
+Although indentation is not required in JavaScript, **proper indentation** makes the code more **readable** for humans. Even though JavaScript can run code in a single line, using proper indentation is a **best practice** to maintain clarity.
+
+**Without indentation:**
+```js
+if (true != false) {console.log("That makes sense."); if (1 < 2) {console.log("No surprise there.");}}
+```
+
+**With proper indentation:**
 ```js
 if (true != false) {
-	console.log("That makes sense.");
-	if (1 < 2) {
-		console.log("No surprise there.);
-		}
+    console.log("That makes sense.");
+    if (1 < 2) {
+        console.log("No surprise there.");
+    }
 }
 ```
+
+This structure makes the logic clearer and helps other developers (or your future self) easily understand your code.
+
+---
+
+### **Summary**
+
+- **`while` loop**: Checks the condition before executing the code block. It runs as long as the condition is **truthy**.
+- **`do...while` loop**: Executes the code block **at least once** and checks the condition **after** execution.
+- **Indentation**: While optional, proper indentation makes code more readable and maintainable.
+
