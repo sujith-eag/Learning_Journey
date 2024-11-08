@@ -58,32 +58,37 @@
 │       ├── service-workers.md
 │       └── websockets.md
 │
+
+
 ├── /02-DOM-Manipulation
-│   ├── /01-Basics
-│   │   ├── selecting-elements.md
-│   │   ├── modifying-elements.md
-│   │   ├── creating-elements.md
-│   │   ├── removing-elements.md
-│   │   └── event-handling.md
-│   ├── /02-Events
-│   │   ├── event-listeners.md
-│   │   ├── event-delegation.md
-│   │   ├── event-bubbling.md
-│   │   └── custom-events.md
-│   ├── /03-DOM-Traversal
-│   │   ├── parent-child-sibling.md
-│   │   ├── querySelector-vs-getElementById.md
-│   │   └── manipulating-node-tree.md
-│   ├── /04-Advanced-DOM
-│   │   ├── manipulating-styles.md
-│   │   ├── animations-and-transitions.md
-│   │   ├── local-storage-session-storage.md
-│   │   ├── creating-modals-accordions.md
-│   │   └── shadow-dom.md
-│   ├── /05-Performance-and-Optimization
-│   │   ├── reflow-vs-repaint.md
-│   │   ├── optimizing-reflows.md
-│   │   └── memory-leaks.md
+│   ├── /01-DOM-Basics
+│   │   ├── 1.1-DOM.md
+│   │   ├── 1.2-Navigating-DOM.md
+│   │   ├── 1.2.1-text-HTML-content.md
+│   │   ├── 1.3-selectors.md
+│   │   └── 1.4-attributes-properties.md
+│   ├── /02-DOM-modification
+│   │   ├── 2.1-DOM-modifying-basics.md
+│   │   ├── 2.2-modifying-practice.md
+│   │   ├── 2.3-class-attributes.md
+│   │   ├── 2.4-style.md
+│   │   └── 2.5-size-coordinates.md
+│   ├── /03-DOM-events
+│   │   ├── 3.1-events.md
+│   │   ├── 3.2-event-handlers.md
+│   │   ├── 3.3-event-practice.md
+│   │   └── 3.4-bubbling-event-delegation-browser-action.md
+│   ├── /04-UI-evnts
+│   │   ├── 4.1-mouse-events.md
+│   │   ├── 4.2-moving-mouse.md
+│   │   ├── 4.3-drag-n-drop.md
+│   │   ├── 4.4-pointer-events.md
+│   │   └── 4.5-keyboard.md
+│   ├── /not-placed
+│   │   ├── alert-prompt-confirm.md
+│   │   ├── debugging.md
+│   │   └── scripts-defer-async.md
+
 │   ├── /06-Accessibility
 │   │   ├── aria-roles.md
 │   │   ├── keyboard-navigation.md

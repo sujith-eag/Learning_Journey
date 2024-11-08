@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Language/2_Control_Flow/Loops/6_Iterables.md",
+                "file": "JavaScript/Language/5_Array/5_Array.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6_Iterables"
+              "title": "5_Array"
+            }
+          },
+          {
+            "id": "aa6b7070be8fa26a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/Language/4_Objects/4.5_constructor_new.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4.5_constructor_new"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5086555480957
+    "width": 266.5086555480957
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -163,34 +179,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb3768f034b60ad8",
+  "active": "aa6b7070be8fa26a",
   "lastOpenFiles": [
-    "JavaScript/Language/2_Control_Flow/Loops/5_break-continue-labels.md",
-    "JavaScript/Language/2_Control_Flow/Loops/4_for...in_loop.md",
-    "JavaScript/Language/2_Control_Flow/Loops/3_for...of_loop.md",
-    "JavaScript/Language/2_Control_Flow/Loops/2_for_loop.md",
+    "JavaScript/Language/4_Objects/4.4_methods_this_chaining.md",
+    "JavaScript/Language/4_Objects/4.3_Object.keys(obj).md",
+    "JavaScript/Language/4_Objects/4.1_object_properties.md",
+    "JavaScript/Language/4_Objects/4.2_cloning_object.md",
+    "JavaScript/Language/3_Functions/3.8_function_object.md",
+    "JavaScript/Language/3_Functions/3.7_Decorators.md",
+    "JavaScript/Language/3_Functions/3.6_Scheduling.md",
+    "JavaScript/Language/3_Functions/3.5_return_call_stack_recursion.md",
+    "JavaScript/Language/3_Functions/3.4_parameters_arguments.md",
+    "JavaScript/Language/3_Functions/3.3_scope_of_variable.md",
+    "JavaScript/Language/3_Functions/3.2_arrow_function.md",
+    "JavaScript/Language/3_Functions/3.1_defining_function.md",
+    "JavaScript/Language/3_Functions/3_Functions.md",
+    "JavaScript/Language/4_Objects/4.5_constructor_new.md",
+    "JavaScript/Language/4_Objects/4_Object.md",
+    "JavaScript/Language/5_Array/5_Array.md",
+    "JavaScript/Language/5_Array/5.1_Array_Methods.md",
+    "JavaScript/Language/5_Array/5.2_filter_method.md",
+    "JavaScript/Language/5_Array/5.3_map_method.md",
+    "JavaScript/Language/5_Array/5.4_reduce_method.md",
+    "JavaScript/Language/5_Array/5.5_sort_method.md",
+    "JavaScript/Language/5_Array/5.6_rest_spread.md",
+    "JavaScript/Language/5_Array/Map_and_Set.md",
     "JavaScript/Language/2_Control_Flow/Loops/1_while_do..while.md",
-    "JavaScript/Language/2_Control_Flow/Conditionals/2.5_short_circuiting_operators.md",
-    "JavaScript/Language/2_Control_Flow/Conditionals/2.4_logical_operators.md",
-    "JavaScript/Language/2_Control_Flow/Conditionals/2.3_ternary_operator.md",
-    "JavaScript/Language/2_Control_Flow/Conditionals/2.2_switch_case.md",
-    "JavaScript/Language/2_Control_Flow/Conditionals/2.1_if_else.md",
-    "JavaScript/Language/2_Control_Flow/Loops/6_Iterables.md",
-    "JavaScript/Language/2_Structure/Conditionals/2.4_Nullish_coalescing.md",
-    "JavaScript/src/JS_File_Structure.md",
-    "JavaScript/Language/1_Data_Types/7_type_conversions.md",
-    "JavaScript/Language/1_Data_Types/6_operators.md",
-    "JavaScript/Language/1_Data_Types/5_boolean_type.md",
-    "JavaScript/Language/1_Data_Types/4.2_modifying_string.md",
-    "JavaScript/Language/1_Data_Types/4.1_string_methods.md",
-    "JavaScript/Language/1_Data_Types/4_string_type.md",
-    "JavaScript/Language/1_Data_Types/3.1_number_methods.md",
-    "JavaScript/Language/1_Data_Types/3_number_type.md",
-    "JavaScript/Language/1_Data_Types/2_values_types.md",
-    "JavaScript/Language/1_Data_Types/1-Variables.md",
-    "JavaScript/Language/1_Data_Types/1.1_empty_type.md",
-    "JavaScript/src/structure.md",
-    "HTML/Related Doc/HTML_tags_2.md",
+    "JavaScript/Language/1_Data_Types/1.9_type_conversions.md",
+    "JavaScript/Language/1_Data_Types/1.8_operators.md",
+    "JavaScript/Language/5_Array",
+    "JavaScript/Language/4 Objects/Untitled",
     "MAD 1/Untitled",
     "Z/Pasted image 20241005220312.jpg",
     "Bash Terminal/Bash Doc",
@@ -199,8 +217,6 @@
     "Add-on/Hugo",
     "JavaScript/Managing DOM/4 UI Events",
     "JavaScript/Managing DOM/3 DOM Events",
-    "JavaScript/Managing DOM/2 DOM modification",
-    "JavaScript/Language/2_Control_Flow/Conditionals",
-    "JavaScript/Language/2_Control_Flow/Loops"
+    "JavaScript/Managing DOM/2 DOM modification"
   ]
 }
