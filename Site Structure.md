@@ -1,9 +1,26 @@
-```
+```bash
 /Python   10 to 299
 │
-├── /01-Language  10
-│   ├── /01-Data-types 10
+├── /01-Data-types  10-29
+│   ├── /01-Primitive-types 10-18
 │   │   ├── variables.md
+│   │   ├── int-float.md
+│   │   ├── string.md
+│   │   ├── string-manipulation.md
+│   │   ├── string-methods.md
+│   ├── /list.md
+│   ├── /list-methods.md
+│   ├── /list-operations.md
+│   ├── /arrays.md
+│   ├── /tuples.md
+│   ├── /dictionary.md
+
+├── /02-Conditionals-Control-flow  30-40
+│   ├── conditionals.md
+│   ├── if-elif-else.md
+│   ├── for-loop.md
+│   ├── while-loop.md
+
 │   │   └── 
 
 

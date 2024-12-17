@@ -1,14 +1,14 @@
 
-Find Questions for all
+Find Questions for all that comes 
 
 _____________
 Projects
 - [ ] That Calculator with a interface for Odin Last project.
 - [ ] A clock
 Website
-- [ ] DSA and Algorithms to Sujith's Library
-- [ ] A blog site for Book resources to be more of a Gallery and Blog using Hugo and netlify. Can i make is just HTML/CSS/JS??
-- [ ] DSA and Leetcode site, Bit more visual and images, blog kind (stack??) 
+- [ ] DSA and Leetcode to Sujith's Library (Why not a new site), Bit more visual and images, blog kind (stack??) 
+- [ ] A blog site for Book resources to be more of a Gallery and Blog using Hugo and netlify. Can i make is just HTML/CSS/JS ??
+- [ ] 
 
 Python
 - [ ] ***Book:*** Python Crash Course,  (In Project)

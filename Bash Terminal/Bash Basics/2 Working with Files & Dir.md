@@ -161,10 +161,10 @@ cp *.txt backup/  # Copies all .txt files to backup/
 ```bash {frame="none"}
 $ mkdir backup
 
-$ cd cretures/minotaur.dat creatures/unicorn.dat backup/
+$ cp cretures/minotaur.dat creatures/unicorn.dat backup/
 
-$ cd minotaur.dat unicorn.dat basilisk.dat
-#all three are file names, makes a error, this can be handled by using wildcards.
+$ cp minotaur.dat unicorn.dat basilisk.dat
+# all three are file names, makes error, this can be handled by using wildcards.
 ```
 
 ## Wildcards
