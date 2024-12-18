@@ -1,55 +1,52 @@
 {
   "main": {
-    "id": "4ca9617ef70c488b",
+    "id": "36e672ff1bc53311",
     "type": "split",
     "children": [
       {
-        "id": "e15828cd7e4b6256",
+        "id": "651de8382fe3b6a7",
         "type": "tabs",
         "children": [
           {
-            "id": "fb3768f034b60ad8",
+            "id": "5f69ced8f3deab38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Language/5_Array/5_Array.md",
+                "file": "New start in hugo.md",
                 "mode": "source",
-                "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5_Array"
+              "title": "New start in hugo"
             }
           },
           {
-            "id": "aa6b7070be8fa26a",
+            "id": "9e745caa48577150",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Data Structures/4.2_List_Implementation.md",
+                "file": "Side bar fix.md",
                 "mode": "source",
-                "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.2_List_Implementation"
+              "title": "Side bar fix"
             }
           },
           {
-            "id": "2446929d388076fd",
+            "id": "4c351e1bfae1084e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/File I-O.md",
+                "file": "Side bar fix.md",
                 "mode": "source",
-                "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File I-O"
+              "title": "Side bar fix"
             }
           }
         ],
@@ -59,15 +56,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f422a043c9315000",
+    "id": "164dbbb25dafa0d7",
     "type": "split",
     "children": [
       {
-        "id": "f9346b1df201130a",
+        "id": "cae272fab534bdf3",
         "type": "tabs",
         "children": [
           {
-            "id": "7be855190f0aed71",
+            "id": "efdc1b1390eba64b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -79,12 +76,12 @@
             }
           },
           {
-            "id": "261cc0279bd6c9e5",
+            "id": "b1feaedc6cc48ee2",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "cat path:\"Bash Terminal\"  ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +93,7 @@
             }
           },
           {
-            "id": "7bfbb84f2e0e2cc1",
+            "id": "cf71f06fcd513508",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -109,23 +106,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5086555480957
+    "width": 300
   },
   "right": {
-    "id": "6503546b953b07c6",
+    "id": "0fdbf67fdb567222",
     "type": "split",
     "children": [
       {
-        "id": "a706b1044179c8cc",
+        "id": "73f7c2c105898ed3",
         "type": "tabs",
         "children": [
           {
-            "id": "289c57da84ccbf8b",
+            "id": "ff65d879ec023b9b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/Managing DOM/4.6.md",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,25 +132,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 4.6"
+              "title": "Backlinks for Welcome"
             }
           },
           {
-            "id": "1321e9931dad2372",
+            "id": "c2ae08251a78d14c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/Managing DOM/DOM/2 Modifying the document.md",
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2 Modifying the document"
+              "title": "Outgoing links from Welcome"
             }
           },
           {
-            "id": "971dfe4923c1cbb4",
+            "id": "275548764f000aa5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,15 +163,15 @@
             }
           },
           {
-            "id": "d99393d19566859e",
+            "id": "5c099ed8cf63562a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/Managing DOM/DOM/2 Modifying the document.md"
+                "file": "Welcome.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 2 Modifying the document"
+              "title": "Outline of Welcome"
             }
           }
         ]
@@ -194,53 +191,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2446929d388076fd",
+  "active": "efdc1b1390eba64b",
   "lastOpenFiles": [
-    "Python/Exceptions & Unit test.md",
-    "Python/Dynamic Programming.md",
-    "Python/Classes & OOP.md",
-    "Site Structure.md",
-    "Pipeline.md",
-    "peels.md",
-    "Life and Fulfillment.md",
-    "Z/img",
-    "Untitled.md",
-    "Z/img/Pasted image 20241005220312.jpg",
-    "Z/Temp/Offload.md",
-    "Z/Temp/Temp.md",
-    "Z/Temp/Under way.md",
-    "Python/Data Structures/4.2_List_Implementation.md",
-    "Python/Data Structures/Binary_Search_Tree.md",
-    "Python/Data Structures/Data_Structures.md",
-    "Python/Data Structures/Heap_Priority_Queue.md",
-    "C/K&R_book",
-    "Z/Projects.md",
-    "System Design Concepts.md",
-    "Z/Frontend.md",
-    "Z/DSA.md",
-    "Z/Backend.md",
-    "Z/Resume Template.md",
-    "CSS/1_Selectors.md",
-    "SQL/5_Optimizing.md",
-    "SQL/4_Viewing.md",
-    "SQL/3_Writing.md",
-    "SQL/2_Designing.md",
-    "Z/Projects/Mini Projects",
-    "Z/Projects/Capstone1",
-    "Z/Projects",
-    "Z/Course Track",
-    "Z/Temp",
-    "SQL/images/4_viewing/Pasted image 20241216205226.jpg",
-    "SQL/images/4_viewing/Pasted image 20241216205017.jpg",
-    "SQL/images/4_viewing/Pasted image 20241216205008.jpg",
-    "SQL/images/3_writing/Pasted image 20241212130734.jpg",
-    "SQL/images/3_writing/Pasted image 20241212130723.jpg",
-    "SQL/images/3_writing/Pasted image 20241212124154.jpg",
-    "SQL/images/2_designing/Pasted image 20241212112115.jpg",
-    "SQL/images/2_designing/Pasted image 20241212110158.jpg",
-    "SQL/images/2_designing/Pasted image 20241212104101.jpg",
-    "SQL/images/4_viewing",
-    "SQL/images/3_writing",
-    "SQL/images/2_designing"
+    "Node Deno.md",
+    "New start in hugo.md",
+    "Sections of Hugo/`config`.md",
+    "Sections of Hugo",
+    "Sections of Hugo/`branch bundle`.md",
+    "Sections of Hugo/`baseof.md`.md",
+    "Sections of Hugo/`archetypes`.md",
+    "Hugo_doc/Hugo,  Doks.md",
+    "Hugo_doc/Hugo 2.md",
+    "Hugo_doc/Hugo.md",
+    "Hugo_doc/Doks 1 - Intro.md",
+    "Side bar fix.md",
+    "Hugo_doc/Hugo 1.md",
+    "Hugo_doc/Doks 2 - Codeblock Shortcode.md",
+    "Welcome.md"
   ]
 }

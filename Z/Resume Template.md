@@ -1,7 +1,7 @@
 ```c
-{Languages}{: Python, HTML/CSS, JavaScript}
+{Languages}{: Python, HTML/CSS, JavaScript, C, SQL}
 
-Typescript, SQL (Postgres), Java, C, Go,
+Typescript,(Postgres), Java, Go,
 
 {Frameworks}{: Flask,} 
 
