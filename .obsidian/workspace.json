@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Site Structure.md",
+                "file": "JavaScript/Managing DOM/alert, prompt, confirm.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Site Structure"
+              "title": "alert, prompt, confirm"
             }
           }
         ],
@@ -181,11 +181,16 @@
   },
   "active": "aa6b7070be8fa26a",
   "lastOpenFiles": [
+    "JavaScript/Managing DOM/4.6.md",
+    "JavaScript/Managing DOM/alert, prompt, confirm.md",
+    "Site Structure.md",
+    "JavaScript/Managing DOM/1 DOM Basics/1.1 DOM.md",
+    "HTML/1 Boilerplate.md",
+    "CSS/1_Selectors.md",
     "Projects.md",
     "Frontend.md",
     "DSA.md",
     "Backend.md",
-    "Site Structure.md",
     "CSS/Related Doc/CSS_Color_values.md",
     "Z/Pasted image 20241005220312.jpg",
     "MAD 1/19 Deployment.md",
@@ -203,11 +208,6 @@
     "Bash Terminal/Bash Basics/0 Linux.md",
     "Bash Terminal/Bash Basics/2 Working with Files & Dir.md",
     "JavaScript/src/tests.md",
-    "JavaScript/src/JS_File_Structure.md",
-    "JavaScript/src/Documentation.md",
-    "JavaScript/src/Code Style.md",
-    "1 Pipeline.md",
-    "Add-on/0 Root.md",
     "JavaScript/Language/5_Array",
     "JavaScript/Language/4 Objects/Untitled",
     "MAD 1/Untitled",

@@ -1,5 +1,5 @@
 ```bash
-/Python   10 to 299
+/Python   10 to 200
 │
 ├── /01-Data-types  10-29
 │   ├── /01-Primitive-types 10-18
@@ -20,8 +20,24 @@
 │   ├── if-elif-else.md
 │   ├── for-loop.md
 │   ├── while-loop.md
-
 │   │   └── 
+
+/C   250-299
+│
+├── /1k&r-book  250
+│   ├── c0-introduction.md 250
+│   ├── c1-basic-syntax.md 251
+│   ├── c2-types-operators-expressions.md 252
+│   ├── c3-control-flow.md 253
+│   ├── c4-function-program-structure.md 254
+│   ├── c5-pointers-arrays.md 255
+│   ├── c6-structures.md 256
+│   ├── c6.1-structures.md 257
+│   ├── c7-input-output.md 258
+│   ├── c8-unix-system-inerface.md 259
+
+├── /DS in C  250
+
 
 
 /JavaScript   300 - 699

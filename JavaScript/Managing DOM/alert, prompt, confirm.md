@@ -1,3 +1,4 @@
+
 Functions used to interact with the user in the browser environment.
 
 All these three methods are modal: they pause the script execution and don't allow the visitor to interact with the rest of the page until the window has been dismissed.
