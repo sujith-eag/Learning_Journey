@@ -1,3 +1,5 @@
+
+(18 Dec 24)
 `sudo apt-get update`
 
 ```c
@@ -14,14 +16,15 @@ void main ()
 
 ___
 
-Data Structures: A Pseudocode Approach with C, Second Edition
-Richard F. Gilberg, Behrouz A. Forouzan
+> Data Structures: A Pseudocode Approach with C, Second Edition
+> Richard F. Gilberg, Behrouz A. Forouzan
 
-DATA STRUCTURES USING C AND C++, Second Edition
-Yedidyah Langsam, Moshe J. Augenstein, Aaron M. Tenenbaum
-Brooklyn College
+> DATA STRUCTURES USING C AND C++, Second Edition
+> Yedidyah Langsam, Moshe J. Augenstein, Aaron M. Tenenbaum
+> Brooklyn College
 
 ___
+
 (20 Dec 2024)
 
 Data Structures - Definition
@@ -39,4 +42,9 @@ int, float, char, double
 
 Non primitive are those that can store multiple values in it.
 linked list, arrays, trees, maps, heaps.
+
+___
+
+(21 Dec 24)
+
 

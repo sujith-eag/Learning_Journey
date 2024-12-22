@@ -1,6 +1,9 @@
 
-Lab 2 - 17/12/24 `Komala`
-`mca1 - mca_rit24`
+Lab 2
+(17/12/24) -  `Komala`
+
+`mca1 - mca_rit24` Ubuntu
+`mca1-B1  - mca@rit24`
 
 OS acts as a interface between user and hardware.
 Linux is a flavor of UNIX

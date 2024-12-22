@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
+                "file": "MCA/OS & Linux/OS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.3 System Calls"
+              "title": "OS"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 204.50260543823242,
     "collapsed": true
   },
   "right": {
@@ -166,13 +166,22 @@
   },
   "active": "2446929d388076fd",
   "lastOpenFiles": [
+    "MCA/Data Structures in C/Data structures in C.md",
+    "MCA/OS & Linux/Linux.md",
+    "MCA/OS & Linux/OS.md",
+    "MCA/Data Structures in C/Data type (Book).md",
+    "MCA/Python",
+    "MCA/Web Programming",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/Gist.md",
+    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
+    "Add-on/Obsidian.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.7 Operating-System Structure.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.10 System Boot.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/2.5 System Programs.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/2.4 Types of System Calls.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/2.1 Operating System Services.md",
     "MCA/OS & Linux/OS Syllabus/Skipped Units/2.2 User and Operating-System Interface.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Gist.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/1.11 Computing Environments.md",
     "MCA/OS & Linux/OS Syllabus/Skipped Units/1.12 Open_Source Operating Systems.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/1.5 Operating System Operations.md",
@@ -185,23 +194,14 @@
     "MCA/OS & Linux/OS Syllabus/Skipped Units/1.4 Operating System Structure.md",
     "MCA/OS & Linux/OS Syllabus/Skipped Units/1.2 Computer-System Organization.md",
     "MCA/OS & Linux/OS Syllabus/Skipped Units/1.3 Computer System Architecture.md",
-    "Add-on/Obsidian.md",
-    "Z/Projects/Mini Projects/BEOWULF CLUSTERS.md",
-    "Z/Temp/Under way.md",
-    "Z/Temp/Offload.md",
-    "Z/Projects.md",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.4",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.3",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.2",
     "MCA/OS & Linux/OS Syllabus/Skipped Units",
     "MCA/OS & Linux/OS Syllabus/Unit 1",
-    "MCA/OS & Linux/OS.md",
     "MCA/OS & Linux/OS Syllabus",
-    "CSS/Related Doc/CSS_Color_values.md",
     "MCA/OS & Linux",
     "MCA",
-    "MCA/Data Structures in C",
-    "Z/img",
     "Z/img/Pasted image 20241005220312.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205226.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205017.jpg",

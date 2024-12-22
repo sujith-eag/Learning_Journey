@@ -5,18 +5,18 @@ ___
 
 #### Part 1: Overview
 
-[[1.1 What operating systems do#Part 1 Overview|1 Introduction]]
+1 Introduction
 	[[1.1 What operating systems do#1.1 - What Operating Systems Do|1.1 What Operating Systems Do]]
 	[[1.5 Operating System Operations|1.5 Operating System Operations]]
 	[[1.11 Computing Environments|1.11 Computing Environments]]
 
 2 Operating System Structures
-	2.1 Operating System Services
-	2.3 System Calls
-	2.4 Types of System Calls
-	2.5 System Programs
-	(Operating System Structure)
-	2.10 System Boot
+	[[2.1 Operating System Services|2.1 Operating System Services]]
+	[[2.3 System Calls|2.3 System Calls]]
+	[[2.4 Types of System Calls|2.4 Types of System Calls]]
+	[[2.5 System Programs|2.5 System Programs]]
+	[[2.7 Operating-System Structure|2.7 Operating System Structure]]
+	[[2.10 System Boot|2.10 System Boot]]
 
 ___
 
