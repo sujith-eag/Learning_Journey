@@ -1,4 +1,4 @@
-
+-
 SasS, IaaS, PaaS
 
 ### Service approach

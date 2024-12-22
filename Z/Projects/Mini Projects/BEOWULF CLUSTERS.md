@@ -1,4 +1,3 @@
-BEOWULF CLUSTERS
 Beowulf clusters are designed to solve high-performance computing tasks.
 A Beowulf cluster consists of commodity hardware — such as personal
 computers — connected via a simple local-area network. No single speciﬁc

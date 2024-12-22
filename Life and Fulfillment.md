@@ -25,14 +25,14 @@ Me, just a **simple thing** that sustains this life, but
 Even though its the **Limited** and **Tangible** that sustains this life,
 	its always the ***Limitless*** and ***Intangible*** that can ever so fulfills it.
 
-**Life** the root of fulfillment, **Fulfilment** the source of life.
+**Life** the root of fulfillment, **Fulfillment** the source of life.
 
 A design so odd, contradictories exist in one as one!!
 **Darkness of Black** within the **Light of White**,
 **Movement of Sound** in silence,	**Stillness of Silence** in sound,
-**Nothing** within the universe,	**Universe** being within nothing,
+**Nothing** within the universe,    	**Universe** being within nothing,
 **Freedom** born out of bondage,	**Bondage** a part of freedom,
-**Individual** within the crowd,	**Crowd** within the individual,
+**Individual** within the crowd,	        **Crowd** within the individual,
 **Good and Sanity**  being within as parts of, **Bad and Insanity**.
 Both forming the whole, one not existing without the other.
 

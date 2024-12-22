@@ -8,52 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fb3768f034b60ad8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/Language/5_Array/5_Array.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5_Array"
-            }
-          },
-          {
-            "id": "aa6b7070be8fa26a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Data Structures/4.2_List_Implementation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.2_List_Implementation"
-            }
-          },
-          {
             "id": "2446929d388076fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/File I-O.md",
+                "file": "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File I-O"
+              "title": "2.3 System Calls"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cat path:\"Bash Terminal\"  ",
+                "query": "script",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5086555480957
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -196,40 +166,43 @@
   },
   "active": "2446929d388076fd",
   "lastOpenFiles": [
-    "Python/Exceptions & Unit test.md",
-    "Python/Dynamic Programming.md",
-    "Python/Classes & OOP.md",
-    "Site Structure.md",
-    "Pipeline.md",
-    "peels.md",
-    "Life and Fulfillment.md",
-    "Z/img",
-    "Untitled.md",
-    "Z/img/Pasted image 20241005220312.jpg",
-    "Z/Temp/Offload.md",
-    "Z/Temp/Temp.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.5 System Programs.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.4 Types of System Calls.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
+    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.1 Operating System Services.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/2.2 User and Operating-System Interface.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/Gist.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.11 Computing Environments.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.12 Open_Source Operating Systems.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.5 Operating System Operations.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.10 Kernel Data Structures.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.9 Protection and Security.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.8 Storage Management.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.7 Memory Management.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.6 Process management.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.1 What operating systems do.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.4 Operating System Structure.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.2 Computer-System Organization.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.3 Computer System Architecture.md",
+    "Add-on/Obsidian.md",
+    "Z/Projects/Mini Projects/BEOWULF CLUSTERS.md",
     "Z/Temp/Under way.md",
-    "Python/Data Structures/4.2_List_Implementation.md",
-    "Python/Data Structures/Binary_Search_Tree.md",
-    "Python/Data Structures/Data_Structures.md",
-    "Python/Data Structures/Heap_Priority_Queue.md",
-    "C/K&R_book",
+    "Z/Temp/Offload.md",
     "Z/Projects.md",
-    "System Design Concepts.md",
-    "Z/Frontend.md",
-    "Z/DSA.md",
-    "Z/Backend.md",
-    "Z/Resume Template.md",
-    "CSS/1_Selectors.md",
-    "SQL/5_Optimizing.md",
-    "SQL/4_Viewing.md",
-    "SQL/3_Writing.md",
-    "SQL/2_Designing.md",
-    "Z/Projects/Mini Projects",
-    "Z/Projects/Capstone1",
-    "Z/Projects",
-    "Z/Course Track",
-    "Z/Temp",
+    "MCA/OS & Linux/OS Syllabus/Skipped/1.4",
+    "MCA/OS & Linux/OS Syllabus/Skipped/1.3",
+    "MCA/OS & Linux/OS Syllabus/Skipped/1.2",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units",
+    "MCA/OS & Linux/OS Syllabus/Unit 1",
+    "MCA/OS & Linux/OS.md",
+    "MCA/OS & Linux/OS Syllabus",
+    "CSS/Related Doc/CSS_Color_values.md",
+    "MCA/OS & Linux",
+    "MCA",
+    "MCA/Data Structures in C",
+    "Z/img",
+    "Z/img/Pasted image 20241005220312.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205226.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205017.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205008.jpg",
@@ -238,9 +211,6 @@
     "SQL/images/3_writing/Pasted image 20241212124154.jpg",
     "SQL/images/2_designing/Pasted image 20241212112115.jpg",
     "SQL/images/2_designing/Pasted image 20241212110158.jpg",
-    "SQL/images/2_designing/Pasted image 20241212104101.jpg",
-    "SQL/images/4_viewing",
-    "SQL/images/3_writing",
-    "SQL/images/2_designing"
+    "SQL/images/2_designing/Pasted image 20241212104101.jpg"
   ]
 }

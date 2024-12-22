@@ -1,18 +1,18 @@
 
-Find Questions for all that comes 
+Find Questions for all that comes. 
 
 _____________
 Projects
 - [ ] That Calculator with a interface for Odin Last project.
 - [ ] A clock
+
 Website
 - [ ] DSA and Leetcode to Sujith's Library (Why not a new site), Bit more visual and images, blog kind (stack??) 
 - [ ] A blog site for Book resources to be more of a Gallery and Blog using Hugo and netlify. Can i make is just HTML/CSS/JS ??
-- [ ] 
 
 Python
 - [ ] ***Book:*** Python Crash Course,  (In Project)
-- [ ] Decorators,  OOP,  
+- [ ] Decorators,  OOP, 
 - [ ] Numpy
 
 JavaScript
@@ -20,7 +20,7 @@ JavaScript
 - [ ] Ternary operations instead of if else
 - [ ] Closure
 - [ ] `?? condition` in recursion
-- [ ] sorting 
+- [ ] sorting
 
 HTML/CSS
 - [ ] `form`,  `input`,  `button`,  `table`, `tr`, `thead`, `tr:nth-child(even/odd)`
@@ -30,13 +30,13 @@ HTML/CSS
 - [ ] Figma for designing
 
 HUGO
-- [ ] ==***Book:***== Hugo in action, Build websites with Hugo
-- [ ] ***Book:*** Build websites with hugo - Brian P Hogan
+- [x] ==***Book:***== Hugo in action, Build websites with Hugo
+- [x] ***Book:*** Build websites with hugo - Brian P Hogan
 
 DBMS/DSA
-- [ ] ==Course:== Modern Application Development I, IIT Madras ( Theory parts going on now)
+- [x] ==Course:== Modern Application Development I, IIT Madras ( Theory parts going on now)
 - [ ] Course: Programming, Data Structures and Algorithms using python by IIT Bombay
-- [ ] ***Book:*** Classic computer science problems in python
-- [ ] ==***Book:***== grokking algorithms - Aditya Bhargava
-- [ ] ***Book:*** The Pragmatic Programmer
-- [ ] ***LEETCODE***
+- [ ] ***Book:*** Classic computer science problems in python (10% done)
+- [ ] ==***Book:***== grokking algorithms - Aditya Bhargava (5% done)
+- [ ] ***Book:*** The Pragmatic Programmer 
+- [ ] ***LEETCODE*** (25 problems)
