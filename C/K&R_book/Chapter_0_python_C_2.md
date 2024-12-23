@@ -1,62 +1,9 @@
 
-### Introduction
 
-No input output statements.
-No file access methods.
-All these have to be explicitly provided by the called functions.
-
-It offers straightforward single thread control flow constructs: tests , loops, grouping and sub grouping but not multi programming, parallel operations synchronization or co-routines.
+## Comparing Python and C Code
 
 
-`malloc()` and `free()` functions to request a certain amount of data dynamically and then return the memory to C runtime library.
-
-`heap` refers to the memory that C manages on our behalf when we need to borrow a bit of memory and give it back.
-
-If we forget to `free()` when we are done with the memory, we have created a `memory leak` and program will run out of memory.
-
-After a series of `malloc()` and `free()` the memory becomes fragmented and cleanup is needed.
-This is called `garbage collection`
-
-
-`lint` checking for things that might go wrong. Separating it from the compiler.
-
-
-___
-
-
-## Python and C
-
-| Python                          | C                          |
-| ------------------------------- | -------------------------- |
-| Whitespace is essential         | Whitespace is ignored      |
-| Very object oriented            | Not Object oriented at all |
-| data structures like list, dict | struct, pointers           |
-| auto memory management          | Manual                     |
-|                                 |                            |
-
-### Similarities
-Arithmetic Operators: `+ - * / %`
-Comparison Operators: `< > <= >= !=`
-Variable naming rules:  Case matters, letters, numbers, underscore.
-While loop - break and continue in loops.
-Constants similar except for strings and characters and boolean.
-Both have int / float,  char / byte
-
-### Differences
-Boolean Operators ( and - && )  ( not - ! )  ( or - || )
-C for loops are in-determinant ( i.e in C no `for..in` loop  )
-	??
-C has no predefined True or False
-None and NULL are similar but different
-	( None is its own type in python, marking empty, NULL is 0, a pointer to nothing)
-Strings and characters arrays are similar but very different.
-C has no `str, list, dict`
-Python has no `struct` or `double` (pythons float is double in C)
-
-
-___________
-
-### Output
+### Printing an Output
 
 ```python
 print('Hello world')
@@ -357,6 +304,7 @@ while True:
 	else:
 		print('Too high - guess again') 
 ```
+
 ```c
 #include <stdio.h>
 int main() {

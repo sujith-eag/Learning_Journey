@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/OS & Linux/OS.md",
+                "file": "C/K&R_book/Chapter_0_python_C_2.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OS"
+              "title": "Chapter_0_python_C_2"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.50260543823242,
-    "collapsed": true
+    "width": 204.50260543823242
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -166,6 +165,9 @@
   },
   "active": "2446929d388076fd",
   "lastOpenFiles": [
+    "C/K&R_book/Chapter_0_python_C_1.md",
+    "C/K&R_book/Chapter_0_python_C_2.md",
+    "C/K&R_book/Chapter_0_Intro.md",
     "MCA/Data Structures in C/Data structures in C.md",
     "MCA/OS & Linux/Linux.md",
     "MCA/OS & Linux/OS.md",
@@ -191,9 +193,6 @@
     "MCA/OS & Linux/OS Syllabus/Skipped Units/1.7 Memory Management.md",
     "MCA/OS & Linux/OS Syllabus/Skipped Units/1.6 Process management.md",
     "MCA/OS & Linux/OS Syllabus/Unit 1/1.1 What operating systems do.md",
-    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.4 Operating System Structure.md",
-    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.2 Computer-System Organization.md",
-    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.3 Computer System Architecture.md",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.4",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.3",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.2",

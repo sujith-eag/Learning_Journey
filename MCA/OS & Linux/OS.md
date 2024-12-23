@@ -31,8 +31,9 @@ OS controls the hardware and co-ordinates these among the various application pr
 OS is resource allocator,
 Trap, interrupt, system call
 
-middleware 
-firmware
+> middleware 
+
+> firmware
 
 Self Introduction Beyond the basics
 
