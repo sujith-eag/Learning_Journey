@@ -13,18 +13,13 @@
 
 ### **Similarities Between Python and C**
 
-**Arithmetic Operators**: 
-Both languages support common arithmetic operations:  `+`, `-`, `*`, `/`, `%`
+**Arithmetic Operators**:   `+`, `-`, `*`, `/`, `%`
 
-
-**Comparison Operators**: 
-The comparison operators are the same: `<`, `>`, `<=`, `>=`, `!=`
-
+**Comparison Operators**:  `<`, `>`, `<=`, `>=`, `!=`
 
 **Variable Naming Rules**:    
 * Case matters (e.g., `myVar` is different from `myvar`).
 * Can use letters, numbers, and underscores in variable names, but they cannot start with a number.
-
 
 **Control Flow**:    
 **While Loops**: Both languages have `while` loops and support the `break` and `continue` statements.        
@@ -66,9 +61,9 @@ MAX_VALUE = 100
 **Integers and Floats**: Both languages support integer and floating-point types. 
 In C, the `int` and `float` types exist, while in Python, all numbers are represented as `int` or `float` (and Python's `float` is equivalent to C's `double`).
 
-
 ***Characters***: 
-C has `char` for single characters, while Python uses strings, but a single character in Python is a string of length 1.
+C has `char` for single characters, while Python uses strings,
+but a single character in Python is a string of length 1.
 
 
 ---

@@ -9,6 +9,7 @@ Chapter 7-8 - Detailed C features
 _____
 
 ### Character Arrays
+
 We must carefully understand the 'size' of the character array and not exceed it. In C nothing is 'auto extended'.
 
 ```python
@@ -69,6 +70,7 @@ Hi
 Hi
 ```
 
+
 ### Character Sets
 
 The C char type is just a number (8-bits long) usually ASCII.
@@ -124,6 +126,14 @@ So character arrays need to allocate extra byte to store the line end character.
 
 Terminating a string is very important to think before creating a new string and scanning through a string, if something is appended to a "character array" then the end character has to be moved.
 
+**Manipulation**: String manipulation in C involves careful management of the null terminator, where the null terminator is moved or altered.
+```c
+char x[6];
+x[0] = 'H'; x[1] = 'e'; x[2] = 'l'; x[3] = 'l'; x[4] = 'o'; x[5] = '\0';
+printf("%s\n", x);  // prints "Hello"
+```
+
+
 #### String length
 
 In C string "length" must be computed in a loop that scans for a zero character.
@@ -149,17 +159,27 @@ int py_len(self)
 	char self();
 {
 	int i;
-	for(i=0; self[i]; i++);    /* when string gets over it turns false */
+	for(i=0; self[i]; i++);    
+	/* when string gets over it turns false */
 	return i;
 }
 // a.out
 // Hello 5
 ```
 
+```c
+int py_len(char self[]) {
+    int i;
+    for (i = 0; self[i]; i++);
+    return i;
+}
+```
+
 
 #### Reverse a String in place in C
-Exercise 1-19 in K&R
 
+Exercise 1-19 in K&R
+Reversing a string in place involves swapping characters from the start and end of the string until the middle is reached.
 ```c
 #include <stdio.h>
 int main() {
@@ -243,6 +263,13 @@ If you have to input numbers, then consider function `scanf` which reads input i
 
 ### 1.3 The For Statement
 
+
+```c
+for (initialization; condition; increment) {
+    // loop body
+}
+```
+
 ```c
 #include <stdio.h>
 
@@ -254,9 +281,9 @@ main() {
 }
 ```
 
-first part is done once, second part is the condition that is checked each iteration, and last is re-initialization step.
+First part is done once, second part is the condition that is checked each iteration, and last is re-initialization step.
 
-while and for loops are in-determinant loops structure because they must be read closely to make sure they are properly constructed and not unintentionally a "infinite loop".
+While and for loops are in-determinant loops structure because they must be read closely to make sure they are properly constructed and not unintentionally a "infinite loop".
 
 `for` loop in python and `foreach` in PHP are determinant loops. They iterate over all of the elements in a collection which is not finite.
 
@@ -419,6 +446,7 @@ else
 ```
 
 One and only one of the two statements associated with `if-else` is done, not both.
+
 
 ### 1.6 Arrays
 

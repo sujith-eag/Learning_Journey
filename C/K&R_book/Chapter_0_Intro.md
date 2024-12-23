@@ -31,16 +31,17 @@ C does **not** have built-in support for:
 
 **Dynamic Memory Allocation**: 
 C provides the functions `malloc()` and `free()` to manually allocate and deallocate memory on the **heap** during runtime.
-    - `malloc(size_t size)`: Allocates a block of memory of the specified size and returns a pointer to the first byte of this memory block.
-    - `free(void *ptr)`: Frees previously allocated memory, making it available for reuse.
-    
+- `malloc(size_t size)`: Allocates a block of memory of the specified size and returns a pointer to the first byte of this memory block.
+- `free(void *ptr)`: Frees previously allocated memory, making it available for reuse.
+
 The **heap** refers to the region of memory managed dynamically during the execution of a program. It is separate from the **stack** (used for function call management) and **static memory**.
-    
+
 **Memory Leaks**:
 If memory allocated via `malloc()` is not freed with `free()`, it leads to **memory leaks**. Over time, if this happens repeatedly, the program may run out of available memory, causing crashes or slowdowns.
 
 **Memory Fragmentation**:
 Continuous allocation and deallocation of memory blocks can cause the heap to become fragmented, making it harder to find contiguous blocks of memory. This requires **garbage collection** or memory management techniques to clean up fragmented areas.
+
 
 #### **Garbage Collection in C**
 C does not have automatic garbage collection like higher-level languages (e.g., Java or Python). The programmer is responsible for managing memory allocation and deallocation. Poor memory management leads to **memory leaks** or fragmented memory.

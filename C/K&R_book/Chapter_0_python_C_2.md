@@ -1,30 +1,32 @@
 
-
 ## Comparing Python and C Code
 
 
-### Printing an Output
+### **Printing Output in Python vs. C**
 
 ```python
 print('Hello world')
 print('Answer', 42)
 print('Name', 'Sarah')
 print('x', 3.5, 'i', 10)
-# A commnent
+# A comment
 ```
 
 ```c
 #include <stdio.h>
 
 int main() {
-	printf("Hello world\n");
-	printf("Answer %d\n", 42);
-	printf("Name %s\n", "Sarah");
-	printf("x %.1f i %d\n", 3.5, 100);
+    printf("Hello world\n");
+    printf("Answer %d\n", 42);
+    printf("Name %s\n", "Sarah");
+    printf("x %.1f i %d\n", 3.5, 100);
 }
-/* a comment */
-// also comment
+
+/* A comment */
+// Another comment
 ```
+
+**Output** (for both Python and C)
 ```
 Hello world
 Answer 42
@@ -32,32 +34,34 @@ Name Sarah
 x 3.5 i 100
 ```
 
-`#inculde <stdio.h>` 
-Read as "Pound include standard I O"
 
-`__main__` in python is copying C as it searches for function named `main()` when program starts.
-`int main() {}` is a definition of a function.
+**`#include <stdio.h>`**: Read as "Pound include standard I O"
+This tells the C compiler to include the standard input/output library, allowing the use of `printf()` and other I/O functions.
+ 
+Every C program must have a `main()` function, where execution starts.
+ `int main()` specifies the return type as `int`, indicating the program’s exit status (usually `0` for success).
 
-`printf("Hello world\n")`  print function
-C doesn't have any `I/O` in the language itself, but it is included in the `stdio` library.
+`printf("Hello world\n")` Prints text to the screen.
+`\n` adds a newline, moving the cursor to the next line.
 There cannot be single quotes used in a string, `''` means a single characters and `""` are character array (not a string).
-The new line character `\n` has to be added explicitly to go to the beginning of the next line.
+
+
+In C, format codes (like `%d`, `%s`, `%f`) are used inside the string to indicate where values should be inserted.
+`%d` is used for integers, `%s` for strings, and `%.1f` for floating-point numbers with one decimal precision.
 
 `printf("Answer %d\n", 42);`
-The first parameter here is a string with **embedded format codes** that starts with `%`.
-`%d\n` says that there is an corresponding integer number as another parameter, add it here and convert it into string. `\n` is new line character at the end.
+The `%d` is replaced with the integer `42`.
 
 `printf("x %.1f i %d\n", 3.5, 100);`
-The `%.1f` corresponds to the floating point number, with only one decimal precision
-`%d` corresponds to the integer
+`%.1f` prints `3.5` with one decimal, and `%d` prints `100`.
 
 `printf("Name %s\n", "Sarah");`
-`%s` finds the string (character array) which will have to have a proper terminating `\0` character at the end. 
+`%s` finds the string (character array) which will have to have a proper terminating `\0` character at the end.
 
 
 ________
 
-#### Number input
+### **Number Input**
 
 ```python
 print('Enter US Floor')
@@ -69,158 +73,196 @@ print('EU Floor', euf)
 ```c
 #include <stdio.h>
 int main() {
-	int usf,euf;
-	printf("Enter US Floor\n");
-	scanf("%d", &usf);
-	euf = usf - 1;
-	printf("EU Floor %d\n", euf);
+    int usf, euf;
+    printf("Enter US Floor\n");
+    scanf("%d", &usf);
+    euf = usf - 1;
+    printf("EU Floor %d\n", euf);
 }
 ```
+
+**Output**
 ```
 Enter US Floor
-(2)
+2
 EU Floor 1
 ```
 
-`int usf, euf` is declaring the variables and that they are going to be integers
+`int usf, euf;` declares two integer variables, `usf` and `euf`.
 
-In C, `scanf("%d", ...)` is more like python 2 `input()`
-`scanf()` is an i/o routine coming from `stdio`. 
-The first parameter is a format string `%d` searches for a number.
-So `scanf` reads a line till it finds a number/int and returns it as a string.
+`scanf()` Function:  
+In C, `scanf("%d", &usf)` works similarly to Python’s `input()`.  
+The `%d` format specifier tells `scanf` to expect an integer. 
+The `&` symbol means "pass the address of `usf`" allowing `scanf` to directly modify `usf` by storing the input value in its memory location (this is called **call by reference**). 
+Without the `&`, it would be **call by value**, and `scanf` would not update the variable correctly.
+
 
 ***Call by reference and call by value***
 In python `int(input())` comes back as a ***function return*** so it is easy to assign it to `usf`.
+
 In C without `&` on parameter it becomes call by value, where value of `usf` is given to `scanf`.
 `&usf` says to give the value coming from the `scanf` to the address of the `usf` variable instead of the value of `usf`, so the data can be stored.
 
 So `&` is the way C to call by reference for int and floats.
 
 
-________
+---
 
-#### String Input
+### **String Input**
 
 ```python
-print ('Enter name')
+print('Enter name')
 name = input()
-printf('Hello', name)
+print('Hello', name)
 ```
 
 ```c
 #include <stdio.h>
 int main() {
-	char name[100];
-	printf("Enter name\n");
-	scanf("%100s", name);
-	printf("Hello %s\n", name);
+    char name[100];
+    printf("Enter name\n");
+    scanf("%100s", name);
+    printf("Hello %s\n", name);
 }
 ```
+
+**Output**
 ```
 Enter name
-(Sarah)
+Sarah
 Hello Sarah
 ```
 
-`char name[100]` 
-Pre-declaring the character array (there is no string) and telling it how long it will be and getting the memory for that character array. 
-They have fixed length, are not flexible.
-In python it is a string object.
+**Declaring Character Arrays in C**:  
+In C, `char name[100];` defines an array to hold up to 100 characters (no strings in C, just arrays of characters). 
+This array has a fixed size and cannot dynamically grow like Python strings.  
+In Python, strings are objects and have dynamic sizes.
+    
+**Using `scanf` for String Input**:  
+`scanf("%100s", name);` reads up to 100 characters into the `name` array.
+`%100s` format specifier limits the input to 100 characters.
 
-`scanf("%100s", name)` 
-read the string only upto a 100 characters,
-there is no `&` on name because it is an array. Arrays are always passed by reference, not by value.
-`name` with no index operator then you are passing in the address of the beginning of the array. 
-so 100 characters get read into the array. so roughly equal to `input()`
+In C, arrays are passed by reference, so there’s no need for `&` with `name`. Simply passing the array variable provides the address of the first element.
+
+In C character array size has to be predefinesd, which can lead to buffer overflow issues if not managed carefully.
+
+
+---
+
+### **Reading a Full Line of Input**
 
 ```python
-printf('Enter line')
+print('Enter line')
 line = input()
 print('Line:', line)
 ```
+
 ```c
 #include <stdio.h>
 int main() {
-	char line[1000];
-	printf("Enter line\n");
-	scanf("%[^\n]1000s", line);
-	printf("Line: %s\n", line);
+    char line[1000];
+    printf("Enter line\n");
+    scanf("%[^\n]1000s", line);
+    printf("Line: %s\n", line);
 }
 ```
+
+**Output**
 ```
 Enter line
-(Hello world - have a nice day)
+Hello world - have a nice day
 Line: Hello world - have a nice day
 ```
 
-`char line[1000]`
-pre defining a character array with space for 1000 characters.
-`%[^\n]1000s, line` is reading for everything up to the new line character and adding 
-`^\n` is a regular expression which says "match any character which is not a new line". so basically to scan up to the end of a line or up to 1000 characters.
+**Reading Until Newline**:  
+`char line[1000]` Pre-defining a character array with space for 1000 characters.
+`scanf("%[^\n]1000s", line);` reads all characters until a newline (`\n`) is encountered.
+The `^[\n]` format specifier is a regular expression that means "match any character except a newline."
+This allows to capture a full line of input (or up to 1000 characters).
 
-Using `fgets` which is function get string
+
+---
+
+
+### **Using `fgets` for Reading Input**
+
 ```c
 #include <stdio.h>
 int main() {
-	char line[1000];
-	printf("Enter line\n");
-	fgets(line, 1000, stdin);
-	printf("Line: %s\n", line);
+    char line[1000];
+    printf("Enter line\n");
+    fgets(line, 1000, stdin);
+    printf("Line: %s\n", line);
 }
 ```
 
-`fgets(line, 1000, stdin);`
-Put in up to a 1000 characters looking for a new line and reading from `stdin` standard input.
-There are three files, standard input, standard output and standard error.
+**`fgets()` for Safer Input**:
+`fgets(line, 1000, stdin);` reads up to 1000 characters from the standard input (`stdin`) and stores them in the `line` array.
 `fgets` can read a file, the third parameter is a file handle, (there are 3 predefined file handles like `stdin`)
+
+Unlike `scanf`, `fgets` does not stop at whitespace, so it can read the entire line, including spaces.
+`fgets` is generally safer than `scanf` because it limits the number of characters to avoid buffer overflows.
+
+C’s standard I/O library works with three standard file streams:    
+    1. `stdin` for input
+    2. `stdout` for output
+    3. `stderr` for error messages
+
 
 _______
 
-#### Read a file
+### **Read a File**
 
 ```python
 hand = open('romeo.txt')
 for line in hand:
-	print(line.strip())
+    print(line.strip())
 ```
-take a file, run through each line and remove the new line character and print it.
+
 ```c
 #include <stdio.h>
 int main() {
-	char line[1000];
-	FILE *hand;
-	hand = fopen("romeo.txt", "r");
-	while( fgets(line, 1000, hand) != NULL ) {
-		printf("%s", line);
-		} 
+    char line[1000];
+    FILE *hand;
+    hand = fopen("romeo.txt", "r");
+    while( fgets(line, 1000, hand) != NULL ) {
+        printf("%s", line);
+    }
 }
 ```
 
+**File Handling in C**:   
 `FILE` is a type defined in `stdio.h`.
-`*hand` means it is a pointer to a file object.
-`open` in python is inspired by `fopen`.
-Since there is no `for in` in C, a manual while loop is needed to read till the end of the file.
-`fgets` gets the line up to a 1000 characters from file handle `hand`.
-`NULL` is defined in `stdio.h` which is end of file, so while runs till it is reached.
+- `FILE *hand;` declares a pointer to a `FILE` object, which is used to handle file operations.
+- `fopen("romeo.txt", "r");` opens the file in read mode (`"r"`).
+- `fgets(line, 1000, hand);` reads a line from the file into the `line` array. It reads up to 1000 characters or until it encounters a newline.
+- The `while` loop continues until `fgets` returns `NULL`, which indicates the end of the file (EOF).
+
+**Key Differences**:    
+- Python’s `open()` function is simpler and automatically handles file objects, while C requires you to manage the file pointer manually.
+- In C, `fgets()` is used to read lines, while Python uses a loop directly over the file object.
 
 
-_____
+---
 
-#### Counted Loop
+### **Counted Loop**
+
 ```python
 for i in range(5):
-	print(i)
+    print(i)
 ```
 
 ```c
 #include <stdio.h>
 int main() {
-	int i;
-	for( i=0, i<5, i++) {
-		printf("%d\n", i);
-		}
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("%d\n", i);
+    }
 }
 ```
+
+**Output**:
 ```
 0
 1
@@ -228,33 +270,44 @@ int main() {
 3
 4
 ```
-Similar to JavaScript.
 
-----
+**C For Loop**:  The syntax in C is similar to Python but requires explicit initialization, condition, and increment.
+- `for (i = 0; i < 5; i++)` initializes `i` to 0, continues while `i` is less than 5, and increments `i` by 1 on each iteration.
 
-#### Max / Min
+Python uses `range(5)` to generate numbers, while C requires manual control over the loop variables.
+
+
+---
+
+### **Max / Min**
 
 ```python
 maxval = None
 minval = None
 
 while True:
-	line = input()
-	line = line.strip()
-	if line == "done":
-		break
-	
-	ival = int(line)
-	if (maxval is None or ival > maxval):
-		maxval = ival
-	if (minval is None or ival < minval):
-		minval = ival
+    line = input()
+    line = line.strip()
+    if line == "done":
+        break
+    
+    ival = int(line)
+    if (maxval is None or ival > maxval):
+        maxval = ival
+    if (minval is None or ival < minval):
+        minval = ival
 
 print('Maximum', maxval)
 print('Minimum', minval)
 ```
+
+**Input**:
 ```
-Input(5, 2, 9, done)
+5, 2, 9, done
+```
+
+**Output**:
+```
 Maximum 9
 Minimum 2
 ```
@@ -262,83 +315,101 @@ Minimum 2
 ```c
 #include <stdio.h>
 int main() {
-	int first = 1;
-	int val, maxval, minval;
-	
-	while(scanf("%d", &val) != EOF) {
-		if (first || val > maxval ) maxval = val;
-		if (first || val < minval ) minval = val;
-		first = 0;
-		}
-	
-	printf("Maximum %d\n", maxval);
-	printf("Minimum %d\n", minval);
+    int first = 1;
+    int val, maxval, minval;
+
+    while(scanf("%d", &val) != EOF) {
+        if (first || val > maxval) maxval = val;
+        if (first || val < minval) minval = val;
+        first = 0;
+    }
+
+    printf("Maximum %d\n", maxval);
+    printf("Minimum %d\n", minval);
 }
 ```
+
+**Input**:
 ```
 5, 2, 9 (EOF)
+```
+
+**Output**:
+```
 Maximum 9
 Minimum 2
 ```
 
-Using `scanf` to scan into the `&val` integer variable reference and replace its value.
+
+In Python, `maxval` and `minval` are initially `None`, and values are updated based on comparisons.
+In C, the `first` flag ensures that the `maxval` and `minval` are initialized on the first iteration.
 
 
-_____
+`scanf("%d", &val)` is used to read integers from the user, updating the `val` variable.
 
-#### Guessing
+
+---
+
+### **Guessing Game**
 
 ```python
 while True:
-	try:
-		line = input()
-	except:  # if we get to EOF
-		break
-		
-	line = line.strip()
-	guess = int(line)
-	if guess == 42:
-		print('Nice work')
-	elif guess < 42:
-		print('Too low - guess again')
-	else:
-		print('Too high - guess again') 
+    try:
+        line = input()
+    except:  # if we get to EOF
+        break
+
+    line = line.strip()
+    guess = int(line)
+    if guess == 42:
+        print('Nice work')
+    elif guess < 42:
+        print('Too low - guess again')
+    else:
+        print('Too high - guess again') 
 ```
 
 ```c
 #include <stdio.h>
 int main() {
-	int guess;
-	while(scanf("%d", &guess) !EOF ) {
-		if (guess == 42) {
-			printf("Nice work!\n");
-			break;
-			}
-		else if (guess < 42)  // {} coul have been placed
-			printf("Too low - guess again\n");
-		else
-			printf("Too high - guess again\n");
-	}
+    int guess;
+    while(scanf("%d", &guess) != EOF) {
+        if (guess == 42) {
+            printf("Nice work!\n");
+            break;
+        } else if (guess < 42) {
+            printf("Too low - guess again\n");
+        } else {
+            printf("Too high - guess again\n");
+        }
+    }
 }
 ```
 
-In python, `if elif and else` is True multi-way if.
+
+Python uses a `try-except` block to handle `EOF` or input errors, while C uses `scanf` to read input and checks for `EOF`.
+
+In C, the code must use curly braces `{}` for each block of statements within `if`, `else if`, and `else`.
+
+
+In python, `if elif and else` is True multi-way `if`.
 `{}` is needed in C if there are more than one statement.
 
-`if  else if   else` is not a true multi-way if, 
-it checks the if, when not true it will go to else,
-within the else there are two more `if else` nested inside so not part of a single block of code.
+In C, `if  else if   else` is not a true multi-way `if`, 
+it checks the `if`, when not true it will go to `else`,
+within the `else` there are two more `if else` nested inside so not part of a single block of code.
 
 The indentation is done in a way that it looks like a multi-way if but it is not and the indentation doesn't represent the nesting.
 
-___
 
-#### Functions ( call by value)
+---
+
+### **Functions (Call by Value)**
 
 ```python
 def mymult(a, b):
-	c = a * b
-	return c
+    c = a * b
+    return c
 
 retval = mymult(6, 7)
 print('Answer:', retval)
@@ -347,19 +418,23 @@ print('Answer:', retval)
 ```c
 #include <stdio.h>
 int main() {
-	int mymult();
-	int retval;
-	
-	retval = mymult(6, 7);
-	printf("Answer: %d\n", retval);
+    int mymult(int, int); // function declaration
+    int retval;
+
+    retval = mymult(6, 7);
+    printf("Answer: %d\n", retval);
 }
 
-int mymult(a, b)
-	int a,b;
-{
-	int c = a * b;
-	return c;
+int mymult(int a, int b) {  // function definition
+    int c = a * b;
+    return c;
 }
 ```
 
-`int a, b` is declaring the type of the parameters before the `{}` of the function.
+**Function Definition and Declaration in C**:    
+- `int mymult(int, int);` declares the function signature, specifying it takes two `int` parameters and returns an `int`.
+- The function body in C needs to explicitly declare types for the parameters, unlike Python where types are inferred.
+
+C is statically typed, requiring explicit type declarations for variables and function parameters.
+
+

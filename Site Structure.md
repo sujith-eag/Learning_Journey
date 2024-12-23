@@ -26,17 +26,19 @@
 │
 ├── /1k&r-book  250
 │   ├── c0-introduction.md 250
-│   ├── c1-basic-syntax.md 251
-│   ├── c2-types-operators-expressions.md 252
-│   ├── c3-control-flow.md 253
-│   ├── c4-function-program-structure.md 254
-│   ├── c5-pointers-arrays.md 255
-│   ├── c6-structures.md 256
-│   ├── c6.1-structures.md 257
-│   ├── c7-input-output.md 258
-│   ├── c8-unix-system-inerface.md 259
+│   ├── c0-introduction.md 251
+│   ├── c0-introduction.md 252
+│   ├── c1-basic-syntax.md 253
+│   ├── c2-types-operators-expressions.md 254
+│   ├── c3-control-flow.md 255
+│   ├── c4-function-program-structure.md 256
+│   ├── c5-pointers-arrays.md 257
+│   ├── c6-structures.md 258
+│   ├── c6.1-structures.md 259
+│   ├── c7-input-output.md 260
+│   ├── c8-unix-system-inerface.md 261
 
-├── /DS in C  250
+├── /DS in C  
 
 
 
