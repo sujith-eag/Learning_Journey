@@ -50,16 +50,40 @@ The seven attributes of the file
 
 `exit`
 ___
-
+( __ Dec 24)
 `uname -o` gives the OS working in
 `date` for system date
 `date` there are flags to get versions of date
-`date +%y`
+
+`date +%a`   system date and time
+`date +%y`  half year
+`date %Y`  full year 
 `date +%M`   many more versions
+`date`
 
 `history`
 `history -10`
 ____
+
+(24 Dec 24)
+
+Case sensitivity of commands
+`echo $SHELL`
+7 attributes, links to files 
+`more`  ???
+
+`date +%m:%y:%Y`
+
+`ls -ld name` to check permission of directory
+
+`mv dir dir` 
+`mv file dir`
+`mv file file`
+`mv dir ..`
+
+`mv -i file file`    interactive mode
+
+
 
 
 ___

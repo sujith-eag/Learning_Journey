@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Terminal/Bash Basics/4 Loops.md",
+                "file": "MCA/Python/pylab.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 Loops"
+              "title": "pylab"
+            }
+          },
+          {
+            "id": "d36328f4a0a9a1f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bash Linux/Linux Bash Notes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linux Bash Notes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5086555480957
+    "width": 229.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -163,38 +180,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2446929d388076fd",
+  "active": "d36328f4a0a9a1f1",
   "lastOpenFiles": [
-    "Bash Terminal/Bash Basics/3 Pipes and Filters.md",
-    "Bash Terminal/Bash Basics/2 Working with Files & Dir.md",
-    "Bash Terminal/Bash Basics/1 Navigating Files & Dir.md",
-    "Bash Terminal/Bash Basics/0 Linux.md",
-    "Bash Terminal/Bash Basics/4 Loops.md",
+    "Bash Linux/Bash Basics/7.md",
+    "Bash Linux/Linux Bash Notes.md",
+    "Python/Data Types/Primitive types/3_string.md",
+    "Python/Data Types/Primitive types/3.1 string manipulations.md",
+    "Python/Data Types/Primitive types/2_int_float_math_operators.md",
+    "Python/Data Types/Primitive types/1_Variables.md",
+    "MCA/Python/pylab.md",
+    "MCA/OS & Linux/OS.md",
+    "MCA/OS & Linux/Linux.md",
+    "Bash Linux/Bash Basics/2 Working with Files & Dir.md",
+    "Bash Linux/Bash Doc/ls-list.md",
+    "Bash Linux/Bash Basics/4 Loops.md",
+    "Bash Linux/Bash Basics/1 Navigating Files & Dir.md",
+    "Bash Linux/Bash Basics/3 Pipes and Filters.md",
+    "Bash Linux/Bash Basics/0 Linux.md",
     "MCA/Data Structures in C/Data structures in C.md",
     "Site Structure.md",
-    "Bash Terminal/Bash Doc/bash-commands.md",
-    "Bash Terminal/Bash Doc/cat-concatenation.md",
-    "Bash Terminal/Bash Doc/cd-change directory.md",
-    "Bash Terminal/Bash Doc/cp-copy.md",
-    "Bash Terminal/Bash Doc/cut-with-delimiter.md",
-    "Bash Terminal/Bash Doc/echo.md",
-    "Bash Terminal/Bash Doc/grep.md",
-    "Bash Terminal/Bash Doc/head-tail.md",
-    "Bash Terminal/Bash Doc/ls-list.md",
-    "Bash Terminal/Bash Doc/mkdir.md",
-    "Bash Terminal/Bash Doc/mv-move.md",
-    "Bash Terminal/Bash Doc/pwd.md",
-    "Bash Terminal/Bash Doc/rm-remove.md",
-    "Bash Terminal/Bash Doc/sort.md",
-    "Bash Terminal/Bash Doc/touch.md",
-    "Bash Terminal/Bash Doc/uniq.md",
-    "Bash Terminal/Bash Doc/wc-word-count.md",
-    "personal-site/docs/bash-linux/command-docs/ls-list.md",
+    "Bash Linux/Bash Doc/bash-commands.md",
+    "Bash Linux/Bash Doc/cat-concatenation.md",
+    "Bash Linux/Bash Doc/cd-change directory.md",
+    "Bash Linux/Bash Doc/cp-copy.md",
+    "Bash Linux/Bash Doc/cut-with-delimiter.md",
+    "Bash Linux/Bash Doc/echo.md",
+    "Bash Linux/Bash Doc/grep.md",
+    "Bash Linux/Bash Doc/head-tail.md",
+    "Bash Linux/Bash Doc/mkdir.md",
     "personal-site/docs/bash-linux/command-docs",
     "personal-site/docs/bash-linux",
     "personal-site/docs",
     "personal-site",
-    "Bash Terminal/Bash Basics/5 Shell Scripts.md",
     "MCA/Python",
     "MCA/Web Programming",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.4",
