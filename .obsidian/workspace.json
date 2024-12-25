@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Linux Bash Notes.md",
+                "file": "Bash Linux/Untitled/9 Filename_specification.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Bash Notes"
+              "title": "9 Filename_specification"
             }
           }
         ],
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5086555480957,
-    "collapsed": true
+    "width": 229.5086555480957
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -182,8 +181,17 @@
   },
   "active": "d36328f4a0a9a1f1",
   "lastOpenFiles": [
+    "Bash Linux/Untitled/8 Storage Terminology.md",
+    "Bash Linux/Untitled/9 Filename_specification.md",
+    "Bash Linux/Untitled/3 Bash and Commands.md",
+    "Bash Linux/Untitled/7 Environment.md",
+    "Bash Linux/Untitled/6 Bash Features.md",
+    "Bash Linux/Untitled/5 help pages.md",
+    "Bash Linux/Untitled/4 ls and options.md",
+    "Bash Linux/Untitled/2 OS Kernel.md",
+    "Bash Linux/Untitled/1 Linux.md",
+    "Bash Linux/Untitled",
     "Bash Linux/Bash Basics/7.md",
-    "Bash Linux/Linux Bash Notes.md",
     "Python/Data Types/Primitive types/3_string.md",
     "Python/Data Types/Primitive types/3.1 string manipulations.md",
     "Python/Data Types/Primitive types/2_int_float_math_operators.md",
@@ -200,14 +208,6 @@
     "MCA/Data Structures in C/Data structures in C.md",
     "Site Structure.md",
     "Bash Linux/Bash Doc/bash-commands.md",
-    "Bash Linux/Bash Doc/cat-concatenation.md",
-    "Bash Linux/Bash Doc/cd-change directory.md",
-    "Bash Linux/Bash Doc/cp-copy.md",
-    "Bash Linux/Bash Doc/cut-with-delimiter.md",
-    "Bash Linux/Bash Doc/echo.md",
-    "Bash Linux/Bash Doc/grep.md",
-    "Bash Linux/Bash Doc/head-tail.md",
-    "Bash Linux/Bash Doc/mkdir.md",
     "personal-site/docs/bash-linux/command-docs",
     "personal-site/docs/bash-linux",
     "personal-site/docs",
@@ -217,7 +217,6 @@
     "MCA/OS & Linux/OS Syllabus/Skipped/1.4",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.3",
     "MCA/OS & Linux/OS Syllabus/Skipped/1.2",
-    "MCA/OS & Linux/OS Syllabus/Skipped Units",
     "Z/img/Pasted image 20241005220312.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205226.jpg",
     "SQL/images/4_viewing/Pasted image 20241216205017.jpg",
