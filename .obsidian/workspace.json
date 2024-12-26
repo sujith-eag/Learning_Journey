@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Untitled/10 file commands.md",
+                "file": "Bash Linux/Untitled/11 Permissions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10 file commands"
+              "title": "11 Permissions"
             }
           }
         ],
@@ -181,19 +181,20 @@
   },
   "active": "d36328f4a0a9a1f1",
   "lastOpenFiles": [
-    "Bash Linux/Untitled/9 Filename_specification.md",
     "Bash Linux/Untitled/10 file commands.md",
+    "Bash Linux/Untitled/11 Permissions.md",
+    "Bash Linux/Untitled/6 Bash Features.md",
+    "Bash Linux/Untitled/5 help pages.md",
+    "Bash Linux/Untitled/4 ls and options.md",
+    "Bash Linux/Untitled/3 Bash and Commands.md",
+    "Bash Linux/Untitled/9 Filename_specification.md",
     "Z/Projects.md",
     "Z/Frontend.md",
     "Z/DSA.md",
     "Z/Backend.md",
     "Pipeline.md",
     "Bash Linux/Untitled/8 Storage Terminology.md",
-    "Bash Linux/Untitled/3 Bash and Commands.md",
     "Bash Linux/Untitled/7 Environment.md",
-    "Bash Linux/Untitled/6 Bash Features.md",
-    "Bash Linux/Untitled/5 help pages.md",
-    "Bash Linux/Untitled/4 ls and options.md",
     "Bash Linux/Untitled/2 OS Kernel.md",
     "Bash Linux/Untitled/1 Linux.md",
     "Bash Linux/Untitled",
@@ -207,7 +208,6 @@
     "MCA/OS & Linux/Linux.md",
     "Bash Linux/Bash Basics/2 Working with Files & Dir.md",
     "Bash Linux/Bash Doc/ls-list.md",
-    "Bash Linux/Bash Basics/4 Loops.md",
     "personal-site/docs/bash-linux/command-docs",
     "personal-site/docs/bash-linux",
     "personal-site/docs",

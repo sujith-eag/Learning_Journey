@@ -302,6 +302,7 @@ By default `split` will place 1000 bytes in each new file.
 
 #### `cut`
 is used to remove portions of each line of a file. to obtain part of a file.
+
 Options are used to indicate which parts of a line to retain, 
 based on a number of bytes (`-b first-last`),
 specified characters (`-c charlist`)
@@ -309,6 +310,68 @@ a deliminator other than tab (`-d 'delimiter'`)
 or field numbers (`-f list`) if the line contains individual fields.
 Adding `--complement` will reverse the option so that only the cut portion is returned.
 
+To get the three (fields)columns of data within a table which are delimited by tab
+`cut -f 3,4,6 file`
+if the delimiter was space then it has to specified using `-d ' '`
 
+We can pipe the results of other command to reduce the output.
+
+`ls -l | cut -c 2-10`  outputs only the permissions of the files which starts from 2nd character to 10th.
+
+```bash
+sujith@sujith-Latitude-7490:~/Desktop$ ls -l | cut -c 2-10
+otal 56
+rw-rw-r--
+rwxrwxr-x
+rw-rw-r--
+rwxr-xr-x
+rwxr-xr-x
+rwxrwxr-x
+rwxrwxr-x
+rwxrwxr-x
+```
+
+ To get the permissions and the file name (getting the first 2-10 chars and also the 9th field where the names are present, with delimiter being space.)
+ `ls -l | cut -f 1,9 -d ' '`   won't work properly due to unevenness. 
+
+(`awk` offers better solution that cut for selecting fields)
+
+
+
+#### `strings`
+This instruction works on files that are not necessarily text files, outputting printable characters found in the file.
+```bash
+sujith@sujith-Latitude-7490:~/Downloads$ strings sujith.jpeg -n 10
+6*&&*6>424>LDDL_Z_||
+6*&&*6>424>LDDL_Z_||
+Bm&EmvX{2;
+!1 0AQ@Paq
+```
+It outputs any sequence of four or more printable characters found between the unprintable characters.
+`-n number` can over ride the length
+
+
+
+#### `wc`
+word count outputs the count of characters (bytes), words (whitespace between characters) , and lines (`\n`) in a text file.
+`-c` `-m` limits count to characters
+`-l` line count
+`-w` word count
+They can be combined.
+`-L` prints the length of the longest line.
+
+Command output can be piped to `wc` to count the number of result.
+`ls -l | wc -l`
+
+
+#### `touch`
+
+is mainly for modifying the last access / modification time stamp of a file.
+If the file does not exist, an empty text file is created.
+`-a` to  modify the last access time and date to current time
+`-m` to modify last modification and time and date to current time
+
+`-t` allows to specify new access and modification date and time.
+format will be `[[CC]YY]MMDDhhmm[.ss]`
 
 
