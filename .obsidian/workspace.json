@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Untitled/9 Filename_specification.md",
+                "file": "Bash Linux/Untitled/10 file commands.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9 Filename_specification"
+              "title": "10 file commands"
             }
           }
         ],
@@ -181,8 +181,14 @@
   },
   "active": "d36328f4a0a9a1f1",
   "lastOpenFiles": [
-    "Bash Linux/Untitled/8 Storage Terminology.md",
     "Bash Linux/Untitled/9 Filename_specification.md",
+    "Bash Linux/Untitled/10 file commands.md",
+    "Z/Projects.md",
+    "Z/Frontend.md",
+    "Z/DSA.md",
+    "Z/Backend.md",
+    "Pipeline.md",
+    "Bash Linux/Untitled/8 Storage Terminology.md",
     "Bash Linux/Untitled/3 Bash and Commands.md",
     "Bash Linux/Untitled/7 Environment.md",
     "Bash Linux/Untitled/6 Bash Features.md",
@@ -202,12 +208,6 @@
     "Bash Linux/Bash Basics/2 Working with Files & Dir.md",
     "Bash Linux/Bash Doc/ls-list.md",
     "Bash Linux/Bash Basics/4 Loops.md",
-    "Bash Linux/Bash Basics/1 Navigating Files & Dir.md",
-    "Bash Linux/Bash Basics/3 Pipes and Filters.md",
-    "Bash Linux/Bash Basics/0 Linux.md",
-    "MCA/Data Structures in C/Data structures in C.md",
-    "Site Structure.md",
-    "Bash Linux/Bash Doc/bash-commands.md",
     "personal-site/docs/bash-linux/command-docs",
     "personal-site/docs/bash-linux",
     "personal-site/docs",
