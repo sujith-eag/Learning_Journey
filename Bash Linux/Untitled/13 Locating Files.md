@@ -142,7 +142,16 @@ Without parenthesis, not is applied first, followed by and, then or.
 .
 .
 .
+`-daystart`
+`-amin` `atime`
+`-mindepth` `-maxdepth`
+`-mount`
+`-P` for not following symbolic links
+`-L` to force to follow symbolic link
+`-H`
 
+`-D` for debugging options followed by (`all`, `exec`, `help`, `opt`, `rates`, `search`, `stat`, `tree`)
+`-warn` `-nowarn`
 
 
 
