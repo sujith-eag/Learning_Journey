@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Untitled/Regular Expressions/RE.md",
+                "file": "Bash Linux/Untitled/2 OS Kernel.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RE"
+              "title": "2 OS Kernel"
             }
           }
         ],
@@ -181,8 +181,11 @@
   },
   "active": "d36328f4a0a9a1f1",
   "lastOpenFiles": [
-    "Bash Linux/Untitled/16 System Resources.md",
+    "Bash Linux/Untitled/1 Linux.md",
     "Bash Linux/Untitled/Regular Expressions/RE.md",
+    "Bash Linux/Untitled/3 Bash and Commands.md",
+    "Bash Linux/Untitled/2 OS Kernel.md",
+    "Bash Linux/Untitled/16 System Resources.md",
     "Bash Linux/Untitled/Regular Expressions",
     "Bash Linux/Untitled/15 Processes Monitoring.md",
     "Bash Linux/Untitled/14 Forms of Process Management.md",
@@ -193,7 +196,6 @@
     "Bash Linux/Untitled/10 file commands.md",
     "Bash Linux/Untitled/6 Bash Features.md",
     "Bash Linux/Untitled/5 help pages.md",
-    "Bash Linux/Untitled/3 Bash and Commands.md",
     "Bash Linux/Untitled/9 Filename_specification.md",
     "Z/Projects.md",
     "Z/Frontend.md",
@@ -202,8 +204,6 @@
     "Pipeline.md",
     "Bash Linux/Untitled/8 Storage Terminology.md",
     "Bash Linux/Untitled/7 Environment.md",
-    "Bash Linux/Untitled/2 OS Kernel.md",
-    "Bash Linux/Untitled/1 Linux.md",
     "Bash Linux/Untitled",
     "Bash Linux/Bash Basics/7.md",
     "Python/Data Types/Primitive types/3_string.md",
