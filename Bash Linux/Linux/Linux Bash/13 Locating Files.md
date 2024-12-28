@@ -9,17 +9,76 @@ If full text is used, the search examines the search string against both filenam
 
 ### `find` command
 
-Complicated yet powerful.
-`find directory options` where directory is the starting place where the search should begin.
+The `find` command is used to locate files and directories based on specific criteria. Complicated yet powerful.
 
-Simplest form of find is to find a file whose name matches the given string.
-We can use wildcards also, for this we need `-name` option followed by the `"string"`.
-`find /etc -name "*.conf"` to locate files ending in `.conf` in the `/etc` directory.
+`find directory options` 
+where directory is the starting place where the search should begin.
+
+***Basic Usage***
+To find and list all files and directories under the current directory:
+```bash {frame="none"}
+$ find .
+```
+
+***Filtering by Type***
+- **Directories (`-type d`)**: Lists only directories.
+```bash {frame="none"}
+$ find . -type d
+```
+- **Files (`-type f`)**: Lists only files.
+```bash {frame="none"}
+$ find . -type f
+```
+
+
+***Finding by name***
+Simplest form of find is to find a file whose name matches the given string.We can use wildcards also.
+`-name` option followed by the `"string"`.
+
+```bash {frame="none"}
+$ find . -name *.txt
+# this finds files by only in current directory because,
+```
+the `*` got expanded before execution of command so what actually got executed was,
+```bash {frame="none"}
+$ find . -name numbers.txt
+```
+So only that got listed.    
+Putting it in quotes will solve this issue.
+```bash {frame="none"}
+$ find . -name "*.txt"
+```
+now `find` will get all `.txt` files in all directories.
+
+**Note**: Enclose the pattern in quotes to prevent shell expansion of `*`. Otherwise, it will only search for files named literally `*.txt`.
+
+```bash
+find /etc -name "*.conf"
+```
+ to locate files ending in `.conf` in the `/etc` directory.
 
 `-iname` is a case sensitive version of the same search.
 
 the above command is similar to the `ls /etc/*.conf` but `ls` will not search all the sub-directories. `-R` recursive search can be added to make it similar.
 (But did not work recursively)
+
+
+### Using Command Substitution
+You can combine commands using `$()` to insert the output of one command into another. For example, to count lines in all `.txt` files:
+```bash {frame="none"}
+$ wc -l $(find . -name "*.txt")
+```
+`$([command])` inserts a command's output in place.     
+So the shell first executes what is inside the ( ) and does rest later.
+
+### Example
+To count lines in all `.dat` files and sort the results numerically:
+```bash {frame="none"}
+$ wc -l $(find . -name "*.dat") | sort -n
+```
+This command finds all `.dat` files, counts their lines, and sorts the results.
+
+
 
 ____
 

@@ -42,12 +42,12 @@
 `uniq`   `uniq -c`
 `pipes and filters`
 
-### [[4 Loops]]
+### [[44 Loops]]
 `for do done`
 `nested loop`
 `iteration`
 
-### [[5 Shell Scripts]]
+### [[55 Shell Scripts]]
 `file.sh`
 `using simple text editor`
 `bash`
@@ -55,7 +55,7 @@
 `$@`  `"$@"`
 `#comments`
 
-### [[6 Finding things]]
+### [[14 grep]]
 `grep`      `grep [pattern] [file]`
 `grep -w " " []`
 `grep -n -w -i`

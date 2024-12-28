@@ -1,23 +1,51 @@
 
 Linux provides several forms of support. The most used one being man(manual) page.
 
+`--help` can be passed to any command to see what options a command accepts:
+```bash {frame="none"}
+cd --help
+ls --help
+mkdir --help
+```
+
+`help` provides help for built-in shell commands:
+```bash {frame="none"}
+help cd
+help echo  
+# Works for built-in commands only
+```
+
+If a command has both long (`--option`) and short (`-o`) versions, use the short version for typing in the terminal and the long version in scripts for clarity.
+
+
+___
 ## `man` Pages
 
+`man` is the manual for a command if it exists:
 `man` expects the name of the Linux command as its argument
 It displays the `manual page` for that command called `man page` for short.
+```bash {frame="none"}
+man ls
+man mkdir
+```
 
-it is displayed within the `vi` editor without the editing option (view/search only mode).
+In the manual:
+- **Space** and **B** to scroll down.
+- **N** to navigate between search hits.
+- **Shift + N** to navigate backwards.
+
+Note: **`man cd`** doesn't exist since `cd` is a built-in shell function; use `--help` instead.
+
+It is displayed within the `vi` editor without the editing option (view/search only mode).
 
 Man page will contain section for 
 Name, Synopsis, Description, Options, Configuration file, Exit code, Files, Other man pages to consult.
 
+
 ## Other Command line help
 
-`rmdir --help`
 
-also just the `help` command
-
-using `whatis` to get brief description
+Using `whatis` to get brief description of a command.
 ```bash
 sujith@sujith-Latitude-7490:~$ whatis ls pwd rm rmdir mkdir touch echo
 ls (1)               - list directory contents
@@ -44,10 +72,11 @@ mkdtemp (3)          - create a unique temporary directory
 
 
 ## Searching in `/user/bin`
-to see all the commands available
+
+To see all the commands available
 
 
-## using `apropos`
+## Using `apropos`
 To find a command using its description.
 It takes in a string as argument and searches for all the command that has it as the description.
 `apropos delete`    `apropos delete directory`  these might search for specific words.

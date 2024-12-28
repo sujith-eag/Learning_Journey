@@ -15,7 +15,7 @@ As user processes are given their own memory space, the computer must ensure tha
 DRAM is limited in size and the processes that needs to be done will not wholly fit in main memory as large number of programs are running.
 The main memory is extended with reserved data on the hard disk (SSD) called `swap space`.
 
-Portions of our running programs reside in swap space rather than memory so that we can accomodate both a number of processes and large processes at one time.
+Portions of our running programs reside in swap space rather than memory so that we can accommodate both a number of processes and large processes at one time.
 
 We refer to this extension of memory as `virtual memeory`
 

@@ -1,5 +1,21 @@
 
-# ls - listing files
+
+
+
+### [*ls*](/personal-site/docs/bash-linux/command-docs/ls-list) - Listing Files and Directories
+
+**`ls`** lists files and directories in the current directory.  
+
+```bash {frame="none"}
+ls ~/Desktop/trial
+# Using absolute path
+
+ls /Users/sujith/Desktop/trial
+# Another way using absolute path
+
+ls -F Desktop
+# List contents of Desktop directory
+```
 
 ```bash
 sujith@sujith-Latitude-7490:~$ ls ./ Desktop/ Documents/ Downloads/
@@ -79,8 +95,13 @@ The contents of Long Listing
 ***Name*** : Name of the item.   for a symbolic link, the name is followed by `->` 
 
 
-`ls -a`  to list all the files. the files which are hidden also
-`ls -la`  `ls -al`  multiple options can be combined in any order.
+Options can be combined in any order:
+```bash {frame="none"}
+ls -Fal   # combined options
+ls -la
+ls -al
+```
+
 
 ## Other useful options of `ls`
 

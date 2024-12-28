@@ -241,7 +241,8 @@ ___
 
 `cat` is concatenation command to join files or display content of files.
 
-Writing to a file
+***Writing to a file / Capturing Output from Command***
+
 `cat *.txt > newfile.txt`  making a new file from all the text files in directory. `newfile` if existed will be re-written.
 
 `cat *.txt >> newfile.txt` same as above but appends if `newfile` existed.
@@ -256,8 +257,40 @@ the word can be anything.
 `ls -l /home/sujith > user_entries.txt`
 `ls -l /home/user >> user_entries.txt`
 
+```bash {frame="none"}
+$ wc -l *.pdb > lengths.txt
+```
+This command reads all `.pdb` files and writes the line counts to `lengths.txt`. If the file doesn't exist, it will be created; if it does exist, it will be overwritten, so caution is advised.
+
+```bash {frame="none"}
+$ head -n 3 animal.csv > animals-subset.csv
+# Creates the file for the first 3 lines
+
+$ tail -n 2 animals.csv >> animals-subset.csv  
+# Appends the last 2 lines
+```
+
 
 ***Pipes***
+
+Pipes for Passing Output to Another Command.
+The pipe operator `|` allows you to pass the output of one command as input to another command:
+
+```bash {frame="none"}
+$ sort -n lengths.txt | head -n 1
+```
+This command sorts `lengths.txt` and then retrieves the first line (smallest value).
+
+You can chain multiple commands together:
+Piping removes the need for other files to hold values.
+
+we can pass `wc` values directly to `sort` and then send resulting output to `head`.
+
+```bash {frame="none"}
+$ wc -l *.pdb | sort -n | head -n 1  
+# Gets the shortest .pdb file
+```
+
 `cat *.txt | sort` takes all `.txt` files and pipes the output to `sort`. So sorts all the contents rather than outputting the file.
 
 `cat *.txt | sort > newfile.txt`  takes input, sorts it, puts it into a file.
