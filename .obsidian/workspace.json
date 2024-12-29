@@ -28,50 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Linux/Linux Bash/11 File Permissions.md",
+                "file": "Bash Linux/Linux/Linux Bash/44 Loops.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11 File Permissions"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "4be62bf00f17bebe",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a33ae0256501de8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "12 Hard and Symbolic Links"
-            }
-          },
-          {
-            "id": "7839d90728d6a2d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Try.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Try"
+              "title": "44 Loops"
             }
           }
         ],
@@ -216,30 +179,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7839d90728d6a2d2",
+  "active": "d36328f4a0a9a1f1",
   "lastOpenFiles": [
+    "Bash Linux/Linux/Linux Bash/15 grep.md",
+    "Bash Linux/Linux/Linux Bash/14 File Searching.md",
+    "Bash Linux/Linux/Linux Bash/13 regex.md",
+    "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md",
     "Bash Linux/Linux/Linux Bash/11 File Permissions.md",
+    "Bash Linux/Linux/Linux Bash/10 File Viewing and Editing.md",
+    "Bash Linux/Linux/Linux Bash/9 File Movement and Copy.md",
+    "Bash Linux/Linux/Linux Bash/8 Basic File commands.md",
+    "Bash Linux/Linux/Linux Bash/7 Storage Terminology in Linux.md",
+    "Bash Linux/Linux/Linux Bash/6 Shell Environment and Subshell.md",
+    "Bash Linux/Linux/Linux Bash/5 Listing Files and Directories.md",
+    "Bash Linux/Linux/Linux Bash/4 Variables and Aliases.md",
+    "Bash Linux/Linux/Linux Bash/3 help pages.md",
+    "Bash Linux/Linux/Linux Bash/2 Bash Features.md",
+    "Bash Linux/Linux/Linux Bash/1 Bash Basics.md",
     "Try.md",
-    "Bash Linux/Linux/Linux Bash/10.2 File Viewing and Editing.md",
-    "Bash Linux/Linux/Linux Bash/10 Basic File commands.md",
-    "Bash Linux/Linux/Linux Bash/10.1 File Movement and Copy.md",
+    "Bash Linux/Linux/Linux Bash/44 Loops.md",
     "Z/Temp/Offload.md",
     "Z/Temp/Temp.md",
     "MCA/Python/pylab.md",
-    "Bash Linux/Linux/Linux Bash/8 Storage Terminology in Linux.md",
-    "Bash Linux/Linux/Linux Bash/4 Listing Files and Directories.md",
-    "Bash Linux/Linux/Linux Bash/3.4 Shell Environment and Subshell.md",
-    "Bash Linux/Linux/Linux Bash/3.3 Variables and Aliases.md",
-    "Bash Linux/Linux/Linux Bash/3.2 help pages.md",
-    "Bash Linux/Linux/Linux Bash/3.1 Bash Features.md",
     "Bash Linux/Linux/Linux Bash/0 Linux Bash.md",
-    "Bash Linux/Linux/Linux Bash/3 Bash Commands.md",
     "Bash Linux/Linux/Linux Bash/55 Shell Scripts.md",
-    "Bash Linux/Linux/Linux Bash/44 Loops.md",
-    "Bash Linux/Linux/Linux Bash/14 grep.md",
-    "Bash Linux/Linux/Linux Bash/13 Locating Files.md",
-    "Bash Linux/Linux/Linux Bash/12.1 regex.md",
-    "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md",
     "Bash Linux/Bash Basics/7.md",
     "Bash Linux/Bash Basics/3 Pipes and Filters.md",
     "Bash Linux/Bash Basics/2 Working with Files & Dir.md",
