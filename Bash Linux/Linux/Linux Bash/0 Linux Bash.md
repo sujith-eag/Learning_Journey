@@ -71,3 +71,35 @@
 
 
 [[bash-commands]]
+
+
+> 3
+> **Common Shell Commands**, **Executing Multiple Commands**, and **Tab Completion** sections
+
+> 3.1 
+> **Command-Line Editing**, **Redirection**, **Pipes**, **Tilde Expansion**, and **Brace Expansion**:
+
+
+
+
+- **Introduction to Bash**: Mention the difference between interactive and non-interactive shells, explain why Bash is so popular.
+    
+- **Basic Commands**: Include how to check the manual pages (`man command`), and give an example of a commonly used command like `ls` with options (e.g., `ls -l` for long listing).
+    
+- **File System Navigation**: Ensure you mention relative vs absolute paths, how to navigate between directories with `cd`, and the special directories like `.` (current directory) and `..` (parent directory).
+    
+- **Input and Output Redirection**: Apart from basic redirection (`>`, `>>`, `<`), include examples of redirecting both stdout and stderr (`2>&1`), and explain `tee` for splitting output.
+    
+- **Piping**: Ensure you cover the concept of piping and chaining multiple commands together (e.g., `ps aux | grep process_name`).
+    
+- **Process Management**: Include handling background processes, `bg`, `fg`, `kill`, and `jobs`. Describe how to find process IDs (`ps`, `top`, `pgrep`).
+    
+- **Environment Variables**: Explain the difference between user and system environment variables, how to set and export variables, and how to use `env` and `printenv`.
+    
+- **Shell Scripting Basics**: Ensure you cover basic scripting structure, shebang (`#!/bin/bash`), and running scripts with execution permissions.
+    
+- **Advanced Scripting Techniques**: Explain loops (`for`, `while`), conditional statements (`if`, `case`), functions, and arrays.
+    
+- **Scripting Best Practices**: Discuss comments, indentation, using `set -e` to stop on errors, and modular scripts.
+    
+- **Troubleshooting**: Mention common errors, debugging strategies like `set -x`, and using `echo` for output.

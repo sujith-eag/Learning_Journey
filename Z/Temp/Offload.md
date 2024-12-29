@@ -1,3 +1,7 @@
+> i have made notes and collected examples to explain concepts of Linux bash, its working and commands, it is divided into many sections. I want help in formatting the content and ordering it properly in a logical and practical way and finding what key points have been left out in each section so that can also be included
+
+> i have made notes and collected examples to explain concepts of Linux bash, its working and commands, it is divided into many sections. I the content formatted and ordered properly in a logical and practical way and finding what key points have been left out in each section that needs to be added
+
 BEOWULF CLUSTERS
 Beowulf clusters are designed to solve high-performance computing tasks.
 A Beowulf cluster consists of commodity hardware — such as personal

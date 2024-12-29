@@ -82,13 +82,12 @@ Options typically follow a hyphen `-`.
 Short options start with a single dash (`-`), e.g., `-r`, `-a`.   
 Long options start with double dashes (`--`), e.g., `--reverse`, `--all`.
 
-Same options can act differently in different commands or same way in some commands.
-`-f / --force` for force and `-i / --interactive` is in `cp, mv, rm`
-`-r / --recursive` perform recursive operation for `cp` `rm`
-`-a` for all and `-h / --help`  are common in most commands
+Some options may act differently in different commands or same way across multiple commands.
+* `-f / --force` for force and `-i / --interactive` is in `cp, mv, rm`
+* `-r / --recursive` perform recursive operation for `cp` `rm`
+* `-a` for all and `-h / --help`  are common in most commands
 
-**Parameters** / **Arguments** are often required or optional, depending on the command.
-These specify the target of the command to work on, such as file names or directories.
+**Parameters** or **Arguments** are often required or optional, depending on the command. These specify the target of the command, such as file names or directories.
 
 
 {{< callout >}} Each part is separated by spaces; omitting spaces causes confusion about commands, options, and arguments.  
@@ -100,31 +99,35 @@ Note that case sensitivity matters:
 - **`ls -S`** sorts files by size.
 
 ---
+
+
+
 ### **Common Shell Commands**
 
 Some common shell commands and their functions include:
-- **cd**: Change the directory
-- **ls**: List files in the current directory
-- **pwd**: Display the current directory path
 
-- **vi** or **emacs**: Text editors for editing files
+- **`cd`**: Change the directory
+- **`ls`**: List files in the current directory
+- **`pwd`**: Display the current directory path
 
-- **who**: Show who is logged in
-- **whoami**: Display the current username
-- **hostname**: Display the computer’s hostname
-- **uname**: Show system information (e.g., `uname -o` for the operating system)
-- **echo**: Print text or values to the screen (e.g., `echo $SHELL` to display the shell being used)
-- **arch**: Show the computer’s architecture
-- **bash**: Start a new Bash session within current session
-- **exit**: Exit the current Bash session (If it is the outermost one then closes the window)
-- **passwd**: Change the user password
+- **`vi`** or **`emacs`**: Text editors for editing files
+- 
+- **`who`**: Show who is logged in
+- **`whoami`**: Display the current username
+- **`hostname`**: Display the computer’s hostname
+- **`uname`**: Show system information (e.g., `uname -o` for the operating system)
+- **`arch`**: Show the computer’s architecture
 
+- **`echo`**: Print text or values to the screen (e.g., `echo $SHELL` to display the shell being used)
+- **`bash`**: Start a new Bash session within the current session
+- **`exit`**: Exit the current Bash session (If it is the outermost one, it will close the window)
+- **`passwd`**: Change the user password
 
 ---
 
 ### **Executing Multiple Commands**
 
-Multiple commands can be executed on a single line by separating them with a semicolon `;`
+Multiple commands can be executed on a single line by separating them with a semicolon `;`. This allows you to run multiple commands consecutively, one after the other.
 
 ```bash
 $ uname -o; echo $SHELL; who; whoami;
@@ -135,22 +138,26 @@ sujith   seat0        2024-12-24 08:55 (login screen)
 sujith   tty2         2024-12-24 08:55 (tty2)
 sujith
 ```
-This command will output the operating system type, the shell used, the list of logged-in users, and the current username in succession.
+
+- `uname -o` shows the operating system type.
+- `echo $SHELL` displays the shell being used.
+- `who` lists logged-in users.
+- `whoami` displays the current username.
 
 ---
 
-### Tab Completion
+## **Tab Completion**
 
-When typing a directory name, pressing `Tab` will auto-complete if there’s only one option. Double pressing `Tab` shows multiple options.
+When typing a directory or command name, pressing **`Tab`** will auto-complete the name if there is only one option. Double pressing **`Tab`** will show all possible options.
 
-Typing `Doc` + `Tab` may complete to **Documents**.
+Typing `Doc` + **`Tab`** may automatically complete to **Documents**.
 
-```bash {frame="none"}
+```bash
 ~/Documents/Odin-Project/foundations/java-script/calculator/
 Doc tab      O tab     f tab     j tab    cal tab
 ```
 
-- Use `.` to refer to the current directory.  
-- `git add .` stages all files in the current directory for Git.  
-- In VS Code, navigate to your project directory and use `code .` to open it.  
-- Simply typing `code` in the terminal launches VS Code.
+**`.`** refers to the current directory.
+- `git add .` stages all files in the current directory for Git.
+- In VS Code, navigate to your project directory and use `code .` to open it.
+- Simply typing `code` in the terminal launches **VS Code**.

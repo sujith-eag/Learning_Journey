@@ -1,8 +1,9 @@
 
 
-**[*ls*](/personal-site/docs/bash-linux/command-docs/ls-list)** lists files and directories in the current directory.  
+The **[*ls*](/personal-site/docs/bash-linux/command-docs/ls-list)** command is used to list files and directories in the current directory.
 
-```bash {frame="none"}
+#### **Basic Usage**
+```bash
 ls ~/Desktop/trial
 # Using absolute path
 
@@ -13,49 +14,41 @@ ls -F Desktop
 # List contents of Desktop directory
 ```
 
+These commands display the contents of the `Desktop` directory (or any specified directory). 
+The `-F` option appends a character to each file to indicate its type (e.g., `/` for directories, `*` for executables).
+
+
+#### **Using `ls` with Multiple Directories**
+
 ```bash
 sujith@sujith-Latitude-7490:~$ ls ./ Desktop/ Documents/ Downloads/
-./:
-Desktop    Downloads  Music     Public  snap       Videos
-Documents  grep.txt   Pictures  repos   Templates
-
-Desktop/:
- courses  'MCA Sem1 Text Books'   obsidian-vaults   Opage   pylab   websites
-
-Documents/:
-
-Downloads/:
- hugoinaction-chapter-02-resources
-'Option WorkSheet.pdf'
- pcc-master
-'Print Resume.pdf'
- sujith.jpeg
 ```
 
+In this example, the `ls` command lists the contents of multiple directories. However, using semicolons `;` between the commands might not work as intended because semicolons separate commands rather than options.
 
-(`;` didn't work as intended because all are options, not separate statements)
 ```bash
 sujith@sujith-Latitude-7490:~$ ls .; Desktop/; Documents/; Downloads/;
+
 Desktop    Downloads  Music     Public  snap       Videos
 Documents  grep.txt   Pictures  repos   Templates
 bash: Desktop/: Is a directory
 bash: Documents/: Is a directory
 bash: Downloads/: Is a directory
 ```
-`ls -l; ls-a; ls -la;` is separate statements linked.
 
+The `ls` command should be executed separately for each directory or with valid options that do not cause errors.
 
-### Long listing
+---
 
-`ls -l` used for long listing the details of files and directories.
-`ls -l file.txt` for details of that file
-The file types and permissions are combined together to form 10 characters.
-`drwxr-xr-x` 
-`-r-xr-xr-x`
-the first `d` represents a directory and `-` are files.
+### **Long Listing Format**
+
+`-l` option to get a more detailed view of files and directories:
 
 ```bash
 sujith@sujith-Latitude-7490:~/Desktop$ ls -l
+```
+
+```bash
 total 24
 drwxrwxr-x 4 sujith sujith 4096 Sep  3 15:29  courses
 drwxr-xr-x 2 sujith sujith 4096 Dec 22 16:11 'MCA Sem1 Text Books'
@@ -67,61 +60,58 @@ drwxrwxr-x 8 sujith sujith 4096 Oct 26 09:04  websites
 -rw-rw-r--  1 sujith sujith 2957628 Oct 30 13:52 'Option WorkSheet.pdf'
 ```
 
-The file types and permissions are combined together to form 10 characters.
-`drwxr-xr-x`    `-r-xr-xr-x`  the first `d` represents a directory and `-` are files.
+#### **Understanding the Output of `ls -l`**
 
-The contents of Long Listing
-`File-Type` `Permissions` `Hard links` `User, Group` `size` `Last` `Name`
+1. **File Type**:  The first part of file permissions. 
+    `d` represents a directory
+    `-` represents a regular file
+    `l` represents a symbolic link
 
-***File type*** : can be true files, directories, symbolic links, devices and other items `-` `d` 
-`l` for symbolic link
+2. **Permissions** (Mode): Shows the file’s access permissions for the owner, group, and others. `rw- r-- ---` 9 characters combined with file type becomes 10 characters.  (`.` at end of permissions to indicate the `SELinux` content)
 
-***Permissions*** : called *mode*, file's access permissions.
-`rw- r-- ---`  owner has read write access, group members have read access, others have no access.
-( `.` at end of permissions to indicate the `SELinux` content)
+3. **Hard Links**: The number of hard links pointing to the file. For files, it is usually `1`, and for directories, it is typically `2` but can be more.
 
-***Hard links*** : Number of hard links that point at this item. Often `1` for files and `2` for directories but can be larger.
+4. **User, Group**: The user who owns the file and the group to which it belongs. For most users the group is the user's private group.  `sujith sujith`
+ 
+5. **Size**: The size of the file or directory in bytes. `68146` for the `sujith.jpeg` file.
 
-***User, Group*** : The user who owns the file and the group that file belongs to. (for most users the group is the user's private group)  `sujith sujith`
+6. **Last Modified Date**: The last modification date and time of the file or directory. (creation date/time if not modified)
 
-***Size*** : Size of objects in bytes. `0` is for empty.
-
-***Last*** : Modification date/time (creation date/time if not modified)
-
-***Name*** : Name of the item.   for a symbolic link, the name is followed by `->` 
+7. **Name**: The name of the file or directory. For a symbolic link, the name is followed by `->` 
 
 
-Options can be combined in any order:
-```bash {frame="none"}
-ls -Fal   # combined options
-ls -la
-ls -al
-```
+---
 
+### **Useful Options for `ls`**
 
-## Other useful options of `ls`
+Options combined with `ls` to modify its output:
 
-`-a` hidden files and shows `.` current directory and `..` parent directory are also indicated.
-`-A` same as `-a` but without the `.` `..`
+`-a` Show hidden files (those starting with `.`) and the `.` (current directory) and `..` (parent directory).
+`-A` Similar to `-a` but excludes `.` and `..`
 
-`-g` same as `-l` but the owner is not shown
+`-g` Similar to `-l` but the owner is not shown
 `-G` Group owner is hidden (along with `-l`)
 
-`-h` human readable size of long list (along with `-l`)
-`-i` `inode` numbers of the files are included
+`-h` Displays file sizes in human readable format (KB, MB) (along with `-l`)
+`-i` Shows inode numbers for the files
 
-`-r` reverse alphabetical order of file listing
+`-r` Reverse alphabetical order of file listing
 `-R` Recursive listing (listing all contents of all sub directories)
 
-`-s` size shown in blocks instead of bytes (along with `-l`)
+`-s` Size shown in blocks instead of bytes (along with `-l`)
 `-S` Sort files by size (used with `-l`)
 
-`-t` time based sorting (along with `-l`)
-`-X` Extension based sorting  (along with `-l`)
+`-t` Sorts files by modification time (along with `-l`)
+`-X` Extension based sorting (along with `-l`)
 
-`-1` 1 file per line (not to use columns)
-`-C` Columns listing of entries to fir more in a page.
-
-
+`-C` Displays the output in columns (default behavior).
+`-1` Displays 1 file per line (not to use columns)
 
 
+These options an be combined in any order:
+
+```bash
+ls -Fal    # Combined options (file types, human-readable sizes, and long listing)
+ls -la     # Long listing with hidden files
+ls -al     # Another variation
+```
