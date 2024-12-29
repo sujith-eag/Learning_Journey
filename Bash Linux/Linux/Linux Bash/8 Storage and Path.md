@@ -20,7 +20,7 @@ Linux has a pre-established set of directories referred to as `top-level directo
 we will be in `current working directory`.
 accessing files in another directory needs specifying a directory path.
 
-`absolute path` always starts from the root directory.
+`absolute path` always starts from the root directory(`/).
 `relative path` describes the change from where we are to where we want to go.
 
 Directories are grouped together into partitions.

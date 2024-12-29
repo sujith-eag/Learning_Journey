@@ -1,10 +1,6 @@
 
 
-
-
-### [*ls*](/personal-site/docs/bash-linux/command-docs/ls-list) - Listing Files and Directories
-
-**`ls`** lists files and directories in the current directory.  
+**[*ls*](/personal-site/docs/bash-linux/command-docs/ls-list)** lists files and directories in the current directory.  
 
 ```bash {frame="none"}
 ls ~/Desktop/trial
@@ -107,16 +103,22 @@ ls -al
 
 `-a` hidden files and shows `.` current directory and `..` parent directory are also indicated.
 `-A` same as `-a` but without the `.` `..`
+
 `-g` same as `-l` but the owner is not shown
 `-G` Group owner is hidden (along with `-l`)
+
 `-h` human readable size of long list (along with `-l`)
 `-i` `inode` numbers of the files are included
+
 `-r` reverse alphabetical order of file listing
 `-R` Recursive listing (listing all contents of all sub directories)
+
 `-s` size shown in blocks instead of bytes (along with `-l`)
 `-S` Sort files by size (used with `-l`)
+
 `-t` time based sorting (along with `-l`)
 `-X` Extension based sorting  (along with `-l`)
+
 `-1` 1 file per line (not to use columns)
 `-C` Columns listing of entries to fir more in a page.
 

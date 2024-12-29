@@ -79,12 +79,12 @@ $ wc -l $(find . -name "*.dat") | sort -n
 This command finds all `.dat` files, counts their lines, and sorts the results.
 
 
-
+___
 ____
 
 There are three categories of options
 1. search criteria: which `-name` and `-iname` are part
-2. options are kind of Linux instructions that alter `find`'s behavior.
+2. options that alter `find`'s behavior.
 3. actions: which control what should happen when it has located an item.
 
 
@@ -97,6 +97,12 @@ Most but not all search expression require a parameter.
 `name` is user or group name
 `pattern` is regular expression.
 
+
+`[+-]n` for time and size, if the number is by itself then it tries to find an exact match.
+If the integer is preceded by `+` then `find` looks for matches where the property is greater than the integer.
+`-n` looks for property values less than n.
+
+___
 
 #### Time based options
 #### `-amin [+-]n`
@@ -160,10 +166,6 @@ p (pipe), f (regular file), `l`(symbolic link), s (socket)
 
 
 ____
-
-`[+-]n` for time and size, if the number is by itself then it tries to find an exact match.
-If the integer is preceded by `+` then `find` looks for matches where the property is greater than the integer.
-`-n` looks for property values less than n.
 
 ____
 

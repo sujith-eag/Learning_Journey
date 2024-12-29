@@ -1,3 +1,4 @@
+
 A shell contains an environment which consists of all the entities defined during this session.
 Ending a session(`exit`) or starting a new session within a session (`bash`) makes the entities no longer defined.
 we can move back to previous sessions from inner sessions (`subshell` or `nested shell).
