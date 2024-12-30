@@ -296,4 +296,96 @@ These are defined with **square brackets** (`[]`), which specify that the next c
 ___
 
 
-***Combining `[]` with `* + ?`*** to control the number of times we expect the characters in the bracket to appear.
+***Combining `[]` with `*`  `+` `?`*** to control the number of times we expect the characters in the bracket to appear.
+
+`[abc]+` will match any string that contains a sequence of one or more characters in the set, as long as there is atleast one character.
+`[abc]*` matches the empty string also. (without `^ $` it will match unlimited number of strings, even 1234) so `^[abc]*$` will only match strings that consist solely of zero or more `a, b, c`'s
+
+
+finding a string that consists only of letters `^[a-zA-Z]+$` or `^[[:alpha:]]+$`
+for one with only numbers `^[0-9]+$` or `^[[:digit:]]+$`
+for anything with only punctuation marks `^[[:punct:]]+$`
+
+To match any string that consists only of letters but ends with one punctuation mark.
+`^[A-Za-z]+[[:punct:]]+$` and `^[[:alpha:]]+[[:punct:]]+$`
+(plus is not between, it is combined with each character class)
+
+To match string with letters and all punctuation marks.
+`^[[:alpha:][:punct:]]+$` this represents that entire string consists of one or more(`+`) of characters in the brackets. Both are not an enumerated list but two different classes which are given as alternatives.
+
+Finding a name where first name last name has first letter uppercase and remaining lower case. this can be `[A-Z][a-z]+`.
+The middle initial will be a single upper case letter if it appears, which can be `[A-Z]?`
+So the name can be `^[A-Z][a-z]+ [A-Z]? [A-Z][a-z]+`, but if the middle letter is not available, then this regex is looking for a string with two spaces in the middle.
+
+
+### Matching characters that must not appear
+
+To not contain a specific character. Like without any blank space in it.
+`^[...]+$` is "all characters except the blank space"
+it would be convenient to specify "must not include" using `[^ ]`.
+
+The `^`, when used inside of brackets means "match if the next character in the string is not matching anything in the bracket". The blank space indicates the only character we do not want to match against.
+adding `^$` to match entire string and to specify that it can contain multiple characters as long as it not a space using `+` we will have `^[^ ]+$`
+
+
+### Matching Metacharaters Literally
+
+If the punctuation marks used for the regex are required as a literal chracter like `$ .`
+To use a punctuation mark that is a metacharacter but not to be found literally, we need to escape the meaning of that punctuation mark using escape character `\`.
+`\$[0-9]+\.[0-9][0-9]`   a regex for a dollar and a cent amount.
+An alternative is to place the punctuation marks in the `[]`
+`[$][0-9]+[.][0-9][0-9]`
+
+To find a addition `number + number = number` here `=` is not a meta character.
+`[0-9]+ \+ [0-9]+ = [0-9]+`
+`[0-9]+ [+] [0-9]+ = [0-9]+`
+
+To match any other mathematical expression we can go with the `[]` and `-` is in beginning or end or it can be escaped `\-`
+`[0-9]+ [-+/*] [0-9]+ = [0-9]+`
+
+`$` is a metacharacter used to express the end of a expression, so if `$` appears anywhere other than the end, it is taken literally as dollar sign so does not require backslash.
+Similarly `^` appearing anywhere other than the beginning is taken literally.
+`-` also should appear in the middle of the `[]`
+`$[0-9]+ [+] [0-9]+ \. [0-9][0-9]`
+
+
+### More precisely controlling repetition
+
+With `* +` we can indicate that a pattern of characters can be repeated but cannot control the number of repetition.
+with `?` we have slight control in that the number occurences is limited to eaither 0 or 1.
+
+To control the number of repetitions we use `{}` within which we can specify one or two numbers which will represent the maximum or the minimum number of occurances.
+
+The three formats are  
+`{m}` to match exactly m occurances of preceding character
+`{m.n}` to indicate that the preceding characters must match between m and n (m<n)
+`{n,}` to indicate atleast n occurances
+
+`[0-9]{5}` matches exactly five digits.
+`[0-9]{3}-[0-9]{4}` to represent a phone number
+
+To get IPv4 address with four octet numbers between 0 and 255
+wrong method would be `[0-255].[0-255].[0-255].[0-255]` because there is no range defined between 0 and 255, it is just 0 to 9.
+so `[0-255]` is interpreted as 0 to 2 and 5 and 5 (0, 1, 2, 5, 5).
+The `.` is also a metacharacter to match any single character.
+
+`[0-9]{0-3}\.[0-9]{0-3}\.[0-9]{0-3}\.[0-9]{0-3}`
+Still the three numbers can be more than 255 and go upto 999 which is not right,
+
+`^[^0-9]*[0-9]{5}[^0-9]*$`
+
+
+### Selecting between sequences
+
+`OR` is the `|` vertical bar. This OR is used between two or more regular expressions
+
+Using `()`
+`(...)+` to show this group may repeat and 
+`(...)?` to sow the group is optional
+
+
+`^[A-Z][a-z]+ ([A-Z]\. )?[A-Z][a-z]+`
+
+
+
+Sample problems of Regular expressions
