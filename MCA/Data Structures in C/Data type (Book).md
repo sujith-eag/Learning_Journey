@@ -43,7 +43,7 @@ Address is often called as the location, and the contents of the location are th
 
 Every computer has a set of "native" data types.
 It is basically the computer knowing how to handle the data at the given location as binary integer or real number.
-So two separate instructions are necessary for for the two operations and each instruction carries within itself an implicit identification for the type of its operands as well as their explicit location.
+So two separate instructions are necessary for the two operations and each instruction carries within itself an implicit identification for the type of its operands as well as their explicit location.
 
 ```c
 int x, y;
@@ -70,7 +70,7 @@ Once the concept of "data type" is divorced from the hardware capabilities of th
 
 > A data type is an abstract concept defined by a set of logical properties
 
-Once such an abstract data type is defined and the legal operations are are specified, we may implement the data type.
+Once such an abstract data type is defined and the legal operations are specified, we may implement the data type.
 
 Implementation might be `hardware implementation` or `software implementation`
 

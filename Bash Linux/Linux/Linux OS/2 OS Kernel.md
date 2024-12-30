@@ -58,11 +58,26 @@ The kernel is kept small, but additional server-like components are added:
 
 ---
 
+
 ### **Linux Kernel:**
 
 - **Modular Monolithic Kernel**: Monolithic kernels can be broken into modules, which are loaded as needed. This modular approach allows Linux to remain lightweight based on the modules loaded.
 - **Linux and System Calls**: In Linux, a system call isn’t directly intercepted by the kernel. Instead, it’s handled by a **wrapper function**, which places the arguments of the function call into appropriate hardware registers before the kernel switches from user mode to privileged mode.
 - **Portability**: Linux is a portable OS. It is not written for any specific hardware but can run on various platforms.
+
+### Why Linux?
+
+**Advantages:**
+- **Free**: Linux is available at no cost.
+- **Open-source**: The code is open, allowing users to enhance and modify it.
+- **More control over the OS**: Provides greater administrative control for system management.
+- **Educational value**: Helps users learn more about computers and operating systems.
+- **Community-driven**: Quick fixes for major issues from the community.
+- **Portable**: Can be used on various hardware platforms.
+
+**Disadvantages:**
+- **No commercial support**: Organizations might face challenges without guaranteed support.
+- **Lagging behind on features and security**: Sometimes updates and fixes may be slower compared to proprietary systems.
 
 ---
 

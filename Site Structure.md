@@ -160,11 +160,48 @@
 
 /Bash-linux   950-999
 │
-├── /01-
+├── /01-Linux OS
 │   ├── /01-
 │   │   ├──
 │   │   └── 
-
 │
 └── README.md
+
+/Bash-linux   950-999
+├── /Linux_OS  950-960
+│   ├── 1_OS_kernel.md 950
+│   ├── 2_prosess_management.md 951
+│   ├── 3_system_resources.md 952
+│   ├── an.md
+│   ├── 
+│   ├── 
+├── /Linux_Bash  970-995
+│   ├── 1_bash_basics.md 970
+│   ├── 2_bash_feature.md 971
+│   ├── 3_help_pages.md 972
+│   ├── 4_variables_aliases.md 973
+│   ├── 5_listing_files.md 974
+│   ├── 6_environment_subshell.md 975
+│   ├── 7_storage_terminology.md 976
+│   ├── 8_basic_file_commands.md 977
+│   ├── 9_file_movements.md 978
+│   ├── 10_file_viewing_editing.md 979
+│   ├── 11_file_permissions.md 980
+│   ├── 12_hard_soft_links.md 981
+│   ├── 13_regex.md 982
+│   ├── 14_file_search.md 983
+
+│   ├── grep.md 984
+│   ├── sed.md 985
+│   ├── awk.md 986
+
+│   ├── loop.md 
+│   ├── shell_scripts.md 986
+│   ├── .md
+│   ├── .md 
+│   ├── .md
+│   ├── .md
+│   ├── .md 
+│   ├── .md 
+│   ├── 
 ```

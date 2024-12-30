@@ -1,4 +1,4 @@
-### OPERATING SYSTEM CONCEPTS, 9th Edition, Wiley
+#### OPERATING SYSTEM CONCEPTS, 9th Edition, Wiley
 Abraham Silberschatz, Peter Baer Galvin, Greg Gagne
 
 ___
@@ -23,70 +23,69 @@ ___
 #### Part 2: Process Management
 
 ***Process***
-3.1 Process Concept
-3.2 Process Scheduling
-3.4 Interprocess Communication
+	3.1 Process Concept
+	3.2 Process Scheduling
+	3.4 Interprocess Communication
 
 ***Process Synchronization***
-5.1 Background
-5.2 The Critical-Section Problem
-5.3 Peterson's Solution
-(Mutex Locks, Semaphores) 
-(Classic Problems of Synchronization: Readers-Writers Problem, Dining Philosopher's Problem using Semaphores)
+	5.1 Background
+	5.2 The Critical-Section Problem
+	5.3 Peterson's Solution
+	(Mutex Locks, Semaphores) 
+	(Classic Problems of Synchronization: Readers-Writers Problem, Dining Philosopher's Problem using Semaphores)
 
 ***CPU Scheduling***
-6.1 Basic Concepts
-6.2 Scheduling Criteria
-(Scheduling Algorithms)
-
+	6.1 Basic Concepts
+	6.2 Scheduling Criteria
+	(Scheduling Algorithms)
 	6.5 Multiple processor scheduling
 	- 6.6 Real time CPU scheduling
-	6.6.1 Minimizing Latency
-	6.6.2 Priority Based Scheduling
-	6.6.3 Rate Monotonic Scheduling
+		6.6.1 Minimizing Latency
+		6.6.2 Priority Based Scheduling
+		6.6.3 Rate Monotonic Scheduling
 	- 6.7 Operating system examples
-	6.7.2 Windows Scheduling
-	6.7.3 Solaris Scheduling
+		6.7.2 Windows Scheduling
+		6.7.3 Solaris Scheduling
 
 ***Deadlocks***
-7.1 System Model
-7.2 Deadlock Characterization
-7.3 Methods for Handling Deadlocks
-7.4 Deadlock Prevention
-7.5 Deadlock Avoidance
-7.6 Deadlock Detection
-7.7 Recovery from Deadlock
+	7.1 System Model
+	7.2 Deadlock Characterization
+	7.3 Methods for Handling Deadlocks
+	7.4 Deadlock Prevention
+	7.5 Deadlock Avoidance
+	7.6 Deadlock Detection
+	7.7 Recovery from Deadlock
 
 ___
 
 #### Part 3: Memory Management
 
 ***Main Memory***
-- 8.1 Background
-8.1.1 Basic Hardware
-8.2 Swapping
-8.3 Contiguous Memory Allocation
-8.4 Segmentation
-- 8.5 Paging
-8.5.1 Basic Method
-8.5.2 Hardware Support
+	- 8.1 Background
+		8.1.1 Basic Hardware
+		8.2 Swapping
+		8.3 Contiguous Memory Allocation
+		8.4 Segmentation
+	- 8.5 Paging
+		8.5.1 Basic Method
+		8.5.2 Hardware Support
 
 ***Virtual Memory***
-9.1 Background
-- 9.2 Demand Paging
-9.2.1 Basic Concepts
-- 9.4 Page Replacement
-9.4.1 Basic Page Replacement
-9.4.2 FIFO Page Replacement
-9.4.3 Optimal Page Replacement
-9.4.4 LRU Page Replacement
+	9.1 Background
+	- 9.2 Demand Paging
+		9.2.1 Basic Concepts
+	- 9.4 Page Replacement
+		9.4.1 Basic Page Replacement
+		9.4.2 FIFO Page Replacement
+		9.4.3 Optimal Page Replacement
+		9.4.4 LRU Page Replacement
 
 
 
 _____
 
 
-# Not Mentioned
+### Not Mentioned
 #### Part 4: Storage Management
 
 ***Mass Storage Structure***
