@@ -38,8 +38,18 @@
 │   ├── c7-input-output.md 260
 │   ├── c8-unix-system-inerface.md 261
 
-├── /DS in C  
-
+├── /DS_in_C  261
+│   ├── .md 262
+│   ├── .md 263
+│   ├── .md 264
+│   ├── .md 265
+│   ├── .md 266
+│   ├── .md 267
+│   ├── .md 268
+│   ├── .md 269
+│   ├── .md 270
+│   ├── .md 271
+│   ├── .md 272
 
 
 /JavaScript   300 - 699
@@ -184,20 +194,22 @@
 │   ├── 6_environment_subshell.md 975
 │   ├── 7_storage_terminology.md 976
 │   ├── 8_basic_file_commands.md 977
+│   ├── 8.1_bc_and_date.md 977
 │   ├── 9_file_movements.md 978
 │   ├── 10_file_viewing_editing.md 979
 │   ├── 11_file_permissions.md 980
 │   ├── 12_hard_soft_links.md 981
 │   ├── 13_regex.md 982
-│   ├── 14_file_search.md 983
-
-│   ├── grep.md 984
-│   ├── sed.md 985
-│   ├── awk.md 986
-
+│   ├── 13.1_regex_expanded.md 983
+│   ├── 13.2_regex_matching.md 984
+│   ├── 14_file_search.md 985
+│   ├── 15_Neo_vim.md  986
+│   ├── 16_grep.md 987
+│   ├── 17_sed.md 988
+│   ├── 18_awk.md 989
+│   ├── 19_shell_scripts.md 989
 │   ├── loop.md 
-│   ├── shell_scripts.md 986
-│   ├── .md
+
 │   ├── .md 
 │   ├── .md
 │   ├── .md

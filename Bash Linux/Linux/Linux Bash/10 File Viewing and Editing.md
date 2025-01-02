@@ -293,3 +293,9 @@ wc -l *.txt | sort -n | tail -n 5  # Display the last five file line counts
 
 ---
 
+
+
+### **Text Editors: `vi` and `vim`**
+
+**`vi`** (or its improved version **`vim`**) is the default text editor found in most Linux distributions. It is used for editing text files from the command line. `vim` (Vi IMproved) offers additional features like syntax highlighting, better search functionalities, and more. While `vi` is still widely used, `vim` is recommended due to its enhanced capabilities.
+

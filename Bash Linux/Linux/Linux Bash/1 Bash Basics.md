@@ -43,7 +43,7 @@ ___
 
 The shell prompt shows essential information about the user, system, and their current state. A typical prompt looks like this:
 
-```bash
+```bash {frame="none"}
 sujith   @sujith-Latitude-7490   ~   $
 ```
 
@@ -51,7 +51,7 @@ sujith   @sujith-Latitude-7490   ~   $
 `$` indicates a normal user. When logged in as a **root** user, the prompt changes to `#`.
 The `#` symbol signifies that the user has root (administrator) privileges.:
 
-```bash
+```bash {frame="none"}
 root   @sujith-Latitude-7490   :home/sujith   #
 ```
 
@@ -61,7 +61,7 @@ root   @sujith-Latitude-7490   :home/sujith   #
 ## General Syntax of a Shell Command
 
 The general structure for a Linux command is:
-```
+```bash {frame="none"}
 command [option(s)] [parameter(s)]
 ```
 
@@ -129,7 +129,7 @@ Some common shell commands and their functions include:
 
 Multiple commands can be executed on a single line by separating them with a semicolon `;`. This allows you to run multiple commands consecutively, one after the other.
 
-```bash
+```bash {frame="none"}
 $ uname -o; echo $SHELL; who; whoami;
 
 GNU/Linux
@@ -152,7 +152,7 @@ When typing a directory or command name, pressing **`Tab`** will auto-complete t
 
 Typing `Doc` + **`Tab`** may automatically complete to **Documents**.
 
-```bash
+```bash {frame="none"}
 ~/Documents/Odin-Project/foundations/java-script/calculator/
 Doc tab      O tab     f tab     j tab    cal tab
 ```

@@ -10,7 +10,7 @@ When a variable is available throughout the environment for use, not just one se
 ##### **`env`**  
 The `env` command can be used to see all the environment variables defined (these can vary across distributions).
 
-```bash
+```bash {frame="none"}
 sujith@sujith-Latitude-7490:~/Desktop$ env
 SHELL=/bin/bash
 SESSION_MANAGER=local/sujith-Latitude-7490:@/tmp/.ICE-unix/1537,unix/sujith-Latitude-7490:/tmp/.ICE-unix/1537
@@ -35,7 +35,7 @@ OLDPWD=/home/sujith
 
 These environment variables can also be viewed by using **`echo`** where `string` is the name of the environment variable. To output the value of a variable, use the `$` sign before the variable name.
 
-```bash
+```bash {frame="none"}
 sujith@sujith-Latitude-7490:~/Desktop$ echo $USER; echo $SHELL; echo $PWD; echo $OLDPWD;
 sujith
 /bin/bash
@@ -59,7 +59,7 @@ sujith
 **`PATH`** is a crucial environment variable in Linux. It contains a list of directories in which the shell searches for executable programs.
 Most are found in `/user/bin    /user/sbin`
 
-```bash
+```bash {frame="none"}
 PATH=/home/sujith/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 ```
 
@@ -74,7 +74,7 @@ To store a value in a variable, use an **assignment statement**.
 The syntax is `VAR=VALUE` with **no spaces** around the equal sign.  
 We can define new variables or redefine existing ones.
 
-```bash
+```bash {frame="none"}
 $ FIRST=Sujith
 $ LAST=kumar
 $ echo $FIRST $LAST
@@ -85,7 +85,7 @@ Sujith Kumar
 When using single quotes (`' '`), the Bash interpreter treats the content literally and does not expand the value of variables.
 So it will not apply `$` to retrieve the value from variables.
 
-```bash
+```bash {frame="none"}
 $ FULL_NAME='$FIRST $LAST'
 $ echo $FULL_NAME
 $FIRST $LAST
@@ -95,7 +95,7 @@ $FIRST $LAST
 If there is any blank space in the Value being assigned, then value has to be in `" "`
 When using double quotes (`" "`), the Bash interpreter will expand variables.
 
-```bash
+```bash {frame="none"}
 $ FULL_NAME="$FIRST $LAST"
 $ echo $FULL_NAME
 Sujith Kumar
@@ -126,7 +126,7 @@ To define an alias, use an assignment statement:
 `alias name="command"`  
 The name is the alias, and the command is the Linux command it represents.
 
-```bash
+```bash {frame="none"}
 alias ..="cd .."
 alias ~="cd ~"
 alias lss=less
@@ -137,7 +137,7 @@ alias rm='rm -i'  # -i for interactive mode
 
 You can view all the predefined aliases by typing `alias`:
 
-```bash
+```bash {frame="none"}
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
@@ -151,7 +151,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 To remove an alias, use the `unalias` command:
 
-```bash
+```bash {frame="none"}
 unalias ll
 ```
 

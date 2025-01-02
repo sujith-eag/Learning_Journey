@@ -1,5 +1,4 @@
 
-### ***What is an Operating System?***
 
 An **Operating System (OS)** is a collection of programs that work together as a whole to support the user’s interaction with the computer by managing hardware resources and running processes. 
 
@@ -12,7 +11,7 @@ Operating systems typically comprise many different programs, with the heart of 
 
 ---
 
-### ***The Operating System Kernel***
+### The Operating System Kernel
 
 The **kernel** is responsible for most of the important tasks of the OS. There are three primary types of kernels:
 
@@ -22,7 +21,7 @@ The **kernel** is responsible for most of the important tasks of the OS. There a
 
 ---
 
-#### **Monolithic Kernel**
+#### Monolithic Kernel
 
 A **monolithic kernel** is a single program that operates solely within the computer’s privileged mode and its own memory(address) space. 
 
@@ -34,7 +33,7 @@ A **monolithic kernel** is a single program that operates solely within the comp
 
 ---
 
-#### **Microkernel**
+#### Microkernel
 
 In a **microkernel**:
 - The kernel is smaller and simpler than the monolithic type.
@@ -49,7 +48,7 @@ The kernel retains responsibility for:
 
 ---
 
-#### **Hybrid Kernel**
+#### Hybrid Kernel
 
 The **hybrid kernel** is a compromise between monolithic and microkernels. 
 The kernel is kept small, but additional server-like components are added:
@@ -59,11 +58,13 @@ The kernel is kept small, but additional server-like components are added:
 ---
 
 
-### **Linux Kernel:**
+### Linux Kernel:
 
 - **Modular Monolithic Kernel**: Monolithic kernels can be broken into modules, which are loaded as needed. This modular approach allows Linux to remain lightweight based on the modules loaded.
 - **Linux and System Calls**: In Linux, a system call isn’t directly intercepted by the kernel. Instead, it’s handled by a **wrapper function**, which places the arguments of the function call into appropriate hardware registers before the kernel switches from user mode to privileged mode.
 - **Portability**: Linux is a portable OS. It is not written for any specific hardware but can run on various platforms.
+
+___
 
 ### Why Linux?
 
@@ -81,7 +82,7 @@ The kernel is kept small, but additional server-like components are added:
 
 ---
 
-### ***Roles of OS Kernel***
+### Roles of OS Kernel
 
 | **Role**                | **Meaning**                                                                 | **Example**                                  |
 |-------------------------|-----------------------------------------------------------------------------|----------------------------------------------|

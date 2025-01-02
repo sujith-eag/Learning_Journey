@@ -205,7 +205,7 @@ This can be altered using `-d s.t`  s is seconds and t is tenth of second
 `-d 1` update every second 
 `-d 0.5` `-d 0.0001`
 
-```bash
+```bash {frame="none"}
 sujith@sujith-Latitude-7490:~$ top -d 5
 
 top - 18:37:00 up  2:35,  1 user,  load average: 0.15, 0.25, 0.25

@@ -13,18 +13,18 @@ Shell scripts allow us to automate frequently used commands by saving them in a 
 
 ### Creating a Shell Script
 1. Navigate to the desired directory:
-   ```bash {frame="none"}
-   $ cd alkanes
-   ```
+```bash {frame="none"}
+$ cd alkanes
+```
 2. Create a new shell script file:
-   ```bash {frame="none"}
-   $ nano middle.sh
-   ```
-   This opens a file where you can write your commands.
+```bash {frame="none"}
+$ nano middle.sh
+```
+This opens a file where you can write your commands.
 
 3. Add the following command to the file to extract specific lines:
-   ```bash {frame="none"}
-   head -n 15 octane.pdb | tail -n 5
+```bash {frame="none"}
+head -n 15 octane.pdb | tail -n 5
    ```
    This command collects lines 11-15 of the file `octane.pdb`.
 

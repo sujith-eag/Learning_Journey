@@ -1,4 +1,4 @@
-# Algorithm to identify Perfect Squares
+## Algorithm to identify Perfect Squares
 
 '//' divides the number and rounds it to nearby number, 7 // 3 == 2   15 // 2 == 7
 The function f(n) returns True when there is one divisor that i * i=n,  
@@ -16,7 +16,7 @@ def f(n):
 	return(s%2 == 1)               # Checking if the number is odd
 ```
 
-# Algorithm for Finding Factorial of n
+## Algorithm for Finding Factorial of n
 n! = n (n-1) (n-2)....1
 n! = n (n-1)!               this is what is being used
 
@@ -30,7 +30,7 @@ def factorial (n):
 ```
 
 
-# To find nC2 = n!/(n-r)!r!
+## To find nC2 = n!/(n-r)!r!
 For a Non negative number n, add n-1, add n-2 so on till n == 0.  Recursive call ends as 0 is return.
 The problems of finding unique handshakes or lines formed
 
