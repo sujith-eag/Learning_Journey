@@ -21,7 +21,7 @@
 * Case matters (e.g., `myVar` is different from `myvar`).
 * Can use letters, numbers, and underscores in variable names, but they cannot start with a number.
 
-**Control Flow**:    
+**Control Flow**:      
 **While Loops**: Both languages have `while` loops and support the `break` and `continue` statements.        
 ```python
 i = 0
@@ -44,10 +44,10 @@ while (i < 5) {
 ```
 
 
-**Constants**: 
-Both Python and C allow defining constants. 
-While Python has a convention for constants (uppercase variable names), 
-C uses `#define` or `const` to define constants.
+**Constants**:         
+Both Python and C allow defining constants.        
+While Python has a convention for constants (uppercase variable names),      
+C uses `#define` or `const` to define constants.      
 ```python
 MAX_VALUE = 100
 ```
@@ -57,12 +57,12 @@ MAX_VALUE = 100
 ```
 
 
-***Data Types***:
-**Integers and Floats**: Both languages support integer and floating-point types. 
+***Data Types***:       
+**Integers and Floats**: Both languages support integer and floating-point types.      
 In C, the `int` and `float` types exist, while in Python, all numbers are represented as `int` or `float` (and Python's `float` is equivalent to C's `double`).
 
-***Characters***: 
-C has `char` for single characters, while Python uses strings,
+***Characters***:     
+C has `char` for single characters, while Python uses strings,    
 but a single character in Python is a string of length 1.
 
 
@@ -71,9 +71,9 @@ but a single character in Python is a string of length 1.
 
 ### **Key Differences Between Python and C**
 
-***Boolean Operators***:    
-In Python, `and`, `not`, `or` are used for boolean operations.
-In C, `&&` (and), `!` (not), `||` (or) are used.
+***Boolean Operators***:       
+In Python, `and`, `not`, `or` are used for boolean operations.     
+In C, `&&` (and), `!` (not), `||` (or) are used.     
 
 ```python
 a = True
@@ -90,7 +90,7 @@ if (a && b) {
 ```
 
 
-***For Loops***:
+***For Loops***:       
 Python has a `for..in` loop for iterating over elements of a list or other iterable objects.
 ```python
 for i in range(5):
@@ -105,10 +105,10 @@ for (int i = 0; i < 5; i++) {
 ```
 
 
-**Boolean Values**:
-Python has predefined constants `True` and `False` as boolean values.
-In C, there are no predefined `True` or `False` values; 
-typically, `1` is used for true and `0` for false.
+**Boolean Values**:      
+Python has predefined constants `True` and `False` as boolean values.     
+In C, there are no predefined `True` or `False` values;      
+typically, `1` is used for true and `0` for false.     
 ```python
 if True:
     print("True")
@@ -123,7 +123,7 @@ if (1) {
 
 **None vs NULL**:
 - **None** in Python is a special object that represents the absence of a value. It is its own type.
-- **NULL** in C is a null pointer constant, typically represented as `0` or `((void*)0)`. 
+- **NULL** in C is a null pointer constant, typically represented as `0` or `((void*)0)`.      
 	It represents a pointer that does not point to any memory address.
 
 ```python
@@ -140,9 +140,9 @@ if (x == NULL) {
 ```
 
 
-**Strings and Character Arrays**:
-    - **Strings** in Python are immutable and can be treated as objects with many built-in methods.
-    - **C** strings are arrays of characters, terminated by a null character (`'\0'`). String manipulation in C is less intuitive and requires careful handling of memory.
+**Strings and Character Arrays**:     
+- **Strings** in Python are immutable and can be treated as objects with many built-in methods.
+- **C** strings are arrays of characters, terminated by a null character (`'\0'`). String manipulation in C is less intuitive and requires careful handling of memory.
 
 ```python
 s = "Hello"
@@ -156,9 +156,9 @@ printf("%s\n", strupr(s));
 ```
 
 
-**Data Structures**:
-Python comes with built-in data structures like `list` and `dict`, which are high-level and flexible.
-In C, you must manually define data structures using `struct`, and dynamic data structures often require the use of pointers for manipulation.
+**Data Structures**:        
+Python comes with built-in data structures like `list` and `dict`, which are high-level and flexible.      
+In C, you must manually define data structures using `struct`, and dynamic data structures often require the use of pointers for manipulation.     
 
 ```python
 my_list = [1, 2, 3]
@@ -175,9 +175,9 @@ struct Point p = {1, 2};
 ```
 
 
-**Memory Management**:    
-Python has automatic memory management with garbage collection, meaning memory is allocated and freed automatically.
-C requires **manual memory management** using functions like `malloc()` for allocation and `free()` for deallocation.
+**Memory Management**:        
+Python has automatic memory management with garbage collection, meaning memory is allocated and freed automatically.     
+C requires **manual memory management** using functions like `malloc()` for allocation and `free()` for deallocation.     
 
 ```python
 a = [1, 2, 3]  # Memory management handled by Python
@@ -189,7 +189,7 @@ free(arr);  // Manual deallocation
 ```
 
 
-**No `double` in Python**:
+**No `double` in Python**:      
 Python uses `float` for both single-precision and double-precision floating-point numbers, while C has both `float` (single precision) and `double` (double precision) types.
 ```python
 a = 3.14159  # Python float (equivalent to C's double)

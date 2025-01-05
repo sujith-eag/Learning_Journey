@@ -19,6 +19,8 @@
 * ***AI API integration with web scraping to get summary***, select details about a company, background, requirements, current activity etc. (AI)
 * ***News summary and blog making (AI)***
 * meta verse in 2d space
+* Flutter with Firebase - 
+* MERN ?
 
 
 MERN, Golang, python, react native, GOAT

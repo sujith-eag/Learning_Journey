@@ -56,72 +56,77 @@
 │
 ├── /01-Language  300-499
 │   ├── /01-Data-types 300-319
-│   │   ├── variables.md
-│   │   ├── types-empty-type.md
-│   │   ├── number-type-methods.md
-│   │   ├── string-type.md
-│   │   ├── string-methods.md
-│   │   ├── modifying-strings.md
-│   │   ├── boolean-type.md
-│   │   ├── operators.md
-│   │   ├── type-conversion.md
+│   │   ├── variables.md 301
+│   │   ├── types-empty-type.md 302
+│   │   ├── number-type-methods.md 303
+│   │   ├── number-type-methods.md 304
+│   │   ├── string-type.md 305
+│   │   ├── string-methods.md 306
+│   │   ├── modifying-strings.md 307
+│   │   ├── boolean-type.md 308
+│   │   ├── operators.md 309
+│   │   ├── type-conversion.md 310
 │   │   └── 
 
 │   ├── /02-Control-flow 320-349
 │   │   ├── /Conditionals
-|	│   │   ├── if-else.md
-|	│   │   ├── switch-case.md
-|	│   │   ├── ternary-operator.md
-|	│   │   ├── logical-operator.md
-|	│   │   ├── short-circuting-operators.md
+|	│   │   ├── if-else.md 321
+|	│   │   ├── switch-case.md 322
+|	│   │   ├── ternary-operator.md 323
+|	│   │   ├── logical-operator.md 324
+|	│   │   ├── short-circuting-operators.md 325
 |	│   │   └──    
 │   │   └── /Loops
-|	│   │   ├── while-do.md
-|	│   │   ├── for-loop.md
-|	│   │   ├── for-of-loop.md
-|	│   │   ├── for-in-loop.md
-|	│   │   ├── break-continue-labels.md
-|	│   │   ├── iterables.md
+|	│   │   ├── while-do.md 330
+|	│   │   ├── for-loop.md 331
+|	│   │   ├── for-of-loop.md 332
+|	│   │   ├── for-in-loop.md 333
+|	│   │   ├── break-continue-labels.md334
+|	│   │   ├── iterables.md 335
 |	│   │   └──    
 
 │   ├── /03-Functions  350-369
-│   │   ├── function.md
-│   │   ├── defining-function.md
-│   │   ├── arrow-function.md
-│   │   ├── scope-of-variable.md
-│   │   ├── parameters.md
-│   │   ├── return.md
-│   │   ├── scheduling.md
-│   │   ├── decorators.md
-│   │   ├── function-object.md
+│   │   ├── function.md 350 
+│   │   ├── defining-function.md 351
+│   │   ├── arrow-function.md 352
+│   │   ├── scope-of-variable.md 353
+│   │   ├── parameters.md 354
+│   │   ├── return.md 355
+│   │   ├── scheduling.md 356
+│   │   ├── decorators.md 357
+│   │   ├── function-object.md 358
 │   │   └── 
 
 │   ├── /04-Objects  370-389
-│   │   ├── object.md
-│   │   ├── object-properties.md
-│   │   ├── cloning-object.md
-│   │   ├── object.keys.md
-│   │   ├── methods-this-chaining.md
-│   │   ├── constructor-new.md
+│   │   ├── object.md  370
+│   │   ├── object-properties.md 371
+│   │   ├── cloning-object.md 372
+│   │   ├── object.keys.md 373
+│   │   ├── methods-this-chaining.md 374
+│   │   ├── constructor-new.md 375
 │   │   └── 
 
 │   ├── /05-Array  390-599
-│   │   ├── array.md
-│   │   ├── array-method.md
-│   │   ├── filter-method.md
-│   │   ├── map-method.md
-│   │   ├── reduce-method.md
-│   │   ├── sort-method.md
-│   │   ├── rest-spread.md
+│   │   ├── array.md 390
+│   │   ├── array-method.md 391
+│   │   ├── filter-method.md 392
+│   │   ├── map-method.md 393
+│   │   ├── reduce-method.md 394
+│   │   ├── sort-method.md 395
+│   │   ├── rest-spread.md 396
 │   │   └── 
 
-├── /02-DOM-Manipulation   500-699
+
+
+├── /JaveScript-DOM   500-699
 │   ├── /01-DOM-Basics  500-519
-│   │   ├── 1.1-DOM.md
-│   │   ├── 1.2-Navigating-DOM.md
-│   │   ├── 1.2.1-text-HTML-content.md
-│   │   ├── 1.3-selectors.md
-│   │   └── 1.4-attributes-properties.md
+│   │   ├── 1.1-DOM.md 501
+│   │   ├── 1.2-Navigating-DOM.md 502
+│   │   ├── 1.2.1-text-HTML-content.md 503
+│   │   ├── 1.3-selectors.md 504
+│   │   └── 1.4-attributes-properties.md 505
+
+
 │   ├── /02-DOM-modification  520-539
 │   │   ├── 2.1-DOM-modifying-basics.md
 │   │   ├── 2.2-modifying-practice.md
@@ -148,12 +153,33 @@
 
 /HTML & CSS   700-899
 │
-├── /01-HTML  10
-│   ├── /01- 10
+├── /01-HTML  700
+│   ├── /NoFOLDERS YET- 
+│   │   ├── 1 Boilerplate 701
+│   │   ├── 2 Texts and Lists 702
+│   │   ├── 3 Links and Images 703
+│   │   ├── 4 Input amd Types 704
+│   │   ├── 5 Button 705
+│   │   ├── 6 DOM Events 706
 │   │   ├──
-│   │   └── 
-├── /02-CSS  10
-│   ├── /01- 10
+│   │   ├── List styles
+│   │   ├── Catalog of Tags
+│   │   └── HTML Tags 1, 2, 3, 4, 5
+
+├── /02-CSS  800
+│   ├── /NOFOLDER YET- 
+│   │   ├── 1 Selectors 800
+│   │   ├── 2 Multiple selectors 801
+│   │   ├── 3 Declarations 802
+│   │   ├── 4 Adding CSS 803
+│   │   ├── 5 Box model 804
+│   │   ├── 6 Flexbox 805
+│   │   ├── 7 Flex Flexibility 806
+│   │   ├── 8 Axes in flexbox 807
+│   │   ├── 9 Utility class & Inheritance 808
+│   │   ├── 
+│   │   ├── 4.1 Size units 899
+│   │   ├── 4.2 color values 899
 │   │   ├── 
 │   │   └── 
 
@@ -167,15 +193,6 @@
 │   ├── /01-
 │   │   ├── 
 │   │   └── 
-
-/Bash-linux   950-999
-│
-├── /01-Linux OS
-│   ├── /01-
-│   │   ├──
-│   │   └── 
-│
-└── README.md
 
 /Bash-linux   950-999
 ├── /Linux_OS  950-960

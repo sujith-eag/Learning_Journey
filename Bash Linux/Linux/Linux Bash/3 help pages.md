@@ -21,7 +21,7 @@ For commands with both long (`--option`) and short (`-o`) versions, use the shor
 
 ---
 
-### **`man` Pages**
+### **man Pages**
 
 `man` is the manual for a command (if it exists). 
 It expects the name of the command as its argument and displays the corresponding **man page**.
@@ -54,7 +54,7 @@ A man page typically contains sections like:
 
 ### **Other Command Line Help**
 
-#### `whatis`
+#### whatis
 
 **`whatis`** : Provides a brief description of a command.
 
@@ -84,15 +84,13 @@ mkdtemp (3)          - create a unique temporary directory
 
 ---
 
-### **Searching in `/usr/bin`**
-
-To see all available commands which are present in contents of `/usr/bin`.
+**Searching in `/usr/bin`** To see all available commands which are present in contents of `/usr/bin`.
 
 ---
 
-### **Using `apropos`**
+### **Using apropos**
 
-`apropos` allows finding commands using a description. 
+`apropos` allows finding commands using a description.     
 It takes a string and searches for commands that has description that match the string provided as an argument.
 
 ```bash {frame="none"}
@@ -128,5 +126,6 @@ sujith@sujith-Latitude-7490:~$ apropos "user account"
 userdel (8)          - delete a user account and related files
 usermod (8)          - modify a user account
 ```
+
 
 ---

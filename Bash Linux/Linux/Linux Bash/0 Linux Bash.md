@@ -39,12 +39,12 @@ ____
 `uniq`   `uniq -c`
 `pipes and filters`
 
-### [[Loops]]
+### [[18.2 Shell Scripts - Loops]]
 `for do done`
 `nested loop`
 `iteration`
 
-### [[Shell Scripts]]
+### [[18 Shell Scripts]]
 `file.sh`
 `using simple text editor`
 `bash`

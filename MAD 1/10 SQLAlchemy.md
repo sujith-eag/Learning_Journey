@@ -15,7 +15,7 @@
 
 To create and activate a virtual environment in Python:
 
-```bash
+```bash {frame="none"}
 # Create a virtual environment
 python3 -m venv .experiment-sql-alchemy-env
 
