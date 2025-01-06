@@ -35,7 +35,7 @@ Both work the same way they do in `grep`
 
 ____
 
-```bash {frame"none"}
+```bash {frame="none"}
 sed '3q' emp.lst
 ```
 `3q` can be broken down to the address `3` and the action `q (quit)`.      
@@ -47,13 +47,13 @@ When it is enclosed in quotes and followed by  a file name, then it simulates th
 
 
 To select first two lines similar to head command.
-```bash {frame"none"}
+```bash {frame="none"}
 sed -n '1,2p' emp.lst
 ```
 
 
 `$` to select the last line. which is simulating the tail command.
-```bash {frame"none"}
+```bash {frame="none"}
 sed -n '$p' emp.lst
 ```
 
@@ -163,3 +163,5 @@ It is similar to the vi command `i` for insert, `a` for append, `c` to change, `
 .
 .
 .
+
+___

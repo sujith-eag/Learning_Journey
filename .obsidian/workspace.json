@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Linux/Linux OS/3 System Resources.md",
+                "file": "Bash Linux/Linux/Linux Bash/17 sed.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 System Resources"
+              "title": "17 sed"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -166,15 +165,16 @@
   },
   "active": "028a58976bd50b59",
   "lastOpenFiles": [
+    "Bash Linux/Linux/Linux Bash/18 Shell Scripts.md",
+    "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
+    "Bash Linux/Linux/Linux Bash/18.2 Shell Scripts - Loops.md",
+    "Bash Linux/Linux/Linux Bash/17 sed.md",
+    "Bash Linux/Linux/Linux Bash/14 File Searching.md",
+    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
+    "Bash Linux/Linux/Linux Bash/16 egrep.md",
+    "Bash Linux/Linux/Linux OS/3 System Resources.md",
     "Bash Linux/Linux/Linux OS/2 Forms of Process Management.md",
     "Bash Linux/Linux/Linux OS/1 OS Kernel.md",
-    "Bash Linux/Linux/Linux Bash/18.2 Shell Scripts - Loops.md",
-    "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
-    "Bash Linux/Linux/Linux Bash/18 Shell Scripts.md",
-    "Bash Linux/Linux/Linux Bash/17 sed.md",
-    "Bash Linux/Linux/Linux Bash/16 egrep.md",
-    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "Bash Linux/Linux/Linux Bash/14 File Searching.md",
     "Bash Linux/Linux/Linux Bash/13.2 regex combination.md",
     "Bash Linux/Linux/Linux Bash/13.1 regex expanded.md",
     "Bash Linux/Linux/Linux Bash/13 regex.md",
@@ -191,7 +191,6 @@
     "Bash Linux/Linux/Linux Bash/3 help pages.md",
     "Bash Linux/Linux/Linux Bash/2 Bash Features.md",
     "Bash Linux/Linux/Linux Bash/1 Bash Basics.md",
-    "Z/Projects.md",
     "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md~",
     "Bash Linux/Linux/Linux Bash/10 File Viewing and Editing M.md~",
     "Bash Linux/Linux/Linux Bash/8.1 bc and date.md~",
