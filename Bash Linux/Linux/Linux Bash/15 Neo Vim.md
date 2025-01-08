@@ -1,7 +1,7 @@
 
 ***Command mode*** : keystrokes act as commands.      
-***Insert and Replace mode*** for editing. (`<Esc>` to exit to Command mode)
 
+***Insert and Replace mode*** : for editing. (`<Esc>` to exit to Command mode)      
 Insert mode inserts any characters at cursor position.     
 Replace mode the characters entered replaces the character at the cursor position.
 
@@ -162,6 +162,10 @@ ___
 Help can anything specific can be given as argument to `:help` command.     
 `:help x`,  `:help i_<esc>`, `:help :quit`      
 
+`:help quit`  or `:help word` and pressing `Ctrl+D` will bring up all matching help entries to see
+
+`:help quickref`  for the reference of command shortcuts
+
 `Ctrl+]` (square brace) or `double mouse click` on any `tag` vim will jump to that subject similar to help page. (if there are no help pages for that particular word, does't go anywhere )      
 
 `Ctrl+O`  (its not zero), or `Ctrl + right mouse click` or `Ctrl+T` to jump back to previous position. (repeat to go further back)
@@ -169,11 +173,8 @@ Help can anything specific can be given as argument to `:help` command.
 
 ___
 
-`:help quit`  or `:help word` and pressing `Ctrl+D` will bring up all matching help entries to see
 
 `:Tutor` for a tutorial on basics
-
-`:help quickref`  for the reference of command shortcuts
 
 `:terminal` for a terminal session inside editor
 

@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Linux/Linux/Linux Bash/17 sed.md",
+                "file": "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "17 sed"
+              "title": "18.1 Shell Scripts - Conditionals"
             }
           }
         ]
@@ -166,17 +166,24 @@
   "active": "028a58976bd50b59",
   "lastOpenFiles": [
     "Bash Linux/Linux/Linux Bash/18 Shell Scripts.md",
-    "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
     "Bash Linux/Linux/Linux Bash/18.2 Shell Scripts - Loops.md",
-    "Bash Linux/Linux/Linux Bash/17 sed.md",
+    "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.5 Operating System Operations.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.1 What operating systems do.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.4 Operating System Structure.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.3 Computer System Architecture.md",
+    "MCA/OS & Linux/OS Syllabus/Skipped Units/1.2 Computer-System Organization.md",
+    "Bash Linux/Linux/Linux Bash/13.1 regex expanded.md",
+    "Bash Linux/Linux/Linux Bash/13.2 regex combination.md",
     "Bash Linux/Linux/Linux Bash/14 File Searching.md",
     "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "Bash Linux/Linux/Linux Bash/16 egrep.md",
+    "MCA/OS & Linux/OS.md",
+    "MCA/Data Structures in C/Data type (Book).md",
     "Bash Linux/Linux/Linux OS/3 System Resources.md",
     "Bash Linux/Linux/Linux OS/2 Forms of Process Management.md",
     "Bash Linux/Linux/Linux OS/1 OS Kernel.md",
-    "Bash Linux/Linux/Linux Bash/13.2 regex combination.md",
-    "Bash Linux/Linux/Linux Bash/13.1 regex expanded.md",
+    "Bash Linux/Linux/Linux Bash/17 sed.md",
+    "Bash Linux/Linux/Linux Bash/16 egrep.md",
     "Bash Linux/Linux/Linux Bash/13 regex.md",
     "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md",
     "Bash Linux/Linux/Linux Bash/11 File Permissions.md",
@@ -184,13 +191,6 @@
     "Bash Linux/Linux/Linux Bash/9 File Movement and Copy.md",
     "Bash Linux/Linux/Linux Bash/8.1 bc and date.md",
     "Bash Linux/Linux/Linux Bash/8 Basic File commands.md",
-    "Bash Linux/Linux/Linux Bash/7 Linux File System.md",
-    "Bash Linux/Linux/Linux Bash/6 Shell Environment and Subshell.md",
-    "Bash Linux/Linux/Linux Bash/5 Listing Files and Directories.md",
-    "Bash Linux/Linux/Linux Bash/4 Variables and Aliases.md",
-    "Bash Linux/Linux/Linux Bash/3 help pages.md",
-    "Bash Linux/Linux/Linux Bash/2 Bash Features.md",
-    "Bash Linux/Linux/Linux Bash/1 Bash Basics.md",
     "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md~",
     "Bash Linux/Linux/Linux Bash/10 File Viewing and Editing M.md~",
     "Bash Linux/Linux/Linux Bash/8.1 bc and date.md~",
