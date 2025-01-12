@@ -27,25 +27,23 @@ ___
 	3.2 Process Scheduling
 	3.4 Interprocess Communication
 
-***Process Synchronization***
-	5.1 Background
-	5.2 The Critical-Section Problem
-	5.3 Peterson's Solution
-	(Mutex Locks, Semaphores) 
-	(Classic Problems of Synchronization: Readers-Writers Problem, Dining Philosopher's Problem using Semaphores)
 
-***CPU Scheduling***
-	6.1 Basic Concepts
-	6.2 Scheduling Criteria
-	(Scheduling Algorithms)
-	6.5 Multiple processor scheduling
-	- 6.6 Real time CPU scheduling
-		6.6.1 Minimizing Latency
-		6.6.2 Priority Based Scheduling
-		6.6.3 Rate Monotonic Scheduling
-	- 6.7 Operating system examples
-		6.7.2 Windows Scheduling
-		6.7.3 Solaris Scheduling
+***Process Scheduling***
+	5.1 Basic Concepts
+	5.2 Scheduling Criteria
+	5.3 Scheduling Algorithms
+
+***Process Synchronization***
+	6.1 Background
+	6.2 The Critical-Section Problem
+	6.5 Mutex Locks 
+	6.6 Semaphores
+		6.6.1 Semaphores Usage
+		6.6.2 Semaphore Implementation
+		6.6.3 Deadlocks and Starvation
+	6.7 Classic Problems of Synchronization 
+		6.7.2 Readers-Writers Problem, 
+		6.7.3 Dining Philosopher's Problem using Semaphores
 
 ***Deadlocks***
 	7.1 System Model
