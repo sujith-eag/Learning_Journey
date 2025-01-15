@@ -11,10 +11,15 @@
             "id": "a3a54e04cefcc1fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MCA/Data Structures in C/1 Tower of Hanoi.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "1 Tower of Hanoi"
             }
           }
         ]
@@ -73,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5086555480957
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -158,36 +163,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7be855190f0aed71",
+  "active": "a3a54e04cefcc1fd",
   "lastOpenFiles": [
+    "MCA/Data Structures in C/2 Stack Operations.md",
+    "MCA/Data Structures in C/3 In-fix to Post-fix Conversion.md",
+    "MCA/Data Structures in C/4 Post-fix Evaluation.md",
+    "MCA/Data Structures in C/5 Queue.md",
+    "MCA/Data Structures in C/1 Tower of Hanoi.md",
+    "Site Structure.md",
+    "Algorithms & Problems/Problems/String mod/Reversing Vowels.md",
+    "Algorithms & Problems/Problems/String mod/Reversing Words.md",
+    "Algorithms & Problems/Problems/String mod/String Compression.md",
+    "Algorithms & Problems/Problems/String mod/Subsequence in a string.md",
+    "MCA/Data Structures in C/Data type (Book).md",
+    "MCA/Data Structures in C/Data structures in C.md",
+    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.11 Computing Environments.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.10 System Boot.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.7 Operating-System Structure.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.5 System Programs.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.4 Types of System Calls.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.1 Operating System Services.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.1 What operating systems do.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/1.5 Operating System Operations.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2/3.1 Process Concept.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/5.4 to 5.8.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/4 Multithreaded Programming.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/3.5 3.6.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/3.3 Operations on Process.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/3.4 Interprocess Communication.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/3.2 Process Scheduling.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/6.5.md",
-    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/6.2.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/6.1.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/5.3.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/5.2.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/5.1.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/1.5 Operating System Operations.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.7 Operating-System Structure.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.5 System Programs.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.4 Types of System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/2.2 User and Operating-System Interface.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/1.12 Open_Source Operating Systems.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/1.10 Kernel Data Structures.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/1.9 Protection and Security.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/1.8 Storage Management.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/1.7 Memory Management.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/Skipped Units/1.6 Process management.md",
     "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md~",
     "Bash Linux/Linux/Linux Bash/10 File Viewing and Editing M.md~",
     "Bash Linux/Linux/Linux Bash/8.1 bc and date.md~",

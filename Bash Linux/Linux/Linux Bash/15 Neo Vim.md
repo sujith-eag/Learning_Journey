@@ -84,6 +84,10 @@ yanking is used to copy the file.
 `yy` to copy the current line and `yw` to copy the current word to buffer.      
 `6yy` copies the 6 lines from cursor.      
 
+> To copy from vim to other, using visual mode to select lines, `"+y` to copy into clipboard.     
+> `"+p` to paste within vim and `ctrl+v` for other.      
+> To paste to vim from other, it is `shift+ctrl+v`
+
 ***Buffer space :*** adding any letter from a to z to command allows to select 26 additional buffers.     
 `a6yy` copies 6 lines from the cursor into buffer `a`, then typing `ap` will paste those 6 lines after the cursor.     
 
