@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ec6960989765feb8",
+        "id": "51021c7baddf5915",
         "type": "tabs",
         "children": [
           {
-            "id": "a3a54e04cefcc1fd",
+            "id": "72ab2f5f244aecd6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MCA/Data Structures in C/1 Tower of Hanoi.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "1 Tower of Hanoi"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "filter",
+                "query": "queen",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,34 +158,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3a54e04cefcc1fd",
+  "active": "72ab2f5f244aecd6",
   "lastOpenFiles": [
+    "MCA/OS & Linux/OS Syllabus/Unit 2/3.4 Interprocess Communication.md",
+    "Add-on/Hugo/Hugo_doc/Doks 2 - Codeblock Shortcode.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 2/3.2 Process Scheduling.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 2/3.1 Process Concept.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 2/5.1 Process Sceduling.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.7 Operating-System Structure.md",
+    "MCA/OS & Linux/OS Syllabus/Unit 1/2.10 System Boot.md",
+    "Add-on/Hugo/Hugo_doc/Doks 1 - Intro.md",
+    "SQL/4_Viewing.md",
+    "SQL/5_Optimizing.md",
+    "SQL/0_Querying.md",
+    "SQL/2_Designing.md",
+    "SQL/3_Writing.md",
+    "SQL/6_Scaling.md",
+    "Algorithms & Problems/Problems/Backtracking/Eight Queens.md",
+    "Python/Data Structures/Data_Structures.md",
+    "Z/Course Track/Course Tracking.md",
+    "MCA/Data Structures in C/1 Tower of Hanoi.md",
     "MCA/Data Structures in C/2 Stack Operations.md",
     "MCA/Data Structures in C/3 In-fix to Post-fix Conversion.md",
     "MCA/Data Structures in C/4 Post-fix Evaluation.md",
     "MCA/Data Structures in C/5 Queue.md",
-    "MCA/Data Structures in C/1 Tower of Hanoi.md",
     "Site Structure.md",
     "Algorithms & Problems/Problems/String mod/Reversing Vowels.md",
     "Algorithms & Problems/Problems/String mod/Reversing Words.md",
     "Algorithms & Problems/Problems/String mod/String Compression.md",
-    "Algorithms & Problems/Problems/String mod/Subsequence in a string.md",
-    "MCA/Data Structures in C/Data type (Book).md",
-    "MCA/Data Structures in C/Data structures in C.md",
-    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/1.11 Computing Environments.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.10 System Boot.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.7 Operating-System Structure.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.5 System Programs.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.4 Types of System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.3 System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/2.1 Operating System Services.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/1.1 What operating systems do.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 1/1.5 Operating System Operations.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/3.1 Process Concept.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/5.4 to 5.8.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/4 Multithreaded Programming.md",
-    "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units/3.5 3.6.md",
     "MCA/OS & Linux/OS Syllabus/Unit 2/Skipped Units",
     "MCA/OS & Linux/OS Syllabus/Unit 2",
     "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md~",
