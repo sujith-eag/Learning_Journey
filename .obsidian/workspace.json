@@ -13,13 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
+                "file": "Python/1_Data_Types/2_complex_types/4_lists.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.3_Array Vs List"
+              "title": "4_lists"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3e751fa8956188e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e93280c3bbb8ecf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/1_Data_Types/2_complex_types/4_lists.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4_lists"
             }
           }
         ]
@@ -165,13 +186,16 @@
   },
   "active": "4836be97b40f9c0c",
   "lastOpenFiles": [
+    "Python/4_Control_Statements/4_for_while_loops.md",
+    "Python/4_Control_Statements/3_range.md",
+    "Python/1_Data_Types/2_complex_types/5_Tuples.md",
+    "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
     "Python/1_Data_Types/2_complex_types/4.2_list_Operations.md",
     "Python/1_Data_Types/2_complex_types/4.1_list_methods.md",
     "Python/1_Data_Types/2_complex_types/4_lists.md",
-    "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
-    "Python/4_Control_Statements/1_Conditional_Branching.md",
-    "Python/4_Control_Statements/3_for_while_loops.md",
     "Python/4_Control_Statements/2_match_case.md",
+    "Python/4_Control_Statements/1_Conditional_Branching.md",
+    "Python/1_Data_Types/1_Primitive_types/1_Variables.md",
     "Add-on/Hugo/Hugo_doc/Doks 1 - Intro.md",
     "Python/8_File I-O.md",
     "Python/7_Exceptions & Unit test.md",
@@ -183,16 +207,13 @@
     "Site Structure.md",
     "Python/1_Data_Types/2_complex_types/7_Dictionary.md",
     "Python/1_Data_Types/2_complex_types/6_Sets.md",
-    "Python/1_Data_Types/2_complex_types/5_Tuples.md",
     "Python/1_Data_Types/1_Primitive_types/3.2 string methods.md",
     "Python/1_Data_Types/1_Primitive_types/3.1 string manipulations.md",
     "Python/1_Data_Types/1_Primitive_types/3_string.md",
     "Python/1_Data_Types/1_Primitive_types/2_int_float.md",
     "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
     "Python/1_Data_Types/1_Primitive_types/1.1_Datatypes.md",
-    "Python/1_Data_Types/1_Primitive_types/1_Variables.md",
     "Python/1_Data_Types/2_complex_types",
-    "Python/0_Python.md",
     "MCA/OS & Linux/OS Syllabus/Unit_3",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Skipped Units",
     "MCA/OS & Linux/OS Syllabus/Unit_2",
