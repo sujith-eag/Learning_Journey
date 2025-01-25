@@ -248,7 +248,7 @@ for letter in 'Python':
 		pass  
 	print('This is pass block')  
 	print('Current Letter:', letter)
-    ```
+```
 
 ---
 ___

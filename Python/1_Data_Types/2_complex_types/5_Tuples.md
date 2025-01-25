@@ -78,3 +78,9 @@ x, y = get_coordinates()
 - **Performance**: Since tuples are immutable, they are generally faster than lists for iteration and storage.
 
 ---
+
+#### Methods for tuples
+
+len()  min()  max() 
+
+___

@@ -4,43 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "37da08042d6d1337",
+        "id": "ec6243a5af479dff",
         "type": "tabs",
         "children": [
           {
-            "id": "4836be97b40f9c0c",
+            "id": "bbf19aa78526a8d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/1_Data_Types/2_complex_types/4_lists.md",
+                "file": "Python/Untitled 4.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4_lists"
-            }
-          }
-        ]
-      },
-      {
-        "id": "3e751fa8956188e0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5e93280c3bbb8ecf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/1_Data_Types/2_complex_types/4_lists.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4_lists"
+              "title": "Untitled 4"
             }
           }
         ]
@@ -184,35 +163,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4836be97b40f9c0c",
+  "active": "bbf19aa78526a8d1",
   "lastOpenFiles": [
-    "Python/4_Control_Statements/4_for_while_loops.md",
-    "Python/4_Control_Statements/3_range.md",
+    "MCA/Python/Py_Q_Collection/Python_Unit-1-2_(Questions_Summary).md",
+    "Python/Untitled 4.md",
+    "Python/Untitled 3.md",
+    "Python/Untitled 2.md",
+    "Python/Untitled 1.md",
+    "Python/Untitled.md",
     "Python/1_Data_Types/2_complex_types/5_Tuples.md",
+    "MCA/Data Structures in C/7 Single_linked_list.md",
+    "MCA/OS & Linux/Linux.md",
+    "Python/0_Python.md",
+    "MCA/OS & Linux/OS_Q_Collection/Unit 1.md",
+    "MCA/OS & Linux/OS_Q_Collection/Unit 2.md",
+    "MCA/OS & Linux/OS_Q_Collection/Unit 3.md",
+    "Python/4_Control_Statements/1_Conditional_Branching.md",
+    "Python/4_Control_Statements/4_for_while_loops.md",
+    "MCA/OS & Linux/OS.md",
+    "Python/1_Data_Types/1_Primitive_types/3.2 string methods.md",
+    "Python/1_Data_Types/1_Primitive_types/3.1 string manipulations.md",
+    "Python/1_Data_Types/2_complex_types/4_lists.md",
+    "Python/4_Control_Statements/3_range.md",
     "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
     "Python/1_Data_Types/2_complex_types/4.2_list_Operations.md",
     "Python/1_Data_Types/2_complex_types/4.1_list_methods.md",
-    "Python/1_Data_Types/2_complex_types/4_lists.md",
     "Python/4_Control_Statements/2_match_case.md",
-    "Python/4_Control_Statements/1_Conditional_Branching.md",
     "Python/1_Data_Types/1_Primitive_types/1_Variables.md",
     "Add-on/Hugo/Hugo_doc/Doks 1 - Intro.md",
-    "Python/8_File I-O.md",
-    "Python/7_Exceptions & Unit test.md",
-    "Python/6_Classes & OOP.md",
-    "Python/5_Functions.md",
-    "Python/3_Input_Output.md",
-    "Python/3_Control_Statements.md",
     "Python/4_Control_Statements",
-    "Site Structure.md",
-    "Python/1_Data_Types/2_complex_types/7_Dictionary.md",
-    "Python/1_Data_Types/2_complex_types/6_Sets.md",
-    "Python/1_Data_Types/1_Primitive_types/3.2 string methods.md",
-    "Python/1_Data_Types/1_Primitive_types/3.1 string manipulations.md",
-    "Python/1_Data_Types/1_Primitive_types/3_string.md",
-    "Python/1_Data_Types/1_Primitive_types/2_int_float.md",
-    "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
-    "Python/1_Data_Types/1_Primitive_types/1.1_Datatypes.md",
     "Python/1_Data_Types/2_complex_types",
     "MCA/OS & Linux/OS Syllabus/Unit_3",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Skipped Units",
