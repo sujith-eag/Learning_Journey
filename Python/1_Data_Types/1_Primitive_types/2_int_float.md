@@ -67,17 +67,3 @@ print ( f"{z:.2f}" )
 ```
 
 
-##### Arithmetic Operators
-
-It always better to use `()` for suggesting order of operations.
-```python
-%  reminder / modulo operator
-// quotient
-==
-!=
-<=
->=
-** exponent
-```
-`%` is modulo operator which allows taking the reminder after dividing a number.
-`3**2` is representing exponents.
