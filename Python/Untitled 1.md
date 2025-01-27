@@ -247,8 +247,8 @@ first = first + second + third
 third = first * 10
 print(first, second, third)
 ```
-- **Answer**:
-  - The output will be:
+
+  The output will be:
 ```
 2 3 6
 11 3 110
@@ -266,11 +266,11 @@ print(first, second, third)
 
 3. **The result of bool(0) is.** : `False`.
 
-4. **The result of int(234.789) is ____.** : `234`.
+4. **The result of int(234.789) is.** : `234`.
 
-5. **The result of int(24.0/3) is _______.** : `8`.
+5. **The result of int(24.0/3) is** : `8`.
 
-6. **The result of str(123+456) is ______.** : `'579'`.
+6. **The result of str(123+456) is** : `'579'`.
 
 7. **Consider the following sequence of statements:** **Following the execution of these statements, Python has created how many objects and how many references?**
 ```python
@@ -308,23 +308,23 @@ a. `None or "xyz" and []`
 b. `1 < 2 >= 4`
 - **Answer**: `False` (because `2` is not greater than or equal to `4`).
 c. `not(23 != 24 and not False)`
-- **Answer**: `True` (since `23 != 24` is `True` and `not False` is `True`, so `not(True)` is `True`).
+- **Answer**: `False` (since `23 != 24` is `True` and `not False` is `True`, so `not(True)` is `False`).
 d. `len("honest") == 48/8 or 3*5`
 - **Answer**: `True` (because `len("honest") == 6` and `48/8 == 6` is `True`, so the whole expression is `True`).
 
 14. **What is the difference between the following? Give examples.**
 e. **// and / operators**:
    - **Answer**: 
-	 - `/` performs division and returns a float. Example: `5 / 2` → `2.5`.
-	 - `//` performs floor division and returns the integer quotient. Example: `5 // 2` → `2`.
+ - `/` performs division and returns a float. Example: `5 / 2` → `2.5`.
+ - `//` performs floor division and returns the integer quotient. Example: `5 // 2` → `2`.
 f. **= and == operators**:
    - **Answer**: 
-	 - `=` is the assignment operator, used to assign values to variables. Example: `x = 5`.
-	 - `==` is the equality operator, used to compare if two values are equal. Example: `5 == 5` → `True`.
+ - `=` is the assignment operator, used to assign values to variables. Example: `x = 5`.
+ - `==` is the equality operator, used to compare if two values are equal. Example: `5 == 5` → `True`.
 g. **Unary and binary operators**:
    - **Answer**: 
-	 - **Unary operators** operate on a single operand. Example: `-x`, `not x`.
-	 - **Binary operators** operate on two operands. Example: `x + y`, `x * y`.
+ - **Unary operators** operate on a single operand. Example: `-x`, `not x`.
+ - **Binary operators** operate on two operands. Example: `x + y`, `x * y`.
 
 15. **Name and explain types of errors in Python.**
 - **Answer**:

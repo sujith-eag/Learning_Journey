@@ -94,7 +94,6 @@ Both methods give the same result, but the `filter()` method provides a more fun
 1. **append()**  
    Adds a single element to the end of the list.
 
-   **Example:**
    ```python
    my_list = [1, 2, 3]
    my_list.append(4)
@@ -104,7 +103,6 @@ Both methods give the same result, but the `filter()` method provides a more fun
 2. **insert()**  
    Inserts an element at a specific index.
 
-   **Example:**
    ```python
    my_list = [1, 2, 3]
    my_list.insert(1, 4)  # Insert 4 at index 1
@@ -114,7 +112,6 @@ Both methods give the same result, but the `filter()` method provides a more fun
 3. **remove()**  
    Removes the first occurrence of an element from the list.
 
-   **Example:**
    ```python
    my_list = [1, 2, 3, 2]
    my_list.remove(2)
@@ -124,7 +121,6 @@ Both methods give the same result, but the `filter()` method provides a more fun
 4. **pop()**  
    Removes and returns the element at the specified index (or the last element if no index is provided).
 
-   **Example:**
    ```python
    my_list = [1, 2, 3]
    removed_item = my_list.pop(1)  # Remove and return the item at index 1
@@ -165,7 +161,6 @@ Here, `set(my_list)` removes the duplicates from the list, and printing it gives
 - **Creating a Dictionary:**  
    Dictionaries are created using curly braces `{}` or the `dict()` constructor. A dictionary stores key-value pairs where each key is unique.
 
-   **Example:**
    ```python
    # Creating a dictionary using curly braces
    my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
@@ -177,7 +172,6 @@ Here, `set(my_list)` removes the duplicates from the list, and printing it gives
 - **Accessing Dictionary Items:**  
    Dictionary values are accessed using keys. You can use square brackets `[]` to access the values.
 
-   **Example:**
    ```python
    print(my_dict['name'])  # Output: Alice
    ```
@@ -278,33 +272,30 @@ print(f"The number for {name} is {telephone_directory[name]}")  # Output: The nu
 1. **get()**  
    Returns the value for a given key. If the key doesn't exist, it returns `None` or a specified default value.
 
-   **Example:**
-   ```python
-   my_dict = {'a': 1, 'b': 2}
-   print(my_dict.get('a'))  # Output: 1
-   print(my_dict.get('c', 'Not found'))  # Output: Not found
+```python
+my_dict = {'a': 1, 'b': 2}
+print(my_dict.get('a'))  # Output: 1
+print(my_dict.get('c', 'Not found'))  # Output: Not found
    ```
 
 2. **pop()**  
    Removes and returns the value associated with a given key.
 
-   **Example:**
-   ```python
-   my_dict = {'a': 1, 'b': 2}
-   popped_value = my_dict.pop('b')
-   print(popped_value)  # Output: 2
-   print(my_dict)  # Output: {'a': 1}
+```python
+my_dict = {'a': 1, 'b': 2}
+popped_value = my_dict.pop('b')
+print(popped_value)  # Output: 2
+print(my_dict)  # Output: {'a': 1}
    ```
 
 3. **update()**  
    Updates the dictionary with elements from another dictionary or iterable of key-value pairs.
 
-   **Example:**
-   ```python
-   my_dict = {'a': 1, 'b': 2}
-   my_dict.update({'b': 3, 'c': 4})
-   print(my_dict)  # Output: {'a': 1, 'b': 3, 'c': 4}
-   ```
+```python
+my_dict = {'a': 1, 'b': 2}
+my_dict.update({'b': 3, 'c': 4})
+print(my_dict)  # Output: {'a': 1, 'b': 3, 'c': 4}
+```
 
 ---
 

@@ -22,7 +22,7 @@ Dictionaries, allows keys other than `range(0,n)`,	Key could be any immutable va
 Empty dictionary is `{}`, not `[]` which is a list,  `test1 = ()` is empty tuple
 
 Adding new key-value pairs.
-To add a new key-value pair,  give the name of the dict folowed by new key in [] along with new value.
+To add a new key-value pair,  give the name of the dict followed by new key in `[]` along with new value.
 ```python
 a["x"] = 0
 a["y"] = 25        
@@ -51,7 +51,7 @@ Using `get()` to Access Value
 `get()` method can be used to set a default value if the requested key doesn't exist.
 It requires a key as first argument, a second optional argument if key doesn't exist.
 
-If there is a chance that the value you might be asking doesn't exist, use get()
+If there is a chance that the value you might be asking doesn't exist, use `get()`
 Even if second value is left blank, "None" will be returned, indicating absence of value
 ```python
 point = a.get('points', 'No point value assigned')      

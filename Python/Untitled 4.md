@@ -293,32 +293,32 @@ Python provides several types of iterative (looping) statements that allow you t
 #### 1. **`for` loop**:
    - Used when the number of iterations is known or when iterating over a sequence (like a list, tuple, dictionary, string, etc.).
    - Syntax:
-     ```python
-     for item in iterable:
-         # block of code
-     ```
+ ```python
+ for item in iterable:
+	 # block of code
+ ```
 
-   **Example:**
-   ```python
-   for i in range(5):  # Looping over a range of numbers from 0 to 4
-       print(i)
-   ```
+**Example:**
+```python
+for i in range(5):  # Looping over a range of numbers from 0 to 4
+   print(i)
+```
 
 #### 2. **`while` loop**:
    - Used when the number of iterations is not known and you want to repeat the code until a certain condition is met.
    - Syntax:
-     ```python
-     while condition:
-         # block of code
-     ```
+ ```python
+ while condition:
+	 # block of code
+ ```
 
-   **Example:**
-   ```python
-   i = 0
-   while i < 5:  # Loop until i becomes 5
-       print(i)
-       i += 1
-   ```
+**Example:**
+```python
+i = 0
+while i < 5:  # Loop until i becomes 5
+   print(i)
+   i += 1
+```
 
 #### 3. **`break` statement**:
    - The `break` statement is used to exit the loop prematurely, before the loop condition is false.
@@ -618,9 +618,6 @@ for num in numbers:
 - Only numbers divisible by 5 are printed. 
 
 ---
-
-These solutions demonstrate how you can effectively use `for` loops in Python for different tasks, such as processing strings, dictionaries, generating patterns, and filtering lists based on conditions.
-
 
 
 ### **10. Python Program to Create a Box of Size `n x m`**

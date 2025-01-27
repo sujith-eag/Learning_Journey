@@ -34,15 +34,15 @@ Python allows you to track conditions efficiently with boolean expressions (`Tru
 
 ```python
 if m % n != 0:  # This executes only if m % n != 0 is True
-(m, n) = (n, m % n)
+	(m, n) = (n, m % n)
 ```
 
 **Alternating Execution** (using `else`):
 ```python
 if m % n != 0:
-(m, n) = (n, m % n)
+	(m, n) = (n, m % n)
 else:
-gcd = n  # Optional else branch
+	gcd = n  # Optional else branch
 ```
 
 In Python, certain values are treated as `False` in boolean contexts:
@@ -65,7 +65,7 @@ You can check if a value is in or not in a sequence (like a list or string):
 - Check if a value **is not in a list**:
 ```python
 if user not in banned_users:
-  print(f"{user.title()}, you can post a response.")
+	print(f"{user.title()}, you can post a response.")
 ```
 
 ---
@@ -265,8 +265,6 @@ else:
 
 You can use the modulus operator (`%`) to determine if a number is even or odd. An even number divided by 2 leaves a remainder of `0`.
 
-#### Example:
-
 ```python
 if x % 2 == 0:
     print("x is even")
@@ -279,8 +277,6 @@ else:
 ### Using Boolean Functions
 
 A boolean function returns `True` or `False` and can be used in `if` statements for conditions.
-
-#### Example:
 
 ```python
 def is_even(n):
