@@ -42,7 +42,7 @@
 **`display`**:
 - Checks if the queue is empty (`head == -1 || head > tail`).
 - If not empty, it displays all elements from `head` to `tail`.
-* run a for loop with `i = front` and running till `i <= tail` with `i++`
+* run a for loop with `i = head` and running till `i <= tail` with `i++`
 * Print each `stack[i]`
 
 ### Implementation
@@ -66,7 +66,7 @@ void main()
 	while(1)
 	{
 		int ch;
-		printf("Make a choise:\n");
+		printf("Make a choice:\n");
 		printf("\n0.Exit\t1.Enqueue\n2.Dequeue\t3.Display\n");
 		scanf("%d", &ch);
 		

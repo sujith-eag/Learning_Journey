@@ -4,22 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "7b1d22aef2808a4c",
+        "id": "05ae66f491a3b816",
         "type": "tabs",
         "children": [
           {
-            "id": "e11a1ead0d279cfa",
+            "id": "cd1f8c78c64d8ddb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/OS & Linux/OS Syllabus/OS Unit 1 - Short Notes.md",
+                "file": "MCA/Web Programming/HTML Forms.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OS Unit 1 - Short Notes"
+              "title": "HTML Forms"
+            }
+          },
+          {
+            "id": "44e4d3e6ac184f81",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -164,10 +174,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e11a1ead0d279cfa",
+  "active": "cd1f8c78c64d8ddb",
   "lastOpenFiles": [
-    "MCA/OS & Linux/OS Syllabus/OS Unit 2 - Short Notes.md",
+    "MCA/Web Programming/HTML Basic.md",
+    "MCA/Web Programming/HTML Forms.md",
+    "MCA/Data Structures in C/7 Singly_linked_list.md",
+    "MCA/Data Structures in C/6 Circular_Queue.md",
+    "MCA/Data Structures in C/5 Queue.md",
+    "MCA/Data Structures in C/4 Post-fix Evaluation.md",
+    "MCA/Data Structures in C/3 In-fix to Post-fix Conversion.md",
+    "MCA/Data Structures in C/2 Stack Operations.md",
+    "MCA/Data Structures in C/1 Tower of Hanoi.md",
+    "MCA/Data Structures in C/Recursion.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/3.4 Interprocess Communication.md",
     "MCA/OS & Linux/OS Syllabus/OS Unit 1 - Short Notes.md",
+    "MCA/OS & Linux/OS Syllabus/OS Unit 2 - Short Notes.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/3.2 Process Scheduling.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/3.1 Process Concept.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/6.7 Classic Problems.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/6.6 Semaphores.md",
@@ -180,18 +202,6 @@
     "MCA/OS & Linux/OS Syllabus/Unit_2/5.3.2 Shortest Job First Scheduling.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/5.3 Scheduling Algorithms.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/5.1 Process Scheduling.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_2/3.4 Interprocess Communication.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_2/3.2 Process Scheduling.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/2.10 System Boot.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/2.7 Operating-System Structure.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/2.5 System Programs.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/2.4 Types of System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/2.3 System Calls.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/2.1 Operating System Services.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/1.11 Computing Environments.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/1.5 Operating System Operations.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/1.1 What operating systems do.md",
-    "MCA/OS & Linux/OS_Q_Collection/Unit 3.md",
     "Python/4_Control_Statements",
     "Python/1_Data_Types/2_complex_types",
     "MCA/OS & Linux/OS Syllabus/Unit_3",

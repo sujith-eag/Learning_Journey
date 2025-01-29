@@ -5,6 +5,7 @@ The Operating System (OS) is the core software on a computer, often referred to 
 - **User-friendly intermediary**: The OS acts as a bridge between the user and the hardware, ensuring a seamless user experience.
 - **Resource allocator**: Manages and allocates resources such as CPU, memory, I/O devices, and storage to processes and users.
 - **Control program**: Ensures correct execution of user programs by preventing errors that may arise from conflicting resource requests.
+- User Interface: for user to interact with the system 
 
 #### OS Components:
 
@@ -203,6 +204,9 @@ There are two types of buffers used:
 A **bounded buffer** is more practical in real systems to prevent memory overload, while **unbounded buffers** are usually theoretical or abstract concepts.
 
 ---
+
+{{< figure  src="images/os/3_12_CommunicationsModels.jpg"  alt="3.12 Communication Models"  caption="3.12 Communication Models" >}}
+
 
 ### **Message Passing System**
 

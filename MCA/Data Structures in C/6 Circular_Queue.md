@@ -9,6 +9,23 @@ In a circular queue, the `tail` pointer wraps around to the front when the queue
   - `tail` points to the next available position for insertion (back).
   - After dequeuing, the `head` is incremented, and after enqueueing, the `tail` is incremented, with both wrapping around if necessary.
 
+#### Key Difference
+
+In enqueue -
+Checking for full - `if ( head == (tail + 1) % n )`.
+Incrementing tail circularly `tail = (tail + 1) % n;` and adding value to stack at tail.
+
+In dequeue -
+if there is only one element in stack `head == tail`, Resetting the head and tail to `-1` 
+else, print from head and circularly incrementing the head using `head = (head + 1) % n;`
+
+For display -
+Using `int i == head` and `while (i != tail)` to iterate all elements from head to tail (circularly) .  by  incrementing `i` circularly, `i = (i + 1) % n;`       
+Handling the last left out element after while loop by printing `stack[head]`
+
+
+____
+
 #### **Variables**
 
 - **`int n`**: Size of the queue.
@@ -40,7 +57,7 @@ In a circular queue, the `tail` pointer wraps around to the front when the queue
 
 1. **`enque`**: 
    - Checks if the queue is full (`(tail + 1) % n == head`).
-   - If not full, increments `tail`, wraps it if necessary, and inserts the value at `queue[tail]`.
+   - If not full, increment `tail`, wrap if necessary, and inserts the value at `queue[tail]`.
    - If `head` is `-1` (first insertion), it increments `head` to indicate the queue is no longer empty.
    
 2. **`dequ`**:
