@@ -48,7 +48,7 @@ The id is auto incremented so left out, the date is unknown so given as NULL.
 ### Using a CSV file
 Data can be stored in a comma-separated-values format where values in each row are separated by a comma and rows are in in separate rows.
 
-![[Pasted image 20241212124154.jpg]]
+![[20241212124154.jpg]]
 
 This file can be imported into SQLite database.
 `mfa.csv` is the file containing the data needed.
@@ -132,9 +132,9 @@ Complications in deleting can impact the integrity of a database.
 Foreign key constraints are a good example.
 A foreign key column references the primary key of a different table. If we were to delete the primary key, the foreign key column would have nothing to reference!
 
-![[Pasted image 20241212130723.jpg|300]]
+![[20241212130723.jpg|300]]
 
-![[Pasted image 20241212130734.jpg|400]]
+![[20241212130734.jpg|400]]
 
 Here if we choose to delete the `Undefined artist` from the artists table, it will cause an error as the id of that is being refereed in the created table under `artist_id`.
 

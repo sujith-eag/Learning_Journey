@@ -12,7 +12,7 @@ Views are useful for
 
 
 ### Simplifying
-![[Pasted image 20241216205008.jpg]]
+![[20241216205008.jpg]]
 ```sql
 SELECT "title" FROM "books"
 WHERE "id" IN (
@@ -29,8 +29,8 @@ SELECT "name", "title" FROM "authors"
 JOIN "authored" ON "authors"."id" = "authored"."author_id"
 JOIN "books" ON "books"."id" = "authored"."books_id";
 ```
-![[Pasted image 20241216205017.jpg]]
-![[Pasted image 20241216205226.jpg]]
+![[20241216205017.jpg]]
+![[20241216205226.jpg]]
 
 It is important to specify how two tables are joined, or columns they are joined on.
 The primary key on one table is usually joined to the corresponding foreign key of the other table.

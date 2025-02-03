@@ -20,7 +20,7 @@ While normalizing, each entity is put in its own table and any information about
 
 Deciding how the entities are related. in one to one or one to many relationship using a ER diagram.
 
-![[Pasted image 20241212102908.jpg|300]]
+![[20241212102908.jpg|300]]
 
 Rider must visit at least one station or many.
 Station can have zero riders or many.
@@ -70,7 +70,7 @@ SQLite has five storage classes:
 	Blob: Binary Large Object, for storing objects in binary like image, audio etc.
 
 A single storage class can hold several data types, like this integer storage class
-![[Pasted image 20241212104101.jpg|300]]
+![[20241212104101.jpg|300]]
 SQLite takes care of storing the input values under the right data type.
 So a programmer only need to choose a storage class.
 Each class has its own advantages and limitations so has to be chosen carefully.
@@ -118,7 +118,7 @@ CREATE TABLE visits (
 This can be read within the database to create a schema.
 `.read schema.sql`
 
-![[Pasted image 20241212110158.jpg|400]]
+![[20241212110158.jpg|400]]
 
 
 
@@ -204,7 +204,7 @@ No need to add column constraints to `id` which are already under `primary key o
 ### Altering Tables
 
 Changing the tables to include charlie cards instead of riders.
-![[Pasted image 20241212112115.jpg]]
+![[20241212112115.jpg]]
 
 The `swipe` entity has id, type, date and amount to take entry of the swipe in a station,
 the card can be swiped only once at a given station but can be swiped in many times.
@@ -268,3 +268,7 @@ CREATE TABLE "swipes" (
 
 When a table, column or row has to be dropped which has a primary key which is referred as foreign key in some other table, it will throw an error.
 First we have to drop the foreign key column, or remove the association before removing the primary key.
+
+
+___
+

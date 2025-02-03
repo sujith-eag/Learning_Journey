@@ -1,43 +1,81 @@
 
 
-A `node` data type defined using `struct`, containing `int` type for data, and a pointer element `next` of `struct node` data type to hold the location of next `node`.
+A `node` data type is defined using a `struct` that contains two elements:
+1. **Data Element**: An integer (`int`) to store the actual data of the node.
+2. **Next Pointer**: A pointer (`next`) of type `struct node*` that holds the memory location of the next node in the list.
 
-Creating three more pointers of the same data type `struct node` for operations.
-`*new` to hold the location of the newly created `node` from malloc.
-`*temp` to hold and link the old `node` pointer to the `new` node address.
-`*head` to hold the value of the first node only, used in iteration only (never incremented).
-All are assigned value `NULL` to help in first insertion.
+#### **Pointers for Operations**
+To manage the list, three pointers of type `struct node*` are used:
+- `*new`: Holds the address of a newly created node (allocated via `malloc`).
+- `*temp`: Holds and links the old node, used to link to the new node.
+- `*head`: Points to the first node of the list and is used for iteration. It is never incremented during traversal.
+Initially, all pointers (`head`, `temp`, `new`) are set to `NULL`.
 
-A Function to create a new node
+---
 
-Allocating memory for the node using `malloc()` with the size of the `struct node` data structure passed, 
-`malloc` return the `void*` pointer, it is typecasted into `(stuct node*)` type and assigned to the new pointer. `new = (struct node*) malloc( sizeof(struct node) ); `
+#### Creating a node
 
-Typecasting the `void*` to a `struct node*`, meaning that the pointer `new` will now point to memory that is created for `struct node`.
+The steps to create a new node using `create` function :
 
-The values inside the new node are accessed by dot `.` or arrow `->` method.
-`new->data` is assigned whatever user entered.
-`new->next` is assigned `NULL` since no nodes exist before it.
+1. **Memory Allocation**:
+```c
+new = (struct node*) malloc(sizeof(struct node));
+```
+- Using `malloc()` to allocate memory for the node with size of `struct node.
+- The `malloc()` function returns a `void*`, which is typecasted into a `(struct node*)` and assigned to `new` pointer
+- `new` now points to the memory location where the new node is stored.
 
-Now to pass the address of the new node to the old node.
-In first addition, `head` and `temp` will both be `NULL`.
-It is checked `head == NULL` and if true then both `head` and `temp` are assigned the value of `new`. Will become the first insertion. No pointers to update inside the `node`
+2. **Initializing  the Node**:
+- Accessing and assignng values to the node using dot`.` or `->` methods
+- `new->data`: Assign the value entered by the user.
+- `new->next`: Initialize to `NULL` since this is the only node at the moment.
 
-If it is not the first insertion,
-`temp` hold the address of the previous node, so the `new` node address is passed to the previous node using `temp`.  `temp->next = new;`
-Then the `temp` is given the address of the `new` node to hold it for the next update.
+3. **Linking the Node to Previous node**:
+- **For First Insertion**: If `head == NULL` (i.e., the list is empty), `new` is assigned to `head` and `temp`.
+```c
+if (head == NULL) {
+	head = temp = new;
+}
+```
+- This makes the newly created node the first node in the list and there is no further pointers inside to update.
+
+- **Subsequent Insertions**:
+- For other insertions, `temp` holds the address of the previous node. The new node's address is assigned to the `next` pointer within the previous node:
+- Then, `temp` is updated to point to the new node to be used for the next creation.
+```c
+else {
+	temp->next = new;
+	temp = new;
+}
+```
 
 
-In the display function,
-Making a pointer inside the function to be used to traverse the linked list.
-`struct node te*;` and assigned the value of the head. `te = head`
+---
 
-The check is done to see if the `head` is `NULL` to make sure there are nodes to traverse.
- `te == NULL` 
+#### **Display Function**
 
-else condition will run a while loop by moving the pointer back till the value becomes `NULL` 
-`while ( te != NULL)` display the data in the node `te->data`.
-Then update `te` to point to the next address stored in the node `te = te->next` 
+To traverse and display the elements of the linked list:
+
+- Create a temporary pointer (`te`) to traverse the list, starting from `head`:
+```c
+struct node* te;
+te = head;
+```
+
+- If `head == NULL`, the list is empty, so nothing is displayed.
+- If the list is not empty, a `while` loop is used to traverse the list and display the node data:
+
+```c
+while (te != NULL) {
+	printf("%d -> ", te->data);
+	te = te->next;
+}
+```
+
+- The loop continues until `te` becomes `NULL`, indicating the end of the list.
+
+---
+
 
 
 ```c
@@ -68,7 +106,6 @@ void Create(int a)
 		temp->next = new;
 		temp = new;
 	}
-	
 }
 
 void Display()
@@ -119,4 +156,180 @@ void main()
 		}
 	}	
 }
+```
+
+
+
+___
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void create(int x);
+void display();
+
+void main()
+{
+	int val;
+	while(1)
+	{
+		int ch;
+		printf("Make a Choise:\n");
+		printf("0 = Exit\n1 = Add Value\t2 = Display all Values\n");
+		scanf("%d", &ch);
+		
+		switch(ch)
+		{
+			case 0:
+				exit(0);
+			case 1:
+				printf("\nEnter the value to be added: \n");
+				scanf("%d", &val);
+				create(val);
+				break;
+			case 2:
+				display();
+				break;
+		}
+	}
+}
+struct node
+{
+	int data;
+	struct node *next;
+} *new=NULL, *temp=NULL, *head=NULL;
+
+void create(int x)
+{
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data=x;
+	new->next=NULL;
+
+	printf("\tThe Value %d has been inserted\n", x);
+	
+	if(head == NULL)
+	{
+		head = new;
+		temp = new;
+	}
+	else
+	{
+		printf("\n\t%p is the previous node, ", temp);
+		printf("linked with new node %p. \n", new);
+		temp->next=new;
+		temp=new;
+	}
+
+}
+void display()
+{
+	struct node *tem;
+	tem = head;
+	
+	if (tem == NULL)
+	{
+		printf("\n\tThe List is empty\n\n");
+	}
+	else
+	{
+		printf("\tThe Values in the list are: ");
+		while(tem != NULL)
+		{
+			printf("%d  ", tem->data);
+			tem=tem->next;
+		}
+		printf("\n\n");
+	}
+}
+```
+
+
+___
+
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void create(int x);
+void display();
+
+void main()
+{
+    int val;
+    while(1)
+    {
+        int ch;
+        printf("Make a Choice:\n");
+        printf("0 = Exit\n1 = Add Value\t2 = Display all Values\n");
+        scanf("%d", &ch);
+        
+        switch(ch)
+        {
+            case 0:
+                exit(0);
+            case 1:
+                printf("\nEnter the value to be added: \n");
+                scanf("%d", &val);
+                create(val);
+                break;
+            case 2:
+                display();
+                break;
+        }
+    }
+}
+
+struct node
+{
+    int data;
+    struct node *next;
+} *head = NULL;
+
+void create(int x)
+{
+    struct node *new = (struct node*) malloc(sizeof(struct node));
+    new->data = x;
+    new->next = NULL;
+
+    printf("\tThe Value %d has been inserted\n", x);
+
+    if (head == NULL)
+    {
+        head = new;
+        printf("New node %p is now the head of the list.\n", new);
+    }
+    else
+    {
+        struct node *temp = head;
+        while (temp->next != NULL)
+        {
+            temp = temp->next;
+        }
+        temp->next = new;
+        printf("\t%p is the previous node, linked with new node %p. \n", temp, new);
+    }
+}
+
+void display()
+{
+    struct node *tem = head;
+    
+    if (tem == NULL)
+    {
+        printf("The List is empty\n");
+    }
+    else
+    {
+        printf("\tThe Values in the list are: ");
+        while (tem != NULL)
+        {
+            printf("%d ", tem->data);
+            tem = tem->next;
+        }
+        printf("\n");
+    }
+}
+
 ```

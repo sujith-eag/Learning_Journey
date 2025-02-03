@@ -99,15 +99,15 @@ The first line with zero on the line indicates that there are no relations.
 Second one means it should at least have one row that relates to it in the other table.
 Third with many branches means that the entity is related to many rows from another table.
 
-![[Pasted image 20241207072637.jpg|300]]
+![[20241207072637.jpg|300]]
 
 
-![[Pasted image 20241207073647.jpg|300]]     
+![[20241207073647.jpg|300]]     
 One book is written by one author, also one author writes one book.
 
 
 The author writes at least one book and a book is at least written by one author. The author could be associated with one or multiple books same for books.
-![[Pasted image 20241207074002.jpg|300]]
+![[20241207074002.jpg|300]]
 
 For a translator, books do not need to have a translator so they could have zero or many translators so can be represented by the zero.
 
@@ -126,7 +126,7 @@ Each ID given within different tables (authors, books, publishers) would be the 
 ### Foreign Keys
 
 A foreign key is a primary key taken from a different table. By referencing the primary key of a different table, it helps relate the tables by forming a link between them.
-![[Pasted image 20241207074848.jpg|400]]  
+![[20241207074848.jpg|400]]  
 Representing the many to many relationship using foreign keys in `authored` table that maps the primary keys of `books (book_id)` to the primary key of  `authors (author_id)`
 
 The tables like `authored` are called joint or junction tables.
@@ -221,7 +221,7 @@ This allows to combine two or more tables together.
 
 We can join the tables using a common factor between the two tables (like id) to ensure correct rows are lined up against each other.
 
-![[Pasted image 20241207081925.jpg|400]]
+![[20241207081925.jpg|400]]
 
 To join these two tables:
 ```sql
@@ -275,7 +275,7 @@ INTERSECT
 SELECT "name" FROM "authors";
 ```
 
-![[Pasted image 20241207095029.jpg|300]]
+![[20241207095029.jpg|300]]
 
 
 ##### UNION
@@ -287,7 +287,7 @@ UNION
 SELECT "name" FROM "authors";
 ```
 
-![[Pasted image 20241207095230.jpg|300]]
+![[20241207095230.jpg|300]]
 
 To get profession of person in result,
 ```sql
@@ -306,11 +306,11 @@ SELECT "name" FROM "authors"
 EXCEPT
 SELECT "name" FROM "translators";
 ```
-![[Pasted image 20241207095810.jpg|300]]
+![[20241207095810.jpg|300]]
 
 #### INTERSECT
 To find people who are either authors or translators but not both.
-![[Pasted image 20241207100012.jpg|300]]
+![[20241207100012.jpg|300]]
 
 These are useful to answer many different questions.
 Each nested query finds the ID's of the books for one translator.
