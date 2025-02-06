@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/7.1 Singly Linked List.md",
+                "file": "MCA/Data Structures in C/Data structures in C.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "7.1 Singly Linked List"
+              "title": "Data structures in C"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -176,8 +175,9 @@
   },
   "active": "93eb86438cf66c97",
   "lastOpenFiles": [
+    "MCA/Data Structures in C/7 Singly_Linked_List_Full.md",
+    "MCA/Data Structures in C/7 Singly_linked_list_Basic.md",
     "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "MCA/Data Structures in C/7.1 Singly Linked List.md",
     "MCA/Web Programming/XML/XML_7.md",
     "MCA/Web Programming/XML/XML_6.1.md",
     "MCA/p/PrFiSt_4.md",
@@ -203,7 +203,6 @@
     "MCA/Web Programming/XML/XML_1.md",
     "MCA/Web Programming/XML",
     "MCA/p",
-    "SQL/0_Querying.md",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
