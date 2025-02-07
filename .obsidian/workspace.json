@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Web Programming/XML/XML_9.md",
+                "file": "MCA/Web Programming/XML/2_DTD/XML_11.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "XML_9"
+              "title": "XML_11"
             }
           }
         ]
@@ -175,14 +175,26 @@
   },
   "active": "93eb86438cf66c97",
   "lastOpenFiles": [
-    "MCA/Web Programming/XML/XML_10.md",
-    "MCA/Web Programming/XML/XML_9.md",
-    "MCA/Web Programming/XML/XML_8.md",
-    "MCA/Web Programming/XML/XML_7.md",
-    "MCA/Web Programming/XML/XML_3.md",
-    "MCA/Web Programming/XML/XML_2.md",
-    "MCA/Web Programming/XML/XML_6.1.md",
-    "MCA/Web Programming/XML/XML_6.md",
+    "MCA/Web Programming/XML/2_DTD/XML_9.md",
+    "MCA/Web Programming/XML/2_DTD/XML_10.md",
+    "MCA/Web Programming/XML/2_DTD/XML_10.1.md",
+    "MCA/Web Programming/XML/2_DTD/XML_11.md",
+    "MCA/Web Programming/XML/3_Style/XML_12.md",
+    "MCA/Web Programming/XML/2_DTD/XML_7.md",
+    "MCA/Web Programming/XML/3_Style",
+    "MCA/Web Programming/XML/1_XML",
+    "MCA/Web Programming/XML/2_DTD",
+    "Add-on/Hugo/Hugo_doc/Hugo.md",
+    "Add-on/Hugo/Hugo_doc/Hugo 1.md",
+    "Add-on/Hugo/Hugo_doc/Hugo 2.md",
+    "Add-on/Hugo/Hugo_doc/Hugo,  Doks.md",
+    "Add-on/Hugo/Hugo_doc/Doks 1 - Intro.md",
+    "Add-on/Hugo/Hugo_doc/Doks 2 - Codeblock Shortcode.md",
+    "MCA/Web Programming/XML/2_DTD/XML_8.md",
+    "MCA/Web Programming/XML/1_XML/XML_3.md",
+    "MCA/Web Programming/XML/1_XML/XML_2.md",
+    "MCA/Web Programming/XML/1_XML/XML_6.1.md",
+    "MCA/Web Programming/XML/1_XML/XML_6.md",
     "MCA/Web Programming/XML/Intro.md",
     "MCA/Data Structures in C/Data structures in C.md",
     "MCA/Data Structures in C/7 Singly_Linked_List_Full.md",
@@ -192,15 +204,6 @@
     "MCA/p/PrFiSt_3.1.md",
     "MCA/p/PrFiSt_3.md",
     "MCA/p/PrFiSt_2.1.md",
-    "MCA/p/PrFiSt_1.md",
-    "MCA/p/prev.md",
-    "MCA/p/Untitled 1.md",
-    "MCA/p/Untitled.md",
-    "Z/Projects/Mini Projects/PDF_Parser_Sorter.md",
-    "Algorithms & Problems/Problems/String mod/GCD of Strings.md",
-    "Algorithms & Problems/Problems/String mod/Reverse String II.md",
-    "Algorithms & Problems/Problems/String mod/Reversing Vowels.md",
-    "Algorithms & Problems/Problems/String mod/Reversing Words.md",
     "MCA/Web Programming/XML",
     "MCA/p",
     "SQL/images/4_viewing/20241216205226.jpg",
@@ -217,9 +220,6 @@
     "Python/1_Data_Types/2_complex_types",
     "MCA/OS & Linux/OS Syllabus/Unit_3",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Skipped Units",
-    "MCA/OS & Linux/OS Syllabus/Unit_2",
-    "Bash Linux/Linux/Linux Bash/12 Hard and Symbolic Links.md~",
-    "Bash Linux/Linux/Linux Bash/10 File Viewing and Editing M.md~",
-    "Bash Linux/Linux/Linux Bash/8.1 bc and date.md~"
+    "MCA/OS & Linux/OS Syllabus/Unit_2"
   ]
 }
