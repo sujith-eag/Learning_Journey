@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/Data structures in C.md",
+                "file": "MCA/Web Programming/XML/XML_9.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Data structures in C"
+              "title": "XML_9"
             }
           }
         ]
@@ -175,11 +175,19 @@
   },
   "active": "93eb86438cf66c97",
   "lastOpenFiles": [
+    "MCA/Web Programming/XML/XML_10.md",
+    "MCA/Web Programming/XML/XML_9.md",
+    "MCA/Web Programming/XML/XML_8.md",
+    "MCA/Web Programming/XML/XML_7.md",
+    "MCA/Web Programming/XML/XML_3.md",
+    "MCA/Web Programming/XML/XML_2.md",
+    "MCA/Web Programming/XML/XML_6.1.md",
+    "MCA/Web Programming/XML/XML_6.md",
+    "MCA/Web Programming/XML/Intro.md",
+    "MCA/Data Structures in C/Data structures in C.md",
     "MCA/Data Structures in C/7 Singly_Linked_List_Full.md",
     "MCA/Data Structures in C/7 Singly_linked_list_Basic.md",
     "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "MCA/Web Programming/XML/XML_7.md",
-    "MCA/Web Programming/XML/XML_6.1.md",
     "MCA/p/PrFiSt_4.md",
     "MCA/p/PrFiSt_3.1.md",
     "MCA/p/PrFiSt_3.md",
@@ -193,14 +201,6 @@
     "Algorithms & Problems/Problems/String mod/Reverse String II.md",
     "Algorithms & Problems/Problems/String mod/Reversing Vowels.md",
     "Algorithms & Problems/Problems/String mod/Reversing Words.md",
-    "Z/Projects/Mini Projects/PDF conversion (first project).md",
-    "MCA/Web Programming/XML/XML_6.md",
-    "MCA/Web Programming/XML/XML_5.1.md",
-    "MCA/Web Programming/XML/XML_5.md",
-    "MCA/Web Programming/XML/XML_4.md",
-    "MCA/Web Programming/XML/XML_3.md",
-    "MCA/Web Programming/XML/XML_2.md",
-    "MCA/Web Programming/XML/XML_1.md",
     "MCA/Web Programming/XML",
     "MCA/p",
     "SQL/images/4_viewing/20241216205226.jpg",
