@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e90fed64654b5371",
+        "id": "786d8c17aad09c74",
         "type": "tabs",
         "children": [
           {
-            "id": "93eb86438cf66c97",
+            "id": "c69c09ba5e1b554f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Web Programming/XML/2_DTD/XML_11.md",
+                "file": "Add-on/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "XML_11"
+              "title": "Git"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "schema",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,13 +173,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93eb86438cf66c97",
+  "active": "c69c09ba5e1b554f",
   "lastOpenFiles": [
+    "LaTeX/0.md",
+    "MCA/Case.md",
+    "LaTeX",
+    "Z/Projects/Mini Projects/PDF_Parser_Sorter.md",
+    "Z/Projects/Mini Projects/PDF conversion (first project).md",
+    "Z/Projects.md",
+    "MCA/p/02_Requirements.md",
+    "MCA/p/01_DBMS_.md",
+    "Add-on/Git.md",
+    "MCA/p/03_Integration.md",
+    "MCA/p/04_ML_requirements.md",
+    "MCA/p/Untitled.md",
+    "MCA/p/Untitled 1.md",
+    "SQL/2_Designing.md",
+    "SQL/0_Querying.md",
+    "Z/Backend.md",
+    "MCA/Web Programming/XML/3_Style/XML_12.md",
+    "Z/Resume Template.md",
+    "MCA/Web Programming/XML/2_DTD/XML_11.md",
     "MCA/Web Programming/XML/2_DTD/XML_9.md",
     "MCA/Web Programming/XML/2_DTD/XML_10.md",
     "MCA/Web Programming/XML/2_DTD/XML_10.1.md",
-    "MCA/Web Programming/XML/2_DTD/XML_11.md",
-    "MCA/Web Programming/XML/3_Style/XML_12.md",
     "MCA/Web Programming/XML/2_DTD/XML_7.md",
     "MCA/Web Programming/XML/3_Style",
     "MCA/Web Programming/XML/1_XML",
@@ -188,22 +205,6 @@
     "Add-on/Hugo/Hugo_doc/Hugo 1.md",
     "Add-on/Hugo/Hugo_doc/Hugo 2.md",
     "Add-on/Hugo/Hugo_doc/Hugo,  Doks.md",
-    "Add-on/Hugo/Hugo_doc/Doks 1 - Intro.md",
-    "Add-on/Hugo/Hugo_doc/Doks 2 - Codeblock Shortcode.md",
-    "MCA/Web Programming/XML/2_DTD/XML_8.md",
-    "MCA/Web Programming/XML/1_XML/XML_3.md",
-    "MCA/Web Programming/XML/1_XML/XML_2.md",
-    "MCA/Web Programming/XML/1_XML/XML_6.1.md",
-    "MCA/Web Programming/XML/1_XML/XML_6.md",
-    "MCA/Web Programming/XML/Intro.md",
-    "MCA/Data Structures in C/Data structures in C.md",
-    "MCA/Data Structures in C/7 Singly_Linked_List_Full.md",
-    "MCA/Data Structures in C/7 Singly_linked_list_Basic.md",
-    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "MCA/p/PrFiSt_4.md",
-    "MCA/p/PrFiSt_3.1.md",
-    "MCA/p/PrFiSt_3.md",
-    "MCA/p/PrFiSt_2.1.md",
     "MCA/Web Programming/XML",
     "MCA/p",
     "SQL/images/4_viewing/20241216205226.jpg",
@@ -219,7 +220,6 @@
     "Python/4_Control_Statements",
     "Python/1_Data_Types/2_complex_types",
     "MCA/OS & Linux/OS Syllabus/Unit_3",
-    "MCA/OS & Linux/OS Syllabus/Unit_2/Skipped Units",
-    "MCA/OS & Linux/OS Syllabus/Unit_2"
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Skipped Units"
   ]
 }

@@ -75,6 +75,7 @@ git remote -v                    # Show the linked GitHub repository
 ```
 
 ## Pushing Local Repository to GitHub
+
 ```bash
 git init                          # Initialize a new Git repository
 git add .                         # Stage all files
@@ -87,6 +88,7 @@ git push -u origin main          # Push changes to GitHub
 ```
 
 ## Commit Messages
+
 - Follow the seven rules of a great Git commit message:
   1. Separate subject from body with a blank line.
   2. Limit subject line to 50 characters.
@@ -171,4 +173,4 @@ git revert [commit_id]             # Revert a specific commit
    - Overview of popular GUI clients for Git and their features.
 
 10. **Troubleshooting Common Issues**:
-    - Tips for resolving common Git issues (merge conflicts, detached HEAD, etc.).
+	- Tips for resolving common Git issues (merge conflicts, detached HEAD, etc.).
