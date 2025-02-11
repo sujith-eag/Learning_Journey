@@ -74,7 +74,7 @@ f(13,12) will be f(13,12,14,22),  f(13,12,16) will be f(13,12,16,22), the values
 ## Function Definition
 
 `def` associates a "body" with a "name"
-Name can be reassigned and even differnet body can be assigned using conditionals
+Name can be reassigned and even different body can be assigned using conditionals
 ```python
 if condition:
     def f(a,b,c):
@@ -115,6 +115,7 @@ def sortfunction(l, cmpfn = defaultcmpfn)
 it can be sorted by number of elements or based on alphabets order
 ```
 
+_____
 
 ## Scope of Function
 #21aug24
@@ -272,25 +273,31 @@ function call is used to call the function and passing argument.
 def greet(username):      # by adding value to (), allows it to accept value
     print(f"Hello, {username.title()}")
 greet("jess")             # value gets passed to function  
+```
 
-# Arguments and Parameters
+
+Arguments and Parameters
 The variable in function is the parameter, the value passed to function is argument
 
-# Passing Arguments
+Passing Arguments
 Positional arguments - which needs to be in the same order as the parameters
 
 keyword arguments - consisting of a variable name and a value; and list and dict of values
 
-# Positional arguments
+### Positional arguments
+
+```python
 def dis_pet(animal, name):
     print (f"\nI have a {animal.title()}")
     print(f"It's name is {name.title()}")
 dis_pet("hammster", "harry")
 dis_pet("dog", "Jack")          # multiple function calls    
-  
-# Keyword Arguments
+```
+
+### Keyword Arguments
 It is the key word arguments passed to the function, so there is no confusion or ordering the value.
 
+```python  
 def dis_pet(animal, name):
     print (f"\nI have a {animal.title()}")
     print(f"It's name is {name.title()}")
@@ -299,7 +306,7 @@ dis_pet(animal = "hammster", name = "harry")
 dis_pet("dog", "Jack")              
 ```
 ## Default values
-```
+
 When writing a function, you can define a default value for each parameter.
 If an argument for a parameter is provided in the function call, Python uses the argument value.
 If not, it uses the parameter's default value.
@@ -308,9 +315,9 @@ So when you define a default value for a parameter, you can exclude the correspo
 
 Using default values can simplify your function calls and clarify the ways your functions are typically used.
 
-# Equivalent function calls
+Equivalent function calls
 Because positional arguments, keyword arguments, and default values can all be used together, you'll often have several equivalent ways to call a function.
-```
+
 
 ```python
 def dis_pet(animal, name = "will"):
@@ -320,15 +327,16 @@ def dis_pet(animal, name = "will"):
 dis_pet(name = "harry", animal = "hammster")
 dis_pet("dog", "Jack")
 dis_pet("cat")              # the name will default to will unless specified
-
-# When you use default values, any parameter with a default value needs to be listed after all the parameters that don't have default values. This allows Python to continue interpreting positional arguments correctly.
 ```
 
+When you use default values, any parameter with a default value needs to be listed after all the parameters that don't have default values. This allows Python to continue interpreting positional arguments correctly.
+
+
 ## Return Values
-```python
+
 The value the function returns is called a return value
 The return statement takes the value from within the function and returns it to the line that called the funtion.
-
+```python
 # Returning a simple value
 def format_name(first, last):
     full_name= f"{first.title()} {last.title()}"
@@ -339,9 +347,9 @@ print(format_name("michal", "jackson"))
 # print(person)
 ```
 ## Optional arguments
-```python
-Making an Argument optional by giving a default value of "" makes an argument optional
 
+Making an Argument optional by giving a default value of "" makes an argument optional
+```python
 def get_formatted_name(first_name, last_name, middle_name=''):
     if middle_name:# python interprets non empty strings as true, empty as false
         full_name = f"{first_name} {middle_name} {last_name}"
@@ -362,7 +370,9 @@ def build_person(first_n, last_n):
   
 name = build_person("jimi", "hendix")
 print(name)
+```
 
+```python
 
 def build_person(first_n, last_n, age = None):
     person = {"first" : first_n, "last": last_n}
@@ -372,12 +382,12 @@ def build_person(first_n, last_n, age = None):
 
 name = build_person("jimi", "hendix", "27")
 print(name)
-
-  
-# The optional parameter "age" has special value None as place holder,  In conditional tests, non evaluates to False.
 ```
+The optional parameter "age" has special value None as place holder,  In conditional tests, non evaluates to False.
+
 
 ## Using function with a while loop
+
 ```python
 def get_formatted_name(first_name, last_name):
     full_name = f"{first_name} {last_name}"
@@ -443,18 +453,18 @@ last_check(completed_models)                                   
 ```
 
 ## Passing copy of a list - to prevent a Function from Modifying a List
-```python
-copy can be sent by  Name_of_Function(list_name[:])
-        ex-   print_models(unprinted_designs[:], completed models)
 
-The slice notation [:] makes a copy of the list to send to the function. now the function will recieve a copy.
+copy can be sent by  `Name_of_Function(list_name[:])`
+        ex-   `print_models(unprinted_designs[:], completed models)`
+
+The slice notation `[:]` makes a copy of the list to send to the function. now the function will recieve a copy.
 Its more efficient to work with the existing function than to make a new copy.  
-```
+
 
 ## Passing an arbitrary number of Arguments
-```
+
 When you dont know ahead of time how many arguments a function needs to accept, python allows function to collect an arbitrary no of arguments, from the calling statement.   by using * in parameters, it accespts as many as it is given.
-```
+
 
 ```python
 def make_pizza(*toppings):    # the asterisk * in ffront

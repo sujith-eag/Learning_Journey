@@ -45,8 +45,8 @@ Everything related to functions applies to methods as well; the only practical d
 
 We define the `__init__()` method to have three parameters: self, name and age.
 The self parameter is required in the method definition, and it must come first, before the other parameters.
-It must be included in the definition because when Python calls this method later (to create an instance of Dog), the method call will automatically pass the self argument.
-  
+It must be included in the definition because when Python calls this method later, the method call will automatically pass the self argument.
+
 Every method call associated with an instance automatically passes self.
 self is a reference to the instance itself; as each object is different, and they have a unique copy of the Class functions. While calling, each object is called specifically with its name, so self is needed to apply whatever the function is to itself.
 
@@ -56,7 +56,10 @@ When we make an instance of Dog, Python will call the `__init__()` method from t
 'self' is passed automatically, so we don't need to pass it.
 Whenever we want to make an instance from the Dog class, we'll provide values for only the last two parameters.
 
-  
+
+
+
+
 The variables defined in the body of the `__init__()` method will also have the prefix self.
 Any variable prefixed with self is available to every method in the class, and we'll also be able to access these variables through any instance created from the class.
 

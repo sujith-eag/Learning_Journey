@@ -1,3 +1,47 @@
+
+### **Case Study Report Format: Problem-Based (10 Marks)**
+
+1. **Introduction (2M)**
+    - Clearly state and summarize the focus of the case study.
+    - Summarize the key observations and findings.
+    
+2. **Background (2M)**
+    - Provide relevant facts and context.
+    - Include necessary background information.
+    
+3. **Proposed Solutions (2M)**
+    - Suggest practical and feasible solutions that exist or ways to enhance the situation as it is.
+    - Explain how these solutions can address the identified problems.
+    
+4. **Implementation (3M)**
+    - Outline the steps required to execute the proposed solutions.
+    - Provide a structured approach for implementation.
+
+5. **Conclusion (1M)**
+    - Summarize key insights from the case study.
+    - Highlight the impact of the proposed solutions.
+
+____
+
+Asynchronous cryptography / Public key cryptography
+
+Key pairs of a person
+Public key of a person is used to encrypt the message sent to a person(Mostly a lock handed out to lock the message), can be accessed only by decrypting it with that persons private key. 
+
+248 bits. encryption size which can be the size of the file that can be encrypted.
+
+Trap door approach of allowing one way of motion easily but not being able to return in the other direction to the starting point.
+
+RSA is used to encrypt AES Key which is used to encrypt the body of the message since it has no limit on how much it can encrypt.
+
+Prime number multiplication - results can be devided evenly by those two prime numbers , brute force is dividing by all primes.
+
+Certificates
+
+
+
+___
+
 Cryptography Through Graph Structures: A Study of RSA and ECC
 
 ### **Case Study: Graph-Based Approaches to Secure Encryption – A Comparative Analysis of RSA and Elliptic Curve Cryptography (ECC)**
@@ -6,8 +50,8 @@ Cryptography Through Graph Structures: A Study of RSA and ECC
 
 This case study explores the role of **graph theory in encryption**, focusing on two widely used cryptographic systems:
 
-1. **RSA Encryption**, which relies on **graph-based prime factorization** and the difficulty of breaking large numbers into primes.
-2. **Elliptic Curve Cryptography (ECC)**, which is based on **cyclic group graphs** formed by points on an elliptic curve.
+6. **RSA Encryption**, which relies on **graph-based prime factorization** and the difficulty of breaking large numbers into primes.
+7. **Elliptic Curve Cryptography (ECC)**, which is based on **cyclic group graphs** formed by points on an elliptic curve.
 
 We analyze how **graph traversal, number theory, and quantum computing** influence these encryption techniques and their future significance.
 
@@ -122,13 +166,13 @@ Shor’s Algorithm uses **quantum computing** to efficiently **traverse the fact
 
 ## **🔹 Conclusion: The Future of Graph-Based Encryption**
 
-1. **RSA vs ECC:**
+8. **RSA vs ECC:**
     - **RSA relies on factorization graphs, which quantum computers can break.**
     - **ECC relies on cyclic group graphs, which offer stronger security with smaller key sizes.**
-2. **Quantum Threats:**
+9. **Quantum Threats:**
     - **Shor’s Algorithm can efficiently traverse factorization graphs, breaking RSA.**
     - **ECC is currently more quantum-resistant but still requires future research.**
-3. **Post-Quantum Cryptography:**
+10. **Post-Quantum Cryptography:**
     - **Lattice-based cryptography** is emerging as a new alternative.
     - **Graph-based encryption schemes (like Zero-Knowledge Proofs) are being explored.**
 
@@ -256,8 +300,8 @@ For a **small** elliptic curve, the graph might look like:
 
 ## **🔹 Final Answer: Where Are Graph Data Structures Used in RSA and ECC?**
 
-1. **RSA uses a factorization graph** where **nodes represent numbers** and **edges represent division relationships**.
-2. **ECC uses a cyclic graph** where **nodes are elliptic curve points**, and **edges represent point addition operations**.
-3. **Both encryption methods rely on graph traversal problems**, making **graph theory essential for cryptographic security**.
+11. **RSA uses a factorization graph** where **nodes represent numbers** and **edges represent division relationships**.
+12. **ECC uses a cyclic graph** where **nodes are elliptic curve points**, and **edges represent point addition operations**.
+13. **Both encryption methods rely on graph traversal problems**, making **graph theory essential for cryptographic security**.
 
 ---
