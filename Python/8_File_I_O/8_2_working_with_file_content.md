@@ -1,9 +1,7 @@
 
 
 
-Python offers powerful tools for working with files, for reading from them, writing to them, or processing their contents. 
-
-Here’s a guide to managing file content, handling exceptions, analyzing text, and working with multiple files.
+Python offers powerful tools for working with files, for reading from them, writing to them, processing their contents, handling exceptions, analyzing text, and working with multiple files.
 
 ---
 

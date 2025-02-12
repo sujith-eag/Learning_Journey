@@ -1,5 +1,6 @@
 
-### **Setting a Default Value for an Attribute**
+
+**Setting a Default Value for an Attribute**
 
 In Python, you can set default values for attributes in the `__init__()` method. This allows you to initialize an attribute without having to pass it as a parameter when creating an instance.
 
