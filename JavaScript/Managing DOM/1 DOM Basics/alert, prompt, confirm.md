@@ -20,7 +20,7 @@ result = prompt(title, [default]);
 `[]` means that the parameter is optional and not needed.
 
 The visitor can type something in the prompt input field and press OK.
-Then we get the text in the `result`. Or they can cancel the input or esc, then we get `null` as `result`.
+Then we get the text in the `result`. Or they can cancel the input or `esc`, then we get `null` as `result`.
 The value received will be in string format. 
 
 ```js
