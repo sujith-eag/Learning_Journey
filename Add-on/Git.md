@@ -72,7 +72,7 @@ cat ~/.ssh/id_ed25519.pub  # Copy the SSH key
 
 #### Adding SSH Key to GitHub
 
-1. Go to **Settings** → **SSH and GPG keys**.
+1. Go to **Settings** → **SSH and GPG keys**. (In the main profile setting)
 2. Click **New SSH key** and paste the SSH key.
 
 ____
@@ -95,6 +95,8 @@ git remote -v                   # Show the linked GitHub repository
 ```
 
 ____
+
+cloning with HTTPS URLs
 
 ### Pushing Local Repository to GitHub
 

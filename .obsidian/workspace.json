@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Add-on/Git.md",
+                "file": "MCA/Data Structures in C/8 Circular Singly linked List.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "8 Circular Singly linked List"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.50260543823242
+    "width": 238.50260543823242,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,6 +176,20 @@
   },
   "active": "c1141aee987e8c2c",
   "lastOpenFiles": [
+    "MCA/Data Structures in C/9 Doubly linked list.md",
+    "MCA/Data Structures in C/8 Circular Singly linked List.md",
+    "Add-on/Git.md",
+    "MCA/p/01_DBMS_.md",
+    "MCA/p/02_Requirements.md",
+    "MCA/p/03_Integration.md",
+    "MCA/p/04_ML_requirements.md",
+    "MCA/p/prev.md",
+    "MCA/p/PrFiSt_1.md",
+    "MCA/p/PrFiSt_2.1.md",
+    "MCA/p/PrFiSt_3.md",
+    "MCA/p/PrFiSt_4.md",
+    "MCA/p/Untitled.md",
+    "MCA/p/Untitled 1.md",
     "Python/temp/Functions.md",
     "Python/temp/File I-O.md",
     "Python/temp/Classes & OOP.md",
@@ -187,20 +202,6 @@
     "Python/1_Data_Types/1_Primitive_types/2_int_float.md",
     "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
     "Python/programs with loops.md",
-    "Python/Arrays Numpy.md",
-    "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
-    "HTML/5.md",
-    "Python/3_Input_Output.md",
-    "Python/0_Python.md",
-    "Python/4_Control_Statements/1_Conditional_Branching.md",
-    "LaTeX/0.md",
-    "JavaScript/Managing DOM/2 DOM modification/2.5 size, coordinates.md",
-    "JavaScript/Managing DOM/2 DOM modification/2.4 style.md",
-    "JavaScript/Managing DOM/4 UI Events/4.5 Keyboard.md",
-    "JavaScript/Managing DOM/Scripts, defer, async.md",
-    "JavaScript/Managing DOM/Debugging.md",
-    "JavaScript/Managing DOM/1 DOM Basics/alert, prompt, confirm.md",
-    "JavaScript/Managing DOM/4.6.md",
     "Python/MCA_related",
     "Python/9_Libraries",
     "Python/8_File_I_O",
