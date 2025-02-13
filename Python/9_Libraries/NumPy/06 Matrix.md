@@ -1,0 +1,330 @@
+Matrix represents a rectangular array of elements arranged in rows and columns (m X n)
+
+To work with matrix, numpy provides a special object object called matrix. It is a special 2D array that retains its 2D nature through operations.
+
+___
+
+The syntax for creating a matrix is 
+`matrix_name = matrix(2D_array or string)`
+
+`np.` is needed depending on how numpy is imported.
+
+```python
+>>> arr = np.reshape(np.arange(11,17,1), (2,3))
+>>> print(arr)
+[[11 12 13]
+ [14 15 16]]
+>>> mat = np.matrix(arr)
+>>> print(mat)
+[[11 12 13]
+ [14 15 16]]
+
+
+>>> arr = np.reshape(np.arange(11,36,1), (5,5))
+>>> print(arr)
+[[11 12 13 14 15]
+ [16 17 18 19 20]
+ [21 22 23 24 25]
+ [26 27 28 29 30]
+ [31 32 33 34 35]]
+>>> mat = np.matrix(arr)
+>>> print(mat)
+[[11 12 13 14 15]
+ [16 17 18 19 20]
+ [21 22 23 24 25]
+ [26 27 28 29 30]
+ [31 32 33 34 35]]
+```
+
+Matrix can be directly typed inside the matrix also
+```python
+>>> mat = np.matrix([ [1,2],[4,5] ])
+>>> print(mat)
+[[1 2]
+ [4 5]]
+```
+
+Or a string can be passed which are elements of one array are separated by `;` semicolon from elements of another array.
+
+```python
+>>> mat = np.matrix( "1 2; 3 4; 5 6" )
+>>> print(mat)
+[[1 2]
+ [3 4]
+ [5 6]]
+```
+
+
+___
+
+### Getting the diagonal elements of a matrix
+
+Using the `diagonal()` function
+`dia = diagonal(matrix)`
+
+```python
+>>> mat = np.matrix( "1 2; 3 4; 5 6" )
+>>> print(mat)
+[[1 2]
+ [3 4]
+ [5 6]]
+
+>>> dia = np.diagonal(mat)
+>>> print(dia)
+[1 4]
+```
+
+
+### Finding Maximum and Minimum Elements
+
+`max()` `min()` 
+```python
+>>> mat = np.matrix( "1 2; 3 4; 5 6" )
+>>> print(mat)
+[[1 2]
+ [3 4]
+ [5 6]]
+>>> print(mat.min())
+1
+>>> print(mat.max())
+6
+```
+
+### Fiding Sum and Average
+
+`sum()` `mean()`
+
+```python
+>>> print(mat.sum())
+21
+>>> print(mat.mean())
+3.5
+```
+
+
+### Product of Row or Column Elements
+
+`prod(0)` returns matrix with products of elements in each column.
+`prod(1)` returns products in each row
+```python
+>>> mat = np.matrix( np.arange(12).reshape(3,4) )
+>>> print(mat)
+[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]]
+ 
+>>> col_prod = mat.prod(0)
+>>> print(col_prod)
+[[  0  45 120 231]]
+
+>>> row_prod = mat.prod(1)
+>>> print(row_prod)
+[[   0]
+ [ 840]
+ [7920]]
+```
+
+
+### Sorting Matrix
+
+`sort()` function sorts the matrix elements into ascending order.
+
+`sort(matrix_name, axis=0\1)`
+
+If `axis = 0` it sorts the row elements.
+if `axis = 1` it sorts the column elements.
+
+```python
+>>> mat = np.matrix([ [3,1,2],[5,2,8],[9,1,5] ])
+>>> print(mat)
+[[3 1 2]
+ [5 2 8]
+ [9 1 5]]
+
+# Not specifying axis sorts the row elements
+>>> row = np.sort(mat)
+>>> print(row)
+[[1 2 3]
+ [2 5 8]
+ [1 5 9]]
+ 
+>>> row = np.sort(mat, axis=1)
+>>> print(row)
+[[1 2 3]
+ [2 5 8]
+ [1 5 9]]
+
+# column sort with axis as 0
+>>> col = np.sort(mat, axis=0)
+>>> print(col)
+[[3 1 2]
+ [5 1 5]
+ [9 2 8]]
+```
+
+### Transpose of a matrix
+
+rows into columns and vice versa is called as transpose.
+A `m X n` matrix will become `n X m` matrix
+
+Transpose can be done with `transpose()` and `getT()` methods in numpy.
+
+```python
+>>> mat = np.matrix([ [3,1,2],[5,2,8],[9,1,5] ])
+>>> print(mat)
+[[3 1 2]
+ [5 2 8]
+ [9 1 5]]
+>>> tra = mat.transpose()
+>>> print(tra)
+[[3 5 9]
+ [1 2 1]
+ [2 8 5]]
+ 
+>>> mat = np.matrix([ [3,1,2],[5,2,8],[9,1,5],[10,15,1],[5,7,8] ])
+>>> print(mat)
+[[ 3  1  2]
+ [ 5  2  8]
+ [ 9  1  5]
+ [10 15  1]
+ [ 5  7  8]]
+>>> tra = mat.transpose()
+>>> print(tra)
+[[ 3  5  9 10  5]
+ [ 1  2  1 15  7]
+ [ 2  8  5  1  8]]
+```
+
+Similarly for `getT()` also.
+
+### Matrix addition and multiplication
+
+Math operators like `+, -, *, /` can be used to perform operations on 2 matrices.
+
+```python
+>>> mat = np.matrix([ [3,1,2],[5,2,8],[9,1,5],[10,15,1],[5,7,8] ])
+
+>>> mat1 = np.matrix(np.arange(15).reshape(5,3) )
+>>> print(mat)
+[[ 3  1  2]
+ [ 5  2  8]
+ [ 9  1  5]
+ [10 15  1]
+ [ 5  7  8]]
+>>> print(mat1)
+[[ 0  1  2]
+ [ 3  4  5]
+ [ 6  7  8]
+ [ 9 10 11]
+ [12 13 14]]
+
+>>> add = mat + mat1
+>>> print(add)
+[[ 3  2  4]
+ [ 8  6 13]
+ [15  8 13]
+ [19 25 12]
+ [17 20 22]]
+
+>>> sub = mat - mat1
+>>> print(sub)
+[[  3   0   0]
+ [  2  -2   3]
+ [  3  -6  -3]
+ [  1   5 -10]
+ [ -7  -6  -6]]
+
+>>> sub = mat1 - mat
+>>> print(sub)
+[[-3  0  0]
+ [-2  2 -3]
+ [-3  6  3]
+ [-1 -5 10]
+ [ 7  6  6]]
+
+>>> div = mat1 / mat
+>>> print(div)
+[[ 0.          1.          1.        ]
+ [ 0.6         2.          0.625     ]
+ [ 0.66666667  7.          1.6       ]
+ [ 0.9         0.66666667 11.        ]
+ [ 2.4         1.85714286  1.75      ]]
+
+```
+
+---
+
+Multiplication doesn't multiply the corresponding matrix elements, it needs the col of one to be equal to row of another.
+That is, if one is `m x n`, the other needs to be `n x p`
+The resultant will be `m x p`
+
+same kind of matrix format will not work unless it is a square matrix.
+
+```python
+>>> prod = mat1 * mat
+    return N.dot(self, asmatrix(other))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shapes (5,3) and (5,3) not aligned: 3 (dim 1) != 5 (dim 0)
+```
+
+Transposing one of the matrix solves the problem if they are same.
+```python
+>>> print(mat1)
+[[ 0  1  2]
+ [ 3  4  5]
+ [ 6  7  8]
+ [ 9 10 11]
+ [12 13 14]]
+# 5 x 3 matrix
+	# 3 x 5 matrix
+>>> mat2 = mat.transpose()
+>>> print(mat2)
+[[ 3  5  9 10  5]
+ [ 1  2  1 15  7]
+ [ 2  8  5  1  8]]
+
+# 5 x 5 matrix
+>>> prod = mat1 * mat2
+>>> print(prod)
+[[  5  18  11  17  23]
+ [ 23  63  56  95  83]
+ [ 41 108 101 173 143]
+ [ 59 153 146 251 203]
+ [ 77 198 191 329 263]]
+
+# Reversing the matrix
+# 3 x 5 * 5 x 3 will be 3x3
+>>> div = mat2 * mat1
+>>> print(div)
+[[219 251 283]
+ [231 257 283]
+ [159 183 207]]
+```
+
+
+____
+
+### A program to accept two matrix and find their product
+
+```python
+import sys
+import numpy as np
+
+r1, c1 = [int(a) for a in input("First matrix rows, cols: ").split()]
+
+r2, c2 = [int(a) for a in input("Second matrix rows, cols :").split()]
+
+if c1 != r2:
+	print("Multiplication not possible")
+	sys.exit()
+
+str1 = input("Enter first matrix elements: \n")
+x = np.reshape(np.matrix(str1), (r1,c1))
+
+str2 = input("Enter second matrix elements: \n")
+y = np.reshape(np.matrix(str2), (r2,c2))
+
+print("The product of the matrix: :")
+z = x * y
+print(z)
+```

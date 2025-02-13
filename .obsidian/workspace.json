@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/8 Circular Singly linked List.md",
+                "file": "Python/9_Libraries/NumPy/06 Matrix.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "8 Circular Singly linked List"
+              "title": "06 Matrix"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.50260543823242,
-    "collapsed": true
+    "width": 238.50260543823242
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -176,8 +175,23 @@
   },
   "active": "c1141aee987e8c2c",
   "lastOpenFiles": [
-    "MCA/Data Structures in C/9 Doubly linked list.md",
+    "Python/9_Libraries/NumPy/04_Operations of Array.md",
+    "Python/9_Libraries/NumPy/06 Matrix.md",
+    "Python/9_Libraries/NumPy/Untitled.md",
+    "Python/9_Libraries/NumPy/01_04 Slicing and Indexing.md",
+    "Python/9_Libraries/NumPy/03_Modifying Array.md",
+    "Python/9_Libraries/NumPy/01_03 Attributes of Array.md",
+    "Python/9_Libraries/NumPy/01_02 Making Array.md",
+    "Python/9_Libraries/NumPy/01_01 Dimensions of Arrays.md",
+    "Python/9_Libraries/NumPy/01_03 Attributes of an Array.md",
+    "Python/9_Libraries/NumPy/05_Comparing Arrays.md",
+    "Python/0_Python.md",
+    "Python/9_Libraries/NumPy",
+    "SQL/0_Querying.md",
+    "SQL/1_Relating.md",
+    "Python/10_Dynamic Programming.md",
     "MCA/Data Structures in C/8 Circular Singly linked List.md",
+    "MCA/Data Structures in C/9 Doubly linked list.md",
     "Add-on/Git.md",
     "MCA/p/01_DBMS_.md",
     "MCA/p/02_Requirements.md",
@@ -188,20 +202,6 @@
     "MCA/p/PrFiSt_2.1.md",
     "MCA/p/PrFiSt_3.md",
     "MCA/p/PrFiSt_4.md",
-    "MCA/p/Untitled.md",
-    "MCA/p/Untitled 1.md",
-    "Python/temp/Functions.md",
-    "Python/temp/File I-O.md",
-    "Python/temp/Classes & OOP.md",
-    "Python/temp/Exceptions & Unit test.md",
-    "Python/temp/Libraries.md",
-    "MCA/Data Structures in C/7 Singly_Linked_List_Full.md",
-    "MCA/Data Structures in C/2 Stack Operations.md",
-    "MCA/Data Structures in C/7 Singly_linked_list_Basic.md",
-    "Python/1_Data_Types/1_Primitive_types/3.1 string manipulations.md",
-    "Python/1_Data_Types/1_Primitive_types/2_int_float.md",
-    "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
-    "Python/programs with loops.md",
     "Python/MCA_related",
     "Python/9_Libraries",
     "Python/8_File_I_O",
@@ -211,7 +211,6 @@
     "Python/5_Functions",
     "LaTeX",
     "MCA/Web Programming/XML/3_Style",
-    "MCA/Web Programming/XML/1_XML",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
