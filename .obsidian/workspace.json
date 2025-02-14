@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/9_Libraries/NumPy/06 Matrix.md",
+                "file": "Python/9_Libraries/NumPy/10_Basic Summary Of NumPy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "06 Matrix"
+              "title": "10_Basic Summary Of NumPy"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "schema",
+                "query": "path:\"Python/9_Libraries/NumPy/\"  sort",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.50260543823242
+    "width": 378.5026054382324
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,33 +175,33 @@
   },
   "active": "c1141aee987e8c2c",
   "lastOpenFiles": [
-    "Python/9_Libraries/NumPy/04_Operations of Array.md",
-    "Python/9_Libraries/NumPy/06 Matrix.md",
+    "Python/9_Libraries/NumPy/09_Broadcasting_in_NumPy.md",
+    "Python/9_Libraries/NumPy/08_00_Universal Functions.md",
+    "Python/9_Libraries/NumPy/07_01_Matrix_Operations.md",
+    "Python/9_Libraries/NumPy/06_00_Fancy_Indexing.md",
+    "Python/9_Libraries/NumPy/05_02_NumPy_Masking.md",
+    "Python/9_Libraries/NumPy/05_01_Boolean_Indexing_with_Arrays.md",
+    "Python/9_Libraries/NumPy/05_00_Comparing_Arrays.md",
+    "Python/9_Libraries/NumPy/04_03_Uniqe, Set logic, Linear Algebra.md",
+    "Python/9_Libraries/NumPy/04_01_Math_Operations_on_Arrays.md",
+    "Python/9_Libraries/NumPy/03_02_Slicing_and_Indexing.md",
+    "Python/9_Libraries/NumPy/03_01_Transposing_Arrays.md",
+    "Python/9_Libraries/NumPy/03_00_Modifying_Arrays.md",
+    "Python/9_Libraries/NumPy/02_01_Creating_Arrays.md",
+    "Python/9_Libraries/NumPy/01_03_Array_Attributes.md",
+    "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
+    "Python/9_Libraries/NumPy/00_01_Numpy_Introduction.md",
+    "Python/9_Libraries/NumPy/10_Basic Summary Of NumPy.md",
     "Python/9_Libraries/NumPy/Untitled.md",
-    "Python/9_Libraries/NumPy/01_04 Slicing and Indexing.md",
-    "Python/9_Libraries/NumPy/03_Modifying Array.md",
-    "Python/9_Libraries/NumPy/01_03 Attributes of Array.md",
-    "Python/9_Libraries/NumPy/01_02 Making Array.md",
-    "Python/9_Libraries/NumPy/01_01 Dimensions of Arrays.md",
+    "Python/9_Libraries/NumPy/Installation guide.md",
+    "Python/9_Libraries/NumPy/06_00 Sorting.md",
+    "Python/9_Libraries/9_1 Library.md",
     "Python/9_Libraries/NumPy/01_03 Attributes of an Array.md",
-    "Python/9_Libraries/NumPy/05_Comparing Arrays.md",
     "Python/0_Python.md",
     "Python/9_Libraries/NumPy",
     "SQL/0_Querying.md",
     "SQL/1_Relating.md",
     "Python/10_Dynamic Programming.md",
-    "MCA/Data Structures in C/8 Circular Singly linked List.md",
-    "MCA/Data Structures in C/9 Doubly linked list.md",
-    "Add-on/Git.md",
-    "MCA/p/01_DBMS_.md",
-    "MCA/p/02_Requirements.md",
-    "MCA/p/03_Integration.md",
-    "MCA/p/04_ML_requirements.md",
-    "MCA/p/prev.md",
-    "MCA/p/PrFiSt_1.md",
-    "MCA/p/PrFiSt_2.1.md",
-    "MCA/p/PrFiSt_3.md",
-    "MCA/p/PrFiSt_4.md",
     "Python/MCA_related",
     "Python/9_Libraries",
     "Python/8_File_I_O",
