@@ -6,7 +6,7 @@ Three important functions: `flatten()`, `reshape()`, and `resize()`.
 
 ---
 
-#### 'flatten()' - Converting to One-Dimensional Array
+#### ' flatten() ' - Converting to One-Dimensional Array
 
 The `flatten()` function collapses a multi-dimensional array into a one-dimensional array. It returns a **copy** of the array, not a view.
 
@@ -20,7 +20,7 @@ array([1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 ---
 
-#### 'flatten()' with 'order' Argument
+#### ' flatten() ' with ' order ' Argument
 
 The `flatten()` function has an optional `order` parameter that specifies the order in which elements are read.
 
@@ -41,7 +41,7 @@ array([1, 4, 7, 2, 5, 8, 3, 6, 9])
 
 ---
 
-#### 'reshape()' - Changing the Shape of an Array
+#### ' reshape() ' - Changing the Shape of an Array
 
 The `reshape()` function allows you to change the shape of an array without modifying its data. The total number of elements must remain the same before and after reshaping.
 
@@ -153,7 +153,7 @@ array([[[ 0,  1],
 
 ---
 
-#### 'resize()' - Changing the Shape and Size of an Array
+#### ' resize() ' - Changing the Shape and Size of an Array
 
 Unlike `reshape()`, which returns a new array, the `resize()` function **modifies the array in place** and does not return anything. 
 

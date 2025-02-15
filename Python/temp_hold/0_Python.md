@@ -47,16 +47,5 @@
 
 ---
 
-### Inline Assignment Using the Walrus Operator (from Python 3.8 onwards)
-
-In **C**:
-```c
-while( (n = get_number()) != -1 )
-```
-
-In **Python**:
-```python
-while ( (n := len(my_list)) > 10 ):
-```
 
 ---

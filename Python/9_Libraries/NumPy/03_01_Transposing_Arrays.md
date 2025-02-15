@@ -72,7 +72,7 @@ array([[125, 140, 155, 170, 185],
 
 ---
 
-### 'swapaxes()' - Swapping Array Axes
+### ' swapaxes() ' - Swapping Array Axes
 
 The `swapaxes()` method allows you to swap any two axes of an array. This rearranges the data and returns a view on the data without copying.
 

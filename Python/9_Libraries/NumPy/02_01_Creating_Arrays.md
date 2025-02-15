@@ -230,7 +230,7 @@ array([ 2,  4,  6,  8, 10])
 
 ---
 
-### Creating Arrays using `zeros()` and `ones()` Functions
+### Creating Arrays using ' zeros() ' and ' ones() ' Functions
 
 `zeros(n, datatype)`  
 `ones(n, datatype)`
@@ -287,7 +287,7 @@ array([[0, 0, 0, 0, 0, 0],
 
 ---
 
-### 'eye()' Function
+### ' eye() ' Function
 
 The `eye()` function creates a 2D array and fills the elements in the diagonal with 1s. It can only create a square matrix of `nxn` form, so it takes only one parameter.
 

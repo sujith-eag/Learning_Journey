@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/9_Libraries/NumPy/10_Basic Summary Of NumPy.md",
+                "file": "Python/1_Data_Types/2_complex_types/5_Tuples.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "10_Basic Summary Of NumPy"
+              "title": "5_Tuples"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cc25899af20e91e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "544f9183d84b2c67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/temp_hold/tuple.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "tuple"
             }
           }
         ]
@@ -63,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Python/9_Libraries/NumPy/\"  sort",
+                "query": "path:\"Python/\"  comprehension",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5026054382324
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,44 +203,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1141aee987e8c2c",
+  "active": "544f9183d84b2c67",
   "lastOpenFiles": [
-    "Python/9_Libraries/NumPy/09_Broadcasting_in_NumPy.md",
-    "Python/9_Libraries/NumPy/08_00_Universal Functions.md",
-    "Python/9_Libraries/NumPy/07_01_Matrix_Operations.md",
-    "Python/9_Libraries/NumPy/06_00_Fancy_Indexing.md",
-    "Python/9_Libraries/NumPy/05_02_NumPy_Masking.md",
-    "Python/9_Libraries/NumPy/05_01_Boolean_Indexing_with_Arrays.md",
-    "Python/9_Libraries/NumPy/05_00_Comparing_Arrays.md",
-    "Python/9_Libraries/NumPy/04_03_Uniqe, Set logic, Linear Algebra.md",
-    "Python/9_Libraries/NumPy/04_01_Math_Operations_on_Arrays.md",
-    "Python/9_Libraries/NumPy/03_02_Slicing_and_Indexing.md",
-    "Python/9_Libraries/NumPy/03_01_Transposing_Arrays.md",
-    "Python/9_Libraries/NumPy/03_00_Modifying_Arrays.md",
-    "Python/9_Libraries/NumPy/02_01_Creating_Arrays.md",
-    "Python/9_Libraries/NumPy/01_03_Array_Attributes.md",
-    "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
-    "Python/9_Libraries/NumPy/00_01_Numpy_Introduction.md",
-    "Python/9_Libraries/NumPy/10_Basic Summary Of NumPy.md",
-    "Python/9_Libraries/NumPy/Untitled.md",
-    "Python/9_Libraries/NumPy/Installation guide.md",
-    "Python/9_Libraries/NumPy/06_00 Sorting.md",
-    "Python/9_Libraries/9_1 Library.md",
-    "Python/9_Libraries/NumPy/01_03 Attributes of an Array.md",
-    "Python/0_Python.md",
+    "Python/1_Data_Types/2_complex_types/5_Tuples.md",
+    "Python/temp_hold/tuple.md",
+    "Python/1_Data_Types/2_complex_types/4.2_list_Operations.md",
+    "Python/temp_hold/List comprehension.md",
+    "Python/1_Data_Types/2_complex_types/4_lists.md",
+    "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
+    "Python/1_Data_Types/2_complex_types/6_Sets.md",
+    "Python/1_Data_Types/2_complex_types/4.1_list_methods.md",
+    "Python/4_Control_Statements/3_range.md",
+    "Python/temp_hold/strings.md",
+    "Python/temp_hold/walrus operator.md",
+    "Python/temp_hold/Recursion 1.md",
+    "Python/temp_hold/programs with loops.md",
+    "Python/temp_hold/module_functools.md",
+    "Python/temp_hold/mathematical functions.md",
+    "Python/temp_hold/lambadas.md",
+    "Python/temp_hold/IO.md",
+    "Python/temp_hold/generators.md",
+    "Python/temp_hold/functions.md",
+    "Python/temp_hold/decorators_built_in.md",
+    "Python/temp_hold/__name__.md",
+    "Python/temp_hold/0_Python.md",
+    "Python/prev/Recursion.md",
+    "Python/prev/Packages & API.md",
+    "Python/10_Dynamic_programming",
+    "Python/3_Input_Output",
+    "Python/temp_hold/decorators_for_function(basic).md",
+    "Python/temp_hold/decorators_third_party.md",
+    "Python/temp_hold",
     "Python/9_Libraries/NumPy",
-    "SQL/0_Querying.md",
-    "SQL/1_Relating.md",
-    "Python/10_Dynamic Programming.md",
     "Python/MCA_related",
     "Python/9_Libraries",
     "Python/8_File_I_O",
     "Python/7_Exception_Handling",
     "Python/6_OOP",
-    "Python/temp",
-    "Python/5_Functions",
-    "LaTeX",
-    "MCA/Web Programming/XML/3_Style",
+    "Python/prev",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

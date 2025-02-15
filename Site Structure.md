@@ -13,15 +13,24 @@
 │   ├── /list-operations.md
 │   ├── /arrays.md
 │   ├── /tuples.md
-│   ├── /dictionary.md
+│   ├── /dictionary.md  -26
 
 ├── /02-Conditionals-Control-flow  30-40
 │   ├── conditionals.md
 │   ├── if-elif-else.md
 │   ├── for-loop.md
-│   ├── while-loop.md
+│   ├── while-loop.md  -40
 │   │   └── 
-
+		
+		....Functions -50
+		....OOP -58
+		....Exceptions -68
+		....File handling -77
+		....Libraries -89
+		....NumPy  120-140
+		
+		
+		
 /OS   100 to 150
 │
 ├── /01
@@ -32,6 +41,8 @@
 │   │   ├── string-manipulation.md
 
 
+	Last Point - 89
+	NumPy - 
 
 
 /C   250-299
