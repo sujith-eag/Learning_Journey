@@ -1,10 +1,13 @@
-In Python, function decorators are a powerful tool to modify or extend the behavior of functions or methods without modifying their actual code. Python provides several built-in function decorators that can be used to enhance functionality. Below is a list of some commonly used **Python-provided function decorators**, along with examples and use cases:
 
-### 1. **`@staticmethod`**
+
+Python provides several built-in function decorators that can be used to enhance functionality. 
+
+Some of the commonly used **Python-provided function decorators**, along with examples and use cases:
+
+### 1. **'@staticmethod'**
 
 - **Purpose:** Defines a static method that doesn't require an instance of the class to be called. The method doesn't take `self` as the first argument.
 - **Use Case:** Used when you need a method that belongs to the class, but does not access or modify the instance state.
-- **Example:**
 
 ```python
 class MyClass:
@@ -14,12 +17,6 @@ class MyClass:
 
 print(MyClass.greet("Alice"))  # Output: Hello, Alice!
 ```
-
-
-### 9. **`@staticmethod` (revisited)**
-
-- **Purpose:** As mentioned before, `@staticmethod` is used to define methods that do not require an instance to be called. It doesn’t have access to `self` or `cls`.
-- **Example:**
 
 ```python
 class MathUtility:
@@ -31,14 +28,12 @@ print(MathUtility.add(5, 7))  # Output: 12
 ```
 
 
-
 ---
 
-### 2. **`@classmethod`**
+### 2. **'@classmethod'**
 
 - **Purpose:** Defines a class method that takes the class as the first argument (`cls`) instead of an instance (`self`).
 - **Use Case:** Useful for methods that need to operate on the class itself, rather than an instance.
-- **Example:**
 
 ```python
 class MyClass:
@@ -48,10 +43,6 @@ class MyClass:
 
 print(MyClass.class_info())  # Output: This is MyClass class.
 ```
-### 10. **`@classmethod` (revisited)**
-
-- **Purpose:** As mentioned before, `@classmethod` defines methods that operate on the class itself, rather than an instance.
-- **Example:**
 
 ```python
 class MyClass:
@@ -69,11 +60,10 @@ print(MyClass.increment_count())  # Output: 2
 
 ---
 
-### 3. **`@property`**
+### 3. **'@property'**
 
 - **Purpose:** Used to define a method as a property, so it can be accessed like an attribute.
 - **Use Case:** Useful for defining read-only attributes or computing values on the fly.
-- **Example:**
 
 ```python
 class Circle:
@@ -91,11 +81,10 @@ print(c.area)  # Output: 78.5 (accessed as an attribute)
 
 ---
 
-### 4. **`@functools.lru_cache()`**
+### 4. **'@functools.lru_cache()'**
 
 - **Purpose:** A decorator that caches the results of expensive function calls, avoiding redundant computations for the same input.
 - **Use Case:** Use it for functions that are called repeatedly with the same arguments, such as in recursive algorithms.
-- **Example:**
 
 ```python
 from functools import lru_cache
@@ -112,11 +101,10 @@ print(fibonacci(100))  # Fast calculation due to caching
 
 ---
 
-### 5. **`@property.setter`**
+### 5. **'@property\.setter'**
 
 - **Purpose:** Defines a setter for a property, allowing you to set a value for a property created using the `@property` decorator.
 - **Use Case:** Used to provide setter functionality for read-only properties.
-- **Example:**
 
 ```python
 class Circle:
@@ -142,11 +130,10 @@ print(c.radius)  # Output: 10
 
 ---
 
-### 6. **`@functools.wraps()`**
+### 6. **'@functools\.wraps()'**
 
 - **Purpose:** A decorator used inside other decorators to preserve the metadata (e.g., `__name__`, `__doc__`) of the original function when it is wrapped.
 - **Use Case:** Used when you write custom decorators to ensure the original function's name and docstring are not lost.
-- **Example:**
 
 ```python
 from functools import wraps
@@ -170,11 +157,10 @@ print(greet.__doc__)   # Output: Greet a person (not the wrapper's docstring)
 
 ---
 
-### 7. **`@functools.singledispatch()`**
+### 7. **'@functools\.singledispatch()'**
 
 - **Purpose:** A decorator used to define a generic function that can be customized based on the type of the first argument.
 - **Use Case:** Used for method overloading, where the function behaves differently depending on the type of its first argument.
-- **Example:**
 
 ```python
 from functools import singledispatch
@@ -198,11 +184,10 @@ func("hello")  # Output: Function for str: hello
 
 ---
 
-### 8. **`@functools.cache_property()`**
+### 8. **'@functools.cache_property()'**
 
 - **Purpose:** A decorator that turns a method into a property that is computed once and then cached for further accesses.
 - **Use Case:** When you want to compute a property only once and cache its value for efficiency.
-- **Example:**
 
 ```python
 from functools import cached_property
@@ -224,12 +209,6 @@ print(sq.area)  # Output: 16 (cached, no "Computing area...")
 
 ---
 
----
-
-
-
----
-
 ### Summary of Python's Built-In Function Decorators
 
 |Decorator|Purpose|Use Case|
@@ -243,4 +222,5 @@ print(sq.area)  # Output: 16 (cached, no "Computing area...")
 |`@functools.singledispatch`|Defines a function that changes behavior based on argument type.|Use for function overloading.|
 |`@functools.cache_property`|Turns a method into a property with caching.|Use for expensive computed properties.|
 
-These decorators allow Python developers to simplify their code, enhance readability, and optimize performance. Let me know if you'd like more examples or clarifications!
+____
+

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0ed81b4658044aa9",
+        "id": "8108d4ea46ea2dcf",
         "type": "tabs",
         "children": [
           {
-            "id": "c1141aee987e8c2c",
+            "id": "da3303149c336857",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/1_Data_Types/2_complex_types/5_Tuples.md",
+                "file": "Python/5_Functions/5_1_Function_Definition.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,37 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "5_Tuples"
-            }
-          }
-        ]
-      },
-      {
-        "id": "cc25899af20e91e7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "544f9183d84b2c67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/temp_hold/tuple.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "tuple"
+              "title": "5_1_Function_Definition"
             }
           }
         ]
@@ -118,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 203.50260543823242
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -203,44 +173,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "544f9183d84b2c67",
+  "active": "da3303149c336857",
   "lastOpenFiles": [
-    "Python/1_Data_Types/2_complex_types/5_Tuples.md",
-    "Python/temp_hold/tuple.md",
-    "Python/1_Data_Types/2_complex_types/4.2_list_Operations.md",
-    "Python/temp_hold/List comprehension.md",
-    "Python/1_Data_Types/2_complex_types/4_lists.md",
-    "Python/1_Data_Types/2_complex_types/4.3_Array Vs List.md",
-    "Python/1_Data_Types/2_complex_types/6_Sets.md",
-    "Python/1_Data_Types/2_complex_types/4.1_list_methods.md",
-    "Python/4_Control_Statements/3_range.md",
-    "Python/temp_hold/strings.md",
-    "Python/temp_hold/walrus operator.md",
-    "Python/temp_hold/Recursion 1.md",
-    "Python/temp_hold/programs with loops.md",
-    "Python/temp_hold/module_functools.md",
-    "Python/temp_hold/mathematical functions.md",
-    "Python/temp_hold/lambadas.md",
-    "Python/temp_hold/IO.md",
+    "Python/5_Functions/5_2_Scope.md",
+    "Python/5_Functions/5_3_Arguments.md",
+    "Python/5_Functions/5_4_Parameters.md",
+    "Python/5_Functions/5_5_Functions_from_Modules.md",
+    "Python/5_Functions/5_6_generator_functions.md",
+    "Python/5_Functions/5_7_lambda_function.md",
+    "Python/5_Functions/5_8_decorator_function.md",
+    "Python/5_Functions/5_10_Third-part_decorators.md",
+    "Python/5_Functions/5_9_Built-in_Decorators.md",
     "Python/temp_hold/generators.md",
-    "Python/temp_hold/functions.md",
+    "Python/temp_hold/decorators_third_party.md",
     "Python/temp_hold/decorators_built_in.md",
+    "Python/temp_hold/decorators_for_function(basic).md",
+    "Python/temp_hold/lambadas.md",
+    "Python/5_Functions/5_1_Function_Definition.md",
+    "Python/temp_hold/functions.md",
     "Python/temp_hold/__name__.md",
     "Python/temp_hold/0_Python.md",
-    "Python/prev/Recursion.md",
-    "Python/prev/Packages & API.md",
+    "Python/1_Data_Types/2_complex_types/6_Sets.md",
+    "Python/1_Data_Types/2_complex_types/7_dictionary/7.3_Dictionary_Practice.md",
+    "Python/1_Data_Types/2_complex_types/7_dictionary/7.2_Dictionary_manipulation_operations.md",
+    "Python/1_Data_Types/2_complex_types/7_dictionary/7.1_Dictionary_Accessing_elements.md",
+    "Python/1_Data_Types/2_complex_types/7_dictionary/7_Dictionary.md",
+    "Python/1_Data_Types/2_complex_types/4_lists/4.5_Array Vs List.md",
+    "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
+    "Python/1_Data_Types/2_complex_types/4_lists/4.3_map and filter.md",
+    "Python/1_Data_Types/2_complex_types/4_lists",
+    "Python/1_Data_Types/2_complex_types/7_dictionary",
     "Python/10_Dynamic_programming",
     "Python/3_Input_Output",
-    "Python/temp_hold/decorators_for_function(basic).md",
-    "Python/temp_hold/decorators_third_party.md",
     "Python/temp_hold",
     "Python/9_Libraries/NumPy",
     "Python/MCA_related",
     "Python/9_Libraries",
     "Python/8_File_I_O",
     "Python/7_Exception_Handling",
-    "Python/6_OOP",
-    "Python/prev",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

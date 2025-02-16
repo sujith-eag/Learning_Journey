@@ -1,7 +1,6 @@
 
-In addition to the built-in decorators in Python, **other sources** such as **third-party libraries** or **custom decorators** can provide additional functionality, but the ones I mentioned earlier are the **core built-in decorators** that come with Python.
 
-However, there are more **decorators** available from **third-party libraries** and **custom implementations**. Here's a breakdown:
+**Third-party libraries** or **custom decorators** can provide additional functionality. There are more **decorators** available from **third-party libraries** and **custom implementations**. 
 
 
 - **Performance optimization:** Using `@lru_cache` or `@memoize` to cache expensive function results.
@@ -10,6 +9,7 @@ However, there are more **decorators** available from **third-party libraries** 
 - **Data validation:** Using decorators for input validation before the function executes.
 - **State management (Singleton pattern):** Custom decorators like `@singleton` can manage class instances.
 
+___
 
 ### **Third-Party Decorators:**
 
@@ -17,7 +17,6 @@ However, there are more **decorators** available from **third-party libraries** 
 
 - **Purpose:** Caches the results of function calls (similar to `functools.lru_cache()` but with more flexibility and control).
 - **Use Case:** When you want to cache the results of expensive or recursive functions.
-- **Example (using `memoization` library):**
 
 ```python
 from memoization import cached
@@ -29,11 +28,12 @@ def slow_function(n):
 ```
 
 - **Install**: `pip install memoization`
-1. **`@retry` (from `tenacity` library)**:
+
+
+2. **`@retry` (from `tenacity` library)**:
 
 - **Purpose:** Retries a function if it raises an exception, with configurable delays and retry attempts.
 - **Use Case:** Retry a function in case of failure, like when working with unreliable external services.
-- **Example (using `tenacity` library):**
 
 ```python
 from tenacity import retry
@@ -45,11 +45,13 @@ def unreliable_function():
 ```
 
 - **Install**: `pip install tenacity`
-2. **`@timer` (from `timeit` or custom timer decorators)**:
+
+
+
+3. **`@timer` (from `timeit` or custom timer decorators)**:
 
 - **Purpose:** Measures the execution time of a function.
 - **Use Case:** Profiling a function to track how long it takes to execute.
-- **Example (using `timeit` library or custom implementation):**
 
 ```python
 import time
@@ -69,11 +71,11 @@ def my_function():
 	pass
 ```
 
-1. **`@log` (from `logging` or custom log decorators)**:
+
+4. **`@log` (from `logging` or custom log decorators)**:
 
 - **Purpose:** Logs function calls, inputs, and outputs for debugging or monitoring.
 - **Use Case:** When you need to log function execution for tracking or debugging purposes.
-- **Example (custom implementation):**
 
 ```python
 import logging
@@ -93,11 +95,10 @@ def add(a, b):
 	return a + b
 ```
 
-2. **`@singleton` (Custom or third-party)**:
+5. **`@singleton` (Custom or third-party)**:
 
 - **Purpose:** Ensures that only one instance of a class exists throughout the program (Singleton pattern).
 - **Use Case:** When you need to ensure a class has only one instance, for example, managing global state.
-- **Example (custom implementation):**
 
 ```python
 def singleton(cls):
@@ -122,8 +123,6 @@ print(db1 is db2)  # Output: True (Both are the same instance)
 ### **Custom Decorators:**
 
 In addition to third-party decorators, you can **create your own custom decorators** based on the needs of your application. These decorators can add logging, timing, validation, caching, or any other functionality.
-
-**Example:**
 
 - **Logging Decorator**: Logs the entry and exit of functions.
 
@@ -151,24 +150,21 @@ add(3, 4)
 
 ### **Summary of Built-in and External Decorators:**
 
-|**Decorator**|**Source**|**Purpose**|**Use Case**|
-|---|---|---|---|
-|`@staticmethod`|Python Built-in|Defines a method that doesn’t take `self` or `cls`.|When a method does not need instance data.|
-|`@classmethod`|Python Built-in|Defines a method that takes `cls` as the first argument.|When you need to access class-level data.|
-|`@property`|Python Built-in|Makes a method behave like a read-only attribute.|To define computed properties.|
-|`@functools.lru_cache`|Python Built-in|Caches function results to avoid redundant calls.|Optimize performance of repeated calls.|
-|`@functools.wraps`|Python Built-in|Preserves function metadata when wrapping a function.|Writing custom decorators.|
-|`@functools.singledispatch`|Python Built-in|Creates function overloads based on argument type.|Function overloading based on argument type.|
-|`@memoize`|External (e.g., `memoization`)|Caches function results.|Caching results of recursive or expensive functions.|
-|`@retry`|External (e.g., `tenacity`)|Retries a function in case of failure.|Retry logic for unreliable operations.|
-|`@timer`|Custom|Measures and logs function execution time.|Profiling and performance analysis.|
-|`@log`|Custom|Logs function inputs and outputs.|Logging function calls for debugging.|
-|`@singleton`|Custom|Ensures a class has only one instance.|Singleton pattern in class design.|
+| **Decorator**               | **Source**                     | **Purpose**                                              | **Use Case**                                         |
+| --------------------------- | ------------------------------ | -------------------------------------------------------- | ---------------------------------------------------- |
+| `@staticmethod`             | Python Built-in                | Defines a method that doesn’t take `self` or `cls`.      | When a method does not need instance data.           |
+| `@classmethod`              | Python Built-in                | Defines a method that takes `cls` as the first argument. | When you need to access class-level data.            |
+| `@property`                 | Python Built-in                | Makes a method behave like a read-only attribute.        | To define computed properties.                       |
+| `@functools.lru_cache`      | Python Built-in                | Caches function results to avoid redundant calls.        | Optimize performance of repeated calls.              |
+| `@functools.wraps`          | Python Built-in                | Preserves function metadata when wrapping a function.    | Writing custom decorators.                           |
+| `@functools.singledispatch` | Python Built-in                | Creates function overloads based on argument type.       | Function overloading based on argument type.         |
+| `@memoize`                  | External (e.g., `memoization`) | Caches function results.                                 | Caching results of recursive or expensive functions. |
+| `@retry`                    | External (e.g., `tenacity`)    | Retries a function in case of failure.                   | Retry logic for unreliable operations.               |
+| `@timer`                    | Custom                         | Measures and logs function execution time.               | Profiling and performance analysis.                  |
+| `@log`                      | Custom                         | Logs function inputs and outputs.                        | Logging function calls for debugging.                |
+| `@singleton`                | Custom                         | Ensures a class has only one instance.                   | Singleton pattern in class design.                   |
 
 ---
 
-### Conclusion:
 
-While Python's built-in decorators like `@staticmethod`, `@classmethod`, `@property`, and others cover most common cases, there are many **third-party libraries** and **custom decorators** that can extend functionality even further, such as caching, retrying, logging, or timing functions. You can create your own decorators tailored to your specific needs, which adds even more flexibility to your Python code.
 
-Let me know if you'd like more examples or a deeper dive into any specific type!

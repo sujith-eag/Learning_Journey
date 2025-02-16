@@ -1,7 +1,5 @@
 
 
-## Storing Functions in Modules
-
 In Python, you can organize your code into separate modules for better structure, reusability, and easier sharing between different programs.
 
 ### **What is a Module?**
@@ -96,3 +94,133 @@ However, this is not recommended for larger modules as it can lead to name confl
 Since every function is imported, you can call each function by name without using the dot notation. 
 
 ---
+
+
+
+### **Creating and Importing Your Own Modules**
+
+In Python, you can organize your code by breaking it into smaller, reusable parts called **modules**. 
+
+A module is simply a Python file that contains functions, variables, and classes that you can import into other scripts. This approach helps maintain a clean structure and improves code reusability.
+
+#### **1. Creating a Module**
+
+To create a module, write your Python functions or classes in a separate file. For example, let's create a file named `my_module.py` that contains two simple functions:
+
+```python
+# my_module.py
+def hello(name):
+    """Prints a greeting to the user."""
+    print(f"Hello, {name}!")
+
+def goodbye(name):
+    """Prints a goodbye message to the user."""
+    print(f"Goodbye, {name}!")
+```
+
+#### **2. Importing and Using the Module**
+
+Once you’ve created a module, you can import its functions into other Python scripts. Below is an example of how you can use the `hello` and `goodbye` functions in another script, say `main.py`:
+
+```python
+# main.py
+from my_module import hello, goodbye  # Import specific functions from my_module
+
+def main():
+    hello("world")   # Calls the hello function
+    goodbye("world") # Calls the goodbye function
+
+if __name__ == "__main__":
+    main()
+```
+
+The `if __name__ == "__main__":` block ensures that the `main()` function runs only when `main.py` is executed directly, not when it is imported as a module elsewhere.
+
+---
+
+
+#### **Understanding __name__ and __main__ in Python**
+
+In Python, the `__name__` variable is a special built-in variable that plays a crucial role in controlling how Python scripts behave when executed. It helps to distinguish between when a script is executed directly and when it is imported as a module into another script.
+
+- When a Python script is **executed directly** (e.g., `python main.py`), Python sets the `__name__` variable to `"__main__"`.
+- When the script is **imported as a module** (e.g., `import main`), the `__name__` variable is set to the **name of the module** (in this case, `"main"`).
+
+This distinction allows you to control which parts of your code run, depending on whether the script is executed directly or imported into another program.
+
+---
+
+#### **The if __name__ == "__main__":  Condition**
+
+The most common use of `__name__` is the `if __name__ == "__main__":` condition. This construct ensures that certain parts of your code are only executed when the script is run directly, not when it is imported as a module elsewhere.
+
+- **Prevent Unwanted Code Execution**: When a script is imported as a module, code inside `if __name__ == "__main__":` will **not** run, ensuring that only functions or classes are available for import, but not the code meant for direct execution.
+- **Make Scripts Reusable**: This allows you to write reusable modules with testable code, which can be imported without triggering unintended behavior.
+
+#### **Example: Preventing Code Execution on Import**
+
+```python
+# main.py
+def hello(name):
+    """Print a greeting message."""
+    print(f"Hello, {name}!")
+
+def main():
+    """Main function that runs when script is executed directly."""
+    hello("world")
+
+# Code under this block runs only if the script is executed directly
+if __name__ == "__main__":
+    main()  # Runs only if the script is executed directly
+```
+
+- If `main.py` is executed directly (`python main.py`), the `main()` function will run and call `hello("world")`.
+- If `main.py` is imported into another script, the code inside `if __name__ == "__main__":` is **skipped**, and only the functions (e.g., `hello`) will be available.
+
+
+
+---
+
+### **Practical Use Cases**
+
+1. **Creating Modules**: When you create a module with reusable functions or classes, you don’t want those functions to execute when the module is imported. The `if __name__ == "__main__":` block ensures this by keeping execution code separate.
+
+2. **Testing Code Locally**: You can use the `if __name__ == "__main__":` block to write test code or examples that only run when you want to test your script locally, without affecting other programs that import it as a module.
+
+3. **Command-Line Scripts**: For scripts designed to be run from the command line, you can place the main execution logic inside the `if __name__ == "__main__":` block, ensuring that the script behaves as expected when executed from the terminal.
+
+
+---
+
+### **Using Command-Line Arguments**
+
+Python's `sys.argv` to pass command-line arguments to your script. This feature makes your program interactive, as it can accept input directly from the terminal or command prompt.
+
+#### **Example: Accepting Command-Line Arguments**
+
+```python
+import sys
+from my_module import hello
+
+if len(sys.argv) == 2:  # Check if one argument (besides the script name) is passed
+    hello(sys.argv[1])  # Pass the argument to the hello function
+```
+
+- `sys.argv` is a list where the first element (`sys.argv[0]`) is the script name, and subsequent elements are the arguments passed.
+- The script checks if exactly one argument is provided and passes it to the `hello` function.
+
+#### **Running the Script**
+
+You can run the script from the command line as follows:
+
+```bash
+python main.py John
+```
+
+This will output:
+
+```
+Hello, John!
+```
+
+If no argument is passed or there are more than one, the script won't run the `hello` function.
