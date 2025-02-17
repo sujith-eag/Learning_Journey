@@ -4,16 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8108d4ea46ea2dcf",
+        "id": "16ac06a8df2181d5",
         "type": "tabs",
+        "dimension": 42.51357641582622,
         "children": [
           {
-            "id": "da3303149c336857",
+            "id": "e5374493bd8044fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/5_Functions/5_1_Function_Definition.md",
+                "file": "Python/temp_hold/undefined.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +29,38 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "5_1_Function_Definition"
+              "title": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7512f15507a07ee5",
+        "type": "tabs",
+        "dimension": 57.48642358417377,
+        "children": [
+          {
+            "id": "137a124ea437ac27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/6_OOP/6.4_Changing_Atributes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "6.4_Changing_Atributes"
             }
           }
         ]
@@ -173,8 +205,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "da3303149c336857",
+  "active": "137a124ea437ac27",
   "lastOpenFiles": [
+    "Python/6_OOP/6.3_Types of Methods.md",
+    "Python/6_OOP/6.2_Creating a class.md",
+    "Python/6_OOP/6.1_Intro_to_OOP.md",
+    "Python/6_OOP/6.4_Changing_Atributes.md",
+    "Python/temp_hold/undefined.md",
+    "Python/temp_hold/module_functools.md",
+    "Python/temp_hold/IO.md",
+    "CSS/6_Flexbox.md",
+    "CSS/5_Box_Model.md",
+    "MCA/Web Programming/XML/1_XML/XML_3.md",
+    "MCA/Web Programming/XML/3_Style/XML_12.md",
+    "Python/5_Functions/5_1_Function_Definition.md",
     "Python/5_Functions/5_2_Scope.md",
     "Python/5_Functions/5_3_Arguments.md",
     "Python/5_Functions/5_4_Parameters.md",
@@ -189,18 +233,6 @@
     "Python/temp_hold/decorators_built_in.md",
     "Python/temp_hold/decorators_for_function(basic).md",
     "Python/temp_hold/lambadas.md",
-    "Python/5_Functions/5_1_Function_Definition.md",
-    "Python/temp_hold/functions.md",
-    "Python/temp_hold/__name__.md",
-    "Python/temp_hold/0_Python.md",
-    "Python/1_Data_Types/2_complex_types/6_Sets.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.3_Dictionary_Practice.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.2_Dictionary_manipulation_operations.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.1_Dictionary_Accessing_elements.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7_Dictionary.md",
-    "Python/1_Data_Types/2_complex_types/4_lists/4.5_Array Vs List.md",
-    "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
-    "Python/1_Data_Types/2_complex_types/4_lists/4.3_map and filter.md",
     "Python/1_Data_Types/2_complex_types/4_lists",
     "Python/1_Data_Types/2_complex_types/7_dictionary",
     "Python/10_Dynamic_programming",
