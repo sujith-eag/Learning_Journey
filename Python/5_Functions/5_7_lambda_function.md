@@ -122,6 +122,7 @@ The `reduce()` function is used to apply a binary function (a function that take
 **Syntax for `reduce()`**
 ```python
 from functools import reduce
+
 reduce(function, sequence)
 ```
 
