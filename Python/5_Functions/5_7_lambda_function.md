@@ -162,3 +162,7 @@ Lambda functions provide a concise way to define small, unnamed functions. They 
 
 ___
 
+Already discussed in inheritance, when the subclass has the same method as in super class and has constructor then it is overridden by the one in the sub class.
+
+To have a new functionality to the same method in the sub class instead of the one from the base class.
+
