@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1ce1f9026f7cd42e",
+        "id": "dca5055e2bc6cc44",
         "type": "tabs",
         "children": [
           {
-            "id": "cbeee50c17debe7d",
+            "id": "9bc8101798f303ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/6_OOP/6.6_Polymorphism.md",
+                "file": "CSS/Related Doc/temp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "6.6_Polymorphism"
+              "title": "temp"
             }
           }
         ]
@@ -173,34 +173,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cbeee50c17debe7d",
+  "active": "9bc8101798f303ee",
   "lastOpenFiles": [
     "Python/6_OOP/6.4_Changing_Atributes.md",
-    "Python/6_OOP/6.5_Inheritance.md",
-    "Python/6_OOP/6.6_Polymorphism.md",
+    "CSS/Related Doc/temp.md",
     "Python/6_OOP/6.3_Types of Methods.md",
     "Python/6_OOP/6.2_Creating a class.md",
     "Python/6_OOP/6.1_Intro_to_OOP.md",
+    "CSS/8_Axes_in_flexbox.md",
+    "CSS/7_Flexibility.md",
+    "CSS/6_Flexbox.md",
+    "CSS/2_Multiple_Selectors.md",
+    "CSS/Related Doc/CSS_Sizing_Units.md",
+    "CSS/5_Box_Model.md",
+    "Bash Linux/Linux/Linux Bash/18 Shell Scripts.md",
+    "Bash Linux/Linux/Linux Bash/16 egrep.md",
+    "Bash Linux/Linux/temp hold.md",
+    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
+    "Bash Linux/Linux/Linux Bash/17 sed.md",
+    "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
+    "Bash Linux/Linux/Linux Bash/18.2 Shell Scripts - Loops.md",
+    "Bash Linux/Linux/Linux Bash/14 File Searching.md",
+    "CSS/9_Utility_Class_&_Inheritance.md",
+    "Python/6_OOP/6.5_Inheritance.md",
+    "Python/6_OOP/6.6_Polymorphism.md",
     "Python/5_Functions/5_7_lambda_function.md",
     "Python/5_Functions/5_6_generator_functions.md",
     "Python/4_Control_Statements/2_match_case.md",
     "Python/7_Exception_Handling/7_3_unit_testing.md",
-    "Python/temp_hold/undefined.md",
-    "Python/temp_hold/strings.md",
-    "Python/temp_hold/Recursion 1.md",
-    "Python/temp_hold/programs with loops.md",
-    "Python/temp_hold/module_functools.md",
-    "Python/temp_hold/matrix.md",
-    "Python/temp_hold/mathematical functions.md",
-    "Python/4_Control_Statements/4_for_while_loops.md",
-    "Python/4_Control_Statements/3_range.md",
-    "Python/4_Control_Statements/1_Conditional_Branching.md",
-    "Python/3_Input_Output/3_Input_Output.md",
-    "Python/1_Data_Types/2_complex_types/6_Sets.md",
-    "Python/1_Data_Types/2_complex_types/5_Tuples.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.3_Dictionary_Practice.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.2_Dictionary_manipulation_operations.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.1_Dictionary_Accessing_elements.md",
     "Python/1_Data_Types/2_complex_types/4_lists",
     "Python/1_Data_Types/2_complex_types/7_dictionary",
     "Python/10_Dynamic_programming",

@@ -167,18 +167,18 @@ When you use `display: flex`, it places all **direct children** of the container
 
 ## **Summary of Key Flexbox Properties**
 
-| **Property**        | **Description**                                               | **Values**                                                                 |
-|---------------------|---------------------------------------------------------------|---------------------------------------------------------------------------|
-| `display: flex`     | Establishes the flex container                                | `display: flex;`                                                           |
-| `flex-direction`    | Defines the direction of the flex items                       | `row`, `column`, `row-reverse`, `column-reverse`                           |
-| `justify-content`   | Aligns items along the main axis                              | `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly` |
-| `align-items`       | Aligns items along the cross axis                             | `flex-start`, `flex-end`, `center`, `baseline`, `stretch`                 |
-| `align-self`        | Overrides `align-items` for individual flex items             | `auto`, `flex-start`, `flex-end`, `center`, `baseline`, `stretch`         |
-| `flex-grow`         | Defines the growth factor of a flex item                      | A number (default `0`)                                                   |
-| `flex-shrink`       | Defines the shrink factor of a flex item                      | A number (default `1`)                                                   |
-| `flex-basis`        | Defines the initial size of a flex item                       | Any valid length (e.g., `auto`, `100px`, `20%`)                           |
-| `flex`              | Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`    | `flex: 1;` or `flex: [grow] [shrink] [basis]`                             |
-| `align-content`     | Aligns multiple lines of flex items in the container          | `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `stretch` |
+| **Property**      | **Description**                                            | **Values**                                                                          |
+| ----------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `display: flex`   | Establishes the flex container                             | `display: flex;`                                                                    |
+| `flex-direction`  | Defines the direction of the flex items                    | `row`, `column`, `row-reverse`, `column-reverse`                                    |
+| `justify-content` | Aligns items along the main axis                           | `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly` |
+| `align-items`     | Aligns items along the cross axis                          | `flex-start`, `flex-end`, `center`, `baseline`, `stretch`                           |
+| `align-self`      | Overrides `align-items` for individual flex items          | `auto`, `flex-start`, `flex-end`, `center`, `baseline`, `stretch`                   |
+| `flex-grow`       | Defines the growth factor of a flex item                   | A number (default `0`)                                                              |
+| `flex-shrink`     | Defines the shrink factor of a flex item                   | A number (default `1`)                                                              |
+| `flex-basis`      | Defines the initial size of a flex item                    | Any valid length (e.g., `auto`, `100px`, `20%`)                                     |
+| `flex`            | Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis` | `flex: 1;` or `flex: [grow] [shrink] [basis]`                                       |
+| `align-content`   | Aligns multiple lines of flex items in the container       | `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `stretch`      |
 
 ---
 
