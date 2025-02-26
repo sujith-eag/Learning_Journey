@@ -164,14 +164,16 @@ No way to avoid recursion
 # Variations of Merge Sort
 
 ### Union of two sorted lists (discarding duplicates)
+```python
 if A[i] == B[j],                                         # When both values are equal, add one value.
 	Append A[i] to C, increment i & j
     if i == m or  j == n  (one of the list is empty)
 		add the remaining list to C
 
 *  (1,2,3) (2,3,4) = (1,2,3,4)
-
+```
 ### Intersection of two sorted lists (finding commons)
+```python
 if A[i] == B[j]                       # if there are similar values
     while A[i] == B[j], increment j          # discard one value, by moving in one list
     append A[i] to C and increment i    # append one copy of that value and then move
@@ -180,9 +182,10 @@ if A[i] < B[j], increment i      # the value less or more are not common, mov
 if B[j] < A[i], increment j              
 
 (1,2,3,4) (4,5,6) = (4)
-
+```
 ### Difference of two lists (finding unique) (A-B) (B-A)
 
+```python
 Values in A , not in B  (A-B)
 if B[j] == A[i],
     discard, by incrementing i and j
@@ -206,3 +209,4 @@ Add all remaining elements from B when A is empty
 
 (1,2,3,6) (2,4,6,8) = (4,8)
 
+```

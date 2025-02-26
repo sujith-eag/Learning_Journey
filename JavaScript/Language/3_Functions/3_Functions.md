@@ -8,7 +8,7 @@
   !false;     // Expression
   ```
 
-- **Statement**: A complete instruction that stands on its own, corresponding to a full sentance. The simplest statement is an expression followed by a semicolon.  
+- **Statement**: A complete instruction that stands on its own, corresponding to a full sentence. The simplest statement is an expression followed by a semicolon.  
   ```js
   1;          // Statement
   !false;     // Statement

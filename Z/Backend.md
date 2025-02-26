@@ -1,6 +1,8 @@
 ## Python
 
 - [ ] Book: Python Crash Course,  (In Project)
+- [ ] Core Python
+- [ ] Data science using Python
 ##### Stuck in
 - [ ] Decorators,  OOP,  
 - [ ] Numpy

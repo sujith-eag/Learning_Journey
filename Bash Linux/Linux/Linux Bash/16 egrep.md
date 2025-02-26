@@ -10,6 +10,8 @@ It is a powerful tool for searching text and is commonly used in UNIX text edito
 
 ```bash {frame="none"}
 egrep [options] regex filename(s)
+
+grep [OPTIONS] PATTERNS [FILE(s)]
 ```
 regex is a string that can but does not have to include metacharacters.     
 Files can be listed with space or wildcards.     
@@ -64,6 +66,41 @@ egrep '[a-z]+ [a-z]+ [a-z]+' *.txt
 ```
 
 _____
+`-i, --ignore-case`    ignore case distinctions in patterns and data 
+(Perform case-insensitive search  `grep -i "error\|fail" logfile.txt`)
+
+`-c, --count`               print only a count of selected lines per FILE 
+(Count the number of lines that match the pattern)  `grep -c "error" logfile.txt`
+
+`-h, --no-filename `        suppress the file name prefix on output 
+( Suppress filename outputs when searching multiple files `grep -h "error" *.log`)
+
+`-l, --files-with-matches`  print only names of FILEs with selected lines
+`grep -l "error" *.log`
+
+`-n, --line-number  `       print line number along with matching output lines
+`grep -n "error" logfile.txt`
+
+`-v, --invert-match`        select non-matching lines (print the lines that do not have the pattern) `grep -v "sucess" logfile.txt`
+
+`-o, --only-matching `      show only nonempty parts of lines that match
+(Display on the matched text instead of the full line) `grep -o "error" logfile.txt`
+
+`-e, --regexp=PATTERNS `    use PATTERNS for matching
+(Use extended regex pattern for complex patterns ) `grep -e "error\|fail" logfile.txt`
+
+`^` Matches the lines that starts with the specific pattern
+`$` Match lines that end with specific pattern
+`grep "^Start" logfile.txt`   `grep "End$" logfile.txt`
+
+`-r, --recursive`    like `--directories=recurse`
+
+`-w, --word-regexp`   match only whole words
+
+`-f, --file=FILE`       take PATTERNS from FILE
+
+
+
 
 ### Options
 
@@ -72,10 +109,7 @@ _____
 $ egrep -r "Yesterday"
 ```
 
-- **Count (`-c`)**: Gives the count of the matches for each file instead of a list.
-```bash {frame="none"}
-$ egrep -c '[0-9]{1,3}' /etc/resolve.conf
-```
+
 
 - **Word Boundary (`-w`)**: Limits matches to whole words only.
 ```bash {frame="none"}
@@ -112,4 +146,105 @@ ls -l /etc | egrep '^-rwx'
 ```bash {frame="none"}
 ls -l /etc | egrep '.{13}[^1]'
 ```
+
+____
+
+```bash {frame="none"}
+$ cat singly_list_final.c | grep "struct" 
+struct node 
+	struct node* next;
+typedef struct node Node;   // 'Node' as alias for 'struct node'
+
+$ cat singly_list_final.c | grep -o "struct"
+struct
+struct
+struct
+struct
+```
+
+- **Count (`-c`)**: Gives the count of the matches for each file instead of a list.
+```bash {frame="none"}
+$ egrep -c '[0-9]{1,3}' /etc/resolve.conf
+
+$ cat singly_list_final.c | grep -c "struct"
+3
+
+$ cat singly_list_final.c | grep -cv "struct" 
+393
+```
+
+
+
+```bash {frame="none"}
+/c_data_structures$ cat singly_list_final.c | grep -o "struct"
+struct
+struct
+struct
+struct
+```
+
+```bash {frame="none"}
+/c_data_structures$ grep "struct" *.c
+circular_singly_linked_list.c:struct node 
+circular_singly_linked_list.c:	struct node *next;
+doubly_circular_linked_list.c:typedef struct node Node;
+Rr.c:typedef struct node Node;
+singly_list.c:struct node
+singly_list.c:    struct node *next;
+singly_list.c:    struct node new* = (struct node*) malloc(sizeof(struct node));
+singly_list.c:        struct node temp* = head;
+singly_list.c:    struct node tem* = head;
+
+singly_list_final.c:struct node 
+singly_list_final.c:	struct node* next;
+singly_list_final.c:typedef struct node Node;   // 'Node' as alias for 'struct node'
+```
+
+```bash {frame="none"}
+/c_data_structures$ grep -o "struct" *.c
+circular_singly_linked_list.c:struct
+circular_singly_linked_list.c:struct
+doubly_circular_linked_list.c:struct
+Rr.c:struct
+singly_list.c:struct
+singly_list.c:struct
+singly_list_final.c:struct
+```
+
+```bash {frame="none"}
+/c_data_structures$ grep -on "struct" *.c
+circular_singly_linked_list.c:6:struct
+doubly_circular_linked_list.c:4:struct
+Rr.c:4:struct
+singly_list.c:33:struct
+singly_list.c:66:struct
+singly_list_final.c:4:struct
+```
+
+```bash {frame="none"}
+/c_data_structures$ grep -on -l "struct" *.c
+circular_singly_linked_list.c
+doubly_circular_linked_list.c
+singly_list.c
+singly_list_final.c
+
+/c_data_structures$ grep -o -l "struct" *.c
+circular_singly_linked_list.c
+doubly_circular_linked_list.c
+singly_list.c
+singly_list_final.c
+
+/c_data_structures$ grep -n -l "struct" *.c
+circular_singly_linked_list.c
+doubly_circular_linked_list.c
+singly_list.c
+singly_list_final.c
+
+/c_data_structures$ grep -l "struct" *.c
+circular_singly_linked_list.c
+doubly_circular_linked_list.c
+singly_list.c
+singly_list_final.c
+```
+
 

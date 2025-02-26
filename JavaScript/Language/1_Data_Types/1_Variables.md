@@ -8,13 +8,24 @@ In JavaScript, *bindings* (also known as *variables*) are used to maintain the i
 - **No spaces or hyphens (`-`)**.
 - **No special characters**, except for `$` and `_`.
 
+The full list of reserved keywords
+```js
+break case catch class const continue debugger default
+delete do else enum export extends false finally for
+function if implements import interface in instanceof let
+new package private protected public return static super
+switch this throw true try typeof var void while with yield
+```
+When creating a binding produces an unexpected syntax error, check whether you’re trying to define a reserved word.
+
+
 ---
 
 ## Naming Variables Properly
 
 A good variable name should be **descriptive** and **easy to understand**. It should clearly represent the value or data that it holds.
 
-- **Use `camelCase`** for variable names (e.g., `userName`, `squareRoot`).
+- **Use `camelCase`** for variable names (e.g., `userName`, `squareRoot`, `fuzzyLittleTurtle`).
 - Choose **human-readable names** that describe the purpose of the variable (e.g., `currentUser`, `shoppingCart`).
 - **Avoid abbreviations or short names** like `a`, `b`, and `c`, unless it's clear what they represent.
 - **Be descriptive** but also **concise**. For example, avoid overly generic names like `data` or `value`.

@@ -8,6 +8,8 @@ _____________
 ## JavaScript
 
 - [ ] **Book:** Eloquent JavaScript  (  Half Done , Stuck in project )
+- [ ] JavaScript: The definitive Guide - David Flangan
+- [ ] 
 ##### Stuck in
 - [ ] Ternary operations instead of if else
 - [ ] Closure

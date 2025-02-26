@@ -1,60 +1,188 @@
+
 ```css
-#MainContainer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;  /* Allow the child containers to wrap */
-    width: 100%;      /* Ensure it takes full width of the screen */
-    height: auto;     /* Adjust height automatically */
-    background-color: aqua;
+@media screen and (max-width: 600px){
+ /*  style appled upto from 0 to 600px */
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-items: center;
-    background-color: rgb(39, 11, 224);
-    width: 45%;       /* Default width for larger screens */
-    height: auto;     /* Automatically adjust height based on content */
-    gap: 2px;
-    margin-bottom: 20px; /* Add some space between stacked containers */
+@media screen and (min-width: 600px){
+ /* Applying style starts from 600px onwards */
+}
+@media screen and (min-width: 768px){
+ /* Starts from 768px to next */
+}
+```
+
+### Example for media query
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.ToggleBtn {
-    background-color: aliceblue;
-    width: 100%; /* Make the toggle button take full width of the container */
-    height: 100px;
-    text-align: center;
-    line-height: 100px; /* Center text vertically */
+body {
+  font-family: "Lucida Sans", sans-serif;
 }
 
-.topicCard {
-    width: 100%;  /* Make topic cards take the full width of the container */
-    height: 100px;
-    margin: 10px 0;
-    background-color: blueviolet;
-    text-align: center;
-    line-height: 100px; /* Center text vertically in topic cards */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
 }
 
-
-```/* Adjust for smaller screens */
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 48%;  /* Make containers take up less space for medium screens */
-    }
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%; /* Stack containers on top of each other for small screens */
-    }
-
-    .ToggleBtn {
-        width: 100%;  /* Ensure toggle button is responsive */
-    }
-
-    .topicCard {
-        width: 100%;  /* Ensure topic cards are responsive */
-    }
+.item1 {
+  grid-area: header;
+  background-color: purple;
+  text-align: center;
+  color: #ffffff;
 }
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+.item2 {
+  grid-area: menu;
+  }
+  
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #0099cc;
+}
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+  .item5 {background-color: black;}
+
+}
+
+@media only screen and (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+	.item5 {background-color: green;}
+
+}
+
+@media only screen and (min-width: 768px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+  .item5 {background-color: red;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <div class="item1"><h1>Chania</h1></div>
+
+  <div class="item2">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+</div>
+
+  <div class="item3">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete.</p>
+    <p>The city can be divided in two parts, the old town and the modern city. The old town is situated next to the old harbour and is the matrix around which the whole urban area was developed.</p>
+    <p>Chania lies along the north west coast of the island Crete.</p>
+  </div>  
+
+  <div class="item4">
+    <h2>Facts:</h2>
+    <ul>
+      <li>Chania is a city on the island of Crete</li>
+      <li>Crete is a Greek island in the Mediterranean Sea</li>
+    </ul>
+  </div>
+
+  <div class="item5"><p>Resize the browser window to see how the content respond to the resizing.</p></div>
+  
+</div>
+
+</body>
+</html>
+
+
+
+```

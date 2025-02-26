@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "dca5055e2bc6cc44",
+        "id": "beb8d3790d4fabce",
         "type": "tabs",
         "children": [
           {
-            "id": "9bc8101798f303ee",
+            "id": "52646e0cf39895b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/Related Doc/temp.md",
+                "file": "MCA/Research_paper/Final_stitch/00_abstract.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "temp"
+              "title": "00_abstract"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Python/\"  comprehension",
+                "query": "env",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 203.50260543823242
+    "width": 276.5026054382324
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,44 +173,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9bc8101798f303ee",
+  "active": "52646e0cf39895b8",
   "lastOpenFiles": [
-    "Python/6_OOP/6.4_Changing_Atributes.md",
-    "CSS/Related Doc/temp.md",
-    "Python/6_OOP/6.3_Types of Methods.md",
-    "Python/6_OOP/6.2_Creating a class.md",
-    "Python/6_OOP/6.1_Intro_to_OOP.md",
-    "CSS/8_Axes_in_flexbox.md",
-    "CSS/7_Flexibility.md",
-    "CSS/6_Flexbox.md",
-    "CSS/2_Multiple_Selectors.md",
-    "CSS/Related Doc/CSS_Sizing_Units.md",
-    "CSS/5_Box_Model.md",
-    "Bash Linux/Linux/Linux Bash/18 Shell Scripts.md",
-    "Bash Linux/Linux/Linux Bash/16 egrep.md",
-    "Bash Linux/Linux/temp hold.md",
-    "Bash Linux/Linux/Linux Bash/15 Neo Vim.md",
-    "Bash Linux/Linux/Linux Bash/17 sed.md",
-    "Bash Linux/Linux/Linux Bash/18.1 Shell Scripts - Conditionals.md",
-    "Bash Linux/Linux/Linux Bash/18.2 Shell Scripts - Loops.md",
-    "Bash Linux/Linux/Linux Bash/14 File Searching.md",
-    "CSS/9_Utility_Class_&_Inheritance.md",
-    "Python/6_OOP/6.5_Inheritance.md",
-    "Python/6_OOP/6.6_Polymorphism.md",
-    "Python/5_Functions/5_7_lambda_function.md",
-    "Python/5_Functions/5_6_generator_functions.md",
-    "Python/4_Control_Statements/2_match_case.md",
-    "Python/7_Exception_Handling/7_3_unit_testing.md",
-    "Python/1_Data_Types/2_complex_types/4_lists",
-    "Python/1_Data_Types/2_complex_types/7_dictionary",
-    "Python/10_Dynamic_programming",
-    "Python/3_Input_Output",
-    "Python/temp_hold",
-    "Python/9_Libraries/NumPy",
-    "Python/MCA_related",
-    "Python/9_Libraries",
-    "Python/8_File_I_O",
-    "Python/7_Exception_Handling",
+    "MCA/Research_paper/rules.md",
+    "MCA/Research_paper/Final_stitch/08_Conclusions.md",
+    "MCA/Research_paper/Final_stitch/07_Findings and Implications.md",
+    "MCA/Research_paper/Final_stitch/09_References.md",
+    "MCA/Research_paper/Final_stitch/01_Introduction.md",
+    "MCA/Research_paper/Draft_Paper_sections/9 References.md",
+    "MCA/Research_paper/Draft_Paper_sections/9.1 Citations.md",
+    "MCA/Research_paper/Final_stitch/Untitled.md",
+    "MCA/Research_paper/Final_stitch/06_Analysis and Interpretations.md",
+    "MCA/Research_paper/Final_stitch/05_Research Methodology.md",
+    "MCA/Research_paper/Final_stitch/04_Research Objective and Research Hypothesis.md",
+    "MCA/Research_paper/Final_stitch/03_Research Gap - Problem Statement.md",
+    "MCA/Research_paper/Final_stitch/02_Review of Literature.md",
+    "MCA/Research_paper/Final_stitch/00_abstract.md",
+    "MCA/Research_paper/Draft_Paper_sections/00 Abstract.md",
+    "MCA/Research_paper/Draft_Paper_sections/00 Titles.md",
+    "MCA/Research_paper/Draft_Paper_sections/1 Background & Motivation.md",
+    "MCA/Research_paper/Draft_Paper_sections/3 Research Objectives.md",
+    "MCA/Research_paper/Draft_Paper_sections/4 Literature review.md",
+    "MCA/Research_paper/Draft_Paper_sections/5 Proposed Methodology 1.md",
+    "MCA/Research_paper/Draft_Paper_sections/6 Security Analysis & Performance Evaluation.md",
+    "MCA/Research_paper/Draft_Paper_sections/7 Limitations and Improvements.md",
+    "MCA/Research_paper/Draft_Paper_sections/8 Conclusion.md",
+    "MCA/Research_paper/05 structure.md",
+    "MCA/Research_paper/02 Checking Ideas.md",
+    "Z/Backend.md",
+    "MCA/Research_paper/Final_stitch",
+    "JavaScript/Language/Asynchronous_programming",
+    "JavaScript/Language/9_modules",
+    "JavaScript/Language/8_Regular_expressions",
+    "JavaScript/Language/7_OOP",
+    "JavaScript/Language/6_Errors_Exceptions",
+    "JavaScript/Typescript",
+    "BlockChain",
+    "MCA/Research_paper/Draft_Paper_sections",
+    "MCA/Research_paper/literature_read",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

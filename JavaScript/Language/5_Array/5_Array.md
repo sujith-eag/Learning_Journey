@@ -12,8 +12,11 @@ JavaScript arrays are a special type of object used to store ordered sequences o
 You can create an empty array using either of these two methods:
 
 ```js
-let arr = new Array();  // Using the Array constructor
-let arr = [];           // Using array literal (preferred)
+let arr = new Array();  
+// Using the Array constructor
+
+let arr = [];           
+// Using array literal (preferred)
 ```
 
 #### 2. **Array with Values**
@@ -22,9 +25,11 @@ An array can be initialized with values inside square brackets (`[]`):
 
 ```js
 let listOfNumbers = [2, 3, 4, 5];
-console.log(listOfNumbers[2]);  // 4 (indexing starts from 0)
+console.log(listOfNumbers[2]);  
+// 4 (indexing starts from 0)
 
-console.log(listOfNumbers[2 - 1]);  // 3 (same as listOfNumbers[1])
+console.log(listOfNumbers[2 - 1]); 
+// 3 (same as listOfNumbers[1])
 ```
 
 Array elements can be accessed using their index values. Arrays are **zero-indexed**.
