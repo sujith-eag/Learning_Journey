@@ -145,6 +145,40 @@ for (let i = 0; i < journal.length; i++) {
 }
 ```
 
+Copying to a new array
+```js
+let a = ["a", "b", "c"];
+let b = [];
+
+for( let i =0;  i< a.length; i++)
+{
+	b[i] = a[i];
+}
+
+// in ES6, copy arrays with Array.from()
+let c = Array.from(b);
+```
+
+
+if we want to compare two distinct objects or arrays, we must compare their properties or elements.
+```js
+function equalArrays(a, b) 
+{
+	if (a === b) return true;
+	// Identical arrays are equal
+	if (a.length !== b.length) return false; 
+	// Different-size arrays not equal
+
+	for(let i = 0; i < a.length; i++) 
+	{
+		// Loop through all elements
+		if (a[i] !== b[i]) return false;
+		// If any differ, arrays not equal
+	}
+	return true;
+}
+```
+
 #### 2. **`for..of` Loop**
 
 The `for..of` loop is a simpler way to iterate over array elements. It gives you the value directly without needing the index.

@@ -1,3 +1,8 @@
+When a program
+needs to retain a value for future use, it assigns the value to (or “stores” the value in) a
+variable. Variables have names, and they allow use of those names in our programs to
+refer to values
+
 
 In JavaScript, *bindings* (also known as *variables*) are used to maintain the internal state and store values.
 
@@ -7,17 +12,6 @@ In JavaScript, *bindings* (also known as *variables*) are used to maintain the i
 - **Cannot start with a number** (e.g., `123variable` is invalid).
 - **No spaces or hyphens (`-`)**.
 - **No special characters**, except for `$` and `_`.
-
-The full list of reserved keywords
-```js
-break case catch class const continue debugger default
-delete do else enum export extends false finally for
-function if implements import interface in instanceof let
-new package private protected public return static super
-switch this throw true try typeof var void while with yield
-```
-When creating a binding produces an unexpected syntax error, check whether you’re trying to define a reserved word.
-
 
 ---
 

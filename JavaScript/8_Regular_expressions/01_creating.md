@@ -32,6 +32,22 @@ treats backslashes somewhat differently. First, since a forward slash ends the
 pattern, we need to put a backslash before any forward slash that we want
 to be part of the pattern.
 
+Text between a pair of slashes constitutes a regular expression literal. The second
+slash in the pair can also be followed by one or more letters, which modify the mean‐
+ing of the pattern
+```js
+/^HTML/;   
+// match H T M L at start of a string
+
+/[1-9][0-9]*/;
+// Match a nonzero digit, followed by any num of digits
+
+/\bjvascript\b/i;   
+// match 'javascript' as a word, case insensitive
+```
+
+
+
 Backslashes tat aren't part of a special character code (like `\n`) will be preserved.
 rather than ignored as they are
 in strings, and change the meaning of the pattern. Some characters, such as
@@ -39,6 +55,27 @@ question marks and plus signs, have special meanings in regular expressions and
 must be preceded by a backslash if they are meant to represent the character
 itself.
 `let aPlus = /A\+/;`
+
+
+
+RegExp objects define a number of useful methods, and strings also have methods
+that accept RegExp arguments. 
+
+```js
+let text = "testing: 1, 2, 3";   // Sample text
+
+let pattern = /\d+/g;  // Matches all instances of one or more digits
+
+pattern.test(text)  // => true: a match exists
+
+text.search(pattern) // => 9: position of first match
+
+text.match(pattern)  // => ["1", "2", "3"]: array of all matches
+
+text.replace(pattern, "#")   // => "testing: #, #, #"
+
+text.split(/\D+/)  // => ["","1","2","3"]: split on nondigits
+```
 
 
 ### Testing for matches

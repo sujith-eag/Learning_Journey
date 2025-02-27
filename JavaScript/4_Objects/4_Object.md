@@ -31,6 +31,11 @@ let user = {};            // "object literal" syntax
 When defining objects, they hold **references** to the data, not copies. This means multiple variables can reference the same object.
 When a primitive variable is defined, it will contain a copy of the information provided to it.
 
+Objects are sometimes called reference types to distinguish them from JavaScript’s
+primitive types. Using this terminology, object values are references, and we say that
+objects are compared by reference: two object values are the same if and only if they
+refer to the same underlying object.
+
 ```js
 const obj = { data: 42 };
 const objCopy = obj;  // objCopy points to the same object as obj
@@ -46,6 +51,26 @@ This is how the DOM object gets edited using storing its references in `js` vari
 ```js
 const element = document.querySelector("#container");
 element.style.backgroundColor = 'red';  // Changes the actual DOM element
+```
+
+
+
+Objects are not compared by value: two distinct objects are not equal even if they
+have the same properties and values. And two distinct arrays are not equal even if
+they have the same elements in the same order:
+
+```js
+> let m = {x: 1}, n = {x: 1};
+undefined
+> m === n
+false
+
+
+> let a = [], b = [];
+undefined
+> a===b
+false
+
 ```
 
 ---

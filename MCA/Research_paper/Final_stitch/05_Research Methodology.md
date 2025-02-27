@@ -21,7 +21,7 @@ The system is structured into three main components:
 #### 1.2 Chaos-Based Pseudo-Random Number Generator (CPRNG)
 * Using chaotic systems like **Logistic Map, Lorenz Attractor, or Chua’s Circuit**, a **chaotic key stream** is generated. The key stream is **non-repeating and unpredictable**, making it resistant to attacks. The chaotic system ensures **non-periodicity, high sensitivity to initial conditions, and deterministic unpredictability**—making it ideal for **lightweight encryption in RTES**.
 
-#### 1.1.3 Lightweight Encryption Process
+#### 1.3 Lightweight Encryption Process
 * The plaintext data is encrypted using **Bitwise XOR operations** with the chaotic key stream. **Chaotic substitution and permutation techniques** for increased diffusion and confusion. Since chaotic maps are **computationally inexpensive**, this method is well-suited for RTES with limited processing power.
 
 ---
@@ -44,13 +44,11 @@ Suitable **lightweight models** that can be used are:
 3. **One-Class Support Vector Machines (One-Class SVM)** – A non-deep learning method that learns normal system behavior and flags anything outside it.
 4. **Isolation Forest (iForest)** – A tree-based model that efficiently isolates outliers in real-time.
 
-These models can be optimized for low-power devices through **pruning, quantization, and model distillation** to ensure **fast, memory-efficient intrusion detection**.cators.
+These models can be optimized for low-power devices through **pruning, quantization, and model distillation** to ensure **fast, memory-efficient intrusion detection**.
 
 ---
 
 #### **2.2 Adaptive Encryption Parameter Adjustment**
-
-When an anomaly is detected, **automated security responses** are triggered in real time, ensuring adaptive security with minimal latency.
 
 If an anomaly is detected, the system **dynamically modifies encryption parameters** to mitigate threats by:
 - **Reinitializing chaotic key generation** with a new TRNG seed for unpredictability.
