@@ -1,10 +1,22 @@
 
-## **Conditional Execution / Branching**
+Conditional statements execute or skip other statements depending on the value of a
+specified expression. These statements are the decision points of your code, and they
+are also sometimes known as “branches.”
 
-### **`if()` Statement**
+The conditional statements are the places where the
+code branches into two or more paths and the interpreter must choose which path to
+follow.
+
+___
+
+### 'if()' Statement
 
 The `if` statement allows you to execute a block of code only if a specified condition is true. The condition is typically a Boolean expression that evaluates to either `true` or `false`.
 ```js
+if (expression)
+	statement
+
+
 if (condition) {
     // Code to execute if condition is true
 }
@@ -15,8 +27,21 @@ When there’s only one statement to execute after `if`, curly braces `{}` can b
 ```js
 if (1 + 1 == 2) console.log("It's true");
 // → It's true
+
+if (username == null)
+	username = "John Doe";
+
+if ( !username) username = "John Doe";
 ```
+
 However, it's considered good practice to always use curly braces for clarity and to avoid errors when adding additional statements.
+
+```js
+if (!address) {
+	address = "";
+	message = "Please specify an address";
+}
+```
 
 ```js
 let hour = 14; // Example hour value
@@ -31,12 +56,12 @@ console.log(greeting);
 
 ___
 
-
 ```js
 let theNumber = Number(prompt("Pick a number"));
 
 if (!Number.isNaN(theNumber)) {
-    console.log("Your number is the square root of " + (theNumber * theNumber));
+    console.log("Your number is the square root of " 
+       + (theNumber * theNumber));
 }
 ```
 - `Number()` converts the user input to a number. If the input is not a valid number (i.e., `NaN`).
@@ -48,16 +73,41 @@ if (!Number.isNaN(theNumber)) {
 
 ---
 
-### **`else` Clause**
+### else Clause
 
-The `else` clause is used to specify what should happen if the `if` condition evaluates to `false`.
+The second form of the if statement introduces an `else` clause that is executed when expression is `false`.
 
 ```js
+if (expression)
+	statement1
+else
+	statement2
+
+
 if (condition) {
     // Code if condition is true
 } else {
     // Code if condition is false
 }
+```
+
+```js
+if (n === 1)
+	console.log("You have 1 new message.");
+else
+	console.log(`You have ${n} new messages.`);
+```
+
+Make a habit of enclosing the bodies of if and else statements
+(as well as other compound statements, such as while loops) within curly braces, even when the body consists of only a single statement. Doing so consistently can prevent problems.
+```js
+if (i === j) {
+	if (j === k) {
+		console.log("i equals k");
+	}
+	} else {
+		console.log("i doesn't equal j");
+	}
 ```
 
 ```js
@@ -72,7 +122,7 @@ if (!Number.isNaN(theNumber)) {
 
 ---
 
-### **`else if` Statement**
+### 'else if' Statement
 
 The `else if` statement is used when you have multiple conditions to check. It allows you to chain multiple conditions together.
 
@@ -87,6 +137,18 @@ if (condition1) {
 ```
 
 ```js
+if (n === 1) {
+	// Execute code block #1
+} else if (n === 2) {
+	// Execute code block #2
+} else if (n === 3) {
+	// Execute code block #3
+} else {
+	// If all else fails, execute block #4
+}
+```
+
+```js
 let num = Number(prompt("Pick a number"));
 
 if (num < 10) {
@@ -97,8 +159,8 @@ if (num < 10) {
     console.log("Large");
 }
 ```
+If `num` is less than 10, it prints `"Small"` and does not check further conditions. The evaluation stops after the first `true` condition.
 
-> **Note**: If `num` is less than 10, it prints `"Small"` and does not check further conditions. The evaluation stops after the first `true` condition.
 
 ---
 
@@ -110,7 +172,7 @@ It’s important to handle type conversion carefully, especially when working wi
 For example, the `Number()` function can produce unexpected results if the user enters something that isn’t a valid number.
 
 
-> **Tip**: Always ensure to check that the input is valid before performing mathematical operations.
+**Tip**: Always ensure to check that the input is valid before performing mathematical operations.
 
 ---
 

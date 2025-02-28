@@ -1,106 +1,3 @@
-
-JavaScript automatically converts values between different types when necessary. This is commonly known as **type coercion**. It happens in a variety of scenarios, such as when performing mathematical operations or comparisons.
-
-if JavaScript wants a string, it will convert whatever value you give it to a string. If
-JavaScript wants a number, it will try to convert the value you give it to a number (or
-to NaN if it cannot perform a meaningful conversion).
-When JavaScript expects a boolean value, you may supply a value of any
-type, and JavaScript will convert it as needed based on truthy or falsy.
-
-
-#### Automatic Type Conversion:
-
-1. **Comparison with Different Types**:
-   JavaScript will convert values to the same type when doing comparisons, which can sometimes produce unexpected results.
-
-```js
-> '2' > 1   // 2 convered to number
-true
-
-> '01' == 1   // 01 converted to number  
-true
-
-> true == 1   // true is converted to 1
-true
-
-> false == 0   // false converted to 0
-true
-
-> 10 + 'Object'
-'10Object'
-
-> 'Object' + 10    // 10 converted to string
-'Object10'
-
-> '7' + '4'
-'74'
-> '7' * '4'    // both string to number
-28
-
-> let n = 1 - "x";
-> n
-NaN
-> n + "object"
-'NaNobject'
-```
-
-2. **Boolean Conversion**:
-   When converting values to `Boolean`, JavaScript considers certain values as **falsy** (which become `false`) and others as **truthy** (which become `true`).
-
-```
-Falsy values :
-0
-"" (empty string)
-null
-undefined
-NaN
-
-Truthy values :
-Non-zero-numbers, Non-empty strings,
-Objects, arrays, functions, etc.
-```
-
-```js
-> Boolean(1)
-true
-
-> Boolean(0)
-false
-
-> Boolean("0")
-true
-
-> Boolean("")
-false
-
-> Boolean("Hello")
-true
-
-> Boolean(null)
-false
-
-> Boolean('null')
-true
-
-> Boolean([])
-true     // empty array is truthy
-```
-
-Object-to-primitive conversion is somewhat more complicated
-The primitive-to-primitive conversions shown in the table are relatively straightforward.
-
-Keep in mind that convertibility of one value to another does not imply equality of those two values.
-
-The if statement converts undefined to false, but the == operator never
-attempts to convert its operands to booleans.
-
-Use strict checks `===  !==`to avoid implicit conversions of types.
-
-
-
-
----
-
 ### Explicit Type Conversion
 
 There are situations where you might need to explicitly convert values between types, which can be done using functions like `String()`, `Number()`, and `Boolean()`.
@@ -162,14 +59,12 @@ undefined
 
 #### Implicit Operator Conversion
 
-Certain JavaScript operators perform implicit type conversions and are sometimes
-used explicitly for the purpose of type conversion. 
+Certain JavaScript operators perform implicit type conversions and are sometimes used explicitly for the purpose of type conversion. 
 * If one operand of the + operator is a string, it converts the other one to a string.
 * The unary + operator converts its operand to a number. 
 * unary ! operator converts its operand to a boolean and negates it.
 
 ```js
-see in some code:
 x + ""   // => String(x)
 +x       // => Number(x)
 x-0     // => Number(x)
@@ -226,6 +121,58 @@ alert(+apple + +orange);  // 5 (conversion to number, then addition)
 ___
 
 #### toString()
+
+toString() method, and the result of
+this method is usually the same as that returned by the String() function.
+
+The toString() method defined by the Number class accepts an optional argument
+that specifies a radix, or base, for the conversion. If you do not specify the argument,
+the conversion is done in base 10. However, you can also convert numbers in other
+bases (between 2 and 36).
+
+```js
+> let n = 17
+> let binary =  n.toString(2);
+> binary
+'10001'
+
+> let octal = n.toString(8)
+> octal
+'21'
+
+> let hex = n.toString(16);
+> hex
+'11'
+```
+
+The Number class defines three methods for these kinds of
+number-to-string conversions. toFixed() converts a number to a string with a speci‐
+fied number of digits after the decimal point. It never uses exponential notation.
+toExponential() converts a number to a string using exponential notation, with one
+digit before the decimal point and a specified number of digits after the decimal point
+(which means that the number of significant digits is one larger than the value you
+specify). toPrecision() converts a number to a string with the number of significant
+digits you specify.
+
+```js
+let n = 123456.789;
+n.toFixed(0)
+n.toFixed(2)
+n.toFixed(5)
+n.toExponential(1)
+n.toExponential(3)
+n.toPrecision(4)
+n.toPrecision(7)
+n.toPrecision(10)
+// => "123457"
+// => "123456.79"
+// => "123456.78900"
+// => "1.2e+5"
+// => "1.235e+5"
+// => "1.235e+5"
+// => "123456.8"
+// => "123456.7890"
+```
 
 ---
 

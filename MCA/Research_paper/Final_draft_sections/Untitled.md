@@ -1,9 +1,5 @@
 
-1. **IoT Attacks Doubling (2023)**  
-    Perez, J. (2023, August 17). IoT attacks doubling, research shows. _Threatpost_. [https://threatpost.com/iot-attacks-doubling/169224/](https://threatpost.com/iot-attacks-doubling/169224/)
-    
-2. **Top IoT Cybersecurity Breaches in 2024**  
-    Asimily. (2024, January 8). The top Internet of Things (IoT) cybersecurity breaches in 2024. _Asimily_. [https://asimily.com/blog/the-top-internet-of-things-iot-cybersecurity-breaches-in-2024/](https://asimily.com/blog/the-top-internet-of-things-iot-cybersecurity-breaches-in-2024/)
+
     
 3. **IoT Data Breach Exposes 2.7 Billion Devices**  
     Miles, L. (2023, March 10). IoT data breach exposes 2.7 billion devices to cyberattacks. _Infosecurity Magazine_. [https://www.infosecurity-magazine.com/news/iot-data-breach-exposes-27-billion/](https://www.infosecurity-magazine.com/news/iot-data-breach-exposes-27-billion/)

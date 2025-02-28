@@ -83,6 +83,9 @@ understand.
 
 #### Comments
 
+Single-line comment`//`
+Multi-line comment `/* ... */`
+
 ```js
 // anyting follwing a double slashes is a comment
 
@@ -95,12 +98,13 @@ understand.
 ```
 
 
+---
+
+
+
 #### Literals
 
-Literals
-
-A literal is a data value that appears directly in a program. The following are all
-literals:
+A literal is a data value that appears directly in a program. The following are all literals:
 ```js
 12      // The number twelve
 1.2     // The number one point two

@@ -1,31 +1,26 @@
 
 ### **Ternary Operator / Conditional Operator**
 
-The `?` operator is called "ternary" because it has **three** operands, making it unique in JavaScript. It's often referred to as the **conditional** or **question mark** operator. It provides a shorthand for `if-else` statements.
+The conditional operator `?:` is the only ternary operator (three operands) in JavaScript and is sometimes actually called the ternary operator.
 
-The basic syntax of the ternary operator is:
+It provides a shorthand for `if-else` statements.
+
+With three operands, the first goes before the ?, the second goes between the ? and the :, and the third goes after the :
+
 ```js
+x>0 ? x : -x  // absolute of x
+
 let result = condition ? value1 : value2;
 
-	boolean ? runIfTrue : runIfFalse
+boolean ? runIfTrue : runIfFalse
 ```
+The first operand is
+evaluated and interpreted as a boolean. If the value of the first operand is truthy, then
+the second operand is evaluated, and its value is returned. Otherwise, if the first
+operand is falsy, then the third operand is evaluated and its value is returned. Only
+one of the second and third operands is evaluated; never both.
+
 If the `condition` is `true`, the expression returns `value1`; otherwise, it returns `value2`.
-
-
-```js
-let accessAllowed = (age > 18) ? true : false;
-```
-This is equivalent to:
-```js
-if (age > 18) {
-	accessAllowed = true;
-} else {
-	accessAllowed = false;
-}
-```
-
-- The `?` operator has low precedence, meaning it runs after operators like `>`.
-
 
 ```js
 console.log(true ? 1 : 2);    // 1
@@ -33,28 +28,60 @@ console.log(false ? 1 : 2);   // 2
 ```
 
 ```js
+let accessAllowed = (age > 18) ? true : false;
+
+
+// This is equivalent to:
+
+if (age > 18) {
+	accessAllowed = true;
+} else {
+	accessAllowed = false;
+}
+```
+
+The `?` operator has low precedence, meaning it runs after operators like `>`.
+
+```js
+greeting = "hello" + (username ? username : "there");
+// if username exists add username
+
+
+// equivalent to
+greeting = "hello ";
+if (username) {
+	greeting += username;
+} else {
+	greeting += "there";
+}
+```
+
+
+```js
 const greeting = isBirthday ? "Happy birthday" : "Good morning";
 ```
 
 ```js
 // switching b/w black and white theme
+
 select.value === "black" ? update("black", "white") : update ("white", "black");
+
 // make black to white,  or  white to black
 ```
+
 ---
 
-### **Multiple `?` Operators (Chaining)**
+### Multiple conditional Operators (Chaining)
 
-You can chain multiple ternary operators together to handle more complex conditions:
+You can chain multiple ternary operators `?:`together to handle more complex conditions:
 
 ```js
 let age = prompt("How old are you?", 18);
 
-let message = (age < 3) ? "Hi, baby" :      // If true, "Hi, baby"
-	(age < 18) ? "Hello" :                    // If true, "Hello"
-		(age < 100) ? "Greetings" :            // If true, "Greetings"
-			"What an unusual age";             // Default message
-
+let message = (age < 3) ? "Hi, baby" :    // If true, "Hi, baby"
+	(age < 18) ? "Hello" :                // If true, "Hello"
+		(age < 100) ? "Greetings" :      // If true, "Greetings"
+			"What an unusual age";      // Default message
 alert(message);
 ```
 
@@ -96,9 +123,9 @@ Our eyes scan the code vertically. Code blocks which span several lines are easi
 
 ---
 
-### **Limitations of `?`**
+### Limitations of ?
 
-#### **No `break` or `continue` with `?`**
+#### No 'break' or 'continue' with ?
 
 The ternary operator only works with **expressions** and cannot handle **statements** like `break` or `continue`.
 
@@ -114,14 +141,5 @@ if (i > 5) {
 ```
 
 In such cases, use an `if...else` statement instead.
-
----
-
-### **Summary:**
-
-- The ternary operator is a concise way to write `if-else` logic.
-- Use it to choose between two values based on a condition.
-- Avoid using the ternary operator for executing code blocks (e.g., with `alert` or `continue`), as it reduces readability.
-- Remember that the ternary operator has **low precedence**, so its evaluation order is important.
 
 ---

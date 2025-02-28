@@ -1,6 +1,3 @@
-
-### Unary, Binary Operators, and Operands
-
 #### Operand
 
 An **operand** is the value or entity that an operator acts upon. In simple terms, it is the input for an operation.
@@ -11,6 +8,75 @@ In the expression `5 * 2`:
 
 Sometimes, operands are also referred to as "arguments", especially in the context of functions or method calls.
 
+
+___
+
+Operators can be categorized based on the number of operands they expect (their
+arity). Most JavaScript operators, like the * multiplication operator, are binary opera‐
+tors that combine two expressions into a single, more complex expression
+
+JavaScript also supports a number of unary operators,
+which convert a single expression into a single, more complex expression.
+
+JavaScript supports one ternary operator, the condi‐
+tional operator ?:, which combines three expressions into a single expression.
+
+
+Unary operator with one opearand on right side
+```js
+++  //Pre- or post-increment
+
+--  // Pre- or post-decrement
+- // Negate number
+
++  // Convert to number
+
+~  // Invert bits
+
+!  // Invert boolean value
+delete  // Remove a property
+
+typeof // Determine type of operand
+
+void // Return undefined value
+```
+
+Binary operators where it is present between the opearands
+```js
+**  // Exponentiate
+
++  // add numbers, concatenate string
+*  /,   %   /// multiply, divide, remainder
+-  // substract
+
+<  <=  >  >=   // comparing numeric order or alphabetic order
+
+in  // test whether property exists
+instanceof  // Test object class
+```
+
+```js
+=       //  assign to variable or property
+
+==   !=   // Test for non-strict equality and enequality
+
+===  !==  // Strict test
+
+||   // logical OR
+&&   // logical AND
+
+```
+
+```js
+// operate and assign
+**=,  *=
+/=, %=
++=, -=
+```
+
+JavaScript operators usually convert the type (see §3.9) of their operands as needed.
+
+___
 #### Unary Operator
 
 A **unary operator** is an operator that works with only one operand. It operates on a single value and typically performs an operation such as negation or increment.
