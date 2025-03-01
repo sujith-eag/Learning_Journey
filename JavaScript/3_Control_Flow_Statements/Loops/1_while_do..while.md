@@ -1,23 +1,18 @@
-The looping statements are those that
-bend that path back upon itself to repeat portions of your code. JavaScript has five
-looping statements: while, do/while, for, for/of (and its for/await variant), and
-for/in.
 
-One common use for loops is
-to iterate over the elements of an array
+Looping statements allow you to repeat portions of your code, making it possible to execute a block of code multiple times. JavaScript has five main types of looping statements: `while`, `do/while`, `for`, `for/of` (and its `for/await` variant), and `for/in`.
 
-___
+One common use for loops is to iterate over the elements of an array.
 
+---
 
+### **'while' Loop**
 
-### 'while' Loop
-
-Similar to `if` statement which is a basic conditional, the `while` statemet is the basic loop.
-The `while` loop executes the code inside its body **as long as** the condition evaluates to **truthy**. The condition is checked **before** each iteration.
+The `while` loop is the most basic type of loop in JavaScript. It repeatedly executes the code inside its body **as long as** the condition evaluates to **truthy**. The condition is checked **before** each iteration.
 
 ```js
-while (expression)
-	statement
+while (expression) {
+    statement;
+}
 ```
 
 ```js
@@ -27,22 +22,37 @@ while (condition) {
     final-expression;  // increment or other operation
 }
 ```
-
-You can create an infinite loop with the syntax `while(true)`
-n expression that starts off truthy would never change, and the loop would never end! 
+You can create an infinite loop with the syntax `while(true)`.     
+`n` expression that starts off truthy would never change, and the loop would never end! 
 
 ___
-
 A single execution of the loop body is called an **iteration**.
-variable count starts off at 0 and is incremented each time the
-body of the loop runs. Once the loop has executed 10 times, the expression becomes false and the while statement finishes.
+variable count starts off at 0 and is incremented each time the body of the loop runs.
+
+Once the loop has executed 10 times, the expression becomes false and the while statement finishes.
+
 ```js
 let count = 0;
-while(count < 10) {
-	console.log(count);
-	count++;
+while (count < 10) {
+    console.log(count);
+    count++;  // Increment count
 }
 ```
+
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+Another example where the condition is checked before each iteration:
 
 ```js
 let number = 0;
@@ -53,6 +63,8 @@ while (number <= 12) {
 }
 // Output: 0, 2, 4, 6, 8, 10, 12
 ```
+
+Here, `result` is repeatedly doubled for each iteration, and the loop stops after 10 iterations:
 
 ```js
 let result = 1;
@@ -67,8 +79,7 @@ console.log(result);  // Output: 1024 (2^10)
 
 #### Shortened `while` condition
 
-shorter way to write `while (i != 0)` is  `while(i)`
-If the condition is just a variable (e.g., `i`), it can be simplified:
+You can simplify the condition in the `while` loop by using just the variable itself. If the condition is a variable (e.g., `i`), you can write it like this:
 
 ```js
 let i = 3;
@@ -98,18 +109,15 @@ while (hash.length < 7) {
 
 ---
 
-### 'do...while' Loop
+### **'do...while' Loop**
 
-The do/while loop is like a while loop, except that the loop expression is tested at the
-bottom of the loop rather than at the top. This means that the body of the loop is
-always executed at least once. The syntax is:
+The `do...while` loop works similarly to the `while` loop, but with one key difference: the condition is checked **after** the code block is executed. This ensures that the body of the loop is executed **at least once**.
+
 ```js
-do
-	statement
-while (expression);
+do {
+    statement;
+} while (expression);
 ```
-
-The `do...while` loop guarantees **at least one execution** of its body. It first executes the code block, then checks the condition.
 
 ```js
 initializer / counter variable;
@@ -118,6 +126,8 @@ do {
     final-expression;  // increment or other operation
 } while (condition);
 ```
+
+The condition is checked after the first execution, guaranteeing the loop runs at least once.
 
 ```js
 let i = 0;
@@ -128,42 +138,53 @@ do {
 // Output: Alerts 0, 1, 2
 ```
 
-**Ensuring user input:**
+#### Ensuring User Input
+
+The `do...while` loop is often used when you want to ensure that the user provides valid input. Here's an example where the user is prompted to enter their name, and the loop continues until a non-empty value is entered:
+
 ```js
 let yourName;
 
 do {
     yourName = prompt("Who are you?");  // Prompt the user for their name
 } while (!yourName);  // Continue if the input is falsy (e.g., empty string)
+
 console.log("Hello " + yourName);  // Output: "Hello <user's name>"
 ```
 
-In this example, the program will **force** the user to enter a name that isn’t an empty string or `null`. The `!` operator converts the value to a Boolean, and **any non-empty string** is considered **truthy**.
+Here, the loop ensures that the user must provide a non-empty name.
+
+#### Example of Iterating Over an Array
+
+This function prints each element of an array:
 
 ```js
 function printArray(a) {
-	let len = a.length, i = 0;
-	if (len === 0) {
-		console.log("Empty Array");
-	} else {
-		do {
-		console.log(a[i]);
-		} while(++i < len);
-	}
+    let len = a.length, i = 0;
+    if (len === 0) {
+        console.log("Empty Array");
+    } else {
+        do {
+            console.log(a[i]);
+        } while (++i < len);
+    }
 }
 ```
+
 ---
 
 ### **Indenting Code**
 
-Although indentation is not required in JavaScript, **proper indentation** makes the code more **readable** for humans. Even though JavaScript can run code in a single line, using proper indentation is a **best practice** to maintain clarity.
+Proper indentation is a **best practice** that makes your code more readable and maintainable. Although JavaScript can run code on a single line, using consistent indentation improves clarity.
 
-**Without indentation:**
+#### Without Indentation:
+
 ```js
 if (true != false) {console.log("That makes sense."); if (1 < 2) {console.log("No surprise there.");}}
 ```
 
-**With proper indentation:**
+#### With Proper Indentation:
+
 ```js
 if (true != false) {
     console.log("That makes sense.");
@@ -174,3 +195,4 @@ if (true != false) {
 ```
 
 ---
+

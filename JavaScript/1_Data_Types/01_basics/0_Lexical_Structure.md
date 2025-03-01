@@ -1,22 +1,28 @@
 
-Running JS in Browser Console `Ctrl+shift+I`
+**Running JavaScript in Browser Console**     
+JavaScript can be run in the browser console directly by opening the developer tools (usually by pressing `Ctrl+Shift+I`). Then, you can write JavaScript code in the console window.
 
-Running JS on Node
+#### Running JavaScript on Node.js      
+
+To run JavaScript in Node.js, first, open the terminal and type `node` to start the REPL (Read-Eval-Print Loop):
+
 ```js
 $ node
 Welcome to Node.js v20.17.0.
 Type ".help" for more information.
-> let x = 2, y =3
+> let x = 2, y = 3
 undefined
-> x+y
+> x + y
 5
-> (x==2) & (x===2) 
+> (x == 2) & (x === 2)
 1
-> (x===2) && ( y ===3)
+> (x === 2) && (y === 3)
 true
-> (x > 2) && ( y < 3)
+> (x > 2) && (y < 3)
 false
 ```
+
+#### Node.js REPL Commands:
 
 ```js
 > .help
@@ -29,63 +35,59 @@ false
 .save     Save all evaluated commands in this REPL session to a file
 ```
 
-Or save a file with `.js` extension and run in node `$ node snippet.js`
+You can also enter editor mode to write code directly:
+
 ```js
 > .editor
 // Entering editor mode (Ctrl+D to finish, Ctrl+C to cancel)
 let a = []
-a.push(1,2,3);
-a.reverse();
+a.push(1, 2, 3)
+a.reverse()
 
-[ 3, 2, 1 ]
-
+[3, 2, 1]
 ```
 
-___
-If you want to see that same message printed out in the JavaScript console of a web
-browser, create a new file named hello.html, and put this text in it:
-`<script src="hello.js"></script>`
-Then load hello.html into your web browser using a file:// URL like this one:
-`file:///Users/username/javascript/hello.html`
-Open the developer tools window to see the greeting in the console.
+Or save a file with `.js` extension and run in node `$ node snippet.js`
 
+---
 
-____
+#### Create HTML File to Run JavaScript in Browser
 
-## Lexical Structure
+```html
+<!-- hello.html -->
+<html>
+  <head>
+    <title>JavaScript Example</title>
+  </head>
+  <body>
+    <script src="hello.js"></script>
+  </body>
+</html>
+```
 
-The lexical structure of a programming language is the set of elementary rules that
-specifies how you write programs in that language. It is the lowest-level syntax of a
-language: it specifies what variable names look like, the delimiter characters for com‐
-ments, and how one program statement is separated from the next, for example. This
-short chapter documents the lexical structure of JavaScript. It covers:
-• Case sensitivity, spaces, and line breaks
-• Comments
-• Literals
-• Identifiers and reserved words
-• Unicode
-• Optional semicolons
+```js
+// hello.js
 
-____
+console.log("Hello, World!");
+```
 
+Open `hello.html` in a browser using a `file://` URL (e.g., `file:///Users/username/javascript/hello.html`) and open the Developer Tools (console) to see the output.
 
-JavaScript is a case-sensitive language. This means that language keywords, variables,
-function names, and other identifiers must always be typed with a consistent capitali‐
-zation of letters
+---
 
-JavaScript ignores spaces that appear between tokens in programs. For the most part,
-JavaScript also ignores line breaks
-Because you can
-use spaces and newlines freely in your programs, you can format and indent your
-programs in a neat and consistent way that makes the code easy to read and
-understand.
+### Lexical Structure of JavaScript
 
+The lexical structure defines how JavaScript code is written. It is the lowest syntax of a language that includes rules for naming variables, using comments, and structuring statements. 
 
-#### Comments
+- **Case Sensitivity**: JavaScript is case-sensitive, meaning that keywords, variables, function names, and identifiers must be consistently capitalized.
 
-Single-line comment`//`
-Multi-line comment `/* ... */`
+- **Spaces and Line Breaks**: JavaScript ignores spaces between tokens and line breaks, allowing for using spaces and newlines freely in code for formatting and indentation to make it better understandable.
 
+### Comments
+
+Comments are used to explain code and are ignored by the JavaScript engine.
+
+Single-line comment`//`   Multi-line comment `/* ... */`
 ```js
 // anyting follwing a double slashes is a comment
 
@@ -97,34 +99,26 @@ Multi-line comment `/* ... */`
 */
 ```
 
+___
 
----
+### Literals
 
+Literals represent direct values used in code.
 
-
-#### Literals
-
-A literal is a data value that appears directly in a program. The following are all literals:
 ```js
-12      // The number twelve
-1.2     // The number one point two
-"hello world"    // A string of text
-'hi'            // Another string
-true           // A Boolean value
-false         // The other Boolean value
-null         // Absence of an object
+12         // Number
+1.2        // Number
+"hello"    // String
+'hi'       // String
+true       // Boolean
+false      // Boolean
+null       // Null
 ```
 
+### Identifiers
 
-#### Identifiers
+Identifiers are simply names for variables, functions, and other entities. They must start with a letter, underscore (`_`), or dollar sign (`$`).
 
-An identifier is simply a name. In JavaScript, identifiers are used to name constants,
-variables, properties, functions, and classes and to provide labels for certain loops in
-JavaScript code.
-
-Digits are not allowed as the first character.
-A JavaScript identifier must begin with a letter, an underscore (_), or
-a dollar sign ($).
 ```js
 i
 my_variable_name
@@ -133,9 +127,9 @@ _dummy
 $str
 ```
 
-#### Reserved Words
+### Reserved Words
 
-“reserved words” cannot be used as regular identifiers as they are part of the JS language.
+JavaScript has reserved words that cannot be used as identifiers, as they are part of the language syntax.
 
 ```js
 break case catch class const continue debugger default
@@ -144,40 +138,39 @@ function if implements import interface in instanceof let
 new package private protected public return static super
 switch this throw true try typeof var void while with yield
 ```
+
 When creating a binding produces an unexpected syntax error, check whether you’re trying to define a reserved word.
 
+### Optional Semicolons
 
-#### Optional Semicolons
+Like many other languages, JS uses Semicolon `;` to separate statements, but they can often be omitted if each statement is on a new line.
 
-Like many programming languages, JavaScript uses the semicolon (;) to separate statements from one another.
+You can also omit a semicolon at the end of a program or if the next token in the program is a closing curly brace : }
 
-You can usually omit the semicolon between two statements if those statements are written on separate lines.
+However, avoid inserting line breaks between `return`, `break`, or `continue` and the expression that follows them. This can lead to unexpected behavior.
 
-You can also omit a semicolon at the end of a program or if the next token in the
-program is a closing curly brace : }
-
-JavaScript does not treat every line break as a semicolon: it usually treats
-line breaks as semicolons only if it can’t parse the code without adding an implicit
-semicolon.
 ```js
 let a
-a
-=
-3
+a = 3
 console.log(a)
 
-// JS interprets this as
-
+// JavaScript interprets it as:
 let a; a = 3; console.log(a);
+```
 
-
+If you insert a line break incorrectly:
+```js
 return
 true;
-// JavaScript assumes you meant:
+
+// JS will be interpreted as:
 return; true;
 ```
 
+you must not insert a line break between return, break, or continue and the expression that follows the keyword. 
 
-you must not insert a line break between return, break, or continue
-and the expression that follows the keyword. If you do insert a line break, your code
-is likely to fail in a nonobvious way that is difficult to debug.
+If you do insert a line break, your code is likely to fail in a non-obvious way that is difficult to debug.
+
+
+____
+

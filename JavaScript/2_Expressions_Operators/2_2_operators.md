@@ -1,93 +1,110 @@
-#### Operand
+
+### Operand
 
 An **operand** is the value or entity that an operator acts upon. In simple terms, it is the input for an operation.
 
 In the expression `5 * 2`:
+
 - The operands are `5` (on the left) and `2` (on the right).
 - The operator `*` (multiplication) operates on these two operands.
 
 Sometimes, operands are also referred to as "arguments", especially in the context of functions or method calls.
 
+---
 
-___
+Operators can be categorized based on the number of operands they expect (their **arity**). Most JavaScript operators, like the multiplication operator `*`, are **binary operators** that combine two expressions into a single, more complex expression.
 
-Operators can be categorized based on the number of operands they expect (their
-arity). Most JavaScript operators, like the * multiplication operator, are binary opera‐
-tors that combine two expressions into a single, more complex expression
+JavaScript also supports a number of **unary operators**, which convert a single expression into a single, more complex expression.
 
-JavaScript also supports a number of unary operators,
-which convert a single expression into a single, more complex expression.
+JavaScript supports one **ternary operator**, the **conditional operator `?:`**, which combines three expressions into a single expression.
 
-JavaScript supports one ternary operator, the condi‐
-tional operator ?:, which combines three expressions into a single expression.
+#### Unary Operators (with one operand):
 
-
-Unary operator with one opearand on right side
 ```js
-++  //Pre- or post-increment
+++  // Pre- or post-increment
 
 --  // Pre- or post-decrement
-- // Negate number
 
-+  // Convert to number
+-   // Negate number
 
-~  // Invert bits
++   // Convert to number
 
-!  // Invert boolean value
+~   // Invert bits
+
+!   // Invert boolean value
+
 delete  // Remove a property
 
-typeof // Determine type of operand
+typeof  // Determine type of operand
 
-void // Return undefined value
+void    // Return undefined value
 ```
 
-Binary operators where it is present between the opearands
+#### Binary Operators (between operands):
+
 ```js
-**  // Exponentiate
+**  // Exponentiation
 
-+  // add numbers, concatenate string
-*  /,   %   /// multiply, divide, remainder
--  // substract
++   // Add numbers, concatenate strings
 
-<  <=  >  >=   // comparing numeric order or alphabetic order
+*   // Multiply
 
-in  // test whether property exists
+/   // Divide
+
+%   // Remainder
+
+-   // Subtract
+
+<   // Less than
+
+<=  // Less than or equal to
+
+>   // Greater than
+
+>=  // Greater than or equal to
+
+in  // Test whether property exists
+
 instanceof  // Test object class
 ```
 
 ```js
-=       //  assign to variable or property
+=   // Assign to variable or property
 
-==   !=   // Test for non-strict equality and enequality
+==  // Test for non-strict equality
 
-===  !==  // Strict test
+!=  // Test for non-strict inequality
 
-||   // logical OR
-&&   // logical AND
+=== // Strict equality test
 
+!== // Strict inequality test
+
+||  // Logical OR
+
+&&  // Logical AND
 ```
 
 ```js
-// operate and assign
-**=,  *=
-/=, %=
-+=, -=
+// Operate and assign
+**=, *=, /=, %=, +=, -=
 ```
 
-JavaScript operators usually convert the type (see §3.9) of their operands as needed.
+JavaScript operators usually convert the type of their operands as needed.
 
-___
-#### Unary Operator
+---
+
+### Unary Operator
 
 A **unary operator** is an operator that works with only one operand. It operates on a single value and typically performs an operation such as negation or increment.
 
 ```js
 let x = 5;
-x = -x;   // Unary negation operator (-) reverses the sign of 'x'
+x = -x;  // Unary negation operator (-) reverses the sign of 'x'
 ```
-Here, the unary negation operator `-` is applied to the operand `x`, and it changes the value of `x` from `5` to `-5`.
 
-#### Binary Operator
+In this example, the unary negation operator `-` is applied to the operand `x`, and it changes the value of `x` from `5` to `-5`.
+
+### Binary Operator
 
 A **binary operator** is an operator that works with two operands. It performs operations between two values, such as addition, subtraction, or comparison.
 
@@ -95,13 +112,14 @@ A **binary operator** is an operator that works with two operands. It performs o
 let x = 5, y = 3;
 alert(y - x);  // Binary subtraction operator (-) subtracts 'x' from 'y', returns -2
 ```
+
 Here, the binary operator `-` is applied between two operands, `y` and `x`. The result is `-2` (3 minus 5).
 
 ---
 
 ### Operator Precedence
 
-**Operator precedence** determines the order in which operators are evaluated in an expression with multiple operators. Operators with higher precedence are evaluated first. 
+**Operator precedence** determines the order in which operators are evaluated in an expression with multiple operators. Operators with higher precedence are evaluated first.
 
 When operators have the same precedence, they are evaluated from **left to right** (except for certain operators like `**` and `=`, which are evaluated from right to left).
 
@@ -113,6 +131,7 @@ alert(result);  // 14 (3 * 4 = 12, then 2 + 12 = 14)
 In this example, the multiplication (`*`) has higher precedence than addition (`+`), so `3 * 4` is calculated first.
 
 #### Precedence of Common Operators:
+
 - **Unary plus (`+`)**: Precedence level 14 (higher than addition)
 - **Addition (`+`)**: Precedence level 12
 - **Assignment (`=`)**: Precedence level 2 (lowest, so assignments happen last)
@@ -146,25 +165,26 @@ n *= 2;     // shorthand multiplication
 The **increment** (`++`) and **decrement** (`--`) operators increase or decrease a variable’s value by 1, respectively. They can be used in two forms:
 
 1. **Postfix**: `counter++`
-   - The **postfix** form increases the value after the current expression is evaluated.
-   
+    - The **postfix** form increases the value after the current expression is evaluated.
 2. **Prefix**: `++counter`
-   - The **prefix** form increases the value before the current expression is evaluated.
-
+    - The **prefix** form increases the value before the current expression is evaluated.
 
 ```js
 let counter = 1;
-alert( 2 * ++counter ); // 4 (counter is incremented first, then used in the multiplication)
+alert(2 * ++counter); // 4 (counter is incremented first, then used in the multiplication)
 ```
+
 In this example, `++counter` increments the value of `counter` to `2` before multiplying by `2`.
 
 ```js
 let counter = 1;
-alert( 2 * counter++ ); // 2 (counter is used first, then incremented)
+alert(2 * counter++); // 2 (counter is used first, then incremented)
 ```
+
 Here, `counter++` uses the current value of `counter` (`1`), and then it gets incremented after the multiplication.
 
 #### Rules:
+
 - **Postfix**: Returns the value before the increment/decrement.
 - **Prefix**: Returns the value after the increment/decrement.
 
@@ -173,7 +193,8 @@ Note: You **cannot** increment or decrement a constant or non-variable, such as 
 ---
 
 ### [Bitwise Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators)
-Bitwise operators are used to perform operations on the **binary representation** of numbers. These operators treat operands as 32-bit integers and work on the bit-level. While they are rarely used in everyday JavaScript programming, they are essential for low-level programming or working with data manipulation at the binary level.
+
+Bitwise operators are used to perform operations on the **binary representation** of numbers. These operators treat operands as 32-bit integers and work on the bit level. While they are rarely used in everyday JavaScript programming, they are essential for low-level programming or working with data manipulation at the binary level.
 
 #### List of Bitwise Operators:
 
