@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "beb8d3790d4fabce",
+        "id": "111b5dc355d642dc",
         "type": "tabs",
         "children": [
           {
-            "id": "52646e0cf39895b8",
+            "id": "98e99471fc03a34f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/3_Control_Flow_Statements/Loops/t.md",
+                "file": "Add-on/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "t"
+              "title": "Git"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218.50043487548828
+    "width": 214.5086555480957
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,34 +173,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7be855190f0aed71",
+  "active": "98e99471fc03a34f",
   "lastOpenFiles": [
-    "JavaScript/3_Control_Flow_Statements/Loops/3_for...of_loop.md",
-    "JavaScript/3_Control_Flow_Statements/Loops/4_for...in_loop.md",
-    "JavaScript/3_Control_Flow_Statements/Loops/t.md",
-    "JavaScript/3_Control_Flow_Statements/Loops/2_for_loop.md",
-    "JavaScript/3_Control_Flow_Statements/Loops/1_while_do..while.md",
-    "JavaScript/3_Control_Flow_Statements/Conditionals/03_switch_case.md",
-    "JavaScript/3_Control_Flow_Statements/Conditionals/02_Conditional_statements.md",
-    "JavaScript/3_Control_Flow_Statements/Conditionals/01_Control_Statements.md",
-    "JavaScript/2_Expressions_Operators/2_5_nullish_coalescing.md",
-    "JavaScript/2_Expressions_Operators/2_4_logical_operators.md",
-    "JavaScript/2_Expressions_Operators/2_3_ternary_operator.md",
-    "JavaScript/2_Expressions_Operators/2_2_operators.md",
-    "JavaScript/2_Expressions_Operators/2_1_expressions.md",
-    "JavaScript/1_Data_Types/05_type_conversion/5_3_object_to_primitive.md",
-    "JavaScript/1_Data_Types/05_type_conversion/5_2_Explicit_Type_conversion.md",
-    "JavaScript/1_Data_Types/05_type_conversion/5_1_auto_type_conversions.md",
-    "JavaScript/1_Data_Types/04_boolean_type/4_1_boolean_type.md",
-    "JavaScript/1_Data_Types/03_string_type/3_3_modifying_string.md",
-    "JavaScript/1_Data_Types/03_string_type/3_2_string_methods.md",
-    "JavaScript/1_Data_Types/03_string_type/3_1_string_type.md",
-    "JavaScript/1_Data_Types/02_number_type/2_3_Math_object.md",
-    "JavaScript/1_Data_Types/02_number_type/2_2_number_methods.md",
-    "JavaScript/1_Data_Types/02_number_type/2_1_number_type.md",
-    "JavaScript/1_Data_Types/01_basics/1_4_Scope_of_variables.md",
-    "JavaScript/1_Data_Types/01_basics/1_3_methods.md",
-    "JavaScript/1_Data_Types/01_basics/1_2_Variables.md",
+    "JavaScript/5_Array/02_Accessing_Writing_Array_Elements.md",
+    "JavaScript/5_Array/01_Array_Creation.md",
+    "JavaScript/5_Array/5.5_sort_method.md",
+    "JavaScript/5_Array/5.3_map_method.md",
+    "JavaScript/5_Array/5.2_filter_method.md",
+    "JavaScript/5_Array/5.1_Array_Methods.md",
+    "JavaScript/5_Array/Map_and_Set.md",
+    "JavaScript/6_Functions/3_Functions.md",
+    "JavaScript/5_Array/Iterables.md",
+    "JavaScript/5_Array/5.6_rest_spread.md",
+    "JavaScript/5_Array/5.4_reduce_method.md",
+    "JavaScript/4_Objects/object_detailed/03_extending_serializing_objects.md",
+    "JavaScript/4_Objects/object_detailed/02_methods_in_objects.md",
+    "JavaScript/4_Objects/object_detailed/01_inheritance.md",
+    "JavaScript/4_Objects/object_basics/03_quering_setting_properties.md",
+    "JavaScript/4_Objects/object_basics/02_characteristics_of_objects.md",
+    "JavaScript/4_Objects/object_basics/01_Object_Basics.md",
+    "MCA/Research_paper/rules.md",
+    "Site Structure.md",
+    "JavaScript/4_Objects/object_detailed/05_constructor_new.md",
+    "JavaScript/4_Objects/object_detailed/04_this_in_methods.md",
+    "JavaScript/4_Objects/object_basics/06_deleting_testing_properies.md",
+    "JavaScript/4_Objects/object_basics/05_Object.keys(obj).md",
+    "JavaScript/4_Objects/object_basics/04_Symbols.md",
+    "JavaScript/4_Objects/te.md",
+    "JavaScript/4_Objects/object_detailed",
+    "JavaScript_DOM/2 DOM modification/2.2 modifying Practice.md",
+    "JavaScript/4_Objects/object_basics",
+    "JavaScript/3_Control_Flow_Statements/3_Jump_Statements",
     "Bash Linux/Linux/Linux Bash/07_shell_scripting",
     "Bash Linux/Linux/Linux Bash/06_regex",
     "Bash Linux/Linux/Linux Bash/04_file_search_edit",
@@ -208,9 +211,6 @@
     "Bash Linux/Linux/Linux Bash/02_basic_commands",
     "Bash Linux/Linux/Linux Bash/01_bash_basics",
     "JavaScript/2_Expressions_Operators",
-    "JavaScript/2_Expressions_Operators/operators",
-    "JavaScript/1_Data_Types/04_boolean_type",
-    "JavaScript/1_Data_Types/05_type_conversion",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

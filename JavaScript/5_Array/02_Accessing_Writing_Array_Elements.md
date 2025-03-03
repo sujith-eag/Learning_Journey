@@ -1,39 +1,11 @@
-#18sep24
 
 
-JavaScript arrays are a special type of object used to store ordered sequences of values.   Unlike regular objects, which use named keys (like strings), arrays use numeric indexes.
+You access an element of an array using the `[]` operator.
 
----
-
-### Creating Arrays
-
-#### 1. **Empty Arrays**
-
-You can create an empty array using either of these two methods:
-
-```js
-let arr = new Array();  
-// Using the Array constructor
-
-let arr = [];           
-// Using array literal (preferred)
-```
-
-#### 2. **Array with Values**
-
-An array can be initialized with values inside square brackets (`[]`):
-
-```js
-let listOfNumbers = [2, 3, 4, 5];
-console.log(listOfNumbers[2]);  
-// 4 (indexing starts from 0)
-
-console.log(listOfNumbers[2 - 1]); 
-// 3 (same as listOfNumbers[1])
-```
-
-Array elements can be accessed using their index values. Arrays are **zero-indexed**.
-You can also use arithmetic expressions as indices.
+Array elements can be accessed using their index values. Arrays are **zero-indexed**. You can also use arithmetic expressions as indices.
+An arbitrary expression that has a non-
+negative integer value should be inside the brackets. You can use this syntax to both
+read and write the value of an element of an array.
 
 ```js
 const cars = ["Volvo", "BMW", "Tata"];
@@ -46,91 +18,78 @@ cars[0] = "Volvo";
 cars[1] = 'BMW';
 ```
 
----
-
-### **Associative Arrays in JavaScript**
-
-Although arrays in JavaScript are **indexed by numbers**, you can technically assign a value to a string index.
-
-Arrays with named indexes are called associative arrays or hashes, but
-JavaScript **does not support** arrays with named indexes, it always uses Numbered Index.
-
-If named indexes are used, `js` converts array to an object. Then array methods and properties will produce incorrect result.
-
-Example of incorrect usage (for associative arrays):
 ```js
-const person = [];
-person["first"] = "John";
-person["last"] = "Doe";
+let a = ["world"];    // Starts with one-element array
 
-console.log(person.length);  // 0 (wrong, since it's an object now)
-console.log(person["first"]);  // "John"
-console.log(person[0]);  // undefined
+let value = a[0];    
+// Read element 0, and store value
+
+a[1] = 3.14;   
+// Write element 1
+
+let i = 2;
+a[i] = 3;   // Write element 2
+
+a[i + 1] = "hello";  // write element 3  
+
+a[a[i]] = a[0];     
+// Read elements 0 and 2, write element 3
 ```
 
-If you need associative arrays, consider using an **object** instead.
 
----
+_____
 
-### **Arrays of Objects, Arrays in Arrays, and Functions in Arrays**
-
-Arrays in JavaScript can contain any type of data, including objects, functions, and even other arrays.
-
-#### 1. **Array of Objects**
-
-You can store objects inside an array, which is a common pattern for structured data.
-
+Remember that arrays are a specialized kind of object. The square brackets used to
+access array elements work just like the square brackets used to access object proper‐
+ties. JavaScript converts the numeric array index you specify to a string—the index 1
+becomes the string "1"—then uses that string as a property name. There is nothing
+special about the conversion of the index from a number to a string: you can do that
+with regular objects, too:
 ```js
-let journal = [
-  {event: ["work", "touched tree", "pizza", "running"], squirrel: false},
-  {event: ["work", "ice cream", "lasagna"], squirrel: false},
-  {event: ["weekend", "cycling", "peanuts"], squirrel: true}
-];
+let o = {};
+// Create a plain object
+o[1] = "one"; // Index it with an integer
+o["1"]
+// => "one"; numeric and string property names are the same
+```
+It is helpful to clearly distinguish an array index from an object property name. All
+indexes are property names, but only property names that are integers between 0 and
+`2^32` are indexes.
+
+
+
+
+Note that you can index an array using numbers that are negative or that are not inte‐
+gers. When you do this, the number is converted to a string, and that string is used as
+the property name. Since the name is not a non-negative integer, it is treated as a reg‐
+ular object property, not an array index. Also, if you index an array with a string that
+happens to be a non-negative integer, it behaves as an array index, not an object prop‐
+erty. The same is true if you use a floating-point number that is the same as an
+integer:
+```js
+a[-1.23] = true;
+// This creates a property named "-1.23"
+
+a["1000"] = 0;  // This the 1001st element of the array
+
+a[1.000] = 1; // Array index 1. Same as a[1] = 1;
 ```
 
-#### 2. **Array of Functions**
 
-You can also store functions within an array:
-
+The fact that array indexes are simply a special type of object property name means
+that JavaScript arrays have no notion of an “out of bounds” error. When you try to
+query a nonexistent property of any object, you don’t get an error; you simply get
+undefined. This is just as true for arrays as it is for objects:
 ```js
-let functionsArray = [
-  function() { console.log("Function 1"); },
-  function() { console.log("Function 2"); },
-  function() { console.log("Function 3"); }
-];
-```
-
-#### 3. **Arrays within Arrays**
-
-Arrays can even contain other arrays, creating nested structures:
-
-```js
-let arrayOfArrays = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-];
-```
-
----
-
-#### **`length` Property**
-
-The `length` property of an array returns the number of elements in the array. It’s important to note that `length` is **not** zero-based.
-When using `[]` the expression between the brackets are evaluated to get the property name.
-
-```js
-const fruits = ["Banana", "Orange", "Mango"];
-console.log(fruits.length);  // 3
-```
-
-You can also use `length` to access the last element of an array:
-
-```js
-let fruit = fruits[fruits.length - 1];  // "Mango"
+let a = [true, false]; // This array has elements at indexes 0 and 1
+a[2]
+// => undefined; no element at this index.
+a[-1]
+// => undefined; no property with this name.
 ```
 
 ---
+
 
 ### **Looping Through Arrays**
 

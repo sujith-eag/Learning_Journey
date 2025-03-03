@@ -203,6 +203,15 @@ git revert [commit_id]
 
 ---
 
+To stop tracking a directory within the repo which is already tracked, add a `.gitignore` file in the main directory and name the file in it `/public/` if it is named public.
+then command 
+```bash
+git rm -r --cached public/
+```
+then changes can be commited to prevent tracking of `public` folder.
+
+____
+
 ### Additional Topics to Explore
 
 2. **Git Workflow Models**:

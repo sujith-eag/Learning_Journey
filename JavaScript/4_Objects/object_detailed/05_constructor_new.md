@@ -1,5 +1,4 @@
 
-### Constructor Functions and the `new` Operator
 
 Constructor functions are used to create multiple similar objects with the same properties and methods, without having to manually repeat the object structure each time. 
 
@@ -18,8 +17,8 @@ Using ***constructor functions*** and the `"new"` operator, many similar objec
 
 ```js
 function User(name) {
-  this.name = name;
-  this.isAdmin = false;
+	this.name = name;
+	this.isAdmin = false;
 } // constructor function
 
 let person = new User("Jack");   //constructor
@@ -28,7 +27,7 @@ console.log(person.name); // "Jack"
 console.log(person.isAdmin); // false
 ```
 
-- When `new User("Jack")` is called:
+When `new User("Jack")` is called:
   1. A new object is created.
   2. The `this` keyword inside the constructor function refers to that new object.
   3. The constructor function runs, setting the properties and methods on the new object.
@@ -63,12 +62,12 @@ Before the introduction of constructor functions, people would use regular funct
 
 ```js
 function createPerson(name) {
-  const obj = {};  // create object
-  obj.name = name; // add property
-  obj.introduceSelf = function() { // add method
-    console.log(`Hi! I'm ${this.name}`);
+	const obj = {};  // create object
+	obj.name = name; // add property
+	obj.introduceSelf = function() { // add method
+		console.log(`Hi! I'm ${this.name}`);
   };
-  return obj;
+	return obj;
 }
 
 const frank = createPerson("Frank");
@@ -99,7 +98,7 @@ Here, `Person` acts as a blueprint for creating new objects, each with their own
 
 ---
 
-### **Understanding `this` in Constructors**
+### **Understanding 'this' in Constructors**
 
 Inside a constructor function, the `this` keyword refers to the newly created object. You can use `this` to set properties and methods for that object.
 
@@ -150,7 +149,7 @@ Each time a new instance of `Accumulator` is created, the `value` property and `
 
 JavaScript is an object-oriented language, and even primitive types like strings, numbers, and arrays are automatically wrapped in their respective object types. This allows them to have methods and properties associated with them.
 
-For example, strings are objects, and they have methods like `.split()`:
+Strings are objects, and they have methods like `.split()`:
 ```js
 let myString = "apple,banana,orange";
 let fruits = myString.split(",");
@@ -218,11 +217,5 @@ use when needed for 'non existing user problem'
 
 [Object to primitive conversion](https://javascript.info/object-toprimitive)
 
+____
 
-
-### **Summary**
-
-- **Constructor Functions**: Used to create multiple instances of similar objects. These functions define the properties and methods shared across all objects.
-- **`this` in Constructors**: Refers to the newly created object inside a constructor, allowing you to set its properties and methods.
-- **Methods and Properties**: By using constructors, you can define shared methods for all instances of the object.
-- **Additional Features**: Optional chaining (`?.`), Symbols as property keys, and object-to-primitive conversion methods are important features when working with JavaScript objects.

@@ -91,53 +91,56 @@
 │   │   ├── type-conversion.md 310
 │   │   └── 
 
-│   ├── /02-Control-flow 320-349
+│   ├── /02-Control-flow 350-380
 │   │   ├── /Conditionals
-|	│   │   ├── if-else.md 321
-|	│   │   ├── switch-case.md 322
-|	│   │   ├── ternary-operator.md 323
-|	│   │   ├── logical-operator.md 324
-|	│   │   ├── short-circuting-operators.md 325
+|	│   │   ├── if-else.md
+|	│   │   ├── switch-case.md 
+|	│   │   ├── ternary-operator.md 
+|	│   │   ├── logical-operator.md
+|	│   │   ├── short-circuting-operators.md 
 |	│   │   └──    
 │   │   └── /Loops
-|	│   │   ├── while-do.md 330
-|	│   │   ├── for-loop.md 331
-|	│   │   ├── for-of-loop.md 332
-|	│   │   ├── for-in-loop.md 333
+|	│   │   ├── while-do.md 
+|	│   │   ├── for-loop.md 
+|	│   │   ├── for-of-loop.md 
+|	│   │   ├── for-in-loop.md 
 |	│   │   ├── break-continue-labels.md334
-|	│   │   ├── iterables.md 335
+|	│   │   ├── iterables.md 
 |	│   │   └──    
 
-│   ├── /03-Functions  350-369
-│   │   ├── function.md 350 
-│   │   ├── defining-function.md 351
-│   │   ├── arrow-function.md 352
-│   │   ├── scope-of-variable.md 353
-│   │   ├── parameters.md 354
-│   │   ├── return.md 355
-│   │   ├── scheduling.md 356
-│   │   ├── decorators.md 357
-│   │   ├── function-object.md 358
+│   ├── /04-Objects  380-420
+│   │   ├── object.md  
+│   │   ├── object-properties.md
+│   │   ├── cloning-object.md
+│   │   ├── object.keys.md
+│   │   ├── methods-this-chaining.md
+│   │   ├── constructor-new.md
 │   │   └── 
 
-│   ├── /04-Objects  370-389
-│   │   ├── object.md  370
-│   │   ├── object-properties.md 371
-│   │   ├── cloning-object.md 372
-│   │   ├── object.keys.md 373
-│   │   ├── methods-this-chaining.md 374
-│   │   ├── constructor-new.md 375
+│   ├── /05-Array  420-439
+│   │   ├── array.md 
+│   │   ├── array-method.md 
+│   │   ├── filter-method.md
+│   │   ├── map-method.md
+│   │   ├── reduce-method.md
+│   │   ├── sort-method.md
+│   │   ├── rest-spread.md
 │   │   └── 
 
-│   ├── /05-Array  390-599
-│   │   ├── array.md 390
-│   │   ├── array-method.md 391
-│   │   ├── filter-method.md 392
-│   │   ├── map-method.md 393
-│   │   ├── reduce-method.md 394
-│   │   ├── sort-method.md 395
-│   │   ├── rest-spread.md 396
+
+│   ├── /03-Functions  440-460
+│   │   ├── function.md  
+│   │   ├── defining-function.md
+│   │   ├── arrow-function.md
+│   │   ├── scope-of-variable.md
+│   │   ├── parameters.md
+│   │   ├── return.md 
+│   │   ├── scheduling.md
+│   │   ├── decorators.md
+│   │   ├── function-object.md
 │   │   └── 
+
+
 
 
 
