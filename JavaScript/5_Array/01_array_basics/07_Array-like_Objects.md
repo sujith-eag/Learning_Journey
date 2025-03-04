@@ -36,7 +36,7 @@ for (let j = 0; j < a.length; j++) {
 
 ---
 
-## Array-like Objects in Client-Side JavaScript
+### Array-like Objects in Client-Side JavaScript
 
 In client-side JavaScript, some methods (such as `document.querySelectorAll()`) return array-like objects. 
 

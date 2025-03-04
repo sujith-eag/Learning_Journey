@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
+                "file": "JavaScript/5_Array/02_Array_methods/06_hhh.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "08_Array_Methods"
+              "title": "06_hhh"
             }
           }
         ]
@@ -205,24 +205,25 @@
   },
   "active": "f3489e0135daaa7e",
   "lastOpenFiles": [
-    "JavaScript/5_Array/02_Array_methods/sort_method.md",
-    "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
-    "JavaScript/5_Array/02_Array_methods/07_sub_arrays.md",
-    "JavaScript/5_Array/02_Array_methods/06_hhh.md",
-    "JavaScript/5_Array/02_Array_methods/06_mmm.md",
     "JavaScript/5_Array/02_Array_methods/05_reduce_method.md",
     "JavaScript/5_Array/te.md",
     "JavaScript/5_Array/02_Array_methods/04_filter_method.md",
-    "JavaScript/5_Array/01_array_basics/07_basic_methods.md",
-    "JavaScript/5_Array/02_Array_methods/09_reduce_method.md",
-    "JavaScript/5_Array/02_Array_methods/02_Array_iterator_methods.md",
     "JavaScript/5_Array/02_Array_methods/03_map_method.md",
-    "JavaScript/5_Array/01_array_basics/06_Array-like_Objects.md",
-    "JavaScript/5_Array/01_array_basics/05_looping_through_Arrays.md",
+    "JavaScript/5_Array/02_Array_methods/02_Array_iterator_methods.md",
+    "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
+    "JavaScript/5_Array/02_Array_methods/07_sub_arrays.md",
+    "JavaScript/5_Array/02_Array_methods/06_mmm.md",
+    "JavaScript/5_Array/02_Array_methods/06_hhh.md",
     "JavaScript/5_Array/02_Array_methods/01_splice_method.md",
+    "JavaScript/5_Array/01_array_basics/07_Array-like_Objects.md",
+    "JavaScript/5_Array/01_array_basics/06_basic_methods.md",
+    "JavaScript/Untitled.md",
+    "JavaScript/5_Array/01_array_basics/01_Array_Creation.md",
+    "JavaScript/5_Array/01_array_basics/05_looping_through_Arrays.md",
     "JavaScript/5_Array/01_array_basics/03_adding_deleting_elements.md",
     "JavaScript/5_Array/01_array_basics/02_Accessing_Writing_Array_Elements.md",
-    "JavaScript/5_Array/01_array_basics/01_Array_Creation.md",
+    "JavaScript/5_Array/02_Array_methods/sort_method.md",
+    "JavaScript/5_Array/02_Array_methods/09_reduce_method.md",
     "JavaScript/6_Functions/rest_spread.md",
     "JavaScript/4_Objects/object_basics/04_Symbols.md",
     "JavaScript/5_Array/Map_and_Set.md",
@@ -232,7 +233,6 @@
     "Python/5_Functions/5_7_lambda_function.md",
     "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
     "Linux/Linux Bash/04_file_search_edit/10 File Viewing and Editing.md",
-    "Linux/Linux Bash/03_neovim/15 Neo Vim.md",
     "JavaScript/4_Objects/object_detailed",
     "JavaScript/4_Objects/object_basics",
     "JavaScript/3_Control_Flow_Statements/3_Jump_Statements",

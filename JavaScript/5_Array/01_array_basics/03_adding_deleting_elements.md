@@ -1,5 +1,40 @@
 
 
+Brief Summary of Methods for Array Manipulation in this Page
+
+##### 1. Adding Elements
+
+`push()` : Adds one or more elements to the **end** of an array and returns the new length.
+```js
+arr.push("newElement");
+```
+
+`unshift()` : Adds one or more elements to the **beginning** of an array, shifting existing elements.
+```js
+arr.unshift("newElement");
+```
+
+##### 2. **Removing Elements**
+
+`pop()`: Removes the **last** element of an array and returns it.
+```js
+arr.pop();
+```
+
+`shift()`: Removes the **first** element of an array and returns it, shifting all other elements down by one index.
+```js
+arr.shift();
+```
+
+##### 3. Deleting Elements
+
+`delete` operator : Removes an element from an array but does **not** update the `length` or shift elements.
+```js
+delete arr[2];
+```
+
+____
+
 ### Adding Elements with 'push()' and 'unshift()'
 
 Elements can be added to an array by simply assigning values to new indices, or  using methods like `push()` to add one or more elements to the end of an array. 
