@@ -1,23 +1,25 @@
 
-### [Rest Parameters (`...`) and Spread Syntax (`...`)](https://javascript.info/rest-parameters-spread)
 
-In JavaScript, the **rest parameters** and **spread syntax** both use the `...` syntax, but they serve different purposes.
+### Rest Parameters (`...args`) and Spread Syntax (`...`)
+
+In JavaScript, both **rest parameters** and **spread syntax** use the `...` syntax, but they serve different purposes.
+
+- **Rest Parameters** allow functions to accept an arbitrary number of arguments and collect them into an array.
+- **Spread Syntax** is used to expand arrays or iterables into individual elements.
 
 ---
 
 ### Rest Parameters (`...args`)
 
-Rest parameters allow a function to accept **an arbitrary number of arguments**. When you use `...` in the function's parameter list, it collects all the remaining arguments into an array. This is helpful when you don't know exactly how many arguments will be passed to a function.
-
-#### Example of Rest Parameters
+Rest parameters collect all remaining arguments into an array when defining a function. This is helpful when you don't know how many arguments will be passed to a function.
 
 ```js
 function sumAll(...args) {
-  let sum = 0;
-  for (let arg of args) {
-    sum += arg;
-  }
-  return sum;
+	let sum = 0;
+	for (let arg of args) {
+		sum += arg;
+	}
+	return sum;
 }
 
 console.log(sumAll(1)); // 1
@@ -26,7 +28,26 @@ console.log(sumAll(5, 10, 15, 20, 25)); // 75
 ```
 
 - The `...args` syntax collects all arguments passed to `sumAll` into the `args` array.
-- The function then iterates over the `args` array, summing the numbers.
+- The function iterates over `args` and sums the numbers.
+
+
+You can also use rest parameters when calling a function with spread syntax. This is useful when you want to spread the elements of an array into the function.
+
+```js
+function max(...numbers) {
+  let result = -Infinity;
+  for (let number of numbers) {
+    if (number > result) result = number;
+  }
+  return result;
+}
+
+console.log(max(4, 1, 9, -2));    // 9
+
+let numbers = [5, 1, 7];
+console.log(max(...numbers));     // 7
+console.log(max(9, ...numbers, 2)); // 9
+```
 
 #### Rest Parameters with Other Parameters
 
@@ -34,8 +55,8 @@ You can also combine regular parameters with rest parameters. The rest parameter
 
 ```js
 function showName(first, last, ...titles) {
-  console.log(first + " " + last);
-  console.log(titles);  // Titles as an array
+	console.log(first + " " + last);
+	console.log(titles);  // Titles as an array
 }
 
 showName("Julius", "Caesar", "Consul", "Imperator");
@@ -45,37 +66,27 @@ showName("Julius", "Caesar", "Consul", "Imperator");
 ```
 
 - `first` and `last` are regular parameters.
-- `...titles` collects the rest of the arguments into an array.
+- `...titles` collects the remaining arguments into an array.
 
-
-```js
-function max(...numbers) {
-	let result = -Infinity;
-	for (let number of numbers) {
-		if (number > result) result = number;
-		}
-	return result;
-}
-
-console.log(max(4, 1, 9, -2));    // 9
-
-// using spread syntax in finction call
-let numbers = [5, 1, 7];
-
-console.log(max(...numbers));    // 7
-
-console.log(max(9, ...numbers, 2));
-```
 
 ---
 
 ### [Spread Syntax (`...`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
-Spread syntax, on the other hand, is used to **expand** an array or iterable object into individual elements. It "spreads" the elements of an array (or any iterable, like a string) into places where multiple arguments or elements are expected.
-
-#### Example of Spread Syntax in Function Calls
+Spread syntax is used to **expand** an array or iterable object into individual elements. It "spreads" the elements into places where multiple arguments or elements are expected.
 
 A common use case is passing an array of arguments to a function that expects individual arguments. For example, `Math.max` expects multiple arguments, but if you have an array, you can use spread to pass the array elements as individual arguments.
+
+```js
+let arr = [3, 5, 1];
+console.log(Math.max(...arr)); // 5
+
+// Without spread, this doesn't work:
+alert(Math.max(arr));  // NaN
+```
+
+Without spread syntax, `Math.max(arr)` would return `NaN` because `Math.max` expects individual arguments, not an array.
+
 ```js
 // function call, as function argument
 myFunction(a, ...iterableObj, b);
@@ -87,16 +98,6 @@ myFunction(a, ...iterableObj, b);
 {...obj, key: 'value'}
 ```
 
-
-```js
-let arr = [3, 5, 1];
-console.log(Math.max(...arr)); // 5
-
-alert( Math.max(arr) );  // NaN
-```
-
-Without spread syntax, `Math.max(arr)` would not work because `Math.max` expects individual arguments, not an array.
-
 #### Passing Multiple Iterables
 
 You can also use spread to pass multiple arrays (or iterables) to functions:
@@ -106,11 +107,10 @@ let arr1 = [1, -2, 3, 4];
 let arr2 = [8, 3, -8, 1];
 
 console.log(Math.max(...arr1, ...arr2)); // 8
-
-alert( Math.max(1, 2, ...arr1, 25, 21, ...arr2) ); // 25
+alert(Math.max(1, 2, ...arr1, 25, 21, ...arr2)); // 25
 ```
 
-In this example, the spread operator `...` is used to expand both `arr1` and `arr2` into individual arguments to `Math.max`.
+In this example, the spread operator `...` is used to expand both `arr1` and `arr2` into individual arguments to `Math.max.
 
 #### Example of Spread in Array Literals
 
@@ -134,15 +134,17 @@ console.log(copyArr); // [1, 2, 3]
 
 #### Example of Spread in Object Literals
 
-Spread syntax can also be used with **objects** to copy properties from one object to another or to merge objects.
+You can also use spread syntax with **objects** to copy properties from one object to another or to merge objects.
 
 ```js
 let obj1 = {a: 1, b: 2};
 let obj2 = {c: 3, d: 4};
 
+// Merging objects
 let mergedObj = {...obj1, ...obj2};
 console.log(mergedObj); // {a: 1, b: 2, c: 3, d: 4}
 
+// Copying an object
 let objCopy = {...obj1};
 console.log(objCopy); // {a: 1, b: 2}
 ```
@@ -164,11 +166,11 @@ console.log(mergedObj); // {a: 1, b: 3, c: 4}
 
 ### Differences Between Rest and Spread Syntax
 
-| Feature                | Rest Parameters (`...args`)                       | Spread Syntax (`...`)                           |
-|------------------------|---------------------------------------------------|------------------------------------------------|
-| **Usage**              | Used in function parameters to collect arguments into an array. | Used to expand an array or iterable into individual elements. |
-| **Context**            | Function parameters.                              | Function calls, array literals, object literals.|
-| **Behavior**           | Gathers remaining arguments into an array.        | Expands an array or iterable into separate arguments or elements. |
+|Feature|Rest Parameters (`...args`)|Spread Syntax (`...`)|
+|---|---|---|
+|**Usage**|Used in function parameters to collect arguments into an array.|Used to expand an array or iterable into individual elements.|
+|**Context**|Function parameters.|Function calls, array literals, object literals.|
+|**Behavior**|Gathers remaining arguments into an array.|Expands an array or iterable into separate arguments or elements.|
 
 ---
 
@@ -214,20 +216,19 @@ console.log(objCopy); // {name: "Alice", age: 25}
 
 ### Summary
 
-- **Rest Parameters (`...args`)**: Collect arguments into an array when defining a function.
+- **Rest Parameters (`...args`)**: Collects arguments into an array when defining a function.
 - **Spread Syntax (`...`)**: Expands an array or iterable into individual elements in function calls, array literals, or object literals.
 
-
-Spread syntax can be used when all elements from an object or array need to be included in a new array or object, 
-or should be applied one-by-one in a function call's arguments list. 
+Spread syntax can be used when you need to include all elements from an object or array in a new array or object, or when you want to pass elements one-by-one in a function call's argument list.
 
 There are three distinct places that accept the spread syntax:
+There are three distinct places that accept the spread syntax:
+
 - [Function arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls) list (`myFunction(a, ...iterableObj, b)`)
 - [Array literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals) (`[1, ...iterableObj, '4', 'five', 6]`)
 - [Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals) (`{ ...obj, key: 'value' }`)
 
 
+[Rest Parameters (`...`) and Spread Syntax (`...`)](https://javascript.info/rest-parameters-spread)
 
-
-
-____
+---

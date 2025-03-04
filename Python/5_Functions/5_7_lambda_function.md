@@ -36,6 +36,13 @@ You can also pass multiple arguments to a lambda function:
 7
 ```
 
+```python
+>>> maximum = lambda a,b: a if a>b else b
+>>> 
+>>> maximum(10,20)
+20
+```
+
 ---
 
 ### **Using Lambda with the `filter()` Function**

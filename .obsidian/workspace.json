@@ -11,10 +11,54 @@
             "id": "f3489e0135daaa7e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "08_Array_Methods"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4193bab30b7d1cf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa58c25735011e09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/5_Array/te.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "te"
             }
           }
         ]
@@ -49,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"JavaScript/\" ??",
+                "query": "path:\"JavaScript/\"  array-lik",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5086555480957
+    "width": 258.51103591918945
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -161,42 +205,42 @@
   },
   "active": "f3489e0135daaa7e",
   "lastOpenFiles": [
-    "JavaScript/5_Array/5.3_map_method.md",
-    "JavaScript/5_Array/05_Array_Methods.md",
-    "JavaScript/5_Array/5.2_filter_method.md",
-    "JavaScript/5_Array/04_iterating_through_Arrays.md",
-    "JavaScript/5_Array/03_adding_deleting_elements.md",
-    "JavaScript/5_Array/02_Accessing_Writing_Array_Elements.md",
-    "JavaScript/5_Array/01_Array_Creation.md",
-    "Site Structure.md",
-    "JavaScript/5_Array/5.6_rest_spread.md",
+    "JavaScript/5_Array/02_Array_methods/sort_method.md",
+    "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
+    "JavaScript/5_Array/02_Array_methods/07_sub_arrays.md",
+    "JavaScript/5_Array/02_Array_methods/06_hhh.md",
+    "JavaScript/5_Array/02_Array_methods/06_mmm.md",
+    "JavaScript/5_Array/02_Array_methods/05_reduce_method.md",
     "JavaScript/5_Array/te.md",
-    "JavaScript/3_Control_Flow_Statements/2_Loops/2_for_loop.md",
-    "JavaScript/4_Objects/object_detailed/05_constructor_new.md",
-    "MCA/Research_paper/Draft_Paper_sections/5 Proposed Methodology 1.md",
-    "Add-on/Git.md",
-    "JavaScript/5_Array/5.5_sort_method.md",
+    "JavaScript/5_Array/02_Array_methods/04_filter_method.md",
+    "JavaScript/5_Array/01_array_basics/07_basic_methods.md",
+    "JavaScript/5_Array/02_Array_methods/09_reduce_method.md",
+    "JavaScript/5_Array/02_Array_methods/02_Array_iterator_methods.md",
+    "JavaScript/5_Array/02_Array_methods/03_map_method.md",
+    "JavaScript/5_Array/01_array_basics/06_Array-like_Objects.md",
+    "JavaScript/5_Array/01_array_basics/05_looping_through_Arrays.md",
+    "JavaScript/5_Array/02_Array_methods/01_splice_method.md",
+    "JavaScript/5_Array/01_array_basics/03_adding_deleting_elements.md",
+    "JavaScript/5_Array/01_array_basics/02_Accessing_Writing_Array_Elements.md",
+    "JavaScript/5_Array/01_array_basics/01_Array_Creation.md",
+    "JavaScript/6_Functions/rest_spread.md",
+    "JavaScript/4_Objects/object_basics/04_Symbols.md",
     "JavaScript/5_Array/Map_and_Set.md",
-    "JavaScript/6_Functions/3_Functions.md",
-    "JavaScript/5_Array/Iterables.md",
-    "JavaScript/5_Array/5.4_reduce_method.md",
-    "JavaScript/4_Objects/object_detailed/03_extending_serializing_objects.md",
-    "JavaScript/4_Objects/object_detailed/02_methods_in_objects.md",
-    "JavaScript/4_Objects/object_detailed/01_inheritance.md",
-    "JavaScript/4_Objects/object_basics/03_quering_setting_properties.md",
-    "JavaScript/4_Objects/object_basics/02_characteristics_of_objects.md",
-    "JavaScript/4_Objects/object_basics/01_Object_Basics.md",
-    "MCA/Research_paper/rules.md",
+    "JavaScript/5_Array/01_array_basics",
+    "JavaScript/5_Array/02_Array_methods",
+    "Python/5_Functions/5_1_Function_Definition.md",
+    "Python/5_Functions/5_7_lambda_function.md",
+    "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
+    "Linux/Linux Bash/04_file_search_edit/10 File Viewing and Editing.md",
+    "Linux/Linux Bash/03_neovim/15 Neo Vim.md",
     "JavaScript/4_Objects/object_detailed",
     "JavaScript/4_Objects/object_basics",
     "JavaScript/3_Control_Flow_Statements/3_Jump_Statements",
-    "Bash Linux/Linux/Linux Bash/07_shell_scripting",
-    "Bash Linux/Linux/Linux Bash/06_regex",
-    "Bash Linux/Linux/Linux Bash/04_file_search_edit",
-    "Bash Linux/Linux/Linux Bash/03_neovim",
-    "Bash Linux/Linux/Linux Bash/02_basic_commands",
-    "Bash Linux/Linux/Linux Bash/01_bash_basics",
-    "JavaScript/2_Expressions_Operators",
+    "Linux/Linux Bash/07_shell_scripting",
+    "Linux/Linux Bash/06_regex",
+    "Linux/Linux Bash/04_file_search_edit",
+    "Linux/Linux Bash/03_neovim",
+    "Linux/Linux Bash/02_basic_commands",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

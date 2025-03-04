@@ -1,6 +1,13 @@
 
 ### Transforming Arrays with `map()`
 
+The map() method passes each element of the array on which it is invoked to the
+function you specify and returns an array containing the values returned by your
+function.
+
+The `map()` method creates a new array populated with the results of calling a provided function on every element in the array.
+
+
 The `map()` method allows you to transform an array by applying a callback function to each element. This method returns a **new array** where each element has been transformed based on the function provided, without modifying the original array.
 
 ```js
@@ -12,6 +19,21 @@ let result = arr.map(function(item, index, array) {
 - **`item`**: The current element being processed.
 - **`index`**: The index of the current element.
 - **`array`**: The array `map()` was called on.
+
+```js
+let a = [1, 2, 3];
+a.map(x => x*x)
+// => [1, 4, 9]: the function takes input x and returns x*x
+```
+
+
+The function you pass to map() is invoked in the same way as a function passed to
+forEach(). For the map() method, however, the function you pass should return a
+value. Note that map() returns a new array: it does not modify the array it is invoked
+on. If that array is sparse, your function will not be called for the missing elements,
+but the returned array will be sparse in the same way as the original array: it will have
+the same length and the same missing elements.
+
 
 ---
 

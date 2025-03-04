@@ -1,3 +1,81 @@
+
+
+Arrays inherit properties from Array.prototype, which defines a rich set of array
+manipulation methods, Most of these methods are generic, which means that they work correctly not only for true arrays, but for any “array-like object.”
+
+
+
+## Array Searching and Sorting Methods
+
+
+Arrays implement indexOf(), lastIndexOf(), and includes() methods that are
+similar to the same-named methods of strings. 
+
+### indexOf() lastIndexOf()    includes()
+
+Usually these methods are used with only one argument, the item to be found.
+```js
+arr.indexOf(item, from)
+```
+`indexOf` searches through the array for `item` compare their argument to the array elements using
+the equivalent of the === operator. starting from index `from` to end and returns the ***index*** at which the value was found. Otherwise `-1` if not found.
+
+`lastIndexOf` searches from the end / right to left.
+```js
+console.log([1, 2, 3, 2, 1].indexOf(2));    // 1
+
+console.log([1, 2, 3, 2, 1].lastIndexOf(2));  // 3
+
+alert ( arr.indexOf(null) );  // -1
+```
+`indexOf` uses the strict equality `===` for comparison. So, if we look for `false`, it finds exactly `false` and not the zero.
+
+`includes()` is preferred to check existence of item 
+```js
+arr.includes(item, from)
+```
+searches through the array for `item` starting from index `from` to end, and returns the ***true*** if found.
+It handles `NaN` properly.
+```js
+const arr = [NaN];
+
+alert( arr.indexOf(NaN) );  // -1
+alert( arr.includes(NaN));  // true
+```
+
+___
+
+```js
+function findall(a, x) {
+	let results = [],
+// The array of indexes we'll return
+		len = a.length,
+// The length of the array to be searched
+		pos = 0;
+// The position to search from
+
+while(pos < len) {
+// While more elements to search...
+		pos = a.indexOf(x, pos); // Search
+	if (pos === -1) break;
+// If nothing found, we're done.
+	results.push(pos);
+// Otherwise, store index in array
+	pos = pos + 1;
+// And start next search at next element
+}
+return results;
+// Return array of indexes
+}
+```
+
+
+#### includes()
+
+
+
+___
+
 ### `sort()` Method
 
 The `sort()` method in JavaScript is used to sort the elements of an array **in place**, meaning it changes the original array, and also returns the sorted array. By default, it converts array elements to strings and sorts them lexicographically (i.e., alphabetically or numerically in string order).
@@ -191,3 +269,6 @@ This will give you an idea of how evenly the shuffle distributes the different p
 - You can **sort objects by properties** (like age) by providing a custom comparator.
 - **Shuffling** can be done using the **Fisher-Yates shuffle** for better randomness compared to using `sort()` with `Math.random()`.
 
+
+
+___

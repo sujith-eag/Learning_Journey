@@ -1,7 +1,11 @@
 
-### `filter()` Method
+### filter() Method
 
 The `filter()` method is similar to `map()`, as it iterates over the array and applies a callback function on each item. However, instead of transforming the array elements, `filter()` returns a **new array** with only those elements for which the callback function returns `true`.
+
+The filter() method returns an array containing a subset of the elements of the
+array on which it is invoked. The function you pass to it should be predicate: a func‐
+tion that returns true or false.
 
 - The callback function passed to `filter()` should return a **boolean** value (`true` or `false`).
 - If `true` is returned, the element is included in the new array.
@@ -9,11 +13,19 @@ The `filter()` method is similar to `map()`, as it iterates over the array and a
 
 The method works without modifying the original array. This is a **pure function**, just like `forEach()`, as it does not alter the original data.
 
+Returns a new array containing only the elements that satisfy the condition.
+    - Does not mutate the original array.
+
 ---
 
 ```js
 let results = arr.filter(function(item, index, array) {
     // returns true or false
+});
+```
+```js
+let newArray = arr.filter(function(item, index, array) {
+    return condition; // Return true/false
 });
 ```
 
@@ -23,6 +35,27 @@ let results = arr.filter(function(item, index, array) {
 
 ---
 
+
+```js
+let a = [5, 4, 3, 2, 1];
+a.filter(x => x < 3)
+// => [2, 1]; values less than 3
+a.filter((x,i) => i%2 === 0) // => [5, 3, 1]; every other value
+```
+
+
+filter() skips missing elements in sparse arrays and that its return value is
+always dense so it can be used to close the gaps in a sparse array, you can do this:
+```
+let dense = sparse.filter(() => true);
+```
+And to close gaps and remove undefined and null elements, you can use filter, like
+this:
+```
+a = a.filter(x => x !== undefined && x !== null);
+```
+
+___
 ### Example 1: Filter strings that start with "L"
 
 ```js

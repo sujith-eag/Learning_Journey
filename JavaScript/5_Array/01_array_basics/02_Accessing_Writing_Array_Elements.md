@@ -1,10 +1,8 @@
 
 
-Elements of an array can be accessed using the `[]` operator.
+Elements of an array can be accessed using the `[]` operator. Array elements are accessed using their **index values**. Arrays in JavaScript are **zero-indexed**, meaning the first element has an index of `0`. 
 
-Array elements are accessed using their **index values**. Arrays in JavaScript are **zero-indexed**, meaning the first element has an index of `0`. You can also use arithmetic expressions or arbitrary expression that results in a non-negative integer value can be used inside the brackets as indices.
-
-This applies to both reading and writing of elements of an array by assigning values to specific indices in an array.:
+You can also use arithmetic expressions or arbitrary expression that results in a non-negative integer value can be used inside the brackets as indices. This applies to both reading and writing of elements of an array by assigning values to specific indices in an array.:
 
 ```js
 const cars = ["Volvo", "BMW", "Tata"];
