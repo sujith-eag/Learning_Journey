@@ -138,7 +138,7 @@ console.log(sumOfTripledEvens([1, 2, 3, 4, 5]));  // 30
 
 ---
 
-### `reduceRight()` Method
+### reduceRight() Method
 
 `reduceRight()` works similarly to `reduce()`, but it processes the array from right to left. It’s useful when the direction of processing matters.
 
@@ -160,13 +160,6 @@ console.log(result);  // 3
 - **`reduceRight()`** starts from the last element and processes the array in reverse.
 
 ---
-
-### Key Points
-
-- `reduce()` reduces an array to a **single value** by applying a function to each element, starting from the left.
-- `reduceRight()` works similarly but starts from the **right** of the array.
-- The accumulator can be initialized with an `initialValue`, or it defaults to the first element of the array.
-- Both methods are **pure functions**: they don’t modify the original array.
 
 
 ![[Pasted image 20241005220312.jpg]]

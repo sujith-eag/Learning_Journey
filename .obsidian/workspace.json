@@ -6,6 +6,7 @@
       {
         "id": "8d365b9d4a5e6565",
         "type": "tabs",
+        "dimension": 46.63636363636364,
         "children": [
           {
             "id": "f3489e0135daaa7e",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/5_Array/02_Array_methods/06_hhh.md",
+                "file": "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +29,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "06_hhh"
+              "title": "08_Array_Methods"
             }
           }
         ]
@@ -36,6 +37,7 @@
       {
         "id": "4193bab30b7d1cf9",
         "type": "tabs",
+        "dimension": 53.36363636363637,
         "children": [
           {
             "id": "aa58c25735011e09",
@@ -205,15 +207,15 @@
   },
   "active": "f3489e0135daaa7e",
   "lastOpenFiles": [
-    "JavaScript/5_Array/02_Array_methods/05_reduce_method.md",
     "JavaScript/5_Array/te.md",
+    "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
+    "JavaScript/5_Array/02_Array_methods/07_extracting_sub_arrays.md",
+    "JavaScript/5_Array/02_Array_methods/06_find_every_some.md",
+    "JavaScript/5_Array/02_Array_methods/06_concat_flat_flatMap.md",
+    "JavaScript/5_Array/02_Array_methods/05_reduce_method.md",
     "JavaScript/5_Array/02_Array_methods/04_filter_method.md",
     "JavaScript/5_Array/02_Array_methods/03_map_method.md",
     "JavaScript/5_Array/02_Array_methods/02_Array_iterator_methods.md",
-    "JavaScript/5_Array/02_Array_methods/08_Array_Methods.md",
-    "JavaScript/5_Array/02_Array_methods/07_sub_arrays.md",
-    "JavaScript/5_Array/02_Array_methods/06_mmm.md",
-    "JavaScript/5_Array/02_Array_methods/06_hhh.md",
     "JavaScript/5_Array/02_Array_methods/01_splice_method.md",
     "JavaScript/5_Array/01_array_basics/07_Array-like_Objects.md",
     "JavaScript/5_Array/01_array_basics/06_basic_methods.md",
