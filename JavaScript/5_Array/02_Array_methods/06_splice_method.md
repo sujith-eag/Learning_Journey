@@ -1,4 +1,5 @@
 
+
 The `splice()` method is a versatile tool used for inserting, deleting, or replacing elements in an array. It modifies the array's `length` property and adjusts the positions of elements to higher or lower index when necessary.
 
 ```js

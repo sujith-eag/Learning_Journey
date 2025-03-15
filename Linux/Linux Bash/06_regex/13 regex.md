@@ -33,7 +33,7 @@ In regex, **brackets** (`[]`) are used to define a set of possible characters th
 
 ---
 
-### **POSIX Metacharacters in Regular Expressions:**
+### POSIX Metacharacters in Regular Expressions:
 
 - **`^`**: Anchors the match to the **beginning** of the string.    
     `^cat` matches "cat" only if it appears at the start of the string.
@@ -59,7 +59,7 @@ In regex, **brackets** (`[]`) are used to define a set of possible characters th
 - **`|`**: **Alternation**; matches either the pattern on the left or right.    
     `cat|dog` matches either "cat" or "dog".
 
-- **`()**`: **Grouping**; groups part of a regular expression.     
+- `()`: **Grouping**; groups part of a regular expression.   
     `(abc)+` matches "abc" repeated one or more times, e.g., "abc", "abcabc", etc.
 
 - **`\`**: **Escape character**; used to escape special characters.    
@@ -75,15 +75,14 @@ In regex, **brackets** (`[]`) are used to define a set of possible characters th
     `a+?` matches the smallest possible match, i.e., it will match "a" rather than "aaa".
 
 
-     
 ____
-     
+
 
 - **`\b`**: **Word boundary**.
     `\bcat\b` matches "cat" only if it appears as a whole word, not as part of a larger word like "catalog".
 
 - **`\B`**: **Non-word boundary**.
-    `\Bcat\B` matches "cat" if it is **not** at the start or end of a word (e.g., "scatalog").
+    `\Bcat\B` matches "cat" if it is **not** at the start or end of a word (e.g., "catalog").
 
 - **`\d`**: Matches any **digit** (equivalent to `[0-9]`).
     `\d+` matches one or more digits, such as "123" or "42".
@@ -103,9 +102,9 @@ ____
 - **`\S`**: Matches any **non-whitespace** character.
     `\S+` matches a sequence of non-whitespace characters, such as "abc123" or "_hello".
 
-		
+
 ---
-			
+
 ### **POSIX Character Classes:**
 
 - **`[:alnum:]`**: Matches any **alphanumeric** character (letters in any case and digits, equivalent to `[a-zA-Z0-9]`).     

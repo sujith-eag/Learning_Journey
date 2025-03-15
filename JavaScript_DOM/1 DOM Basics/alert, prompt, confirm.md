@@ -3,7 +3,7 @@ Functions used to interact with the user in the browser environment.
 
 All these three methods are modal: they pause the script execution and don't allow the visitor to interact with the rest of the page until the window has been dismissed.
 
-### `alert()`
+### alert()
 
 It shows a message and waits for the user to press 'OK'
 The mini window is called a modal window. 
@@ -11,7 +11,7 @@ The mini window is called a modal window.
 alert('Hello');
 ```
 
-### `prompt()`
+### prompt()
 
 It accepts two arguments
 ```js
@@ -30,7 +30,7 @@ alert ( `You are ${age} years old`);
 ```
 
 
-### `confirm()`
+### confirm()
 
 ```js
 result = confirm(question);

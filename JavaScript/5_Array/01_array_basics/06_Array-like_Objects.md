@@ -1,4 +1,5 @@
 
+
 An **array-like object** is an object that has indexed properties (such as `0`, `1`, etc.) and a `length` property, but it lacks the built-in methods of arrays (like `.push()`, `.pop()`, etc.). These objects are **not** true arrays but are structured similarly.
 
 ```js

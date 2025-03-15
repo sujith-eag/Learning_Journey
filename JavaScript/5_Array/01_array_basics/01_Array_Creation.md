@@ -188,7 +188,7 @@ When the `Array()` constructor is invoked with **one numeric argument**, it uses
 
 ---
 
-#### 'Array.of()'
+### 'Array.of()'
 
 In ES6, the `Array.of()` function was introduced to address the limitations of the `Array()` constructor. It is a factory method that creates and returns a new array using its argument values as the array elements (regardless of how many arguments there are even if it one or zero):
 
@@ -205,7 +205,7 @@ Array.of(1, 2, 3);
 
 ---
 
-#### 'Array.from()'
+### 'Array.from()'
 
 `Array.from()` is an array factory method introduced in ES6. It accepts an **iterable** or **array-like** object as its first argument and returns a new true array containing the elements of that object. This method works similarly to the spread operator (`[...iterable]`) and is commonly used to create copies of arrays.
 

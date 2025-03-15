@@ -7,8 +7,6 @@ Short summary of methods covered:
 
 3. **`flatMap()`**:  Maps each element using a provided function, then flattens the result into a new array.
 
-
-
 ___
 
 ### Array.prototype.concat()

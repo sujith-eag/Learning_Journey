@@ -116,6 +116,23 @@ sed -n '/guptha/,/Sena/p' emp.lst
 sed -n '1,/guptha/p' emp.lst
 ```
 
+> Note: Multiple files, file gobbing works only in the context addressing but not in line addressing and not even when line addressing and context are mixed.
+
+Here two files are given but only one is selected and read
+```bash {frame="none"}
+$ sed -n '1,/void/p' singly_list.c singly_list_final.c 
+#include <stdio.h>
+#include <stdlib.h>
+
+void create(int x);
+```
+
+This will search from multiple files because both are context addressing
+```bash {frame="none"}
+$ sed -n '/struct/,/void/p' singly_list.c singly_list_final.c 
+$ sed -n '/struct/,/void/p' *.c
+```
+
 ___
 
 #### Using Regular Expressions
