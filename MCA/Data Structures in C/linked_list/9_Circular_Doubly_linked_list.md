@@ -25,6 +25,65 @@ void DEnd();
 void Display();
 
 
+// Main function
+int main() {
+    int a, ch;
+
+    while (1) {
+        printf("\n1. Insert Beginning\n");
+        printf("2. Insert Middle\n");
+        printf("3. Insert End\n");
+        printf("4. Display\n");
+        printf("5. Search\n");
+        printf("6. Delete Beginning\n");
+        printf("7. Delete Middle\n");
+        printf("8. Delete End\n");
+        printf("9. Exit\n");
+        printf("Enter choice: ");
+        scanf("%d", &ch);
+
+        switch (ch) {
+            case 1:
+                printf("Enter the element to be inserted: ");
+                scanf("%d", &a);
+                Begin(a);
+                break;
+            case 2:
+                printf("Enter the element to be inserted: ");
+                scanf("%d", &a);
+                Middle(a);
+                break;
+            case 3:
+                printf("Enter the element to be inserted: ");
+                scanf("%d", &a);
+                End(a);
+                break;
+            case 4:
+                Display();
+                break;
+            case 5:
+                printf("Enter the element to search: ");
+                scanf("%d", &a);
+                Search(a);
+                break;
+            case 6:
+                DBegin();
+                break;
+            case 7:
+                DMid();
+                break;
+            case 8:
+                DEnd();
+                break;
+            case 9:
+                printf("Exiting...\n");
+                return 0;
+            default:
+                printf("Enter a valid choice!\n");
+        }
+    }
+}
+
 // Function to calculate the length of the circular linked list
 int length() 
 {
@@ -266,64 +325,5 @@ void Display() {
     printf("%d <-> (Head)\n", temp->data); // Print last node
 
     printf("Total Elements: %d\n", length());
-}
-
-// Main function
-int main() {
-    int a, ch;
-
-    while (1) {
-        printf("\n1. Insert Beginning\n");
-        printf("2. Insert Middle\n");
-        printf("3. Insert End\n");
-        printf("4. Display\n");
-        printf("5. Search\n");
-        printf("6. Delete Beginning\n");
-        printf("7. Delete Middle\n");
-        printf("8. Delete End\n");
-        printf("9. Exit\n");
-        printf("Enter choice: ");
-        scanf("%d", &ch);
-
-        switch (ch) {
-            case 1:
-                printf("Enter the element to be inserted: ");
-                scanf("%d", &a);
-                Begin(a);
-                break;
-            case 2:
-                printf("Enter the element to be inserted: ");
-                scanf("%d", &a);
-                Middle(a);
-                break;
-            case 3:
-                printf("Enter the element to be inserted: ");
-                scanf("%d", &a);
-                End(a);
-                break;
-            case 4:
-                Display();
-                break;
-            case 5:
-                printf("Enter the element to search: ");
-                scanf("%d", &a);
-                Search(a);
-                break;
-            case 6:
-                DBegin();
-                break;
-            case 7:
-                DMid();
-                break;
-            case 8:
-                DEnd();
-                break;
-            case 9:
-                printf("Exiting...\n");
-                return 0;
-            default:
-                printf("Enter a valid choice!\n");
-        }
-    }
 }
 ```
