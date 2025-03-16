@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Web Programming/project_report/guidlines.md",
+                "file": "MCA/Web Programming/Lab_practice/JavaScript_Basics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "guidlines"
+              "title": "JavaScript_Basics"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,12 +176,14 @@
   },
   "active": "035691796b6cfa9a",
   "lastOpenFiles": [
-    "MCA/Web Programming/project_report/Interactive Wrapper Catalog Site.md",
+    "MCA/Web Programming/Lab_practice",
+    "Python/practice questions.md",
+    "MCA/Web Programming/Lab_practice/JavaScript_Basics.md",
     "MCA/Web Programming/project_report/guidlines.md",
+    "MCA/Web Programming/project_report/Interactive Wrapper Catalog Site.md",
     "Try.md",
     "JavaScript/Untitled.md",
     "Untitled.md",
-    "Python/practice questions.md",
     "Python/temp_hold/programs with loops.md",
     "Python/temp_hold/module_functools.md",
     "Python/temp_hold/matrix.md",
@@ -199,9 +202,7 @@
     "MCA/Data Structures in C/linked_list/stack_using_list.md",
     "MCA/Data Structures in C/linked_list/9_Circular_Doubly_linked_list.md",
     "MCA/Data Structures in C/linked_list/9 Doubly linked list.md",
-    "MCA/Data Structures in C/linked_list/Queue_using_list.md",
     "MCA/Data Structures in C/Binary_search_tree",
-    "MCA/Data Structures in C/linked_list/8 Circular Singly linked List.md",
     "MCA/Data Structures in C/linked_list",
     "MCA/DS_case_study",
     "MCA/Web Programming/project_report",
