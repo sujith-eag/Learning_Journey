@@ -1,7 +1,114 @@
 
 
-```c
+Data structure with One node linking to next node.
+Top is holding value of the last added element.
+Element pushed is given top as next and top is given new node so stack grows with new node on top.
+When deleting, temp holds top, top changed to previous one and temp is released.
 
+display is traversing till temp is NULL to mark end of Stack.
+
+```c
+#include <stdio.h>
+#include <stdlid.h>
+
+struct node
+{
+	int data;
+	struct node *next;
+}*top=NULL;
+
+void push(int ele);
+void pop();
+void peep();
+void display();
+
+int main()
+{
+	int ele;
+	int ch;
+
+	while(1)
+	{
+		printf("\n1. Insert\t2. Delete\t3. Peep\t4. Dispaly\t5. Exit\n");
+		printf("\nEnter choice: ");
+		scanf("%d", &ch);
+		switch(ch)
+		{
+			case 1:
+				printf("\nEnter the value to Push: ");
+				scanf("%d", &ele);
+				push(ele);
+				display();
+				break;
+			case 2:
+				pop();
+				display();
+				break;
+			case 3:
+				peep();
+				break;
+			case 4:
+				display();
+				break;
+			case 5:
+				exit(0);
+			default:
+				printf("\nEnter right choice\n");
+		}
+	}
+	return 0;
+}
+void push(int ele)
+{
+	struct node* new;
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data = ele;
+	new->next = top;
+	top = new;
+
+	printf("Element %d is pushed in.\n", ele);
+}
+void pop()
+{
+	if(top == NULL)
+	{
+		printf("\nStack is empty\n");
+		return;
+	}
+	struct node* temp = top;
+	top = top->next;
+	free(temp);
+}
+void peep()
+{
+	if(top == NULL)
+	{
+		printf("No values\n");
+		return;
+	}
+	printf("\nValue on top is %d", top->data);
+}
+void display()
+{
+	if(top == NULL)
+	{
+		printf("No values\n");
+		return;
+	}
+	struct node* temp = top;
+
+	while(temp != NULL)
+	{
+		printf("%d -> ", temp->data);
+		temp = temp->next;
+	}
+	printf("\n");
+}
+```
+
+
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 

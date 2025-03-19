@@ -1,4 +1,303 @@
 
+
+The Length counter need not be incremented after the loop since it is Going till `NULL` which is next of tail so count will be right.
+For Display also there is no need to print the last element separately after the loop.
+
+Using tail to reduce the loops for reaching last node for insertion and deletion.
+
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node
+{
+	int data;
+	struct node *prev;
+	struct node *next;
+} *head = NULL, *tail = NULL, *new = NULL;
+
+void Inserter(int ch, int ele);
+void Deleter(int ch);
+void Display();
+void Search();
+int length();
+
+int main()
+{
+	int ch, ele;
+	while(1)
+	{
+		printf("\n1. Insert at Beginning\t2. Insert inBetween\t3. Insert at End\n");
+		printf("4. Delete Beginning\t5. Delete inBetween\t6. Delete End\n");
+		printf("7. Display\t8. Search\t0. Exit\n");
+		printf("Enter a Choice: ");
+		
+		scanf("%d", &ch);
+		printf("\n");
+		
+		switch(ch)
+		{
+			case 0:
+				exit(0);
+			case 1:
+			case 2:
+			case 3:
+				printf("\nEnter the value to Insert: ");
+				scanf("%d", &ele);
+				Inserter(ch, ele);
+				Display();
+				break;
+			case 4:
+			case 5:
+			case 6:
+				Deleter(ch);
+				Display();
+				break;
+			case 7:
+				Display();
+				printf("\nLength is: %d\n", length());
+				break;
+			case 8:
+				Search();
+				break;
+		}
+	}
+	return 0;
+}
+void firstNode(int ele)
+{
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data = ele;
+	new->next = NULL;
+	new->prev = NULL;
+	head = new;
+	tail = new;
+}
+void inB(int ele)
+{
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data = ele;
+
+	new->next = head;
+	head->prev = new;
+	head = new;
+}
+void inE(int ele)
+{
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data = ele;
+
+	new->prev = tail;
+	tail->next = new;
+
+	new->next = NULL;
+	tail = new;
+}
+int length()
+{
+	if(head == NULL)
+	{
+		return 0;
+	}
+	struct node *temp = head;
+	int len = 0;
+
+	while(temp != NULL)
+	{
+		len++;
+		temp = temp->next;
+	}
+	return len;
+}
+int getPos()
+{
+	int pos;
+	printf("\nEnter Position: ");
+	scanf("%d", &pos);
+
+	if(pos <= 0 || pos > length()+1)
+	{
+		printf("\nInvalid Location \n");
+		return -1;
+	}
+	return pos;
+}
+void inM(int ele)
+{
+	int pos = getPos();
+
+	if(pos == -1)
+		return;
+	if(pos == 1)
+	{
+		inB(ele);
+		return;
+	}
+	if(pos == length()+1)
+	{
+		inE(ele);
+		return;
+	}
+
+	int i = 2;
+	struct node *temp = head;
+	
+	while( i < pos)
+	{
+		temp = temp->next;
+		i++;
+	}
+	
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data = ele;
+
+	new->next = temp->next;
+	temp->next->prev = new;
+	new->prev = temp;
+	temp->next = new;
+}
+void Inserter(int ch, int ele)
+{
+	if(head == NULL)
+	{
+		firstNode(ele);
+		return;
+	}
+	switch(ch)
+	{
+		case 1:
+			inB(ele);
+			break;
+		case 2:
+			inM(ele);
+			break;
+		case 3:
+			inE(ele);
+			break;
+	}
+}
+void delB()
+{
+	struct node *temp = head;
+	head = head->next;
+	head->prev = NULL;
+	free(temp);
+}
+void delE()
+{
+	struct node *temp = tail;
+	tail = tail->prev;
+	tail->next = NULL;
+	free(temp);
+}
+void delM()
+{
+	int pos = getPos();
+
+	if(pos == -1 || pos == length()+1)
+		return;
+
+	if(pos == 1)
+	{
+		delB();
+		return;
+	}
+	if(pos == length())
+	{
+		delE();
+		return;
+	}
+
+	struct node *temp = head;
+	 
+	int i = 1;
+	while( i < pos)
+	{
+		temp = temp->next;
+		i++;
+	}
+	temp->prev->next = temp->next;
+	temp->next->prev = temp->prev;
+	free(temp);
+}
+void Deleter(int ch)
+{
+	if(head == NULL)
+	{
+		printf("\nNo elements in List\n");
+		return;
+	}
+	if( head == tail)
+	{
+		struct node *temp = head;
+		head = tail = NULL;
+		free(temp);	
+		return;
+	}
+	switch(ch)
+	{
+		case 4:
+			delB();
+			break;
+		case 5:
+			delM();
+			break;
+		case 6:
+			delE();
+			break;
+	}
+}
+void Display()
+{
+	if(head == NULL)
+	{
+		printf("\nNo Elements to display\n");
+		return;
+	}
+	struct node *temp = head;
+	while(temp != NULL)
+	{
+		printf("%d -> ", temp->data );
+		temp = temp->next;
+	}
+	printf("\nTotal elements are : %d\n\n", length());
+}
+
+void Search()
+{
+	if(head == NULL)
+	{
+		printf("\nNo values\n");
+		return;
+	}
+	int ele;
+	printf("\nEnter the Value to search: ");
+	scanf("%d", &ele);
+
+	int pos = 0, found = 0;
+	struct node *temp = head;
+	while(temp != NULL)
+	{
+		if(temp->data == ele)
+		{
+			printf("\nValue %d found at %d location\n", ele, pos);
+			found = 1;
+			break;
+		}
+		pos++;
+		temp = temp->next;
+	}
+	if(!found)
+	{
+		printf("\nElement %d not found in list\n", ele);	
+	}
+}
+```
+
+
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>

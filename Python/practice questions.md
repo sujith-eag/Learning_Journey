@@ -462,14 +462,13 @@ def main():
     # 1. Create and check the shape of an array
     array_1d = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
     print("Array: ", array_1d)
-    print("Shape of the array: ", array_1d.shape)  # Checking the shape of the array
+    print("Shape of the array: ", array_1d.shape)  
 
     # 2. Convert a 1D array of 12 elements into a 3x4 matrix
     matrix_2d = array_1d.reshape(3, 4)
     print("\nReshaped 3x4 matrix:\n", matrix_2d)
 
     # 3. Convert a 2D or 3D array into a 1D array
-    # Flatten the 2D matrix to a 1D array
     array_1d_from_matrix = matrix_2d.flatten()
     print("\nFlattened 1D array from 2D matrix:", array_1d_from_matrix)
 
@@ -484,7 +483,6 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
-
 ```
 
 ___
@@ -527,8 +525,8 @@ ___
 
 Write regular expressions to validate the following inputs:
 
-1. URL – Validate a URL that starts with http:// or https:// and includes a domain name.
-2. Phone Number – Validate a phone number that may optionally contain two dashes (e.g., 123-456-7890 or 1234567890).
+1. URL – Validate a URL that starts with `http://` or `https://` and includes a domain name.
+2. Phone Number – Validate a phone number that may optionally contain two dashes (e.g., `123-456-7890` or `1234567890`).
 
 ```python
 import re

@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure for a tree node
 struct Node 
 {
     int data;
@@ -31,6 +30,7 @@ struct Node* insertNode(struct Node* root, int value)
     char choice;
     printf("Insert %d to the left or right of %d? (l/r): ", value, root->data);
     scanf(" %c", &choice);
+    // The one space is crucial
 
     if (choice == 'l' || choice == 'L') {
         root->left = insertNode(root->left, value);
@@ -124,5 +124,125 @@ int main()
         }
     }
     return 0;
+}
+```
+
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node 
+{
+	int data;
+	struct node *left;
+	struct node *right;
+};
+
+struct node* insertNode(struct node* root, int value);
+struct node* createNode(int value);
+void inorderTraversal(struct node* root);
+void preorderTraversal(struct node* root);
+void postorderTraversal(struct node* root);
+
+int main()
+{
+	struct node* root = NULL;
+	int choice, value;
+	
+	while(1)
+	{
+		printf("\n1.Insert\t2.Inorder\t3.Preorder\t4.Postorder\t5.Exit\n");
+		printf("Enter yout Choice: ");
+		
+		scanf("%d", &choice);
+		
+		switch(choice)
+		{
+			case 1:
+				printf("Enter value: ");
+				scanf("%d", &value);
+				root = insertNode(root, value);
+				break;
+			case 2:
+				printf("InorderTraversal: ");
+				inorderTraversal(root);
+				printf("\n");
+				break;
+			case 3:
+				printf("PreOrderTraversal: ");
+				preorderTraversal(root);
+				printf("\n");
+				break;
+			case 4:
+				printf("PostOrderTraversal: ");
+				postorderTraversal(root);
+				printf("\n");
+				break;
+			case 5:
+				exit(0);
+			default:
+				printf("Enter a Valid Choice\n");
+		}
+	}
+	return 0;
+}
+struct node* insertNode(struct node* root, int value)
+{
+	if(root == NULL)
+	{
+		return createNode(value);
+	}
+	
+	char ch;
+	printf("Insert %d to left or right of %d. (l/r): ", value, root->data);
+	scanf(" %c", &ch);
+
+	if(ch == 'l' || ch == 'L')
+	{
+		root->left = insertNode(root->left, value);
+	}
+	else
+	{
+		root->right = insertNode(root->right, value);
+	}
+	return root;
+
+}
+struct node* createNode(int value)
+{
+	struct node* new;
+	new = (struct node*) malloc(sizeof(struct node));
+	new->data = value;
+	new->left = NULL;
+	new->right = NULL;
+	return new;
+}
+void inorderTraversal(struct node* root)
+{
+	if(root!= NULL)
+	{
+		inorderTraversal(root->left);
+		printf("%d ->", root->data);
+		inorderTraversal(root->right);
+	}
+}
+void preorderTraversal(struct node* root)
+{
+	if(root!=NULL)
+	{
+		printf("%d ->", root->data);
+		preorderTraversal(root->left);
+		preorderTraversal(root->right);
+	}
+}
+void postorderTraversal(struct node* root)
+{
+	if(root!=NULL)
+	{
+		postorderTraversal(root->left);
+		postorderTraversal(root->right);
+		printf("%d ->", root->data);
+	}
 }
 ```

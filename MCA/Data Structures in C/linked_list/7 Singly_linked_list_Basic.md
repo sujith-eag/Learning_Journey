@@ -26,7 +26,7 @@ new = (struct node*) malloc(sizeof(struct node));
 - `new` now points to the memory location where the new node is stored.
 
 2. **Initializing  the Node**:
-- Accessing and assignng values to the node using dot`.` or `->` methods
+- Accessing and assigning values to the node using dot`.` or `->` methods
 - `new->data`: Assign the value entered by the user.
 - `new->next`: Initialize to `NULL` since this is the only node at the moment.
 

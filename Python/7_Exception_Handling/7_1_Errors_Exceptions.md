@@ -1,6 +1,6 @@
 
 
-### **Exceptions in Python**
+### Exceptions in Python
 
 Exceptions are special objects in Python that are created to manage errors that arise while the program is running. They allow you to handle unexpected situations without crashing your program.
 
@@ -11,11 +11,11 @@ When an exception occurs, if not handled, it will terminate the program's execut
 
 ---
 
-### **Types of Errors**
+### Types of Errors
 
 Python errors can be broadly classified into two types: **syntax errors** and **runtime errors**.
 
-#### 1. **Syntax Errors**
+#### 1. Syntax Errors
 
 These errors occur when the code doesn't follow the correct syntax or structure in Python. Syntax errors prevent the code from running at all.
 
@@ -24,7 +24,7 @@ These errors occur when the code doesn't follow the correct syntax or structure 
 print("Hello world"  # Missing closing parenthesis
 ```
 
-#### 2. **Runtime Errors**
+#### 2. Runtime Errors
 
 These errors occur during the execution of the program, and they are handled using exceptions.
 
@@ -67,11 +67,11 @@ print(my_dict['some_key'])  # Key does not exist
 
 ---
 
-### **Handling Exceptions**
+### Handling Exceptions
 
 In Python, exceptions can be caught and handled using `try-except` blocks. This allows you to anticipate errors and take appropriate actions without stopping the program.
 
-#### **Basic Syntax of Exception Handling**:
+#### Basic Syntax of Exception Handling:
 
 ```python
 # Using try-except to handle errors
@@ -82,7 +82,7 @@ except ValueError:
     print("x is not an integer")  # Handle specific error (ValueError)
 ```
 
-#### **Multiple Except Blocks**:
+#### Multiple Except Blocks:
 
 You can handle different types of errors separately by using multiple `except` blocks.
 
@@ -105,7 +105,7 @@ else:
 
 ---
 
-### **Using Exceptions "Positively"**
+### Using Exceptions "Positively"
 
 Exceptions can be used as a tool for positive programming, especially when dealing with situations like missing keys in a dictionary. Instead of checking if the key exists before performing an action, you can try to perform the action directly and handle the exception if it occurs.
 
@@ -132,9 +132,69 @@ except KeyError:  # If the key doesn't exist, a KeyError will occur
 
 - **Why use exceptions positively?** This approach simplifies the code by removing the need for conditional checks. It relies on trying the operation and handling the exception if it occurs, instead of explicitly checking beforehand.
 
+```python
+>>> def div(x,y):
+...     return x/y
+... 
+>>> try:
+...     while True:
+...             x = int(input("Enter x: "))
+...             y = int(input("Enter y: "))
+...             print(f"Division results in {div(x,y)}")
+... except ZeroDivisionError:
+...     print("No zeroes allowed in Divisor")
+... except ValueError:
+...     print("Enter number only") 
+Enter x: 3
+Enter y: 6
+Division results in 0.5
+Enter x: 8
+Enter y: 2
+Division results in 4.0
+Enter x: 4
+Enter y: 0
+No zeroes allowed in Divisor
+Enter x: 4
+Enter y: r
+Enter number only
+```
+
+```python
+def Divi():
+    try:
+        a = int(input("Enter a: "))
+        b = int(input("Enter b: "))
+        c = a/b
+    except ZeroDivisionError:
+        print("No Zeroes in divisor")
+    except ValueError:
+        print("Enter numbers")   
+    else:
+        print(f"Result is {c}")
+ 
+while True:
+    Divi()
+```
+```
+Enter a: 2
+Enter b: 4
+Result is 0.5
+
+Enter a: 4
+Enter b: 0
+No Zeroes in divisor
+
+Enter a: r
+Enter numbers
+
+Enter a: 3
+Enter b: t
+Enter numbers
+```
+
 ---
 
-### **Summary of Exception Handling**
+### Summary of Exception Handling
 
 - **`try` block**: Contains the code that might cause an error.
 - **`except` block**: Catches the exception and allows you to handle it without crashing the program.

@@ -119,19 +119,27 @@ void InsertAtBeginning(int ele)
 void InsertAtPosition(int ele)
 {
 	int pos = GetPos();   // Getting input of position
-	
-	if( pos == 1 ) 
+
+	if (pos == -1)
+		return;
+		
+	if( pos == 0)
 	{
 		InsertAtBeginning(ele);
 		return;
 	}
-	
+	if (pos == length()+1)
+	{
+		InsertAtEnd(ele);
+		return;
+	}
+
 	new = (Node*) malloc(sizeof(Node));
 	new->data = ele;
 
 	int i = 1;  // temp is at head so at position 1
 	Node* temp = head; 
-	while( i < pos-1 )  // -1 to stop before pos to insert at pos
+	while( i < pos) // pos-1  ??
 	{
 		i++;
 		temp = temp->next;
@@ -148,10 +156,10 @@ int GetPos()
 	scanf("%d", &pos);
 
 	// If value is negative, 0 or More than last insert point. 
-	if(pos <= 0 || pos > len+1)  // len+1 to allow insert and delete at end
+	if(pos < 0 || pos > len+1)  // len+1 to allow insert and delete at end
 	{
 		printf("Position is larger than the length\n");
-		return 0;
+		return -1;
 	}
 	return pos;
 }
