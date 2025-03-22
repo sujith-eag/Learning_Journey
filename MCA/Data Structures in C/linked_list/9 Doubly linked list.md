@@ -275,23 +275,19 @@ void Search()
 	printf("\nEnter the Value to search: ");
 	scanf("%d", &ele);
 
-	int pos = 0, found = 0;
+	int pos = 0;
 	struct node *temp = head;
 	while(temp != NULL)
 	{
 		if(temp->data == ele)
 		{
 			printf("\nValue %d found at %d location\n", ele, pos);
-			found = 1;
-			break;
+			return;
 		}
 		pos++;
 		temp = temp->next;
 	}
-	if(!found)
-	{
-		printf("\nElement %d not found in list\n", ele);	
-	}
+	printf("\nElement %d not found in list\n", ele);
 }
 ```
 

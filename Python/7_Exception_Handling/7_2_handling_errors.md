@@ -1,5 +1,5 @@
 
-## **Flow of Control**
+## Flow of Control
 
 When a function calls another function, and an error occurs in the deepest function, the error propagates back to the calling functions unless handled. If the error is not handled at any level, the program will terminate. However, if it’s handled by a `try-except` block, the program can continue running.
 
@@ -8,7 +8,7 @@ When a function calls another function, and an error occurs in the deepest funct
 
 ---
 
-### **Example: Handling Input Errors with Loops**
+### Example: Handling Input Errors with Loops
 
 Instead of letting the program quit when the user enters an invalid input, you can use a loop to keep prompting the user until they provide a valid input.
 
@@ -46,7 +46,7 @@ print(f"x is {x}")  # Print the valid integer entered by the user
 
 ---
 
-### **Using `return` Instead of `break`**
+### Using `return` Instead of `break`
 
 You can define a reusable function to handle input and return the value when the input is valid. Using `return` allows you to pass the value back to the calling function.
 
@@ -69,7 +69,7 @@ print(f"x is {x}")  # Print the valid integer entered by the user
 
 ---
 
-### **Passing Values Between Functions**
+### Passing Values Between Functions
 
 When calling a function from another function, you can pass values (such as user input) between them.
 
@@ -95,7 +95,7 @@ main()  # Call main to start the process
 
 ---
 
-### **Using `pass` to Ignore Errors Silently**
+### Using `pass` to Ignore Errors Silently
 
 You can use the `pass` statement to ignore an error without showing a message or taking any action. This is useful when you want to silently handle an exception.
 
@@ -121,7 +121,7 @@ main()  # Call main to start the process
 
 ---
 
-### **Making Functions More Reusable (Passing Prompts as Arguments)**
+### Making Functions More Reusable (Passing Prompts as Arguments)
 
 You can make functions more reusable by passing the prompt message as an argument to the function. This allows different parts of your program to provide different prompts for the same input function.
 
@@ -148,7 +148,7 @@ main()  # Call main to start the process
 
 ---
 
-### **Summary**
+### Summary
 
 - **Exception handling**: Use `try-except` blocks to anticipate and handle errors.
 - **Loops**: Use loops to repeatedly ask for user input until valid data is provided.

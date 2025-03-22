@@ -5,11 +5,11 @@ Python offers powerful tools for working with files, for reading from them, writ
 
 ---
 
-## **1. Working with a File's Contents**
+## 1. Working with a File's Contents
 
 When Python reads from a text file, it interprets everything in the file as a string. If you’re reading numbers and need to work with them numerically, you must convert them to integers or floats using the `int()` or `float()` functions, respectively.
 
-### **Reading File Content**
+### Reading File Content
 
 ```python
 from pathlib import Path
@@ -33,7 +33,7 @@ print(len(pi_string))  # The length of the string (number of characters)
 - **`splitlines()`** splits the content into a list of lines.
 - **`lstrip()`** removes leading whitespace from each line.
 
-### **Handling Numbers in a File**
+### Handling Numbers in a File
 
 ```python
 # If the file contains numbers (e.g., digits of pi), you might want to convert them to integers or floats
@@ -46,11 +46,11 @@ If the file contains numbers and you need them in a numeric context, convert the
 
 ---
 
-## **2. String Manipulation with `replace()`**
+## 2. String Manipulation with `replace()`
 
 You can manipulate strings by replacing parts of the text using the `replace()` method.
 
-### **Example: Replacing Words in a String**
+### Example: Replacing Words in a String
 
 ```python
 message = "I really like dogs."
@@ -62,11 +62,11 @@ This method is useful when you want to change specific parts of the text, such a
 
 ---
 
-## **3. Writing to a File**
+## 3. Writing to a File
 
 Writing data to a file is just as simple as reading from it. You can write text to a file using `write_text()` from the `pathlib` module.
 
-### **Basic File Writing**
+### Basic File Writing
 
 ```python
 from pathlib import Path
@@ -86,17 +86,17 @@ path.write_text(contents)
 - The **`write_text()`** method writes text to the file and automatically closes the file after writing.
 - If the file doesn't exist, Python will create it; if it does exist, **`write_text()`** will overwrite its contents.
 
-### **Handling File Overwrites**
+### Handling File Overwrites
 
 Be cautious when using `write_text()` on existing files as it will erase all previous data in the file. Always ensure that overwriting the file is intended.
 
 ---
 
-## **4. Handling Exceptions**
+## 4. Handling Exceptions
 
 Python provides an efficient mechanism for handling errors and exceptions that can occur during the execution of your program. This allows your program to continue running even when an error occurs.
 
-### **Basic Exception Handling Example**
+### Basic Exception Handling Example
 
 ```python
 print("Give me two numbers, I'll divide them.")
@@ -130,18 +130,18 @@ while True:
 - **`except` block**: Catches specific exceptions (e.g., `ZeroDivisionError` or `ValueError`) and handles them gracefully.
 - **`else` block**: Executes if no exceptions are raised.
 
-### **General Rule for `try`, `except`, and `else`:**
+### General Rule for `try`, `except`, and `else`:
 
 - Only include code in the `try` block that might raise an exception.
 - Use the `else` block for code that should run if no exceptions occur.
 
 ---
 
-## **5. Analyzing Text Files**
+## 5. Analyzing Text Files
 
 You can read and analyze text files in Python to extract useful information like word counts or frequency analysis.
 
-### **Counting Words in a File**
+### Counting Words in a File
 
 ```python
 from pathlib import Path
@@ -157,7 +157,7 @@ num_words = len(words)
 print(f"The file {path} has about {num_words} words.")
 ```
 
-### **Handling File Not Found Exception**
+### Handling File Not Found Exception
 
 If the file does not exist, you can handle the error gracefully using a `try`/`except` block.
 
@@ -175,7 +175,7 @@ else:
     print(f"The file {path} contains {word_count} words.")
 ```
 
-### **Reusable Word Count Function**
+### Reusable Word Count Function
 
 ```python
 from pathlib import Path
@@ -198,11 +198,11 @@ count_words(path)
 
 ---
 
-## **6. Working with Multiple Files**
+## 6. Working with Multiple Files
 
 When working with multiple files, you can loop over a list of filenames and process each file in turn.
 
-### **Example: Counting Words in Multiple Files**
+### Example: Counting Words in Multiple Files
 
 ```python
 filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt']
@@ -212,7 +212,7 @@ for filename in filenames:
     count_words(path)  # Count words in each file
 ```
 
-### **Handling Missing Files Silently**
+### Handling Missing Files Silently
 
 If you want to fail silently (i.e., do nothing when a file is missing), you can use the `pass` statement in the `except` block:
 
@@ -229,11 +229,11 @@ for filename in filenames:
 
 ---
 
-## **7. Storing and Retrieving Data (JSON)**
+## 7. Storing and Retrieving Data (JSON)
 
 JSON (JavaScript Object Notation) is a widely-used format for storing and transmitting data, and Python provides a convenient library (`json`) for working with JSON data.
 
-### **Storing Data in JSON Format**
+### Storing Data in JSON Format
 
 ```python
 from pathlib import Path
@@ -248,7 +248,7 @@ content = json.dumps(numbers)
 path.write_text(content)
 ```
 
-### **Reading Data from JSON File**
+### Reading Data from JSON File
 
 ```python
 from pathlib import Path

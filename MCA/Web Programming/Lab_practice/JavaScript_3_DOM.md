@@ -76,9 +76,8 @@ Design a simple Web Page to add two input numbers and display their sum using pr
 ##### Question 4
 
 Develop and demonstrate a HTML file that includes JavaScript script for the following
-a) A number n obtained using prompt: The first n Fibonacci numbers using
-document.write()
-b) A number n obtained using prompt: A table from 1 to n and their squares using alert
+a) A number n obtained using prompt: The first n Fibonacci numbers using `document.write()`
+b) A number n obtained using `prompt`: A table from 1 to n and their squares using `alert`
 ```html
 <body>
     <h1>JavaScript Demonstrations</h1>

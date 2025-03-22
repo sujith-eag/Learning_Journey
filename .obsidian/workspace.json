@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/6 Circular_Queue.md",
+                "file": "MCA/OS & Linux/OS Syllabus/Unit_4/Q_3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,37 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "6 Circular_Queue"
-            }
-          }
-        ]
-      },
-      {
-        "id": "ef87f63043a9fb4d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e75aeef1c1cdd214",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MCA/Data Structures in C/linked_list/7 Singly_Linked_List_Full.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "7 Singly_Linked_List_Full"
+              "title": "Q_3"
             }
           }
         ]
@@ -118,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -205,32 +176,33 @@
   },
   "active": "a95a56f53a01f761",
   "lastOpenFiles": [
-    "MCA/Data Structures in C/Binary_search_tree/Binary Tree.md",
-    "MCA/Data Structures in C/linked_list/stack_using_list.md",
-    "MCA/Data Structures in C/linked_list/9_Circular_Doubly_linked_list.md",
-    "MCA/Data Structures in C/linked_list/9 Doubly linked list.md",
-    "MCA/Data Structures in C/linked_list/8 Circular Singly linked List.md",
-    "MCA/Data Structures in C/linked_list/7 Singly_Linked_List_Full.md",
-    "MCA/Data Structures in C/linked_list/7 Singly_linked_list_Basic.md",
-    "Untitled.md",
-    "C/K&R_book/Chapter_1.md",
-    "C/K&R_book/Chapter_2.md",
-    "MCA/Data Structures in C/linked_list/Queue_using_list.md",
-    "MCA/Data Structures in C/6 Circular_Queue.md",
-    "Python/9_Libraries/NumPy/03_02_Slicing_and_Indexing.md",
-    "Python/9_Libraries/NumPy/03_01_Transposing_Arrays.md",
-    "Python/9_Libraries/NumPy/03_00_Modifying_Arrays.md",
-    "Python/9_Libraries/NumPy/02_01_Creating_Arrays.md",
-    "Python/7_Exception_Handling/7_1_Errors_Exceptions.md",
-    "Python/7_Exception_Handling/7_2_handling_errors.md",
-    "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
-    "Python/9_Libraries/NumPy/01_03_Array_Attributes.md",
-    "Python/practice questions.md",
-    "Linux/Linux Bash/04_file_search_edit/17 sed.md",
-    "Linux/Linux Bash/07_shell_scripting/18 Shell Scripts.md",
-    "Linux/Linux Bash/07_shell_scripting/18.1 Shell Scripts - Conditionals.md",
-    "Linux/Linux Bash/07_shell_scripting/18.2 Shell Scripts - Loops.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Q_1_Answers.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Q_2.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Q_1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7 Deadlocks.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Unit_4.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Q_3.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Q_4.md",
+    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
+    "MCA/OS & Linux/OS Syllabus/OS Unit 2 - Short Notes.md",
+    "MCA/OS & Linux/OS Syllabus/OS Unit 1 - Short Notes.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/6.7 Classic Problems.md",
+    "MCA/Web Programming/Lab_practice/JavaScript_4_DOM.md",
     "MCA/Web Programming/Lab_practice/JavaScript_5_DOM.md",
+    "MCA/Web Programming/Lab_practice/JavaScript_3_DOM.md",
+    "MCA/Web Programming/Lab_practice/JavaScript_2_Arrays.md",
+    "MCA/Web Programming/Lab_practice/JavaScript_1_Basics.md",
+    "JavaScript_DOM/1 DOM Basics/1.1 DOM.md",
+    "Python/8_File_I_O/8_1_file_handling.md",
+    "Python/7_Exception_Handling/raise.md",
+    "Python/7_Exception_Handling/7_1_Errors_Exceptions.md",
+    "Python/7_Exception_Handling/7_3_unit_testing.md",
+    "Python/7_Exception_Handling/7_2_handling_errors.md",
+    "Python/8_File_I_O/8_2_working_with_file_content.md",
+    "Python/8_File_I_O/8_3.md",
+    "MCA/Data Structures in C/linked_list/stack_using_list.md",
+    "MCA/Data Structures in C/Binary_search_tree/Binary Tree.md",
     "MCA/Web Programming/Lab_practice",
     "MCA/Data Structures in C/Binary_search_tree",
     "MCA/Data Structures in C/linked_list",
@@ -240,7 +212,6 @@
     "MCA/Research_paper/Presentation",
     "JavaScript/5_Array/01_array_basics",
     "JavaScript/5_Array/02_Array_methods",
-    "JavaScript/4_Objects/object_detailed",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

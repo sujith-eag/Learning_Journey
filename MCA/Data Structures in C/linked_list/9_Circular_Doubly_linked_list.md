@@ -301,6 +301,7 @@ void Search()
 		printf("\nNo Elements in List.\n");
 		return;
 	}
+	
 	int ele;
 	printf("\nEnter the element to search: ");
 	scanf("%d", &ele);

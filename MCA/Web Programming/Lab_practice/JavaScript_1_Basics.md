@@ -21,8 +21,62 @@ console.log(reversedString);
 //"!dlroW ,olleH"
 ```
 
+Full Program
+```html
+<body>
+    <label for="str">Enter Text: </label>
+    <input id="str" type="text" placeholder="Enter string to reverse"><br>
+    <input type="button" value="Reverse" id="subButton">
+    
+    <h3 class="displayResult"></h3>
+    
+<script>
+let subButton = document.getElementById("subButton");
+subButton.addEventListener("click", revString);
+
+function revString() {
+		let str = document.getElementById("str").value;
+		let reversed = "";
+		
+		for(let i = str.length-1; i >= 0 ; i--) {
+				reversed += str[i];
+		}
+		
+		let result = document.querySelector(".displayResult");
+		result.textContent = reversed;
+		alert(reversed);
+}
+</script>
+</body>
+```
+
 ##### Question 2
 Develop a JavaScript code to count the number of vowels using loops and if statement.
+
+```html
+<body>
+    <label for="str">Enter String</label>
+    <input id="str" type="text" placeholder="Enter string">
+    <br><button id="get">Check</button>
+    
+    
+<script>
+let get = document.getElementById("get");
+get.addEventListener("click", checkVowels);
+
+function checkVowels(){
+		let str = document.getElementById("str").value;
+		let count = 0;
+		for (let i = 0 ; i < str.length ; i++ ){
+				if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+						count++;
+				}
+		}
+		alert(count);
+		}
+</script>
+</body>
+```
 
 ```js
 function countVowels(str) {
@@ -67,9 +121,10 @@ console.log(vowelCount);  // Output: 3
 
 ```
 
+
+
 ##### Question 3
-Develop a JavaScript code to find the largest of 3 numbers using if statement and logical
-operators.
+Develop a JavaScript code to find the largest of 3 numbers using if statement and logical operators.
 ```js
 function findLargest(a, b, c) {
 	if (a >= b && a >= c) {
@@ -92,7 +147,31 @@ console.log("The largest number is:", largest);
 // "The largest number is: 25"
 ```
 
+```html
+<body>
+
+<script>
+    let val1 = 20;
+    let val2 = 70;
+    let val3 = 40;
+    
+    alert(findLargest(val1, val2, val3));
+    function findLargest(a,b,c){   
+        if( a >= b && a >= c){
+            return a; }
+        else if( b>= c && b>= a){
+            return b;
+        }
+        else{
+            return c;
+        }
+    }
+    </script>    
+</body>
+```
+
 ##### Question 4
+
 Develop a JavaScript code to print even and odd numbers from 1 – 10.
 ```js
 function EvenOdd() {
@@ -108,10 +187,44 @@ function EvenOdd() {
 EvenOdd();
 ```
 
+```html
+<body>
+
+    <h3 id="even"></h3><br>
+    <h3 id="odd"></h3> 
+    
+<script>
+let evenList = [];
+let oddList = [];
+
+for( let i = 1; i<=10 ; i++ ){
+    if( i%2 === 0 ){
+        evenList.push(i);
+    }
+    else{
+        oddList.push(i);
+    }
+}
+
+let oddString = "These are Odd: ";
+let evenString = "These are Even: ";
+
+oddList.forEach(element => {
+    oddString += ` ${element} ,`;
+});
+evenList.forEach(element => {
+    evenString += ` ${element} ,`;
+});
+
+document.getElementById("odd").textContent = oddString;
+document.getElementById("even").textContent = evenString;
+</script>
+</body>
+```
+
 ##### Question 5
-Develop a JavaScript code program that prints the numbers from 1 to 20. However, for
-multiples of 3, print "Fizz" instead of the number, for multiples of 5, print "Buzz",
-and for numbers that are multiples of both 3 and 5, print "FizzBuzz".
+
+Develop a JavaScript code program that prints the numbers from 1 to 20. However, for multiples of 3, print "Fizz" instead of the number, for multiples of 5, print "Buzz", and for numbers that are multiples of both 3 and 5, print "FizzBuzz".
 
 ```js
 function fizzBuzz() {
@@ -134,6 +247,33 @@ function fizzBuzz() {
 fizzBuzz();
 ```
 
+```html
+<body>
+    <h4 id="display"></h4>
+<script>
+    
+function fizzbuzz(){
+    let res = []
+    for(let i =1; i <=20; i++){
+        if(i%3==0 && i%5==0){
+            res.push(" FizzBuzz ");
+        }
+        else if(i%3 == 0){
+            res.push(" Fizz ");
+        }
+        else if(i%5==0){
+            res.push(" Buzz ");
+        }
+        else{
+            res.push(` ${i} `);
+        }
+    }
+document.getElementById("display").textContent = res;
+}
+fizzbuzz();
+</script>
+</body>
+```
 
 ___
 
@@ -141,6 +281,7 @@ ___
 
 ##### Question 1
 Declare a string and display it using `innerHTML`.
+
 ```html
 <body>
     <div id="displayArea"></div>
@@ -155,8 +296,7 @@ Declare a string and display it using `innerHTML`.
 ```
 
 ##### Question 2
-Display the string containing special characters(quotes) using backslash escape
-character.
+Display the string containing special characters(quotes) using backslash escape character.
 ```html
 <body>
     <div id="displayArea"></div>
@@ -170,9 +310,25 @@ character.
 </html>
 ```
 
+```html
+<body>
+    <h3 id="one"></h3> <br>
+    <div id="two"></div> <br>
+    
+<script>
+    let str1 = "A basic String";
+    let str2 = "A string with \"Quotes\" and \\ backslash";
+    
+    document.getElementById("one").innerHTML = str1;
+    document.getElementById("two").innerHTML = `<h3>${str2}</h3>`;    
+</script>
+
+</body>
+```
+
 ##### Question 3
-Demonstrate the `slice()` with no parameters, one parameter, two parameters and
-negative parameters
+
+Demonstrate the `slice()` with no parameters, one parameter, two parameters and negative parameters.
 
 Slice is used to extract a portion of string or array.
 ```js
