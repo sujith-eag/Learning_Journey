@@ -47,39 +47,6 @@
 
 ---
 
-### **Control Flow and Logic**
-
-#### **1. Explain the significance of `break`, `continue`, and `pass` with a suitable example:**
-
-- **`break`**: Terminates the loop entirely and exits it.
-```python
-for i in range(5):
-   if i == 3:
-	   break
-   print(i)
-# Output: 0 1 2
-   ```
-
-- **`continue`**: Skips the current iteration and moves to the next iteration of the loop.
-```python
-for i in range(5):
-   if i == 3:
-	   continue
-   print(i)
-# Output: 0 1 2 4
-```
-
-- **`pass`**: A placeholder used to indicate no operation. It is used when a statement is syntactically required but no action is to be taken.
-```python
-for i in range(5):
-   if i == 3:
-	   pass  # Do nothing for 3
-   print(i)
-# Output: 0 1 2 3 4
-   ```
-
----
-
 #### **2. Predict the output of the following code snippets and justify your answers:**
 
 - **i)** `a = -45`  
