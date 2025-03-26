@@ -191,7 +191,7 @@ print(a is c)  # False, because they are different objects in memory
   
 ---
 
-### **9. Python Program to Reverse a Number, Count the Digits, and Calculate the Sum of Digits in the Reversed Number**
+### 9. Python Program to Reverse a Number, Count the Digits, and Calculate the Sum of Digits in the Reversed Number
 
 Here’s a Python program that prompts the user for input, reverses the number, counts the number of digits, and calculates the sum of the digits in the reversed number.
 
@@ -287,25 +287,6 @@ while i < 5:  # Loop until i becomes 5
    i += 1
 ```
 
-#### 3. **`break` statement**:
-   - The `break` statement is used to exit the loop prematurely, before the loop condition is false.
-   - **Example**: Exiting the loop after 5 iterations.
-     ```python
-     for i in range(10):
-         if i == 5:
-             break  # Exit the loop when i equals 5
-         print(i)
-     ```
-
-#### 4. **`continue` statement**:
-   - The `continue` statement is used to skip the current iteration and continue with the next iteration of the loop.
-   - **Example**: Skipping when the value is 5.
-     ```python
-     for i in range(10):
-         if i == 5:
-             continue  # Skip the iteration when i equals 5
-         print(i)
-     ```
 
 #### 5. **`else` with loops**:
    - The `else` part of a loop is executed when the loop completes normally (i.e., the loop's condition is no longer true, and it did not exit via `break`).
@@ -319,7 +300,7 @@ while i < 5:  # Loop until i becomes 5
 
 ---
 
-### **2. Program to Count the Total Number of Digits and the Sum of Digits in a Number Using a `while` Loop**
+### 2. Program to Count the Total Number of Digits and the Sum of Digits in a Number Using a `while` Loop
 
 ```python
 # Function to count the digits and calculate the sum of digits
@@ -360,7 +341,7 @@ Sum of digits: 15
 
 ---
 
-### **3. Python Program to Find the Sum of Even and Odd Numbers in a Given List**
+### 3. Python Program to Find the Sum of Even and Odd Numbers in a Given List
 
 ```python
 # Function to find sum of even and odd numbers in a list
@@ -396,7 +377,7 @@ Sum of odd numbers: 25
 
 ---
 
-### **4. Python Program to Extract the Indices of Even Elements from a List**
+### 4. Python Program to Extract the Indices of Even Elements from a List
 
 ```python
 # Function to extract indices of even elements from a list
@@ -427,14 +408,11 @@ Indices of even numbers: [1, 3, 5, 7, 9]
 
 ---
 
-These programs demonstrate the use of `while` and `for` loops, along with basic operations like counting, summing, and finding indices in lists.
 
-
-___
 
 ### **5. Using a `for` loop for various tasks**
 
-#### **(i) Process characters in a string**
+#### (i) Process characters in a string
 
 You can use a `for` loop to iterate over the characters in a string. For example, if you want to print each character of a string on a new line:
 
@@ -445,7 +423,7 @@ for char in string:
     print(char)
 ```
 
-**Output:**
+Output:
 ```
 H
 e
@@ -454,7 +432,7 @@ l
 o
 ```
 
-#### **(ii) Display values and keys of a dictionary**
+#### (ii) Display values and keys of a dictionary
 
 You can loop over a dictionary using a `for` loop to access both keys and values.
 
@@ -465,14 +443,14 @@ for name, grade in student_grades.items():
     print(f"Student: {name}, Grade: {grade}")
 ```
 
-**Output:**
+Output:
 ```
 Student: Alice, Grade: 85
 Student: Bob, Grade: 90
 Student: Charlie, Grade: 78
 ```
 
-#### **(iii) Loop over a list of lists**
+#### (iii) Loop over a list of lists
 
 You can loop through a list of lists by using a nested `for` loop. 
 
@@ -485,7 +463,7 @@ for sublist in list_of_lists:
     print()  # Print a new line after each sublist
 ```
 
-**Output:**
+Output:
 ```
 1 2 3 
 4 5 6 
@@ -527,179 +505,3 @@ Celsius	Fahrenheit
 
 ---
 
-### **8. Pattern Generation**
-
-We can define a function that generates the pattern by using a `for` loop. Here, `n` represents the number of lines.
-
-```python
-# Function to generate the pattern
-def generate_pattern(n):
-    for i in range(1, n+1):
-        print("+ " * i)
-
-# Example usage
-generate_pattern(5)
-```
-
-**Output:**
-```
-+ 
-+ + 
-+ + + 
-+ + + + 
-+ + + + + 
-```
-
-**Is it possible to get the same output using a single loop?**  
-Yes, it is possible to achieve this using a single loop. The function prints `+` followed by a space, repeated `i` times where `i` is the loop counter, and each loop incrementally increases the number of `+` symbols printed.
-
----
-
-### **9. Specialized Loops**
-
-You can write a program that displays only the numbers that are divisible by five and meet the other conditions specified.
-
-```python
-# List of numbers
-numbers = [10, 25, 150, 180, 250, 500, 600, 900]
-
-# Specialized loop with the given conditions
-for num in numbers:
-    if num > 500:
-        break  # Stop the loop if the number is greater than 500
-    if num > 150:
-        continue  # Skip the number if it is greater than 150
-    if num % 5 == 0:
-        print(num)
-```
-
-**Output:**
-```
-10
-25
-```
-
-### **Explanation**:
-- The `continue` statement is used to skip numbers greater than 150.
-- The `break` statement stops the loop when the number exceeds 500.
-- Only numbers divisible by 5 are printed. 
-
----
-
-
-### **10. Python Program to Create a Box of Size `n x m`**
-
-To generate a box of `n` rows and `m` columns, we need to read the values of `n` and `m` from the user and then print the required pattern. Here's how to do it:
-
-```python
-# Python program to generate a box of size n x m
-n = int(input("Enter a width: "))  # Input width (columns)
-m = int(input("Enter a height: "))  # Input height (rows)
-
-for i in range(m):  # Loop over rows
-    if i == 0 or i == m-1:  # First and last row
-        print('@' * n)
-    else:  # Middle rows
-        print('@' + ' ' * (n - 2) + '@')  # First and last @ in middle rows
-```
-
-**Example Input/Output:**
-
-```
-Enter a width: 5
-Enter a height: 4
-
-@@@@@
-@   @
-@   @
-@@@@@
-```
-
-### **11. Output Explanation of Code Segments**
-
-#### **(i) Using `break`**
-
-```python
-for letter in 'Python':     
-    if letter == 'h':  
-        break  
-    print('Current Letter:', letter)
-```
-
-**Explanation:**
-- The loop iterates over each character in the string `"Python"`.
-- When the loop reaches the letter `'h'`, the `if letter == 'h'` condition becomes `True`, and the `break` statement is executed.
-- The `break` statement causes the loop to exit immediately, and no further letters are processed or printed.
-
-**Output:**
-```
-Current Letter: P
-Current Letter: y
-```
-
-**Cause:**
-- The loop stops as soon as `'h'` is encountered because of the `break` statement.
-
----
-
-#### **(ii) Using `continue`**
-
-```python
-for letter in 'Python':  
-    if letter == 'h':  
-        continue  
-    print('Current Letter:', letter)
-```
-
-**Explanation:**
-- The loop iterates over each character in the string `"Python"`.
-- When the loop encounters `'h'`, the `continue` statement is executed, which causes the current iteration to skip the rest of the code in the loop and move to the next iteration.
-- Therefore, `'h'` is skipped, but the other letters are printed.
-
-**Output:**
-```
-Current Letter: P
-Current Letter: y
-Current Letter: t
-Current Letter: o
-Current Letter: n
-```
-
-**Cause:**
-- The `continue` statement skips the current iteration for `'h'`, so it is not printed.
-
----
-
-#### **(iii) Using `pass`**
-
-```python
-for letter in 'Python':  
-    if letter == 'h':  
-        pass  
-    print('This is pass block')  
-    print('Current Letter:', letter)
-```
-
-**Explanation:**
-- The loop iterates over each character in the string `"Python"`.
-- The `pass` statement is a no-op (no operation); it does nothing when it is encountered. Therefore, the loop continues as usual when `'h'` is encountered, and the block of code after `pass` is executed as it would be in any other iteration.
-- This results in both the messages `"This is pass block"` and `"Current Letter:"` being printed in every iteration of the loop.
-
-**Output:**
-```
-This is pass block
-Current Letter: P
-This is pass block
-Current Letter: y
-This is pass block
-Current Letter: t
-This is pass block
-Current Letter: h
-This is pass block
-Current Letter: o
-This is pass block
-Current Letter: n
-```
-
-**Cause:**
-- The `pass` statement is effectively ignored, and the code after it runs in all iterations of the loop. Thus, the message is printed for every character, including `'h'`.

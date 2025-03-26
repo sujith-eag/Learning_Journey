@@ -662,6 +662,27 @@ for i in range(height):
 @ @ @ @ @
 ```
 
+```python
+n = int(input("Enter a width: "))
+m = int(input("Enter a height: "))
+
+for i in range(m):
+    if i == 0 or i == m-1:  # First and last row
+        print('@' * n)
+    else:  # Middle rows
+        print('@' + ' ' * (n - 2) + '@')
+```
+
+```
+Enter a width: 5
+Enter a height: 4
+
+@@@@@
+@   @
+@   @
+@@@@@
+```
+
 
 ___
 
