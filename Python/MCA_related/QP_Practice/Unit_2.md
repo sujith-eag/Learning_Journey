@@ -52,6 +52,8 @@ ___
 
 Develop a python program for the following: Create a dictionary by asking the user to give the name and marks of 10 different students. Sort the dictionary created according to marks.
 
+Develop a python program to print unique elements in a list.
+
 ___
 
 Predict the output of the following and justify your answer:
@@ -94,6 +96,11 @@ t[-2:1:-2], t[:-8]
 ```
 
 How do you demonstrate that lists are equal and identical?
+
+Use the for loop and give example for:
+i) Processing characters in Strings
+ii) Displaying values and keys of a dictionary
+iii) Looping over List of Lists.
 
 ___
 
@@ -167,6 +174,8 @@ Explain the use of join() and split() string methods with examples. What does it
 Demonstrate the creation and operation of dictionaries in Python.
 
 ___
+
+When you use the + operator to concatenate two lists, does it make a copy or a reference of the arguments? Explain with the help of an example.
 
 
 #### SEMESTER END EXAMINATIONS – JUNE 2019

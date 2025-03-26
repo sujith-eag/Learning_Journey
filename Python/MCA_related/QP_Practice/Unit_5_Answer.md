@@ -1,4 +1,19 @@
 
+## Exception Handling
+
+
+
+
+___
+
+## File I/O
+
+
+
+
+___
+
+
 1. List and describe ANY FIVE file open modes in python.
 
 2. Explain exception handling in python in detail with the help of an example.

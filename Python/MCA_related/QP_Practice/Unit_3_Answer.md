@@ -1,4 +1,34 @@
 
+## Functions, Arguments
+
+
+
+
+___
+
+## Variables
+
+
+
+
+___
+
+## Recursion
+
+
+
+___
+
+## Map, Filter, Lambda, List Comprehension
+
+
+
+___
+
+
+
+
+
 1. Write a Python function named calculate sum that takes two integers as input and returns their sum. Then, write another function called calculate product that takes two integers as input and returns their product. Demonstrate both functions by providing suitable inputs.
 
 2. Explain recursion in Python functions. Provide an example illustrating the use of recursion to solve a specific problem.

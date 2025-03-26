@@ -101,13 +101,11 @@ ___
 
 Develop a python program to print unique elements in a list.
 
-
 ___
 
 #### EXAMINATIONS SEPTEMBER /OCTOBER 2021 SUPPLEMENTARY
 
 Develop a program to print the sum of n natural numbers.
-
 
 Demonstrate the usage of pass, continue and break with the help of appropriate examples.
 
@@ -139,7 +137,6 @@ How do you terminate a loop? Write a Python program to count the palindrome word
 
 What are identical objects and equivalent objects? Give examples.
 
-
 ___
 
 Use the for loop and give example for:
@@ -170,14 +167,13 @@ iii) Looping over List of Lists.
 
 ___
 
-
 #### SUPPLEMENTARY SEMESTER EXAMINATIONS – JULY/AUGUST 2018
 
 Using for loop, print of table of Celsius/Fahrenheit equivalences. Let c be the Celsius temperatures, ranging from 0 to 100. For each value of c, print the corresponding Fahrenheit temperature.
 
 ___
 
-a)Examine each of the following expressions. Predict what the result would be? Explain what the type is for each expression. If an expression is illegal,
+Examine each of the following expressions. Predict what the result would be? Explain what the type is for each expression. If an expression is illegal,
 explain why?
 ```
 i. 10 / 5
