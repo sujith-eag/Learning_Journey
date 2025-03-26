@@ -110,37 +110,11 @@ def word_frequency(text):
     return freq
 
 text = "hello world hello"
-print(word_frequency(text))  # Output: {'hello': 2, 'world': 1}
+print(word_frequency(text))  
+# Output: {'hello': 2, 'world': 1}
 ```
 
----
 
-#### **5. Write a Python function to return the number of palindrome words in a line of text.**
-
-```python
-def count_palindromes(text):
-    words = text.split()
-    count = 0
-    
-    for word in words:
-        if word == word[::-1]:
-            count += 1
-    return count
-
-text = "madam racecar level world"
-print(count_palindromes(text))  # Output: 3
-```
-
----
-
-#### **6. Write a Python function to check if a string is a palindrome.**
-
-```python
-def is_palindrome(s="MADAM"):
-    return s == s[::-1]
-
-print(is_palindrome())  # Output: True
-```
 
 ---
 
@@ -336,61 +310,4 @@ print(sentence)  # Output: "Hello-World-Python"
 Here, `join()` combines the elements of the list `words` into a single string with spaces (or any other specified separator) between them.
 
 ---
-
-#### **10. Explain the use of `ord()` and `chr()` functions. Write a function that converts all uppercase letters to lowercase and vice versa in a given string.**
-
-#### **`ord()` function**
-
-The `ord()` function takes a single character (string of length 1) and returns its Unicode code point (integer representation).
-
-**Example:**
-
-```python
-# Example using ord()
-print(ord('A'))  # Output: 65
-print(ord('a'))  # Output: 97
-```
-
-#### **`chr()` function**
-
-The `chr()` function takes an integer (Unicode code point) and returns the corresponding character.
-
-**Example:**
-
-```python
-# Example using chr()
-print(chr(65))  # Output: 'A'
-print(chr(97))  # Output: 'a'
-```
-
----
-
-#### **Function to Convert Uppercase to Lowercase and Vice Versa**
-
-The following function converts all uppercase letters to lowercase and all lowercase letters to uppercase in a given string. It uses `ord()` and `chr()` to perform the conversion.
-
-```python
-def swap_case(s):
-    result = ""
-    for char in s:
-        if char.islower():  # If the character is lowercase, convert to uppercase
-            result += chr(ord(char) - 32)
-        elif char.isupper():  # If the character is uppercase, convert to lowercase
-            result += chr(ord(char) + 32)
-        else:
-            result += char  # Non-alphabetic characters remain unchanged
-    return result
-
-# Example usage:
-input_str = "I love PyTHon"
-output_str = swap_case(input_str)
-print(output_str)  # Output: "i LOVE pYthON"
-```
-
-#### **Explanation:**
-- `char.islower()` checks if the character is lowercase. If it is, it converts the character to uppercase by subtracting 32 from the Unicode code point of the character (`ord(char) - 32`).
-- `char.isupper()` checks if the character is uppercase. If it is, it converts the character to lowercase by adding 32 to the Unicode code point of the character (`ord(char) + 32`).
-- Non-alphabet characters (spaces, punctuation) are added to the result without modification.
-
-
 

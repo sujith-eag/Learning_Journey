@@ -343,7 +343,6 @@ Develop a python program to print unique elements in a list.
 
 ____
 
-
 #### SUPPLEMENTARY SEMESTER EXAMINATIONS – AUGUST 2017
 
 
