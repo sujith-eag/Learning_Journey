@@ -2,7 +2,7 @@ Implement a class Rectangle with the following features:
 
 Constructor to take width and height as numeric arguments
 Methods to compute area and perimeter
-Methods to return hight and width
+Methods to return height and width
 Method is `isSquare()` that returns a Boolean indicating whether the rectangle is a square.
 
 ```python

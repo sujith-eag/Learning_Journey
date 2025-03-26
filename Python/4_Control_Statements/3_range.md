@@ -1,13 +1,13 @@
 
 The `range()` function generates a sequence of numbers, commonly used for looping or generating lists with specific patterns.
 
-- **`range(i, j)`** Generates a sequence of numbers starting from `i` and ending before `j`.
+- `range(i, j)` Generates a sequence of numbers starting from `i` and ending before `j`.
 ```python
 range(i, j)
 # Produces the sequence: i, i+1, ..., j-1
 ```
 
-- **`range(j)`** Starts from `0` and ends before `j`. This is equivalent to `range(0, j)`.
+- `range(j)` Starts from `0` and ends before `j`. This is equivalent to `range(0, j)`.
 ```python
 range(j)
 # Like slice(:j), starts from 0, ends at j-1
@@ -15,7 +15,7 @@ range(j)
 
 #### Increment with `range()`:
 
-- **`range(i, j, k)`**  
+- `range(i, j, k)`  
 Adds an optional third argument `k` for defining the step increment, useful for sequences with a specific pattern, like arithmetic progressions (AP).
 ```python
 range(i, j, k)

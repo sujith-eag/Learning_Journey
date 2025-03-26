@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "df73a0d501a5a2d6",
+        "id": "a26929df7ff8a834",
         "type": "tabs",
         "children": [
           {
-            "id": "a95a56f53a01f761",
+            "id": "a5ee09af19b30648",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/OS & Linux/OS Syllabus/Unit_4/Q_3.md",
+                "file": "Python/MCA_related/QP_Practice/Unit_5.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
-                  "extraContext": false,
+                  "extraContext": true,
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Q_3"
+              "title": "Unit_5"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -174,35 +173,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a95a56f53a01f761",
+  "active": "a5ee09af19b30648",
   "lastOpenFiles": [
-    "MCA/OS & Linux/OS Syllabus/Unit_3/Q_1_Answers.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_3/Q_2.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_3/Q_1.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_3/7 Deadlocks.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_4/Unit_4.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_4/Q_3.md",
+    "Python/MCA_related/QP_Practice/Unit_4.md",
+    "Python/MCA_related/QP_Practice/Unit_3.md",
+    "Python/MCA_related/QP_Practice/Unit_2.md",
+    "Python/MCA_related/QP_Practice/Unit_1.md",
+    "Python/MCA_related/QP_Practice/Unit_5.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answer.md",
+    "Python/MCA_related/Untitled 2.md",
+    "Python/MCA_related/Untitled 1.md",
+    "Python/MCA_related/Untitled.md",
+    "Python/4_Control_Statements/4_for_while_loops.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answer.md",
+    "Python/4_Control_Statements/1_Conditional_Branching.md",
+    "Python/4_Control_Statements/3_range.md",
+    "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
+    "Python/3_Input_Output/3_Input_Output.md",
+    "Python/4_Control_Statements/2_match_case.md",
+    "Python/MCA_related/QP_Practice/Unit_4_Answer.md",
+    "Python/MCA_related/QP_Practice/Unit_3_Answer.md",
+    "Python/practice questions.md",
+    "Python/MCA_related/QP_Practice",
+    "Python/MCA_related/Untitled 4.md",
+    "Python/MCA_related/Untitled 3.md",
+    "Python/6_OOP/practice.md",
+    "Python/6_OOP/6.6_Polymorphism.md",
+    "Python/6_OOP/6.5_Inheritance.md",
+    "Python/6_OOP/6.4_Changing_Atributes.md",
     "MCA/OS & Linux/OS Syllabus/Unit_4",
-    "MCA/OS & Linux/OS Syllabus/Unit_4/Q_4.md",
-    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
-    "MCA/OS & Linux/OS Syllabus/OS Unit 2 - Short Notes.md",
-    "MCA/OS & Linux/OS Syllabus/OS Unit 1 - Short Notes.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_2/6.7 Classic Problems.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_4_DOM.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_5_DOM.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_3_DOM.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_2_Arrays.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_1_Basics.md",
-    "JavaScript_DOM/1 DOM Basics/1.1 DOM.md",
-    "Python/8_File_I_O/8_1_file_handling.md",
-    "Python/7_Exception_Handling/raise.md",
-    "Python/7_Exception_Handling/7_1_Errors_Exceptions.md",
-    "Python/7_Exception_Handling/7_3_unit_testing.md",
-    "Python/7_Exception_Handling/7_2_handling_errors.md",
-    "Python/8_File_I_O/8_2_working_with_file_content.md",
-    "Python/8_File_I_O/8_3.md",
-    "MCA/Data Structures in C/linked_list/stack_using_list.md",
-    "MCA/Data Structures in C/Binary_search_tree/Binary Tree.md",
     "MCA/Web Programming/Lab_practice",
     "MCA/Data Structures in C/Binary_search_tree",
     "MCA/Data Structures in C/linked_list",
@@ -211,7 +211,6 @@
     "MCA/Research_paper/Final Submission",
     "MCA/Research_paper/Presentation",
     "JavaScript/5_Array/01_array_basics",
-    "JavaScript/5_Array/02_Array_methods",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

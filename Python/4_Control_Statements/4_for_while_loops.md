@@ -60,7 +60,7 @@ while message != "quit":
     print(message)
 ```
 
-**Example of a counter with `while` loop:**
+Example of a counter with `while` loop:
 
 ```python
 number = 1
@@ -121,8 +121,6 @@ while True:  # This loop will run indefinitely until 'break' is encountered
 ### 5. Using 'continue' in a Loop
 
 The `continue` statement skips the current iteration of the loop and moves on to the next one.
-
-**Example:**
 
 ```python
 number = 0
@@ -241,5 +239,6 @@ while i < len(l):
     statement
     i += 1
 ```
+
 
 ---

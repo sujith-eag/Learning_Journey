@@ -56,7 +56,7 @@ A **symbolic link** (also known as a **soft link**) is a special type of file th
 
 ---
 
-## **Creating Hard and Symbolic Links**
+## Creating Hard and Symbolic Links
 
 The **`ln`** command is used to create both hard and symbolic links.
 ```bash {frame="none"}
@@ -85,7 +85,7 @@ This creates a symbolic link pointing to `/path/to/original/file`.
 
 ---
 
-## **Key Differences Between Hard and Symbolic Links**
+## Key Differences Between Hard and Symbolic Links
 
 |Feature|**Hard Link**|**Symbolic Link (Soft Link)**|
 |---|---|---|

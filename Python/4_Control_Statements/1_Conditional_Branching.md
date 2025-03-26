@@ -22,9 +22,9 @@ Note: Python **does not have** a `switch case` statement. but `match case` is in
 
 ### Altering Control Flow
 
-- **`if`, `elif`, `else`** – Conditional execution of code blocks based on boolean expressions.
-- **`for` loop** – Used to repeat code a fixed number of times, often iterating over a sequence (like a list or range).
-- **`while` loop** – Repeats a block of code as long as a specified condition is true.
+- `if`, `elif`, `else` – Conditional execution of code blocks based on boolean expressions.
+- `for` loop – Used to repeat code a fixed number of times, often iterating over a sequence (like a list or range).
+- `while` loop – Repeats a block of code as long as a specified condition is true.
 
 ---
 

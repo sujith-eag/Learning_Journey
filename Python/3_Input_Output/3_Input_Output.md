@@ -1,6 +1,6 @@
 
 
-## **Print()**
+## Print()
 
 The `print()` function in Python is used to output data to the console. It can accept multiple arguments and display them in various formats. 
 
@@ -14,9 +14,9 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 - **`file`**: The output is directed to this file object (default is `sys.stdout`).
 - **`flush`**: If `True`, the output is flushed immediately (default is `False`).
 
-### **Key Parameters**
+### Key Parameters
 
-#### **sep (Separator)**
+#### sep (Separator)
 
 - `sep` is used to specify a separator between multiple values in the print function. By default, it is a space `' '`, but you can change it to any string you want.
   
@@ -24,7 +24,7 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 print("apple", "banana", "cherry", sep=", ")  # Output: apple, banana, cherry
 ```
 
-#### **end**
+#### end
 
 - `end` is used to append a string after the printed output. By default, it is `'\n'` (a newline character), which means the next output will appear on a new line. You can modify this to print everything on the same line or add any custom string.
 
@@ -33,7 +33,7 @@ print("Hello", end=" ")
 print("world!")  # Output: Hello world!
 ```
 
-#### **f-strings (Formatted Strings)**
+#### f-strings (Formatted Strings)
 
 - f-strings (formatted string literals) allow embedding expressions inside string literals using curly braces `{}`. Introduced in Python 3.6, f-strings provide an easy and efficient way to embed variable values into strings.
 
@@ -53,7 +53,7 @@ print(f"Pi to 2 decimal places: {pi:.2f}")  # Output: Pi to 2 decimal places: 3.
 
 ---
 
-## **Input()**
+## Input()
 
 The `input()` function is used to take input from the user via the console. It always returns a string, so if you need a different data type, you'll need to explicitly cast the value.
 
@@ -63,7 +63,7 @@ user_input = input("Prompt message: ")
 
 - **Prompt message**: A message that is displayed to the user before waiting for input.
 
-### **Getting Multiple Inputs**
+### Getting Multiple Inputs
 
 You can get multiple inputs from the user using `split()` to split the input string into a list based on a delimiter.
 
@@ -75,7 +75,7 @@ print(f"Name: {name}, Age: {age}")
 
 In this case, the user would input a string like `Alice 25`, and the values would be split into the `name` and `age` variables.
 
-### **Type Casting**
+### Type Casting
 
 Since `input()` always returns a string, you might need to cast the input to another data type (like `int`, `float`, etc.).
 
@@ -90,7 +90,7 @@ Similarly, for floating-point numbers:
 height = float(input("Enter your height in meters: "))  # Convert to float
 ```
 
-### **Using `eval()`**
+### Using `eval()`
 
 The `eval()` function can evaluate a string as a Python expression. It allows you to execute more complex expressions or mathematical formulas input by the user. Be cautious when using `eval()` since it can execute arbitrary code, which may be unsafe if you're not in control of the input.
 
@@ -103,11 +103,11 @@ If the user enters `5 + 3`, the output would be `The result is: 8`.
 
 ---
 
-## **Command-Line Arguments**
+## Command-Line Arguments
 
 Python allows you to pass command-line arguments to your script, which can be accessed using the `sys.argv` list. This is useful for passing configuration or input data to your program when running it from the command line.
 
-### **Using `sys.argv`**
+### Using `sys.argv`
 
 1. **Importing sys**: To use `sys.argv`, you need to import the `sys` module.
 
@@ -124,7 +124,7 @@ if len(sys.argv) > 1:
     print(f"First argument: {sys.argv[1]}")
 ```
 
-### **Command-Line Argument Example:**
+### Command-Line Argument Example:
 
 Run the Python script from the terminal:
 
@@ -138,7 +138,7 @@ Arguments passed to the script: ['script.py', 'arg1', 'arg2', 'arg3']
 First argument: arg1
 ```
 
-### **`len(sys.argv)`**
+### `len(sys.argv)`
 
 `len(sys.argv)` returns the number of arguments passed to the script, including the script name. This can be used to check if enough arguments are provided.
 
