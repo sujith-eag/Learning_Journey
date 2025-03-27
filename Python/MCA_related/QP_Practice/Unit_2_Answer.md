@@ -1,22 +1,111 @@
 
+
 ## String
 
-What is a string? Discuss the different ways of representing a string in Python.
+##### What is a string? Discuss the different ways of representing a string in Python.
+
+A **string** is a sequence of characters, enclosed in either single quotes (`'`) or double quotes (`"`), or triple quotes (`'''` or `"""`) for multi-line strings.
+
+- **Single quotes**: 
+```python
+# single quotes
+s1 = 'Hello'
+
+# Double quotes
+s2 = "World"
+
+#Triple quotes (for multi-line strings): 
+s3 = '''Hello
+World
+with three lines'''
 
 
-Explain the use of join() and split() string methods with examples. What does it mean strings are immutable? Explain with an example.
+# String concatenation
+full_string = "Hello" + " " + "World"  
+# Hello World
+```
 
 
-Explain the use of join() and split() string methods with examples. What does it mean strings are immutable? Explain with an example.
+##### What do you mean by mutable and immutable data structures? Explain with examples.
+
+**Mutable Data Structures:** can be modified or changed after creation. In Python, lists, dictionaries, and sets are mutable. This means we can change, add, or remove elements from these data structures without creating a new object.
+
+```python
+lst = [1, 2, 3]
+lst[0] = 4  # Modify an element
+lst.append(5)  # Add an element
+print(lst)  # Output: [4, 2, 3, 5]
+```
+
+**Immutable Data Structures:** cannot be changed after they are created. In Python, tuples and strings are immutable. Once created, they cannot be modified or changed. Changes will create a new object.
+
+```python
+tup = (1, 2, 3)
+tup[0] = 4  
+# TypeError: 'tuple' object does not support item assignment
 
 
-What do you mean by mutable and immutable data structures? Explain with examples.
+str1 = "hello"
+str1[0] = "H"  
+# TypeError: 'str' object does not support item assignment
+```
+
+___
 
 
-Demonstrate slicing on strings. Also explain the use of join() and split() string methods with examples.
+##### Demonstrate slicing on strings. Also explain the use of join() and split() string methods with examples.
+
+* Explain the use of join() and split() string methods with examples. What does it mean strings are immutable? Explain with an example.
+
+**Answer :**
+
+**Slicing** allows us to extract a portion of a string.
+```python
+s = "Hello, World!"
+print(s[0:5])  # Output: Hello
+print(s[7:])   # Output: World!
+print(s[:5])   # Output: Hello
+print(s[-1])   # Output: !
+```
+
+**`join()`**: Combines elements of an iterable (list, tuple) into a single string, using the string as a separator.
+```python
+words = ["Python", "is", "fun"]
+result = " ".join(words)
+
+print(result)  
+# Output: Python is fun
+```
+
+**`split()`**: Divides a string into a list of substrings based on a delimiter.
+```python
+sentence = "Python is fun"
+words = sentence.split()  
+# Splits by spaces by default
+print(words)  
+# Output: ['Python', 'is', 'fun']
 
 
-Develop a python program to find whether the given string is palindrome or not.
+sentence = "apple,orange,banana"
+fruits = sentence.split(",")  
+# Splits by comma
+print(fruits)  
+# Output: ['apple', 'orange', 'banana']
+  ```
+
+
+
+
+
+
+##### Develop a python program to find whether the given string is palindrome or not.
+
+```python
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not palindrome")
+```
 
 
 Assume that the name t is assigned a value ‘Programming with Python’ what will be the output when we execute the following commands and explain.
@@ -35,45 +124,117 @@ t[-4:1:-4], t[:-3]
 Write a python program to count number of vowels and consonants, identify numbers, uppercase letters, lowercase letters and special characters in a given string.
 
 
+##### Program to write third person singular form verb
+
 The third person singular verb form in English is distinguished by the suffix -s, which is added to the stem of the infinitive form: run -> runs. A simple set of rules can be given as follows:
 * If the verb ends in y, remove it and add ies
 * If the verb ends in o, ch, s, sh, x or z, add es
 * By default just add s
 Develop a Python Script for the rules above
 
+**Answer :**
 
-Predict the output of the following and justify your answer:
+Logic is to check the last letters using `endswith()` method and since string is immutable, the value is changed by taking slice to remove last letter and concatenating with the plural letters.
+
+```python
+def third_person_singular(verb):
+    if verb.endswith('y'):
+        return verb[:-1] + 'ies'
+    elif verb.endswith(('o', 'ch', 's', 'sh', 'x', 'z')):
+        return verb + 'es'
+    else:
+        return verb + 's'
+
+print(third_person_singular("play"))   # Output: plays
+print(third_person_singular("go"))     # Output: goes
+print(third_person_singular("brush"))  # Output: brushes
+print(third_person_singular("fly"))    # Output: flies
+```
+
+
+___
+##### Predict the output of the following and justify your answer:
 ```
 i)
 S="Vishweswaraiah"
 print(s[4:])
 print(s[:5])
 
+weswaraiah  
+# from index 4 to end
+
+Vishw   
+# from beginning, to 4th, excluding 5th
+```
+
+```
 ii)
 str1 = "Bangalore"
 str1[1] = "e"
 str1[6] = str1[8] = "u"
 print(str1)
 
+# TypeError: 'str' does not support assignment
+```
+
+
+```
 iii)
 a = -45
 print(--a)
 
+# -45
+# Double negation gets same value
+```
+
+```
 iv) a, b, c = True, False, False
 if a or b and c:
 	print "MSRIT"
 else:
 	print "RNSIT"
+
+# MSRIT
 ```
+The condition `a or b and c` is evaluated as `True or (False and False)`, which is `True`. Hence, the `if` condition is `True`.
+
 
 ____
 
 ## Tuples
 
 
-List and describe any five methods on tuples.
+##### List and describe any five methods on tuples.
 
 List and describe any five functions to operate Tuples.
+
+**Answer :**
+
+Although tuples are immutable and cannot be modified, there are few methods that can be useful:
+
+`len()` :  Returns the number of elements in the tuple.
+
+count(x)  : Returns the number of occurrences of the element `x` in the tuple.
+
+index(x)  : Returns the index of the first occurrence of element `x` in the tuple. Raises a `ValueError` if `x` is not found.
+
+`max()` and  `min()` : Returns the largest and smallest element in the tuple. The elements must be comparable.
+
+```python
+my_tuple = (1, 2, 3, 2, 1, 2)
+
+print(len(my_tuple))  # Output: 6
+
+print(my_tuple.count(2)) # Output: 3
+
+print(my_tuple.index(3)) # Output: 2
+
+print(max(my_tuple))  # Output: 3
+
+print(min(my_tuple))  # Output: 1
+```
+
+
 
 
 Develop Python script that takes a list of words and returns the length of the longest one using tuples.
@@ -84,7 +245,7 @@ Develop Python script that takes a list of words and returns the length of the l
 Implement a program that prompts the user to enter a tuple of integers. Calculate and print the sum of all integers in the tuple.
 
 
-Store the following data in a list, a tuple, and a dictionary:
+##### Store the following data in a list, a tuple, and a dictionary:
 ```
 India 91
 USA   1
@@ -92,41 +253,213 @@ UK    41
 Japan 9
 ```
 
+```python
+# List of tuples
+data_list = [("India", 91), ("USA", 1), ("UK", 41), ("Japan", 9)]
+```
+
+```python
+# Tuple of tuples
+data_tuple = (("India", 91), ("USA", 1), ("UK", 41), ("Japan", 9))
+```
+
+```python
+# Dictionary
+data_dict = {"India": 91, "USA": 1, "UK": 41, "Japan": 9}
+```
+
+
 ___
 
 ## Lists
 
 How do you demonstrate that lists are equal and identical?
 
-When you use the + operator to concatenate two lists, does it make a copy or a reference of the arguments? Explain with the help of an example.
+##### When you use the + operator to concatenate two lists, does it make a copy or a reference of the arguments? Explain with the help of an example.
+
+When `+` operator is used to concatenate two lists in Python, it creates a new list that contains the elements from both lists. 
+
+It does not modify the original lists. This means it makes a copy of the elements from the original lists and combines them into a new list.
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+new_list = list1 + list2  # Creates a new list
+
+print("Original list1:", list1)  # Output: [1, 2, 3]
+print("Original list2:", list2)  # Output: [4, 5, 6]
+print("New list:", new_list)     # Output: [1, 2, 3, 4, 5, 6]
+```
+
+____
 
 
 Explain the purpose of slicing in Python lists. Provide at least 4 examples to demonstrate slicing operations.
 
-Explain the usage any 5 list operating methods with examples. 
+##### Explain the usage any 5 list operating methods with examples. 
 
-Demonstrate any four functions of lists with the help of an examples.
+* Demonstrate any four functions of lists with the help of an examples.
+* Demonstrate any five list functions with the help of an example.
+* Exemplify built – in list methods
+* Explain the usage of the following methods with examples: i) extend()  ii) pop()  iii) sort()  iv) split()  v) join()
 
-Demonstrate any five list functions with the help of an example.
+**Answer :**
 
-Exemplify built – in list methods
+1. append()   : Adds a single element to the end of the list.
+```python
+my_list = [1, 2, 3]
+my_list.append(4)
 
-Explain the usage of the following methods with examples:
-i) extend()  ii) pop()  iii) sort()  iv) split()  v) join()
+print(my_list)  
+# Output: [1, 2, 3, 4]
+```
 
-Explain the usage of the following methods with examples:
-(i) extend()  (ii) pop()   (iii) sort()  (iv) split()  (v) join()
+2. insert()  : Inserts an element at a specific index.
+```python
+my_list = [1, 2, 3]
+my_list.insert(1, 4)  # Insert 4 at index 1
 
+print(my_list)  
+# Output: [1, 4, 2, 3]
+```
+
+3. remove()  : Removes the first occurrence of an element from the list.
+```python
+my_list = [1, 2, 3, 2]
+my_list.remove(2)
+
+print(my_list)  
+# Output: [1, 3, 2]
+```
+
+4. pop()  : Removes and returns the element at the specified index (or the last element if no index is provided).
+```python
+list1 = [10, 20, 30, 40]
+
+removed_item = my_list.pop(1)   # Remove and return index 1
+print(removed_item)
+# Output: 20
+
+my_list.pop()  # removed last element
+print(my_list)  
+# Output: [10, 30]
+```
+
+5. `extend()` method is used to add all elements of an iterable (like a list, tuple, set, etc.) to the end of a list. 
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+list1.extend(list2)  
+# Adding elements of list2 to list1
+
+print(list1)  
+# Output: [1, 2, 3, 4, 5, 6]
+```
+
+6. `sort()` method is used to sort the elements of a list in ascending order by default. You can also pass a `reverse=True` argument to sort in descending order.
+```python
+list1 = [3, 1, 4, 2]
+list1.sort()
+print(list1)
+# [1, 2, 3, 4]
+
+# Sort in descending order
+list1.sort(reverse=True)
+print(list1)  
+# [4, 3, 2, 1]
+```
+
+The sort() changes the original list in place so does not return the sorted value directly to be printed.
+
+7. `split()` method splits a string into a list of substrings based on a specified delimiter. If no delimiter is provided, it splits the string at any whitespace by default.
+
+```python
+sentence = "Hello World Python"
+words = sentence.split()
+# Default delimiter is space
+print(words)  
+# ['Hello', 'World', 'Python']
+
+# Using a custom delimiter
+date = "2025-01-25"
+parts = date.split('-')
+print(parts)  
+# Output: ['2025', '01', '25']
+```
+
+8. `join()` method is used to join elements of an iterable (like a list, tuple) into a single string, using the string that `join()` is called on as a separator.
+
+```python
+
+words = ['Hello', 'World', 'Python']
+sentence = ' '.join(words)
+print(sentence)  
+# Output: "Hello World Python"
+
+
+# Join elements with a hyphen
+sentence = '-'.join(words)
+print(sentence)  
+# Output: "Hello-World-Python"
+```
+
+
+____
 
 Differentiate between lists and tuples in Python. How to create nested lists? Demonstrate how to create and print a 3-dimensional matrix with lists.
 
 Develop a script for filtering odd and even numbers into two separate lists from a list of numbers.
 
-Develop a python program to print unique elements in a list.
+##### Develop a python program to print unique elements in a list.
 
-Develop a python program to print unique elements in a list.
+Using Set to remove Duplicates (Shortcut)
+```python
+my_list = [1, 2, 3, 2, 4, 5, 1]
+unique_elements = set(my_list)
 
-Develop a Python code to extract the Even elements indices from the given list.
+print( list(unique_elements) )  
+# Output: [1, 2, 3, 4, 5]
+```
+
+Using Membership Check on List using for loop
+```python
+my_list = [1, 2, 3, 2, 4, 5, 1]
+
+unique = []
+
+for i in my_list:
+	if i in unique:
+		continue
+	else:
+		unique.append(i)
+
+print(unique)
+# Output: [1, 2, 3, 4, 5]
+```
+
+____
+
+##### Develop a Python code to extract the Even elements indices from the given list.
+
+```python
+def even_indices(numbers):
+    indices = []
+    for i in range(len(numbers)):
+        if numbers[i] % 2 == 0:
+            indices.append(i)
+            
+    return indices
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+even_indices_list = even_indices(numbers)
+
+print(f"Indices of even numbers: {even_indices_list}")
+```
+
 
 
 
@@ -150,11 +483,37 @@ What is the output when this list average_list is:
 (iv) 10000000000000000000000000000
 
 
-Consider the list `scores = [5, 4, 7, 3, 6, 2, 1]` and write the python instruction to perform the following operations:
+##### Consider the list 
+`scores = [5, 4, 7, 3, 6, 2, 1]` and write the python instruction to perform the following operations:
 i) Insert an element 9 at the beginning of the list.
 ii) Insert an element 8 at the index position 3 of the list.
 iii) Delete an element at the end of the list.
 iv) Delete an element at the index position 3.
+
+```python
+scores = [5, 4, 7, 3, 6, 2, 1]
+
+# 1
+scores.insert(0, 9)  # At 0 index insert 9
+print(scores)  
+# Output: [9, 5, 4, 7, 3, 6, 2, 1]
+
+# 2
+scores.insert(3, 8)  # At index 3 Insert 8
+print(scores)  
+# Output: [9, 5, 4, 8, 7, 3, 6, 2, 1]
+
+# 3
+scores.pop()  # Delete last element
+print(scores)  
+# Output: [9, 5, 4, 8, 7, 3, 6, 2]
+
+# 4
+del scores[3]  # Delete element at index 3
+print(scores)  
+# Output: [9, 5, 4, 7, 3, 6, 2]
+```
+
 
 
 Predict the output of the following and justify your answer:
@@ -222,7 +581,7 @@ else:
 ```
 
 
-Write the evaluation result of the following expressions:
+##### Write the evaluation result of the following expressions:
 ```
 i) not “True”
 ii) – 22 % 5
@@ -230,7 +589,15 @@ iii) “99” + 1
 iv) dir(“python”) v) ['H', 'He', 'Li'] + 'Be'
 ```
 
+`> not "True"`  Output: `False`,  Non-empty strings are considered `True`. The `not` operator inverts the boolean value, so `not "True"` returns `False`.
 
+`> -22 % 5`  Output: `3` , Modulus operator `%` returns the remainder. The result of `-22 / 5` is `-4` with a remainder of `3`, so `-22 % 5` is `3`.
+
+`> "99" + 1`   Output:  Raises a `TypeError`,  Cannot concatenate a string (`"99"`) with an integer (`1`). Both operands to be of the same type for concatenation.
+
+`> dir("python")`,  Output: A list of attributes and methods associated with string objects.
+
+`> ['H', 'He', 'Li'] + 'Be'` , Output: This will raise a `TypeError`, Cannot concatenate a list with a string directly. 
 
 
 ___
@@ -240,43 +607,250 @@ ___
 
 Discuss the significance of dictionary. Develop a python program to simulate language dictionary.
 
-Implement a telephone directory using Dictionaries.
+##### Demonstrate the creation and operation of dictionaries in Python.
 
+* How do you create and access dictionaries in Python? List and describe any 5 methods on dictionaries.
+* List and exemplify the built – in dictionary methods.
+* Demonstrate any three functions of dictionaries in python with examples.
+* How do you create and access dictionaries in Python? Explain the operations `len()`, `copy()`, `clear()`, `items()` on dictionaries.
+* Demonstrate how dictionaries are created and used in Python. List and describe any five methods on dictionaries.
+* Demonstrate the usage of update( ) function to update one dictionary with another dictionary.
 
-Demonstrate the creation and operation of dictionaries in Python.
+**Answer :**
 
-How do you create and access dictionaries in Python? List and describe any 5 methods on dictionaries.
+Dictionaries are created using curly braces `{}` or the `dict()` constructor. A dictionary stores key-value pairs where each key is unique.
+Dictionary values are accessed using keys in square brackets `[]`.
 
-List and exemplify the built – in dictionary methods.
+```python
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
 
-Demonstrate any three functions of dictionaries in python with examples.
+my_dict = dict(name='Alice', age=25, city='New York')
 
-How do you create and access dictionaries in Python? Explain the operations `len()`, `copy()`, `clear()`, `items()` on dictionaries.
+print( my_dict["name"] )
+# Alice
+```
 
-Demonstrate how dictionaries are created and used in Python. List and describe any five methods on dictionaries.
+**Dictionary Operations:**
 
-How do you create and access dictionaries in Python? Explain the operations len(), copy(), clear(), items() on dictionaries.
+`len()`  : Returns the number of key-value pairs in the dictionary.
+```python
+my_dict = {'a': 1, 'b': 2}
 
+print(len(my_dict))  
+# Output: 2
+```
 
-Demonstrate the usage of update( ) function to update one dictionary with another dictionary.
+`items()` :  Returns a view object that displays a list of tuple pairs (key, value) in the dictionary.
+```python
+my_dict = {'a': 1, 'b': 2}
 
+print(my_dict.items())  
+# dict_items([('a', 1), ('b', 2)])
+```
 
-Use the for loop and give example for:
+`copy()` : Returns a shallow copy of the dictionary.
+```python
+copied_dict = my_dict.copy()
+
+print(copied_dict)  
+# {'a': 1, 'b': 2}
+```
+
+`clear()` :  Removes all key-value pairs from the dictionary.
+```python
+my_dict.clear()
+
+print(my_dict)  
+# Output: {}
+```
+
+`update()` :  Updates the dictionary with elements from another dictionary or iterable of key-value pairs.
+```python
+my_dict = {'a': 1, 'b': 2}
+my_dict.update({'b': 3, 'c': 4})
+
+print(my_dict)  
+# {'a': 1, 'b': 3, 'c': 4}
+```
+
+get()  :  Returns the value for a given key. If the key doesn't exist, it returns `None` or a specified default value.
+```python
+my_dict = {'a': 1, 'b': 2}
+
+print(my_dict.get('a'))  
+# Output: 1
+
+print(my_dict.get('c', 'Not found'))  
+# Output: Not found
+```
+
+pop()  : Removes and returns the value associated with a given key.
+```python
+my_dict = {'a': 1, 'b': 2}
+popped_value = my_dict.pop('b')
+
+print(popped_value)  
+# Output: 2
+
+print(my_dict)
+# Output: {'a': 1}
+```
+
+____
+
+##### Use the for loop and give example for:
 i) Processing characters in Strings
 ii) Displaying values and keys of a dictionary
 iii) Looping over List of Lists.
 
+**Answer :**
 
-Develop a Python program that counts the number of occurrences of a letter in a string, using dictionaries.
+i) Processing characters in Strings
+```python
+string = "Hello"
 
-Develop a python program to count the frequency of words in a string using dictionary.
+for char in string:
+    print(char)
+```
 
-Develop a python program to count the frequency of word in a string using dictionary.
+```
+H
+e
+l
+l
+o
+```
+
+ii) Displaying values and keys of a dictionary
+```python
+students = {"Alice": 85, "Bob": 90, "Charlie": 78}
+
+for name, grade in students.items():
+    print(f"Student: {name}, Grade: {grade}")
+```
+
+```
+Student: Alice, Grade: 85
+Student: Bob, Grade: 90
+Student: Charlie, Grade: 78
+```
+
+iii) Looping over List of Lists.
+```python
+list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+for lis in list_of_lists:
+    for item in lis:
+        print(item, end=" ")
+    print()
+```
+
+```
+1 2 3 
+4 5 6 
+7 8 9
+```
+
+
+___
+
+##### Develop a Python program that counts the number of occurrences of a letter in a string, using dictionaries.
+
+**Answer :**
+
+Logic is to create a new Dictionary Key if the letter is not in dictionary and to increment the Dictionary value of that key.
+```python
+def count_unique(string):
+    letter_count = {}
+    for letter in string:
+        if letter in letter_count:
+            letter_count[letter] += 1
+        else:
+            letter_count[letter] = 1
+    return letter_count
+
+
+input_string = "hello world"
+result = count_unique(input_string)
+
+print(result)  
+# {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
+```
+
+____
+
+##### Develop a python program to count the frequency of words in a string using dictionary.
+
+Logic is to split strings into words first and then find unique entries similar to above program.
+```python
+def word_frequency(text):
+    words = text.split()
+    freq = {}
+    
+    for word in words:
+        if word in freq:
+            freq[word] += 1
+        else:
+            freq[word] = 1
+    return freq
+
+text = "hello world hello"
+print(word_frequency(text))  
+# Output: {'hello': 2, 'world': 1}
+```
+
+____
+
+##### Write a Python program to create a dictionary from a list where keys are elements and values are their frequencies.
+
+Same logic as above program to find unique entries
+```python
+def create_frequency_dict(lst):
+    frequency_dict = {}
+    for item in lst:
+        if item in frequency_dict:
+            frequency_dict[item] += 1
+        else:
+            frequency_dict[item] = 1
+    return frequency_dict
+
+my_list = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+frequency = create_frequency_dict(my_list)
+
+print(frequency)  
+# {'apple': 3, 'banana': 2, 'orange': 1}
+```
+
+
+___
+
+##### Implement a telephone directory using Dictionaries.
+
+```python
+telephone_directory = {}
+
+telephone_directory['John'] = '123-456-7890'
+telephone_directory['Alice'] = '987-654-3210'
+telephone_directory['Bob'] = '555-123-4567'
+
+print(telephone_directory)
+
+# Accessing a number by name
+name = 'John'
+print(f"The number for {name} is {telephone_directory[name]}")  
+
+# The number for John is 123-456-7890
+```
+
+____
+
 
 Develop a python program for the following: Create a dictionary by asking the user to give the name and marks of 10 different students. Sort the dictionary created according to marks.
 
 
 Design a Python program to create a dictionary containing the names and ages of five people. Determine the name of the oldest person in the dictionary.
+
+
 
 ___
 ## Numpy

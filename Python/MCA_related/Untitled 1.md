@@ -1,28 +1,7 @@
 
-### 1. **User name check**
-
-```python
-uname = input("Enter your username: ")
-code = input("Enter your code: ")
-
-if code in uname:
-    print("Your code should not have your username.")
-```
-
 ---
 
-### 2. **Palindrome check**
-
-```python
-if s == s[::-1]:
-    print("Palindrome")
-else:
-    print("Not palindrome")
-```
-
----
-
-### 3. **String `split()` examples**
+### String `split()` examples
 
 ```python
 # Example 1

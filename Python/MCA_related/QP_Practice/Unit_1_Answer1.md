@@ -1,4 +1,5 @@
 
+
 #### What are identical objects and equivalent objects? Give examples.
 
 **Answer :**
@@ -320,21 +321,33 @@ ___
 #### Illustrate the different types of iterative statements available in Python.
 
 - `for` loop – Used to repeatedly execute a code block for a fixed number of times, often iterating over a sequence (like a list, tuple, string, range).
-- `while` loop – Repeats a block of code as long as a specified condition is true.
+
+Syntax:
+```python
+for item in iterable:
+	# block of code
+```
 
 ```python
 for i in [0, 1, 2]:
     print("Meow")
 
-
 # Iterates over a range of 3 numbers (0, 1, 2)
 for i in range(3):  
     print("Meow")
 
-
 # Sequence from 0 to n-1
 for i in range(0, n):  
     # Code to execute
+```
+
+
+`while` loop – Repeats a block of code as long as a specified condition is true, used when the number of iterations is not known.
+
+Syntax
+```python
+while condition:
+	# block of code
 ```
 
 ```python

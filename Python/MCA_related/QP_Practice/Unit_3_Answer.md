@@ -1,4 +1,83 @@
 
+## Variables
+
+What are DOC strings? Illustrate with an example.
+
+Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
+
+What are DOC strings?
+
+**Answer :**
+
+**DOC Strings**: Documentation strings (or docstrings) are used to document Python code. They are placed at the beginning of modules, functions, classes, or methods to describe their purpose. Docstrings are accessible via the `help()` function.
+```python
+def my_function():
+   """This function does nothing."""
+   pass
+```
+
+
+
+Illustrate the following with example: i) DOC strings ii) local and global variables iii) pass by value and pass by object reference in python iv) Variable length arguments.
+
+Illustrate the following with example:
+i) DOC strings ii) local and global variables iii) pass by reference and pass by value in python
+
+What is the significance of :  i) Local and global variables    ii) DOC Strings
+
+Demonstrate scope of the local and global variables.
+
+Explain the scope of global and local variables.
+
+Explain the scope of local and global variables.
+
+Write a Python program that defines both local and global variables and demonstrates their scope and usage. Explain briefly the difference between local and global variables in your program.
+
+**Answer :**
+
+**Local and Global Variables**: Local variables are used within a function or block, whereas global variables are accessible across the entire program. Local variables have function-specific scope, while global variables are accessible throughout the program.
+
+**Local Variable**: A variable defined inside a function or block, accessible only within that function.
+```python
+def my_function():
+   x = 10  # Local variable
+   print(x)  # Can access x here
+
+my_function()
+# print(x)  # This would raise an error as x is local to my_function
+```
+
+**Global Variable**: A variable defined outside any function, accessible throughout the program.
+```python
+x = 20  # Global variable
+
+def my_function():
+   print(x)  # Can access global variable x
+
+my_function()  # Output: 20
+print(x)  # Output: 20
+```
+
+
+
+What is LEGB rule? Explain LEGB rule with an example.
+
+What is LEGB rule? Apply LEGB rule for the following code and explain what is happening in this code. Also write the output.
+```
+a=7
+def fun(b):
+	c=17
+	def morefun(d):
+		e=12
+		print(a+b+c+d+e)
+	morefun(3)
+			fun(5)
+```
+
+
+___
+
+
 ## Functions, Arguments
 
 Illustrate `*args` and `**kwargs` parameters in Python programming language with an example.
@@ -57,6 +136,40 @@ Develop a python function to return the number of palindrome words in a line of 
 Write a python function to check whether the given string is palindrome or not Function should take a string as argument and return Boolean value. Function should take “MADAM” as default, argument.
 
 
+##### Write a Program to Reverse a Number, Count the Digits, and Calculate the Sum of Digits in the Reversed Number by taking input from the user
+
+```python
+def reverse_and_calculate(num):
+    rev_num = 0
+    sum_digits = 0
+    count_digits = 0
+    
+    while num > 0:
+        digit = num % 10  # Get the last digit
+        rev_num = rev_num * 10 + digit
+        sum_digits += digit  # Add the digit to sum
+        count_digits += 1  # Increment the digit count
+        num //= 10         # Remove the last digit
+    
+    return rev_num, sum_digits, count_digits
+
+
+num = int(input("Enter a number: "))
+
+rev_num, sum_digits, count_digits = reverse_and_calculate(num)
+
+print(f"Reversed Number: {reversed_num}")
+print(f"Sum of Digits in Reversed Number: {sum_digits}")
+print(f"Number of Digits: {count_digits}")
+```
+
+```
+Enter a number: 1234
+
+Reversed Number: 4321
+Sum of Digits in Reversed Number: 10
+Number of Digits: 4
+```
 
 
 Define a Python function `isAscending(L)` that returns True if the input list L is in ascending order, otherwise returns False. For empty list, it should return True.
@@ -70,8 +183,25 @@ Input: `list3=[1,2,3,4,5], list4=[6,7,8,9])`
 Output: None.
 
 
-Develop a Python program that prints the intersection of two lists. (without using list comprehension/sets).
+##### Develop a Python program that prints the intersection of two lists. (without using list comprehension/sets).
 
+Logic is, to find an element in both element using membership operator and adding to intersection list if it is not already in that list.
+```python
+def intersection_of_lists(list1, list2):
+    intersection = []
+    for item in list1:
+        if item in list2 and item not in intersection:
+            intersection.append(item)
+    return intersection
+
+
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+result = intersection_of_lists(list1, list2)
+
+print(result)  
+# Output: [3, 4]
+```
 
 Define a function that takes a positive integer n, and then produces n lines of output in the following pattern,
 ```
@@ -186,48 +316,6 @@ else:
 
 ___
 
-## Variables
-
-What are DOC strings? Illustrate with an example.
-
-Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
-
-What are DOC strings?
-
-Illustrate the following with example: i) DOC strings ii) local and global variables iii) pass by value and pass by object reference in python iv) Variable length arguments.
-
-Illustrate the following with example:
-i) DOC strings ii) local and global variables iii) pass by reference and pass by value in python
-
-What is the significance of :  i) Local and global variables    ii) DOC Strings
-
-Demonstrate scope of the local and global variables.
-
-Explain the scope of global and local variables.
-
-Explain the scope of local and global variables.
-
-Write a Python program that defines both local and global variables and demonstrates their scope and usage. Explain briefly the difference between local and global variables in your program.
-
-
-
-
-What is LEGB rule? Explain LEGB rule with an example.
-
-What is LEGB rule? Apply LEGB rule for the following code and explain what is happening in this code. Also write the output.
-```
-a=7
-def fun(b):
-	c=17
-	def morefun(d):
-		e=12
-		print(a+b+c+d+e)
-	morefun(3)
-			fun(5)
-```
-
-
-___
 
 ## Recursion
 
@@ -300,8 +388,48 @@ Explain list comprehension with example. Also develop a python script to print p
 
 
 
+- **`map()`** applies a function to every item in an iterable (like a list) and returns a new iterable (map object).
+ ```python
+ nums = [1, 2, 3, 4]
+ result = map(lambda x: x ** 2, nums)
+ print(list(result))  # Output: [1, 4, 9, 16]
+ ```
+ 
+- **`reduce()`** applies a function cumulatively to the items of an iterable, reducing it to a single value.
+ ```python
+ from functools import reduce
+ nums = [1, 2
 
-Create a list of even numbers from 1 to 10 using the loop and filter method.
+, 3, 4]
+ result = reduce(lambda x, y: x + y, nums)
+ print(result)  # Output: 10
+ ```
+
+
+
+
+
+##### Create a list of even numbers from 1 to 10 using the loop and filter method.
+
+Using for Loop
+```python
+even_numbers = []
+for num in range(1, 11):
+    if num % 2 == 0:
+        even_numbers.append(num)
+
+print(even_numbers)  
+# Output: [2, 4, 6, 8, 10]
+```
+
+Using the `filter()` method:
+```python
+even_numbers = list(filter(lambda x: x % 2 == 0, range(1, 11)))
+
+print(even_numbers)  
+# Output: [2, 4, 6, 8, 10]
+```
+
 
 
 Write a lambda function for each of the following: -
@@ -318,7 +446,34 @@ ii) Take one argument and return true if it is odd
 iii) Take a list as argument and return sum of the elements of the list
 
 
-Write a program using map function to convert the temperature from Celsius to Fahrenheit and vice versa.
+##### Write a program using map function to convert the temperature from Celsius to Fahrenheit and vice versa.
+
+To convert Celsius to Fahrenheit, we use the formula:  
+`f = (c * 9/5) + 32`
+
+```python
+# Celsius to Fahrenheit table
+print("Celsius\tFahrenheit")
+for c in range(0, 101, 10):
+    f = (c * 9/5) + 32
+    print(f"{c}\t\t{f:.2f}")
+```
+
+```
+Celsius	Fahrenheit
+0		32.00
+10		50.00
+20		68.00
+30		86.00
+40		104.00
+50		122.00
+60		140.00
+70		158.00
+80		176.00
+90		194.00
+100		212.00
+```
+
 
 Analyze and write the output for the following code snippets:
 ```

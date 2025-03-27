@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/MCA_related/Untitled 3.md",
+                "file": "Python/MCA_related/QP_Practice/Unit_1_Answer2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -29,7 +29,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled 3"
+              "title": "Unit_1_Answer2"
             }
           }
         ]
@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/MCA_related/QP_Practice/Unit_1_Answer1.md",
+                "file": "Python/MCA_related/Untitled 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -60,7 +60,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_1_Answer1"
+              "title": "Untitled 1"
             }
           }
         ]
@@ -207,21 +207,21 @@
   },
   "active": "a5ee09af19b30648",
   "lastOpenFiles": [
-    "Python/MCA_related/Untitled 4.md",
-    "Python/MCA_related/QP_Practice/Unit_1_Answer1.md",
-    "Python/MCA_related/QP_Practice/Unit_1_Answer2.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_4_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_5.md",
-    "Python/MCA_related/QP_Practice/Unit_4.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_3.md",
     "Python/MCA_related/QP_Practice/Unit_2_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_2.md",
-    "Python/MCA_related/Untitled 3.md",
-    "Python/MCA_related/Untitled 2.md",
     "Python/MCA_related/Untitled 1.md",
     "Python/MCA_related/Untitled.md",
+    "Python/MCA_related/Untitled 2.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answer2.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answer1.md",
+    "Python/MCA_related/Untitled 3.md",
+    "Python/MCA_related/QP_Practice/Unit_3_Answer.md",
+    "Python/MCA_related/Untitled 4.md",
+    "Python/MCA_related/QP_Practice/Unit_4.md",
+    "Python/MCA_related/QP_Practice/Unit_4_Answer.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
+    "Python/MCA_related/QP_Practice/Unit_5.md",
+    "Python/MCA_related/QP_Practice/Unit_3.md",
+    "Python/MCA_related/QP_Practice/Unit_2.md",
     "Python/MCA_related/QP_Practice/Unit_1.md",
     "Python/4_Control_Statements/4_for_while_loops.md",
     "Site Structure.md",

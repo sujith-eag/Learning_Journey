@@ -50,6 +50,29 @@ ___
 (22, 64)
 ```
 
+As a function, Complete Program
+```python
+def sum_even_odd(numbers):
+    even_sum = 0
+    odd_sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+        else:
+            odd_sum += num
+            
+	return even_sum, odd_sum
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+even_sum, odd_sum = sum_even_odd(numbers)
+
+print(f"Sum of even numbers: {even_sum}")
+print(f"Sum of odd numbers: {odd_sum}")
+```
+
+
 ___
 
 ##### Develop a python program to sum the digits of a given number.
@@ -270,8 +293,6 @@ ___
 ___
 
 Develop a Python program to find roots of a quadratic equation with necessary validation.
-
-
 
 Using for loop, print of table of Celsius/Fahrenheit equivalences. Let c be the Celsius temperatures, ranging from 0 to 100. For each value of c, print the corresponding Fahrenheit temperature.
 
