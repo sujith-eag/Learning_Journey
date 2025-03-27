@@ -1,11 +1,10 @@
 
 ## Variables
 
-What are DOC strings? Illustrate with an example.
+##### What are DOC strings? Illustrate with an example.
 
-Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
-
-What are DOC strings?
+* Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
+* What are DOC strings?
 
 **Answer :**
 
@@ -16,22 +15,16 @@ def my_function():
    pass
 ```
 
+___
 
+##### Demonstrate scope of the local and global variables.
 
-Illustrate the following with example: i) DOC strings ii) local and global variables iii) pass by value and pass by object reference in python iv) Variable length arguments.
-
-Illustrate the following with example:
-i) DOC strings ii) local and global variables iii) pass by reference and pass by value in python
-
-What is the significance of :  i) Local and global variables    ii) DOC Strings
-
-Demonstrate scope of the local and global variables.
-
-Explain the scope of global and local variables.
-
-Explain the scope of local and global variables.
-
-Write a Python program that defines both local and global variables and demonstrates their scope and usage. Explain briefly the difference between local and global variables in your program.
+* Illustrate the following with example: i) DOC strings ii) local and global variables iii) pass by value and pass by object reference in python iv) Variable length arguments.
+* Illustrate the following with example: i) DOC strings ii) local and global variables iii) pass by reference and pass by value in python
+* What is the significance of :  i) Local and global variables    ii) DOC Strings
+* Explain the scope of global and local variables.
+* Explain the scope of local and global variables.
+* Write a Python program that defines both local and global variables and demonstrates their scope and usage. Explain briefly the difference between local and global variables in your program.
 
 **Answer :**
 
@@ -59,11 +52,12 @@ print(x)  # Output: 20
 ```
 
 
+___
 
-What is LEGB rule? Explain LEGB rule with an example.
+##### What is LEGB rule? Explain LEGB rule with an example.
 
 What is LEGB rule? Apply LEGB rule for the following code and explain what is happening in this code. Also write the output.
-```
+```python
 a=7
 def fun(b):
 	c=17
@@ -71,7 +65,7 @@ def fun(b):
 		e=12
 		print(a+b+c+d+e)
 	morefun(3)
-			fun(5)
+fun(5)
 ```
 
 
@@ -181,6 +175,14 @@ Input: `list1=[1,2,3,4,5], list2=[5,6,7,8,9])`
 Output: True
 Input: `list3=[1,2,3,4,5], list4=[6,7,8,9])`
 Output: None.
+
+
+Write a Python function named average_list that takes a list of numbers as input and returns their average. Additionally, include a condition to ensure that the input is a list of numeric values only that are >=1).
+What is the output when this list average_list is:
+(i) An empty list
+(ii) a list containing non-numeric values
+(iii) -1
+(iv) 10000000000000000000000000000
 
 
 ##### Develop a Python program that prints the intersection of two lists. (without using list comprehension/sets).
@@ -315,6 +317,7 @@ else:
 
 
 ___
+
 
 
 ## Recursion

@@ -1,31 +1,31 @@
 
 #### SEMESTER END EXAMINATIONS – JUNE 2024
 
-1. Write a Python function named average_list that takes a list of numbers as input and returns their average. Additionally, include a condition to ensure that the input is a list of numeric values only that are >=1).
+Write a Python function named average_list that takes a list of numbers as input and returns their average. Additionally, include a condition to ensure that the input is a list of numeric values only that are >=1).
 What is the output when this list average_list is:
 (i) An empty list
 (ii) a list containing non-numeric values
 (iii) -1
 (iv) 10000000000000000000000000000
 
-2. Implement a program that prompts the user to enter a tuple of integers. Calculate and print the sum of all integers in the tuple.
+Implement a program that prompts the user to enter a tuple of integers. Calculate and print the sum of all integers in the tuple.
 
-3. Explain the purpose of slicing in Python lists. Provide at least 4 examples to demonstrate slicing operations.
+Explain the purpose of slicing in Python lists. Provide at least 4 examples to demonstrate slicing operations.
 
 ____
 
-4. Design a Python program to create a dictionary containing the names and ages of five people. Determine the name of the oldest person in the dictionary.
+Design a Python program to create a dictionary containing the names and ages of five people. Determine the name of the oldest person in the dictionary.
 
-5. Create a NumPy array of integers and perform the following operations:
+Create a NumPy array of integers and perform the following operations:
 i) Calculate the shape of the array.
 ii) Print a subset of the array using slicing.
 iii) Multiply all elements of the array by 2 and print the result.
 
 ___
 
-BACKLOG SUBJECT EXAMINATIONS – SEPTEMBER / OCTOBER 2023
+#### BACKLOG SUBJECT EXAMINATIONS – SEPTEMBER / OCTOBER 2023
 
-6. Consider the list sub1={ANM,Py,DS,ASE,Java,OOPS } perform the following operations and show the output
+Consider the list sub1={ANM,Py,DS,ASE,Java,OOPS } perform the following operations and show the output
 i) Insert the Sub AWP at the position 3
 ii) Insert the DMS at the position 2 from the last.
 iii) Return the list from the index position 1 to 5
@@ -35,15 +35,15 @@ vi) Print the list in the reverse order
 vii) Delete the element at the index position 6
 viii) Return the total elements in the list
 
-7. Write a python program to count number of ovels and consonants, identify numbers, uppercase letters, lowercase letters and special characters in a given string.
+Write a python program to count number of ovels and consonants, identify numbers, uppercase letters, lowercase letters and special characters in a given string.
 
-8.  Discuss the significance of dictionary. Develop a python program to simulate language dictionary.
+Discuss the significance of dictionary. Develop a python program to simulate language dictionary.
 
 ___
 
-9. Discuss the following with an example: i) Indexing ii) Splitting arrays iii) Shape and reshape.
+Discuss the following with an example: i) Indexing ii) Splitting arrays iii) Shape and reshape.
 
-10. Illustrate 2-D and 3-D array iterating with respect to numpy.
+Illustrate 2-D and 3-D array iterating with respect to numpy.
 
 ___
 
@@ -177,6 +177,7 @@ ___
 
 When you use the + operator to concatenate two lists, does it make a copy or a reference of the arguments? Explain with the help of an example.
 
+___
 
 #### SEMESTER END EXAMINATIONS – JUNE 2019
 
@@ -346,3 +347,4 @@ ____
 #### SUPPLEMENTARY SEMESTER EXAMINATIONS – AUGUST 2017
 
 
+____

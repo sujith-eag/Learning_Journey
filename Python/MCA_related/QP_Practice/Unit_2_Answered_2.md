@@ -1,281 +1,37 @@
 
-
-## String
-
-##### What is a string? Discuss the different ways of representing a string in Python.
-
-A **string** is a sequence of characters, enclosed in either single quotes (`'`) or double quotes (`"`), or triple quotes (`'''` or `"""`) for multi-line strings.
-
-- **Single quotes**: 
-```python
-# single quotes
-s1 = 'Hello'
-
-# Double quotes
-s2 = "World"
-
-#Triple quotes (for multi-line strings): 
-s3 = '''Hello
-World
-with three lines'''
-
-
-# String concatenation
-full_string = "Hello" + " " + "World"  
-# Hello World
-```
-
-
-##### What do you mean by mutable and immutable data structures? Explain with examples.
-
-**Mutable Data Structures:** can be modified or changed after creation. In Python, lists, dictionaries, and sets are mutable. This means we can change, add, or remove elements from these data structures without creating a new object.
-
-```python
-lst = [1, 2, 3]
-lst[0] = 4  # Modify an element
-lst.append(5)  # Add an element
-print(lst)  # Output: [4, 2, 3, 5]
-```
-
-**Immutable Data Structures:** cannot be changed after they are created. In Python, tuples and strings are immutable. Once created, they cannot be modified or changed. Changes will create a new object.
-
-```python
-tup = (1, 2, 3)
-tup[0] = 4  
-# TypeError: 'tuple' object does not support item assignment
-
-
-str1 = "hello"
-str1[0] = "H"  
-# TypeError: 'str' object does not support item assignment
-```
-
-___
-
-
-##### Demonstrate slicing on strings. Also explain the use of join() and split() string methods with examples.
-
-* Explain the use of join() and split() string methods with examples. What does it mean strings are immutable? Explain with an example.
-
-**Answer :**
-
-**Slicing** allows us to extract a portion of a string.
-```python
-s = "Hello, World!"
-print(s[0:5])  # Output: Hello
-print(s[7:])   # Output: World!
-print(s[:5])   # Output: Hello
-print(s[-1])   # Output: !
-```
-
-**`join()`**: Combines elements of an iterable (list, tuple) into a single string, using the string as a separator.
-```python
-words = ["Python", "is", "fun"]
-result = " ".join(words)
-
-print(result)  
-# Output: Python is fun
-```
-
-**`split()`**: Divides a string into a list of substrings based on a delimiter.
-```python
-sentence = "Python is fun"
-words = sentence.split()  
-# Splits by spaces by default
-print(words)  
-# Output: ['Python', 'is', 'fun']
-
-
-sentence = "apple,orange,banana"
-fruits = sentence.split(",")  
-# Splits by comma
-print(fruits)  
-# Output: ['apple', 'orange', 'banana']
-  ```
-
-
-
-
-
-
-##### Develop a python program to find whether the given string is palindrome or not.
-
-```python
-if s == s[::-1]:
-    print("Palindrome")
-else:
-    print("Not palindrome")
-```
-
-
-Assume that the name t is assigned a value ‘Programming with Python’ what will be the output when we execute the following commands and explain.
-```
-t[13:], t[:9], t[:], t[7:16], t[5:-10], t[6:-6:], t[-2::-1], t[::-2],
-t[-2:1:-2], t[:-8]
-```
-
-Assume that the name a is assigned a value `‘mca@rit’` what will be the output when we execute the following commands and explain.
-```
-a[5:], t[:4], t[2:-2:2], t[3:4], t[2:-2], t[1:-2:], t[-3::-2], t[::-4],
-t[-4:1:-4], t[:-3]
-```
-
-
-Write a python program to count number of vowels and consonants, identify numbers, uppercase letters, lowercase letters and special characters in a given string.
-
-
-##### Program to write third person singular form verb
-
-The third person singular verb form in English is distinguished by the suffix -s, which is added to the stem of the infinitive form: run -> runs. A simple set of rules can be given as follows:
-* If the verb ends in y, remove it and add ies
-* If the verb ends in o, ch, s, sh, x or z, add es
-* By default just add s
-Develop a Python Script for the rules above
-
-**Answer :**
-
-Logic is to check the last letters using `endswith()` method and since string is immutable, the value is changed by taking slice to remove last letter and concatenating with the plural letters.
-
-```python
-def third_person_singular(verb):
-    if verb.endswith('y'):
-        return verb[:-1] + 'ies'
-    elif verb.endswith(('o', 'ch', 's', 'sh', 'x', 'z')):
-        return verb + 'es'
-    else:
-        return verb + 's'
-
-print(third_person_singular("play"))   # Output: plays
-print(third_person_singular("go"))     # Output: goes
-print(third_person_singular("brush"))  # Output: brushes
-print(third_person_singular("fly"))    # Output: flies
-```
-
-
-___
-##### Predict the output of the following and justify your answer:
-```
-i)
-S="Vishweswaraiah"
-print(s[4:])
-print(s[:5])
-
-weswaraiah  
-# from index 4 to end
-
-Vishw   
-# from beginning, to 4th, excluding 5th
-```
-
-```
-ii)
-str1 = "Bangalore"
-str1[1] = "e"
-str1[6] = str1[8] = "u"
-print(str1)
-
-# TypeError: 'str' does not support assignment
-```
-
-
-```
-iii)
-a = -45
-print(--a)
-
-# -45
-# Double negation gets same value
-```
-
-```
-iv) a, b, c = True, False, False
-if a or b and c:
-	print "MSRIT"
-else:
-	print "RNSIT"
-
-# MSRIT
-```
-The condition `a or b and c` is evaluated as `True or (False and False)`, which is `True`. Hence, the `if` condition is `True`.
-
-
-____
-
-## Tuples
-
-
-##### List and describe any five methods on tuples.
-
-List and describe any five functions to operate Tuples.
-
-**Answer :**
-
-Although tuples are immutable and cannot be modified, there are few methods that can be useful:
-
-`len()` :  Returns the number of elements in the tuple.
-
-count(x)  : Returns the number of occurrences of the element `x` in the tuple.
-
-index(x)  : Returns the index of the first occurrence of element `x` in the tuple. Raises a `ValueError` if `x` is not found.
-
-`max()` and  `min()` : Returns the largest and smallest element in the tuple. The elements must be comparable.
-
-```python
-my_tuple = (1, 2, 3, 2, 1, 2)
-
-print(len(my_tuple))  # Output: 6
-
-print(my_tuple.count(2)) # Output: 3
-
-print(my_tuple.index(3)) # Output: 2
-
-print(max(my_tuple))  # Output: 3
-
-print(min(my_tuple))  # Output: 1
-```
-
-
-
-
-Develop Python script that takes a list of words and returns the length of the longest one using tuples.
-
-Develop Python script that takes a list of words and returns the length of the longest one using tuples.
-
-
-Implement a program that prompts the user to enter a tuple of integers. Calculate and print the sum of all integers in the tuple.
-
-
-##### Store the following data in a list, a tuple, and a dictionary:
-```
-India 91
-USA   1
-UK    41
-Japan 9
-```
-
-```python
-# List of tuples
-data_list = [("India", 91), ("USA", 1), ("UK", 41), ("Japan", 9)]
-```
-
-```python
-# Tuple of tuples
-data_tuple = (("India", 91), ("USA", 1), ("UK", 41), ("Japan", 9))
-```
-
-```python
-# Dictionary
-data_dict = {"India": 91, "USA": 1, "UK": 41, "Japan": 9}
-```
-
-
-___
-
 ## Lists
 
-How do you demonstrate that lists are equal and identical?
+
+##### How do you demonstrate that lists are equal and identical?
+
+**Answer :**
+
+Equality and identity of lists can be shown by using the `==` (equality) and `is` (identity) operators.
+
+- The equality operator (`==`) checks if the values of two lists are the same (i.e., the elements in the lists are identical).
+
+- The identity operator (`is`) checks if two variables refer to the same object in memory. This is used to determine if two lists are identical (i.e., they are the same object).
+
+```python
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+
+print(f"list1 == list2: {list1 == list2}")  
+# Output: True
+
+print(f"list1 is list2: {list1 is list2}")  
+# Output: False
+
+list3 = list1
+print(f"list1 is list3: {list1 is list3}")  
+# Output: True
+```
+
+_____
 
 ##### When you use the + operator to concatenate two lists, does it make a copy or a reference of the arguments? Explain with the help of an example.
+
+**Answer :**
 
 When `+` operator is used to concatenate two lists in Python, it creates a new list that contains the elements from both lists. 
 
@@ -294,8 +50,46 @@ print("New list:", new_list)     # Output: [1, 2, 3, 4, 5, 6]
 
 ____
 
+##### Explain the purpose of slicing in Python lists. Provide at least 4 examples to demonstrate slicing operations.
 
-Explain the purpose of slicing in Python lists. Provide at least 4 examples to demonstrate slicing operations.
+**Answer :**
+
+**Slicing** in Python allows to access a subset (or "slice") of a list by specifying a start, stop, and step. 
+List can be sliced to retrieve elements from a specific range, manipulate parts of the list, or skip elements with a step value.
+
+```python
+list[start:stop:step]
+```
+
+```python
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+slice1 = my_list[2:5]  # From index 2 to 4
+print(slice1)  # Output: [2, 3, 4]
+
+
+slice2 = my_list[:]  # The entire list
+print(slice2)  # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+slice4 = my_list[-3:]  # Last 3 elements
+print(slice4)  # Output: [7, 8, 9]
+```
+
+```python
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+slice3 = my_list[1:8:2]  
+# Start from index 1, stop before 8, step of 2
+
+print(slice3)  # Output: [1, 3, 5, 7]
+
+
+slice5 = my_list[3:-2]  
+# From index 3 to 2 elements before the last
+print(slice5)  # Output: [3, 4, 5, 6, 7]
+```
+
+___
 
 ##### Explain the usage any 5 list operating methods with examples. 
 
@@ -371,7 +165,7 @@ print(list1)
 # [4, 3, 2, 1]
 ```
 
-The sort() changes the original list in place so does not return the sorted value directly to be printed.
+`sort()` changes the original list in place so does not return the sorted value directly to be printed. `sorted()` can be used to get a return.
 
 7. `split()` method splits a string into a list of substrings based on a specified delimiter. If no delimiter is provided, it splits the string at any whitespace by default.
 
@@ -392,7 +186,6 @@ print(parts)
 8. `join()` method is used to join elements of an iterable (like a list, tuple) into a single string, using the string that `join()` is called on as a separator.
 
 ```python
-
 words = ['Hello', 'World', 'Python']
 sentence = ' '.join(words)
 print(sentence)  
@@ -405,14 +198,28 @@ print(sentence)
 # Output: "Hello-World-Python"
 ```
 
+____
+##### Develop a script for filtering odd and even numbers into two separate lists from a list of numbers.
+
+```python
+even = []
+odd = []
+
+for i in range(1,20):
+	if i%2==0:
+		even.append(i)
+	else:
+		odd.append(i)
+
+print(f"Even are: {even}")
+print(f"Odd are: {odd}")
+```
 
 ____
 
-Differentiate between lists and tuples in Python. How to create nested lists? Demonstrate how to create and print a 3-dimensional matrix with lists.
-
-Develop a script for filtering odd and even numbers into two separate lists from a list of numbers.
-
 ##### Develop a python program to print unique elements in a list.
+
+**Answer :**
 
 Using Set to remove Duplicates (Shortcut)
 ```python
@@ -443,6 +250,8 @@ ____
 
 ##### Develop a Python code to extract the Even elements indices from the given list.
 
+**Answer :**
+
 ```python
 def even_indices(numbers):
     indices = []
@@ -460,28 +269,75 @@ even_indices_list = even_indices(numbers)
 print(f"Indices of even numbers: {even_indices_list}")
 ```
 
+____
 
+##### List operations
 
-
-Consider the list sub1={ANM,Py,DS,ASE,Java,OOPS } perform the following operations and show the output
-i) Insert the Sub AWP at the position 3
-ii) Insert the DMS at the position 2 from the last.
+Consider the list `sub1={ANM,Py,DS,ASE,Java,OOPS }` perform the following operations and show the output
+i) Insert the Sub `AWP` at the position 3
+ii) Insert the `DMS` at the position 2 from the last.
 iii) Return the list from the index position 1 to 5
-iv) Change the value of the Subject in the index 5 to BigData
-v) Check whether java is present in subj1
+iv) Change the value of the Subject in the index 5 to `BigData`
+v) Check whether java is present in `subj1`
 vi) Print the list in the reverse order
 vii) Delete the element at the index position 6
 viii) Return the total elements in the list
 
+```python
+>>> sub1 = ['ANM', 'py', 'DS', 'ASE', 'Java', 'OOPS']
 
+# Insert at 3rd position
+>>> sub1.insert(2, "AWP")
+>>> sub1
+['ANM', 'py', 'AWP', 'DS', 'ASE', 'Java', 'OOPS']
 
-Write a Python function named average_list that takes a list of numbers as input and returns their average. Additionally, include a condition to ensure that the input is a list of numeric values only that are >=1).
-What is the output when this list average_list is:
-(i) An empty list
-(ii) a list containing non-numeric values
-(iii) -1
-(iv) 10000000000000000000000000000
+# Insert at position 2 from last
+>>> sub1.insert(-1, "DMS")
+>>> sub1
+['ANM', 'py', 'AWP', 'DS', 'ASE', 'Java', 'DMS', 'OOPS']
 
+# Return from index 1 to 5
+>>> sub1[1:6]
+['py', 'AWP', 'DS', 'ASE', 'Java']
+
+# cange value at index 5
+>>> sub1[5] = "BigData"
+>>> sub1
+['ANM', 'py', 'AWP', 'DS', 'ASE', 'BigData', 'DMS', 'OOPS']
+
+# Checking member in list
+>>> "Java" in sub1
+False
+
+# Print list in Reverse order
+>>> for i in range(len(sub1)-1, -1, -1): 
+...     sub1[i]
+... 
+'OOPS'
+'DMS'
+'BigData'
+'ASE'
+'DS'
+'AWP'
+'py'
+'ANM'
+
+# Another way of doing same
+>>> rev_lis = sub1[::-1]
+>>> rev_lis
+['OOPS', 'DMS', 'BigData', 'ASE', 'DS', 'AWP', 'py', 'ANM']
+
+# delete sub at index 6
+>>> del sub1[6]
+>>> sub1
+['ANM', 'py', 'AWP', 'DS', 'ASE', 'BigData', 'OOPS']
+
+# Return total elements
+>>> len(sub1)
+7
+```
+
+____
 
 ##### Consider the list 
 `scores = [5, 4, 7, 3, 6, 2, 1]` and write the python instruction to perform the following operations:
@@ -489,6 +345,8 @@ i) Insert an element 9 at the beginning of the list.
 ii) Insert an element 8 at the index position 3 of the list.
 iii) Delete an element at the end of the list.
 iv) Delete an element at the index position 3.
+
+**Answer :**
 
 ```python
 scores = [5, 4, 7, 3, 6, 2, 1]
@@ -514,6 +372,7 @@ print(scores)
 # Output: [9, 5, 4, 7, 3, 6, 2]
 ```
 
+____
 
 
 Predict the output of the following and justify your answer:
@@ -598,7 +457,6 @@ iv) dir(“python”) v) ['H', 'He', 'Li'] + 'Be'
 `> dir("python")`,  Output: A list of attributes and methods associated with string objects.
 
 `> ['H', 'He', 'Li'] + 'Be'` , Output: This will raise a `TypeError`, Cannot concatenate a list with a string directly. 
-
 
 ___
 
@@ -751,7 +609,6 @@ for lis in list_of_lists:
 7 8 9
 ```
 
-
 ___
 
 ##### Develop a Python program that counts the number of occurrences of a letter in a string, using dictionaries.
@@ -821,7 +678,6 @@ print(frequency)
 # {'apple': 3, 'banana': 2, 'orange': 1}
 ```
 
-
 ___
 
 ##### Implement a telephone directory using Dictionaries.
@@ -845,11 +701,74 @@ print(f"The number for {name} is {telephone_directory[name]}")
 ____
 
 
-Develop a python program for the following: Create a dictionary by asking the user to give the name and marks of 10 different students. Sort the dictionary created according to marks.
+##### Develop a python program for the following: Create a dictionary by asking the user to give the name and marks of 10 different students. Sort the dictionary created according to marks.
+
+```python
+count = 3
+dict_1 = {}
+while count > 0:
+	name = input("Name : ")
+	marks = input("Marks : ")
+	dict_1[name] = marks
+	count -= 1
+
+```
+
+```python
+count = 10
+dict_1 = {}
+
+while count > 0:
+    name = input("Name: ")
+    marks = input("Marks: ")
+
+    try:   # checking marks is numeric
+        marks = int(marks)
+    except ValueError:
+        print("Please enter valid numeric marks.")
+        continue
+	# making dictionary entry
+    dict_1[name] = marks
+    count -= 1
+
+# Sort the dictionary by marks
+sorted_dict = dict(sorted(dict_1.items(), key=lambda item: item[1]))
+
+print("\nSorted list of students by marks:")
+
+for name, marks in sorted_dict.items():
+    print(f"{name}: {marks}")
+```
+
+`sorted(dict_1.items(), key=lambda item: item[1])`
+
+- The `sorted()` function is used to **sort** the list of key-value tuples returned by `dict_1.items()`.
+- The `key` argument is used to specify a function that determines how the elements should be compared (i.e., what value to sort by).
+- `lambda item: item[1]` takes an element of the dictionary (which is a tuple, like `('Alice', 85)`) and returns the second element (`item[1]`) of that tuple.
+- The `sorted()` function will sort the list of tuples by the second item (the value) in each tuple.
+- The `dict()` constructor is used to convert the sorted list of tuples back into a dictionary.
+
+___
+
+##### Design a Python program to create a dictionary containing the names and ages of five people. Determine the name of the oldest person in the dictionary.
 
 
-Design a Python program to create a dictionary containing the names and ages of five people. Determine the name of the oldest person in the dictionary.
+```python
+people = {
+    'Alice': 30,
+    'Bob': 45,
+    'Charlie': 55,
+    'David': 40,
+    'Eve': 35
+}
 
+# Step 2: Sort the dictionary by age
+sorted_people = dict(sorted(people.items(), key=lambda item: item[1], reverse=True))
+
+person_list = list(sorted_people.keys())
+
+print(f"The oldest person is: {person_list[0]}")
+```
 
 
 ___
@@ -867,9 +786,9 @@ iii) Multiply all elements of the array by 2 and print the result.
 
 Write a program to create NumPy array and get the smallest and largest element from the array and display them.
 
-
 Illustrate 2-D and 3-D array iterating with respect to numpy.
 
+Differentiate between lists and tuples in Python. How to create nested lists? Demonstrate how to create and print a 3-dimensional matrix with lists.
 
 
 ___

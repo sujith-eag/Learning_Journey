@@ -1,40 +1,40 @@
 
 #### SEMESTER END EXAMINATIONS – JUNE 2024
 
-1. Write a Python function named calculate sum that takes two integers as input and returns their sum. Then, write another function called calculate product that takes two integers as input and returns their product. Demonstrate both functions by providing suitable inputs.
+Write a Python function named calculate sum that takes two integers as input and returns their sum. Then, write another function called calculate product that takes two integers as input and returns their product. Demonstrate both functions by providing suitable inputs.
 
-2. Explain recursion in Python functions. Provide an example illustrating the use of recursion to solve a specific problem.
+Explain recursion in Python functions. Provide an example illustrating the use of recursion to solve a specific problem.
 
-3. Describe the purpose and usage of lambda functions in Python. Provide an example to illustrate the use of lambda functions.
+Describe the purpose and usage of lambda functions in Python. Provide an example to illustrate the use of lambda functions.
 
 ___
 
-4. Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
+Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
 
-5. Write a Python program that defines both local and global variables and demonstrates their scope and usage. Explain briefly the difference between local and global variables in your program.
+Write a Python program that defines both local and global variables and demonstrates their scope and usage. Explain briefly the difference between local and global variables in your program.
 
-6. Explain how `*args` and `**kwargs` allow the function to accept a variable number of arguments and keyword variable_length arguments. Explain how they differ from positional arguments through another program.
+Explain how `*args` and `**kwargs` allow the function to accept a variable number of arguments and keyword variable_length arguments. Explain how they differ from positional arguments through another program.
 
 ___
 
 #### BACKLOG SUBJECT EXAMINATIONS – SEPTEMBER / OCTOBER 2023
 
-7. Explain the following arguments to functions in python with examples. (i) Keyword arguments (ii) Default arguments (iii) Variable length arguments.
+Explain the following arguments to functions in python with examples. (i) Keyword arguments (ii) Default arguments (iii) Variable length arguments.
 
-8. Write a Python function that takes two lists and returns True if they have at least one common member
+Write a Python function that takes two lists and returns True if they have at least one common member
 Input: `list1=[1,2,3,4,5], list2=[5,6,7,8,9])`
 Output: True
 Input: `list3=[1,2,3,4,5], list4=[6,7,8,9])`
 Output: None.
 
-9. What are DOC strings? Illustrate with an example.
+What are DOC strings? Illustrate with an example.
 
 
 ____
 
-10. Explain list comprehension with example. Write a python program that initializes a list with numbers from 1 to 20 using list comprehension. Print how many odd numbers present in the list and sum of even numbers in the list.
+Explain list comprehension with example. Write a python program that initializes a list with numbers from 1 to 20 using list comprehension. Print how many odd numbers present in the list and sum of even numbers in the list.
 
-11. Write short notes on the following: (i) Mapping (ii) Filtering (iii) Anonymous functions.
+Write short notes on the following: (i) Mapping (ii) Filtering (iii) Anonymous functions.
 
 ___
 

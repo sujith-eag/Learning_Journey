@@ -1,6 +1,4 @@
 
----
-
 ### String `split()` examples
 
 ```python
@@ -30,100 +28,8 @@ print('I like to eat pizza'.endswith('eat', 7, 18))  # Output: False
 
 ---
 
-### 5. **Uppercase alternating string**
 
-```python
-s = input("Enter any string:")  # e.g., hello
-r = ''
-for i in range(0, len(s)):
-    if i % 2 == 0:
-        r = r + s[i]
-    else:
-        r = r + s[i].upper()
-print(r)
-```
-
----
-
-### 6. **Find longest word(s) in a string**
-
-```python
-inputStr = input("Enter a string:")
-wordList = inputStr.split()
-multipleMaxWordList = []  # List to store more than one maximum length words
-maxLenWord = ''  # String to store maximum length word
-
-for i in wordList:
-    if len(i) > len(maxLenWord):
-        maxLenWord = i
-        multipleMaxWordList = [maxLenWord]  # Store only the maxWord in the list
-    elif len(i) == len(maxLenWord):
-        maxLenWord = i
-        multipleMaxWordList += [maxLenWord]  # Keep adding all occurrences of maxWords in the list
-
-print(multipleMaxWordList)
-```
-
----
-
-### 7. **Find the biggest word(s) in a string**
-
-```python
-s = input("Enter a string:")
-l = s.split()
-b = l[0]
-x = len(b)
-
-for i in range(1, len(l)):
-    if len(l[i]) > x:
-        b = l[i]
-        x = len(b)
-    elif len(l[i]) == x:
-        b = b + ', ' + l[i]
-
-print("The biggest word(s) is/are:", b)
-```
-
----
-
-### 8. **Tuple creation and unpacking**
-
-```python
-# Creating a tuple
-my_tuple = 1, 2, 3, 4, 5  # Parentheses are optional
-# my_tuple = (1, 2, 3, 4, 5)
-
-print(my_tuple)  # Output: (1, 2, 3, 4, 5)
-
-# Unpacking a tuple
-t = (1, 2, 3, 4)
-a, b, c, d = t  # Unpacking
-print(a, b, c, d)  # Output: 1 2 3 4
-```
-
----
-
-### 9. **Program to store and convert student marks to a tuple**
-
-
-Write a Python program that:
-- Prompts the user to enter the number of students.
-- For each student, prompts the user to enter their marks in three subjects (e.g., Mathematics, Science, English).
-- Stores the marks of each student in a list.
-- Convert the list to a tuple.
-
-```python
-n = int(input("Enter the number of students: "))
-t = []
-for i in range(n):
-    m1 = input("Enter marks for subject 1: ")
-    m2 = input("Enter marks for subject 2: ")
-    m3 = input("Enter marks for subject 3: ")
-    t.append((m1, m2, m3))
-    print()
-
-print("Marks as tuple:", tuple(t))
-```
+### 9. 
 
   
 ___
@@ -1231,3 +1137,39 @@ False and False == 0 or not 3 and 4 != 4 and True or 4 <= 5
 ---
 
 
+
+Abecedarian series - where elements appear in alphabetical order
+
+```python
+prefix = "JKLMNOPQ"
+suffix = "ack"
+
+for i in prefix:
+	print( i + suffix )
+```
+
+___
+
+zip() method
+takes iterable or containers and returns a single iterator object, having mapped values from all the containers.
+
+`zip(*iterators)`
+
+can be used to combine two or moree lists into pairs (tuples) and the output can be converted into list, dict, tuple or set.
+```
+zip([1,2,3], [5,6,7])
+[(1,5), (2,6), (3,7)]
+```
+
+```
+name = ["ram", "jai", "raj", "ron"]
+age = [25, 41, 50, 20]
+print( list(zip(name,age)))
+
+for x,y in zip(name,age):
+	print("name",x"and age",y)
+```
+
+To unzip
+
+`names, ages = zip(*zipped_list)`
