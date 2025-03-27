@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
+                "file": "Python/MCA_related/QP_Practice/Unit_3_Answered_2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_5_Answer"
+              "title": "Unit_3_Answered_2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3a721aff969e186d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce47d2a5e335102e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/5_Functions/5_7_lambda_function.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "5_7_lambda_function"
             }
           }
         ]
@@ -88,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 252.51103591918945
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,32 +205,32 @@
   },
   "active": "a5ee09af19b30648",
   "lastOpenFiles": [
-    "Python/MCA_related/QP_Practice/Unit_5.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_4_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_4.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answer.md",
-    "Python/MCA_related/QP_Practice/Unit_3.md",
-    "Python/MCA_related/QP_Practice/Unit_2.md",
-    "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
+    "Python/5_Functions/5_7_lambda_function.md",
+    "Python/MCA_related/QP_Practice/Unit_3_Answered_2.md",
+    "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
+    "Python/1_Data_Types/2_complex_types/4_lists/4.3_map and filter.md",
+    "Python/5_Functions/5_6_generator_functions.md",
+    "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
     "Python/MCA_related/QP_Practice/Unit_1_Answered_1.md",
     "Python/MCA_related/QP_Practice/Unit_1_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
+    "Python/MCA_related/QP_Practice/Unit_4_Answer.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_2.md",
+    "Python/MCA_related/QP_Practice/3.md",
+    "Python/5_Functions/5_2_Scope.md",
+    "Python/5_Functions/5_3_Arguments.md",
+    "Python/5_Functions/5_4_Parameters.md",
+    "Python/5_Functions/5_5_Functions_from_Modules.md",
+    "Python/MCA_related/QP_Practice/Unit_3.md",
+    "Python/MCA_related/QP_Practice/Unit_4.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
+    "Python/MCA_related/QP_Practice/Unit_1.md",
+    "Python/MCA_related/QP_Practice/Unit_5.md",
     "Python/MCA_related/Untitled 1.md",
     "Python/MCA_related/Untitled.md",
     "Python/MCA_related/Untitled 2.md",
     "Python/MCA_related/Untitled 3.md",
-    "Python/MCA_related/Untitled 4.md",
-    "Python/MCA_related/QP_Practice/Unit_1.md",
-    "Python/4_Control_Statements/4_for_while_loops.md",
-    "Site Structure.md",
-    "Python/temp_hold/Recursion 1.md",
-    "Python/temp_hold/mathematical functions.md",
-    "Python/temp_hold/programs with loops.md",
-    "Python/4_Control_Statements/3_range.md",
-    "Python/4_Control_Statements/1_Conditional_Branching.md",
-    "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
-    "Python/practice questions.md",
     "Python/MCA_related/QP_Practice",
     "MCA/OS & Linux/OS Syllabus/Unit_4",
     "MCA/Web Programming/Lab_practice",

@@ -217,6 +217,8 @@ ___
 
 ##### Write a Python program to count the palindrome words in a line of text.
 
+* Develop a python function to return the number of palindrome words in a line of text.
+
 Logic for palindrome check 
 ```python
 def is_palindrome( s = "MADAM"):

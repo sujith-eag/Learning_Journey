@@ -701,8 +701,21 @@ ___
 
 #### Additional Patterns for Practice
 
-##### To display a right angled triangle with 10 rows
 
+
+##### Define a function that takes a positive integer n, and then produces n lines of output in the following pattern
+
+```
++
+++
++++
+++++
++++++
+```
+Is it possible to get the same output using a single loop?Justify.
+
+
+To display a right angled triangle with 10 rows
 ```python
 for i in range(1,11):
 	for j in range(1, i+1):
