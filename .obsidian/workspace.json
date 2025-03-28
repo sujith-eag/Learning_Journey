@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/5_Functions/5_7_lambda_function.md",
+                "file": "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -58,7 +58,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "5_7_lambda_function"
+              "title": "4.4_list_comprehension"
             }
           }
         ]
@@ -205,9 +205,10 @@
   },
   "active": "a5ee09af19b30648",
   "lastOpenFiles": [
-    "Python/5_Functions/5_7_lambda_function.md",
+    "Python/MCA_related/QP_Practice/Unit_3.md",
     "Python/MCA_related/QP_Practice/Unit_3_Answered_2.md",
     "Python/1_Data_Types/2_complex_types/4_lists/4.4_list_comprehension.md",
+    "Python/5_Functions/5_7_lambda_function.md",
     "Python/1_Data_Types/2_complex_types/4_lists/4.3_map and filter.md",
     "Python/5_Functions/5_6_generator_functions.md",
     "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
@@ -222,7 +223,6 @@
     "Python/5_Functions/5_3_Arguments.md",
     "Python/5_Functions/5_4_Parameters.md",
     "Python/5_Functions/5_5_Functions_from_Modules.md",
-    "Python/MCA_related/QP_Practice/Unit_3.md",
     "Python/MCA_related/QP_Practice/Unit_4.md",
     "Python/MCA_related/QP_Practice/Unit_5_Answer.md",
     "Python/MCA_related/QP_Practice/Unit_1.md",
