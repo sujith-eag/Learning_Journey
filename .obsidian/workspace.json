@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Site Structure.md",
+                "file": "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Site Structure"
+              "title": "Unit_1_Answered"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.51103591918945
+    "width": 252.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,6 +176,9 @@
   },
   "active": "239b5bb500eca9d8",
   "lastOpenFiles": [
+    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
+    "Site Structure.md",
     "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
     "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
     "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
@@ -184,8 +188,6 @@
     "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
     "Python/9_Libraries/NumPy/00_01_Numpy_Introduction.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
     "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
@@ -203,7 +205,6 @@
     "MCA/Data Structures in C/other_programs",
     "MCA/Data Structures in C/temp/Assignment Question 1.md",
     "MCA/Data Structures in C/temp/Data structures in C.md",
-    "MCA/Data Structures in C/temp/Data type (Book).md",
     "Python/MCA_related/QP_Practice",
     "MCA/OS & Linux/OS Syllabus/Unit_4",
     "MCA/Web Programming/Lab_practice",
