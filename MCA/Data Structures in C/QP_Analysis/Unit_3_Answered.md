@@ -1,8 +1,6 @@
 
-
-#### Trees: Importance of Trees, Basic Tree Concepts and Terminologies: node, path, degree, internal nodes, height and subtree.
-
-#### Binary Tree: Binary Trees, Binary Tree Representations, Representing Lists as Binary trees, Minimum nodes, Maximum nodes, Nearly complete binary tree – 
+##### Trees: Importance of Trees, Basic Tree Concepts and Terminologies: node, path, degree, internal nodes, height and subtree. 
+##### Binary Tree: Binary Trees, Binary Tree Representations, Representing Lists as Binary trees, Minimum nodes, Maximum nodes, Nearly complete binary tree
 
 
 Give the properties of binary trees that distinguish them from general trees.
@@ -11,34 +9,16 @@ Explain how to change a general tree into a binary tree with an example.
 
 Explain the Level of a tree with example. In a Binary Tree what is the maximum number of nodes that can be found in level 12.
 
+
 With a suitable examples, define the following:
 i) Binary tree
 ii) Degree of a node
 iii) Level of a binary tree
 iv) Complete binary tree
-v) Almost complete binary tree.
-
-Define Binary Tree, Complete Tree and nearly complete Tree. Give one example for each.
-
-Explain the following terms with suitable examples.
-i. Binary Tree
-ii. Nearly Complete Binary Tree
-iii. Complete Binary Tree
-iv. Height of a tree
-v. Binary Search Tree.
-
-Define the following and give suitable example for each:
-i) Complete Binary tree
-ii) Nearly complete Binary tree
-iii) Binary search tree.
-
-Define Binary Tree, Complete Tree and nearly complete Tree. Give one example for each.
-
-Explain the following terms with suitable examples.
-i. Binary Tree
-ii. Complete Binary Tree
-iii. Expression Tree
-iv. Binary Search Tree.
+v) Nearly complete binary tree.
+vi) Height of a tree
+vii) Binary Search Tree.
+viii) Expression Tree
 
 
 
@@ -46,7 +26,7 @@ iv. Binary Search Tree.
 
 
 
-
+_____
 
 #### Tree Traversals Depth First Traversal (Preorder, Inorder and Postorder), Breadth First Traversal, 
 
@@ -225,6 +205,45 @@ Write short note on: Threaded Binary Tree.
 
 Define Threaded Binary Tree and show its representation.
 
+**Answer :**
+
+A Threaded Binary Tree is a binary tree in which null pointers (those pointing to child nodes that do not exist) are replaced by threads. 
+
+In a normal binary tree, each node has two pointers: left and right for each child. If a node does not have a left or right child, those pointers are set to NULL.
+
+In a threaded binary tree, we replace these NULL pointers with threads:
+- A left thread is used to point to the inorder predecessor (the node that would come before it in an inorder traversal).
+- A right thread is used to point to the inorder successor (the node that would come after it in an inorder traversal).
+
+This modification allows us to traverse the tree in inorder without needing a stack or recursion, simply by following the left and right threads.
+
+
+There are two types of threaded binary trees:
+
+1. **Single Threaded Binary Tree**: In this type, only one set of threads is used (either left or right). The **left thread** points to the inorder predecessor, or the **right thread** points to the inorder successor.
+
+2. **Double Threaded Binary Tree**: In this type, both the **left** and **right** pointers are used for threading. The **left thread** points to the inorder predecessor, and the **right thread** points to the inorder successor.
+
+
+```
+        10
+       /  \
+      5    15
+     / \     \
+    3   7    20
+```
+
+(Diagram needed)
+
+____
+
+To perform the **inorder traversal** of a threaded binary tree, we need to follow the **threads** instead of using recursion or a stack. Here’s how it works:
+
+1. Start from the **leftmost node**.
+2. Visit the node.
+3. If the node has a right thread, move to the inorder successor using the right thread.
+4. If the node has no right child, move to its parent (using the thread in the left pointer if it exists).
+5. Repeat the process until all nodes are visited.
 
 ____
 

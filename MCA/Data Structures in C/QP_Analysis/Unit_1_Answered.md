@@ -150,7 +150,7 @@ In this iterative approach:
 
 _____
 
-* What is Recursive function? Write a recursive program to find Factorial of a number.
+##### What is Recursive function? Write a recursive program to find Factorial of a number.
 
 **Answer :**
 
@@ -185,7 +185,7 @@ int main() {
 
 ____
 
-* Write a recursive C program to find GCD of two numbers.
+##### Write a recursive C program to find GCD of two numbers.
 
 **Answer :**
 
@@ -225,7 +225,75 @@ ____
 
 **Answer :**
 
+The Tower of Hanoi problem involves three rods and `n` disks of different sizes. The goal is to move all disks from the source rod to the destination rod, following these rules:
+1. Only one disk can be moved at a time.
+2. A disk can only be moved to the top of another rod if it is smaller than the disk already present there.
+3. Auxiliary rod to be used to help in the process.
 
+The recursive solution is based on the following steps:
+1. Move the first `n-1` disks from the source rod to the auxiliary rod.
+2. Move the nth disk (largest disk) from the source rod to the destination rod.
+3. Move the `n-1` disks from the auxiliary rod to the destination rod.
+
+---
+
+```c
+#include <stdio.h>
+
+void towerOfHanoi(int n, char source, char auxiliary, char destination) {
+    // Base case: If there is only one disk
+    if (n == 1) {
+        printf("Move disk 1 from rod %c to rod %c\n", source, destination);
+        return;
+    }
+    
+    // Move the first n-1 disks from source to auxiliary rod
+    towerOfHanoi(n - 1, source, destination, auxiliary);
+    
+    // Move the nth disk from source to destination rod
+    printf("Move disk %d from rod %c to rod %c\n", n, source, destination);
+    
+    // Move the n-1 disks from auxiliary rod to destination rod
+    towerOfHanoi(n - 1, auxiliary, source, destination);
+}
+
+int main() {
+    int n = 5;
+    printf("Solution for %d disks:\n", n);
+    
+    // Recursive call function
+    towerOfHanoi(n, 'A', 'B', 'C');  
+    // A -> source, B -> auxiliary, C -> destination
+    
+    return 0;
+}
+```
+
+---
+
+For `n = 3` disks, the recursive calls break down as follows:
+
+- Move 2 disks from `A` to `B` (using `C` as auxiliary).
+    - Move 1 disk from `A` to `C` (using `B` as auxiliary).
+    - Move disk 2 from `A` to `B`.
+    - Move 1 disk from `C` to `B` (using `A` as auxiliary).
+- Move disk 3 from `A` to `C`.
+- Move 2 disks from `B` to `C` (using `A` as auxiliary).
+    - Move 1 disk from `B` to `A` (using `C` as auxiliary).
+    - Move disk 2 from `B` to `C`.
+    - Move 1 disk from `A` to `C` (using `B` as auxiliary).
+
+The sequence of moves is as follows:
+1. Move disk 1 from rod A to rod C
+2. Move disk 2 from rod A to rod B
+3. Move disk 1 from rod C to rod B
+4. Move disk 3 from rod A to rod C
+5. Move disk 1 from rod B to rod A
+6. Move disk 2 from rod B to rod C
+7. Move disk 1 from rod A to rod C
+
+
+For `n = 5` disks, the number of moves required is: `2^5−1 = 32−1 =31` moves
 
 ____
 #### Stack: Introduction to Stacks, Operations on a Stack
@@ -363,9 +431,9 @@ int main() {
 
 _____
 
-* Justify the usage of stacks for reversal of strings while explaining the various operations related to stack data structure.
+##### Write a C program to Reverse a String using STACK data structure.
 
-* Write a C program to Reverse a String using STACK data structure.
+* Justify the usage of stacks for reversal of strings while explaining the various operations related to stack data structure.
 
 **Answer :**
 
@@ -376,10 +444,8 @@ Operations to reverse a string using stack :
 - **Push Operation**: We iterate through the string from left to right and push each character onto the stack, last character will be in the top.
 
 - **Pop Operation**: After pushing all the characters onto the stack, we pop each character from the stack. Since the stack operates on LIFO, last character will be popped first, characters will be popped in reverse order, thus reversing the string.
-* **Display Operation :** 
 
-
-Even displaying from the stack will iterate from the top to bottom of the stack so this will also provide a reversed string.
+* **Display Operation :** from the stack will iterate from the top to bottom of the stack so this will also provide a reversed string.
 
 (A Diagram to explain the process)
 
@@ -439,21 +505,21 @@ int main() {
     printf("Enter a string: ");
     fgets(str, MAX, stdin);
     str[strcspn(str, "\n")] = '\0';
-
+    
     printf("Original String: %s\n", str);
-
+    
     // Reverse the string using the stack
     reverseString(str);
-
+    
     printf("Reversed String: %s\n", str);
-
+    
     return 0;
 }
 ```
 
 ____
 
-### Applications of Stacks: Conversion from Infix to Postfix, evaluation of a postfix expression.
+### Applications of Stacks: Conversion from Infix to Postfix
 
 * Write a C program to convert an infix expression to postfix expression using STACK. Also convert the following infix expression to postfix expression by mentioning the steps clearly: 
 * Write the algorithm for converting the Infix Expression to Postfix expression. Also transform the following expression to its postfix equivalent form by using the conversion algorithm steps.      
@@ -461,18 +527,19 @@ ____
 * Convert the following infix expression to postfix expression by showing the steps clearly:
 * Write an algorithm to convert an infix expression to postfix. Use the algorithm for converting the following expression into postfix form. 
 
-`(a+b)*(c+(d-e))`
-`(A+B)*C-D*F+E`         
-`(A+B)-C)*D`           
-`(A-(B+C))*D)$(E+F)`
-`((M+(N-O)*P)^Q+R)`     
-`A^B^C-D+E+F/G`
-`((A+(B-C) *D) ^E+F)`     
-`X^Y^Z-D+E+F/G`
-`(A ^ B * (H - J * K)) + P / K * G`
-`((A+B)^C-(D*E)/F)`
-`(((A/B)+C*(D-E)^F)*G)`.
-`3 – 6 / (9 * (2 ^ 4))`
+
+* `(a+b)*(c+(d-e))`
+* `(A+B)*C-D*F+E`         
+* `(A+B)-C)*D`           
+* `(A-(B+C))*D)$(E+F)`
+* `((M+(N-O)*P)^Q+R)`     
+* `A^B^C-D+E+F/G`
+* `((A+(B-C) *D) ^E+F)`     
+* `X^Y^Z-D+E+F/G`
+* `(A ^ B * (H - J * K)) + P / K * G`
+* `((A+B)^C-(D*E)/F)`
+* `(((A/B)+C*(D-E)^F)*G)`.
+* `3 – 6 / (9 * (2 ^ 4))`
 
 **Answer :**
 
@@ -499,12 +566,12 @@ To convert an infix expression to a postfix expression, we use a stack to store 
 
 ____
 
-1. **Infix**: `(a+b)*(c+(d-e))`  Postfix: a b + c d e - + *
-2. **Infix**: `(A+B)*C-D*F+E`  **Postfix**: A B + C * D F * - E +
-3. **Infix**: `(A+B)-C)*D`   **Postfix**: A B + C - D *
+1. **Infix**: `(a+b)*(c+(d-e))`   Postfix: a b + c d e - + *
+2. **Infix**: `(A+B)*C-D*F+E`      **Postfix**: A B + C * D F * - E +
+3. **Infix**: `(A+B)-C)*D`      **Postfix**: A B + C - D *
 4. **Infix**: `(A-(B+C))*D)$(E+F)`  **Postfix**: A B C + - D * E F + $
 5. **Infix**: `((M+(N-O)*P)^Q+R)`  **Postfix**: M N O - P * + Q ^ R +
-6. **Infix**: `A^B^C-D+E+F/G`  **Postfix**: A B C ^ ^ D - E + F G / +
+6. **Infix**: `A^B^C-D+E+F/G`     **Postfix**: A B C ^ ^ D - E + F G / +
 7. **Infix**: `((A+(B-C) *D) ^E+F)`  **Postfix**: A B C - D * + E ^ F +
 8. **Infix**: `X^Y^Z-D+E+F/G`  **Postfix**: X Y Z ^ ^ D - E + F G / +
 9. **Infix**: `(A ^ B * (H - J * K)) + P / K * G`  **Postfix**: A B H J K * - ^ * P K / G * +
@@ -512,30 +579,45 @@ ____
 11. **Infix**: `(((A/B)+C*(D-E)^F)*G)`  **Postfix**: A B / C D E F ^ - * + G *
 12. **Infix**: `3 – 6 / (9 * (2 ^ 4))`  **Postfix**: 3 6 9 2 4 ^ * / -
 
-
 ____
+### Evaluation of a postfix expression.
 
-Design an algorithm to evaluate a postfix Expression.
+* Design an algorithm to evaluate a postfix Expression.
+* Develop an algorithm to evaluate a postfix expression. Trace the algorithm for the expression:
+* Design an algorithm to evaluate a postfix Expression. And Trace the algorithm for the expression: 
+* Write a function in C for evaluating a postfix expression. Justify the usage of stack for evaluating the given expression:
+* Write an algorithm to evaluate a postfix expression and apply the same for the given expression. 
+* Design an algorithm to evaluate a postfix Expression. And Trace the algorithm for the expression:           
+* Develop an algorithm to evaluate a postfix expression. Trace the algorithm for the expression:    
 
-Develop an algorithm to evaluate a postfix expression. Trace the algorithm for the expression:      
-`2536+**5/2-`
-
-Design an algorithm to evaluate a postfix Expression. And Trace the algorithm for the expression: 
-`6 2 3 + - 3 8 2 / + * 2 $ 3 +`.
-
-Write a function in C for evaluating a postfix expression. Justify the usage of stack for evaluating the given expression:
-`PQ+R-QP+R^-` where P=1, Q=2, R=3.
-
-Write an algorithm to evaluate a postfix expression and apply the same for the given expression. 
-`AB/CDE$*-F+`   Assume A=12, B=3, C=2, D=5, E=1, F=7
-
-Design an algorithm to evaluate a postfix Expression. And Trace the algorithm for the expression:           
-`XYZ + * ZYX - + *` where X=1, Y=2, Z=3.
-
-Develop an algorithm to evaluate a postfix expression. Trace the algorithm for the expression:    
-`ABC + * CBA - + *` where A=1, B=2, C=3.
+* `2536+**5/2-`
+* `6 2 3 + - 3 8 2 / + * 2 $ 3 +`.
+* `PQ+R-QP+R^-` where P=1, Q=2, R=3.
+* `AB/CDE$*-F+`   Assume A=12, B=3, C=2, D=5, E=1, F=7
+* `XYZ + * ZYX - + *` where X=1, Y=2, Z=3.
+* `ABC + * CBA - + *` where A=1, B=2, C=3.
 
 
+**Answer :**
+
+Postfix Evaluation Algorithm:
+* Initialize an empty stack.
+* For each symbol in the postfix expression (from left to right):
+	* If the symbol is a number: Push it onto the stack.
+	* If the symbol is an operator (e.g., +, -, *, /):
+		* Pop the top two operands from the stack.
+		* Apply the operator to the two operands (first on right and second on left).
+		* Push the result of operation back onto the stack.
+* At the end of the expression, the stack should contain exactly one element, which is the result of the evaluation.
+
+___
+
+1. `2536+**5/2-`      Answer: `16`
+2. `6 2 3 + - 3 8 2 / + * 2 $ 3 +`      Answer: `19`
+3. `PQ+R-QP+R^-` where P=1, Q=2, R=3.    Answer: `0`
+4. `AB/CDE$*-F+` where A=12, B=3, C=2, D=5, E=1, F=7  Answer: `8`
+5. `XYZ + * ZYX - + *` where X=1, Y=2, Z=3.     Answer: `6`
+6. `ABC + * CBA - + *` where A=1, B=2, C=3.    Answer: `6`
 
 
 ____

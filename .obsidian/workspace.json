@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
+                "file": "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_1_Answered"
+              "title": "Unit_4_Answered"
+            }
+          }
+        ]
+      },
+      {
+        "id": "9b80bd9de426d0d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3106a333e8cff31a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MCA/Data Structures in C/other_programs/6 Circular_Queue.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "6 Circular_Queue"
             }
           }
         ]
@@ -88,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.51103591918945,
-    "collapsed": true
+    "width": 252.51103591918945
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -176,7 +205,9 @@
   },
   "active": "239b5bb500eca9d8",
   "lastOpenFiles": [
+    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
+    "MCA/Data Structures in C/other_programs/6 Circular_Queue.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
     "Site Structure.md",
     "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
@@ -188,7 +219,6 @@
     "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
     "Python/9_Libraries/NumPy/00_01_Numpy_Introduction.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
     "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
     "Python/MCA_related/QP_Practice/Unit_5_Answered_1.md",
@@ -200,7 +230,6 @@
     "Python/MCA_related/QP_Practice/Unit_5.md",
     "MCA/Data Structures in C/temp/DS_case_study/3_4.md",
     "MCA/Data Structures in C/QP_Analysis",
-    "MCA/Data Structures in C/other_programs/6 Circular_Queue.md",
     "MCA/Data Structures in C/temp",
     "MCA/Data Structures in C/other_programs",
     "MCA/Data Structures in C/temp/Assignment Question 1.md",

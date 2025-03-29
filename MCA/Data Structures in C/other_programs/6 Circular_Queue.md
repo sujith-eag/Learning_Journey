@@ -70,6 +70,8 @@ ____
 
 ---
 
+
+
 ### **Circular Queue Implementation**
 
 ```c
@@ -269,5 +271,94 @@ void display(int queue[])
 		}
 		printf("%d \n", queue[tail]);
 	}
+}
+```
+
+
+```c
+#include <stdio.h>
+#define MAX 5
+
+int queue[MAX];
+int front = -1, rear = -1;
+
+// Function to insert an element into the queue (enqueue)
+void enqueue(int value) 
+{
+    if ( front == (rear + 1) % MAX) 
+    {
+        printf("Queue is full! Cannot insert %d\n", value);
+    } 
+    else 
+    {
+        if (front == -1) 
+        {  // If the queue is empty
+            front = 0;
+        }
+        rear = (rear + 1) % MAX;  // Circular increment of rear
+        queue[rear] = value;
+        printf("%d inserted into the queue.\n", value);
+    }
+}
+
+// Function to delete an element from the queue (dequeue)
+int dequeue() {
+    if (front == -1) 
+    {  // If the queue is empty
+        printf("Queue is empty! Cannot dequeue.\n");
+        return -1;
+    } 
+    else 
+    {
+        int value = queue[front];
+        if (front == rear) 
+        {  // If there is only one element
+            front = rear = -1;  // Reset the queue
+        } 
+        else 
+        {
+            front = (front + 1) % MAX;  // Circular increment of front
+        }
+        return value;
+    }
+}
+
+// Function to display the elements in the queue
+void display() {
+    if (front == -1) 
+    {
+        printf("Queue is empty!\n");
+    } 
+    else 
+    {
+        printf("Queue elements: ");
+        int i = front;
+        while (i != rear) 
+        {
+            printf("%d ", queue[i]);
+            i = (i + 1) % MAX;  // Circular increment of index
+        }
+        printf("%d\n", queue[rear]);  // Print the last element
+    }
+}
+
+// Main function to demonstrate the queue operations
+int main() {
+    enqueue(10);  // Insert 10
+    enqueue(20);  // Insert 20
+    enqueue(30);  // Insert 30
+    enqueue(40);  // Insert 40
+    enqueue(50);  // Insert 50
+    enqueue(60);  // This will fail because the queue is full
+    
+    display();    // Display queue
+    
+    printf("%d dequeued from the queue.\n", dequeue());  // Remove 10
+    display();    // Display queue after dequeue
+    
+    enqueue(60);  // Insert 60 after dequeue
+    display();    // Display queue after enqueue
+
+    return 0;
 }
 ```
