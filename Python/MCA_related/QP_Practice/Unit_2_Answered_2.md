@@ -191,7 +191,6 @@ sentence = ' '.join(words)
 print(sentence)  
 # Output: "Hello World Python"
 
-
 # Join elements with a hyphen
 sentence = '-'.join(words)
 print(sentence)  
@@ -376,7 +375,7 @@ ____
 
 
 Predict the output of the following and justify your answer:
-```
+```python
 i) 
 >>>lst=[1,7,3,9,2]
 >>>lst.append([4,5])
@@ -396,7 +395,7 @@ ii)
 
 
 Predict the output of the following and justify your answer :
-```
+```python
 i) 
 22<"A"
 
@@ -418,7 +417,7 @@ ls.sort()
 
 Predict the output of the following and justify your answer:
 
-```
+```python
 i) 
 a = -45
 print (--a)

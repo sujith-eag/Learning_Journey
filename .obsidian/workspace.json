@@ -4,36 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "a26929df7ff8a834",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a5ee09af19b30648",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Unit_5_Answered_2"
-            }
-          }
-        ]
-      },
-      {
         "id": "b5d77fb14840560e",
         "type": "tabs",
         "children": [
@@ -43,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
+                "file": "Site Structure.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -58,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_5_Answered"
+              "title": "Site Structure"
             }
           }
         ]
@@ -203,20 +173,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a5ee09af19b30648",
+  "active": "239b5bb500eca9d8",
   "lastOpenFiles": [
-    "Python/MCA_related/QP_Practice/Unit_5_Answered_1.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
+    "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answered_1.md",
+    "Python/9_Libraries/NumPy/01_03_Array_Attributes.md",
+    "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
+    "Python/9_Libraries/NumPy/00_01_Numpy_Introduction.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answered_1.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_5_Q.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_4_Q.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_3_Q.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_2_Q.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_1_Q.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
     "Python/MCA_related/QP_Practice/Unit_5.md",
     "MCA/Data Structures in C/temp/DS_case_study/3_4.md",
     "MCA/Data Structures in C/QP_Analysis",
@@ -226,14 +204,6 @@
     "MCA/Data Structures in C/temp/Assignment Question 1.md",
     "MCA/Data Structures in C/temp/Data structures in C.md",
     "MCA/Data Structures in C/temp/Data type (Book).md",
-    "MCA/Data Structures in C/temp/Recursion.md",
-    "Python/7_Exception_Handling/7_2_handling_errors.md",
-    "Python/7_Exception_Handling/7_1_Errors_Exceptions.md",
-    "Python/7_Exception_Handling/raise.md",
-    "Python/MCA_related/QP_Practice/Unit_4_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_4_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answered_2.md",
     "Python/MCA_related/QP_Practice",
     "MCA/OS & Linux/OS Syllabus/Unit_4",
     "MCA/Web Programming/Lab_practice",

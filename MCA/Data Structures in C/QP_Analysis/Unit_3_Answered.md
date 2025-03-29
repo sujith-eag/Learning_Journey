@@ -48,7 +48,11 @@ iv. Binary Search Tree.
 
 
 
-#### Tree Traversals Depth First Traversal (Preorder, Inorder and Postorder), Breadth First Traversal, Construction of Expression Tree.
+#### Tree Traversals Depth First Traversal (Preorder, Inorder and Postorder), Breadth First Traversal, 
+
+
+Write the algorithm for Binary Tree Inorder, Preorder and Postorder traversal.
+
 
 Find the following in the tree given:
 i. Balance factor of the tree.
@@ -73,8 +77,6 @@ Traverse the given tree using Inorder and Postorder traversals.
 				  H	    	 I	J
 ```
 
-
-Write the algorithm for Binary Tree Inorder, Preorder and Postorder traversal.
 
 
 Find the following in the tree given: 
@@ -118,18 +120,27 @@ Inorder: EICFJBGDKHLA
 
 
 
+### Construction of Expression Tree.
 
 
-Define an Expression tree. Construct the Expression tree for the following:
-i. `( a / ( b + c )) + (((d / e) - f) * g)`     ii. `(A+B*C)$ ((D+E)*F)`
-(Extras)    `A+(B-C)*D$(E*F)`     `(A+B*C)$ ((D+E)*F)`
+Give the algorithms for pre-order and post-order tree traversals. Represent the following expression using binary tree and write the pre-order and Post-order traversals for the tree generated. 
+`A+(B-C)*D$(E*F) `
+
+Give the algorithms for preorder and postorder tree traversals. Represent the following expression using binary tree and write the preorder and postorder traversals for the tree generated.   
+`A+(B-C)*D$(E*F)`
+
 
 Define expression tree. Write the procedure to construct the expression tree from an infix expression.
 
-Construct the Expression tree for the following:
-i. `(M / (N + O)) + (((P / Q) - R) * S)`      ii. `(A+B*C)$ ((D+E)*F)`
 
-Give the algorithms for pre-order and post-order tree traversals. Represent the following expression using binary tree and write the pre-order and Post-order traversals for the tree generated. `A+(B-C)*D$(E*F) `
+Define an Expression tree. Construct the Expression tree for the following:
+i. `( a / ( b + c )) + (((d / e) - f) * g)`     
+ii. `(A+B*C)$ ((D+E)*F)`
+`A+(B-C)*D$(E*F)`     
+
+Construct the Expression tree for the following:
+i. `(M / (N + O)) + (((P / Q) - R) * S)`      
+ii. `(A+B*C)$ ((D+E)*F)`
 
 Represent the following expressions using binary tree:
 i. `A+(B-C)*D$(E*F)`
@@ -139,37 +150,41 @@ Construct the Expression tree for the following:
 i. `( a / ( b + c )) + (((d / e) - f) * g)`
 ii. `(5+6*7)$((5+6)*7))`
 
-Give the algorithms for preorder and postorder tree traversals. Represent the following expression using binary tree and write the preorder and postorder traversals for the tree generated.   `A+(B-C)*D$(E*F)`
 
 
 
 
 
+#### Binary Search Tree: Binary Search Trees – Basic Concepts, Operations (Insertion, Deletion, Find the smallest node, Find the largest node, and Find a requested node), Applications, 
 
-#### Binary Search Tree: Binary Search Trees – Basic Concepts, Operations (Insertion, Deletion, Find the smallest node, Find the largest node, and Find a requested node), Applications, Threaded Binary Trees.
-
-
-Write algorithms to find Smallest node and largest node in a Binary Search Tree.
-
-Write C function to find the maximum element in BST.
 
 Write an algorithm to insert and delete an element in a Binary Search Tree.
 
 Explain algorithm to delete a node from the Binary Search Tree (BST) with an appropriate example.
 
+Write an algorithm to delete a node from the Binary Search Tree (BST). Explain with an appropriate example.
+
 Write algorithms to perform the following operations on a BST:
 i. Search for a requested node
 ii. Add a new node.
 
-Write an algorithm to delete a node from the Binary Search Tree (BST). Explain with an appropriate example.
-
 Write the algorithms for the following operations in Binary Search Tree (BST).
 i) Smallest node in a BST ii) Add node to BST iii) Search an item in a BST
 
+Write algorithms to find Smallest node and largest node in a Binary Search Tree.
+
+Write C function to find the maximum element in BST.
 
 
 
 
+
+
+Create a binary search tree using the following data entered as a sequential set:
+`14, 15, 12, 23, 5, 7, 7, 10, 33, 80, 66`
+
+
+What is Binary Search Tree? Create a binary search tree using the following data entered as a sequential set:  `14,15,12,23,5,7,7,10,33,80,66`
 
 
 List the applications of Binary Search Tree. Create a binary search tree using the following data entered as a sequential set:
@@ -178,15 +193,13 @@ Also perform inorder and preorder traversal for the created tree.
 
 
 Construct the Binary search for the following set of numbers
-`14, 17, 11, 7, 53, 4, 13, 12, 8, 60, 19, 16`. Perform inorder, preorder and postorder traversals of the obtained tree.
+`14, 17, 11, 7, 53, 4, 13, 12, 8, 60, 19, 16`. 
+Perform inorder, preorder and postorder traversals of the obtained tree.
 
-Create a binary search tree using the following data entered as a sequential set:
-`14,15,12,23,5,7,7,10,33,80,66`
 
 Construct the Binary Search Tree (BST) from the following elements by considering each character as one element.
 `D A T A S T R U C T U R E A N D A L G O R I T H M S`
 
-What is Binary Search Tree? Create a binary search tree using the following data entered as a sequential set:  `14,15,12,23,5,7,7,10,33,80,66`
 
 Construct the Binary Search Tree (BST) from the following elements:
 `D A T A S T R U C T U R E S U S I N G C`
@@ -198,7 +211,7 @@ also write the in-order, pre-order and post-order traversals for the BST generat
 
 
 
-
+### Threaded Binary Trees.
 
 With suitable example, illustrate Threaded Binary tree.
 

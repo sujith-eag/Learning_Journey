@@ -60,6 +60,7 @@ Illustrate the creation and display operations on Singly Linked List (SLL) of Em
 
 Implement a singly linked list to store a polynomial equation.
 
+
 Write an algorithm to insert a node in between any two nodes in an ordered linked list.
 
 Write a C Program to insert a node with a value X to the right of the node with the value Y in a SLL.
@@ -67,7 +68,6 @@ Write a C Program to insert a node with a value X to the right of the node with 
 Develop routines to perform each of the following operation on a linear list:
 i. Delete every second element for a list
 ii. Return the number of elements in the list.
-
 
 Write an algorithm to search an item in a singly linked list. Explain the algorithm with example.
 
@@ -80,8 +80,6 @@ Examine the advantages of double linked list over single linked list.
 Assume there are two singly linked list L1 and L2. Write an algorithm to create a doubly linked list L3 by merging the even positions node from L1 and odd positions node from L2.
 
 Write a C function to insert a node in a doubly linked list by position. Your program should take position as input from the user.
-
-Write a C functions to perform following operations on Circular Doubly Linked List.   i. beginsert ();   ii. lastinsert ();    iii. begin_delete();   iv. last_delete();   v. display()
 
 Develop C routine to insert a node before a given key node in a doubly linked list.
 
@@ -98,6 +96,13 @@ Write a C function to insert a node in a doubly linked list by position. Your pr
 
 
 
+Write a C functions to perform following operations on Circular Doubly Linked List.   i. beginsert ();   ii. lastinsert ();    iii. begin_delete();   iv. last_delete();   v. display()
+
+
+
+
+
+
 ###  Implementation of stack and queue using lists.
 
 Develop an algorithm to perform queue operation into a Circular Linked List.
@@ -107,7 +112,6 @@ Discuss the routines to simulate the operations of Queue using singly linked lis
 Write a routines to simulate the operations of Queue using singly linked list.
 
 Differentiate between doubly Linked List and singly Linked List. Develop an algorithm to perform stack operation into a circular single linked List.
-
 
 
 
