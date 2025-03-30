@@ -1,5 +1,7 @@
 ### Deadlock
 
+Deadlock occurs in a set of processes when every process in the set is waiting for an event that can only be caused by another process in the set.
+
 A deadlock occurs in a multiprogramming environment when two or more processes are permanently blocked because each is waiting for a resource held by another process. As a result, none of the processes can proceed, causing a system halt.
 
 In a deadlock, processes never ﬁnish executing, and system resources are tied up, preventing other jobs from starting.
@@ -100,75 +102,3 @@ If each resource type has several instances, then a cycle does not necessarily i
 
 ---
 
-### Methods for Handling Deadlocks
-
-There are four approaches to dealing with deadlocks:
-
-1. **Deadlock Prevention**
-2. **Deadlock Avoidance** (e.g., Banker's Algorithm)
-3. **Deadlock Detection & Recovery**
-4. **Deadlock Ignorance** (Ostrich Method)
-
----
-
-### Deadlock Prevention
-
-A deadlock occurs when all four of the following conditions are met:
-
-- **Mutual Exclusion**
-- **Hold and Wait**
-- **No Preemption**
-- **Circular Wait**
-
-To prevent deadlocks, at least one of these conditions must be eliminated.
-Deadlock prevention is a proactive method that, by ensuring that at least one of these conditions cannot hold, we can prevent the occurrence of a deadlock.
-
-#### Eliminating Mutual Exclusion
-
-- Some resources, such as a printer or mutex lock, must be exclusive.
-- Eliminating mutual exclusion for such resources is impractical.
-
-#### Prevent Deadlock by Eliminating Hold and Wait
-
-- The hold-and-wait condition occurs when a process holds at least one resource while waiting for another.
-
-**Prevention Strategies:**
-
-Ensure a process requests all resources at the start:
-- A process must request and be allocated all necessary resources before it begins execution.
-- **Example**: Instead of requesting a DVD drive and then a printer, a process must request both at the same time.
-
-Force a process to release held resources before requesting new ones:
-- A process must release all currently held resources before requesting another.
-- **Example**: A process copies data from a DVD to disk and releases the DVD drive before requesting a printer.
-**Possible Starvation**: A process that needs multiple resources may have to wait indefinitely because at least one resource is always in use by another process.
-
-#### No Preemption
-
-- A resource cannot be forcefully taken (preempted) from a process holding it; the process must release it voluntarily.
-- If a process requests a resource that is unavailable, it must release all held resources:
-    - Instead of waiting indefinitely, the process releases its resources and restarts when all resources are available.
-- **Preempt resources from waiting processes**:
-    - If a resource is held by a waiting process, it can be forcefully taken and assigned to another process that needs it.
-    - **Example**: A CPU scheduler can preempt CPU time from a low-priority process and assign it to a higher-priority process.
-
-#### Prevent Deadlock by Eliminating Circular Wait
-
-- Impose a strict order of resource requests:
-    - Assign a unique numerical value to each resource type.
-    - A process must request resources in increasing order.
-    - **Example**:
-        - Disk Drive = 1
-        - Printer = 2
-        - Scanner = 3
-    - A process must request the Disk before the Printer and the Printer before the Scanner.
-- Ensure a process releases lower-priority resources before requesting higher-priority resources.
-
-
-
-
-Deadlock avoidance requires that the operating system be given additional
-information in advance concerning which resources a process will request
-and use during its lifetime. With this additional knowledge, the operating
-system can decide for each request whether or not the process should wait.
-To decide whether the current request can be satisﬁed or must be delayed, the system must consider the resources currently available, the resources currently allocated to each process, and the future requests and releases of each process.

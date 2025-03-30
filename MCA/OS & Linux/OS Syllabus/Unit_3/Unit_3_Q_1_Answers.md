@@ -31,12 +31,14 @@ Code Snippet for the Readers-Writers Problem:
 How Deadlock is Avoided in the Readers-Writers Problem:
 
 In this solution, deadlock is avoided through proper synchronization mechanisms:
+
 - Semaphores are used to ensure that the writers are blocked when there are active readers, and readers are blocked when a writer is writing. This prevents circular waits (the fourth condition of deadlock).
+
 - The readCount variable ensures that writers are blocked as long as at least one reader is accessing the resource. The first reader blocks writers and the last reader releases the writer lock, preventing a circular wait between readers and writers.
+
 - The mutex is used to protect the critical section where `readCount` is incremented or decremented, ensuring that race conditions do not occur when updating the reader count.
 
 Thus, by carefully managing the resources (through the use of semaphores), the system ensures that deadlock does not occur, even though there are multiple processes interacting with shared resources.
-
 
 ___
 
@@ -55,6 +57,7 @@ Deadlocks can be handled in several ways in operating systems. The three primary
 - Deadlock Avoidance: Dynamically allocates resources but ensures the system always stays in a safe state.
 - Deadlock Detection and Recovery: Allows deadlock to occur but detects and recovers from it using various algorithms.
 
+________
 #### 1. Deadlock Prevention
 
 Deadlock prevention aims to prevent the occurrence of one or more of the necessary conditions for a deadlock. The four conditions for a deadlock (mutual exclusion, hold and wait, no preemption, and circular wait) must be violated to ensure that deadlock cannot occur. 
@@ -67,7 +70,7 @@ Deadlock prevention aims to prevent the occurrence of one or more of the necessa
 
 - Circular Wait: To avoid circular wait, we impose a total order on all resource types. Processes can request resources in a specific order, and if a process requests a resource that it cannot obtain, it releases the resources it holds and retries. This ensures that a cycle in the resource allocation graph cannot form.
 
-
+________
 #### 2. Deadlock Avoidance
 
 Deadlock avoidance allows the system to allocate resources dynamically but in a way that ensures that deadlock is always avoided. This requires the system to have more information about the resource needs of processes ahead of time. One common approach to deadlock avoidance is the Banker’s Algorithm.
@@ -75,6 +78,8 @@ Deadlock avoidance allows the system to allocate resources dynamically but in a 
 - Banker’s Algorithm: This algorithm checks whether a resource allocation would result in a safe state. It does this by simulating the allocation and determining if there is a sequence of processes that can execute without resulting in deadlock. If the allocation would result in a deadlock, the system denies the request. It is like a "safety check" before allocating resources to ensure no circular wait is possible.
 
 - Safe State vs Unsafe State: A state is said to be safe if there exists at least one sequence of processes that can be executed without causing a deadlock. If no such sequence exists, the state is unsafe, and deadlock could occur.
+
+______
 
 #### 3. Deadlock Detection and Recovery
 
