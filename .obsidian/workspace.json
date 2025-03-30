@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
+                "file": "Site Structure.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,37 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_4_Answered"
-            }
-          }
-        ]
-      },
-      {
-        "id": "9b80bd9de426d0d3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3106a333e8cff31a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MCA/Data Structures in C/other_programs/6 Circular_Queue.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "6 Circular_Queue"
+              "title": "Site Structure"
             }
           }
         ]
@@ -205,42 +175,42 @@
   },
   "active": "239b5bb500eca9d8",
   "lastOpenFiles": [
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
-    "MCA/Data Structures in C/other_programs/6 Circular_Queue.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Q_4_Answers.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Unit_4_Q_1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Unit_4_Q_2.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit_3_Q_1_Answers.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit_3_Q_2.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit_3_Q_1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit 3.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Unit_2_Short_Notes.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Unit_2_Q.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Unit_1_Q.md",
     "Site Structure.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_1_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_1_Answered_1.md",
-    "Python/9_Libraries/NumPy/01_03_Array_Attributes.md",
-    "Python/9_Libraries/NumPy/01_02_Arrays_Dimensions.md",
-    "Python/9_Libraries/NumPy/00_01_Numpy_Introduction.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answered_1.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_5_Q.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_4_Q.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_3_Q.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_2_Q.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_1_Q.md",
-    "Python/MCA_related/QP_Practice/Unit_5.md",
-    "MCA/Data Structures in C/temp/DS_case_study/3_4.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Unit_1_Short Notes.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Unit 4.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Unit_4.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7 Deadlocks.md",
+    "MCA/OS & Linux/OS.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes",
     "MCA/Data Structures in C/QP_Analysis",
     "MCA/Data Structures in C/temp",
     "MCA/Data Structures in C/other_programs",
-    "MCA/Data Structures in C/temp/Assignment Question 1.md",
-    "MCA/Data Structures in C/temp/Data structures in C.md",
     "Python/MCA_related/QP_Practice",
     "MCA/OS & Linux/OS Syllabus/Unit_4",
     "MCA/Web Programming/Lab_practice",
     "MCA/Data Structures in C/Binary_search_tree",
     "MCA/Data Structures in C/linked_list",
-    "MCA/Data Structures in C/temp/DS_case_study",
-    "MCA/Web Programming/project_report",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

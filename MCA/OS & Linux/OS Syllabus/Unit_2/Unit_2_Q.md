@@ -256,3 +256,5 @@ b) Explain processor affinity.
 **4.**  
 a) Describe the differences between symmetric and asymmetric multiprocessing. What are the advantages and disadvantages of multiprocessor systems?  
 b) Provide the solution for the Dining Philosophers problem using semaphores.  
+
+_____

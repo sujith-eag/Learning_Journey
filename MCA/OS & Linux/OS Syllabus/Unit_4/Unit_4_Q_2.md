@@ -28,3 +28,4 @@
 14. Consider the reference string 1, 2, 3, 4, 6, 5, 2, 5, 5, 6, 4, 1, 1, 2, 3, 4 with 4 memory frames. Determine the page fault using: FIFO, LRU, Optimal page replacement algorithm.
 
 
+_____

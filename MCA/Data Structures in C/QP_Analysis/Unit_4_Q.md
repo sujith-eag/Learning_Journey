@@ -6,7 +6,6 @@ Advanced concepts in Trees: AVL Search Trees: Need for AVL Search Trees, Definit
 Heaps – Definition, Heap Maintenance operations: insertion and
 deletion. Rheapup, Rheapdown algorithms and heap implementation, Applications.
 
-
 ___
 
 #### SEMESTER END EXAMINATIONS – JUNE 2024
@@ -118,9 +117,11 @@ Create an AVL tree using the following data .Show the balance factors in the res
 Define Heap? Write Heap sort Algorithm and sort the below tree.
 
 ```
-					27
-			14	        	35
-		10     19	     31     42
+                    27
+                  /    \
+                14      35
+               /  \    /  \
+             10   19  31   42
 ```
 
 _____

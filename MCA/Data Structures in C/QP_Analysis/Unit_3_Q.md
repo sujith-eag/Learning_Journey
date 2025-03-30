@@ -11,21 +11,23 @@ ____
 
 #### SEMESTER END EXAMINATIONS – JUNE 2024
 
-
 Find the following in the tree given:
 i. Balance factor of the tree.
 ii. Show the depth first traversal (preorder, inorder and postorder) of the tree.
 iii. Show the breadth first traversal of the tree.
-
 ```
-						10
-					8		11
-				2				14
-			1		6		13		16
-				  4
-				3	5
+                           10
+                        /      \
+                      8         11
+                    /              \
+                  2                 14
+                /   \              /    \
+              1      6            13    16
+                    / 
+	               4   
+                 / \
+                3   5
 ```
-
 
 Write algorithms to find Smallest node and largest node in a Binary Search Tree.
 
@@ -72,10 +74,13 @@ ____
 
 Traverse the given tree using Inorder and Postorder traversals.
 ```
-						A
-					B		C
-				 D    E   F   G
-				  H	    	 I	J
+                        A
+                    /       \
+                  B           C
+               /    \       /    \
+             D       E    F      G
+               \               /   \
+	            H             I     J
 ```
 
 Write an algorithm to insert and delete an element in a Binary Search Tree.
@@ -109,10 +114,13 @@ ___
 
 Find the following in the tree given: 
 ```
-					125
-			15	        	50
-		10     22	     35     70
-	   4 12  18 24     31 44   66 90
+                        125
+                    /        \
+                  15          50
+                /   \       /     \
+              10     22   35      70
+            /  \   /  \  /  \    /    \
+           4   12 18  24 31  44 66    90
 ```
 
 i) Balance factor of the tree.

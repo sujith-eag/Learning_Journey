@@ -154,9 +154,9 @@ CPU scheduling happens in the following situations:
 4. **Process Termination:** The process completes its execution.
 
 - **Nonpreemptive Scheduling:** Once a process is running, it holds the CPU until it terminates or blocks (e.g., for I/O).
-    
+
 - **Preemptive Scheduling:** The OS can interrupt a running process to allocate CPU time to another process, allowing higher-priority processes to execute. This can lead to race conditions if multiple processes share data.
-    
+
 
 ---
 

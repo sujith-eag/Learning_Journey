@@ -102,7 +102,6 @@ int main()
 }
 ```
 
-
 _____
 
 Represent diagrammatically the following sequence of operations on an empty stack.
@@ -354,29 +353,23 @@ _____
 * Develop a ‘C’ routine to insert a node before a given key node in a doubly linked list.
 
 
-
-
-
-
 ____
 
-Assume there are two singly linked list L1 and L2. Write an algorithm to create a doubly linked list L3 by merging the even positions node from L1 and odd positions node from L2.
+* Assume there are two singly linked list L1 and L2. Write an algorithm to create a doubly linked list L3 by merging the even positions node from L1 and odd positions node from L2.
 
-
-Write a C functions to perform following operations on Circular Doubly Linked List.   i. beginsert ();   ii. lastinsert ();    iii. begin_delete();   iv. last_delete();   v. display()
-
+* Write a C functions to perform following operations on Circular Doubly Linked List.   i. beginsert ();   ii. lastinsert ();    iii. begin_delete();   iv. last_delete();   v. display()
 
 ____
 
 ###  Implementation of stack and queue using lists.
 
-Develop an algorithm to perform queue operation into a Circular Linked List.
+* Develop an algorithm to perform queue operation into a Circular Linked List.
 
-Discuss the routines to simulate the operations of Queue using singly linked list.
+* Discuss the routines to simulate the operations of Queue using singly linked list.
 
-Write a routines to simulate the operations of Queue using singly linked list.
+* Write a routines to simulate the operations of Queue using singly linked list.
 
-Differentiate between doubly Linked List and singly Linked List. Develop an algorithm to perform stack operation into a circular single linked List.
+* Differentiate between doubly Linked List and singly Linked List. Develop an algorithm to perform stack operation into a circular single linked List.
 
 
 

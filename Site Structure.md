@@ -29,21 +29,6 @@
 		....Libraries -89
 		....NumPy  120-140
 		
-		
-		
-/OS   100 to 150
-│
-├── /01
-│   ├── /01-Primitive-types
-│   │   ├── variables.md
-│   │   ├── int-float.md
-│   │   ├── string.md
-│   │   ├── string-manipulation.md
-
-
-	Last Point - 89
-	NumPy - 
-
 
 /C   250-299
 │
@@ -73,6 +58,9 @@
 │   ├── .md 270
 │   ├── .md 271
 │   ├── .md 272
+
+DS Exam Practice 275 - 
+
 
 
 /JavaScript   300 - 699
@@ -253,15 +241,10 @@
 │   ├── 19_shell_scripts.md 989
 │   ├── loop.md 
 
-│   ├── .md 
-│   ├── .md
-│   ├── .md
-│   ├── .md 
-│   ├── .md 
-│   ├── 
-
 
 SQL 1500 - 1506
 
-OS 2000 - 2034
+OS MCA Exam related 1980 - 1987 (1999 limit) 
+OS 2000 - 2034 (Upto Classic Problems)
+
 ```
