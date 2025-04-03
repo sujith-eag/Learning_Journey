@@ -3,17 +3,17 @@
 A **utility class** in CSS is a class that is designed to apply a single, specific property to an element. Unlike traditional classes that might group together several properties to style an element, utility classes focus on applying a single CSS rule, which allows you to easily reuse it across different elements.
 
 1. **Create a class with one property**:
-   ```css
-   .italic {
-     font-style: italic;
-   }
-   ```
+```css
+.italic {
+ font-style: italic;
+}
+```
 
 2. **Apply it in the HTML**:
-   ```html
-   <p class="italic">This is italicized text.</p>
-   <div class="italic">This div will also have italicized text.</div>
-   ```
+```html
+<p class="italic">This is italicized text.</p>
+<div class="italic">This div will also have italicized text.</div>
+```
 
 **Advantages of Utility Classes:**
 - **Simpler and more maintainable**: You define the CSS once, and then apply it wherever it's needed.

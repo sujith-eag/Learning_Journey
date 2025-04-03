@@ -4,12 +4,13 @@ A `node` data type is defined using a `struct` that contains two elements:
 1. **Data Element**: An integer (`int`) to store the actual data of the node.
 2. **Next Pointer**: A pointer (`next`) of type `struct node*` that holds the memory location of the next node in the list.
 
-#### **Pointers for Operations**
+#### Pointers for Operations
 To manage the list, three pointers of type `struct node*` are used:
 - `*new`: Holds the address of a newly created node (allocated via `malloc`).
 - `*temp`: Holds and links the old node, used to link to the new node.
 - `*head`: Points to the first node of the list and is used for iteration. It is never incremented during traversal.
-Initially, all pointers (`head`, `temp`, `new`) are set to `NULL`.
+- `*tail`: Points to the Last node of the list, useful for deletion and insertion at end.
+Initially, all pointers (`head`, `temp`, `new`, `tail`) are set to `NULL`.
 
 ---
 
@@ -75,7 +76,6 @@ while (te != NULL) {
 - The loop continues until `te` becomes `NULL`, indicating the end of the list.
 
 ---
-
 
 
 ```c
@@ -161,6 +161,7 @@ void main()
 
 
 ___
+
 
 ```c
 #include <stdio.h>
@@ -333,3 +334,6 @@ void display()
 }
 
 ```
+
+
+____

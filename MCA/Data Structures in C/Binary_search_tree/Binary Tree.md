@@ -128,6 +128,10 @@ int main()
 ```
 
 
+
+____
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -246,3 +250,8 @@ void postorderTraversal(struct node* root)
 	}
 }
 ```
+
+
+____
+
+

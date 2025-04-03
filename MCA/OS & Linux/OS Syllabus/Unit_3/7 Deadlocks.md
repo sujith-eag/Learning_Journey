@@ -89,15 +89,23 @@ ____
 
 ### Deadlock Detection Using RAG
 
+
+{{< figure  src="images/os/7_01_ResourceAllocation-min.jpg"  alt="7.01 Resource Allocation Graph"  caption="7.01 Resource Allocation Graph" >}}
+
+
 A deadlock occurs when a cycle is present in the Resource Allocation Graph (RAG).
 
 - If the graph contains no cycles, no process is deadlocked.
 - If a cycle exists, a deadlock may be present.
 
-If each resource type has exactly one instance, then a cycle implies that a
-deadlock has occurred.
+{{< figure  src="images/os/7_02_Deadlock-min.jpg"  alt="7.02 Deadlock with Cycle"  caption="7.02 Deadlock with Cycle" >}}
+
+
+If each resource type has exactly one instance, then a cycle implies that a deadlock has occurred.
+
 
 If each resource type has several instances, then a cycle does not necessarily imply that a deadlock has occurred. In this case, a cycle in the graph is a necessary but not a sufﬁcient condition for the existence of deadlock.
+
 
 
 ---

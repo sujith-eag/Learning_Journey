@@ -13,7 +13,7 @@ A deadlock-detection algorithm can evaluate processes and resources on a running
 
 If all resources have only a single instance, then we can define a deadlock-detection algorithm that uses a variant of the resource-allocation graph, called a wait-for graph. We obtain this graph from the resource-allocation graph by removing the resource nodes and collapsing the appropriate edges.
 
-> Figure 8.11 wait-for graph
+{{< figure  src="images/os/7_09_TwoGraphs-min.jpg"  alt="."  caption="." >}}
 
 
 an edge from Ti to Tj in a wait-for graph implies that thread Ti is waiting for thread Tj to release a resource that Ti needs.

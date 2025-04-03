@@ -56,11 +56,15 @@ satisfied.
 
 (An algorithm for detecting a cycle in this graph requires an order of n2 operations, where n is the number of threads in the system.)
 
+{{< figure  src="images/os/7_07_DeadlockAvoidance-min.jpg"  alt="."  caption="." >}}
 
-> Image of Resource allocation graph Figure 8.9
 
 
 Suppose that T2 requests R2 . Although R2 is currently free, we cannot allocate it to T2 , since this action will create a cycle in the graph. A cycle, as mentioned, indicates that the system is in an unsafe state. If T1 requests R2 , and T2 requests R1 , then a deadlock will occur.
+
+
+{{< figure  src="images/os/7_08_UnsafeState-min.jpg"  alt="."  caption="." >}}
+
 
 The resource-allocation-graph algorithm is not applicable to a resource-
 allocation system with multiple instances of each resource type.

@@ -11,6 +11,16 @@ The `moveTo()` and `moveBy()` methods of the `Window` object are used to move a 
 - **`moveTo(x, y)`**: Moves the window to the specified coordinates `(x, y)` relative to the top-left corner of the screen.
 - **`moveBy(dx, dy)`**: Moves the window by a specified number of pixels from its current position, where `dx` is the horizontal movement and `dy` is the vertical movement.
 
+##### Question 2
+
+Demonstrate `ResizeTo()` and `ResizeBy()` methods of Window Object.
+
+The `resizeTo()` and `resizeBy()` methods are used to change the size of the browser window.
+
+- **`resizeTo(width, height)`**: Resizes the window to the specified width and height in pixels.
+- **`resizeBy(deltaWidth, deltaHeight)`**: Resizes the window by the specified width and height change (relative to the current window size).
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -28,108 +38,70 @@ The `moveTo()` and `moveBy()` methods of the `Window` object are used to move a 
 </head>
 <body>
 
-    <h1>Demonstrating `moveTo()` and `moveBy()` Methods with New Window</h1>
+    <h1>Demonstrating `moveTo()` and `moveBy()` Methods</h1>
     
-    <button onclick="moveToPosition()">Move New Window to (200, 200)</button>
-    <button onclick="moveByPosition()">Move New Window by (100, 100)</button>
-
+    <button onclick="makePop()">New Window</button>
+    <button onclick="moveToPosition()">Move Window to (200, 200)</button>
+    <button onclick="moveByPosition()">Move Window by (100, 100)</button>
+    <button onclick="resize_by()">Resize Window by (10, 20)</button>
+    <button onclick="resize_to()">Resize Window to (100, 100)</button>
+    <button onclick="close_win()">Close Window</button>
     <script>
-        let newWindow;
-
-        function openNewWindow() {
-            // Open a new window
-            newWindow = window.open("", "newWindow", "width=400,height=400");
-            newWindow.document.write("<h1>This is a new window!</h1>");
-        }
-
-        function moveToPosition() {
-            if (newWindow) {
-                newWindow.moveTo(200, 200);  
-                // Move the new window to coordinates (200, 200)
-            } else {
-                alert("Please open a new window first!");
+        
+        let popUp;
+        
+        function close_win(){
+            if(popUp){
+                popUp.close();
+                popUp = null;
             }
+        }
+        
+        
+        function makePop() {
+            popUp = window.open("", "_blank", "width=400px, height=400px");
+            popUp.moveTo(1200, 800);
+        }
+        
+        function moveToPosition() {
+            
+            if(!popUp){
+                makePop();
+            }
+            
+            popUp.moveTo(200, 200);
+            // Move window to the coordinates (200, 200)
         }
 
         function moveByPosition() {
-            if (newWindow) {
-                newWindow.moveBy(100, 100);  
-                // Move the new window by 100 pixels right and 100 pixels down
-            } else {
-                alert("Please open a new window first!");
+            if(!popUp){
+                makePop();
             }
+            popUp.moveBy(100, 100);  
+            // Move window by 100 pixels right and 100 pixels down
         }
-
-        // Open a new window when the page loads
-        openNewWindow();
+        
+        function resize_by(){
+            if(!popUp){
+                makePop();
+            }
+            popUp.resizeBy(10,20);
+        }
+        
+        function resize_to(){
+            if(!popUp){
+                makePop();
+            }
+            popUp.resizeTo(100,100);
+        }
+        
+        
     </script>
 
 </body>
 </html>
-
 ```
 
-##### Question 2
-
-Demonstrate `ResizeTo()` and `ResizeBy()` methods of Window Object.
-
-The `resizeTo()` and `resizeBy()` methods are used to change the size of the browser window.
-
-- **`resizeTo(width, height)`**: Resizes the window to the specified width and height in pixels.
-- **`resizeBy(deltaWidth, deltaHeight)`**: Resizes the window by the specified width and height change (relative to the current window size).
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resizeTo() and resizeBy() Demonstration</title>
-    <style>
-        button {
-            margin: 10px;
-            padding: 10px;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Demonstrating `resizeTo()` and `resizeBy()` Methods</h1>
-    
-    <button onclick="openAndResizeWindow()">Open and Resize Window</button>
-    <button onclick="resizeToWindow()">Resize Pop-up to 600x400</button>
-    <button onclick="resizeByWindow()">Resize Pop-up by 200x100</button>
-
-    <script>
-        let popupWindow;
-
-        function openAndResizeWindow() {
-            popupWindow = window.open('', '', 'width=400,height=300');  // Open a new pop-up window
-            popupWindow.document.write('<h1>This is a pop-up window!</h1>');
-        }
-
-        function resizeToWindow() {
-            if (popupWindow) {
-                popupWindow.resizeTo(600, 400);  // Resize the pop-up window to 600x400
-            } else {
-                alert('Open a pop-up window first!');
-            }
-        }
-
-        function resizeByWindow() {
-            if (popupWindow) {
-                popupWindow.resizeBy(200, 100);  // Resize the pop-up window by 200x100
-            } else {
-                alert('Open a pop-up window first!');
-            }
-        }
-    </script>
-
-</body>
-</html>
-
-```
 
 ##### Question 3
 
