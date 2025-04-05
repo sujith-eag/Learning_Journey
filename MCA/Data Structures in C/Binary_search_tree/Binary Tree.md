@@ -51,7 +51,6 @@ void inorderTraversal(struct Node* root)
         inorderTraversal(root->right);
     }
 }
-
 // Preorder Traversal (Root, Left, Right)
 void preorderTraversal(struct Node* root) 
 {

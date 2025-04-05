@@ -1,15 +1,14 @@
 
 #### Introduction to Data Structures: Definition, Need of Data Structures, Classification of Data Structures.
 
-
 * What are Data Structures? Explain the classification of data sutures with examples?
 * Define data structure. List its types and also explain the need of Data structures.
 
 **Answer :**
 
-**Data Structure :** is a collection of data values and the relationships between them. It defines the arrangement of data and operations that can be performed on the data. Data structures are used to store data in a way that allows for efficient access and modification.
+**Data Structure :** is a collection of data values and the relationships between them. It defines the arrangement of data and operations that can be performed on the data. A **Data Structure** is a way of organizing, managing, and storing data efficiently so that it can be accessed and modified in an efficient manner. 
 
-A **Data Structure** is a way of organizing, managing, and storing data efficiently so that it can be accessed and modified in an optimal manner. Different types of data structures are used for different types of data, and the selection of an appropriate data structure can greatly impact the efficiency of an algorithm.
+Different types of data structures are used for different types of data, and the selection of an appropriate data structure can greatly impact the efficiency of an algorithm.
 
 ### **Types of Data Structures:**
 
@@ -29,7 +28,7 @@ A **Data Structure** is a way of organizing, managing, and storing data efficien
 
 ____
 
-Classification of Data Structures can be broadly be done into two categories:
+Classification of Non_Primitive Data Structures can be broadly be done into two categories:
 1. Linear Data Structures
 2. Non-linear Data Structures
 
@@ -91,8 +90,8 @@ int sumIterative(int n) {
 ```
 
 **Recursion** is used to divide a task into smaller sub-tasks to solve the bigger problem.
-- A function **calls itself** / recursive call to solve the subproblems, often reducing the problem size with each call.
-- Requires a **base case** which defines the ending condition to terminate the recursion and prevent infinite calls.
+- A function calls itself / recursive call to solve the subproblems, often reducing the problem size with each call.
+- Requires a base case which defines the ending condition to terminate the recursion and prevent infinite calls which leads to stack overflow.
  
 - **Memory Usage**: Uses more memory because each recursive call adds a new stack frame.
 - **Performance**: Can be slower due to the overhead of multiple function calls and stack operations.
@@ -128,7 +127,8 @@ int fibonacciRecursive(int n) {
 
 Fibonacci Series Using Iteration (More Efficient):
 ```c
-int fibonacciIterative(int n) {
+int fibonacciIterative(int n) 
+{
 
     if (n <= 1) return n;
     
@@ -143,10 +143,9 @@ int fibonacciIterative(int n) {
 ```
 
 In this iterative approach:
-- **Time Complexity**: O(n)
-- **Space Complexity**: O(1)
-- **Efficiency**: It computes the Fibonacci number in linear time with constant space, making it much more efficient than the recursive approach.
-
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+- Efficiency: It computes the Fibonacci number in linear time with constant space, making it much more efficient than the recursive approach.
 
 _____
 
@@ -157,11 +156,13 @@ _____
 ```c
 #include <stdio.h>
 
-int factorial(int n) {
+int factorial(int n) 
+{
     if (n == 0 || n == 1) {
         return 1;
     }
-    else {
+    else 
+    {
         return n * factorial(n - 1);
     }
 }
@@ -240,32 +241,26 @@ The recursive solution is based on the following steps:
 ```c
 #include <stdio.h>
 
-void towerOfHanoi(int n, char source, char auxiliary, char destination) {
-    // Base case: If there is only one disk
-    if (n == 1) {
-        printf("Move disk 1 from rod %c to rod %c\n", source, destination);
-        return;
-    }
-    
-    // Move the first n-1 disks from source to auxiliary rod
-    towerOfHanoi(n - 1, source, destination, auxiliary);
-    
-    // Move the nth disk from source to destination rod
-    printf("Move disk %d from rod %c to rod %c\n", n, source, destination);
-    
-    // Move the n-1 disks from auxiliary rod to destination rod
-    towerOfHanoi(n - 1, auxiliary, source, destination);
+void towerOfHanoi(int n, char A, char B, char C)
+{
+	if (n>0)
+	{
+		towerOfHanoi(n-1, A, C, B);
+		printf("\nMove the disk %d, from %c tower to %c \n", n, A, C);
+		towerOfHanoi(n-1, B, A, C);
+	}	
 }
 
-int main() {
-    int n = 5;
-    printf("Solution for %d disks:\n", n);
-    
-    // Recursive call function
-    towerOfHanoi(n, 'A', 'B', 'C');  
-    // A -> source, B -> auxiliary, C -> destination
-    
-    return 0;
+int main()
+{
+	int n;
+	printf("Enter the number of Disks: \n");
+	scanf("%d", &n);
+	
+	printf("\nThe Sequence of moves are as Follows: \n");
+	towerOfHanoi(n, 'A', 'B', 'C');
+	
+	return 0;
 }
 ```
 

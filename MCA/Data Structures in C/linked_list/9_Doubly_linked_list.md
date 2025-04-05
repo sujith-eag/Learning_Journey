@@ -201,14 +201,14 @@ void Display()
 	int len = length();
 	
 	struct node *temp = head;
-	for(int i = 0; i<length(); i++)
+	for(int i = 0; i<len; i++)
 	{
 		printf("%d <-> ", temp->data);
 		temp = temp->next;
 	}
 	printf("Null\n");
 	
-	printf("\nTotal elements are : %d\n\n", length());
+	printf("\nTotal elements are : %d\n\n", len;
 }
 void delB()
 {

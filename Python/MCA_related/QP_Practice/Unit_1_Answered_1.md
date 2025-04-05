@@ -1,5 +1,4 @@
 
-
 #### What are identical objects and equivalent objects? Give examples.
 
 **Answer :**

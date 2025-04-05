@@ -1,5 +1,142 @@
 
 
+
+#### Base Template
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node
+{
+	int data;
+	struct node* next;
+}*head=NULL, *tail=NULL, *new=NULL;
+
+void Inserter(int ele, int ch);
+void Deleter(int ch);
+void Display();
+void Search();
+int length();
+
+
+void main()
+{
+	int ch, ele;
+
+	while(1)
+	{
+		printf("1. Insert at Beginning\t2. Middle\t3. End\n");
+		printf("4. Delete from Beginning\t5.Middle\t6. End\n");
+		printf("7. Search\t8.Display\n0. Exit\nEnter a Choice: ");
+		scanf("%d", &ch);
+
+		switch(ch)
+		{
+			case 1: case 2: case 3:
+				printf("Enter a Value to Insert: ");
+				scanf("%d", &ele);
+				Inserter(ele, ch);
+			case 8:
+				Display();
+				break;
+			case 4: case 5: case 6:
+				Deleter(ch); Display();
+				break;
+			case 7: Search();
+				break;
+			case 0: exit(0);
+			default: printf("Enter a right Choice\n");
+		}
+	}
+}
+void newNode(int ele)
+{
+
+}
+void inB(int ele)
+{
+
+}
+void inE(int ele)
+{
+
+}
+int length()
+{
+
+}
+int getPos()
+{
+
+}
+void inM(int ele)
+{
+
+}
+void Inserter(int ele, int ch)
+{
+	if(head == NULL)
+	{
+		newNode(ele);
+		return;
+	}
+	switch(ch)
+	{
+		case 1: inB(ele); break;
+		case 2: inM(ele); break;
+		case 3: inE(ele); break;
+	}
+
+}
+void delB()
+{
+
+}
+void delE()
+{
+
+}
+void delM()
+{
+
+}
+void Deleter(int ch)
+{
+
+	if(head == NULL)
+	{
+		printf("Nothing to Delete\n");
+		return;
+	}
+	if(head == tail)
+	{
+		struct node* temp = head;
+		head = tail = NULL;
+		free(temp); 
+		printf("List is Empty Now\n");
+		return;
+	}
+	switch(ch)
+	{
+		case 4: delB(); break;
+		case 5: delM(); break;
+		case 6: delE(); break;
+	}
+}
+void Display()
+{
+
+}
+void Search()
+{
+
+}
+```
+
+
+___
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -42,7 +179,7 @@ void main()
 			case 3:
 				printf("\nEnter the value to Insert: ");
 				scanf("%d", &ele);
-				Inserter(ch, ele);  printf("\n\n");
+					Inserter(ch, ele);  printf("\n\n");
 			case 7:
 				Display(); break;
 			case 4:
