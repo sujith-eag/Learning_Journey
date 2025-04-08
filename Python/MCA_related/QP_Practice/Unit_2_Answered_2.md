@@ -7,9 +7,7 @@
 **Answer :**
 
 Equality and identity of lists can be shown by using the `==` (equality) and `is` (identity) operators.
-
 - The equality operator (`==`) checks if the values of two lists are the same (i.e., the elements in the lists are identical).
-
 - The identity operator (`is`) checks if two variables refer to the same object in memory. This is used to determine if two lists are identical (i.e., they are the same object).
 
 ```python
@@ -54,8 +52,7 @@ ____
 
 **Answer :**
 
-**Slicing** in Python allows to access a subset (or "slice") of a list by specifying a start, stop, and step. 
-List can be sliced to retrieve elements from a specific range, manipulate parts of the list, or skip elements with a step value.
+**Slicing** in Python allows to access a subset (or "slice") of a list by specifying a start, stop, and step.  List can be sliced to retrieve elements from a specific range, manipulate parts of the list, or skip elements with a step value.
 
 ```python
 list[start:stop:step]
@@ -100,7 +97,7 @@ ___
 
 **Answer :**
 
-1. append()   : Adds a single element to the end of the list.
+1. `append()`  : Adds a single element to the end of the list.
 ```python
 my_list = [1, 2, 3]
 my_list.append(4)
@@ -109,7 +106,7 @@ print(my_list)
 # Output: [1, 2, 3, 4]
 ```
 
-2. insert()  : Inserts an element at a specific index.
+2. `insert()`  : Inserts an element at a specific index.
 ```python
 my_list = [1, 2, 3]
 my_list.insert(1, 4)  # Insert 4 at index 1
@@ -118,7 +115,7 @@ print(my_list)
 # Output: [1, 4, 2, 3]
 ```
 
-3. remove()  : Removes the first occurrence of an element from the list.
+3. `remove()`  : Removes the first occurrence of an element from the list.
 ```python
 my_list = [1, 2, 3, 2]
 my_list.remove(2)
@@ -127,7 +124,7 @@ print(my_list)
 # Output: [1, 3, 2]
 ```
 
-4. pop()  : Removes and returns the element at the specified index (or the last element if no index is provided).
+4. `pop()`  : Removes and returns the element at the specified index (or the last element if no index is provided).
 ```python
 list1 = [10, 20, 30, 40]
 
@@ -251,6 +248,9 @@ ____
 
 **Answer :**
 
+The program is asking to find the index of the even numbers in the list.
+* iterate over the list with for or while loop with `i=0` to be used as index.
+* if  element at `lis[i]` is even then store `i`
 ```python
 def even_indices(numbers):
     indices = []
@@ -530,7 +530,7 @@ print(my_dict)
 # {'a': 1, 'b': 3, 'c': 4}
 ```
 
-get()  :  Returns the value for a given key. If the key doesn't exist, it returns `None` or a specified default value.
+`get()`  :  Returns the value for a given key. If the key doesn't exist, it returns `None` or a specified default value.
 ```python
 my_dict = {'a': 1, 'b': 2}
 
@@ -541,7 +541,7 @@ print(my_dict.get('c', 'Not found'))
 # Output: Not found
 ```
 
-pop()  : Removes and returns the value associated with a given key.
+`pop()`  : Removes and returns the value associated with a given key.
 ```python
 my_dict = {'a': 1, 'b': 2}
 popped_value = my_dict.pop('b')
@@ -699,7 +699,6 @@ print(f"The number for {name} is {telephone_directory[name]}")
 
 ____
 
-
 ##### Develop a python program for the following: Create a dictionary by asking the user to give the name and marks of 10 different students. Sort the dictionary created according to marks.
 
 ```python
@@ -713,6 +712,33 @@ while count > 0:
 
 ```
 
+Storing marks as key and then sorting based on keys using sorted
+```python
+count = 10
+dict_1 = {}
+
+while count > 0:
+    name = input("Name: ")
+
+    try:   # checking marks is numeric
+        marks = int(input("Marks: "))
+    except ValueError:
+        print("Please enter numeric marks.")
+        continue
+	# making dictionary entry
+    dict_1[marks] = name
+    count -= 1
+
+# Sort the dictionary by marks
+sorted_dict = dict(sorted( dict_1.items() ) )
+
+print("\nSorted list of students by marks:")
+
+for marks, name in sorted_dict.items():
+    print(f"{name}: {marks}")
+```
+
+Same logic but keys are names, so sorting needs lambda function.
 ```python
 count = 10
 dict_1 = {}
@@ -751,7 +777,7 @@ ___
 
 ##### Design a Python program to create a dictionary containing the names and ages of five people. Determine the name of the oldest person in the dictionary.
 
-
+Logic would be to iterate through the dictionary and store only the largest value and it's corresponding key by comparison.
 ```python
 people = {
     'Alice': 30,
@@ -761,7 +787,56 @@ people = {
     'Eve': 35
 }
 
-# Step 2: Sort the dictionary by age
+largest_age = -1
+oldest_person = ""
+
+for name, age in people.items():
+    if age > largest_age:
+        largest_age = age
+        oldest_person = name
+
+print(f"The oldest person is {oldest_person} with an age of {largest_age}.")
+```
+
+Another logic would be to store age as `key` and `name` as value. This allows to sort the dictionary directly. The last one will be largest value.
+```python
+people = {
+    30: 'Alice',
+    45: 'Bob',
+    55: 'Charlie',
+    40: 'David',
+    35: 'Eve'
+}
+
+max_age = max(people.keys())
+oldest = people[max_age]
+print(f"Oldest person is {oldest} at {max_age} age")
+print("")
+
+
+# Sorting dictionary by age in ascending order
+sorted_people = dict(sorted(people.items()))
+
+print("People sorted by age (ascending):")
+for age, name in sorted_people.items():
+    print(f"Age: {age}, Name: {name}")
+
+
+sorted_people = dict(sorted(people.items() , reverse=True ))
+# Used to sort in Descending
+```
+
+There is method to sort the dictionary itself by its values but complicated.
+```python
+people = {
+    'Alice': 30,
+    'Bob': 45,
+    'Charlie': 55,
+    'David': 40,
+    'Eve': 35
+}
+
+# Sort the dictionary by age
 sorted_people = dict(sorted(people.items(), key=lambda item: item[1], reverse=True))
 
 person_list = list(sorted_people.keys())
@@ -769,28 +844,158 @@ person_list = list(sorted_people.keys())
 print(f"The oldest person is: {person_list[0]}")
 ```
 
-
 ___
 ## Numpy
 
-Discuss the following with an example: i) Indexing ii) Splitting arrays iii) Shape and reshape.
+##### Discuss the following with an example: 
 
-Explain the following routines of NumPy with examples:
+i) Indexing ii) Splitting arrays iii) Shape and reshape.
+
+**Answer :**
+
+1. Indexing in NumPy Arrays refers to accessing specific elements in an array based on their position (index). In NumPy, arrays can be indexed using integers, slices, and more advanced techniques such as boolean indexing or fancy indexing.
+
+```python
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+print(arr[0])  # 1
+
+print(arr[-1]) # 5
+```
+
+Index multi-dimensional arrays:
+```python
+arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# 2nd row, 3rd column
+print(arr2d[1, 2])  # 6
+```
+
+2. Splitting Arrays is useful to break down a large array into smaller ones. NumPy provides the `split()` function to divide an array into multiple sub-arrays.
+
+```python
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+# Split the array into 3 equal parts
+split_arr = np.split(arr, 3)
+print(split_arr)  
+# [array([1, 2, 3]), array([4, 5, 6]), array([7, 8, 9])]
+```
+
+3. Shape and Reshape in NumPy
+The shape of an array tells how many elements are present along each axis (dimension). 
+
+```python
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+print(arr.shape)  # Output: (6,)
+```
+
+The `reshape()` function allows you to change the shape of an array without changing its data.
+```python
+# Reshape the array into a 2x3 matrix
+reshaped_arr = arr.reshape(2, 3)
+print(reshaped_arr)
+# Output: 
+# [[1 2 3]
+#  [4 5 6]]
+```
+
+____
+
+##### Explain the following routines of NumPy with examples: 
+
 i) reshape ii) resize iii) unique iv) append v) insert.
 
-Create a NumPy array of integers and perform the following operations:
-i) Calculate the shape of the array.
-ii) Print a subset of the array using slicing.
+**Answer :**
+
+i) `resize()`: Changes the size of the array. If the new size is larger, the array is padded with zeroes. If it's smaller, the array is truncated.
+```python
+arr = np.array([1, 2, 3, 4, 5])
+arr.resize(2, 3)  # Resize to 2x3
+print(arr)
+# Output: 
+# [[1 2 3]
+#  [4 5 0]]
+```
+
+ii) `unique()`: Finds the unique elements in an array.
+```python
+arr = np.array([1, 2, 2, 3, 4, 4, 5])
+unique_arr = np.unique(arr)
+print(unique_arr)  # Output: [1 2 3 4 5]
+```
+
+iii) `append()`: Adds values to the end of an array.
+```python
+arr = np.array([1, 2, 3])
+arr_appended = np.append(arr, [4, 5])
+print(arr_appended)  # Output: [1 2 3 4 5]
+```
+
+iv) `insert()`: Inserts values into an array at specified positions.
+```python
+arr = np.array([1, 2, 3, 5])
+arr_inserted = np.insert(arr, 3, 4)  # Insert 4 at index 3
+print(arr_inserted)  # Output: [1 2 3 4 5]
+```
+
+____
+
+##### Create a NumPy array of integers and perform the following operations: 
+
+i) Calculate the shape of the array. 
+ii) Print a subset of the array using slicing. 
 iii) Multiply all elements of the array by 2 and print the result.
 
-Write a program to create NumPy array and get the smallest and largest element from the array and display them.
+**Answer :**
 
-Illustrate 2-D and 3-D array iterating with respect to numpy.
+```python
+import numpy as np
 
-Differentiate between lists and tuples in Python. How to create nested lists? Demonstrate how to create and print a 3-dimensional matrix with lists.
+# Create a NumPy array
+arr = np.array([1, 2, 3, 4, 5])
+
+print(f"Shape of the array: {arr.shape}")
+# Output: (5,)
+
+subset = arr[1:4]  # Slice from index 1 to 3
+print(f"Subset of the array: {subset}")
+# Output: [2 3 4]
+
+multiplied_arr = arr * 2
+print(f"Array multiplied by 2: {multiplied_arr}")
+# Output: [2 4 6 8 10]
+```
+
+
+____
+
+##### Write a program to create NumPy array and get the smallest and largest element from the array and display them.
+
+```python
+import numpy as np
+
+arr = np.array([15, 2, 45, 67, 23, 89, 12, 8])
+
+smallest = np.min(arr)
+largest = np.max(arr)
+
+print(f"Array: {arr}")
+print(f"Smallest element: {smallest}")
+print(f"Largest element: {largest}")
+```
+
+
+____
+
+* Illustrate 2-D and 3-D array iterating with respect to numpy.
+
+* Differentiate between lists and tuples in Python. How to create nested lists? Demonstrate how to create and print a 3-dimensional matrix with lists.
 
 
 ___
-
 
 

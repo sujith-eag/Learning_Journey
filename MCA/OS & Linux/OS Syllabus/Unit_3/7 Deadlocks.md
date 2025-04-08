@@ -23,7 +23,7 @@ Deadlock occurs when two or more processes are permanently blocked, with each pr
 Deadlock can occur only if all four of the following conditions hold simultaneously:
 
 - **Mutual Exclusion**: Resources cannot be shared.
-At least one resource must be held in a nonsharable mode; that is, only one process at a time can use the resource. If another process requests that resource, the requesting process must be delayed until the resource has been released.
+At least one resource must be held in a non sharable mode; that is, only one process at a time can use the resource. If another process requests that resource, the requesting process must be delayed until the resource has been released.
 
 - **Hold and Wait**: Processes holding resources can wait for other resources.
 A process must be holding at least one resource and waiting to acquire additional resources that are currently being held by other processes.

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9574e3dc626f0c28",
+        "id": "bc9bfeafe2462e66",
         "type": "tabs",
         "children": [
           {
-            "id": "a71a7b9f9d254502",
+            "id": "d5c7b23b67d68139",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/MCA_related/QP_Practice/Unit_1_Answered_1.md",
+                "file": "Python/MCA_related/QP_Practice/Unit_4_Answered_1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -23,12 +23,12 @@
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
-                  "backlinkCollapsed": true,
+                  "backlinkCollapsed": false,
                   "unlinkedCollapsed": true
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_1_Answered_1"
+              "title": "Unit_4_Answered_1"
             }
           }
         ]
@@ -173,34 +173,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a71a7b9f9d254502",
+  "active": "d5c7b23b67d68139",
   "lastOpenFiles": [
+    "Python/MCA_related/QP_Practice/Unit_3_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
+    "Python/5_Functions/5_3_Arguments.md",
+    "Algorithms & Problems/Problems/Int Mod/Fibonacci Sequence.md",
+    "Python/MCA_related/QP_Practice/Unit_3.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
+    "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answered_1.md",
+    "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answered_2.md",
+    "Python/MCA_related/QP_Practice/Unit_1_Answered_1.md",
+    "Python/MCA_related/QP_Practice/Unit_4.md",
+    "Python/MCA_related/QP_Practice/Unit_5.md",
+    "Python/MCA_related/QP_Practice/Unit_2.md",
     "Python/MCA_related/QP_Practice/Unit_1.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
-    "MCA/Data Structures in C/other_programs/1 Tower of Hanoi.md",
-    "MCA/Data Structures in C/linked_list/10_Circular_Doubly_linked_list.md",
-    "MCA/Data Structures in C/linked_list/9_Doubly_linked_list.md",
-    "MCA/Data Structures in C/linked_list/8_Circular_Singly_linked_List.md",
-    "MCA/Data Structures in C/linked_list/7_Singly_Linked_List_Full.md",
-    "MCA/Data Structures in C/linked_list/6_Singly_linked_list_Basic.md",
-    "MCA/Data Structures in C/linked_list/12_stack_using_list.md",
-    "MCA/Data Structures in C/linked_list/11_Queue_using_list.md",
-    "MCA/Data Structures in C/Binary_search_tree/Binary Tree.md",
-    "MCA/Data Structures in C/other_programs/5 Queue.md",
-    "MCA/Data Structures in C/other_programs/6 Circular_Queue.md",
-    "MCA/Data Structures in C/other_programs/4 Post-fix Evaluation.md",
-    "MCA/Data Structures in C/other_programs/3 In-fix to Post-fix Conversion.md",
-    "MCA/Data Structures in C/other_programs/2 Stack Operations.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Q.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_1_Basics.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_2_Arrays.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_3_DOM.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_4_DOM.md",
-    "MCA/Web Programming/Lab_practice/JavaScript_5_DOM.md",
+    "MCA/Maths QP.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/8_3_Virtual_Memory.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/Q_4_Answers.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/8_2_Paging.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/8_1_Memory_Management.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit 3.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit_3_Q_1_Answers.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit_3_Q_2.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7_3_deadlock_recovery.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/Unit_3_Q_1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7_2_Deadlock_Avoidance.md",
     "MCA/Maths/QP",
     "MCA/Maths",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",

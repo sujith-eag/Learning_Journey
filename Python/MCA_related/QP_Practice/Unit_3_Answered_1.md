@@ -3,16 +3,30 @@
 
 ##### What are DOC strings? Illustrate with an example.
 
-* Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. Provide an example demonstrating the use of docstrings in a Python function.
+* Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. 
+* Provide an example demonstrating the use of docstrings in a Python function.
 * What are DOC strings?
 
 **Answer :**
 
-**DOC Strings**: Documentation strings (or docstrings) are used to document Python code. They are placed at the beginning of modules, functions, classes, or methods to describe their purpose. Docstrings are accessible via the `help()` function.
+**DOC Strings**: Documentation strings (or docstrings) are used to document the code in Python. They are placed at the beginning of modules, functions, classes, or methods to describe their purpose. 
+
+These are different from regular comments, they are stored as the `__doc__` attribute of the object being documented. They are accessible at runtime via the `help()` function or `__doc__` attribute and are part of code's documentation which can be used auto generate documentations.
 ```python
 def my_function():
    """This function does nothing."""
    pass
+```
+
+```
+help(my_function)
+print(my_function.__doc__)
+```
+
+```python
+def add(a, b):
+    """Return the sum of a and b."""
+    return a + b
 ```
 
 ___
@@ -27,9 +41,7 @@ ___
 
 **Answer :**
 
-**Local and Global Variables**: Local variables are used within a function or block, whereas global variables are accessible across the entire program. Local variables have function-specific scope, while global variables are accessible throughout the program.
-
-**Local Variable**: A variable defined inside a function or block, accessible only within that function. If a variable is defined inside a function, it cannot be accessed outside its scope.
+**Local Variable**: A variable defined inside a function or block, accessible only within that function block. If a variable is defined inside a function, it cannot be accessed outside its scope.
 
 ```python
 def my_function():
@@ -58,13 +70,13 @@ ___
 
 The **LEGB Rule** stands for **Local, Enclosing, Global, and Built-in**. This is the rule Python follows to resolve variable names and determine their scope when searching for the value of a variable.
 
-* ***Local (L)**: refers to the current function's scope. If the variable is defined inside a function, Python will first look here.
+* *Local (L): refers to the current function's scope. If the variable is defined inside a function, Python will first look here.
 
-* **Enclosing (E)**: refers to any enclosing functions that are not the current function but are within the function being executed (nested functions). Python checks this scope next, moving outwards.
+* Enclosing (E): refers to any enclosing functions that are not the current function but are within the function being executed (nested functions). Python checks this scope next, moving outwards.
 
-* **Global (G)**: refers to the top-level scope of the module. If the variable is not found locally or in enclosing functions, Python will look for it in the global scope (the script or module level).
+* Global (G): refers to the top-level scope of the module. If the variable is not found locally or in enclosing functions, Python will look for it in the global scope (the script or module level).
 
-* **Built-in (B)**: refers to Python’s built-in names (such as `print`, `len`, etc.). If Python doesn't find the variable in any of the above scopes, it will check the built-in scope.
+* Built-in (B): refers to Python’s built-in names (such as `print`, `len`, etc.). If Python doesn't find the variable in any of the above scopes, it will check the built-in scope.
 
 ```python
 x = "Global x"
@@ -201,8 +213,7 @@ I have a Dog
 Its name is Jack
 ```
 
-
-* **Default Arguments :** Default values simplify function calls by providing a fallback value when an argument is omitted. The default value of a function must be available at definition time.
+* **Default Arguments :** Default values given within the parameter during definition time becomes the fall back value when an argument is omitted when function is being called. If function is called with that argument, then it is considered.
 
 ```python
 >>> def dis_pet(animal, name="Will"):
@@ -270,6 +281,7 @@ When how many arguments a function needs to accept is not known beforehand, pyth
 
 Using both positional and arbitrary arguments:  arbitrary must be in the end, python matches with first and passes rest to the end.
 
+____
 
 **Keyword Variable-Length Arguments ('**kwargs')** : The `**kwargs` syntax allows a function to accept a variable number of keyword arguments (key-value pairs). These arguments are stored in a dictionary.
 
@@ -285,7 +297,7 @@ print_info(name="Alice", age=25, city="New York")
 # city: New York
 ```
 
-Sometimes to accept an arbitrary number of arguments, not knowing what kind of information will be passed to the function. In this case, you can write functions that accept as many key-value pairs as the calling statement provides.
+Sometimes to accept an arbitrary number of arguments, not knowing what kind of information will be passed to the function. In this case, function can be written that accept as many key-value pairs as the calling statement provides.
 
 ```python
 >>> def display(farg, **extra):
@@ -443,7 +455,7 @@ def isAscending(L):
     if len(L) == 0:
         return True
     
-    for i in range(len(L) - 1):
+    for i in range(len(L)-1):
         if L[i] > L[i + 1]:
             return False  
     # element is greater than the next, return False
@@ -522,7 +534,6 @@ print(result)
 ____
 
 #### Predict the output of the following and justify your answer:
-
 
 Trace the function call and find the output of the following code:
 ```python
@@ -644,20 +655,20 @@ def mystery(ls):
 	if len(ls) < 2:
 		return (ls)
 	else:
-		return (mystery(ls[1:])+[ls[0]])
+		return ( mystery(ls[1:]) + [ls[0]] )
 ```
 What does `mystery([17,12,41,28,25]) `return?
 
-Length of list is not less than 2 so of fails, `ls` is not returned.
+Length of list is not less than 2 so `if` fails, `ls` is not returned.
 Recursive call happens with slice of list. `[12, 41, 28, 25]` and `[17]` will be added to the return.
 
-Length of list is not less than 2 so of fails, `ls` is not returned.
+Length of list is not less than 2 so `if` fails, `ls` is not returned.
 Recursive call happens with slice of list. `[41, 28, 25]` and `[12]` will be added to the return.
 
-Length of list is not less than 2 so of fails, `ls` is not returned.
+Length of list is not less than 2 so `if` fails, `ls` is not returned.
 Recursive call happens with slice of list. `[28, 25]` and `[41]` will be added to the return.
 
-Length of list is not less than 2 so of fails, `ls` is not returned.
+Length of list is not less than 2 so `if` fails, `ls` is not returned.
 Recursive call happens with slice of list. `[25]` and `[28]` will be added to the return.
 
 `len(ls)` is less than 2, return `[25]`

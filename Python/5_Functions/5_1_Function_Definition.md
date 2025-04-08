@@ -195,9 +195,6 @@ You can also use the return value of a function directly in expressions or as ar
 
 ---
 
-
-
-
 ### Assigning Functions to Different Names
 
 A function can be assigned to another name (variable), allowing it to be referenced differently using the variable.
@@ -243,7 +240,6 @@ This technique is useful for passing functions as arguments to other functions.
 ```
 
 Here, `square` is passed as `func` to `apply()`.
-
 
 
 ---
