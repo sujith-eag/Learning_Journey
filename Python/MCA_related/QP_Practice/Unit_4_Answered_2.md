@@ -8,12 +8,11 @@
 * How do you define and use regular expressions in Python? Discuss.
 * Demonstrate `match()` and `search()` methods w.r.t regular expressions in python.
 
-
 **Answer :**
 
 **regular expressions** (regex) are used to perform pattern matching and manipulation of strings. Regular expressions provide a powerful way to search, match, and manipulate text based on patterns, and Python offers a built-in module called `re` to work with regular expressions.
 
-A regular expression in Python is defined as a **string** pattern that you want to match against text. Regular expressions can include various special characters and constructs to describe complex text patterns.
+A regular expression in Python is defined as a **string** pattern to match against text. Regular expressions can include various special characters and constructs to describe complex text patterns.
 
 **Basic Syntax of Regular Expressions:**
 - `.` (Dot): Matches any character except newline.
@@ -132,7 +131,7 @@ Match a string that has 'a' followed by anything, ending in 'b'
 import re
 
 def match_a_to_b(text):
-    pattern = r'a.*b$'
+    pattern = r'a.+b$'
     result = re.match(pattern, text)
     if result:
         print(f"Matched string: {result.group()}")
@@ -218,7 +217,7 @@ Function to validate Mobile Number
 import re
 
 def validate_mobile_number(number):
-    pattern = r'^\+?[0-9]{3}(-?[0-9]{3}){2}$'
+    pattern = r'^\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}$'
 
     if re.match(pattern, number):
         print(f"'{number}' is a valid Mobile Number.")

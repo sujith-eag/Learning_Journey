@@ -209,9 +209,9 @@ array([[ 1,  2,  3,  4],
 
 ---
 
-- **`flatten()`**: Returns a one-dimensional copy of the array. You can specify the order of flattening (`C` or `F`).
-- **`reshape()`**: Changes the shape of the array without modifying its data, while maintaining the same number of elements.
-- **`resize()`**: Changes the shape and size of the array **in place**, filling any missing elements with zeros.
+- `flatten()`: Returns a one-dimensional copy of the array. You can specify the order of flattening (`C` or `F`).
+- `reshape()`: Changes the shape of the array without modifying its data, while maintaining the same number of elements.
+- `resize()`: Changes the shape and size of the array in place, filling any missing elements with zeros.
 
 ---
 

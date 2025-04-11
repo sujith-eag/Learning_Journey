@@ -9,23 +9,22 @@
 * How do you handle an exception? Explain all the three keywords in exception handling. Write a simple program to show how an except clause is used for handing multiple exceptions.
 * Discover what exception is produced by each of the following points. Then develop small example program that illustrates catching the exceptions using try statement(s) and continuing with execution after the interrupt.  (Division by zero, Opening a file that does not exist, Indexing a list with an illegal value,  Using an improper key with a dictionary,  Passing an improperly formatted expression to the function `expr( )`,  Using unindented code.)
 
-
 **Answer :**
 
 Exceptions are events that occur during the execution of a program that disrupt the normal flow of instructions. Exception handling in Python is a mechanism to handle these runtime errors, also known as exceptions. 
 
 Python provides a way to handle these errors using `try`, `except`, `else`, and `finally` blocks. This allows to anticipate errors and take appropriate actions without stopping the program, allowing the program to continue execution after an exception is handled.
 
-- **`try` block**: Contains the code that might cause an error.
-- **`except` block**: Catches the exception if it occurs and handles it without crashing the program.
-- **`else` block**: Executes if no exception occurs in the `try` block.
-- **`finally` block** (optional): Executes code regardless of whether an exception occurred or not. It’s typically used for cleanup actions, such as closing files or releasing resources.
+- `try` block: Contains the code that might cause an error.
+- `except` block: Catches the exception if it occurs and handles it without crashing the program.
+- `else` block: Executes if no exception occurs in the `try` block.
+- `finally` block (optional): Executes code regardless of whether an exception occurred or not. It’s typically used for cleanup actions, such as closing files or releasing resources.
 
 Catching exceptions is important for the following reasons:
 
-- **Prevent the program from crashing**: If an exception occurs and is not handled, the program will terminate abruptly. By catching exceptions, we can manage errors gracefully and allow the program to continue execution.
-- **Graceful Error Recovery**: With exception handling, we can recover from errors or give the user feedback that something went wrong without abruptly terminating the program.
-- **Separation of Error Handling and Logic**: The program logic and error-handling code are separated, making the code more readable and easier to maintain.
+- Prevent the program from crashing: If an exception occurs and is not handled, the program will terminate abruptly. By catching exceptions, we can manage errors gracefully and allow the program to continue execution.
+- Graceful Error Recovery: With exception handling, we can recover from errors or give the user feedback that something went wrong without abruptly terminating the program.
+- Separation of Error Handling and Logic: The program logic and error-handling code are separated, making the code more readable and easier to maintain.
 
 
 **Python Exception Handling Mechanism**
@@ -89,17 +88,17 @@ open_file('non_existing_file.txt')
 
 Common exceptions in Python:
 
-1. **ZeroDivisionError**: Raised when dividing by zero.
-2. **FileNotFoundError**: Raised when trying to open a non-existent file.
-3. **IndexError**: Raised when accessing an invalid index in a list.
-4. **KeyError**: Raised when accessing a dictionary with a non-existent key.
-5. **SyntaxError**: Raised for malformed expressions or invalid syntax.
-6. **IndentationError**: Raised when there’s incorrect indentation in the code.
-7. **ValueError**: Raised when a function gets an argument of the correct type but inappropriate value (e.g., converting a string to int).
-8. **TypeError**: Raised when an operation is applied to an object of an inappropriate type.
-9. **AttributeError**: Raised when accessing an attribute or method that doesn't exist for an object.
-10. **NameError**: Raised when a variable or name is not defined.
-11. **IOError**: Raised during I/O operations, such as file reading/writing failures.
+1. ZeroDivisionError: Raised when dividing by zero.
+2. FileNotFoundError: Raised when trying to open a non-existent file.
+3. IndexError: Raised when accessing an invalid index in a list.
+4. KeyError: Raised when accessing a dictionary with a non-existent key.
+5. SyntaxError: Raised for malformed expressions or invalid syntax.
+6. IndentationError: Raised when there’s incorrect indentation in the code.
+7. ValueError: Raised when a function gets an argument of the correct type but inappropriate value (e.g., converting a string to int).
+8. TypeError: Raised when an operation is applied to an object of an inappropriate type.
+9. AttributeError: Raised when accessing an attribute or method that doesn't exist for an object.
+10. NameError: Raised when a variable or name is not defined.
+11. IOError: Raised during I/O operations, such as file reading/writing failures.
 
 ___
 
@@ -237,7 +236,6 @@ except ValueError:
 
 `except` block: Catches the custom `InvalidAgeError` and prints the error message, or catches `ValueError` if the user enters non-numeric input.
 
-
 ___
 
 ## File I/O
@@ -251,8 +249,7 @@ ___
 
 Files are opened using the `open()` function where different modes can be specified, depending on whether file is to be read from, write to, or manipulate the file in other ways. These modes are passed as a string argument to the `open()` function.
 
-**five common file open modes** in Python are:
-
+Five common file open modes in Python are:
 
 1. **`'r'` - Read Mode :** Opens a file for reading only. The file pointer is placed at the beginning of the file. If the file does not exist, it raises a `FileNotFoundError`.
 
@@ -280,7 +277,7 @@ file.close()
 
 4. **`'r+'` - Read and Write Mode**
 
-- **Description**: Opens a file for both reading and writing. The file pointer is placed at the beginning of the file. If the file does not exist, it raises a `FileNotFoundError`.
+- **Description**: Opens a file for both reading and writing. The file pointer is placed at the beginning of the file. If the file does not exist, it raises a `FileNotFoundError`. Does not erase the file but pointer is at beginning and writing will overwrite the parts on which it is written.
 
 ```python
 file = open("example.txt", "r+")

@@ -121,7 +121,7 @@ array([[ 0,  4,  8, 12, 16, 20],
 
 ### Summary of Key Functions
 
-- **`arr.T`**: Returns the transpose of the array, swapping rows and columns.
-- **`np.dot()`**: Performs matrix multiplication using the transpose.
-- **`@` operator**: Another way to perform matrix multiplication with the transpose.
-- **`swapaxes()`**: Swaps two axes of the array, returning a view without copying data.
+- `arr.T`: Returns the transpose of the array, swapping rows and columns.
+- `np.dot()`: Performs matrix multiplication using the transpose.
+- `@` operator: Another way to perform matrix multiplication with the transpose.
+- `swapaxes()`: Swaps two axes of the array, returning a view without copying data.

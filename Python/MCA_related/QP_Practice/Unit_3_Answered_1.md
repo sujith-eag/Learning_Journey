@@ -70,7 +70,7 @@ ___
 
 The **LEGB Rule** stands for **Local, Enclosing, Global, and Built-in**. This is the rule Python follows to resolve variable names and determine their scope when searching for the value of a variable.
 
-* *Local (L): refers to the current function's scope. If the variable is defined inside a function, Python will first look here.
+* Local (L): refers to the current function's scope. If the variable is defined inside a function, Python will first look here.
 
 * Enclosing (E): refers to any enclosing functions that are not the current function but are within the function being executed (nested functions). Python checks this scope next, moving outwards.
 

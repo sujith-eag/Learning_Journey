@@ -387,7 +387,7 @@ ____
 
 List comprehension in Python provides a concise way to create lists based on existing iterables. It represents the creation of a new list from an iterable object (like a list, set, tuple, dictionary, or range) that satisfies a given condition. 
 
-It is very compact code, usually a single line, and simplifies loops, as well as the process of filtering or transforming data into a new list. 
+It is very compact code, usually a single line, and simplifies loops, as well as the process of filtering or transforming data into a new list.
 
 The syntax is readable and efficient, making it one of the most powerful features of Python when working with lists.
 
