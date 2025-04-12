@@ -3,7 +3,7 @@
 
 Typescript,(Postgres), Java, Go,
 
-{Frameworks}{: Flask,} 
+{Frameworks}{: Flask, } 
 
 React, Node.js, Deno!!!  Material-UI, FastAPI, Angular, Vu, Django, React native
 

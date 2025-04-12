@@ -120,13 +120,13 @@ If the resulting resource-allocation state is safe, the transaction is completed
 
 **Need Matrix**
 
-|Task|A|B|C|
-|---|---|---|---|
-|T0|7|4|3|
-|T1|1|2|2|
-|T2|6|0|0|
-|T3|0|1|1|
-|T4|4|3|1|
+| Task | A   | B   | C   |
+| ---- | --- | --- | --- |
+| T0   | 7   | 4   | 3   |
+| T1   | 1   | 2   | 2   |
+| T2   | 6   | 0   | 0   |
+| T3   | 0   | 1   | 1   |
+| T4   | 4   | 3   | 1   |
 
 The system is currently in a **safe state**. The sequence <T1, T3, T4, T2, T0> satisfies the safety criteria.
 

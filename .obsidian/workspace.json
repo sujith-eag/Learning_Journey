@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "45d1ade02f261ae9",
+        "id": "4ccc9ce5cd0409ed",
         "type": "tabs",
         "children": [
           {
-            "id": "a16f297e59c22d60",
+            "id": "13760e39857779ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/1_Data_Types/1_Primitive_types/3.2 string methods.md",
+                "file": "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "3.2 string methods"
+              "title": "Unit_4_Q"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dc556d9f2a3dd7a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d44699b62f9494f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_Answers.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Unit_4_Q_Answers"
             }
           }
         ]
@@ -88,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 247.5086555480957
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,34 +203,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a16f297e59c22d60",
+  "active": "13760e39857779ce",
   "lastOpenFiles": [
-    "Python/1_Data_Types/1_Primitive_types/1.1_Datatypes.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.2_Dictionary_manipulation_operations.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7.1_Dictionary_Accessing_elements.md",
-    "Python/1_Data_Types/2_complex_types/7_dictionary/7_Dictionary.md",
-    "Python/MCA_related/QP_Practice/Unit_4_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_5_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_1_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_1_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_2_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_2_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answered_2.md",
-    "Python/MCA_related/QP_Practice/Unit_3_Answered_1.md",
-    "Python/MCA_related/QP_Practice/Unit_4_Answered_1.md",
-    "Python/8_File_I_O/8_2_working_with_file_content.md",
-    "Python/8_File_I_O/8_1_file_handling.md",
-    "Python/MCA_related/Untitled 1.md",
-    "MCA/Python/pylab.md",
-    "MCA/Python/Py_Q_Collection/Python Internals.md",
-    "Python/temp_hold/0_Python.md",
-    "Python/6_OOP/6.5_Inheritance.md",
-    "Python/1_Data_Types/1_Primitive_types/2_int_float.md",
-    "Python/1_Data_Types/1_Primitive_types/1.2_Operators.md",
-    "Python/1_Data_Types/1_Primitive_types/1_Variables.md",
-    "Python/9_Libraries/NumPy/10_Basic Summary Of NumPy.md",
-    "Python/9_Libraries/NumPy/09_Broadcasting_in_NumPy.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A2.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_Answers.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_Answers.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7_2_Deadlock_Avoidance.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7_3_deadlock_recovery.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_Answers.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7 Deadlocks.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_3/7_1_Deadlock_Prevention.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.7 Classic Problems.md",
+    "Untitled 1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.2 Critical Section Problem.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.5 Mutex Locks.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.6 Semaphores.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q.md",
+    "MCA/OS & Linux/OS_Exam_Practice/U2_Summary.md",
+    "MCA/OS & Linux/OS_Exam_Practice/U1_Summary.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_2.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_1.md",
+    "Z/Resume Template.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_1.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_2.md",
+    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
     "MCA/Maths/QP",
     "MCA/Maths",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",
