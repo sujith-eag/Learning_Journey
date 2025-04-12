@@ -4,61 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4ccc9ce5cd0409ed",
+        "id": "f2f1c7cddb607717",
         "type": "tabs",
         "children": [
           {
-            "id": "13760e39857779ce",
+            "id": "8f4d94e804c8a5ad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Unit_4_Q"
-            }
-          }
-        ]
-      },
-      {
-        "id": "dc556d9f2a3dd7a1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5d44699b62f9494f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_Answers.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Unit_4_Q_Answers"
+              "title": "New tab"
             }
           }
         ]
@@ -203,34 +159,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "13760e39857779ce",
+  "active": "8f4d94e804c8a5ad",
   "lastOpenFiles": [
+    "MCA/OS & Linux/OS_Exam_Practice/Unit4_Q_A2.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_A.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_A.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A1.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A2.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_Answers.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_Answers.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/8_3_Virtual_Memory.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/8_2_Paging.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_4/8_1_Memory_Management.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q.md",
     "MCA/OS & Linux/OS Syllabus/Unit_3/7_2_Deadlock_Avoidance.md",
     "MCA/OS & Linux/OS Syllabus/Unit_3/7_3_deadlock_recovery.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_Answers.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A1.md",
     "MCA/OS & Linux/OS Syllabus/Unit_3/7 Deadlocks.md",
     "MCA/OS & Linux/OS Syllabus/Unit_3/7_1_Deadlock_Prevention.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.7 Classic Problems.md",
-    "Untitled 1.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.2 Critical Section Problem.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.5 Mutex Locks.md",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes/6.6 Semaphores.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q.md",
     "MCA/OS & Linux/OS_Exam_Practice/U2_Summary.md",
     "MCA/OS & Linux/OS_Exam_Practice/U1_Summary.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_2.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_1.md",
-    "Z/Resume Template.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_1.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_2.md",
-    "MCA/OS & Linux/OS Syllabus/Syllabus Overlap.md",
     "MCA/Maths/QP",
     "MCA/Maths",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",
