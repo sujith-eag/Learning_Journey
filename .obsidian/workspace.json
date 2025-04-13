@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2a418b0e0facfca0",
+        "id": "01ab5574b42384b9",
         "type": "tabs",
         "children": [
           {
-            "id": "4a2f86cf4df3bc2f",
+            "id": "71c93da5af035b05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
+                "file": "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_5_Answered"
+              "title": "Unit_4_Q_A1"
             }
           }
         ]
@@ -174,34 +174,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a2f86cf4df3bc2f",
+  "active": "71c93da5af035b05",
   "lastOpenFiles": [
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A2.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A1.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A2.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_A.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q_A.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_A.md",
+    "13-04-2025.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q.md",
+    "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
     "MCA/Data Structures in C/QP_Analysis/Unit_1_Q.md",
     "Linux/Linux Bash/01_bash_basics/2 Bash Features.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q_A.md",
     "Linux/Linux Bash/01_bash_basics/1 Bash Basics.md",
     "Linux/Linux Bash/01_bash_basics/0 Linux Bash.md",
     "Linux/Linux Bash/Bash Doc/bash-commands.md",
     "Linux/Linux Bash/07_shell_scripting/18 Shell Scripts.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A2.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_A.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_A.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q.md",
     "Untitled.md",
     "Untitled 1.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A1.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A2.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
     "MCA/OS & Linux/OS Syllabus/Unit_4/8_3_Virtual_Memory.md",
     "MCA/OS & Linux/OS Syllabus/Unit_4/8_2_Paging.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_4/8_1_Memory_Management.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q.md",
     "MCA/Maths/QP",
     "MCA/Maths",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",
