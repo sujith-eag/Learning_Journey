@@ -3,7 +3,7 @@
 [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html)
 
 ____
-### [[1 Navigating Files & Dir]]
+### 1 Navigating Files & Dir
 `clear`
 `sudo apt upgrade update`  `/`  `.`  `..` 
 `syntax of command, options, arguments`
@@ -15,7 +15,7 @@ ____
 `cd`   `cd ..` `cd -`  `cd /` `cd ~`  `cd ../..` 
 `ls`  `ls -F`  `ls -s` `ls -S`  `ls -l`  `ls -a`  `ls -R` 
 
-### [[2 Working with Files & Dir]]
+### 2 Working with Files & Dir
 `touch`
 `mkdir`   `mkdir -p` 
 `naming conventions`
@@ -25,7 +25,7 @@ ____
 `cp`   `cp -r`
 `wild cards  * ?`
 
-### [[3 Pipes and Filters]]
+### 3 Pipes and Filters
 `wc`   `wc -l`   `wc -m`  `wc  -w`
 `>`    `>>`
 `echo`
