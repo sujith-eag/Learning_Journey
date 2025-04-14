@@ -4,7 +4,7 @@ File permissions are a mechanism that supports operating system protection, ensu
 
 Since users primarily interact with files, the resources that we protect with permissions are **files** and **directories**.
 
-### **Access Control Mechanism**
+### Access Control Mechanism
 
 Many operating systems implement file permissions using **Access Control Lists (ACLs)**. An ACL is attached to a specific file or directory and lists the users and groups that have access rights to that resource. The list can become lengthy, depending on the number of users.
 
@@ -12,14 +12,14 @@ Each **user** or **group** can have specific access rights to a file.
 - The **owner** might have **read**, **write**, and **execute** permissions.
 - Other users (members of the **group** or the **world**) might have different levels of access, such as **read** or **execute** only.
 
-#### **Permission Types and Access Rights**
+#### Permission Types and Access Rights
 
 In Linux, file permissions are defined for **three categories**:
 - **Owner (`u`)**
 - **Group (`g`)**
 - **Others (`o`)**, also known as **world**
 
-#### **Access Rights**:
+#### Access Rights:
 
 **`r` (read)**:
 - For **files**: Allows viewing, copying, or opening as read-only.
@@ -35,10 +35,10 @@ In Linux, file permissions are defined for **three categories**:
 
 ---
 
-## Changing Permissions from the Command Line
+### Changing Permissions from the Command Line
 
 
-### Using the `chmod` Command
+#### Using the `chmod` Command
 
 `chmod` (change mode) is used to alter the permissions of a file or directory.
 

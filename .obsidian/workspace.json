@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
+                "file": "Linux/Linux Bash/01_bash_basics/1 Bash Basics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_4_Q_A1"
+              "title": "1 Bash Basics"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5086555480957,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -176,32 +175,32 @@
   },
   "active": "71c93da5af035b05",
   "lastOpenFiles": [
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A2.md",
+    "Linux/Linux Bash/01_bash_basics/0 Linux Bash.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q_A.md",
+    "Linux/Linux Bash/04_file_search_edit/17 sed.md",
+    "Linux/Linux Bash/04_file_search_edit/16 egrep.md",
+    "Linux/Linux Bash/04_file_search_edit/14 File Searching.md",
+    "Linux/Linux Bash/04_file_search_edit/12 Hard and Symbolic Links.md",
+    "Linux/Linux Bash/04_file_search_edit/11 File Permissions.md",
+    "Linux/Linux Bash/02_basic_commands/7 Linux File System.md",
+    "Linux/Linux Bash/02_basic_commands/5 Listing Files and Directories.md",
+    "Linux/Linux Bash/04_file_search_edit/10 File Viewing and Editing.md",
+    "Linux/Linux Bash/02_basic_commands/9 File Movement and Copy.md",
+    "Linux/Linux Bash/02_basic_commands/8.1 bc and date.md",
+    "Linux/Linux Bash/02_basic_commands/8 Basic File commands.md",
+    "Linux/Linux Bash/01_bash_basics/6 Shell Environment and Subshell.md",
+    "Linux/Linux Bash/01_bash_basics/4 Variables and Aliases.md",
+    "Linux/Linux Bash/01_bash_basics/3 help pages.md",
+    "Linux/Linux Bash/01_bash_basics/2 Bash Features.md",
+    "Linux/Linux Bash/01_bash_basics/1 Bash Basics.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
+    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A2.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A1.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A2.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_A.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q_A.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_A.md",
     "13-04-2025.md",
     "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Q.md",
-    "Linux/Linux Bash/01_bash_basics/2 Bash Features.md",
-    "Linux/Linux Bash/01_bash_basics/1 Bash Basics.md",
-    "Linux/Linux Bash/01_bash_basics/0 Linux Bash.md",
-    "Linux/Linux Bash/Bash Doc/bash-commands.md",
-    "Linux/Linux Bash/07_shell_scripting/18 Shell Scripts.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q.md",
-    "Untitled.md",
-    "Untitled 1.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_4/8_3_Virtual_Memory.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_4/8_2_Paging.md",
     "MCA/Maths/QP",
     "MCA/Maths",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",

@@ -66,6 +66,7 @@ egrep '[a-z]+ [a-z]+ [a-z]+' *.txt
 ```
 
 _____
+
 `-i, --ignore-case`    ignore case distinctions in patterns and data 
 (Perform case-insensitive search  `grep -i "error\|fail" logfile.txt`)
 
@@ -108,7 +109,6 @@ _____
 ```bash {frame="none"}
 $ egrep -r "Yesterday"
 ```
-
 
 
 - **Word Boundary (`-w`)**: Limits matches to whole words only.
@@ -247,4 +247,5 @@ singly_list.c
 singly_list_final.c
 ```
 
+____
 
