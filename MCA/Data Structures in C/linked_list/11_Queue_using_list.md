@@ -8,6 +8,115 @@ struct node
 {
     int data;
     struct node *next;
+} *head = NULL, *tail = NULL;
+
+
+void enqueue(int e) 
+{
+    struct node* new;
+    new = (struct node*) malloc(sizeof(struct node));
+    
+    new->data = e;
+    new->next = NULL;
+    if (rear == NULL) 
+    {
+        front = rear = new;
+        return;
+    }
+	rear->next = new;
+	rear = new;
+}
+
+void dequeue() 
+{
+    if (front == NULL) 
+    {
+        printf("Queue is Underflow \n");
+		return;
+    } 
+    
+	struct node* temp = front;
+	
+	front = front->next;
+	
+	if (front == NULL) 
+		rear = NULL;
+	
+	free(temp);
+}
+
+void peek() 
+{
+    if (front == NULL) 
+    {
+        printf("Queue is Underflow \n");
+		return;
+    } 
+ 
+	printf("The Front Element is %d\n", front->data);
+}
+
+void display() 
+{
+    if (front == NULL) 
+    {
+        printf("Queue is Empty \n");
+        return;
+    }
+     
+	struct node* temp = front;
+	
+	printf("Elements of Queue are \n");
+	while (temp != NULL) 
+	{
+		printf("%d \n", temp->data);
+		temp = temp->next;
+	}
+}
+
+int main() {
+    int e, ch;
+    while (1) {
+        printf("\n\n1->Enqueue element \t2->Dequeue element \n3->Peek \t\t4->Display \n5->Exit\n");
+        printf("\nEnter choice:\n");
+        scanf("%d", &ch);
+        switch (ch) {
+            case 1:
+                printf("Enter the element to be enqueued \n");
+                scanf("%d", &e);
+                enqueue(e);
+                break;
+            case 2:
+                dequeue();
+                break;
+            case 3:
+                peek();
+                break;
+            case 4:
+                display();
+                break;
+            case 5:
+                exit(0);
+            default:
+                printf("Enter the choice Correctly\n");
+        }
+    }
+    return 0;
+}
+```
+
+____
+
+#### Given Code
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node 
+{
+    int data;
+    struct node *next;
 } *front = NULL, *rear = NULL;
 
 void enqueue(int e) 
