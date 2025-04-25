@@ -8,27 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "71c93da5af035b05",
+            "id": "8f33a3322213c9b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
+                "file": "Z/Resume Template.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Unit_5_Answered"
+              "title": "Resume Template"
             }
           }
         ]
@@ -88,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -174,34 +164,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71c93da5af035b05",
+  "active": "8f33a3322213c9b4",
   "lastOpenFiles": [
+    "Life and Fulfillment.md",
+    "Z/Projects.md",
+    "Z/Resume Template.md",
+    "Java/J 16.md",
+    "Java/J 15.md",
+    "Java/J 14.md",
+    "Java/J 13.md",
+    "Java/J 12.md",
+    "Java/J 11.md",
+    "Java/J 10.md",
+    "Java/J 9.md",
+    "Java/J 8.md",
+    "Java/J 7.md",
+    "Java/J 6.md",
+    "Java/J 5.md",
+    "Java/J 4.md",
+    "Java/J 3.md",
+    "Java/J 2.md",
+    "Java/J 1.md",
+    "Try.md",
+    "Java",
     "Untitled.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_5_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_4_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Answered.md",
     "Untitled 1.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Q_A1.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Answered.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Q_A2.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_2_Q.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_1_Q.md",
-    "MCA/Data Structures in C/linked_list/7_Singly_Linked_List_Full.md",
-    "MCA/Data Structures in C/linked_list/8_Circular_Singly_linked_List.md",
-    "MCA/Data Structures in C/linked_list/9_Doubly_linked_list.md",
-    "MCA/Data Structures in C/linked_list/10_Circular_Doubly_linked_list.md",
-    "MCA/Data Structures in C/linked_list/12_stack_using_list.md",
-    "MCA/Data Structures in C/linked_list/11_Queue_using_list.md",
-    "MCA/Data Structures in C/QP_Analysis/Unit_3_Q.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q_A.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_5_Q.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_1_Q_A.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A2.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_2_Q_A2.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_3_Q_A.md",
-    "MCA/OS & Linux/OS_Exam_Practice/Unit_4_Q_A1.md",
-    "Linux/Linux Bash/07_shell_scripting/18.2 Shell Scripts - Loops.md",
-    "Linux/Linux Bash/07_shell_scripting/18.1 Shell Scripts - Conditionals.md",
+    "peels.md",
+    "13-04-2025.md",
+    "MCA/Research_paper/Final_draft_sections/02_Review of Literature.md",
+    "MCA/Research_paper/Final_draft_sections/01_Introduction.md",
+    "IoT",
     "MCA/Maths/QP",
     "MCA/Maths",
     "MCA/OS & Linux/OS Syllabus/Unit_2/Notes",
@@ -210,8 +202,6 @@
     "MCA/Data Structures in C/temp",
     "MCA/Data Structures in C/other_programs",
     "Python/MCA_related/QP_Practice",
-    "MCA/OS & Linux/OS Syllabus/Unit_4",
-    "MCA/Web Programming/Lab_practice",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
