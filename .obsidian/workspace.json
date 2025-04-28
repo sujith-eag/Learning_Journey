@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "01ab5574b42384b9",
+        "id": "88ac8b6db506ac46",
         "type": "tabs",
         "children": [
           {
-            "id": "8f33a3322213c9b4",
+            "id": "976a463e132b7ef0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Z/Resume Template.md",
+                "file": "Add-on/VitePress/7 Theme.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "Resume Template"
+              "title": "7 Theme"
             }
           }
         ]
@@ -164,13 +173,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f33a3322213c9b4",
+  "active": "976a463e132b7ef0",
   "lastOpenFiles": [
-    "Life and Fulfillment.md",
-    "Z/Projects.md",
-    "Z/Resume Template.md",
+    "Add-on/VitePress/6 Customizing.md",
+    "Add-on/VitePress/7 Theme.md",
+    "Add-on/VitePress/5 Vue in Markdown.md",
+    "Add-on/VitePress/3 Markdown.md",
+    "Add-on/VitePress/4 Assets and Images.md",
+    "Add-on/VitePress/2 Deploy.md",
+    "Add-on/VitePress/1 Setup.md",
+    "Java/J 3.md",
+    "Add-on/VitePress",
+    "Java/J 2.md",
+    "Java/J 1.md",
+    "Add-on/Git.md",
+    "Java/J 17.md",
+    "Java/J 18.md",
+    "Java/J 19.md",
     "Java/J 16.md",
     "Java/J 15.md",
+    "Z/Resume Template.md",
+    "Life and Fulfillment.md",
+    "Z/Projects.md",
     "Java/J 14.md",
     "Java/J 13.md",
     "Java/J 12.md",
@@ -178,21 +202,7 @@
     "Java/J 10.md",
     "Java/J 9.md",
     "Java/J 8.md",
-    "Java/J 7.md",
-    "Java/J 6.md",
-    "Java/J 5.md",
-    "Java/J 4.md",
-    "Java/J 3.md",
-    "Java/J 2.md",
-    "Java/J 1.md",
-    "Try.md",
     "Java",
-    "Untitled.md",
-    "Untitled 1.md",
-    "peels.md",
-    "13-04-2025.md",
-    "MCA/Research_paper/Final_draft_sections/02_Review of Literature.md",
-    "MCA/Research_paper/Final_draft_sections/01_Introduction.md",
     "IoT",
     "MCA/Maths/QP",
     "MCA/Maths",
@@ -201,7 +211,6 @@
     "MCA/Data Structures in C/QP_Analysis",
     "MCA/Data Structures in C/temp",
     "MCA/Data Structures in C/other_programs",
-    "Python/MCA_related/QP_Practice",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
