@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Add-on/VitePress/7 Theme.md",
+                "file": "Java/J 18.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "7 Theme"
+              "title": "J 18"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,8 +176,11 @@
   },
   "active": "976a463e132b7ef0",
   "lastOpenFiles": [
-    "Add-on/VitePress/6 Customizing.md",
+    "Java/J 17.md",
+    "Java/J 18.md",
+    "Java/J 19.md",
     "Add-on/VitePress/7 Theme.md",
+    "Add-on/VitePress/6 Customizing.md",
     "Add-on/VitePress/5 Vue in Markdown.md",
     "Add-on/VitePress/3 Markdown.md",
     "Add-on/VitePress/4 Assets and Images.md",
@@ -187,9 +191,6 @@
     "Java/J 2.md",
     "Java/J 1.md",
     "Add-on/Git.md",
-    "Java/J 17.md",
-    "Java/J 18.md",
-    "Java/J 19.md",
     "Java/J 16.md",
     "Java/J 15.md",
     "Z/Resume Template.md",
