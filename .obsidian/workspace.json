@@ -11,10 +11,24 @@
             "id": "25c4fe86f8683e16",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "C/0.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "0"
             }
           }
         ]
@@ -74,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -160,35 +173,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25c4fe86f8683e16",
+  "active": "7be855190f0aed71",
   "lastOpenFiles": [
-    "MCA/Full_Stack/React/8R.md",
-    "MCA/Full_Stack/React/7R.md",
-    "MCA/Full_Stack/React/6R.md",
-    "MCA/Full_Stack/React/4R.md",
-    "MCA/Full_Stack/React/5R.md",
-    "MCA/Full_Stack/React/3R.md",
-    "MCA/Full_Stack/React/2R.md",
-    "MCA/Full_Stack/React/1R.md",
-    "MCA/Full_Stack/Day_2.md",
-    "MCA/Full_Stack/React",
-    "JavaScript/4_Objects/object_detailed/03_extending_serializing_objects.md",
-    "JavaScript/4_Objects/object_detailed/02_methods_in_objects.md",
-    "JavaScript/4_Objects/object_detailed/01_inheritance.md",
-    "JavaScript/6_Functions/3.8_function_object.md",
-    "JavaScript/6_Functions/3.4_rest_spread.md",
-    "JavaScript/5_Array/02_Array_methods/02_map_method.md",
-    "JavaScript/5_Array/te.md",
-    "JavaScript/5_Array/Map_and_Set.md",
-    "JavaScript/9_modules/03_Building_Bundling.md",
-    "JavaScript/9_modules/02_Packages.md",
-    "JavaScript/9_modules/01_ES_Modules.md",
-    "JavaScript/7_OOP/7_OOP.md",
-    "MCA/Full_Stack/Day_1.md",
-    "Java/J 10.md",
-    "Java/J 9.md",
-    "Java/J 8.md",
-    "Java/J 7.md",
+    "README.md",
+    "MCA/Maths QP.md",
+    "MCA/p/Untitled 1.md",
+    "MCA/p/Untitled.md",
+    "Z/Frontend.md",
+    "Z/Resume Template.md",
+    "Z/DSA.md",
+    "Z/Backend.md",
+    "Z/Course Track/List of Courses.md",
+    "Z/Course Track/Course Tracking.md",
+    "Z/Temp/Try.md",
+    "Pipeline.md",
+    "Z/Projects.md",
+    "Z/Temp/Temp.md",
+    "Z/Temp/Offload.md",
+    "Z/Temp/Under way.md",
+    "Life and Fulfillment.md",
+    "peels.md",
+    "Site Structure.md",
+    "Z/Projects/Capstone1/Features Overview.md",
+    "Z/Projects/Mini Projects/BEOWULF CLUSTERS.md",
+    "Z/Projects/Mini Projects/PDF conversion (first project).md",
+    "Z/Projects/Mini Projects/PDF_Parser_Sorter.md",
+    "Z/Projects/Mini Projects/RSS Feed Reader.md",
+    "Z/Projects/Mini Projects/Crash Course Project.md",
+    "React/10R.md",
+    "React",
     "MCA/Full_Stack",
     "Add-on/VitePress",
     "Java",
