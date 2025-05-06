@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Asynchronous_programming/03_Failure.md",
+                "file": "Add-on/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "03_Failure"
+              "title": "Git"
             }
           }
         ]
@@ -175,6 +175,7 @@
   },
   "active": "32dcb43805fd9432",
   "lastOpenFiles": [
+    "JavaScript/Asynchronous_programming/03_Failure.md",
     "JavaScript/Asynchronous_programming/02_promises.md",
     "JavaScript/Asynchronous_programming/01_async_callbacks.md",
     "Java/08_exception_handling/01_exception.md",
@@ -203,7 +204,6 @@
     "Java/06_methods",
     "Java/04_Class_Object/04_.md",
     "Java/05_arrays/03_text_block_ternary_operator.md",
-    "Java/05_arrays/02_for_each_strings.md",
     "Java/05_arrays",
     "Java/04_Class_Object",
     "Java/03_Control_Statements",

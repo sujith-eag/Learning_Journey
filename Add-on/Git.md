@@ -117,6 +117,10 @@ git branch -M main               # Rename current branch to main (if necessary)
 git push -u origin main          # Push changes to GitHub
 ```
 
+`git remote set-url origin NEW_URL` to change the remote url
+
+____
+
 ## Commit Messages
 
 - Follow the seven rules of a great Git commit message:
