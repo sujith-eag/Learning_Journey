@@ -11,6 +11,7 @@ Concepts to be covered in Tutorial
 9. Express JS URL Building, Templating, Static Files.
 10. Express JS Cookies, Sessions and Authentication.
 11. Connecting MongoDB, insert documents, update/delete documents, Query Database.
+12. Introduction to Git
 
 Laboratory:
 Programs supplementing the concepts covered in Tutorial.
