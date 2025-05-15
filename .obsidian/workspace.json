@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9236d99d5cdefa5a",
+        "id": "c2fcd1e48e0118b7",
         "type": "tabs",
         "children": [
           {
-            "id": "bbccb2227d766aa7",
+            "id": "d8e669b88cdd50e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.11 Computing Environments.md",
+                "file": "Java/06_methods/01_Argument_passing_return.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1.11 Computing Environments"
+              "title": "01_Argument_passing_return"
             }
           }
         ]
@@ -173,25 +173,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbccb2227d766aa7",
+  "active": "d8e669b88cdd50e7",
   "lastOpenFiles": [
-    "convert.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.11 Computing Environments.md",
-    "Z/Temp/Untitled.md",
-    "Z/Temp/Untitled 2.md",
-    "Z/Temp/Untitled 1.md",
-    "Java/01_Basics/02_Java_Buzzwords.md",
-    "Java/08_exception_handling/03_Additional_features.md",
-    "Java/08_exception_handling/02_throwing.md",
-    "Java/08_exception_handling/01_exception.md",
-    "Java/07_packages_interface/03_interfaces.md",
-    "Java/07_packages_interface/01_packages.md",
-    "Java/06_methods/recursion.md",
-    "Java/06_methods/abstract_object_class.md",
-    "Java/06_methods/07_method_overriding.md",
-    "Java/06_methods/03_static_vargs.md",
-    "Java/06_methods/02_method_overloading.md",
-    "Java/06_methods/01_Argument_passing_return.md",
     "Java/05_arrays/03_text_block_ternary_operator.md",
     "Java/05_arrays/02_for_each_strings.md",
     "Java/05_arrays/01_arrays.md",
@@ -201,6 +184,23 @@
     "Java/03_Control_Statements/05_switch_expression.md",
     "Java/03_Control_Statements/04_break_continue.md",
     "Java/03_Control_Statements/03_for_while_loops.md",
+    "Java/03_Control_Statements/02_switch_statement.md",
+    "Java/03_Control_Statements/01_if_else.md",
+    "Java/02_Data_Types_Operators/02_Type_Conversion.md",
+    "Java/02_Data_Types_Operators/01_Data_Types_Operators.md",
+    "Java/01_Basics/05_Java_Identifiers_Structure.md",
+    "Java/01_Basics/04_Java_Compiling_Program.md",
+    "Java/01_Basics/03_Java_OOP.md",
+    "Java/01_Basics/02_Java_Buzzwords.md",
+    "Java/01_Basics/01_Java_Evolution.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.5 Operating System Operations.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.11 Computing Environments.md",
+    "convert.md",
+    "Z/Temp/Untitled.md",
+    "Z/Temp/Untitled 2.md",
+    "Z/Temp/Untitled 1.md",
+    "Java/08_exception_handling/03_Additional_features.md",
+    "Java/08_exception_handling/02_throwing.md",
     "MCA/DBS/Unit_5",
     "MCA/DBS/Unit_4",
     "MCA/DBS/Unit_3",
