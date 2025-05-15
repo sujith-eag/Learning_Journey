@@ -1,8 +1,7 @@
 
 #### Additional Exception Features
 
-In addition to the exception handling features already discussed, modern versions of Java include
-three more. 
+In addition to the exception handling features already discussed, modern versions of Java include three more. 
 
 The first supports automatic resource management, which automates the process of releasing a resource, such as a file, when it is no longer needed. It is based on an expanded form of try, called the `try-with-resources` statement.
 
@@ -13,13 +12,11 @@ Third is sometimes called final rethrow or more precise rethrow.
 
 Multi-catch allows two or more exceptions to be caught by the same catch clause. 
 
-Instead of having to catch each
-exception type individually, you can use a single catch clause to handle the exceptions without
-code duplication.
-To create a multi-catch, specify a list of exceptions within a single catch clause. You do this
-by separating each exception type in the list with the OR operator. Each multi-catch parameter
-is implicitly final. (You can explicitly specify final, if desired, but it is not necessary.) Because
-each multi-catch parameter is implicitly final, it can't be assigned a new value.
+___
+
+Instead of having to catch each exception type individually, you can use a single catch clause to handle the exceptions without code duplication.
+
+To create a multi-catch, specify a list of exceptions within a single catch clause. You do this by separating each exception type in the list with the OR operator. Each multi-catch parameter is implicitly final. (You can explicitly specify final, if desired, but it is not necessary.) Because each multi-catch parameter is implicitly final, it can't be assigned a new value.
 
 ```
 catch(ArithmeticException | ArrayIndexOutOfBoundsException e) {
@@ -29,23 +26,14 @@ ___
 
 #### Built-in Exceptions
 
-Inside the standard package java.lang, Java defines several exception classes. A few have been
-used by the preceding examples. The most general of these exceptions are subclasses of the
-standard type RuntimeException. 
+Inside the standard package java.lang, Java defines several exception classes. A few have been used by the preceding examples. The most general of these exceptions are subclasses of the standard type RuntimeException. 
 
-Since java.lang is implicitly imported into all Java programs, many exceptions derived from RuntimeException are automatically available. 
-they need not be included in any method’s throws list. In the language of Java, these are called
-unchecked exceptions because the compiler does not check to see if a method handles or throws
-these exceptions. The unchecked exceptions defined in java.lang are listed in Table 9-2. Table 9-3
-lists those exceptions defined by java.lang that must be included in a method’s throws list if
-that method can generate one of these exceptions and does not handle it itself. These are called
-checked exceptions. In addition to the exceptions in java.lang, Java defines several other types of
-exceptions that relate to other packages, such as IOException mentioned earlier.
+Since java.lang is implicitly imported into all Java programs, many exceptions derived from RuntimeException are automatically available. they need not be included in any method’s throws list. In the language of Java, these are called unchecked exceptions because the compiler does not check to see if a method handles or throws these exceptions. The unchecked exceptions exceptions defined by java.lang that must be included in a method’s throws list if that method can generate one of these exceptions and does not handle it itself. These are called checked exceptions. In addition to the exceptions in java.lang, Java defines several other types of exceptions that relate to other packages, such as IOException mentioned earlier.
 
 
 Unchecked Exceptions
 
-ExceptionMeaning
+Exception Meaning
 ArithmeticExceptionArithmetic error, such as integer divide-by-zero.
 ArrayIndexOutOfBoundsExceptionArray index is out-of-bounds.
 ArrayStoreExceptionAssignment to an array element of an incompatible type.

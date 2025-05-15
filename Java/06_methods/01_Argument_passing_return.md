@@ -1,9 +1,7 @@
 
 ### Controlling access to Class Members
 
-there are two basic types
-of class members: public and private. A public member can be freely accessed by code defined
-outside of its class. A private member can be accessed only by other methods defined by its
+there are two basic types of class members: public and private. A public member can be freely accessed by code defined outside of its class. A private member can be accessed only by other methods defined by its
 class. It is through the use of private members that access is controlled.
 
 when correctly implemented, a class creates a “black box” that can
