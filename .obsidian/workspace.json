@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/06_methods/01_Argument_passing_return.md",
+                "file": "React/01_class_component/7R.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "01_Argument_passing_return"
+              "title": "7R"
+            }
+          },
+          {
+            "id": "3b80bd876eba19f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/React_Key_Concepts/RC1/02 React manipulating Dom.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "02 React manipulating Dom"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 255.50260543823242
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,44 +198,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8e669b88cdd50e7",
+  "active": "3b80bd876eba19f5",
   "lastOpenFiles": [
-    "Java/05_arrays/03_text_block_ternary_operator.md",
-    "Java/05_arrays/02_for_each_strings.md",
-    "Java/05_arrays/01_arrays.md",
-    "Java/04_Class_Object/03_constructor.md",
-    "Java/04_Class_Object/02_methods.md",
-    "Java/04_Class_Object/01_class_object.md",
-    "Java/03_Control_Statements/05_switch_expression.md",
-    "Java/03_Control_Statements/04_break_continue.md",
-    "Java/03_Control_Statements/03_for_while_loops.md",
-    "Java/03_Control_Statements/02_switch_statement.md",
-    "Java/03_Control_Statements/01_if_else.md",
-    "Java/02_Data_Types_Operators/02_Type_Conversion.md",
-    "Java/02_Data_Types_Operators/01_Data_Types_Operators.md",
-    "Java/01_Basics/05_Java_Identifiers_Structure.md",
-    "Java/01_Basics/04_Java_Compiling_Program.md",
-    "Java/01_Basics/03_Java_OOP.md",
-    "Java/01_Basics/02_Java_Buzzwords.md",
-    "Java/01_Basics/01_Java_Evolution.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.5 Operating System Operations.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.11 Computing Environments.md",
-    "convert.md",
-    "Z/Temp/Untitled.md",
-    "Z/Temp/Untitled 2.md",
-    "Z/Temp/Untitled 1.md",
-    "Java/08_exception_handling/03_Additional_features.md",
-    "Java/08_exception_handling/02_throwing.md",
+    "React/React_Key_Concepts/RC1/01 react Intro.md",
+    "React/React_Key_Concepts/RC1/02 React manipulating Dom.md",
+    "React/00_Intro/0R.md",
+    "MCA/Full_Stack/UserCard.md",
+    "React/React_Key_Concepts/RC1",
+    "React/React_Key_Concepts",
+    "React/02_functional_component/10R_effect.md",
+    "React/02_functional_component/9R_state.md",
+    "React/02_functional_component/8R.md",
+    "React/01_class_component/7R.md",
+    "React/01_class_component/6R_JSX.md",
+    "React/01_class_component/5R.md",
+    "React/01_class_component/4R_properties.md",
+    "React/01_class_component/3R_nesting_siblings.md",
+    "React/00_Intro/03_react_app.md",
+    "React/00_Intro/02_react_stack.md",
+    "React/00_Intro/01_react_intro.md",
+    "Typescript/intro.md",
+    "Z/Temp/convert.md",
+    "React/14R.md",
+    "React/15R.md",
+    "React/Untitled.md",
+    "React/02_functional_component/13R.md",
+    "React/02_functional_component/12R.md",
+    "React/02_functional_component/11R_events.md",
+    "React/02_functional_component",
+    "React/00_Intro",
+    "React/01_class_component",
+    "Java/J 14 enumeration.md",
+    "Java/J 13 multithreaded.md",
+    "Java/J 12 Using i o.md",
     "MCA/DBS/Unit_5",
     "MCA/DBS/Unit_4",
     "MCA/DBS/Unit_3",
     "MCA/DBS/Unit_2",
     "MCA/DBS/Unit_1",
-    "MCA/DBS",
-    "Java/08_exception_handling",
-    "Java/07_packages_interface",
-    "Java/06_methods",
-    "Java/05_arrays",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
