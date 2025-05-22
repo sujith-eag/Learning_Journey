@@ -24,7 +24,6 @@ catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
 - Use the **`|`** operator to separate exception types.
     
 - The exception variable `e` is implicitly `final`—you **cannot** assign a new value to it.
-    
 
 ---
 

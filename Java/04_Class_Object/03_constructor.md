@@ -1,5 +1,4 @@
 
-
 # constructors
 
 A constructor initializes an object when it is created. It has the same name as its class and is syntactically similar to a method. However, constructors have no explicit return type. 

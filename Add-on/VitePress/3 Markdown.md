@@ -186,7 +186,7 @@ You may also customize syntax highlight theme in app config. Please see [`markdo
 
 ## Line Highlighting in Code Blocks
 
-`js[4]`
+`js{4}`
 
 `js{5-8}`  for 5 to 8
 

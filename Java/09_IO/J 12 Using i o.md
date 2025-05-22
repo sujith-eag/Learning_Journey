@@ -18,8 +18,7 @@ Key Skills & Concepts
 ●Apply Java’s type wrappers to convert numeric strings
 
 
-Java’s I/O system is quite large, containing many classes, interfaces, and
-methods. Part of the reason for its size is that Java defines two complete I/O systems: one for
+Java’s I/O system is quite large, containing many classes, interfaces, and methods. Part of the reason for its size is that Java defines two complete I/O systems: one for
 byte I/O and the other for character I/O. It won’t be possible to discuss every aspect of Java’s
 I/O here.
 

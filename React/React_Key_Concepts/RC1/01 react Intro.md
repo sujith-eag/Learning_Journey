@@ -231,3 +231,78 @@ export default App;
 In the react section of the code there are absolutely no operations that would select DOM elements, create or insert DOM elements,
 or edit DOM elements.
 
+
+## React manipulating DOM
+
+React (the library) splits its core logic across two main packages:
+•The main react package
+•The react-dom package
+
+The main react package is a third-party JavaScript library that needs to be imported into a project to use React’s features (like JSX or state) there. It’s this package that creates this virtual DOM and
+derives the current UI state. But you also need the react-dom package in your project if you want to manipulate the DOM with React.
+
+It’s the react-dom package that will produce the actual DOM
+instructions that will select, update, delete, and create DOM elements.
+
+The react-dom package, specifically the react-dom/client part of that package, acts as a “translation bridge” between your React code, the internally generated virtual DOM, and the browser with its actual DOM that needs to be updated.
+
+This split exists because you can also use React with other target environments. Well-known alternative to the DOM (i.e., to the browser) would be React Native, which allows developers to build native mobile apps with the help of React.
+
+
+___
+
+it’s also becoming more and more popular to build full-stack React apps, where frontend and backend code are merged. Modern React frameworks like Next.js simplify the process of building such web apps.
+
+
+
+## Creating a React Project with Vite
+
+To work with React, the first step is the creation of a React project. The official documentation recommends using a framework like Next.js. But while this might make sense for complex web applications. Next.js and other frameworks introduce their own concepts and syntax. As a result, learning React can quickly become
+frustrating since it can be difficult to tell React features apart from framework features. 
+
+Vite is an open-source development and build tool that can be used to create and run web development projects based on all kinds of libraries and frameworks – React is just one of the many options.
+
+pre-processing step is required.
+
+Vite creates projects that come with a built-in, preconfigured build process that, in the case of React projects, takes care of the JSX code transpilation. It also provides a development web server that runs locally on your system and allows you to preview the React app while you’re working on it.
+
+___
+
+```
+npm create vite@latest my-react-project
+```
+
+Once executed, this command will prompt you to choose a framework or library you want to use for this new project. You should choose React and then JavaScript.
+
+This command will create a new subfolder with a basic React project setup (i.e., with various files and folders) in the place where you ran it.
+
+
+the project creation command does not install any required dependencies such as the React library packages. For that reason, you must navigate into the created folder in your system terminal or command prompt (via cd my-react-project) and install these packages by running
+```
+npm install
+```
+
+Project setup is complete once the installation finishes, and to view created react application the development server can be started with
+```
+npm run dev
+```
+
+___
+
+every new Vite-based React project contains a couple of key files and folders:
+
+* A src/ folder, which contains the main source code files for the project:
+	* A main.jsx file, which is the main entry script file that will be executed first
+	* An App.jsx file, which contains the root component of the application.
+	* Various styling (*.css) files, which are imported by the JavaScript files
+	* An assets/ folder that can be used to store images or other assets that should be used in your React Code.
+* A public/ folder, which contains static files that will be part of the final website (e.g., a favicon)
+* An index.html file, which is the single HTML page of this website.
+* package.json and package-lock.json are files that list and define the third-party dependencies of the project
+* Other project configuration files (e.g., .gitignore for managing Git file tracking)
+* A node_modules folder, which contains the actual code of the installed third-party packages
+>[!note]
+>It’s worth noting that App.jsx and main.jsx use .jsx as a file extension, not .js. This is a file extension that's enforced by Vite for files that do not just contain js but jsx code
+
+___
+

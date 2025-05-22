@@ -428,8 +428,7 @@ In a class hierarchy, if a superclass constructor requires parameters, then all 
 
 ___
 
-super( ) must be the first statement executed in a subclass constructor, this order is the same whether or not super() is used or not. If super( ) is not used, then
-the default (parameter-less) constructor of each superclass will be executed.
+super( ) must be the first statement executed in a subclass constructor, this order is the same whether or not super() is used or not. If super( ) is not used, then the default (parameter-less) constructor of each superclass will be executed.
 
 constructors complete their execution in order of derivation, from superclass to subclass.
 
