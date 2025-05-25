@@ -1,167 +1,236 @@
 
-fundamental React concepts that you’ll use frequently, including elements, components, and properties.
+# React App
 
-a nutshell, elements are instances of components that can be passed properties.
+This section covers fundamental React concepts such as elements, components, and properties.
 
-___
+In a nutshell, **elements** are instances of **components** that can be passed **properties**.
 
-#### Creating a new React app
 
-`$ npx create-react-app name-of-app`
+## Creating a New React App
+
+```bash
+$ npx create-react-app name-of-app
+```
 
 >[!note]
->npx is a package runner tool that comes with npm. It
-allows us to run commands using packages only present inside this project folder and/or run commands that will be downloaded dynamically when needed.
+> `npx` is a package runner that comes with npm. It allows you to run commands using packages that are either local to the project or downloaded temporarily as needed.
 
-The command will create a new folder with the passed name, which is name-of-app. 
+This command:
 
-Inside this folder, the utility will initialize a new Git project, download the required resources for the application, and then download and locally install
-all the dependencies required by the project.
+- Creates a new folder named `name-of-app`
+    
+- Initializes a Git repository
+    
+- Downloads the CRA (Create React App) package
+    
+- Installs all necessary dependencies
+    
+
+Process breakdown:
 
 ```
 npx create-react-app name-of-app
 
-		npx requests create-react-app 
-	creat-react-app is installed (if not present)
-	npx creates a folder of given name
-		npx requests dependencies
-	dependencies are installed
+    → npx requests create-react-app 
+    → create-react-app is installed (if not present)
+    → folder with given name is created
+    → dependencies are requested
+    → dependencies are installed
 ```
 
-```
+Start the app:
+
+```bash
 cd name-of-app
 npm start
-
-	Compiler builds from source file
-	Web server watches file system
-	Local app is launched in browser
-
-If source file is updated
-	Compiler notices updated file
-	Compiler rebuilds from fource files
-	Web server notices updated files
-	Local app is browser is updated
 ```
 
-___
+Runtime process:
 
-#### React Project Commands
+```
+→ Compiler builds from source files
+→ Web server watches file system
+→ Local app is launched in browser
 
-A new React application created with CRA comes with these four commands:
+If source file is updated:
+→ Compiler rebuilds from updated source
+→ Web server detects the change
+→ App in browser auto-updates
+```
 
-* start - Launch a local development web server and continuously compile the project as it changes, serving it to any local browser.
 
-* build - Compile all resources into a production-ready package deployable to the right web host.
+## React Project Commands
 
-* test - Launch a test runner that will run all unit tests defined in your project.
+Create React App comes with four main commands:
 
-* eject - Reveal the inner workings of the project and make it fully configurable.
+- **start** – Launches a local development server and compiles the project continuously.
+    
+- **build** – Compiles the app into a production-ready package in the `/build` directory.
+    
+- **test** – Runs unit tests.
+    
+- **eject** – Makes the full configuration files visible and editable.
+    
 
-___
+### Details
 
-The `start` command will build your project in the background continuously using the development version of React and its utility libraries. This is distinct from the production version of React used in the build command. 
+- `start`: Uses the **development version** of React, which includes detailed warnings and debugging support. It’s not optimized for production and has a larger file size.
+    
+- `build`: Uses the **production version** of React, which is smaller and optimized. Outputs are placed in the `/build` folder.
+    
+- `test`: Runs all test files (e.g., `.test.js`) in the project.
+    
+- `eject`: Grants full control over configuration but is irreversible. Use with caution.
+    
 
-The development version of React includes much better error messages and warnings as well as options for debugging the application as it’s running in the browser. 
+---
 
-However, the development version of React is, for those reasons, also much larger in terms of sheer file size, so you don’t want to publish your application using this version. It will make your application unnecessarily large and hinder users trying to access it.
-
-___
-
-`build` is the command to run when you’re ready to see your application deployed to a real web server and have users try it out. When you run the build command, you’ll be using the production version of React, which is much leaner and optimized for deployment. The result of the build will be put in the `/build` folder.
-
-___
-
-`test` If you want to run all unit tests defined in your project, run this command. You can do that on the empty default template as well because the default template even comes with a default test file.
-
-___
-
-`eject` command can be a bit dangerous because it’s irreversible. If you eject your application, you’ll have access to a lot more configurable options inside the React setup than you do otherwise, but you also lose the option of automatically updating to newer versions of all the tools involved.
-
-___
-
-### File Structure
+## File Structure
 
 ```
 /
-	public/
-		index.html
-	src/
-		index.js
-		App.js
-	package.json
+├── public/
+│   └── index.html
+├── src/
+│   ├── index.js
+│   └── App.js
+└── package.json
 ```
 
-When you create a project with CRA, it almost always follows the same file structure. Custom templates can do things differently, but they rarely do.
+### Explanation
 
-The `public folder` is for files that will be served directly via the web server. This includes the index.html file that serves your entire application as well as binary files that you don’t want to bundle inside your application, such as content required by the index.html file directly (e.g., favicon, Cascading Style Sheets, fonts, or images for sharing) and large files (e.g., videos and images).
+- **public/**: Files served directly (e.g., `index.html`, favicon, images, etc.)
+    
+- **src/**: Bundled JavaScript and related assets (CSS, JSON, icons). `index.js` is the entry point. `App.js` commonly contains the main component.
+    
+- **package.json**: Project configuration file for dependencies, scripts, and metadata.
+    
 
+---
 
-The `source (src) folder` is where all your bundled JavaScript will go as well as any other content that you want to bundle as a single package. 
+## Templates
 
-This is mostly just JavaScript, but could potentially also include CSS, icons, small images, JSON files, and more. The bundling starts at the `index.js` file inside the source folder. 
+You can specify a template with CRA:
 
-It’s common place to have the main application reside in a file named `App.js`, but otherwise, you are free to be flexible here. 
-
-Some templates structure the content inside the src folder in subfolders, which is necessary to structure larger projects.
-
-___
-
-`package.json` is the main configuration file for your project is , as required by npm and Yarn. This is the starting file for your project and defines the dependencies as well as the commands that you can run.
-
-
-___
-
-### Templates
-
-If you want to create a web app using a specific technology stack or using React in a particular way, you probably want to use a different starting template to set you up correctly.
-
-When you use CRA, you can specify a template to use.
-```
+```bash
 $ npx create-react-app name-of-app --template name-of-template
 ```
 
-You can only use the name of a template that already exists; if it doesn’t exist, the application will abort.
+- `--template minimal`: A barebones version without extras.
+    
+- `--template typescript`: Starts a project with TypeScript.
+    
+- `--template minimal-typescript`: Minimal TypeScript setup.
+    
+- `--template redux-typescript`: Includes Redux and TypeScript.
+    
+- `--template rb`: A React boilerplate with Redux-Saga, styled-components, ESLint, husky, etc.
+    
 
-if you know that you want a specific setup or want to start your codebase at a certain state, you can use a template that sets you up for exactly that.
-
-Minimal templates with even fewer features than the default one `--template minimal`. 
-This one comes without images, CSS, tests, web vitals, and other minor niceness used in the default template.
-
-
-`--template typescript` or `--template minimal-typescript`. This is useful for starting a new project using TypeScript.
-
-Complex boilerplate setups created by other developers where you have a stack of certain dependencies already baked into your new application,
-`--template redux-typescript`, which comes prepackaged with Redux and TypeScript, 
-
-`--template rb`, which is a popular React boilerplate (hence the rb), that comes prepackaged with a ton of reputable libraries, including Redux with Redux-Saga, styled components, ESLint, husky, and many more.
-
-
-> [!note]
-> Template system for CRA is fully decentralized. Anyone can publish a package to npm and structure it in a way that allows you to use it as a base for your own applications.
-
-___
-
-#### Pros an Cons of CRA
-
-Simplicity—You have less to worry about when setting up a new application. You get JavaScript XML (JSX) transpiling, bundling, testing, automatic reloading,
-and more for free, without dealing with all the interdependencies.
-
-Upgradability—You can easily upgrade to newer versions of React and all the other libraries used. Just run `npm install --exact react-scripts@VERSION` to upgrade your entire project to the specific version of React scripts. 
-
-Community—With the deluge of available CRA templates and the easy path to making more, you can likely always find a premade template with just the right combination of tools so that you don’t have to deal with mixing them correctly.
-
-Customization—On top of a variety of templates, you still have the option of adding all the other plugins and libraries that you need for your project. 
-If your project interface with, Google Maps and Amazon Web Services (AWS), Just add their libraries, and you should be good to go.
+> **Note**  
+> The CRA template system is decentralized. Anyone can publish a custom template on npm for use in new apps.
 
 
-Drawbacks
+## Pros and Cons of CRA
 
-Understanding—Without setting the whole project up from scratch, you won’t know all that goes into such an endeavor. 
+### Pros
 
-Control—You do lose control over which libraries are used. CRA currently uses webpack and BabelJS for JSX bundling and transpiling, but they’re by no means the only players around. Recently, tools such as esbuild, Bun, SWC, and Rome have emerged that partially cover the same ground, but you can’t easily switch to one of those. You’re stuck with the technology stack that CRA currently has chosen for you. 
+- **Simplicity**: Out-of-the-box support for JSX, bundling, testing, and hot reloading.
+    
+- **Upgradability**: Easily update via `npm install --exact react-scripts@VERSION`.
+    
+- **Community**: A rich ecosystem of templates and support.
+    
+- **Customization**: Easy to add external libraries like Google Maps or AWS SDKs.
+    
 
-Integration—If you want to integrate your application in a server-side setup, CRA currently can’t help you. For projects based on website frameworks as described
-in the first chapter, you have to use the setups provided by those frameworks rather than CRA.
+### Cons
 
-___
+- **Understanding**: You don’t learn what's under the hood unless you eject or build from scratch.
+    
+- **Control**: Limited to CRA’s chosen tools (e.g., Webpack, Babel). You can’t easily switch to alternatives like Vite, SWC, esbuild, etc.
+    
+- **Integration**: CRA is not optimized for integration into server-side setups or frameworks like Next.js or Remix.
 
+
+
+## JSX Is Optional
+
+Although JSX is widely used in React, browsers do not understand it directly. Understanding how to use React without JSX is beneficial.
+
+### Example (without JSX):
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First React Application</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    const reactElement = React.createElement(
+      'h1',
+      null,
+      'Hello world!'
+    );
+
+    const domNode = document.getElementById('root');
+    const root = ReactDOM.createRoot(domNode);
+
+    root.render(reactElement);
+  </script>
+</body>
+</html>
+```
+
+### Breakdown
+
+- **React.createElement** creates a React element.
+    
+    ```js
+    React.createElement('h1', null, 'Hello world!');
+    ```
+    
+- **document.getElementById('root')** finds the mount point.
+    
+- **ReactDOM.createRoot(domNode)** connects React to that DOM node.
+    
+- **root.render(element)** mounts the React component to the DOM.
+    
+
+### Concise Version
+
+```js
+ReactDOM
+  .createRoot(document.getElementById('root'))
+  .render(React.createElement('h1', null, 'Hello world!'));
+```
+
+---
+
+## Running a Local Development Server
+
+You must serve your HTML using a local web server due to browser restrictions on loading remote scripts from local files.
+
+Run a server in your folder using:
+
+```bash
+$ npx serve
+```
+
+> [!Note]  
+> Browsers block local file access to remote domains (like unpkg.com) due to cross-origin restrictions.
+
+### Alternatives:
+
+```bash
+$ npx http-server -p 3000
+$ python -m http.server 3000
+$ php -S localhost:3000
+```
+
+---

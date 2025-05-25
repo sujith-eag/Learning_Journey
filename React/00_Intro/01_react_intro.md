@@ -1,152 +1,144 @@
+# Intro to React
 
+Creating composable UIs has been around for a long time, but React is the first to use pure JavaScript without templates to make this possible. This approach has proven easier to maintain, reuse, and extend.
 
-Creating composable UIs has been around for a long
-time, but React is the first to use pure JavaScript without templates to make this possible. And this approach has proven easier to maintain, reuse, and extend.
+Use React to define a component `<Captcha />` or `<DatePicker />` that you can add to your form: a simple drop-in component with all the functionality and logic to communicate with the backend.
 
-
-Use React to define a component `<Captcha />` or
-`<DatePicker />`  that you can add to your form: a simple drop-in component with all the functionality and logic to communicate with the backend.
-
-
-React is a great library for building UIs, and it should be part of your frontend web toolkit, but it isn’t a complete solution for all frontend web development.
+React is a great library for building UIs and should be part of your frontend web toolkit, but it isn’t a complete solution for all frontend web development.
 
 ### Benefits of Using React
 
+- **Simpler web apps** — React uses a component-based architecture (CBA) with pure JavaScript, a declarative style, and powerful, developer-friendly Document Object Model (DOM) abstractions (and not just DOM, but also iOS, Android, etc.).
+    
+- **Fast UIs** — React provides outstanding performance thanks to its virtual DOM and smart reconciliation algorithm. This also allows testing without spinning up a headless browser.
+    
+- **Less code to write** — React’s large community and vast ecosystem of components provide a wide variety of libraries and components, which is important when choosing a development framework.
+    
 
-* Simpler web apps—React uses a component-based architecture (CBA) with pure JavaScript; a declarative style; and powerful, developer-friendly Document Object Model (DOM) abstractions (and not just DOM, but also iOS, Android, etc.).
+#### Simplicity is Achieved Through
 
-* Fast UIs—React provides outstanding performance thanks to its virtual DOM and smart reconciliation algorithm, which, as a side benefit, lets you perform testing without spinning up (starting) a headless browser.
+- **Declarative over imperative style** — React embraces a declarative style by updating views automatically.
+    
+- **CBA using pure JavaScript** — React does not use domain-specific languages (DSLs) for components, just pure JavaScript. There’s no separation between HTML and JavaScript for a single piece of functionality.
+    
+- **Powerful abstractions** — React simplifies interaction with the DOM, normalizing event handling and other interfaces that work consistently across browsers.
+    
 
-* Less code to write—React’s great community and vast ecosystem of components provide developers with a variety of libraries and components. This is important when you’re considering what framework to use for development.
+---
 
-Simplicity is achieved through
-* Declarative over imperative style—React embraces declarative style over imperative by updating views automatically.
-* CBA using pure JavaScript—React doesn’t use domain-specific languages (DSLs) for its components, just pure JavaScript. And there’s no separation when working on the same functionality.
-* Powerful abstractions—React has a simplified way of interacting with the DOM, allowing you to normalize event handling and other interfaces that work similarly across browsers.
+### Declarative over Imperative Style
 
-___
+Declarative style means writing _how_ the UI should look, not _how to build it step by step_.
 
-#### Declarative over Imperative Style
+- **Statements vs. expressions** — Imperative programming uses individual statements to modify program state. Declarative programming uses expressions that build on each other.
+    
+- **Reserved words** — Imperative code relies heavily on reserved words like `for`, `while`, `switch`, `if`, and `else`. Declarative code uses array methods, arrow functions, object access, boolean expressions, and ternary operators.
+    
+- **Function composition** — Imperative code uses isolated function calls. Declarative code composes small, generalized functions into more complex logic.
+    
+- **Mutability** — Imperative style often manipulates existing objects. Declarative style uses immutable data, creating new structures from the old.
+    
 
-Declarative style means developers write how it should be, not what to do, step by step (imperative).
-
-* Statements versus expressions—Imperative-style programming often works with independent statements that individually advance the program state, while declarative programming uses expressions that build upon each other to progress the flow of logic.
-* Reserved word usage—Imperative-style programming often uses many reserved words such as for, while, switch, if, and else, while declarative-style programming uses array methods, arrow functions, object access, Boolean expressions, and ternary operators to achieve the same results.
-* Function composition —Imperative-style programming often uses independent function calls and method invocations, while declarative-style programming uses function composition to build upon the previous expression and make small generalized pieces of logic that, when composed, achieve the desired result.
-* Mutability—Imperative-style programming often uses mutable objects and manipulates existing structures, while declarative-style programming uses immutable data and creates new structures from old ones rather than editing existing ones.
-
-___
-
-countGoodPasswords, that, given a list of passwords, will return how many of the passwords are good. Here, we’ll define a good password as any pass-
-word at least nine characters long.
+Example (Imperative):
 
 ```js
-function countGoodPasswords(passwords)
-{
+function countGoodPasswords(passwords) {
 	const goodPasswords = [];
 	
-	for(let i = 0; i< passwords.length; i++)
-	{
+	for (let i = 0; i < passwords.length; i++) {
 		const password = passwords[i];
-		
-		if(password.length < 9)
-		{
+		if (password.length < 9) {
 			continue;
 		}
 		goodPasswords.push(password);
 	}
+	
 	return goodPasswords.length;
 }
 ```
 Here new statements change the program state `const, push`, existing objects are mutated, reserved words control the program flow.
 
-In a declarative programming paradigm
+Example (Declarative):
+
 ```js
 function countGoodPasswords(passwords) {
 	return passwords.filter(p => p.length >= 9).length;
 }
 ```
-
 We arrive directly at the goal in a single statement by manipulating an object in several steps, using function composition to arrive at the target.
 
-___
+React takes the same declarative approach when composing UIs. Developers describe UI elements declaratively. When internal state changes, React updates the view accordingly.
 
-React takes the same declarative approach when you compose UIs. First, React developers describe UI elements in a declarative style. Then, when there are changes to views generated by those UI elements, React takes care of the updates.
+---
 
-The convenience of React’s declarative style fully shines when you need to make changes to the view. Those are called changes of the internal state. When the state changes, React updates the view accordingly.
+### Component-Based Architecture Using Pure JavaScript
 
-___
+Separation of concerns, loose coupling, and code reuse are core benefits of this architecture.
 
-#### Component Based Architecture Using Pure JavaScript
+Before React, pure JavaScript implementations of CBA were lacking. Frameworks like Angular, Backbone, and Ember required separate files for JavaScript and templates.
 
-Separation of concerns, loose coupling, and code reuse are at the heart of this approach
+With React, there's no separation of HTML and JavaScript within components.
 
-What was lacking before React was a pure JavaScript implementation of this architecture. When you’re working with Angular, Backbone, Ember, or most of the other Model-View-Controller (MVC)-like frontend frameworks, you have one file for JavaScript and another for the template. (Angular uses the term directives for components.)
+React uses a virtual DOM to calculate the differences (delta) between the browser-rendered UI and the new view. This process is called **DOM diffing** or **reconciliation**. Developers update the state, and React updates the view accordingly—no need for manual DOM manipulation.
 
-For developers, it makes more sense not to require separation of HTML and Java-Script when working on a piece of a project (component).
+---
 
+### Powerful Abstractions
 
-Under the hood, React uses a virtual DOM to find differences (the delta) between what’s already in the browser and the new view. This process is called DOM diffing or reconciliation of state and view (bringing them back to similarity). This means developers don’t need to worry about explicitly changing the view; all they need to do is update the state, and the view will be updated automatically as needed.
+React includes several helpful abstractions:
 
-We never do DOM manipulation directly; we let React do that work for us.
+- **Synthetic events** — Wrap native browser events, abstracting away differences across browsers.
+    
+- **JSX (JavaScript XML)** — Abstracts the JavaScript DOM and allows HTML-like syntax in JavaScript files.
+    
+- **Browser independence** — Supports rendering in non-browser environments (e.g., server-side rendering).
+    
 
-___
+When using an `onClick` handler in React, the handler receives a synthetic event object, providing consistent behavior across browsers. Touch events are also supported.
 
-#### Powerful Abstractions
-
-React comes with the following great abstractions that make life as a React developer
-easier:
-* Synthetic events abstracting out browser differences in native events
-* JavaScript XML (JSX) abstracting out the JS DOM
-* Browser independence allowing rendering in nonbrowser environments (e.g., on the server)
-
-
-when you create an onClick event in React, instead of the event handler receiving a native browser–specific event object, it receives a synthetic event object that’s a wrapper around native event objects. You can expect the same behavior from synthetic events regardless of the browser in which you run the code. React also has a set of synthetic events for touch events, which are great for building web apps for mobile devices.
-
-
-JSX, which is one of the more controversial elements of React. For some, the abstraction of JSX is a strong argument for using React, while JSX has been a stumbling block or even a deterrent for others.
-
-
-JSX is a bit of syntactic sugar on top of JavaScript for writing React elements in JavaScript using HTML-like notation with <>. 
-JSX as a mini-language that’s compiled into native JavaScript. So, JSX isn’t run on the browser but is used as the source code for compilation.
-
-> [!note]
-JSX is optional
-
+JSX, while optional, allows writing UI components using HTML-like syntax:
 
 ```js
-if (user.session)
-{
-	return <a href="/logout" >Logout</a>;
-}
-else
-{
+if (user.session) {
+	return <a href="/logout">Logout</a>;
+} else {
 	return <a href="/login">Login</a>;
 }
 ```
 
-Another example of React’s DOM abstraction is that you can render React elements on the server. This can be handy for better search engine optimization (SEO) and improving performance.
+JSX is compiled into JavaScript and not run directly in the browser.
 
-You can even use hybrid approaches where your templates are rendered with some content on the server and later rehydrated with live data in the browser.
+React can also render on the server for better SEO and performance. Hybrid rendering strategies are also possible, where initial content is server-rendered and then hydrated in the browser.
 
-#### Speed and Testability
+---
 
-React’s virtual DOM exists only in the JavaScript memory.
-Every time there’s a data change, React first compares the differences using its virtual DOM; only when the library knows there has been a change in the rendering will it update the actual DOM.
+### Speed and Testability
 
-React updates only those parts that are necessary so that the internal state (virtual DOM) and the view (real DOM) are the same.
+React’s virtual DOM lives in memory. When data changes:
 
-if there’s a `<p>` element, and you augment the text via the state of the component, only the text will be updated (i.e., innerHTML), not the element itself. 
+1. React computes the difference between the current and new views.
+    
+2. Only the necessary parts of the real DOM are updated.
+    
 
-This results in increased performance compared to re-rendering entire sets of elements or, even more so, entire pages (server-side rendering).
+Example: If a `<p>` element’s text changes via state, React updates just the text (via `innerHTML`), not the entire element.
 
+This selective update process leads to better performance than re-rendering full sections or entire pages.
+
+---
 
 ### Disadvantages of React
 
-* React isn’t a full-blown, Swiss Army knife–type of framework. Developers need to pair it with a library such as Redux or XState to achieve functionality comparable to Angular or Ember.
-* React stacks require maintenance and continuous package management. Because you never use React only on its own, but almost always combine it with several other packages, you need to constantly maintain your dependencies and make sure you’re using the correct versions of various packages. In larger projects, this can become a significant source of extraneous tasks.
-* React uses a somewhat new approach to web development, and JSX and functional programming can be intimidating to beginners.
-* React only has a one-way binding. Although one-way binding is better for complex web apps and removes a lot of complexity.
-* React isn’t reactive (as in reactive programming and architecture, which are more event-driven, resilient, and responsive) out of the box. Developers need to use other libraries, such as the React Query library, to make their applications integrate with external content seamlessly and responsively.
+- **Not a complete framework** — Requires pairing with libraries like Redux or XState for advanced features.
+    
+- **Package management overhead** — Using React often means managing multiple packages and their versions, which increases maintenance complexity.
+    
+- **Learning curve** — JSX and functional programming can be intimidating to new developers.
+    
+- **One-way data binding** — React’s one-way binding is powerful but may seem limiting compared to frameworks with two-way binding.
+    
+- **Not reactive by default** — For fully reactive programming, you need additional libraries like React Query to manage async content and state.
+    
 
-___
+---
+
