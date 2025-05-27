@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React_Key_Concepts/RC1/01_react_Introduction.md",
+                "file": "React/02_functional_component/8R.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "01_react_Introduction"
+              "title": "8R"
+            }
+          },
+          {
+            "id": "09ea13b403c66898",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/React_Key_Concepts/RC1/02_React_Components_JSX.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "02_React_Components_JSX"
             }
           },
           {
@@ -55,19 +79,20 @@
               "title": "4R_properties"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "56347ff14202dfa7",
+        "id": "10c3da08bc0b7380",
         "type": "tabs",
         "children": [
           {
-            "id": "85834d8bfb426793",
+            "id": "d63044288a31f52e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/02_functional_component/8R.md",
+                "file": "React/Deployed/01/04_react_vite.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -82,7 +107,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "8R"
+              "title": "04_react_vite"
             }
           }
         ]
@@ -142,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.50260543823242
+    "width": 275.5026054382324
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -227,44 +252,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8e669b88cdd50e7",
+  "active": "09ea13b403c66898",
   "lastOpenFiles": [
-    "React/00_Intro/03_react_app.md",
-    "React/02_functional_component/8R.md",
-    "React/01_class_component/7R.md",
-    "React/01_class_component/6R_JSX.md",
-    "React/01_class_component/5R.md",
-    "React/01_class_component/4R_properties.md",
-    "React/01_class_component/3R_nesting_siblings.md",
-    "React/00_Intro/0R.md",
-    "React/00_Intro/02_react_stack.md",
-    "React/00_Intro/01_react_intro.md",
+    "React/Deployed/02/01_Component.md",
+    "React/React_Key_Concepts/RC1/02_React_Components_JSX.md",
+    "React/Deployed/02",
     "React/React_Key_Concepts/RC1/01_react_Introduction.md",
+    "React/React_Quickly/00_Intro/03_react_app.md",
+    "React/React_Quickly/00_Intro/01_react_intro.md",
+    "React/React_Quickly/00_Intro/0R.md",
+    "React/Deployed/01/04_react_vite.md",
+    "React/Deployed/01/03_react_app.md",
+    "React/React_Quickly/00_Intro/02_react_stack.md",
+    "React/Deployed/01/02_react_stack.md",
+    "React/Deployed/01/01_react_intro.md",
+    "React/React_Quickly/02_functional_component/8R.md",
+    "React/Deployed/01",
+    "React/Deployed",
+    "React/React_Quickly/14R_Handling_Events.md",
+    "Untitled.md",
+    "React/React_Quickly/15R.md",
+    "React/React_Quickly",
+    "React/React_Quickly/01_class_component/5R.md",
+    "React/React_Quickly/01_class_component/7R.md",
+    "React/React_Quickly/01_class_component/4R_properties.md",
+    "React/React_Quickly/01_class_component/3R_nesting_siblings.md",
+    "React/React_Quickly/01_class_component/6R_JSX.md",
     "React/React_Key_Concepts/RC1/09_Side_efffects.md",
     "React/React_Key_Concepts/RC1/08_Refs.md",
     "React/React_Key_Concepts/RC1/07_Styling_React_Apps.md",
     "React/React_Key_Concepts/RC1/06_Outputting_List Data.md",
     "React/React_Key_Concepts/RC1/05_Conditional_Content.md",
     "React/React_Key_Concepts/RC1/04_Events_State.md",
-    "React/React_Key_Concepts/RC1/03_Component_Props.md",
-    "React/React_Key_Concepts/RC1/02_React_Components_JSX.md",
-    "Networking/Class_notes/Lab_Basics.md",
     "Networking/Class_notes",
     "Networking",
-    "React/02_functional_component/9R_state.md",
-    "JavaScript/7_Errors_Exceptions/01_Strict_Mode.md",
-    "JavaScript/7_Errors_Exceptions/02_Testing_Exceptions.md",
-    "JavaScript/7_OOP/7_OOP.md",
-    "JavaScript/9_modules/01_ES_Modules.md",
-    "JavaScript/9_modules/02_Packages.md",
     "Java/09_IO",
     "React/React_Key_Concepts/RC1",
     "React/React_Key_Concepts",
-    "React/02_functional_component",
-    "React/00_Intro",
-    "React/01_class_component",
-    "MCA/DBS/Unit_5",
-    "MCA/DBS/Unit_4",
+    "React/React_Quickly/02_functional_component",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

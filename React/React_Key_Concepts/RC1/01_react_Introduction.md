@@ -1,4 +1,5 @@
 
+
 Using vite to set up custom built project setup
 ```bash
 npm create vite@latest app-name
@@ -12,9 +13,7 @@ npm run dev
 # http://localhost:5173
 ```
 
-JavaScript allows you to add interactivity
-to your website since, with JavaScript, you can react to user events and manipulate the page after it is
-loaded. This is extremely valuable as it allows you to build highly interactive web user interfaces (UIs).
+JavaScript allows you to add interactivity to your website since, with JavaScript, you can react to user events and manipulate the page after it is loaded. This is extremely valuable as it allows you to build highly interactive web user interfaces (UIs).
 
 ____
 
@@ -301,6 +300,7 @@ every new Vite-based React project contains a couple of key files and folders:
 * package.json and package-lock.json are files that list and define the third-party dependencies of the project
 * Other project configuration files (e.g., .gitignore for managing Git file tracking)
 * A node_modules folder, which contains the actual code of the installed third-party packages
+
 >[!note]
 >It’s worth noting that App.jsx and main.jsx use .jsx as a file extension, not .js. This is a file extension that's enforced by Vite for files that do not just contain js but jsx code
 

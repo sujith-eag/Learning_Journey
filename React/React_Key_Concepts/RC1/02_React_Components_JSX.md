@@ -136,8 +136,7 @@ ___
 
 ### Built-in Components
 
-JSX code is a feature that’s not part of the JavaScript language itself. It’s
-basically syntactical sugar (i.e., a simplification regarding the code syntax) provided by the React library and the project setup you’re using to write React code. Therefore, elements like `<div>`, when
+JSX code is a feature that’s not part of the JavaScript language itself. It’s basically syntactical sugar (i.e., a simplification regarding the code syntax) provided by the React library and the project setup you’re using to write React code. Therefore, elements like `<div>`, when
 used in JSX code, also aren’t normal HTML elements because you don’t write HTML code. It might look like that, but it’s inside a `.jsx` file and it’s not HTML markup. Instead, it’s this special JSX code.
 
 It is important to keep this in mind. Accordingly, these `<div>` and `<h2>` elements you see in all these examples are also just React components in the end. But they are not components built by you, but instead provided by React (or, to be precise, by ReactDOM).
