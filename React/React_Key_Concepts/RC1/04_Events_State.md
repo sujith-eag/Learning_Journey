@@ -374,7 +374,10 @@ function Repeater() {
 	
 	return(
 		<>
-			<input type="text" onChange={handleChange} />
+			<input 
+				type="text" 
+				onChange={handleChange} 
+			/>
 			<p>Characters entered: {numChars}</p>
 		</>
 	);

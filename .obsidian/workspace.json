@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React_Key_Concepts/RC1/02_React_Components_JSX.md",
+                "file": "React/Deployed/03/03_styling_components.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "02_React_Components_JSX"
+              "title": "03_styling_components"
             }
           },
           {
@@ -92,7 +92,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Deployed/01/04_react_vite.md",
+                "file": "React/React_Key_Concepts/RC1/08_Refs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -107,7 +107,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "04_react_vite"
+              "title": "08_Refs"
             }
           }
         ]
@@ -252,16 +252,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09ea13b403c66898",
+  "active": "d63044288a31f52e",
   "lastOpenFiles": [
-    "React/Deployed/02/01_Component.md",
+    "React/React_Key_Concepts/RC1/07_Styling_React_Apps.md",
+    "React/Deployed/03/03_styling_components.md",
+    "React/Deployed/03/02_list_data_output.md",
+    "React/React_Key_Concepts/RC1/06_Outputting_List Data.md",
+    "React/Deployed/03/01_condional_content.md",
+    "React/React_Key_Concepts/RC1/05_Conditional_Content.md",
+    "React/Deployed/02/03_states.md",
+    "React/Deployed/03",
+    "React/React_Key_Concepts/RC1/04_Events_State.md",
+    "React/Deployed/02/02_events_states.md",
+    "React/Deployed/02/01_props_in_Component.md",
+    "React/React_Key_Concepts/RC1/03_Component_Props.md",
+    "React/Deployed/01/04_react_vite.md",
     "React/React_Key_Concepts/RC1/02_React_Components_JSX.md",
     "React/Deployed/02",
     "React/React_Key_Concepts/RC1/01_react_Introduction.md",
     "React/React_Quickly/00_Intro/03_react_app.md",
     "React/React_Quickly/00_Intro/01_react_intro.md",
     "React/React_Quickly/00_Intro/0R.md",
-    "React/Deployed/01/04_react_vite.md",
     "React/Deployed/01/03_react_app.md",
     "React/React_Quickly/00_Intro/02_react_stack.md",
     "React/Deployed/01/02_react_stack.md",
@@ -274,22 +285,11 @@
     "React/React_Quickly/15R.md",
     "React/React_Quickly",
     "React/React_Quickly/01_class_component/5R.md",
-    "React/React_Quickly/01_class_component/7R.md",
-    "React/React_Quickly/01_class_component/4R_properties.md",
-    "React/React_Quickly/01_class_component/3R_nesting_siblings.md",
-    "React/React_Quickly/01_class_component/6R_JSX.md",
-    "React/React_Key_Concepts/RC1/09_Side_efffects.md",
-    "React/React_Key_Concepts/RC1/08_Refs.md",
-    "React/React_Key_Concepts/RC1/07_Styling_React_Apps.md",
-    "React/React_Key_Concepts/RC1/06_Outputting_List Data.md",
-    "React/React_Key_Concepts/RC1/05_Conditional_Content.md",
-    "React/React_Key_Concepts/RC1/04_Events_State.md",
     "Networking/Class_notes",
     "Networking",
     "Java/09_IO",
     "React/React_Key_Concepts/RC1",
     "React/React_Key_Concepts",
-    "React/React_Quickly/02_functional_component",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
