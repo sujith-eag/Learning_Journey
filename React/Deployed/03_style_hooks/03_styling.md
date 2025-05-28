@@ -18,12 +18,15 @@ This CSS gets injected into `index.html` during the build process, allowing glob
 
 You can apply inline styles via the `style` prop using a **JavaScript object**, not a string.
 
+>[!note]
+>The Double Curly braces needed for Inline style is escaped to avoid error in site compilation
+
 #### JSX vs. HTML Inline Styles
 
 ```jsx
 function TodoItem() {
 	return <li 
-		style={{ color: 'red', fontSize: '18px' }}
+		style={\{ color: 'red', fontSize: '18px' }\}
 		>Learn React!</li>;
 }
 ```
@@ -35,7 +38,7 @@ function TodoItem() {
 
 - Use **camelCase** property names in JSX: `fontSize`, not `font-size`.
     
-- The `style` prop accepts a **JavaScript object**, so double curly braces `{{...}}` are required. One for non-string values.
+- The `style` prop accepts a **JavaScript object**, so double curly braces `{\{...}\}` are required. One for non-string values.
 
 ## CSS Classes in JSX
 
@@ -69,9 +72,9 @@ function ColoredText() {
 
 	return (
 		<>
-			<input type="text" onChange={handleTextColor} />
-			<p style={{ color: enteredColor }}>
-				This text is dynamically colored
+		  <input type="text" onChange={handleTextColor} />
+			<p style={\{ color: enteredColor }\}>
+		      This text is dynamically colored
 			</p>
 		</>
 	);
@@ -143,7 +146,7 @@ function TextInput({ isValid, isRecommended, ...props }) {
 	if (!isValid) bgColor = 'red';
 
 	return <input 
-		style={{ backgroundColor: bgColor }} {...props} />;
+		style={\{ backgroundColor: bgColor }\} {...props} />;
 }
 ```
 
@@ -207,7 +210,7 @@ Usage:
 
 ```jsx
 <Button 
-	config={{ onClick: doSomething }} 
+	config={\{ onClick: doSomething }\} 
 	className="btn-alert"
 	>Click me!
 </Button>
@@ -220,16 +223,14 @@ The same component can be used in different places on a page with different conf
 ```jsx
 function Button({ children, config, className }) {
 	const cssClasses = className || 'btn';
-	
-	return (
-		<button 
-			{...config} 
-			className={cssClasses}>{children}
-		</button>;
-	}
-);
-```
 
+	return (
+		<button {...config} className={cssClasses}>
+			{children}
+		</button>
+	);
+}
+```
 
 ## Customization with Props
 

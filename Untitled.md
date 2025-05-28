@@ -1,4 +1,4 @@
-```
+```js
 export const reactIntro = [{
     title: "Introduction to React",
     items: [

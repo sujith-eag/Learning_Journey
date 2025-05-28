@@ -231,27 +231,28 @@ function Preferences(props){
 	
 	return (
 		<div className={classes.preferences}>
-			<label>
-				<input
-					type="checkbox"
-					id="pref-new"
-					checked={wantsNewProdInfo}
-					onChange={handleChangeNewProdPref}
-				/>
-				<span>New Products</span>
-			</label>
+		  <label>
+			<input
+			  type="checkbox"
+			  id="pref-new"
+			  checked={wantsNewProdInfo}
+			  onChange={handleChangeNewProdPref}
+			/>
+			<span>New Products</span>
+		  </label>
 			
-			<label>
-				<input
-					type="checkbox"
-					id="pref-updates"
-					checked={wantsProdUpdateInfo}
-					onChange={handleChangeUpdateProdPref}
-				/>
-				<span>Product Updates</span>
-			</label>
+		  <label>
+			<input
+				type="checkbox"
+				id="pref-updates"
+				checked={wantsProdUpdateInfo}
+				onChange={handleChangeUpdateProdPref}
+			/>
+			<span>Product Updates</span>
+		</label>
 	</div>
-});
+	);
+}
 ```
 
 ```jsx

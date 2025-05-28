@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c2fcd1e48e0118b7",
+        "id": "2b44ba42650d0a58",
         "type": "tabs",
         "children": [
           {
-            "id": "d8e669b88cdd50e7",
+            "id": "d790eefe8137872e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/02_functional_component/8R.md",
+                "file": "Add-on/VitePress/2 Deploy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,86 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "8R"
-            }
-          },
-          {
-            "id": "09ea13b403c66898",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Deployed/03/03_styling_components.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "03_styling_components"
-            }
-          },
-          {
-            "id": "3b80bd876eba19f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/01_class_component/4R_properties.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "4R_properties"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "10c3da08bc0b7380",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d63044288a31f52e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/React_Key_Concepts/RC1/08_Refs.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "08_Refs"
+              "title": "2 Deploy"
             }
           }
         ]
@@ -167,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5026054382324
+    "width": 264.5026054382324
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -252,39 +173,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d63044288a31f52e",
+  "active": "d790eefe8137872e",
   "lastOpenFiles": [
-    "React/React_Key_Concepts/RC1/07_Styling_React_Apps.md",
-    "React/Deployed/03/03_styling_components.md",
-    "React/Deployed/03/02_list_data_output.md",
-    "React/React_Key_Concepts/RC1/06_Outputting_List Data.md",
-    "React/Deployed/03/01_condional_content.md",
-    "React/React_Key_Concepts/RC1/05_Conditional_Content.md",
-    "React/Deployed/02/03_states.md",
-    "React/Deployed/03",
-    "React/React_Key_Concepts/RC1/04_Events_State.md",
-    "React/Deployed/02/02_events_states.md",
-    "React/Deployed/02/01_props_in_Component.md",
-    "React/React_Key_Concepts/RC1/03_Component_Props.md",
-    "React/Deployed/01/04_react_vite.md",
-    "React/React_Key_Concepts/RC1/02_React_Components_JSX.md",
-    "React/Deployed/02",
-    "React/React_Key_Concepts/RC1/01_react_Introduction.md",
-    "React/React_Quickly/00_Intro/03_react_app.md",
-    "React/React_Quickly/00_Intro/01_react_intro.md",
-    "React/React_Quickly/00_Intro/0R.md",
-    "React/Deployed/01/03_react_app.md",
-    "React/React_Quickly/00_Intro/02_react_stack.md",
-    "React/Deployed/01/02_react_stack.md",
-    "React/Deployed/01/01_react_intro.md",
-    "React/React_Quickly/02_functional_component/8R.md",
-    "React/Deployed/01",
-    "React/Deployed",
+    "React/Deployed/02_comp_state/03_useState.md",
+    "React/Deployed/02_comp_state/02_props.md",
+    "React/Deployed/02_comp_state/01_functional.md",
+    "React/Deployed/03_style_hooks/02_list_data.md",
+    "React/Deployed/03_style_hooks/04_refs.md",
+    "React/Deployed/02_comp_state/05_state_management.md",
+    "React/Deployed/02_comp_state/04_branching.md",
+    "React/Deployed/02_comp_state/00_jsx.md",
+    "React/Deployed/01_basic/01_react_intro.md",
+    "React/Deployed/01_basic/02_react_stack.md",
+    "React/Deployed/01_basic/03_react_app.md",
+    "React/Deployed/01_basic/04_react_vite.md",
+    "React/Deployed/03_style_hooks/03_styling.md",
+    "React/Deployed/03_style_hooks/05_useEffect.md",
+    "Add-on/VitePress/3 Markdown.md",
     "React/React_Quickly/14R_Handling_Events.md",
-    "Untitled.md",
-    "React/React_Quickly/15R.md",
+    "React/Deployed/03_comp_handling/Untitled.md",
+    "React/React_Quickly/02_functional_component/13R.md",
+    "React/React_Quickly/02_functional_component/12R.md",
+    "React/React_Quickly/02_functional_component/11R_events.md",
+    "React/React_Quickly/02_functional_component/10R_effect.md",
+    "React/React_Quickly/02_functional_component/9R_state.md",
+    "React/React_Quickly/02_functional_component/9R.md",
+    "React/React_Quickly/02_functional_component/8R.md",
+    "React/React_Quickly/01_class_component/7R.md",
+    "React/Deployed/03_comp_handling/01_condional_content.md",
+    "React/Deployed/03_style_hooks",
+    "React/Deployed/02_comp_state",
+    "React/Deployed/01_basic",
+    "React/Deployed",
     "React/React_Quickly",
-    "React/React_Quickly/01_class_component/5R.md",
     "Networking/Class_notes",
     "Networking",
     "Java/09_IO",

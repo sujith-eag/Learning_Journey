@@ -68,9 +68,7 @@ With create-react-app (CRA), you get JSX transpiling “for free,” so you don�
 #### Creating elements with JSX
 
 ```jsx
-React.createElement('h1')
-
-<h1 />
+<h1 /> // Same as React.createElement('h1')
 ```
 
 ```jsx
@@ -80,9 +78,7 @@ React.createElement(
 	'Welcome',
 	);
 
-<h1> 
-	Welcome
-</h1>
+<h1>Welcome</h1> // Adds Children
 ```
 
 ```jsx
@@ -92,9 +88,7 @@ React.createElement(
 	'Welcome',
 	);
 
-<Title> 
-	Welcome
-</Title>
+<Title>Welcome</Title> // Custom components
 ```
 
 ```jsx
