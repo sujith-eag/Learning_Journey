@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Add-on/VitePress/2 Deploy.md",
+                "file": "MCA/Research_Methodology/Unit_2_Research_Design.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2 Deploy"
+              "title": "Unit_2_Research_Design"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5026054382324
+    "width": 200
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -175,6 +175,14 @@
   },
   "active": "d790eefe8137872e",
   "lastOpenFiles": [
+    "MCA/Research_Methodology/Unit_2_Part_1_Literature_review.md",
+    "MCA/Research_Methodology/Unit_2_Research_Design.md",
+    "MCA/Research_Methodology/Unit_1_Part_2_Research_Process.md",
+    "MCA/Research_Methodology/Unit_1_Part_3_Research_Problem.md",
+    "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
+    "MCA/Research_Methodology/Internal 1 Questions.md",
+    "Add-on/VitePress/2 Deploy.md",
+    "MCA/Research_Methodology",
     "React/Deployed/02_comp_state/03_useState.md",
     "React/Deployed/02_comp_state/02_props.md",
     "React/Deployed/02_comp_state/01_functional.md",
@@ -194,13 +202,6 @@
     "React/Deployed/03_comp_handling/Untitled.md",
     "React/React_Quickly/02_functional_component/13R.md",
     "React/React_Quickly/02_functional_component/12R.md",
-    "React/React_Quickly/02_functional_component/11R_events.md",
-    "React/React_Quickly/02_functional_component/10R_effect.md",
-    "React/React_Quickly/02_functional_component/9R_state.md",
-    "React/React_Quickly/02_functional_component/9R.md",
-    "React/React_Quickly/02_functional_component/8R.md",
-    "React/React_Quickly/01_class_component/7R.md",
-    "React/Deployed/03_comp_handling/01_condional_content.md",
     "React/Deployed/03_style_hooks",
     "React/Deployed/02_comp_state",
     "React/Deployed/01_basic",
@@ -210,7 +211,6 @@
     "Networking",
     "Java/09_IO",
     "React/React_Key_Concepts/RC1",
-    "React/React_Key_Concepts",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
