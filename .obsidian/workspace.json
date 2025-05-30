@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6668c20aa16b5ea9",
+        "id": "fa06990e0504c090",
         "type": "tabs",
         "children": [
           {
-            "id": "d8113fc2a08df741",
+            "id": "fb6738dddb31f3ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Research_Methodology/Unit_2_Research_Design.md",
+                "file": "MCA/DAA/unit_1_1_Intro.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Unit_2_Research_Design"
+              "title": "unit_1_1_Intro"
             }
           }
         ]
@@ -173,10 +173,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8113fc2a08df741",
+  "active": "fb6738dddb31f3ac",
   "lastOpenFiles": [
-    "MCA/Research_Methodology/Untitled.md",
+    "MCA/DAA/Untitled.md",
+    "MCA/DAA/unit_1_1_Intro.md",
     "MCA/Research_Methodology/Unit_2_Research_Design.md",
+    "MCA/DAA",
+    "MCA/Research_Methodology/Untitled.md",
     "MCA/Research_Methodology/Unit_1_Part_3_Research_Problem.md",
     "MCA/Research_Methodology/Unit_1_Part_2_Research_Process.md",
     "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
@@ -200,8 +203,6 @@
     "React/Deployed/02_comp_state/01_functional.md",
     "React/Deployed/03_style_hooks/02_list_data.md",
     "React/Deployed/03_style_hooks/04_refs.md",
-    "React/Deployed/02_comp_state/05_state_management.md",
-    "React/Deployed/02_comp_state/04_branching.md",
     "React/Deployed/03_style_hooks",
     "React/Deployed/02_comp_state",
     "React/Deployed/01_basic",
@@ -210,7 +211,6 @@
     "Networking/Class_notes",
     "Networking",
     "Java/09_IO",
-    "React/React_Key_Concepts/RC1",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
