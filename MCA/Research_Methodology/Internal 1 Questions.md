@@ -12,7 +12,7 @@
 
 #### 5. Explain Different types of Research approaches
 
-#### 6. Explain the significance of Research with their key importance / Characteristics
+#### 6. Explain the significance of Research with types and their key importance / Characteristics
 
 #### 7. Differentiate Between Research method and Research methodology
 
