@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fa06990e0504c090",
+        "id": "c2df8122bcc0ec86",
         "type": "tabs",
         "children": [
           {
-            "id": "fb6738dddb31f3ac",
+            "id": "ed02d55f9b44378e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/DAA/unit_1_1_Intro.md",
+                "file": "JavaScript/Asynchronous_programming/03_Failure.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "unit_1_1_Intro"
+              "title": "03_Failure"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Python/\" reduce",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,36 +173,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb6738dddb31f3ac",
+  "active": "ed02d55f9b44378e",
   "lastOpenFiles": [
-    "MCA/DAA/Untitled.md",
-    "MCA/DAA/unit_1_1_Intro.md",
-    "MCA/Research_Methodology/Unit_2_Research_Design.md",
-    "MCA/DAA",
-    "MCA/Research_Methodology/Untitled.md",
-    "MCA/Research_Methodology/Unit_1_Part_3_Research_Problem.md",
-    "MCA/Research_Methodology/Unit_1_Part_2_Research_Process.md",
-    "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
-    "MCA/Research_Methodology/Unit_2_Part_1_Literature_review.md",
-    "MCA/Research_Methodology/Internal 1 Questions.md",
-    "Java/07_packages_interface/03_interfaces.md",
-    "Java/07_packages_interface/01_packages.md",
-    "Java/06_methods/recursion.md",
-    "Java/06_methods/abstract_object_class.md",
-    "Java/06_methods/07_method_overriding.md",
-    "Java/06_methods/06_super.md",
-    "Java/06_methods/05_Inheritance.md",
-    "Java/06_methods/03_static_vargs.md",
-    "Java/06_methods/02_method_overloading.md",
-    "Java/06_methods/01_Argument_passing_return.md",
-    "Java/05_arrays/03_text_block_ternary_operator.md",
-    "Add-on/VitePress/2 Deploy.md",
-    "MCA/Research_Methodology",
+    "JavaScript/Asynchronous_programming/02_promises.md",
+    "JavaScript/Asynchronous_programming/01_async_callbacks.md",
+    "JavaScript/9_modules/03_Building_Bundling.md",
+    "JavaScript/9_modules/02_Packages.md",
+    "JavaScript/9_modules/01_ES_Modules.md",
+    "JavaScript/8_Regular_expressions/01_creating.md",
+    "JavaScript/7_OOP/7_OOP.md",
+    "JavaScript/7_Errors_Exceptions/02_Testing_Exceptions.md",
+    "JavaScript/7_Errors_Exceptions/01_Strict_Mode.md",
+    "Node/06_hosting.md",
+    "Node/05_file_server.md",
+    "Node/04_node_streams.md",
+    "Node/03_node_http_module.md",
+    "Node/02_node_use.md",
+    "Node/Untitled.md",
+    "Node/06_server_side.md",
+    "Node/01_node_intro.md",
+    "Node/Untitled 1.md",
+    "Untitled.md",
+    "Node",
+    "React/Deployed/03_style_hooks/05_useEffect.md",
+    "React/Deployed/02_comp_state/05_state_management.md",
+    "React/Deployed/02_comp_state/04_branching.md",
     "React/Deployed/02_comp_state/03_useState.md",
     "React/Deployed/02_comp_state/02_props.md",
     "React/Deployed/02_comp_state/01_functional.md",
-    "React/Deployed/03_style_hooks/02_list_data.md",
-    "React/Deployed/03_style_hooks/04_refs.md",
+    "React/Deployed/02_comp_state/00_jsx.md",
+    "MCA/DAA",
+    "MCA/Research_Methodology",
     "React/Deployed/03_style_hooks",
     "React/Deployed/02_comp_state",
     "React/Deployed/01_basic",
@@ -210,7 +211,6 @@
     "React/React_Quickly",
     "Networking/Class_notes",
     "Networking",
-    "Java/09_IO",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
