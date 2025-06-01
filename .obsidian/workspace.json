@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c2df8122bcc0ec86",
+        "id": "676d3a097f3adad5",
         "type": "tabs",
         "children": [
           {
-            "id": "ed02d55f9b44378e",
+            "id": "954d5d6d3ad6f705",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Asynchronous_programming/03_Failure.md",
+                "file": "Add-on/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "03_Failure"
+              "title": "Git"
+            }
+          }
+        ]
+      },
+      {
+        "id": "28fabc00dbe50245",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89fa0175ed209ff9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Node/06_hosting.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "06_hosting"
             }
           }
         ]
@@ -173,8 +203,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed02d55f9b44378e",
+  "active": "89fa0175ed209ff9",
   "lastOpenFiles": [
+    "Add-on/Untitled.md",
+    "Add-on/Git.md",
+    "JavaScript/Asynchronous_programming/03_Failure.md",
     "JavaScript/Asynchronous_programming/02_promises.md",
     "JavaScript/Asynchronous_programming/01_async_callbacks.md",
     "JavaScript/9_modules/03_Building_Bundling.md",
@@ -199,9 +232,6 @@
     "React/Deployed/02_comp_state/05_state_management.md",
     "React/Deployed/02_comp_state/04_branching.md",
     "React/Deployed/02_comp_state/03_useState.md",
-    "React/Deployed/02_comp_state/02_props.md",
-    "React/Deployed/02_comp_state/01_functional.md",
-    "React/Deployed/02_comp_state/00_jsx.md",
     "MCA/DAA",
     "MCA/Research_Methodology",
     "React/Deployed/03_style_hooks",
