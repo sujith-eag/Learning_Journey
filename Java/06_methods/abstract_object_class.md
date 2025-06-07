@@ -12,7 +12,8 @@ ____
 Java defines one special class called Object that is an implicit superclass of all other classes.
 
 >[!note]
->A reference variable of type Object can refer to an object of any other class. `Object var;`
+>A reference variable of type Object can refer to an object of any other class. 
+>`Object var;`
 
 Object defines the following methods, which means that they are available in every object:
 

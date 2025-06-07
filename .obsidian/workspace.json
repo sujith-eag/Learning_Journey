@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "28fabc00dbe50245",
+        "id": "8232340dd997e03c",
         "type": "tabs",
         "children": [
           {
-            "id": "89fa0175ed209ff9",
+            "id": "68f1304be61f0f5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Full_Stack/Programs/Exercise_2.md",
+                "file": "MCA/Networking/U_1_2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Exercise_2"
+              "title": "U_1_2"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "genri",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 440.5
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,35 +173,37 @@
       "templates:Insert template": false
     }
   },
-  "active": "89fa0175ed209ff9",
+  "active": "68f1304be61f0f5e",
   "lastOpenFiles": [
-    "MCA/Full_Stack/Programs/Exercise_5_3.md",
-    "MCA/Full_Stack/Programs/Exercise_5_2.md",
-    "MCA/Full_Stack/Programs/Exercise_5_1.md",
-    "MCA/Full_Stack/Programs/Exercise_4_3.md",
-    "MCA/Full_Stack/Programs/Exercise_4_2.md",
-    "MCA/Full_Stack/Programs/Exercise_4_1.md",
-    "MCA/Full_Stack/Programs/Exercise_3_3.md",
-    "MCA/Full_Stack/Programs/Exercise_3_2.md",
-    "MCA/Full_Stack/Programs/Exercise_3_1.md",
-    "MCA/Full_Stack/Programs/Exercise_1.md",
-    "MCA/Full_Stack/Programs/Exercise_2.md",
-    "MCA/Full_Stack/Programs/Exercise_4.md",
-    "MCA/Research_Methodology/Unit_2_Research_Design.md",
-    "MCA/Full_Stack/Programs",
-    "MCA/Research_Methodology/Unit_2_Part_1_Literature_review.md",
-    "MCA/Research_Methodology/Unit_1_Part_3_Research_Problem.md",
-    "MCA/Research_Methodology/Unit_1_Part_2_Research_Process.md",
+    "MCA/Networking/U_1_3.md",
+    "MCA/Networking/U_1_4.md",
+    "MCA/Networking/U_1_2.md",
+    "MCA/Networking/U_1_1.md",
+    "MCA/DBS/PLSQL.md",
+    "MCA/DBS/Unit_1/1.1_Introduction.md",
+    "MCA/DBS/Unit_1/1.2_Characteristics.md",
+    "MCA/DBS/Unit_1/2.1_Data_Moels_Schema.md",
+    "MCA/DBS/Unit_1/2.2_Three_Schema_Architecture.md",
+    "MCA/DBS/Unit_1/2.3_Component_Modules.md",
+    "MCA/Java/Unit_1/A2_Inheritance.md",
+    "MCA/Java/Unit_2/Q Sort.md",
+    "MCA/Java/Unit_1/A1_Class.md",
+    "MCA/Java/Unit_2/Q.md",
     "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
-    "MCA/Java/program_6.md",
-    "MCA/Java/program_5.md",
-    "MCA/Java/program_4.md",
-    "MCA/Java/program_3.md",
-    "MCA/Java/program_2.md",
-    "MCA/Java/program_1.md",
-    "Linux/03_neovim/15 Neo Vim.md",
-    "MCA/Java/Untitled.md",
-    "Node/03_node_http_module.md",
+    "MCA/Java/Unit_1/Q Sort.md",
+    "MCA/Java/Unit_2/Q temp.md",
+    "MCA/Java/Unit_1/Q.md",
+    "MCA/Java/Unit_1/Q temp.md",
+    "Java/08_exception_handling/01_exception.md",
+    "Java/J 15 generics.md",
+    "MCA/Java/Unit_2",
+    "Java/J 13 multithreaded.md",
+    "Java/08_exception_handling/03_Additional_features.md",
+    "Java/06_methods/abstract_object_class.md",
+    "Java/06_methods/07_method_overriding.md",
+    "Java/05_arrays/01_arrays.md",
+    "MCA/Java/Unit_1",
+    "MCA/Full_Stack/Programs",
     "MCA/Java",
     "Node/express",
     "Node",
@@ -209,8 +211,6 @@
     "MCA/Research_Methodology",
     "React/Deployed/03_style_hooks",
     "React/Deployed/02_comp_state",
-    "React/Deployed/01_basic",
-    "React/Deployed",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
