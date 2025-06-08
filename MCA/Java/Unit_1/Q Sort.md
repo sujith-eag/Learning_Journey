@@ -1,124 +1,96 @@
-# Introducing Classes: Introduction to Java, 
 
-> Class Fundamentals, Declaring Objects, Assigning Object Reference Variables, Introducing Methods, Constructors, The this Keyword, Garbage, The finalize() Method, Exploring the String Class, Using Command-Line Arguments, Varargs, Scanner class.
-
-
-b. What is JVM? What are its advantages? What is the difference between JDK and JVM? (6)
-
-b. What is Platform independence? What makes Java Platform independent? Explain in detail. (6)
-
-a. Can Java run on any machine? Justify. (6)
-
-## Class Fundamentals, 
-
-b. Explain the concept of Encapsulation, Inheritance, and Polymorphism. (7)
-
-a. Explain the every words of the syntax?  `public static void main (string args[]).` (7)
-
-## Declaring Objects, Assigning Object Reference Variables, 
-
-a. What is Class? What is the difference between Class and Object? Give an example. (6)
-
-a. What is the difference between class and object? How to define a class and create objects using Java? Give example. (8)
-
-
-
-
-a. What are the access control supported by Java? Explain the different types of Java’s access modifiers. (10)
-
-b. Illustrate the usage and effect of access control specifiers with respect to class members with an example. (8)
-
-
-## Introducing Methods, Constructors, 
-
-a. Define a constructor. Discuss its special properties? Explain how Constructors can be overloaded with the help of an example. (10)
-
-c. What are the important properties of constructor? What are the advantage? Illustrate with an example. (8)
-
-
-
-a. Create a Swapper class with two integer instance variables x and y and a constructor with two parameters that initialize the two variables. Also include three methods : A getX() method that returns x, and a getY() method that returns y, and a void swap() method that swaps the values of x and y. Then create a SwapperDemo class that tests all the methods. (10)
-
-
-b. Given that Employee class contains the following members. Data members: emp_no, emp_name, basic, da, IT, Net_sal. Member functions: To initialize data, to calculate net salary and print data members. Write a java program to read the data and compute the net salary of each employee where DA=60% of basic pay and income tax 20 % if salary is less than 15,00000 or else 30%. (8)
-
-
-## The this Keyword, Garbage, The finalize() Method, 
-
-b. Discuss the use of this keyword. Write java program to find area of rectangle using command line arguments. (10)
-
-b. What is Garbage Collection and what finalize () method does? Explain with an example. (6)
-
-
-## Exploring the String Class,  Using Command-Line Arguments, 
-
-
-
-## Varargs, Scanner class.
-
-
-b. What are the advantages of using Varargs? Illustrate with an example. (8)
-
-b. Illustrate with an example variable number of arguments. (6)
-
-c. Discuss the usage of scanner class in Java. (6)
-
-
-
-# Inheritance: 
-
-> Inheritance Basics, Using super, Creating a Multilevel Hierarchy, When Constructors Are Called, Method Overriding, Dynamic Method Dispatch, Using Abstract Classes, Using final with Inheritance, The Object Class.
-
-
-## Inheritance Basics, 
-
-a. What is inheritance? What are the advantages of inheritance? Give an example of inheritance using java. (8)
-
-
-a. What is inheritance? Illustrate with an example of private and default access. (6)
-
-## Using super, Creating a Multilevel Hierarchy, 
-
-a. Describe the use of Super keyword in inheritance. Illustrate with an example. (6)
-
-b. Illustrate with an example, how to invoke super class constructor from the subclass. (6)
-
-
-
-c. What is inheritance? Explain the order of execution of constructor execution in multilevel hierarchy of classes. (6)
-
-
-## When Constructors Are Called, Method Overriding, 
-
-
-c. Illustrate with an example method overloading and method overriding. (8)
-a. Explain the following with Java Code: i) Method overriding  ii) Method overloading. (10)
-
-b. List the three rule of method overriding. How to achieve dynamic Polymorphism? Give example. (8)
-
-
-## Dynamic Method Dispatch, 
-
-b. What is Dynamic method dispatch? Illustrate with an example. (10)
-
-c. What is runtime polymorphism is Java? Explain with example. (8)
-
-## Using Abstract Classes, 
-
-c. What is Abstract Class? Give example. (5)
-
-b. Write syntax and use of the following: i) abstract class ii) final Keyword. (6)
-
-c. Write a program that creates an abstract class ‘Shape’. Create sub classes rectangle and triangle, that include appropriate methods for both sub classes that calculate area of rectangle and triangle. (8)
-
-
-## Using final with Inheritance, 
-
-b. Illustrate with an example usage of final keyword with respect to inheritance? (6)
-
-b. With the help of suitable examples, explain how "final" can be used to avoid Method overriding. (6)
-
-## The Object Class.
-
-a. Explain the following with Java Code wherever required: i) Varargs  ii) Object Class  iii) Use of final in inheritance   iv) super keyword. (10)
+## I. Introduction to Java
+
+**A. Core Concepts (JVM, Platform Independence)**
+1.  What is the Java Virtual Machine (JVM)? Discuss its advantages.
+2.  What is the difference between the Java Development Kit (JDK) and the JVM?
+3.  Define "platform independence." What makes Java platform-independent? Explain in detail.
+4.  Can Java run on any machine? Justify your answer.
+
+**B. Class Fundamentals**
+1.  Explain the core concepts of Object-Oriented Programming (OOP) in Java: Encapsulation, Inheritance, and Polymorphism.
+2.  Explain each word in the standard Java main method signature: `public static void main (String args[])`.
+
+**C. Declaring Objects, Assigning Object Reference Variables**
+1.  What is a class? What is an object? Explain the difference between a class and an object with an example.
+2.  How do you define a class and create objects from that class in Java? Provide an illustrative example.
+3.  What are access control modifiers (access specifiers) supported by Java? Explain the different types (e.g., public, private, protected, default/package-private) and illustrate their usage and effect on class members with an example.
+
+**D. Introducing Methods, Constructors**
+1.  Define a constructor. Discuss its special properties and advantages.
+2.  Explain how constructors can be overloaded with the help of an example.
+3.  **Programming Exercise:**
+    Create a `Swapper` class with:
+    *   Two integer instance variables, `x` and `y`.
+    *   A constructor that takes two integer parameters to initialize `x` and `y`.
+    *   A `getX()` method that returns the value of `x`.
+    *   A `getY()` method that returns the value of `y`.
+    *   A `void swap()` method that swaps the values of `x` and `y`.
+    Then, create a `SwapperDemo` class to test all the methods of the `Swapper` class.
+4.  **Programming Exercise:**
+    An `Employee` class contains the following members:
+    *   Data members: `emp_no`, `emp_name`, `basic`, `da`, `IT`, `Net_sal`.
+    *   Member functions: To initialize data, to calculate net salary, and to print data members.
+    Write a Java program to read the data for an employee and compute their net salary.
+    The `DA` (Dearness Allowance) is 60% of the `basic` pay.
+    The `IT` (Income Tax) is 20% of the `basic` pay if the `basic` pay is less than 1,500,000, otherwise, it is 30% of the `basic` pay.
+    `Net_sal` = `basic` + `da` - `IT`.
+
+**E. The `this` Keyword, Garbage Collection, The `finalize()` Method**
+1.  Discuss the use and purpose of the `this` keyword in Java.
+2.  What is Garbage Collection in Java?
+3.  What does the `finalize()` method do? Explain its role with an example in the context of garbage collection.
+
+**F. Exploring the `String` Class, Using Command-Line Arguments**
+1.  *(Implicit question, often combined with others, e.g., command-line arguments for a specific task)*
+2.  Write a Java program to find the area of a rectangle using command-line arguments to pass the length and width. *(This question also relates to the `this` keyword if used in a class context for the rectangle).*
+
+**G. Varargs, `Scanner` Class**
+1.  What are variable-length arguments (varargs) in Java? What are the advantages of using them?
+2.  Illustrate the use of varargs with a programming example.
+3.  Discuss the usage of the `Scanner` class in Java for input operations.
+
+
+## II. Inheritance
+
+**A. Inheritance Basics**
+1.  What is inheritance in Java?
+2.  What are the advantages of using inheritance?
+3.  Provide an example of inheritance in Java.
+4.  Illustrate inheritance with an example, specifically showing the effect of `private` and `default` (package-private) access modifiers on inherited members.
+
+**B. Using `super`, Creating a Multilevel Hierarchy**
+1.  Describe the use of the `super` keyword in the context of inheritance. Provide an example.
+2.  Illustrate with an example how to invoke a superclass constructor from its subclass using `super()`.
+3.  Explain the order of constructor execution in a multilevel hierarchy of classes with an example.
+
+**C. When Constructors Are Called, Method Overriding**
+1.  Define method overriding and method overloading. Illustrate both concepts with Java code examples.
+2.  What are the rules for method overriding in Java?
+3.  How is dynamic polymorphism (runtime polymorphism) achieved through method overriding? Provide an example.
+
+**D. Dynamic Method Dispatch**
+1.  What is Dynamic Method Dispatch in Java?
+2.  Illustrate Dynamic Method Dispatch (also known as runtime polymorphism) with a programming example.
+
+**E. Using Abstract Classes**
+1.  What is an abstract class in Java? Provide an example.
+2.  Explain the syntax and use of an `abstract` class.
+3.  **Programming Exercise:**
+    Create an abstract class named `Shape`.
+    Create two subclasses, `Rectangle` and `Triangle`, that extend `Shape`.
+    Include appropriate methods in both subclasses to calculate and return their respective areas.
+
+**F. Using `final` with Inheritance**
+1.  Explain the syntax and use of the `final` keyword.
+2.  Illustrate with an example how the `final` keyword can be used with respect to inheritance (e.g., final classes, final methods).
+3.  With the help of suitable examples, explain how the `final` keyword can be used to prevent method overriding.
+
+**G. The `Object` Class**
+1.  Explain the role and significance of the `Object` class in Java.
+2.  *(Combined Question from original list)* Explain the following with Java code where required:
+    *   Varargs
+    *   The `Object` class
+    *   Use of `final` in inheritance
+    *   The `super` keyword
 

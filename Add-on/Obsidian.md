@@ -43,6 +43,7 @@
 - **Highlighting**: `==highlighting==`
 - **Strikethrough**: `~~Strike through~~`
 
+
 ## Lists and Checklists
 - **Unordered Lists**: Start with `+`, `-`, or `*`
 - **Ordered Lists**: Start with numbers

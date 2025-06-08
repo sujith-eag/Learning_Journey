@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8232340dd997e03c",
+        "id": "76798b57522553c7",
         "type": "tabs",
         "children": [
           {
-            "id": "68f1304be61f0f5e",
+            "id": "fc881a6655aa50da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Networking/U_1_2.md",
+                "file": "MCA/DAA/2_Q_Sort.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "U_1_2"
+              "title": "2_Q_Sort"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3c3b8a8b9bd4ad88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d46d652136ea3847",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MCA/Java/Unit_2/Q Sort.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Q Sort"
             }
           }
         ]
@@ -88,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 259.5
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -173,11 +203,24 @@
       "templates:Insert template": false
     }
   },
-  "active": "68f1304be61f0f5e",
+  "active": "fc881a6655aa50da",
   "lastOpenFiles": [
+    "MCA/DAA/1_Q_Sort.md",
+    "MCA/DAA/Unit_1_Q.md",
+    "MCA/Java/Unit_1/Q Sort.md",
+    "MCA/Java/Unit_2/Q Sort.md",
+    "MCA/Java/program_1.md",
+    "MCA/DAA/2_Q_Sort.md",
+    "MCA/DAA/Unit_2_Q.md",
     "MCA/Networking/U_1_3.md",
     "MCA/Networking/U_1_4.md",
+    "Untitled.canvas",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.1 What operating systems do.md",
+    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.5 Operating System Operations.md",
+    "Add-on/Hugo/New start in hugo.md",
+    "Node/06_hosting.md",
     "MCA/Networking/U_1_2.md",
+    "Add-on/Obsidian.md",
     "MCA/Networking/U_1_1.md",
     "MCA/DBS/PLSQL.md",
     "MCA/DBS/Unit_1/1.1_Introduction.md",
@@ -186,22 +229,10 @@
     "MCA/DBS/Unit_1/2.2_Three_Schema_Architecture.md",
     "MCA/DBS/Unit_1/2.3_Component_Modules.md",
     "MCA/Java/Unit_1/A2_Inheritance.md",
-    "MCA/Java/Unit_2/Q Sort.md",
     "MCA/Java/Unit_1/A1_Class.md",
     "MCA/Java/Unit_2/Q.md",
     "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
-    "MCA/Java/Unit_1/Q Sort.md",
-    "MCA/Java/Unit_2/Q temp.md",
-    "MCA/Java/Unit_1/Q.md",
-    "MCA/Java/Unit_1/Q temp.md",
-    "Java/08_exception_handling/01_exception.md",
-    "Java/J 15 generics.md",
     "MCA/Java/Unit_2",
-    "Java/J 13 multithreaded.md",
-    "Java/08_exception_handling/03_Additional_features.md",
-    "Java/06_methods/abstract_object_class.md",
-    "Java/06_methods/07_method_overriding.md",
-    "Java/05_arrays/01_arrays.md",
     "MCA/Java/Unit_1",
     "MCA/Full_Stack/Programs",
     "MCA/Java",
