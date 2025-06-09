@@ -22,6 +22,7 @@ The general plan for analyzing the time efficiency of non-recursive algorithms i
 ```
 ALGORITHM UniqueElements(A[0..n − 1])
 //Determines whether all the elements in a given array are distinct
+
 //Input: An array A[0..n − 1]
 //Output: Returns “true” if all the elements in A are distinct
 // and “false” otherwise

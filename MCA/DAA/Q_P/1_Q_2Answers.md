@@ -36,6 +36,21 @@ For many algorithms, the running time is not solely dependent on the input size 
     
 **Sequential Search** algorithm searches for a given value (a search key _K_) in a list (or array) of _n_ elements by checking the elements one after another until either the key is found or the list is exhausted. The basic operation is the **key comparison** (e.g., comparing `A[i]` with `K`).
 
+```
+ALGORITHM  SequentialSearch(A[0..n − 1], K)
+//Searches for a given value in a given array by sequential search
+
+//Input: An array A[0..n − 1] and a search key K
+//Output: The index of the first element in A that matches K
+// or −1 if there are no matching elements
+
+i←0
+while i < n and A[i] /= K do
+	i ← i+1
+if i < n return i
+else return -1
+```
+
 Let's consider the algorithm `SequentialSearch(A[0..n-1], K)`:
 
 - **Worst-case scenario:** The algorithm makes the largest number of key comparisons when the search key _K_ is **not present** in the list or when it is the **very last element** (`A[n-1]`). In either case, the algorithm has to compare the key with every element in the list. The number of comparisons is `Cworst(n) = n`.
@@ -146,11 +161,13 @@ In essence, asymptotic notations provide a **standard, robust, and high-level wa
 This question relates to how functions scale with input size. 
 
 - a) **log₂n**: If `n` is increased eightfold to `8n`, the new value is `log₂(8n)`. Using logarithm properties, `log₂(8n) = log₂8 + log₂n = 3 + log₂n`. So, the value **increases by 3**.  `log₂ n` increases by just 1 with a twofold increase in `n`.
+
 - b) **n**: If `n` is increased eightfold to `8n`, the new value is `8n`. The value **increases eightfold**.
+
 - c) **n²**: If `n` is increased eightfold to `8n`, the new value is `(8n)² = 64n²`. The value **increases 64-fold**. Quadratic function `n²` increases fourfold with a twofold increase in `n`.
 - d) **n³**: If `n` is increased eightfold to `8n`, the new value is `(8n)³ = 512n³`. The value **increases 512-fold**. Cubic function `n³` increases eightfold with a twofold increase in `n`.
-- e) **2ⁿ**: If `n` is increased eightfold to `8n`, the new value is `2⁸ⁿ = (2ⁿ)⁸`. The value **is raised to the power of 8**. Value of `2ⁿ` gets squared (`(2ⁿ)²`) with a twofold increase in `n`.
 
+- e) **2ⁿ**: If `n` is increased eightfold to `8n`, the new value is `2⁸ⁿ = (2ⁿ)⁸`. The value **is raised to the power of 8**. Value of `2ⁿ` gets squared (`(2ⁿ)²`) with a twofold increase in `n`.
 
 ### Compare the order of growth for the following pairs of functions. State whether the first function has a smaller, larger, or the same order of growth as the second:
 
