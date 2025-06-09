@@ -91,6 +91,7 @@ class VehicleDemo
 		minivan.kpl = 21;
 		
 		range1 = minivan.range(); 
+		
 		// Displays range
 		System.out.print("Minivan can carry " 
 			+ minivan.passengers + "with range of " 

@@ -49,7 +49,6 @@ In order to create a truly platform-independent programming language, Java had t
 
 - This approach ensures that **"write once, run anywhere"** is not just a slogan, but a functional capability.
 
-
 ---
 
 ### The Bytecode: Java’s Magic
@@ -71,7 +70,6 @@ ___
 - **Security**: Because code is executed within the JVM, it can be monitored and controlled. The JVM enforces runtime constraints and maintains the sandbox environment.
 
 - **Consistency**: All JVMs understand the same bytecode format, ensuring consistent behavior across different systems.
-
 
 ---
 

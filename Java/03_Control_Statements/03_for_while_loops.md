@@ -264,7 +264,6 @@ class Power
 ```
 
 
-
 ## 'do-while' loop
 
 The last of Java’s loops is the do-while. The do-while loop checks its condition at the bottom of the loop. This means that a do-while loop will always execute at least once.

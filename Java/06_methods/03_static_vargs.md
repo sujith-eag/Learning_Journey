@@ -11,8 +11,7 @@ Both methods and variables can be declared to be static. static member, can be a
 >[!note]
 >To use a static member outside the class, you need only specify the name of its class followed by the dot operator. No object needs to be created. 
 
-if you want to assign the value 10 to a static variable called
-count that is part of the Timer class : `Timer.count = 10;`
+if you want to assign the value 10 to a static variable called count that is part of the Timer class : `Timer.count = 10;`
 
 This format is similar to that used to access normal  instance variables through an object, except that the class name is used. 
 

@@ -1,6 +1,4 @@
 
-
-
 # Inheritance: 
 
 > Inheritance Basics, Using super, Creating a Multilevel Hierarchy, When Constructors Are Called, Method Overriding, Dynamic Method Dispatch, Using Abstract Classes, Using final with Inheritance, The Object Class.

@@ -123,8 +123,7 @@ ___
 
 When you use a class from another package, you can fully qualify the name of the class with the name of its package, such an approach could easily become tiresome and awkward, especially if the classes you are qualifying are deeply nested in a package hierarchy.
 
-Using `import` you can bring one or more members of a package into view. This allows you to use those members
-directly, without explicit package qualification.
+Using `import` you can bring one or more members of a package into view. This allows you to use those members directly, without explicit package qualification.
 
 `import pkg.classname;`
 
@@ -152,8 +151,7 @@ The Java API is stored in packages. At the top of the package hierarchy is `java
 
 `java.lang` contains, among several others, the `System` class, used when performing output using `println( )`.
 
-The `java.lang` package is unique because it is imported automatically into every Java program. This is why you did not have to import `java.lang` in the preceding sample
-programs. 
+The `java.lang` package is unique because it is imported automatically into every Java program. This is why you did not have to import `java.lang` in the preceding sample programs. 
 
 However, you must explicitly import the other packages.
 

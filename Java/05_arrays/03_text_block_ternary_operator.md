@@ -6,8 +6,7 @@
 
 A text block is a new kind of string literal that is comprised of a sequence of characters that can occupy more than one line.
 
-newline characters can be used in a text block without the need for the `\n` escape
-sequence. Furthermore, tab and double quote characters can also be entered directly, without using an escape sequence, and the indentation of a multiline string can be preserved.
+newline characters can be used in a text block without the need for the `\n` escape sequence. Furthermore, tab and double quote characters can also be entered directly, without using an escape sequence, and the indentation of a multiline string can be preserved.
 
 ```java
 
@@ -39,7 +38,8 @@ class CLDemo
 			+ args.length + " Command line arguments.");
 		
 		System.out.println("They are: ");
-		for(int i =0; i<args.length; i++)
+		
+		for(int i=0; i<args.length; i++)
 			System.out.println("args : " + args[i]);
 	}
 }

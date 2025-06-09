@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "76798b57522553c7",
+        "id": "9fc9fff55e865057",
         "type": "tabs",
         "children": [
           {
-            "id": "fc881a6655aa50da",
+            "id": "5738c36d285957b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/DAA/2_Q_Sort.md",
+                "file": "MCA/DAA/Q_P/1_Q_Sort.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,37 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2_Q_Sort"
-            }
-          }
-        ]
-      },
-      {
-        "id": "3c3b8a8b9bd4ad88",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d46d652136ea3847",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MCA/Java/Unit_2/Q Sort.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Q Sort"
+              "title": "1_Q_Sort"
             }
           }
         ]
@@ -203,45 +173,45 @@
       "templates:Insert template": false
     }
   },
-  "active": "fc881a6655aa50da",
+  "active": "5738c36d285957b6",
   "lastOpenFiles": [
-    "MCA/DAA/1_Q_Sort.md",
-    "MCA/DAA/Unit_1_Q.md",
-    "MCA/Java/Unit_1/Q Sort.md",
-    "MCA/Java/Unit_2/Q Sort.md",
-    "MCA/Java/program_1.md",
-    "MCA/DAA/2_Q_Sort.md",
-    "MCA/DAA/Unit_2_Q.md",
-    "MCA/Networking/U_1_3.md",
-    "MCA/Networking/U_1_4.md",
-    "Untitled.canvas",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.1 What operating systems do.md",
-    "MCA/OS & Linux/OS Syllabus/Unit_1/Notes/1.5 Operating System Operations.md",
-    "Add-on/Hugo/New start in hugo.md",
-    "Node/06_hosting.md",
-    "MCA/Networking/U_1_2.md",
-    "Add-on/Obsidian.md",
     "MCA/Networking/U_1_1.md",
-    "MCA/DBS/PLSQL.md",
-    "MCA/DBS/Unit_1/1.1_Introduction.md",
-    "MCA/DBS/Unit_1/1.2_Characteristics.md",
-    "MCA/DBS/Unit_1/2.1_Data_Moels_Schema.md",
-    "MCA/DBS/Unit_1/2.2_Three_Schema_Architecture.md",
-    "MCA/DBS/Unit_1/2.3_Component_Modules.md",
-    "MCA/Java/Unit_1/A2_Inheritance.md",
+    "MCA/Java/Unit_2/2_Q_Sort.md",
+    "Java/07_packages_interface/01_packages.md",
+    "Java/06_methods/recursion.md",
+    "Java/06_methods/abstract_object_class.md",
+    "Java/06_methods/07_method_overriding.md",
+    "Java/06_methods/06_super.md",
+    "Java/06_methods/05_Inheritance.md",
+    "Java/06_methods/03_static_vargs.md",
+    "Java/06_methods/02_method_overloading.md",
+    "Java/06_methods/01_Argument_passing_return.md",
+    "MCA/Java/Unit_1/1_Q_Sort.md",
     "MCA/Java/Unit_1/A1_Class.md",
-    "MCA/Java/Unit_2/Q.md",
-    "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
+    "MCA/Java/Unit_1/A2_Inheritance.md",
+    "Java/05_arrays/03_text_block_ternary_operator.md",
+    "Java/05_arrays/02_for_each_strings.md",
+    "Java/05_arrays/01_arrays.md",
+    "Java/04_Class_Object/03_constructor.md",
+    "Java/04_Class_Object/02_methods.md",
+    "Java/04_Class_Object/01_class_object.md",
+    "Java/03_Control_Statements/05_switch_expression.md",
+    "Java/03_Control_Statements/04_break_continue.md",
+    "Java/03_Control_Statements/03_for_while_loops.md",
+    "Java/03_Control_Statements/02_switch_statement.md",
+    "Java/03_Control_Statements/01_if_else.md",
+    "Java/02_Data_Types_Operators/02_Type_Conversion.md",
+    "MCA/Java/Lab",
+    "MCA/DAA/Q_P/Raw",
+    "MCA/DAA/Q_P",
+    "MCA/DAA/Notes",
+    "Untitled.canvas",
     "MCA/Java/Unit_2",
     "MCA/Java/Unit_1",
     "MCA/Full_Stack/Programs",
     "MCA/Java",
     "Node/express",
     "Node",
-    "MCA/DAA",
-    "MCA/Research_Methodology",
-    "React/Deployed/03_style_hooks",
-    "React/Deployed/02_comp_state",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",

@@ -149,8 +149,7 @@ ___
 To pass primitive types by reference, Java defines a set of classes that wrap the primitive types in objects.
 These are Double, Float, Byte, Short, Integer, Long, and Character. 
 
-In addition to allowing a primitive type to be passed by reference, these wrapper classes define several
-methods that enable you to manipulate their values.
+In addition to allowing a primitive type to be passed by reference, these wrapper classes define several methods that enable you to manipulate their values.
 
 
 ## Returning Objects

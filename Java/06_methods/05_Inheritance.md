@@ -19,8 +19,7 @@ class subclass-name extends superclass-name {
 
 A subclass is a specialized version of a superclass and inherits all of the variables and methods defined by the superclass and adds its own, unique elements.
  
-Only one superclass can be specified for any subclass created. Java does not support the inheritance of multiple superclass into a single subclass. (This differs from C++, in
-which you can inherit multiple base classes)
+Only one superclass can be specified for any subclass created. Java does not support the inheritance of multiple superclass into a single subclass. (This differs from C++, in which you can inherit multiple base classes)
 
 You can create a hierarchy of inheritance in which a subclass becomes a superclass of another subclass.
 
@@ -130,7 +129,6 @@ class Rectangle extends TwoDShape
 	}
 }
 ```
-
 
 ## Member Access in Inheritance
 

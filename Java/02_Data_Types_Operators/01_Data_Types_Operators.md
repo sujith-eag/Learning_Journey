@@ -149,10 +149,10 @@ Avoid division by zero using `&&`:
 class SCOps {
 	public static void main(String[] args) {
 		int n = 10, d = 2;
-
+		
 		if (d != 0 && (n % d) == 0)
 			System.out.println(d + " is a factor of " + n);
-
+			
 		d = 0;
 		if (d != 0 && (n % d) == 0)
 			System.out.println("This line won't execute");
@@ -168,11 +168,11 @@ class SCOps {
 class SideEffects {
 	public static void main(String[] args) {
 		int i = 0;
-
+		
 		if (false & (++i < 100)) 
 			System.out.println("Not displayed");
 		System.out.println("Logical & result: " + i); // i = 1
-
+		
 		if (false && (++i < 100)) 
 			System.out.println("Also not displayed");
 		System.out.println("Short-circuit && result: " + i); // i = 1
@@ -183,7 +183,6 @@ class SideEffects {
 - `&` always evaluates both sides
     
 - `&&` skips the second part if the first is false
-    
 
 ---
 

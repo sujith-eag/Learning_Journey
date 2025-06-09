@@ -30,10 +30,11 @@
 **IV. Fundamentals of the Analysis of Algorithm Efficiency**
 
 **A. Analysis Framework**
-1.  Explain the concepts of worst-case, best-case, and average-case efficiency analysis for algorithms.
-2.  Provide an example of an algorithm and discuss its best-case, worst-case, and average-case scenarios.
-3.  Justify why worst-case analysis is often considered more important than average-case analysis in the study of algorithms.
-4.  Define what is meant by the time complexity and space complexity of an algorithm.
+1.  Define what is meant by the time complexity and space complexity of an algorithm.
+2.  Explain the concepts of worst-case, best-case, and average-case efficiency analysis for algorithms.
+3.  Provide an example of an algorithm and discuss its best-case, worst-case, and average-case scenarios.
+4.  Justify why worst-case analysis is often considered more important than average-case analysis in the study of algorithms.
+
 
 5.  What is meant by the "input size" of an algorithm? How is it typically measured for problems like sorting, matrix multiplication, or graph traversal?
 6.  Define the "running time" of an algorithm. What factors can influence it?

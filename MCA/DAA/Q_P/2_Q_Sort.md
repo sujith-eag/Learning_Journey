@@ -107,52 +107,21 @@ ___
 **VII. Principles of Parallel Algorithm Design**
 
 **A. Preliminaries - Decomposition, Tasks, and Dependency Graphs**
-1.  Explain "data decomposition" in the context of parallel algorithms. What is its use?
-2.  Explain partitioning of input data and partitioning of output data as part of data decomposition, using suitable examples.
-3.  Explain "Tasks" and "Dependency Graphs" (also known as Task Interaction Graphs) in parallel algorithm design, providing examples.
-4.  What is "Critical Path Length" in the context of a task dependency graph?
+1.  Briefly describe the main types of decomposition: task decomposition and data decomposition. What is the primary focus of each?
+2.  Explain "data decomposition" in the context of parallel algorithms. What is its use?
+3.  Explain partitioning of input data and partitioning of output data as part of data decomposition, using suitable examples.
+4.  Explain "Tasks" and "Dependency Graphs" (also known as Task Interaction Graphs) in parallel algorithm design, providing examples.
+5.  What is "Critical Path Length" in the context of a task dependency graph?
 
 **B. Granularity, Concurrency, and Task-Interaction**
 1.  Define and explain the term "Granularity" in parallel algorithm design.
 2.  Define and explain "Degree of Concurrency" in parallel systems.
 
 **C. Decomposition Techniques**
-1.  Explain data decomposition techniques in detail with examples (this may overlap with VII.A.1 & VII.A.2 but is explicitly asked as a broader topic).
+1.  Explain data decomposition techniques in detail with examples.
 2.  What is "recursive decomposition"? Present it with an example.
 3.  Write short notes on the following decomposition techniques:
     *   Exploratory decomposition
     *   Speculative decomposition
-
----
-
-# Sample
-
-
-**VII. Principles of Parallel Algorithm Design**
-
-**A. Preliminaries - Decomposition**
-1.  Define "decomposition" in the context of designing parallel algorithms. Explain why it is a fundamental initial step.
-2.  Briefly describe the main types of decomposition: task decomposition and data decomposition. What is the primary focus of each?
-
-**B. Tasks and Dependency Graphs**
-1.  What constitutes a "task" in parallel computing?
-2.  Explain what a task dependency graph is. How does it visually represent the execution order and dependencies among tasks in a parallel algorithm?
-3.  Why is it important to identify and understand dependencies between tasks when designing parallel algorithms?
-
-**C. Granularity**
-1.  Define "granularity" as it relates to parallel algorithm design.
-2.  Differentiate between fine-grained parallelism and coarse-grained parallelism. Discuss the potential advantages and disadvantages of each approach.
-3.  How can the choice of granularity impact factors like communication overhead and load balancing in a parallel computing environment?
-
-**D. Concurrency and Task-Interaction**
-1.  Explain the concept of "concurrency" in the context of parallel algorithms and systems.
-2.  Describe common patterns or types of task interaction that occur in parallel algorithms (e.g., data sharing, synchronization, communication).
-3.  How can these task interaction patterns influence the overall performance, scalability, and complexity of a parallel algorithm?
-
-**E. Decomposition Techniques**
-1.  Describe the "domain decomposition" (also known as "data decomposition") technique for parallelizing algorithms. Provide a suitable example where this technique would be effective.
-2.  Describe the "functional decomposition" (also known as "task decomposition") technique. Provide a suitable example where this technique would be applicable.
-3.  Briefly mention "recursive decomposition" as a technique and how it relates to divide-and-conquer strategies in a parallel context.
-4.  What key factors should a designer consider when selecting an appropriate decomposition technique for a given problem and target parallel architecture?
 
 ---
