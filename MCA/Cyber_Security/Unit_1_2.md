@@ -1,0 +1,301 @@
+
+# Cyber Offenses
+
+>[!note] Syllabus
+> Cyber offenses: How Criminals Plan Them: How Criminals Plan the Attacks,
+> Social Engineering,
+> Cyberstalking,
+> Botnets: The Fuel for Cybercrime,
+> Attack Vector.
+
+#### Cracker
+
+A **cracker** is an individual who breaks into computer systems, often with malicious intent. Crackers bypass passwords or licenses in software or gain unauthorized access to systems.
+
+> Crackers differ from ethical hackers in that their intent is usually destructive or illegal.
+
+#### Phreaking
+
+**Phreaking** is the act of hacking into telecommunications systems, such as phone networks, to make free calls or exploit communication infrastructure.
+
+### Cracker Tools
+
+Crackers use specialized tools to exploit system vulnerabilities. 
+
+These include:
+- **Password crackers** – Tools that guess or retrieve passwords
+- **Trojans** – Malware disguised as legitimate software
+- **Viruses and Worms** – Self-replicating programs that damage systems
+- **War dialers** – Programs that automatically dial a list of phone numbers to find vulnerable modems or fax machines
+    
+These tools are widely distributed over the internet and often shared in underground forums.
+
+## System Vulnerabilities
+
+Common technical vulnerabilities that cybercriminals exploit include:
+
+1. **Inadequate border protection** – Weak security at the network perimeter (e.g., unprotected firewalls)
+    
+2. **Weak Remote Access Servers (RASs)** – Poor authentication controls on remote access points
+    
+3. **Application servers with known exploits** – Unpatched systems with publicly available attack scripts
+    
+4. **Misconfigured systems** – Devices using default settings or improperly configured security options
+    
+
+## Attack Planning
+
+Cybercriminals use a systematic approach to identify, analyze, and exploit weaknesses in systems. Targets may include individuals, organizations, or even governments.
+
+### Phases of Cyber Attack Planning
+
+1. **Reconnaissance (Information Gathering)**  
+    Initial phase involving data collection to understand the target system and its architecture. This is generally a **passive attack**.
+    
+2. **Scanning and Scrutinizing**  
+    Verification of collected data and detection of system vulnerabilities using tools such as port scanners and vulnerability scanners.
+    
+3. **Attack Launch (Exploitation)**  
+    The final phase where the attacker gains and maintains unauthorized access.
+
+## Reconnaissance Phase
+
+**Reconnaissance** is a preparatory phase in which the attacker gathers as much information as possible about the target. 
+
+It is divided into:
+
+- **Passive Reconnaissance**: Information is gathered without interacting directly with the target (e.g., via public websites, social media, WHOIS data).
+    
+- **Active Reconnaissance**: Involves direct interaction (e.g., probing open ports), increasing the risk of detection.
+    
+
+**Footprinting** is a common technique used during reconnaissance to build a profile of the target, including:
+- Network architecture
+- Domain names and IP addresses
+- Operating systems and applications in use
+- Security policies and vulnerabilities
+
+
+## Types of Cyber Attacks
+
+### Active Attacks
+
+Involve direct interaction with the system, often modifying or disrupting data, processes, or services.
+
+- **Man-in-the-Middle (MitM)** – Intercepting and altering communication between two parties
+    
+- **Distributed Denial-of-Service (DDoS)** – Overwhelming a system or server with excessive traffic
+    
+- **Website Defacement** – Unauthorized modification of web content
+    
+- **SQL Injection** – Injecting malicious SQL queries to manipulate or destroy database content
+    
+
+Characteristics:
+
+- Alters system data or behavior
+    
+- Affects confidentiality, integrity, or availability
+    
+- High risk of detection
+
+
+### Passive Attacks
+
+Involve silent observation without modifying or interfering with system operations.
+
+- **Eavesdropping** – Listening to unencrypted network communication
+- **Traffic Analysis** – Monitoring communication flow to gather insights
+- **Keylogging** – Recording keystrokes to capture credentials or sensitive data    
+- **Packet Sniffing** – Intercepting and analyzing data packets on a network
+
+Characteristics:
+- Focuses on information collection
+- Leaves little or no trace    
+- Often used in early reconnaissance
+
+
+## Scanning and Scrutinizing the Target
+
+Scanning is a bridge between reconnaissance and attack. It helps attackers map out potential weaknesses and entry points.
+
+1. **Port Scanning**
+    - Identifies which ports are open, closed, or filtered
+    - Reveals services running on a system
+        
+2. **Network Scanning**
+    - Detects active hosts and their IP addresses
+    - Discovers network topology and device configurations
+        
+3. **Vulnerability Scanning**
+    - Identifies known security flaws        
+    - Maps these vulnerabilities to specific services or software versions
+
+
+## Tools used 
+
+Nmap
+
+
+
+## Port
+
+A **port** is a logical access channel or communication endpoint for a device or application. Ports allow networked devices to exchange information using protocols such as **TCP/IP** and **UDP**.
+
+Each port is assigned a number ranging from **0 to 65535**. These ports are categorized into three ranges:
+
+1. **Well-Known Ports (0–1023):** Reserved for system or commonly used services
+    
+2. **Registered Ports (1024–49151):** Assigned for specific services by software developers
+    
+3. **Dynamic or Private Ports (49152–65535):** Temporarily used for client-side communications
+
+
+**Common Well-Known Ports**
+
+|Port|Service|
+|---|---|
+|20|FTP Data|
+|21|FTP Control|
+|22|SSH|
+|25|SMTP (Email)|
+|53|DNS|
+|80|HTTP (Web)|
+
+### Port Scan Results
+
+Scanning ports can reveal the state of services running on a host. Scan results typically fall into these categories:
+
+1. **Open or accepted**: The host has sent a reply indicating that a service is listening on the port.
+
+2. **Closed or not listening**: The port is reachable but no service is listening. The host sent a reply indicating that connections will be denied to the port. 
+
+3. **Filtered or Blocked**: No response received, often due to firewalls or security devices.
+  
+
+## Attack Phase (System Exploitation)
+
+After scanning and enumeration, the **attack phase** is initiated. In cybersecurity, this stage is about gaining unauthorized system access and maintaining control.
+
+### Attack Steps
+
+1. **Crack credentials** (e.g., passwords)
+    
+2. **Exploit privileges** to gain admin/root access
+    
+3. **Execute malicious code or commands**
+    
+4. **Hide files or tools** to avoid detection
+    
+5. **Cover tracks** by deleting access logs and other traces of intrusion
+    
+## Attack Vector
+
+An **attack vector** is the path or method used by an attacker to gain unauthorized access to a system, network, or data. It delivers a **payload** (malicious code) that causes harm.
+
+### Common Attack Vectors
+- Phishing emails
+- Malicious websites
+- Pop-up ads
+- Instant messaging and social media
+- Compromised USB drives    
+- Exploiting human error (social engineering)
+
+## Attack Surface
+
+An **attack surface** is the total number of potential vulnerabilities or entry points in a system that could be exploited by an attacker to gain access to system, network or data. 
+
+A **smaller attack surface** reduces the potential risk.
+
+### Types of Attack Surfaces
+
+- **Physical**: USB ports, unlocked devices
+    
+- **Digital**: Exposed APIs, open ports, outdated software
+    
+- **Social Engineering**: Employees, user behavior
+
+
+### Attack Surface Management (ASM)
+
+Involves to take a hacker‘s view and approach to an organization’s attack surface, identifying, monitoring, and minimizing digital assets that are exposed to attackers.
+
+ASM typically involves:
+* Continuous discovery, inventory, and monitoring of potentially vulnerable assets.
+
+* Monitoring for vulnerabilities in on-premises, cloud, or shadow IT
+    
+* Taking a hacker’s approach ensures discovery not only of known assets, but also shadow IT applications or devices. 
+
+* These applications or devices might have been abandoned but not deleted or deactivated (orphaned IT). Or assets that are planted by hackers or malware (rogue IT), and more—essentially any asset that can be exploited by a hacker or cyber threat.
+
+## Social Engineering Attacks
+
+**Social engineering** is the technique to influence and persuasion to decieve and manipulate people into revealing confidential information or performing actions that compromise security. It exploits human trust rather than technical vulnerabilities.
+
+### Human-Based Social Engineering
+
+These attacks involve **direct human interaction**:
+
+- Impersonating a valid employee or user
+    
+- Posing as an important authority figure
+    
+- Using a third-party (e.g., "your manager asked me...")
+    
+- Calling technical support
+    
+- **Shoulder surfing** (observing someone’s screen or keyboard)
+    
+- **Dumpster diving** (retrieving sensitive data from trash)
+
+
+### Computer-Based Social Engineering
+
+These attacks are **technology-assisted**, and often involve tricking users into installing malware or revealing sensitive info:
+
+- **Fake emails (phishing)**
+    
+- **Malicious email attachments** (e.g., keyloggers, Trojans)
+    
+- **Pop-up windows** offering fake prizes or updates to encourage malicious downloads
+
+
+## Cyberstalking
+
+**Cyberstalking** is the use of electronic communication to stalk, harass, or threaten a person or organisation persistently and deliberately. 
+
+Unlike general online harassment, cyberstalking is persistent, targeted, and often escalates over time, instilling fear or distress in the victim.
+
+**Common Attack Vectors used :**
+* Social media platforms (e.g., Facebook, Instagram, Twitter)
+* Email and messaging apps
+* GPS tracking (via devices or apps)
+* Doxxing (Publishing personal info online)
+* Malware or spyware to track keystrokes or location
+* Spoofing accounts to impersonate the victim
+
+**Common Attack Surface :**
+* Personal devices: laptops, phones, tablets
+* Online profiles: dating apps, forums, social media
+* Publicly available information: job sites, phone directories
+* Smart home devices with location tracking or audio/video feeds
+
+## Securing the System
+
+**Best Practices to Prevent Cyber Attacks:**
+
+1. Install reputable antivirus and anti-spyware software and keep them updated
+    
+2. Enable automatic operating system security updates
+    
+3. Use a firewall to prevent unauthorized access when connected to internet
+    
+4. Disconnect the internet when not in use
+    
+5. Download software only from trusted sources
+    
+6. Monitor your mailbox for unusual “sent” messages
+    
+7. Take immediate action (e.g., scan, disconnect, reset credentials) if infection is suspected
+    

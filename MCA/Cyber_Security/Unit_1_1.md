@@ -1,0 +1,304 @@
+
+# Cyber Crime
+
+> [!note] Syllabus
+> Introduction to Cybercrime:
+> 
+> Cybercrime: Definition and Origins of the Word,
+> Cybercrime and Information Security, 
+> who are Cybercriminals?
+> Classifications of Cybercrimes,
+> Cybercrime Era: Survival Mantra for the Netizens.
+
+**Cyber crime** refers to any illegal activity conducted using electronic devices and network, primarily targeting the computer systems, data and digital infrastructure.
+
+It includes crimes committed using computers and the Internet, such as identity theft, financial fraud, data breaches, stalking victims, or disrupting operations through malicious programs.
+
+Opportunities for cyber crime are rapidly increasing due to:
+
+- The exponential growth of Internet connectivity
+    
+- Weaknesses in information security systems
+    
+
+## Common Types of Cyber Attacks
+
+### 1. Techno-Crime
+
+These are deliberate attacks on systems with the intent to:
+- Copy or steal data
+- Block access
+- Corrupt or damage data or systems
+    
+### 2. Techno-Vandalism
+
+Often random or opportunistic in nature, these include:
+- Defacing websites
+- Copying and publicizing sensitive files
+- Other disruptive acts without clear motives
+
+## Cyber Terrorism
+
+**Cyber Warfare**
+- State-sponsored cyber attacks targeting another nation's critical digital or military infrastructure
+- These are Large-scale, coordinated operations with strategic objectives
+
+**Cyber Terrorism**
+- Conducted by non-state actors (e.g., terrorist groups or individuals)
+- Aimed at creating fear, disrupting operations, or promoting political/religious agendas through digital means
+
+## Recent Cyber Attack Trends in India
+
+- **Phishing Attacks**: Deceptive emails/messages aimed at stealing sensitive information (e.g., fake RBI/KYC updates, UPI fraud links)
+    
+- **Digital Arrest Scam**: Criminals impersonate law enforcement officials to extort money via threats and fake video calls
+    
+- **UPI/BHIM Frauds**: Social engineering tactics used to gain unauthorized access to UPI apps or trick users into sending payments
+    
+- **SIM Swap Attacks**: Criminals obtain duplicate SIM cards to intercept OTPs and access bank accounts
+    
+- **Malware Attacks**: Malicious software spread via downloads, USB drives, or suspicious links to compromise systems
+    
+- **Ransomware Attacks**: Malicious software that encrypts a victim's data, rendering it inaccessible until a ransom is paid. These attacks often target critical sectors like healthcare and government.
+    
+- **Business Email Compromise (BEC)**: Spoofed or hacked email accounts used to deceive companies into transferring funds.
+    
+- **Website Defacement**: Government or public websites are defaced by hacktivists or terror groups to send a message or cause disruption
+    
+- **ATM Skimming**: Devices attached to ATMs to clone debit card data during transactions
+    
+- **Data Breaches**: Unauthorized access to large databases containing sensitive user or customer information
+    
+
+## Preventive Measures
+
+- **Enable Two-Factor Authentication (2FA)**: Adds an extra layer of security to online accounts.
+    
+- **Use Strong, Unique Passwords**: Avoid using easily guessable information.
+    
+- **Regularly Monitor Financial Statements**: Quick detection of unauthorized transactions can mitigate losses.
+    
+- **Be Cautious with Personal Information**: Avoid sharing sensitive details over the phone or online unless you're certain of the recipient's identity.
+    
+- **Educate Yourself and Others**: Awareness is key to recognizing and avoiding cyber threats.
+
+
+## Information Security
+
+Cyber security is the practice of protecting information, equipment, devices, computer resources, communication devices, and the information stored within them from unauthorized access, use, disclosure, disruption, modification, or destruction.
+
+It includes both the physical protection of devices and the security of the information contained in them.
+
+### Issues Related to Data and Cyber Crimes
+
+- Many organizations do not formally account for losses caused by computer-related incidents, unlike physical inventory losses such as shrinkage in retail.
+    
+- To avoid negative publicity, companies often avoid disclosing data on security breaches or cyber crimes, which hinders transparency and preparedness.
+    
+
+## Cybercriminals
+
+Cybercriminals are individuals or groups who commit crimes using digital technologies. Common cyber crimes include:
+*  Credit card fraud
+* Cyberstalking
+* Defaming another online, 
+* Gaining unauthorized access to computer systems,
+* Ignoring and Violation of copyright and software licenses
+- Circumventing encryption to create illegal copies
+* Software piracy
+* stealing another’s identity. 
+
+### Type of cybercriminals
+
+**Type I – Recognition-seeking Cybercriminals**  
+
+Motivated by reputation, ideology, or personal interest.
+- Hobby hackers
+- IT professionals using social engineering
+- Politically motivated hackers    
+- Terrorist organizations
+    
+
+**Type II – Financially or Psychologically Motivated Cybercriminals**  
+
+Not interested in public recognition.
+- Psychological offenders (e.g., stalkers, harassers)
+- Hackers driven by financial gain
+- State-sponsored actors engaged in espionage or sabotage
+- Organized criminal groups
+    
+**Type III – Insider Threats**  
+
+Insiders who exploit their access for personal or competitive gain.
+- Disgruntled current or former employees
+- Employees recruited by competitors for sabotage or data theft
+
+## Categories of Cybercrime
+
+1. **Cyber Crimes Against Individuals**  
+    Crimes that target personal vulnerabilities such as greed, ignorance, or naivety. Examples include fraud, phishing, and cyberstalking.
+    
+2. **Cyber Crimes Against Property**  
+    These include physical theft of devices, distribution of malware, or actions aimed at damaging or deleting data.
+    
+3. **Cyber Crimes Against Organizations**  
+    Cyberterrorism and espionage targeting institutions, aiming to disrupt services, steal classified data, or take control of networks.
+    
+4. **Single-Event Cyber Crimes**  
+    Incidents occurring in one moment from the victim's perspective. Example: opening a malicious email attachment that installs malware.
+    
+5. **Series-Based Cyber Crimes**  
+    Involve repeated interactions between the attacker and victim, often through grooming or manipulation, before exploitation occurs.
+    
+
+## Classification of Cybercrime
+
+**Cyber crime against individual :**
+* Financial fraud
+* Harassment
+* Email spoofing and other online fraud
+- Phishing, spear phishing, vishing (voice phishing), and smishing (SMS phishing)
+* Spamming
+* Cyber defamation
+* Cyberstalking and harassment
+* Computer sabotage
+* Pornographic offenses
+* Password sniffing
+
+**Cybercrime against property :**
+* Credit card fraud
+- Intellectual property violations: software piracy, copyright infringement, trademark violations
+- Theft of computer source code
+  
+**Cybercrime against organization :**
+* Unauthorized system access
+* Password sniffing
+* Denial-of-service(Dos attacks DDoS attacks)
+- Denial-of-service (DoS) and distributed denial-of-service (DDoS) attacks
+- Virus and malware attacks
+- Trojan horses
+- Salami attacks (small, incremental thefts)
+- Email bombing
+- Logic bombs (hidden code that triggers under specific conditions)
+- Data diddling (unauthorized data alteration)
+- Software piracy
+- Computer network intrusions
+  
+**Cybercrime against society :**
+* Forgery
+* Cyber terrorism
+- Web jacking (taking control of websites or domains to mislead or extort)
+    
+
+## Cyber Attacks
+
+Cyber attacks involve deliberate attempts to exploit, damage, disrupt, or gain unauthorized access to computer systems, networks, or digital devices. 
+
+### Common Cyber Attack Techniques
+
+- **Email Spoofing**  
+    Sending emails that appear to originate from a trusted source but are actually sent from a different source, often used for phishing or spreading malware.
+    
+- **Spamming**  
+    The misuse of electronic messaging systems (email, social media, SMS, etc.) to send unsolicited bulk messages indiscriminately, often for advertising or phishing purposes.
+    
+- **Cyber Defamation**  
+    Publishing or circulating defamatory content online. Example: Posting false accusations on a website or sending defamatory emails to damage someone's reputation.
+    
+- **Salami Attacks**  
+    Involve committing financial fraud by making small, often unnoticed deductions from many accounts. Over time, these insignificant changes accumulate into substantial theft.
+
+- **Data Diddling**  
+    Unauthorized alteration of data at the input stage before processing and restoring it afterward to conceal manipulation. Often used in billing or payroll fraud.
+    
+- **Web Jacking**  
+    Taking control of a website by stealing login credentials and changing passwords, thereby locking the original owner out.
+    
+- **Web Hijacking**  
+    Involves cloning websites, using lookalike domains, or hijacking web sessions to redirect traffic, steal credentials, spread malware, or damage reputation.
+    
+- **Industrial Espionage (Cyber Spying)**  
+    The unauthorized access and theft of proprietary data related to business strategies, financials, R&D, or marketing plans. Often performed by competitors or state actors.
+   
+- **Hacking**  
+    Gaining unauthorized access to systems, networks, or digital devices by exploiting security vulnerabilities. Motives may range from curiosity and activism to criminal intent.
+    
+- **Software Piracy**  
+    The illegal copying, distribution, or use of software, often through counterfeit products or cracked software.
+    
+- **Computer Sabotage**  
+    The intentional disruption of system operations by introducing malware such as viruses, worms, or Trojans.
+    
+- **Password Sniffing**  
+    The use of software tools to monitor network traffic and extract usernames and passwords, compromising system security.
+    
+- **Identity Theft**  
+    The fraudulent acquisition and use of another person's personal information, typically for financial gain or criminal purposes.
+    
+
+
+### Types of Hacking
+
+- **Ethical Hacking**  
+    Conducted legally by cybersecurity professionals to identify and fix security vulnerabilities.
+    
+- **White Hat Hacking**  
+    A form of ethical hacking with the consent of the system owner, aimed at strengthening cybersecurity.
+    
+- **Black Hat Hacking**  
+    Illegal and malicious hacking to steal data, spread malware, or cause disruption for personal or financial gain.
+    
+- **Grey Hat Hacking**  
+    Unauthorized hacking without malicious intent, often done to expose vulnerabilities or draw attention to security flaws.
+    
+- **Hacktivism**  
+    Hacking conducted for political or social reasons, often aimed at protesting or promoting a cause (e.g., Anonymous).
+    
+- **Website Hacking**  
+    Unauthorized access to websites to manipulate content, steal data, or launch further attacks.
+    
+- **Network Hacking**  
+    Exploiting vulnerabilities in network systems to gain access to sensitive data or services.
+    
+- **Password Hacking**  
+    Techniques such as brute-force, dictionary attacks, or keylogging used to crack or steal passwords.
+    
+- **Phishing**  
+    A deceptive method of tricking users into providing sensitive information (like passwords or credit card numbers) via fake emails or websites.
+    
+- **Social Engineering**  
+    Manipulating people, rather than systems, to reveal confidential information, often via impersonation or psychological tactics.
+    
+- **Malware Attacks**  
+    The use of malicious software like viruses, worms, or ransomware to damage or gain control of systems.
+    
+
+### Malware, Virus and Worm
+
+- **Malware**  
+    A general term for any software designed to harm, exploit, or disable computers and networks. It includes viruses, worms, trojans, ransomware, spyware, etc.
+   
+* **Virus**
+	A type of malware that attaches itself to a host file or program and spreads when executed by the user. It can corrupt files or crash systems. ex: `ILOVEYOU virus`
+
+* **Worm** : 
+	A standalone type of malware that self-replicates and spreads automatically across networks without user intervention. Can rapidly consume bandwidth and overload systems. ex: `WannaCry worm`
+
+
+## Netizens
+
+**Netizens** are active Internet users who participate regularly in online spaces, such as social media, blogs, forums, and websites. They contribute content and engage in discussions, building a significant online presence.
+
+### 5P Mantra for Safe and Responsible Netizenship:
+
+1. **Precaution** – Be cautious while sharing personal information online.
+    
+2. **Prevention** – Take steps to avoid becoming a victim of cyber attacks (e.g., antivirus software, secure passwords).
+    
+3. **Protection** – Use firewalls, security patches, and strong authentication methods.
+    
+4. **Preservation** – Regularly back up important data and maintain integrity in digital interactions.
+    
+5. **Perseverance** – Remain vigilant and committed to practicing safe online behavior consistently.
+    
+
