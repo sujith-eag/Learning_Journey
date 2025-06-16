@@ -16,7 +16,8 @@ class Box {
     }
 
     public String toString() {
-        return "The dimensions are " + width + " by " + height + " by " + depth + ".";
+        return "The dimensions are " + width 
+	        + " by " + height + " by " + depth + ".";
     }
 }
 

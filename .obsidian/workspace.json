@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "91ba793ae242fb05",
+        "id": "5b51995a43d49a47",
         "type": "tabs",
         "children": [
           {
-            "id": "63d9747b779c887e",
+            "id": "9e535b4bad1eefc1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MCA/Java/Assignment/Q4.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Q4"
             }
           }
         ]
@@ -74,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6503546b953b07c6",
@@ -159,34 +174,36 @@
       "templates:Insert template": false
     }
   },
-  "active": "63d9747b779c887e",
+  "active": "9e535b4bad1eefc1",
   "lastOpenFiles": [
+    "MCA/Java/Assignment/Q3.md",
+    "MCA/Java/Assignment/Q2.md",
+    "MCA/Java/Assignment/Q1.md",
+    "MCA/Java/Assignment/Q4.md",
+    "MCA/Java/Assignment/Q5.md",
+    "MCA/Java/Lab/program_4.md",
+    "MCA/Java/Lab/program_2.md",
+    "MCA/Java/Lab/program_1.md",
+    "MCA/Networking/Lab/Program_2.md",
+    "MCA/Networking/Lab/Program_1.md",
+    "MCA/Java/Lab/program_5.md",
+    "MCA/Java/Lab/program_3.md",
+    "MCA/Java/Lab/program_6.md",
+    "MCA/Java/Unit_1/1_Q_Sort.md",
+    "MCA/Java/Unit_1/A1_Class.md",
     "MCA/Java/Unit_1/A2_Inheritance.md",
+    "Java/04_Class_Object/03_constructor.md",
+    "MCA/DBS/Class/DML.md",
+    "MCA/DBS/Class/DB_Langugage.md",
+    "MCA/DBS/Class/DDL.md",
+    "MCA/DBS/Class",
+    "MCA/Java/Assignment",
     "MCA/Networking/U_1_5.md",
     "MCA/Networking/U_1_4.md",
     "MCA/Networking/U_1_3.md",
     "MCA/Networking/U_1_2.md",
     "MCA/Networking/U_1_1.md",
     "MCA/Full_Stack/React_exercises/Exercise_2_4.md",
-    "MCA/Full_Stack/React_exercises/Exercise_2_3.md",
-    "MCA/Full_Stack/React_exercises/Exercise_2_2.md",
-    "MCA/Full_Stack/React_exercises/Exercise_2_1.md",
-    "MCA/Full_Stack/React_exercises/Exercise_1_3.md",
-    "MCA/Full_Stack/React_exercises/Exercise_1_2.md",
-    "MCA/Full_Stack/React_exercises/Exercise_1_1.md",
-    "MCA/Full_Stack/React_exercises/Exercise_5_3.md",
-    "MCA/Full_Stack/React_exercises/Exercise_5_2.md",
-    "MCA/Full_Stack/React_exercises/Exercise_5_1.md",
-    "MCA/Full_Stack/React_exercises/Exercise_4_2.md",
-    "MCA/Full_Stack/React_exercises/Exercise_4_1.md",
-    "MCA/Full_Stack/React_exercises/Exercise_3_3.md",
-    "MCA/Full_Stack/React_exercises/Exercise_3_2.md",
-    "MCA/Full_Stack/React_exercises/Exercise_3_1.md",
-    "MCA/Full_Stack/React_exercises/Exercise_4_3.md",
-    "MCA/Full_Stack/Programs/Exercise_1.md",
-    "MCA/Research_Methodology/Unit_1_Part_3_Research_Problem.md",
-    "MCA/Research_Methodology/Unit_1_Part_2_Research_Process.md",
-    "MCA/Research_Methodology/Unit_1_Part_1_Research_Methodology.md",
     "MCA/Cyber_Security",
     "Untitled.canvas",
     "MCA/Java/Lab",
@@ -196,8 +213,6 @@
     "MCA/Java/Unit_2",
     "MCA/Java/Unit_1",
     "MCA/Full_Stack/React_exercises",
-    "MCA/Java",
-    "Node/express",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
