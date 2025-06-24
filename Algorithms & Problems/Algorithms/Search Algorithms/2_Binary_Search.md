@@ -1,8 +1,10 @@
 # Binary Search
-#Binarysearch
+
 Binary search is a highly efficient algorithm for finding a target value within a sorted array or list.
 It works by repeatedly dividing the search interval in half until the target value is found or the interval is empty. 
-### Binary Search Algorithm:
+
+## Binary Search Algorithm:
+
 1. **Initialization**:  Start with the entire sorted array.
 
 2. **Midpoint Calculation**:
@@ -19,6 +21,7 @@ It works by repeatedly dividing the search interval in half until the target val
    - Repeat steps 2 and 3 until the target is found or the search interval is empty (`left` > `right`).
 
 ### Considerations:
+
 - **Sorted Input**: Binary search requires the input array to be sorted beforehand.
 - **Efficiency**: Binary search has a time complexity of O(log n), where n is the number of elements in the array. This makes it significantly faster than linear search for large datasets.
 - **Edge Cases**: Handle cases such as empty arrays (`arr`) or when the target value (`target`) is not present in the array.

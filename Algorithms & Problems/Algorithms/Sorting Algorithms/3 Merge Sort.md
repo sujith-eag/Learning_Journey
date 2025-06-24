@@ -12,7 +12,7 @@ Merge sort is a classic divide-and-conquer sorting algorithm that is efficient a
 3. **Combine**:  Merge the two sorted halves to produce a single sorted list.
     - Merge the two sorted halves into a single sorted list. This is done by comparing the elements of the two halves and combining them in a sorted order.
 
-Keep Divide the array into two parts (recursively, base case, there are 0 or 1 element)
+Keep Dividing the array into two parts (recursively, base case, there are 0 or 1 element)
 Separately sort left and right  (base case is no element in L or R)
 combine the two sorted halves
 
@@ -172,6 +172,7 @@ if A[i] == B[j],                                         # When both values are 
 
 *  (1,2,3) (2,3,4) = (1,2,3,4)
 ```
+
 ### Intersection of two sorted lists (finding commons)
 ```python
 if A[i] == B[j]                       # if there are similar values
@@ -183,10 +184,11 @@ if B[j] < A[i], increment j              
 
 (1,2,3,4) (4,5,6) = (4)
 ```
+
 ### Difference of two lists (finding unique) (A-B) (B-A)
 
 ```python
-Values in A , not in B  (A-B)
+# Values in A , not in B  (A-B)
 if B[j] == A[i],
     discard, by incrementing i and j
 if A[i] < B[j],
@@ -208,5 +210,6 @@ if A[i] < B[j],
 Add all remaining elements from B when A is empty
 
 (1,2,3,6) (2,4,6,8) = (4,8)
-
 ```
+
+

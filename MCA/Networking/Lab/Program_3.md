@@ -1,101 +1,182 @@
 
-## Installation and Configuration of FTP Server using ProFTPD
+# FTP Server using ProFTPD
 
-Install and configure an FTP server on PC1 using ProFTPD, allowing FTP clients to upload and download files successfully.
+Set up an FTP server on **PC1** using **ProFTPD**, allowing clients to upload and download files via FTP.
 
-### Step-by-Step Procedure
+## Step-by-Step Procedure
 
+#### 1. Update Package Repository and Install ProFTPD
 
-1. Install ProFTPD
-    
 ```bash
 sudo apt-get update
 sudo apt-get install proftpd
 ```
+
+- During installation, select **"standalone"** mode using the arrow keys and press **Enter**.
     
-- During installation, select **standalone mode** and press **Enter** to complete.
-        
-2. Configure ProFTPD
-    
+#### **2. Configure ProFTPD Settings**
+
+Edit the main configuration file:
+
 ```bash
 sudo nano /etc/proftpd/proftpd.conf
 ```
-    
-Make the following changes in the configuration file:
-- Set `UseIPv6 off`
-	
-- Set `ServerName "CNLAB.com"`
-	
-- Uncomment `DefaultRoot ~`
-	
-- Set `RequireValidShell on`
-	
-- Uncomment `AuthOrder mod_auth_unix.c`
-	
-- Save and exit: **Ctrl + O**, **Enter**, then **Ctrl + X**.
-	
-3. **Add `/bin/false` to Valid Shells**
-    
+
+Make the following changes:
+
+- Disable IPv6:
+
+```apache
+UseIPv6 off
+```
+
+- Set a custom server name:
+
+```apache
+ServerName "CNLAB.com"
+```
+
+- Uncomment to restrict FTP users to their home directories:
+
+```apache
+DefaultRoot ~
+```
+
+- Enter the absolute path for the folder to be set for serving:
+
+```apache
+RequireValidShell on
+```
+
+- Uncomment authentication module line:
+
+```apache
+AuthOrder mod_auth_unix.c
+```
+
+**Save and exit:**  
+Press `Ctrl + O` → `Enter` → `Ctrl + X`
+
+---
+
+#### 3. Add `/bin/false` to Valid Shells
+
+This step ensures that users with `/bin/false` as their shell can still authenticate for FTP.
+
 ```bash
 sudo nano /etc/shells
 ```
-    
-Add the following line at the end of the file:    
+
+**Add this line at the end:**
+
 ```
 /bin/false
 ```
-    
-4. **Create FTP User**
-    
+
+---
+
+#### 4. Create FTP User
+
+Create a user with restricted shell access and assign a home directory:
+
 ```bash
 sudo useradd -d /var/www/ -s /bin/false ftpuser
 sudo passwd ftpuser
-```    
-When prompted, enter and confirm a password (e.g., `myftp123`).
-    
-5. **Create FTP Directory and Set Permissions**
-    
+```
+
+> When prompted, enter and confirm a password (e.g., `myftp123`).
+
+---
+
+#### 5. Create FTP Directory and Set Ownership
+
+Ensure the user's home directory exists and has correct permissions:
+
 ```bash
 sudo mkdir -p /var/www/
 sudo chown ftpuser:ftpuser /var/www/
+sudo chmod 755 /var/www/
 ```
-    
-6. **Restart ProFTPD Service**
-    
+
+> `chmod 755` allows read & execute access to others so FTP commands work.
+
+---
+
+#### 6. Allow FTP Through the Firewall (If UFW Is Enabled)
+
+If the firewall is active, allow FTP traffic:
+
+```bash
+sudo ufw allow 21/tcp
+sudo ufw reload
+```
+
+---
+
+#### 7. Restart ProFTPD Service
+
+Apply the configuration changes:
+
 ```bash
 sudo systemctl restart proftpd
 ```
-    
-7. **Access FTP Server from Client (PC2 or PC3)**
-    
+
+---
+
+#### 8. Test FTP Connection from Client PC (PC2 or PC3)
+
+On another PC in the same network:
+
 ```bash
 ftp 172.20.10.X
 ```
-Replace `X` with the correct IP address of PC1.  Enter the FTP username and password when prompted.
-    
-8. **Test File Transfer Commands**  
+
+> Replace `X` with PC1’s actual IP address.  
+> Log in using:
+> 
+> - **Username:** `ftpuser`
+>     
+> - **Password:** `myftp123` (or your chosen password)
+>     
+
+---
+
+### 9. Test File Upload/Download
+
 Inside the FTP session:
-    
+
+```bash
+ftp> put Hello.txt      # Upload a file
+ftp> get Hello.txt      # Download a file
+ftp> ls                 # List directory contents
+ftp> quit               # Exit FTP session
 ```
-ftp> put Hello.txt      # To upload
-ftp> get Hello.txt      # To download
-ftp> ls                 # To list files
-ftp> quit               # To exit
-```
-    
-9. **Fixing "Permission Denied" Error (if encountered)**  
-    
-If you receive the error:
+
+---
+
+### 10. Fixing Common Errors (Permission Denied)
+
+If you see:
+
 ```
 550 Hello.txt: Permission denied
 ```
-    
-Run the following commands:
+
+Run:
+
 ```bash
 sudo chown ftpuser:ftpuser /var/www/
 sudo chmod 755 /var/www/
 sudo systemctl restart proftpd
 ```
 
+---
 
-The FTP server should allow a successful login using the `ftpuser` account. File uploads and downloads should function correctly without any permission issues.
+### Final Verification
+
+- FTP login should succeed using `ftpuser`.
+    
+- Uploads (`put`) and downloads (`get`) should complete without errors.
+    
+- Directory listing (`ls`) should show files in `/var/www/`.
+    

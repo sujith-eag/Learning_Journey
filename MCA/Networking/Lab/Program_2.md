@@ -33,119 +33,144 @@ A **router** is a networking device that connects multiple computer networks and
 |Global Config Mode|`Router(config)#`|Configure global router settings|
 |Interface Config Mode|`Router(config-if)#`|Configure individual interfaces|
 
-## Four Modes of Cisco Router Configuration
+## For Modes of Cisco Router Configuration
+
+Cisco routers operate through a hierarchical command-line interface with different modes, each serving specific purposes in configuration and monitoring. The four primary configuration modes are:
+
 
 ### 1. User EXEC Mode
 
 - **Prompt:** `Router>`
     
-- Initial mode after accessing the router.
+- **Access Level:** Basic user access; read-only.
     
-- Allows **basic monitoring**.
+- **Entered by:** Logging into the router.
     
-- **Examples:**
+- **Purpose:** Basic monitoring and diagnostics. No configuration allowed.
     
-    - `show version`
-        
-    - `ping 8.8.8.8`
-        
+- **Exit:** Type `logout` or `exit`.
+    
+
+#### Common Commands:
+
+- `ping 8.8.8.8` – Test connectivity to a remote host.
+    
+- `traceroute 8.8.8.8` – Show the path packets take to Google DNS.
+    
+- `show version` – Display IOS version and system information.
+    
+- `show ip interface brief` – Summarize interfaces and statuses.
+    
+- `?` – View available commands.
+    
+
+---
 
 ### 2. Privileged EXEC Mode
 
 - **Prompt:** `Router#`
     
-- Entered using the `enable` command.
+- **Access Level:** Full read access and limited write access.
     
-- Allows access to all user-level and configuration commands.
+- **Entered by:** Typing `enable` from User EXEC Mode.
     
-- **Examples:**
+- **Purpose:** View detailed configuration, debug, and access all operational commands.
     
-    - `show running-config`
-        
-    - `reload`
-        
+- **Exit:** Use `disable` to return to User EXEC Mode.
+    
+
+#### Common Commands:
+
+- `show running-config` – Display current configuration.
+    
+- `show startup-config` – View saved configuration in NVRAM.
+    
+- `copy running-config startup-config` – Save current configuration.
+    
+- `reload` – Reboot the router.
+    
+- `debug [option]` – Enable troubleshooting/debugging.
+    
+- `configure terminal` – Enter Global Configuration Mode.
+    
+- `Ctrl + Z` – Return to Privileged EXEC Mode from any configuration mode.
+    
+
+---
 
 ### 3. Global Configuration Mode
 
 - **Prompt:** `Router(config)#`
     
-- Entered using `configure terminal` in Privileged EXEC Mode.
+- **Access Level:** Full write access to system-wide settings.
     
-- Used to configure **global router settings**.
+- **Entered by:** Typing `configure terminal` from Privileged EXEC Mode.
     
-- **Example:** `hostname CoreRouter`
+- **Purpose:** Modify global device configurations.
     
+- **Exit:** Use `exit` to return to Privileged EXEC Mode or `Ctrl + Z`.
+    
+#### Common Commands:
+
+- `hostname CoreRouter` – Change the device name.
+    
+- `enable secret [password]` – Set encrypted Privileged EXEC password.
+    
+- `line console 0` / `line vty 0 4` – Configure console/remote access.
+    
+- `interface FastEthernet0/0` – Enter Interface Configuration Mode.
+    
+- `ip route [dest] [mask] [next-hop]` – Add static routes.
+	
+- `ip route 10.0.0.0 255.0.0.0 192.168.1.2` — Add static route to 10.0.0.0 via 192.168.1.2
+	
+- `banner motd #Message#` – Set login banner message.
+    
+
+---
 
 ### 4. Interface Configuration Mode
 
 - **Prompt:** `Router(config-if)#`
     
-- Entered using `interface FastEthernet0/0` in Global Config Mode.
+- **Access Level:** Modify settings specific to an interface.
     
-- Used for **interface-specific configurations** (IP, speed, description).
+- **Entered by:** From Global Config Mode: `interface [type] [number]`  
+    _(e.g., `interface FastEthernet0/0`)_
     
-- **Examples:**
+- **Purpose:** Configure individual router interfaces (IP, speed, duplex).
     
-    - `ip address 192.168.1.1 255.255.255.0`
-        
-    - `no shutdown`
-        
-## Basic Commands for Cisco Router Configuration
-
-### 1. User EXEC Mode Commands (`Router>`)
-
-- `ping 192.168.1.1` — Test connectivity.
-    
-- `traceroute 8.8.8.8` — Trace the route to Google DNS.
-    
-- `show version` — Displays OS version and hardware info.
-    
-- `show ip interface brief` — Summary of interface statuses.
+- **Exit:** Use `exit` to return to Global Configuration Mode.
     
 
-### 2. Privileged EXEC Mode Commands (`Router#`)
+#### Common Commands:
 
-- `enable` — Switch to Privileged EXEC Mode.
+- `ip address 192.168.1.1 255.255.255.0` – Assign IP address.
     
-- `show running-config` — Show current configuration.
+- `no shutdown` – Enable the interface (bring it up).
     
-- `show startup-config` — View saved configuration in NVRAM.
+- `shutdown` – Disable the interface.
     
-- `copy running-config startup-config` — Save current settings.
+- `description Link-to-Switch1` – Label interface.
     
-- `reload` — Restart the router.
+- `duplex full` – Set full-duplex communication.
     
-
-### 3. Global Configuration Mode Commands (`Router(config)#`)
-
-- `hostname CoreRouter` — Change router hostname.
-    
-- `interface FastEthernet0/0` — Enter interface config mode.
-    
-- `ip route 10.0.0.0 255.0.0.0 192.168.1.2` — Add static route to 10.0.0.0 via 192.168.1.2
-	
-
-### 4. Interface Configuration Mode Commands (`Router(config-if)#`)
-
-- `ip address 192.168.1.1 255.255.255.0` — Assign IP.
-    
-- `no shutdown` — Enable interface.
-    
-- `description Link-to-Switch1` — Add interface description (label for connection).
-    
-- `duplex full` / `speed 100` — Set duplex and speed.
+- `speed 100` – Set speed to 100 Mbps.
     
 
-### 5. Other Useful Shortcuts
+---
 
-- `TAB` — Auto-complete command.
-    
-- `Ctrl + Z` — Return to Privileged EXEC Mode.
-    
-- `Ctrl + C` — Cancel command.
-    
-- `?` — List available commands (show ? lists all "show" subcommands).
-    
+### Useful Keyboard Shortcuts and CLI Tips
+
+|Shortcut|Function|
+|---|---|
+|`TAB`|Auto-complete the current command.|
+|`?`|Display available commands or options.|
+|`Ctrl + C`|Cancel current command or operation.|
+|`Ctrl + Z`|Exit to Privileged EXEC Mode.|
+|`UP/DOWN arrows`|Scroll through command history.|
+|`SHOW ?`|List all "show" command options.|
+
 ## Static Routing Configuration Example
 
 Configure static routing between **R1** and **R2** using FastEthernet interfaces.

@@ -36,6 +36,7 @@ def insertion_sort(list):
 ```
 
 * Reversing > to < in while loops reverses sort order to decreasing
+
 ### Characteristics:
 
 **Time Complexity**:
