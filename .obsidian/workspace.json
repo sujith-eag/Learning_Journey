@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCA/Cyber_Security/lab/1_nmap.md",
+                "file": "MCA/Cyber_Security/Lab_Manual/0_ubuntu.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,37 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1_nmap"
+              "title": "0_ubuntu"
+            }
+          }
+        ]
+      },
+      {
+        "id": "900cdb644b1e8e2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce6ed27294476ce2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MCA/Cyber_Security/Lab_Manual/4_IPTable.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "4_IPTable"
             }
           }
         ]
@@ -175,12 +205,17 @@
   },
   "active": "30af95bf13981c5f",
   "lastOpenFiles": [
-    "MCA/Networking/Lab/Virtual_Box_Setup.md",
-    "MCA/Cyber_Security/lab/Lab_1_Case_Study.md",
-    "MCA/Cyber_Security/lab/KeyLogger.md",
-    "MCA/Cyber_Security/lab/3_ip.md",
-    "MCA/Cyber_Security/lab/2_nmap_help.md",
+    "MCA/Cyber_Security/Lab_Manual/6_KeyLogger.md",
+    "MCA/Cyber_Security/Lab_Manual/5_WireShark.md",
+    "MCA/Cyber_Security/Lab_Manual/4_IPTable.md",
+    "MCA/Cyber_Security/Lab_Manual/3_SSH.md",
     "MCA/Cyber_Security/lab/1_nmap.md",
+    "MCA/Cyber_Security/lab/Case_Study.md",
+    "MCA/Cyber_Security/Lab_Manual/nmap_help.md",
+    "MCA/Cyber_Security/Lab_Manual/0_ubuntu.md",
+    "MCA/Cyber_Security/Lab_Manual/2_nmap.md",
+    "MCA/Cyber_Security/Lab_Manual",
+    "MCA/Networking/Lab/Virtual_Box_Setup.md",
     "MCA/Cyber_Security/lab/day1.md",
     "MCA/Cyber_Security/lab",
     "MCA/Networking/Lab/Program_3_FTP.md",
@@ -198,10 +233,6 @@
     "Algorithms & Problems/Algorithms/Sorting Algorithms/3 Merge Sort.md",
     "Algorithms & Problems/Algorithms/Sorting Algorithms/2 Insertion Sort.md",
     "Algorithms & Problems/Algorithms/Sorting Algorithms/4 Quick Sort.md",
-    "Algorithms & Problems/Algorithms/Sorting Algorithms/1 Selection Sort.md",
-    "Algorithms & Problems/Algorithms/Search Algorithms/BFS.md",
-    "Algorithms & Problems/Algorithms/Search Algorithms/2_Binary_Search.md",
-    "Algorithms & Problems/Algorithms/Search Algorithms/1_Linear_Search.md",
     "MCA/Networking/Unit_2",
     "MCA/Networking/Unit_1",
     "MCA/Sem_1",
@@ -211,7 +242,6 @@
     "MCA/Java/Assignment",
     "MCA/Cyber_Security",
     "Untitled.canvas",
-    "MCA/Java/Lab",
     "SQL/images/4_viewing/20241216205226.jpg",
     "SQL/images/4_viewing/20241216205017.jpg",
     "SQL/images/4_viewing/20241216205008.jpg",
