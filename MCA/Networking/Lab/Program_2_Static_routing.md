@@ -190,40 +190,51 @@ Interconnecting Network (between R1 and R2): 20.0.0.0/8
 
 ### Configuration Steps
 
+#### Static Route Syntax
+
+```bash
+ip route <destination-network> <subnet-mask> <next-hop-IP>
+```
+
 #### R1 Configuration
 
 ```bash
+R1# configure terminal
 R1(config)# interface fastethernet0/0
 R1(config-if)# ip address 10.0.0.1 255.0.0.0
 R1(config-if)# no shutdown
+R1(config-if)# exit
 
 R1(config)# interface fastethernet0/1
 R1(config-if)# ip address 20.0.0.1 255.0.0.0
 R1(config-if)# no shutdown
+R1(config-if)# no shutdown
+R1(config-if)# exit
 
-! Add static route to R2's LAN
 R1(config)# ip route 30.0.0.0 255.0.0.0 20.0.0.2
+
+R1(config)# show ip route
+R1# show ip interface brief
 ```
 
 #### R2 Configuration
 
 ```bash
+R2# configure terminal
 R2(config)# interface fastethernet0/0
 R2(config-if)# ip address 20.0.0.2 255.0.0.0
 R2(config-if)# no shutdown
+R2(config-if)# exit
 
 R2(config)# interface fastethernet0/1
 R2(config-if)# ip address 30.0.0.1 255.0.0.0
 R2(config-if)# no shutdown
+R2(config-if)# exit
 
-! Add static route to R1's LAN
 R2(config)# ip route 10.0.0.0 255.0.0.0 20.0.0.1
-```
 
-### Static Route Syntax
-
-```bash
-ip route <destination-network> <subnet-mask> <next-hop-IP>
+R2(config)# show ip route
+R2# show ip interface brief
 ```
 
 ## Expected Outcome

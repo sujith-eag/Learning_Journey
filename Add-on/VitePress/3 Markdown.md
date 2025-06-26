@@ -307,3 +307,45 @@ export default {
 
 ___
 
+### navbar
+
+- Type: `boolean`
+- Default: `true`
+
+Whether to display [navbar](https://vitepress.dev/reference/default-theme-nav).
+
+```
+---
+navbar: false
+---
+```
+
+### sidebar
+
+- Type: `boolean`
+- Default: `true`
+
+Whether to display [sidebar](https://vitepress.dev/reference/default-theme-sidebar).
+
+```
+---
+sidebar: false
+---
+```
+
+### aside
+
+- Type: `boolean | 'left'`
+- Default: `true`
+
+Defines the location of the aside component in the `doc` layout.
+
+Setting this value to `false` prevents rendering of aside container.  
+Setting this value to `true` renders the aside to the right.  
+Setting this value to `'left'` renders the aside to the left.
+
+```
+---
+aside: false
+---
+```
