@@ -25,20 +25,24 @@ ___
 There are two distinct types of multitasking: process-based and thread-based.
 
 
+A process is, in essence, a program that is executing. 
+In process-based multitasking, a program is the smallest unit of code that can be dispatched by the scheduler.
+
+
 Thus, process-based multitasking is the feature that allows your computer to run two or more
-programs concurrently.  A process is, in essence, a program that is executing. 
-For example, it is process-based multitasking that allows you to run the Java compiler at the same time you are using a text editor or browsing the Internet. In process-based multitasking, a program is the smallest unit of code that can be dispatched by the scheduler.
+programs concurrently.  
+For example, it is process-based multitasking that allows you to run the Java compiler at the same time you are using a text editor or browsing the Internet. 
 
 
-In a thread-based multitasking environment, the thread is the smallest unit of dispatchable
-code. This means that a single program can perform two or more tasks at once. For instance,
-a text editor can be formatting text at the same time that it is printing, as long as these two
+
+In a thread-based multitasking environment, the thread is the smallest unit of dispatchable code. This means that a single program can perform two or more tasks at once. 
+
+For instance, a text editor can be formatting text at the same time that it is printing, as long as these two
 actions are being performed by two separate threads.
 
-process-based multitasking is not under the control of Java. Multithreaded multitasking is.
+> Process-based multitasking is not under the control of Java. Multithreaded multitasking is.
 
-By using multithreading, your program can execute another task during idle time. For example, while one part of your program is sending a file over the Internet, another part can be reading keyboard  input, and still another can be buffering the next block of data to send.
-
+By using multithreading, your program can execute another task during idle time. 
 
 In a single-core system, two or more threads do not actually run at the same time, but idle CPU time is utilized by sharing CPU time.
 
@@ -47,13 +51,21 @@ In multiprocessor/multicore systems, it is possible for two or more threads to a
 
 ___
 
-A thread can be in one of several states. It can be running. It can be ready to run as soon as
-it gets CPU time. A running thread can be suspended, which is a temporary halt to its execution.
-It can later be resumed. A thread can be blocked when waiting for a resource. A thread can be
-terminated, in which case its execution ends and cannot be resumed.
-Along with thread-based multitasking comes the need for a special type of feature called
-synchronization, which allows the execution of threads to be coordinated in certain well-defined
-ways. Java has a complete subsystem devoted to synchronization,
+A thread can be in one of several states. It can be running.
+
+It can be ready to run as soon as it gets CPU time. 
+
+A running thread can be suspended, which is a temporary halt to its execution.
+
+It can later be resumed. 
+
+A thread can be blocked when waiting for a resource. 
+
+A thread can be terminated, in which case its execution ends and cannot be resumed.
+
+Along with thread-based multitasking comes the need for a special type of feature called synchronization, which allows the execution of threads to be coordinated in certain well-defined ways. 
+
+Java has a complete subsystem devoted to synchronization.
 
 ___
 
@@ -64,7 +76,6 @@ Java’s multithreading system is built upon the Thread class and its companion 
 Thread encapsulates a thread of execution. To create a new thread, your program will either extend Thread or implement the Runnable interface.
 
 The Thread class defines several methods that help manage threads.
-
 
 Common Thread Methods in Java
 
@@ -78,10 +89,7 @@ Common Thread Methods in Java
 |`static void sleep(long milliseconds)`|Suspends a thread for a specified period of milliseconds.|
 |`void start()`|Starts a thread by calling its `run()` method.|
 
-All processes have at least one thread of execution, which is usually called the main thread,
-because it is the one that is executed when your program begins. Thus, the main thread is the
-thread that all of the preceding example programs in the book have been using. From the main
-thread, you can create other threads.
+All processes have at least one thread of execution, which is usually called the main thread. From the main thread, you can create other threads.
 
 ___
 

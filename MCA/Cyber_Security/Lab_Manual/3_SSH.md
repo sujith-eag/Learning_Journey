@@ -9,9 +9,6 @@ SSH (Secure Shell) is a cryptographic network protocol for secure remote login a
     
 - **SSH Daemon**: `sshd` — the service that listens for incoming SSH connections.
     
-
----
-
 ## 2. SSH Service Management
 
 ### Check SSH Service Status
@@ -34,8 +31,6 @@ Alternate (older systems):
 sudo service ssh stop
 sudo service ssh start
 ```
-
----
 
 ## 3. Close or Block SSH Port
 
@@ -64,7 +59,6 @@ sudo ufw allow 22
 sudo iptables -D INPUT -p tcp --dport 22 -j DROP
 ```
 
----
 
 ## 4. Connecting to an SSH Server
 
@@ -96,8 +90,6 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '127.1.27.97' to the list of known hosts.
 ```
 
----
-
 ## 5. SSH Server Configuration File
 
 Located at:
@@ -106,63 +98,58 @@ Located at:
 /etc/ssh/sshd_config
 ```
 
-### Common Configuration Options:
+| Option                      | Description                                        |
+| --------------------------- | -------------------------------------------------- |
+| `Port 22`                   | Sets the port SSH daemon listens on                |
+| `PermitRootLogin no`        | Prevents root login (recommended)                  |
+| `PasswordAuthentication no` | Disables password-based login; use key-based login |
+| `AllowUsers user1 user2`    | Restrict login access to specific users            |
+| `PermitEmptyPasswords no`   | Disallow empty passwords                           |
+| `MaxAuthTries 3`            | Limit login attempts                               |
+| `LoginGraceTime 30`         | Time allowed for login attempt before disconnect   |
 
-|Option|Description|
-|---|---|
-|`Port 22`|Sets the port SSH daemon listens on|
-|`PermitRootLogin no`|Prevents root login (recommended)|
-|`PasswordAuthentication no`|Disables password-based login; use key-based login|
-|`AllowUsers user1 user2`|Restrict login access to specific users|
-|`PermitEmptyPasswords no`|Disallow empty passwords|
-|`MaxAuthTries 3`|Limit login attempts|
-|`LoginGraceTime 30`|Time allowed for login attempt before disconnect|
-
-### Apply Changes:
+To Apply Changes:
 
 ```bash
 sudo systemctl restart ssh
 ```
 
----
 
 ## 6. SSH Security Best Practices
 
 - **Change default port (22)** to reduce automated scans:
-    
-    ```bash
-    Port 2222
-    ```
-    
-- **Disable password authentication** and use SSH keys:
-    
-    ```bash
-    PasswordAuthentication no
-    ```
-    
-- **Use fail2ban** to block brute-force attacks:
-    
-    ```bash
-    sudo apt install fail2ban
-    ```
-    
-- **Use key-based authentication**:
-    
-    ```bash
-    ssh-keygen
-    ssh-copy-id user@host
-    ```
-    
-- **Restrict user access** using `AllowUsers` or `AllowGroups`.
-    
-- **Log SSH activity** for monitoring:
-    
-    ```
-    /var/log/auth.log
-    ```
-    
 
----
+```bash
+Port 2222
+```
+
+- **Disable password authentication** and use SSH keys:
+
+```bash
+PasswordAuthentication no
+```
+
+- **Use fail2ban** to block brute-force attacks:
+
+```bash
+sudo apt install fail2ban
+```
+
+- **Use key-based authentication**:
+
+```bash
+ssh-keygen
+ssh-copy-id user@host
+```
+
+- **Restrict user access** using `AllowUsers` or `AllowGroups`.
+
+- **Log SSH activity** for monitoring:
+
+```
+/var/log/auth.log
+```
+
 
 ## 7. SSH Key Authentication Setup
 
@@ -183,8 +170,6 @@ Once setup, login without a password:
 ```bash
 ssh user@remote_host
 ```
-
----
 
 ## 8. Common SSH Client Options
 

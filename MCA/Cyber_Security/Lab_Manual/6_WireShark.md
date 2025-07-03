@@ -20,6 +20,7 @@ Wireshark is a free, open-source network protocol analyzer. It is one of the mos
 
 ```bash
 sudo apt update
+
 sudo apt install wireshark
 ```
 
@@ -35,39 +36,29 @@ newgrp wireshark
 
 Log out and log in again to apply the changes.
 
-## 3. Launching Wireshark
 
-Via terminal:
+## 3. Interface Selection
 
-```bash
-wireshark
-```
+When Wireshark is opened, it shows a list of all available network interfaces.
 
-Or using the graphical interface:  
-Applications menu → Search → Wireshark
-
-## 4. Interface Selection
-
-When you open Wireshark, it shows a list of all available network interfaces.
-
-- Select the interface connected to the network you want to analyze (e.g., `eth0`, `wlan0`, `lo`).
+- Select the interface connected to the network to be analyzed (e.g., `eth0`, `wlan0`, `lo`).
     
 - Click the shark fin (Start Capture) to begin capturing live packets on that interface.
     
 
-## 5. Key Wireshark Features for Security Analysis
+## 4. Key Wireshark Features for Security Analysis
 
-|Feature|Purpose|
-|---|---|
-|Live Capture|Monitor network packets in real-time. Useful for detecting ongoing attacks or anomalies.|
-|Filtering|Helps isolate relevant traffic quickly. Useful for narrowing down suspicious connections or protocols.|
-|Protocol Decoding|Analyzes packet details for protocols like HTTP, TCP, DNS, etc.|
-|Follow TCP Stream|Reconstructs entire conversations (like login sessions or downloads) for a specific TCP connection.|
-|Export Objects|Extract files transferred over HTTP, FTP, or SMB. Helps in malware analysis.|
-|Packet Coloring|Visually highlights different types of packets, making patterns easier to spot.|
-|Marking and Commenting|Allows analysts to annotate packets during investigation.|
+| Feature                | Purpose                                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------ |
+| Live Capture           | Monitor network packets in real-time. Useful for detecting ongoing attacks or anomalies.               |
+| Filtering              | Helps isolate relevant traffic quickly. Useful for narrowing down suspicious connections or protocols. |
+| Protocol Decoding      | Analyzes packet details for protocols like HTTP, TCP, DNS, etc.                                        |
+| Follow TCP Stream      | Reconstructs entire conversations (like login sessions or downloads) for a specific TCP connection.    |
+| Export Objects         | Extract files transferred over HTTP, FTP, or SMB. Helps in malware analysis.                           |
+| Packet Coloring        | Visually highlights different types of packets, making patterns easier to spot.                        |
+| Marking and Commenting | Allows analysts to annotate packets during investigation.                                              |
 
-## 6. Capture Filters vs Display Filters
+## 5. Capture Filters vs Display Filters
 
 ### Capture Filters
 
@@ -76,28 +67,36 @@ Capture filters are applied before data is collected. They limit which packets W
 Examples (BPF syntax):
 
 ```bash
-port 80                   # Capture only HTTP traffic
-host 192.168.1.10         # Traffic to or from IP 192.168.1.10
-tcp                       # Only TCP traffic
-udp                       # Only UDP traffic
-net 192.168.1.0/24        # All traffic from subnet
+port 80               # Capture only HTTP traffic
+
+host 192.168.1.10     # Traffic to or from IP 192.168.1.10
+
+tcp                   # Only TCP traffic
+
+udp                   # Only UDP traffic
+
+net 192.168.1.0/24    # All traffic from subnet
 ```
 
 ### Display Filters
 
 Display filters are used after capture to filter what you see in the packet list.
 
-Examples:
-
 ```bash
-ip.addr == 192.168.1.10               # Show traffic involving this IP
-tcp.port == 22                        # Show SSH traffic
-http.request                          # Show HTTP GET/POST requests
-dns.qry.name == "example.com"         # Show DNS queries to a specific domain
-tcp.flags.syn == 1 and tcp.flags.ack == 0  # Show SYN scans (used by Nmap)
+ip.addr == 192.168.1.10    # Show traffic involving this IP
+
+tcp.port == 22             # Show SSH traffic
+
+http.request               # Show HTTP GET/POST requests
+
+dns.qry.name == "example.com"   
+# Show DNS queries to a specific domain
+
+tcp.flags.syn == 1 and tcp.flags.ack == 0  
+# Show SYN scans (used by Nmap)
 ```
 
-## 7. Use Cases in Cybersecurity
+## 6. Use Cases in Cybersecurity
 
 ### Detecting Port Scans
 
@@ -111,7 +110,6 @@ tcp.flags.syn == 1 and tcp.flags.ack == 0
     
 - Check for a high number of such packets from a single source IP to multiple destination ports.
     
-
 ### DNS Tunneling Detection
 
 Display filter:
@@ -124,7 +122,6 @@ dns and frame.len > 300
     
 - Often used by malware for bypassing firewalls.
     
-
 ### Detecting Malicious File Downloads
 
 Display filter:
@@ -137,7 +134,6 @@ http contains ".exe"
     
 - Export these files: File → Export Objects → HTTP
     
-
 ### Credential Theft (Cleartext Protocols)
 
 Protocols like Telnet, FTP, and HTTP may transmit credentials unencrypted.
@@ -146,7 +142,6 @@ Protocols like Telnet, FTP, and HTTP may transmit credentials unencrypted.
     
 - Look for usernames and passwords in the stream, especially in POST requests or FTP commands.
     
-
 ### Man-in-the-Middle (MITM) Detection
 
 ARP spoofing is a common MITM method.
@@ -159,7 +154,6 @@ arp.duplicate-address-detected == 1
 
 - Detects attempts to impersonate another device on the LAN.
     
-
 ### Detecting Command and Control Traffic
 
 Look for:
@@ -170,8 +164,7 @@ Look for:
     
 - Obscure user-agents or connections to rare domains.
     
-
-## 8. Exporting and Documentation
+## 7. Exporting and Documentation
 
 - Save the full capture: File → Save As (`.pcapng` format).
     
@@ -181,8 +174,7 @@ Look for:
     
 - Add comments: Press `Ctrl+Shift+M` after marking
     
-
-## 9. Tips for Effective Analysis
+## 8. Tips for Effective Analysis
 
 - Use **display filters** early to reduce noise and focus on suspicious traffic.
     
@@ -192,8 +184,7 @@ Look for:
     
 - Use **profiles** to save your preferred layouts, filters, and settings.
     
-
-## 10. Command-Line Equivalent: TShark
+## 9. Command-Line Equivalent: TShark
 
 `tshark` is the terminal-based version of Wireshark, suitable for automation and scripting.
 
@@ -215,37 +206,16 @@ To apply a display filter:
 tshark -r capture.pcap -Y "ip.addr == 192.168.1.10"
 ```
 
-## 11. Sample Filters for Cybersecurity Tasks
+## 10. Sample Filters
 
-|Task|Display Filter|
-|---|---|
-|View HTTP traffic|`http`|
-|Detect SYN scan|`tcp.flags.syn == 1 and tcp.flags.ack == 0`|
-|Extract FTP/Telnet credentials|Use "Follow TCP Stream" on `ftp` or `telnet`|
-|Monitor DNS queries to suspicious domains|`dns.qry.name == "suspicious.com"`|
-|View SSL/TLS packets|`ssl` or `tls`|
-|Show ping (ICMP) traffic|`icmp`|
-|Find large DNS packets|`dns and frame.len > 300`|
-
-## 12. Legal and Ethical Considerations
-
-Wireshark should **only** be used on:
-
-- Networks you **own**.
-    
-- Networks where you have **explicit permission** to monitor traffic.
-    
-- **Test environments** or approved cybersecurity labs.
-    
-
-Unauthorized packet capturing can be illegal under laws like:
-
-- Computer Fraud and Abuse Act (USA)
-    
-- IT Act (India)
-    
-- GDPR (EU) if personal data is captured
-    
-
-Always follow your organization's cybersecurity policy and get proper authorization before conducting packet analysis.
+| Task                                      | Display Filter                               |
+| ----------------------------------------- | -------------------------------------------- |
+| View HTTP traffic                         | `http`                                       |
+| Detect SYN scan                           | `tcp.flags.syn == 1 and tcp.flags.ack == 0`  |
+| Extract FTP/Telnet credentials            | Use "Follow TCP Stream" on `ftp` or `telnet` |
+| Monitor DNS queries to suspicious domains | `dns.qry.name == "suspicious.com"`           |
+| View SSL/TLS packets                      | `ssl` or `tls`                               |
+| Show ping (ICMP) traffic                  | `icmp`                                       |
+| Find large DNS packets                    | `dns and frame.len > 300`                    |
+|                                           |                                              |
 

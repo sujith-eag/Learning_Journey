@@ -31,6 +31,7 @@ Install `iptables` and check its version:
 
 ```bash
 sudo apt install iptables
+
 iptables --version
 ```
 
@@ -277,7 +278,6 @@ sudo ufw allow 22          # Allow SSH
 sudo ufw deny from 192.168.1.100   # Deny specific IP
 sudo ufw enable
 ```
-
 
 
 ## Best Practices

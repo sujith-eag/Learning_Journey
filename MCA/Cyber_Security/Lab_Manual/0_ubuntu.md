@@ -1,228 +1,148 @@
 
 # Linux Networking & Cybersecurity Essentials
 
-## 1. System Identity & Hostname
+## System Identity & Hostname
 
-### Viewing and Changing Hostname
+Viewing and Changing Hostname
 
 ```bash
 hostname
+
 sudo hostnamectl set-hostname new-hostname
 ```
 
 - `hostname`: Displays the system's current hostname.
     
 - `hostnamectl`: Modern tool for persistent change (affects `/etc/hostname`).
-    
 
----
-
-## 2. Network Interfaces Overview
-
-### Legacy: `ifconfig`
-
-```bash
-ifconfig -a
-```
-
-- Lists all interfaces (even inactive).
-    
-- Shows IP addresses, MAC address (HWaddr), RX/TX stats.
-    
-- **Note**: Deprecated in many distros.
-    
-
-### Recommended: `ip` command
+## Network Interfaces (`ip` command)
 
 ```bash
 ip addr show
+
 ip link show
 ```
 
-- `ip addr`: Shows IP addresses + interface status.
+Commands `ip link show` and `ip addr show` are used to inspect network interfaces on a Linux system.
+
+- `ip link show` displays low-level details about each network interface, such as operational status and hardware (MAC) addresses.
     
-- `ip link`: Shows MAC address, interface flags (`UP`, `BROADCAST`, etc.).
-    
-- To bring interface up/down:
-    
+- `ip addr show` includes all of that and adds IP address assignments (IPv4 and IPv6), making it more comprehensive.
+
+> Use of `ifconfig` command is currently not recommended
+
+### Interfaces Overview
+
+| Interface   | Type           | Likely Purpose                             |
+| ----------- | -------------- | ------------------------------------------ |
+| `lo`        | Loopback       | Localhost interface (`127.0.0.1`)          |
+| `enp0s31f6` | Ethernet NIC   | Wired network card                         |
+| `wlp2s0`    | Wireless NIC   | Wi-Fi interface                            |
+| `virbr0`    | Virtual Bridge | Virtual bridge (e.g., created by KVM/QEMU) |
+
+### Field Descriptions (`ip link show`)
 
 ```bash
-sudo ip link set eth0 up
-sudo ip link set eth0 down
+2: enp0s31f6: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN mode DEFAULT group default qlen 1000
+    link/ether e4:b9:7a:6c:63:f7 brd ff:ff:ff:ff:ff:ff
 ```
 
----
+- `2`: Interface index.
+    
+- `enp0s31f6`: Interface name.
+    
+- Flags in `<>`:
+    
+    - `NO-CARRIER`: No physical connection (e.g., cable unplugged).
+        
+    - `BROADCAST`, `MULTICAST`: Supports broadcast/multicast traffic.
+        
+    - `UP`: Interface is administratively up (enabled).
+        
+- `mtu 1500`: Maximum Transmission Unit in bytes.
+    
+- `qdisc fq_codel`: Queuing discipline (used for traffic shaping).
+    
+- `state DOWN`: Operational status (DOWN = inactive).
+    
+- `link/ether e4:b9:7a:6c:63:f7`: MAC address.
+    
+- `brd ff:ff:ff:ff:ff:ff`: Broadcast address.
+    
 
-## 3. Checking MAC Address
+### IP Address Information (`ip addr show`)
+
+This command provides all the interface-level details shown by `ip link show`, and additionally displays assigned IP addresses, both IPv4 and IPv6, along with information about their validity periods.
+
+#### lo (Loopback)
 
 ```bash
-ifconfig eth0
-ip link show eth0
+inet 127.0.0.1/8 scope host lo
+inet6 ::1/128 scope host noprefixroute 
 ```
 
-- MAC (hardware) address identifies the NIC.
+- IPv4: `127.0.0.1` — the standard local loopback address.
     
-- Important for ARP and local network identification/classification.
+- IPv6: `::1` — loopback address for IPv6.
+    
+- `valid_lft forever`: These addresses never expire.
+    
+- Used for internal system communication, always active.
     
 
----
-
-## 4. IP Address Management
-
-### View IP, Netmask, Broadcast
+#### enp0s31f6 (Ethernet)
 
 ```bash
-ip addr show eth0
+link/ether e4:b9:7a:6c:63:f7
 ```
 
-Output includes:
-
-- `inet`: IPv4 address and subnet (e.g., `192.168.1.5/24`)
+- MAC: `e4:b9:7a:6c:63:f7`
     
-- `inet6`: IPv6 address
+- No IP address is assigned.
     
-- Network mask, dynamic/static configuration.
+- Interface is marked `DOWN` with `NO-CARRIER`, indicating the cable is likely unplugged or the connection is inactive.
     
 
-### Set a Static IP
+#### wlp2s0 (Wireless)
 
 ```bash
-sudo ip addr add 10.0.0.5/24 dev eth0
-sudo ip route add default via 10.0.0.1
+link/ether 98:3b:8f:05:90:60 brd ff:ff:ff:ff:ff:ff
+
+inet 192.168.168.87/24 brd 192.168.168.255 scope global dynamic noprefixroute wlp2s0
+
+inet6 2401:4900:640e:743e:3dbf:d692:999c:3c28/64 scope global temporary dynamic 
+
+inet6 2401:4900:640e:743e:980:4d6e:252b:d7d0/64 scope global dynamic mngtmpaddr noprefixroute 
+
+inet6 fe80::91c3:4fa6:62f2:b273/64 scope link noprefixroute 
 ```
 
-- Adds a static IP and custom route via gateway.
+- MAC: `98:3b:8f:05:90:60`
+    
+- IPv4: `192.168.168.87` — dynamically assigned (likely via DHCP).
+    
+- IPv6:
+    
+    - Global addresses: dynamically assigned and temporary (privacy extensions).
+        
+    - Link-local address: `fe80::...` used for local network operations.
+        
+- Interface is `UP` and `LOWER_UP`, indicating a working wireless connection.
     
 
----
-
-## 5. Routing Table Inspection
+#### virbr0 (Virtual Bridge)
 
 ```bash
-route -n
-ip route show
+inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
+link/ether 52:54:00:02:0d:74
 ```
 
-- `route -n`: Old-style routing table.
+- MAC: `52:54:00:02:0d:74`
     
-- `ip route`: Modern equivalent. Shows default gateways and network paths.
+- IPv4: `192.168.122.1` — typically assigned by virtualization tools (e.g., libvirt).
     
-
----
-
-## 6. DNS Configuration & Query
-
-### Check DNS Servers
-
-```bash
-cat /etc/resolv.conf
-```
-
-- Lists DNS servers used by system resolver.
+- No IPv6 address.
     
+- Interface is up but has `NO-CARRIER`, which is expected unless a VM is currently using the bridge.
 
-### Query with `dig` and `nslookup`
-
-```bash
-dig @8.8.8.8 example.com A
-nslookup example.com 1.1.1.1
-```
-
-- `dig`: Flexible DNS query utility.
-    
-- `nslookup`: Basic DNS lookup tool for interactive queries or scripts.
-    
-
----
-
-## 7. Network Services & Connection Inspection
-
-### `netstat` / `ss`
-
-```bash
-sudo ss -tulpn
-```
-
-- Lists TCP/UDP listening ports with associated programs.
-    
-- Replaces deprecated `netstat -tulpn` in modern distros.
-    
-
----
-
-## 8. Packet Monitoring and ARP
-
-### Display ARP Cache
-
-```bash
-arp -n
-ip neigh
-```
-
-### Live Packet Capture with tcpdump
-
-```bash
-sudo tcpdump -i eth0 -n
-```
-
-- Captures and displays traffic headers (packets).
-    
-
----
-
-## 9. Firewall: `iptables` / `ufw`
-
-### List Rules
-
-```bash
-sudo iptables -L -nv
-sudo ufw status verbose
-```
-
-### Basic Rule Creation
-
-```bash
-sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-sudo ufw allow 443/tcp
-```
-
-- Controls network traffic for better security.
-    
-
----
-
-## 10. Useful CLI Tools for Cybersecurity
-
-- `nmap`: Network mapping and vulnerability scanning
-    
-- `netcat` (`nc`): TCP/UDP connection tool
-    
-- `tcpdump`: Network traffic capture
-    
-- `wireshark`: Packet-level GUI analysis
-    
-- `traceroute`: Trace packet path (`traceroute 8.8.8.8`)
-    
-- `whois`, `dig`, `nslookup`: DNS and domain information gathering
-    
-
----
-
-## Quick Command Reference
-
-|Command|Purpose|
-|---|---|
-|`hostnamectl`|View or set system hostname|
-|`ip addr`, `ip link`|Show IPs and network interfaces|
-|`ifconfig -a`|Legacy interface tool|
-|`arp -n`, `ip neigh`|Show ARP cache|
-|`ip route`, `route -n`|Display routing table|
-|`cat /etc/resolv.conf`|List DNS resolvers|
-|`dig`, `nslookup`|DNS querying tools|
-|`ss -tulpn`, `netstat`|Check open/listening TCP/UDP ports|
-|`tcpdump`|Capture packets in real time|
-|`iptable` / `ufw`|Firewall management|
-
----
-
-Let me know if you'd like detailed usage examples, common security use-cases (e.g., ARP spoofing, DNS poisoning), or a formatted PDF/Markdown version.
+	

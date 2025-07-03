@@ -1,5 +1,5 @@
 [[Chrome]] basics
-[[Git]] basics
+[[Git1]] basics
 [[VScode]] basics
 [[Obsidian]]
 

@@ -1,6 +1,5 @@
 
-# Nmap Lab Notes – Network and Port Scanning
-
+# Nmap – Network and Port Scanning
 
 ## 1. Installation and Setup
 
@@ -88,8 +87,6 @@ nmap -p 21,25,80 172.1.27.10
 ```
 
 Scans ports 21 (FTP), 25 (SMTP), and 80 (HTTP).
-
----
 
 ## 3. Intermediate Scanning Techniques
 
@@ -241,35 +238,8 @@ nmap -oA fullscan 172.1.27.10
 # All formats with base name 'fullscan'
 ```
 
----
 
-## 5. Summary of Common Nmap Options
-
-|Option|Description|
-|---|---|
-|`-sS`|SYN (stealth) scan|
-|`-sT`|TCP connect scan|
-|`-sU`|UDP scan|
-|`-sV`|Service version detection|
-|`-O`|OS detection|
-|`-A`|Aggressive scan (includes OS, version, script, traceroute)|
-|`-p-`|Scan all 65535 ports|
-|`-p <range>`|Scan specific ports|
-|`-T0` to `-T5`|Timing templates|
-|`-iL`|Read targets from input file|
-|`-iR`|Scan random IPs|
-|`-sn`|Ping scan only|
-|`--top-ports <n>`|Scan top n most common ports|
-|`--traceroute`|Run traceroute|
-|`--open`|Show only open ports|
-|`--script`|Run NSE scripts|
-|`-oN`, `-oX`, `-oG`, `-oA`|Output in different formats|
-|`-n`|Disable DNS resolution|
-|`-v`, `-vv`|Verbose output|
-
----
-
-## 6. External Reconnaissance and DNS Tools
+## 5. External Reconnaissance and DNS Tools
 
 ### Whois Lookup
 
@@ -298,7 +268,6 @@ dig google.com MX
     
 - `MX`: Mail server information
     
-
 Reverse DNS:
 
 ```bash
@@ -320,7 +289,7 @@ curl ipinfo.io/8.8.8.8
 - Fetches geographic and provider information of an IP address.
     
 
-## 7. GUI-Based Tools
+## 6. GUI-Based Tools
 
 ### Angry IP Scanner
 

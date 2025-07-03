@@ -42,8 +42,7 @@
 3.  What does the `finalize()` method do? Explain its role with an example in the context of garbage collection.
 
 **F. Exploring the `String` Class, Using Command-Line Arguments**
-1.  *(Implicit question, often combined with others, e.g., command-line arguments for a specific task)*
-2.  Write a Java program to find the area of a rectangle using command-line arguments to pass the length and width. *(This question also relates to the `this` keyword if used in a class context for the rectangle).*
+1.  Write a Java program to find the area of a rectangle using command-line arguments to pass the length and width. *(This question also relates to the `this` keyword if used in a class context for the rectangle).*
 
 **G. Varargs, `Scanner` Class**
 1.  What are variable-length arguments (varargs) in Java? What are the advantages of using them?
